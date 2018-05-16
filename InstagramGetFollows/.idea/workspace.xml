@@ -11,26 +11,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main.py">
+      <file leaf-file-name="MainNomeDaPersone.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2436">
-              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="725">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#225#240#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainNomeDaPersone.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
+      <file leaf-file-name="Like.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Like.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-              <folding>
-                <element signature="e#225#240#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="29">
+              <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -76,6 +73,8 @@
         <option value="$PROJECT_DIR$/Click.py" />
         <option value="$PROJECT_DIR$/namefile.txt" />
         <option value="$PROJECT_DIR$/rolex.txt" />
+        <option value="$PROJECT_DIR$/venv/Like.py" />
+        <option value="$PROJECT_DIR$/Like.py" />
         <option value="$PROJECT_DIR$/MainNomeDaPersone.py" />
       </list>
     </option>
@@ -97,6 +96,11 @@
             <path>
               <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
               <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -127,6 +131,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.MainNomeDaPersone">
+    <configuration name="Like" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstagramGetFollows" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Like.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,10 +188,12 @@
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MainNomeDaPersone" />
+      <item itemvalue="Python.Like" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.MainNomeDaPersone" />
+        <item itemvalue="Python.Like" />
         <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
@@ -370,10 +394,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Like.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Like.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        <state relative-caret-position="725">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding>
             <element signature="e#225#240#0" expanded="true" />
           </folding>

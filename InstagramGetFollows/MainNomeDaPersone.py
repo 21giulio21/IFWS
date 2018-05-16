@@ -35,8 +35,11 @@ def follow(id,username):
     }
 
     response = requests.post('https://www.instagram.com/web/friendships/'+id+'/follow/', headers=headers)
-    #print(response.content + " " + id + " " + username)
     print(response.content)
+    if str(response.content).__contains__("Quest"):
+        print("Attendo 500 secondi")
+        time.sleep(1000)
+
 
 
 
