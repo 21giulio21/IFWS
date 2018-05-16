@@ -18,23 +18,21 @@ import random
 
 
 def follow(id,username):
-
     headers = {
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'x-requested-with': 'XMLHttpRequest',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/65.0.3325.181 Chrome/65.0.3325.181 Safari/537.36',
-        'cookie': 'mid=Wvr0NgAEAAGl3EUJG7IJvbUgw1ap; mcd=3; fbm_124024574287414=base_domain=.instagram.com; rur=FRC; shbid=18815; csrftoken=cLGxgpneCePgBik6mYXgRGwdMRl3DNfc; ds_user_id=7752426221; sessionid=7752426221%3A8KI5bcocHmnoQ0%3A7; fbsr_124024574287414=q6PkGYeFcvrux-3dqWFMzZ9loi47vq90Xfpu9W6YZ60.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUUFva0pGcDB1VzRnUzRJM2s3SENtZ0l5MGY3aGNHY3dhU3F0VFRrLW5SWUFRWEROeW5XUDdMNDRBcmM3LXlzXzhtcGdwam8wU1o1ZzVNYjUxd0ZRdEQ1NTE4dGZwQ1RJOEZuZWRuejZRRlNJWmNCYUZ0U0ViZ01ZSTU3aVM3U1BPQmlLb1dPUEVsOFppWk53ZVI5R19Xd3BVU0VPNEY2OHdpVlN6SEZiY180RmxLNE03Ykt3cjFCT0J6a2R4NHlpS1pJc0xkV3pkVFZyaTFmS3BDOFNfX2JudndkcGVVTnNCa2tYTDRBUHJvZHd0YzVtNXFVbUlRRUVhcUNvaUFmSEZGNmNDX3MybkFlRHAxVWZSckJOUEI5S184eHNmVVg1WjVHUWROdks4czY5SXVvMTd2c0RGNkVtZ0ROakdTN291UE5Wa0dmQUNBdWpPdVFERFRVOHVEXyIsImlzc3VlZF9hdCI6MTUyNjQ1ODgzMiwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1526412840\\054 \\"176.146.108.111\\": 5410\\054 \\"193.55.113.196\\": 2200}:1fIrfv:bAOTCts4PEj8PDkglbqXlwzp3E4"',
-        'x-csrftoken': 'cLGxgpneCePgBik6mYXgRGwdMRl3DNfc',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.139 Chrome/66.0.3359.139 Safari/537.36',
+        'cookie': 'shbid=18815; rur=FRC; mid=Wvw-LgAEAAFeGvt-y3z7sFfrYu5i; mcd=3; fbm_124024574287414=base_domain=.instagram.com; csrftoken=8BsyFYUSPP3m5xepzR030A7NTjoMUsfw; ds_user_id=7752426221; sessionid=7752426221%3ATAkVD94aec8M6E%3A10; fbsr_124024574287414=zcCP6rEPsiqQB6EOMCGDW_4HxCwLpWpGM8tfwev7Ivw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUUFFd1FMb205bnJfUVgydlVVa2FDWlVfek5VSUM2Qkk3dkEtN21jN1pZTFZJWVFsS29Da2xjWklmYUpMU3UxOFV2akl3SXdXLVozdGVMVll5MWV6WVpWN0hwUWVnV1pCVTZmdlRUU09nWHNqQmt0amxfYzZsaGRnc19xcGk5eG51M2QtRG0tYjBWeTVxN1UtdVhnTUpkLUVmVWlKQjhFVWlkekY0Y3N4TXV3ZWFtejdlNHdJZFBjUE1QMVRkQUNhdHNhSE1yMVRZbkt5Wkcwamx0b3hqTFdFLXc3Qk9DWHlYSW8tRWc3M3ZObHhCNlVEVVRESEhROFBTb1F4VElaQ3BnSEtWX0dlQlBOV2RNSXNmTWpsUHAtQ251VXdTYTBjYW9mYUE1aENpazFlSEtVWHZtaDRRZXZqQ09rREctU1lrWXpNZVE5STZqdWd4QzMxcnhvdlo0eCIsImlzc3VlZF9hdCI6MTUyNjQ4MTAzNCwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1526480430\\054 \\"193.55.113.196\\": 2200}:1fIxSA:paoMB3ak06OSPqx1ALxd1EYvBro"',
+        'x-csrftoken': '8BsyFYUSPP3m5xepzR030A7NTjoMUsfw',
         'x-instagram-ajax': 'f145b51a9723',
         'content-type': 'application/x-www-form-urlencoded',
         'accept': '*/*',
-        'referer': 'https://www.instagram.com/' + username + '/',
+        'referer': 'https://www.instagram.com/'+username+'/',
         'authority': 'www.instagram.com',
         'content-length': '0',
     }
-
 
     response = requests.post('https://www.instagram.com/web/friendships/'+id+'/follow/', headers=headers)
     #print(response.content + " " + id + " " + username)
@@ -125,4 +123,4 @@ if __name__ == "__main__":
         id = data[i]["ID"]
         username = data[i]["USERNAME"]
         follow(id,username)
-        time.sleep(15 + random.randint(3,6))
+        time.sleep( random.randint(3,6))
