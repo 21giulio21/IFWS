@@ -14,7 +14,7 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
+            <state relative-caret-position="2436">
               <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="MainNomeDaPersone.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="128" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="128" />
+            <state relative-caret-position="657">
+              <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
               <folding>
                 <element signature="e#225#240#0" expanded="true" />
               </folding>
@@ -52,8 +52,8 @@
       <file leaf-file-name="rolex.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rolex.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="6265" lean-forward="true" selection-start-line="6265" selection-end-line="6265" />
+            <state relative-caret-position="181685">
+              <caret line="6265" selection-start-line="6265" selection-end-line="6265" />
             </state>
           </provider>
         </entry>
@@ -61,7 +61,7 @@
       <file leaf-file-name="fedez.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fedez.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="145">
               <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
           </provider>
@@ -114,6 +114,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,8 +126,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -242,9 +246,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/id-nomi-4Lettere.txt">
+    <entry file="file://$PROJECT_DIR$/Click.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/namefile.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/rolex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181685">
+          <caret line="6265" lean-forward="true" selection-start-line="6265" selection-end-line="6265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fedez.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3596">
+          <caret line="128" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="128" />
+          <folding>
+            <element signature="e#225#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2436">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/id-nomi-4Lettere.txt" />
     <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2668">
@@ -267,12 +313,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ParserHtml.py" />
     <entry file="file://$PROJECT_DIR$/ParserHtml.py" />
-    <entry file="file://$PROJECT_DIR$/id-nomi-4Lettere.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/id-nomi-4Lettere.txt" />
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
+        <state relative-caret-position="2436">
           <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -292,22 +336,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fedez.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="145">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rolex.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="6265" lean-forward="true" selection-start-line="6265" selection-end-line="6265" />
+        <state relative-caret-position="181685">
+          <caret line="6265" selection-start-line="6265" selection-end-line="6265" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="128" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="128" />
+        <state relative-caret-position="657">
+          <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
           <folding>
             <element signature="e#225#240#0" expanded="true" />
           </folding>

@@ -115,11 +115,11 @@ if __name__ == "__main__":
     data = ottengoDatiDalServerMio()
     numero_dati = len(data)
     indice = 0
-    for i in range(160,numero_dati):
+    for i in range(190,numero_dati):
         print(i)
         indice = indice +1
         #Dopo 20 secondi mi fermo per 20 secondi
-        if indice % 5 == 0:
+        if indice % 4 == 0:
             time.sleep(20)
 
         id = data[i]["ID"]
