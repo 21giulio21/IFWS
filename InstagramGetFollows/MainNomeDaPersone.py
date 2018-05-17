@@ -24,9 +24,9 @@ def follow(id,username):
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'x-requested-with': 'XMLHttpRequest',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.139 Chrome/66.0.3359.139 Safari/537.36',
-        'cookie': 'shbid=18815; rur=FRC; mid=Wvw-LgAEAAFeGvt-y3z7sFfrYu5i; mcd=3; fbm_124024574287414=base_domain=.instagram.com; csrftoken=8BsyFYUSPP3m5xepzR030A7NTjoMUsfw; ds_user_id=7752426221; sessionid=7752426221%3ATAkVD94aec8M6E%3A10; fbsr_124024574287414=zcCP6rEPsiqQB6EOMCGDW_4HxCwLpWpGM8tfwev7Ivw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUUFFd1FMb205bnJfUVgydlVVa2FDWlVfek5VSUM2Qkk3dkEtN21jN1pZTFZJWVFsS29Da2xjWklmYUpMU3UxOFV2akl3SXdXLVozdGVMVll5MWV6WVpWN0hwUWVnV1pCVTZmdlRUU09nWHNqQmt0amxfYzZsaGRnc19xcGk5eG51M2QtRG0tYjBWeTVxN1UtdVhnTUpkLUVmVWlKQjhFVWlkekY0Y3N4TXV3ZWFtejdlNHdJZFBjUE1QMVRkQUNhdHNhSE1yMVRZbkt5Wkcwamx0b3hqTFdFLXc3Qk9DWHlYSW8tRWc3M3ZObHhCNlVEVVRESEhROFBTb1F4VElaQ3BnSEtWX0dlQlBOV2RNSXNmTWpsUHAtQ251VXdTYTBjYW9mYUE1aENpazFlSEtVWHZtaDRRZXZqQ09rREctU1lrWXpNZVE5STZqdWd4QzMxcnhvdlo0eCIsImlzc3VlZF9hdCI6MTUyNjQ4MTAzNCwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1526480430\\054 \\"193.55.113.196\\": 2200}:1fIxSA:paoMB3ak06OSPqx1ALxd1EYvBro"',
-        'x-csrftoken': '8BsyFYUSPP3m5xepzR030A7NTjoMUsfw',
-        'x-instagram-ajax': 'f145b51a9723',
+        'cookie': 'shbid=18815; rur=FRC; mid=Wv04-wAEAAHKaoK4SD8Hm37McmMb; mcd=3; fbm_124024574287414=base_domain=.instagram.com; csrftoken=F1cSYjQFyJ13hBayadSHigpivVa7PvTX; ds_user_id=7752426221; sessionid=7752426221%3ALsQDV4YGLx4UYf%3A0; fbsr_124024574287414=fZhVCJGuAHwRr0uEp_zZlp_hi0v-Ilb9mAChUJiR8Wc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUURTS2YwWm00Ty1Hd1JkV09nZlRoR0lIUVg1SXJCcnJwQ2JVUEwxR3ZrWTdKdDNlR3FNU25jc3hmS1E2Q3FXNHVvYWl1M3JYZW9NSlZ6a1VwUEo1dHdodnBodjZ6N3ltTTZFTEN6OGdFdkF2dndrNU5qY1VjQzlZVjNrWUxQbHFnTkEtTTFuN0pmaWVKWWowRXFlU2RyZElreGJETzdIbUdyN01oeEUwQnZjUkhYTVd3Z1ptVFFuLVpNcWd0bnZoOWxHTWVtdjVqNmpKZ0hDbDBRbXlKV0xUTHNpN3p1MzRrb2RVYU00MUkybk5XbjhjeHVuMWpiT1d5dDRIM1planVXZkZpM3FkSnN6MW5GTzdrc1V3SXBQNjZlNkF1b2RJSGhjYkNnaHhDaHptbkE3Q0VLaUx3a3UyWi0ybkRjNjBub0dRbDNwa1hidDFMVWRmX2t6cXJxQyIsImlzc3VlZF9hdCI6MTUyNjU0NTA2NSwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1526544635\\054 \\"193.55.113.196\\": 2200}:1fJE6t:xLekT1cleCnK_R-H8MWYHIxSRik"',
+        'x-csrftoken': 'F1cSYjQFyJ13hBayadSHigpivVa7PvTX',
+        'x-instagram-ajax': '1b36312e9ac7',
         'content-type': 'application/x-www-form-urlencoded',
         'accept': '*/*',
         'referer': 'https://www.instagram.com/'+username+'/',
@@ -46,7 +46,6 @@ def follow(id,username):
 
 
 def unfollow():
-    import requests
 
     headers = {
         'origin': 'https://www.instagram.com',
@@ -116,7 +115,7 @@ if __name__ == "__main__":
     data = ottengoDatiDalServerMio()
     numero_dati = len(data)
     indice = 0
-    for i in range(190,numero_dati):
+    for i in range(2000,numero_dati):
         print(i)
         indice = indice +1
         #Dopo 20 secondi mi fermo per 20 secondi
@@ -126,4 +125,4 @@ if __name__ == "__main__":
         id = data[i]["ID"]
         username = data[i]["USERNAME"]
         follow(id,username)
-        time.sleep( random.randint(3,6))
+        time.sleep(15 +  random.randint(3,6))
