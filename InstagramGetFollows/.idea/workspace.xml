@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="MainNomeDaPersone.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainNomeDaPersone.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="217">
+              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="127" selection-end-column="45" />
               <folding>
                 <element signature="e#225#240#0" expanded="true" />
               </folding>
@@ -23,11 +23,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Like.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Like.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Like.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+            <state relative-caret-position="290">
+              <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,6 +65,9 @@
       <find>bfecchiobasso</find>
       <find>betametosone</find>
       <find>ajimarkurnia</find>
+      <find>GraphImage</find>
+      <find>__typename</find>
+      <find>1769740579740952024</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -74,12 +80,12 @@
         <option value="$PROJECT_DIR$/namefile.txt" />
         <option value="$PROJECT_DIR$/rolex.txt" />
         <option value="$PROJECT_DIR$/venv/Like.py" />
-        <option value="$PROJECT_DIR$/Like.py" />
         <option value="$PROJECT_DIR$/MainNomeDaPersone.py" />
+        <option value="$PROJECT_DIR$/Like.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="532" />
     <option name="y" value="75" />
     <option name="width" value="1626" />
@@ -130,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MainNomeDaPersone">
+  <component name="RunManager" selected="Python.Like">
     <configuration name="Like" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,8 +198,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MainNomeDaPersone" />
         <item itemvalue="Python.Like" />
+        <item itemvalue="Python.MainNomeDaPersone" />
         <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
@@ -213,7 +219,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="2560" height="1499" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15976563" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -271,6 +276,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -351,19 +359,22 @@
     <entry file="file://$PROJECT_DIR$/fedez.txt" />
     <entry file="file://$PROJECT_DIR$/rolex.txt" />
     <entry file="file://$PROJECT_DIR$/venv/Like.py" />
-    <entry file="file://$PROJECT_DIR$/Like.py">
+    <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        <state relative-caret-position="217">
+          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="127" selection-end-column="45" />
+          <folding>
+            <element signature="e#225#240#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
+    <entry file="file://$PROJECT_DIR$/Like.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state relative-caret-position="290">
+          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
-            <element signature="e#225#240#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
