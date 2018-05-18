@@ -98,7 +98,7 @@ def getPage(nome):
 
 def ottengoIdDalUsername():
     # Ottengo la lista delle persone che sono seguite dal nome dato in input
-    with open("namefile.txt") as f:
+    with open("g.txt") as f:
         for line in f:
             #time.sleep(3 + random.randint(2,6) )
             if line.__contains__("Immagine"):
@@ -111,7 +111,8 @@ def ottengoDatiDalServerMio():
 
 
 if __name__ == "__main__":
-    #ottengoIdDalUsername()
+    ottengoIdDalUsername()
+'''
     data = ottengoDatiDalServerMio()
     numero_dati = len(data)
     indice = 0
@@ -126,3 +127,7 @@ if __name__ == "__main__":
         username = data[i]["USERNAME"]
         follow(id,username)
         time.sleep(15 +  random.randint(3,6))
+
+
+
+'''
