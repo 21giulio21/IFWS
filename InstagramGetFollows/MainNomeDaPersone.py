@@ -98,7 +98,7 @@ def getPage(nome):
 
 def ottengoIdDalUsername():
     # Ottengo la lista delle persone che sono seguite dal nome dato in input
-    with open("g.txt") as f:
+    with open("n.txt") as f:
         for line in f:
             #time.sleep(3 + random.randint(2,6) )
             if line.__contains__("Immagine"):
