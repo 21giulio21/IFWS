@@ -14,19 +14,37 @@
       <file leaf-file-name="MainNomeDaPersone.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2784">
-              <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+            <state relative-caret-position="93">
+              <caret line="7" column="11" selection-start-line="7" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OttengoIdUsernameDaFIle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="27" column="72" lean-forward="true" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
               <folding>
-                <element signature="e#225#240#0" expanded="true" />
+                <element signature="e#1#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Like.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Prova.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Prova.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Like.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Like.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
+            <state relative-caret-position="495">
               <caret line="63" column="80" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -38,7 +56,7 @@
       <file leaf-file-name="Click.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Click.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="15">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
@@ -85,41 +103,24 @@
         <option value="$PROJECT_DIR$/rolex.txt" />
         <option value="$PROJECT_DIR$/venv/Like.py" />
         <option value="$PROJECT_DIR$/g.txt" />
-        <option value="$PROJECT_DIR$/MainNomeDaPersone.py" />
         <option value="$PROJECT_DIR$/n.txt" />
         <option value="$PROJECT_DIR$/Like.py" />
+        <option value="$PROJECT_DIR$/MainNomeDaPersone.py" />
+        <option value="$PROJECT_DIR$/OttengoIdUsernameDaFIle.py" />
+        <option value="$PROJECT_DIR$/Prova.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="532" />
-    <option name="y" value="75" />
-    <option name="width" value="1626" />
-    <option name="height" value="1344" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="25" />
+    <option name="width" value="1360" />
+    <option name="height" value="710" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -142,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Like">
+  <component name="RunManager" selected="Python.Prova">
     <configuration name="Like" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,13 +198,53 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="OttengoIdUsernameDaFIle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstagramGetFollows" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OttengoIdUsernameDaFIle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Prova" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstagramGetFollows" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prova.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.MainNomeDaPersone" />
       <item itemvalue="Python.Like" />
+      <item itemvalue="Python.OttengoIdUsernameDaFIle" />
+      <item itemvalue="Python.Prova" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Prova" />
+        <item itemvalue="Python.OttengoIdUsernameDaFIle" />
         <item itemvalue="Python.Like" />
         <item itemvalue="Python.MainNomeDaPersone" />
         <item itemvalue="Python.Main" />
@@ -224,25 +265,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="35" width="2560" height="1499" extended-state="6" />
+    <frame x="0" y="25" width="1360" height="710" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15976563" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.27773407" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.27773407" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.27740863" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3996853" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296617" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -253,9 +294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2784">
           <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -280,9 +318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2784">
           <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -314,9 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2784">
           <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -344,9 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2146">
           <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -371,9 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3190">
           <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="127" selection-end-column="45" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -398,9 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3306">
           <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -436,9 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3277">
           <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -457,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3596">
           <caret line="128" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="128" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -469,9 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2668">
           <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,7 +496,7 @@
     <entry file="file://$PROJECT_DIR$/Main.py" />
     <entry file="file://$PROJECT_DIR$/Click.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
@@ -499,23 +513,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2784">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Like.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
+        <state relative-caret-position="495">
           <caret line="63" column="80" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="7" column="11" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="27" column="72" lean-forward="true" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prova.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
         </state>
       </provider>
     </entry>

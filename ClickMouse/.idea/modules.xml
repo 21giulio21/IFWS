@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ClickMouse.iml" filepath="$PROJECT_DIR$/ClickMouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/com/com.iml" filepath="$PROJECT_DIR$/src/com/com.iml" />
     </modules>
   </component>
 </project>
