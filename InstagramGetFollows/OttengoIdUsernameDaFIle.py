@@ -6,26 +6,17 @@ import re
 #e prende l'id della persona
 def getPage(nome):
 
-	cookies = {
-    'csrftoken': 'gbFYDDECFb7zkLbMN5yTR2iF6nMgTtJQ',
-    'ds_user_id': '819693525',
-    'sessionid': 'IGSC13fd980dbdaf73c3dcefac967306c70084186884457fcdc0be8b0d8ff6a3e8aa%3AxF8ille8sA0B6MAZjlulegBXh4EofoDo%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3AiJhOivcaW4oXkkZI2Jix32dA9WhLLqXL%3A20df30023ab984daf85ae50e4916278986eccdeec0870a6a87161f3dbc4d58bc%22%2C%22last_refreshed%22%3A1526631731.6816165447%7D',
-    'mid': 'Wv6NMwAEAAHR532pOD8RTWGf_4Hu',
-    'rur': 'ASH',
-    'urlgen': '{\\"time\\": 1527689685\\054 \\"193.55.113.198\\": 2200}:1fO1sF:Kt6BrsJcRWAF6BPhlthUoM3p9hg',
-	}
+    headers = {
+        'authority': 'www.instagram.com',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fO1o7:2az6OzqMKD6FoWtZ4xZOuq8St1Q"',
+    }
 
-   	headers = 
-   	{
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.5',
-    'Connection': 'keep-alive',
-    'Host': 'www.instagram.com',
-    'Upgrade-Insecure-Requests': '1',
-    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0',
-   	}
-
-	response = requests.get('https://www.instagram.com/'+ nome +'/', headers=headers, cookies=cookies)
+    response = requests.get('https://www.instagram.com/'+nome+'/', headers=headers)
 
     try:
         from BeautifulSoup import BeautifulSoup

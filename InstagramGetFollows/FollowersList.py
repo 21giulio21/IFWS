@@ -15,28 +15,29 @@ def findUsername(content_originale):
         username_1 = content[index_username_start + len("\"username\"") + 2: index_username_start + len(
             "\"username\"") + s.find("\"") + 2]
         content = content[content.find(username_1) + len(username_1):]
-        with open("instagram_fisso_mio.txt", "a") as myfile:
+        with open("t2.txt", "a") as myfile:
             myfile.write(username_1 + "\n")
         print(username_1)
     return find_end_cursor(content_originale, content)
 
 
 headers = {
-        'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; shbts=1527681922.7310588; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fNzr0:NCBvLS6u5whZsU3yaI4RUEU_pAU"',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
-        'accept': '*/*',
-        'referer': 'https://www.instagram.com/fedex/followers/?hl=it',
-        'authority': 'www.instagram.com',
-        'x-requested-with': 'XMLHttpRequest',
-        'x-instagram-gis': '7d2e902f70516f88fecb9fbea5eefd9d',
+    'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; shbts=1527688203.2580352; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fO1UJ:A1vpiwmb3XDXNCFMCwstDc8kDMg"',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
+    'accept': '*/*',
+    'referer': 'https://www.instagram.com/selenagomez/followers/?hl=it',
+    'authority': 'www.instagram.com',
+    'x-requested-with': 'XMLHttpRequest',
+    'x-instagram-gis': '27827f0c90f83e50c5708780931da134',
 }
 
 params = (
-        ('query_hash', '37479f2b8209594dde7facb0d904896a'),
-        ('variables', '{"id":"232257039","first":50}'),
+    ('query_hash', '37479f2b8209594dde7facb0d904896a'),
+    ('variables', '{"id":"460563723","first":50}'),
 )
+
     #Cerco tutti gli account
 content_originale = str(requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params).content)
 
@@ -45,21 +46,23 @@ content_originale = str(requests.get('https://www.instagram.com/graphql/query/',
 for i in range(1,100000):
     time.sleep(5)
     headers = {
-        'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fNzrG:BBk8kXyGsKVfuEJZlRnRZPDCqzw"',
+        'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fO1nk:AktTECOVDB5qdrCD_daIDlHGWXw"',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
         'accept': '*/*',
-        'referer': 'https://www.instagram.com/fedex/followers/?hl=it',
+        'referer': 'https://www.instagram.com/selenagomez/followers/?hl=it',
         'authority': 'www.instagram.com',
         'x-requested-with': 'XMLHttpRequest',
-        'x-instagram-gis': 'dd1ca2d0c10e7e86ca9d1b12d789f5bb',
+        'x-instagram-gis': '1bdcef10af89857a87a95dfdd2766039',
     }
 
     params = (
         ('query_hash', '37479f2b8209594dde7facb0d904896a'),
-        ('variables', '{"id":"232257039","first":50,"after":"'+findUsername(content_originale)+'"}'),
+        ('variables', '{"id":"232257039","first":50,"after":"' + findUsername(content_originale) + '"}')
     )
+
+
 
     response = requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params)
     content_originale =  response.content
