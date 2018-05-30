@@ -1,9 +1,11 @@
 import requests
 from InstagramAPI import follow
 from InstagramAPI import ottengoDatiDalServerMio
+import sys
+import time
 
 
-def login():
+def login(username,password):
 
     headers = {
         'cookie': 'ig_cb=1',
@@ -23,8 +25,8 @@ def login():
     }
 
     data = [
-        ('username', 'test_12345_f'),
-        ('password', 'test_12345_ff'),
+        ('username', username),
+        ('password', password),
         ('queryParams', '{}'),
     ]
 
@@ -33,8 +35,9 @@ def login():
 
 if __name__ == "__main__":
     print "starting requests"
-
-    r = login()
+    username = sys.argv[1]
+    password = sys.argv[2]
+    r = login(username,password)
     print r.content
     print "*****************************"
     cookies_dict = r.cookies.get_dict()
@@ -42,4 +45,8 @@ if __name__ == "__main__":
     cookies_str = ''.join(key + "=" + str(cookies_dict[key]) + "; " for key in cookies_dict)
     print(cookies_str[:-2])
     utenti = ottengoDatiDalServerMio()
-    follow(46071423, "fedez", cookies_str, cookies_dict['csrftoken'])
+    for i in range(12000,13000):
+        utente = utenti[i]
+        print(username + " sta seguendo -> username : " + utente["USERNAME"] + " ID " + utente["ID"])
+        follow(utente["ID"], utente["USERNAME"], cookies_str, cookies_dict['csrftoken'])
+        time.sleep(30)
