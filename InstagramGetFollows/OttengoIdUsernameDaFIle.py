@@ -36,11 +36,8 @@ def ottengoIdDalUsername(pathFile):
     # Ottengo la lista delle persone che sono seguite dal nome dato in input
     with open(pathFile) as f:
         for line in f:
-            #time.sleep(3 + random.randint(2,6) )
-            if line.__contains__("Immagine"):
-                nome = re.findall(r'\S+', line)[4]
-                getPage(nome)#li mando al server mio cosi posso poi vederli piu avanti
+            getPage(line)#li mando al server mio cosi posso poi vederli piu avanti
 
 
 if __name__ == "__main__":
-    ottengoIdDalUsername('/home/giuliofisso/Scrivania/instagram.txt')
+    ottengoIdDalUsername('instagram.txt')
