@@ -14,10 +14,29 @@
       <file leaf-file-name="FollowersList.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FollowersList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+            <state relative-caret-position="203">
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t2.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/t2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-64671" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OttengoIdUsernameDaFIle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+              <folding>
+                <element signature="e#1#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -26,25 +45,8 @@
       <file leaf-file-name="instagram_fisso_mio.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instagram_fisso_mio.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/t2.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="OttengoIdUsernameDaFIle.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="21" />
-              <folding>
-                <element signature="e#1#16#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -52,7 +54,7 @@
       <file leaf-file-name="Like.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Like.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
+            <state relative-caret-position="1711">
               <caret line="63" column="80" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -64,7 +66,7 @@
       <file leaf-file-name="Click.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Click.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="29">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
@@ -105,6 +107,8 @@
       <find>oviermiranda_13</find>
       <find>txt</find>
       <find>460563723</find>
+      <find>max_rich_</find>
+      <find>geralsb16</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -125,6 +129,7 @@
         <option value="$PROJECT_DIR$/n.txt" />
         <option value="$PROJECT_DIR$/instagram.txt" />
         <option value="$PROJECT_DIR$/FollowersList.py" />
+        <option value="$PROJECT_DIR$/t2.txt" />
         <option value="$PROJECT_DIR$/OttengoIdUsernameDaFIle.py" />
       </list>
     </option>
@@ -296,15 +301,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1360" height="710" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="35" width="2560" height="1499" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16470589" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16445312" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" visible="true" weight="0.5082612" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.50830567" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.5082612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -501,7 +505,7 @@
     <entry file="file://$PROJECT_DIR$/Main.py" />
     <entry file="file://$PROJECT_DIR$/Click.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="29">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
@@ -514,7 +518,7 @@
     <entry file="file://$PROJECT_DIR$/Prova.py" />
     <entry file="file://$PROJECT_DIR$/Like.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
+        <state relative-caret-position="1711">
           <caret line="63" column="80" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -525,37 +529,25 @@
     <entry file="file://$PROJECT_DIR$/n.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/t2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/MainNomeDaPersone.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#225#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Login.py" />
     <entry file="file://$PROJECT_DIR$/instagram_fisso_mio.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-end-column="21" />
+        <state relative-caret-position="174">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FollowersList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        <state relative-caret-position="203">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -564,12 +556,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="261">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64671" />
       </provider>
     </entry>
   </component>

@@ -1,6 +1,7 @@
 
 import requests
-import re
+from threading import Thread
+import time
 
 #Funzione da non chiamare dal main, permette di andare a prendere la pagina instagram collegata al nome passato come parametro
 #e prende l'id della persona
@@ -31,8 +32,10 @@ def ottengoIdDalUsername(pathFile):
     # Ottengo la lista delle persone che sono seguite dal nome dato in input
     with open(pathFile) as f:
         for line in f:
-            getPage(line)#li mando al server mio cosi posso poi vederli piu avanti
+            t = Thread(target=getPage, args=(line,)) #li mando al server mio cosi posso poi vederli piu avanti
+            t.start()
+            time.sleep(0.1)
 
 
 if __name__ == "__main__":
-    ottengoIdDalUsername('instagram_fisso_mio.txt')
+    ottengoIdDalUsername('t2.txt')

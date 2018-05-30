@@ -35,7 +35,7 @@ headers = {
 
 params = (
     ('query_hash', '37479f2b8209594dde7facb0d904896a'),
-    ('variables', '{"id":"460563723","first":50}'),
+    ('variables', '{"id":"226686035","first":50}'),
 )
 
     #Cerco tutti gli account
@@ -59,7 +59,7 @@ for i in range(1,100000):
 
     params = (
         ('query_hash', '37479f2b8209594dde7facb0d904896a'),
-        ('variables', '{"id":"232257039","first":50,"after":"' + findUsername(content_originale) + '"}')
+        ('variables', '{"id":"226686035","first":50,"after":"' + findUsername(content_originale) + '"}')
     )
 
 
