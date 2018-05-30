@@ -59,7 +59,7 @@ if __name__ == "__main__":
     data = ottengoDatiDalServerMio()
     numero_dati = len(data)
     indice = 0
-    for i in range(1000, numero_dati):
+    for i in range(1500, numero_dati):
         indice = indice + 1
         print("numero della persona a cui ho mandato la richiesta " + str(indice))
         # Dopo 20 secondi mi fermo per 20 secondi
