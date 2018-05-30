@@ -40,4 +40,4 @@ def ottengoIdDalUsername(pathFile):
 
 
 if __name__ == "__main__":
-    ottengoIdDalUsername('instagram.txt')
+    ottengoIdDalUsername('instagram_fisso_mio.txt')

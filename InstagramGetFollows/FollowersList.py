@@ -15,7 +15,7 @@ def findUsername(content_originale):
         username_1 = content[index_username_start + len("\"username\"") + 2: index_username_start + len(
             "\"username\"") + s.find("\"") + 2]
         content = content[content.find(username_1) + len(username_1):]
-        with open("instagram.txt", "a") as myfile:
+        with open("instagram_fisso_mio.txt", "a") as myfile:
             myfile.write(username_1 + "\n")
         print(username_1)
     return find_end_cursor(content_originale, content)
