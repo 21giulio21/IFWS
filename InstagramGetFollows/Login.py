@@ -1,5 +1,6 @@
 import requests
-
+from InstagramAPI import follow
+from InstagramAPI import ottengoDatiDalServerMio
 
 
 def login():
@@ -36,4 +37,9 @@ if __name__ == "__main__":
     r = login()
     print r.content
     print "*****************************"
-    print r.cookies
+    cookies_dict = r.cookies.get_dict()
+
+    cookies_str = ''.join(key + "=" + str(cookies_dict[key]) + "; " for key in cookies_dict)
+    print(cookies_str[:-2])
+    utenti = ottengoDatiDalServerMio()
+    follow(46071423, "fedez", cookies_str, cookies_dict['csrftoken'])

@@ -17,24 +17,25 @@ import random
 
 
 
-def follow(id,username):
+def follow(id,username, cookies, csrf):
 
 
 
 	headers = {
-    'cookie': 'csrftoken=0rcmqCEguMzQ2mdlAoDQ8tipUcly17B4; ds_user_id=7888680831; sessionid=IGSC57d8d858ba3aaf7ce45ae1dc7c32212d8a8295db743b3d1eaebfb134ab179314%3ALYQDJVCX3Fr2kd7XUfTvCRuD22mKxJ2m%3A%7B%22_auth_user_id%22%3A7888680831%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227888680831%3AOV6LLTxCPTOfvsPHpAqKk3TnJBDURk4m%3A90b6283516cda04d19801e18edd4414dddc50b4e5f2c20df33191432326bbd23%22%2C%22last_refreshed%22%3A1527620854.4057896137%7DIGSC910d7e05a5c4a2e15ca69322b054d6906e2e1f40ae35182eb870217c2f90ed7b%3A8PFs94s93ne49OcdFq50eatY3LMiR4TN%3A%7B%z%22%3A7888680831%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227888680831%3AntcLhgS1v3fLXwfp2CWGSv4FvNuT2RZb%3A744411ddf1d8c7afdee4ed81fd638be2e4f31efefed83891768defefc1d31863%22%2C%22last_refreshed%22%3A1527620141.0235059261%7D; ig_cb=1; mid=Ww2iKAAEAAGUfOZDKB1J0sxmSXLr; mcd=3; rur=FRC; urlgen="{\\"time\\": 1527620141\\054 \\"91.253.159.25\\": 24608}:1fNjmf:SLC7FRX1WNcuR62vLucW_sDF22I"',
+    #'cookie': 'csrftoken=0rcmqCEguMzQ2mdlAoDQ8tipUcly17B4; ds_user_id=7888680831; sessionid=IGSC57d8d858ba3aaf7ce45ae1dc7c32212d8a8295db743b3d1eaebfb134ab179314%3ALYQDJVCX3Fr2kd7XUfTvCRuD22mKxJ2m%3A%7B%22_auth_user_id%22%3A7888680831%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227888680831%3AOV6LLTxCPTOfvsPHpAqKk3TnJBDURk4m%3A90b6283516cda04d19801e18edd4414dddc50b4e5f2c20df33191432326bbd23%22%2C%22last_refreshed%22%3A1527620854.4057896137%7DIGSC910d7e05a5c4a2e15ca69322b054d6906e2e1f40ae35182eb870217c2f90ed7b%3A8PFs94s93ne49OcdFq50eatY3LMiR4TN%3A%7B%z%22%3A7888680831%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227888680831%3AntcLhgS1v3fLXwfp2CWGSv4FvNuT2RZb%3A744411ddf1d8c7afdee4ed81fd638be2e4f31efefed83891768defefc1d31863%22%2C%22last_refreshed%22%3A1527620141.0235059261%7D; ig_cb=1; mid=Ww2iKAAEAAGUfOZDKB1J0sxmSXLr; mcd=3; rur=FRC; urlgen="{\\"time\\": 1527620141\\054 \\"91.253.159.25\\": 24608}:1fNjmf:SLC7FRX1WNcuR62vLucW_sDF22I"',
+    'cookie' : cookies,
     'origin': 'https://www.instagram.com',
     'x-requested-with': 'XMLHttpRequest',
-    'x-csrftoken': '0rcmqCEguMzQ2mdlAoDQ8tipUcly17B4',
+    'x-csrftoken': csrf,
     'x-instagram-ajax': '8958fe1e75ab',
     'authority': 'www.instagram.com',
-    'referer': 'https://www.instagram.com/vvickyrehab/?hl=it',
+    'referer': 'https://www.instagram.com/' + username,
 
 	}
 
 
 
-	response = requests.post('https://www.instagram.com/web/friendships/999307614/follow/', 	headers=headers)
+	response = requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
 	print(response.content)
 
 #NB. Original query string below. It seems impossible to parse and
