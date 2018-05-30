@@ -5,6 +5,7 @@ import re
 #Funzione da non chiamare dal main, permette di andare a prendere la pagina instagram collegata al nome passato come parametro
 #e prende l'id della persona
 def getPage(nome):
+    nome = nome[:-1]
 
     headers = {
         'authority': 'www.instagram.com',
@@ -16,21 +17,15 @@ def getPage(nome):
         'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fO1o7:2az6OzqMKD6FoWtZ4xZOuq8St1Q"',
     }
 
-    response = requests.get('https://www.instagram.com/'+nome+'/', headers=headers)
+    response = str(requests.get('https://www.instagram.com/'+nome, headers=headers).content)
+    posizioneprofilePage_= response.find("profilePage_")
+    inizio_id = response[posizioneprofilePage_ + len("profilePage_"):]
+    id =unicode(str(inizio_id[:inizio_id.find("\"")]), 'utf-8')
 
-    try:
-        from BeautifulSoup import BeautifulSoup
-    except ImportError:
-        from bs4 import BeautifulSoup
-    html =  response.content
-    parsed_html = BeautifulSoup(html)
-    testo =  parsed_html.body.find('script', attrs={'type': 'text/javascript'}).text
-    indiceInizio = testo.find("profilePage_") + "profilePage_".__len__()
-    indiceFine = testo[indiceInizio:].find("\"")
-    id = testo[indiceInizio:indiceInizio+indiceFine]
     if id.isnumeric():
         print(id + " " + nome)
         requests.get('http://2.230.243.113/foulo.php?id='+id+'&username='+ nome)
+
 
 def ottengoIdDalUsername(pathFile):
     # Ottengo la lista delle persone che sono seguite dal nome dato in input
