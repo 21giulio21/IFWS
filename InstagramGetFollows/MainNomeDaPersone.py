@@ -18,27 +18,30 @@ import random
 
 
 def follow(id,username):
-    headers = {
-        'origin': 'https://www.instagram.com',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
-        'x-requested-with': 'XMLHttpRequest',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.139 Chrome/66.0.3359.139 Safari/537.36',
-        'cookie': 'shbid=18815; rur=FRC; mid=Wv04-wAEAAHKaoK4SD8Hm37McmMb; mcd=3; fbm_124024574287414=base_domain=.instagram.com; csrftoken=F1cSYjQFyJ13hBayadSHigpivVa7PvTX; ds_user_id=7752426221; sessionid=7752426221%3ALsQDV4YGLx4UYf%3A0; fbsr_124024574287414=fZhVCJGuAHwRr0uEp_zZlp_hi0v-Ilb9mAChUJiR8Wc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUURTS2YwWm00Ty1Hd1JkV09nZlRoR0lIUVg1SXJCcnJwQ2JVUEwxR3ZrWTdKdDNlR3FNU25jc3hmS1E2Q3FXNHVvYWl1M3JYZW9NSlZ6a1VwUEo1dHdodnBodjZ6N3ltTTZFTEN6OGdFdkF2dndrNU5qY1VjQzlZVjNrWUxQbHFnTkEtTTFuN0pmaWVKWWowRXFlU2RyZElreGJETzdIbUdyN01oeEUwQnZjUkhYTVd3Z1ptVFFuLVpNcWd0bnZoOWxHTWVtdjVqNmpKZ0hDbDBRbXlKV0xUTHNpN3p1MzRrb2RVYU00MUkybk5XbjhjeHVuMWpiT1d5dDRIM1planVXZkZpM3FkSnN6MW5GTzdrc1V3SXBQNjZlNkF1b2RJSGhjYkNnaHhDaHptbkE3Q0VLaUx3a3UyWi0ybkRjNjBub0dRbDNwa1hidDFMVWRmX2t6cXJxQyIsImlzc3VlZF9hdCI6MTUyNjU0NTA2NSwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1526544635\\054 \\"193.55.113.196\\": 2200}:1fJE6t:xLekT1cleCnK_R-H8MWYHIxSRik"',
-        'x-csrftoken': 'F1cSYjQFyJ13hBayadSHigpivVa7PvTX',
-        'x-instagram-ajax': '1b36312e9ac7',
-        'content-type': 'application/x-www-form-urlencoded',
-        'accept': '*/*',
-        'referer': 'https://www.instagram.com/'+username+'/',
-        'authority': 'www.instagram.com',
-        'content-length': '0',
-    }
 
-    response = requests.post('https://www.instagram.com/web/friendships/'+id+'/follow/', headers=headers)
-    print(response.content)
-    if str(response.content).__contains__("Quest"):
-        print("Attendo 500 secondi")
-        time.sleep(1000)
+
+
+	headers = {
+    'cookie': 'csrftoken=0rcmqCEguMzQ2mdlAoDQ8tipUcly17B4; ds_user_id=7888680831; sessionid=IGSC57d8d858ba3aaf7ce45ae1dc7c32212d8a8295db743b3d1eaebfb134ab179314%3ALYQDJVCX3Fr2kd7XUfTvCRuD22mKxJ2m%3A%7B%22_auth_user_id%22%3A7888680831%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227888680831%3AOV6LLTxCPTOfvsPHpAqKk3TnJBDURk4m%3A90b6283516cda04d19801e18edd4414dddc50b4e5f2c20df33191432326bbd23%22%2C%22last_refreshed%22%3A1527620854.4057896137%7DIGSC910d7e05a5c4a2e15ca69322b054d6906e2e1f40ae35182eb870217c2f90ed7b%3A8PFs94s93ne49OcdFq50eatY3LMiR4TN%3A%7B%z%22%3A7888680831%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227888680831%3AntcLhgS1v3fLXwfp2CWGSv4FvNuT2RZb%3A744411ddf1d8c7afdee4ed81fd638be2e4f31efefed83891768defefc1d31863%22%2C%22last_refreshed%22%3A1527620141.0235059261%7D; ig_cb=1; mid=Ww2iKAAEAAGUfOZDKB1J0sxmSXLr; mcd=3; rur=FRC; urlgen="{\\"time\\": 1527620141\\054 \\"91.253.159.25\\": 24608}:1fNjmf:SLC7FRX1WNcuR62vLucW_sDF22I"',
+    'origin': 'https://www.instagram.com',
+    'x-requested-with': 'XMLHttpRequest',
+    'x-csrftoken': '0rcmqCEguMzQ2mdlAoDQ8tipUcly17B4',
+    'x-instagram-ajax': '8958fe1e75ab',
+    'authority': 'www.instagram.com',
+    'referer': 'https://www.instagram.com/vvickyrehab/?hl=it',
+
+	}
+
+
+
+	response = requests.post('https://www.instagram.com/web/friendships/999307614/follow/', 	headers=headers)
+	print(response.content)
+
+#NB. Original query string below. It seems impossible to parse and
+#reproduce query strings 100% accurately so the one below is given
+#in case the reproduced version is not "correct".
+# response = requests.post('https://www.instagram.com/web/friendships/232257039/follow/?hl=en', headers=headers)
+
 
 
 
@@ -76,22 +79,8 @@ def ottengoDatiDalServerMio():
 
 
 if __name__ == "__main__":
+	follow('','')
 
-
-    data = ottengoDatiDalServerMio()
-    numero_dati = len(data)
-    indice = 0
-    for i in range(2000,numero_dati):
-        print(i)
-        indice = indice +1
-        #Dopo 20 secondi mi fermo per 20 secondi
-        if indice % 4 == 0:
-            time.sleep(20)
-
-        id = data[i]["ID"]
-        username = data[i]["USERNAME"]
-        follow(id,username)
-        time.sleep(15 +  random.randint(3,6))
 
 
 

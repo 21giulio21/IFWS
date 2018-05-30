@@ -18,6 +18,7 @@ params = (
 )
 
 response = requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params)
+
 print(response.content)
 
 #NB. Original query string below. It seems impossible to parse and
