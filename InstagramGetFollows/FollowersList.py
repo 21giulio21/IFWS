@@ -2,6 +2,7 @@ import requests
 import time
 from threading import Thread
 
+url_server_save_followers = "http://getfollowersoninstagram.altervista.org/saveUsetIntoDatabase.php"
 
 def find_end_cursor(content_originale,content):
     # Cerco end_cursor da mettere in input alla richiesta dopo
@@ -30,7 +31,7 @@ def getPage(nome):
 
     if id.isnumeric():
         print("Salvo sul server un utente con id: " +id + " e nome: " + nome)
-        requests.get('http://2.230.243.113/foulo.php?id='+id+'&username='+ nome)
+        requests.get(url_server_save_followers+'?id='+id+'&username='+ nome)
 
 def findUsername(content_originale):
     content = content_originale

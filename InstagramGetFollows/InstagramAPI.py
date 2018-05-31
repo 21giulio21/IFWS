@@ -15,7 +15,7 @@ import random
 #fedez: 46071423
 #fedex: 232257039
 
-
+url_get_all_user = "http://getfollowersoninstagram.altervista.org/getAllUser.php"
 
 def follow(id,username, cookies, csrf):
 
@@ -75,7 +75,7 @@ def unfollow():
 
 
 def ottengoDatiDalServerMio():
-    return json.loads(requests.get("http://2.230.243.113/getFoulo.php").content)
+    return json.loads(requests.get(url_get_all_user).content)
 
 
 
