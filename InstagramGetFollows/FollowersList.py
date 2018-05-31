@@ -47,21 +47,22 @@ def findUsername(content_originale):
 
 
 headers = {
-    'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; shbts=1527688203.2580352; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fO1UJ:A1vpiwmb3XDXNCFMCwstDc8kDMg"',
+    'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; rur=FRC; mcd=3; ig_cb=1; sessionid=IGSCbae91f5f3e783e3796ce92f7338e32ce23c4b6631c4a07c92290aefbe80afafa%3AbAcvU6HZnyXc178U0B4HGyJbAsQNrRey%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527768486.8264241219%7D; urlgen="{\\"time\\": 1527760068\\054 \\"193.55.113.196\\": 2200}:1fOMNj:e3v8GUbhevw_iGxPjSXypwXTllA"',
     'accept-encoding': 'gzip, deflate, br',
     'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
     'accept': '*/*',
-    'referer': 'https://www.instagram.com/selenagomez/followers/?hl=it',
+    'referer': 'https://www.instagram.com/donze093/followers/?hl=it',
     'authority': 'www.instagram.com',
     'x-requested-with': 'XMLHttpRequest',
-    'x-instagram-gis': '27827f0c90f83e50c5708780931da134',
+    'x-instagram-gis': '0a2f877b31cab1edc4929d1c6a324adb',
 }
 
 params = (
     ('query_hash', '37479f2b8209594dde7facb0d904896a'),
-    ('variables', '{"id":"226686035","first":50}'),
+    ('variables', '{"id":"2315985234","first":50}'),
 )
+
 
     #Cerco tutti gli account
 content_originale = str(requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params).content)
@@ -69,28 +70,30 @@ content_originale = str(requests.get('https://www.instagram.com/graphql/query/',
 
 
 for i in range(1,100000):
-    time.sleep(5)
     headers = {
-        'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fO1nk:AktTECOVDB5qdrCD_daIDlHGWXw"',
+        'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; rur=FRC; mcd=3; ig_cb=1; sessionid=IGSCbae91f5f3e783e3796ce92f7338e32ce23c4b6631c4a07c92290aefbe80afafa%3AbAcvU6HZnyXc178U0B4HGyJbAsQNrRey%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527768486.8264241219%7D; urlgen="{\\"time\\": 1527760068\\054 \\"193.55.113.196\\": 2200}:1fOMPA:JO7DXNqFXSz-X7Wp54lfgZaeSrU"',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
         'accept': '*/*',
-        'referer': 'https://www.instagram.com/selenagomez/followers/?hl=it',
+        'referer': 'https://www.instagram.com/donze093/followers/?hl=it',
         'authority': 'www.instagram.com',
         'x-requested-with': 'XMLHttpRequest',
-        'x-instagram-gis': '1bdcef10af89857a87a95dfdd2766039',
+        'x-instagram-gis': 'd70ee90ed3d353ce831e68562de9589f',
     }
 
     params = (
         ('query_hash', '37479f2b8209594dde7facb0d904896a'),
-        ('variables', '{"id":"226686035","first":50,"after":"' + findUsername(content_originale) + '"}')
+        ('variables',
+         '{"id":"2315985234","first":12,"after":"' + findUsername(content_originale) + '"}'),
     )
 
 
 
     response = requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params)
     content_originale =  response.content
+    time.sleep(100)
+
 #NB. Original query string below. It seems impossible to parse and
 #reproduce query strings 100% accurately so the one below is given
 #in case the reproduced version is not "correct".
