@@ -27,7 +27,6 @@ def follow(id,username, cookies, csrf):
 	response = requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
 	print("FOLLOW" + username + response.content)
 
-#TODO: Da ultimare
 def unfollow(id,username, cookies, csrf):
 
     headers = {
@@ -82,6 +81,11 @@ def login(username,password):
 
 def getUsersToFollow():
     return json.loads(requests.get(url_get_all_user).content)
+
+#Update follow_unfollow nel database
+def updateFollowUnfollowDatabase(username,follow_unfollow):
+    url="http://getfollowersoninstagram.altervista.org/updateFollowUnfollow.php?username="+username+"&follow_unfollow="+follow_unfollow
+    requests.get(url)
 
 #Agggiorno l'array sul database
 def updateUserFollowed(userFollowed,username):

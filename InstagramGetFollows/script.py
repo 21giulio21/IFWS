@@ -1,6 +1,7 @@
 import base64
 import time
 import ast
+from InstagramAPI import updateFollowUnfollowDatabase
 from InstagramAPI import updateUserFollowed
 from InstagramAPI import saveIdIntoDatabase
 from InstagramAPI import seveCookieIntoServer
@@ -13,6 +14,7 @@ from InstagramAPI import selectUserFromDatabase
 from InstagramAPI import getIDFromUsername
 from InstagramAPI import getCountUsersToFollow
 from random import randint
+
 import re
 
 
@@ -61,19 +63,42 @@ while True:
         cookies_str = ''.join(key + "=" + str(cookies_dict[key]) + "; " for key in cookies_dict)
 
         if len(id) == 0:
+
+            print("Username: " + username + " non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database")
             id = getIDFromUsername(username)
             saveIdIntoDatabase(username, id)
 
+        #Imposto a 1 perche non va con 0 comunque ogni volta riempie il campo user_followed e lo svuota
+        if len(users_followed_array) == 1:
+            #Devo iniziare a seguire
+
+            print("Username: " + username + " non segue ancora nessuno, deve iniziare a seguire gente")
+
+
+            follow_unfollow = str('1')
+            updateFollowUnfollowDatabase(username, str(follow_unfollow))
+
+
+        print(follow_unfollow)
 
         #controllo che sono al massimo di persone che posso seguire al giorno
-        if len(users_followed_array) > 0: #max_requests:
+        if len(users_followed_array) > 10: #max_requests:
+
+            print("Username: " + username + " segue gia il numero massimo di user giornalieri, ora bisogna iniziare a fare unfollow")
+
 
             #Se sono al numero di persone massime imposto users_followed a 0
             # In questo modo inizio a fare richieste di unfollow
-            follow_unfollow = 0
+            follow_unfollow = str("0")
+
+            #Aggiorno il server dicendo che follow_unfollow e' zero
+            updateFollowUnfollowDatabase(username, follow_unfollow)
+
 
         #Se follow_unfollow e' 1 allora devo seguire una persona a caso tra tutte quelle  nel database
         if follow_unfollow == "1":
+
+            print("Username: " + username + " deve mandare richieste di follow")
 
             #Ottengo il numero totale di persone che sono nella tabella degli utenti da seguire
             count_user_to_follow = getCountUsersToFollow()
@@ -92,15 +117,22 @@ while True:
             updateUserFollowed(users_followed_string,username)
 
         else:
+            print("Username: " + username + " deve mandare richieste di unfollow")
 
 
-#TODO DA FARE!!
             # Devo fare richieste di UNFOLLOW
             username_to_unfollow = users_followed_array[0]
             id_to_unfollow = getIDFromUsername(username_to_unfollow)
-            unfollow(id_to_unfollow,username_to_unfollow,cookies_str,cookies_dict['csrftoken'])
+            if username_to_unfollow != "":
+                unfollow(id_to_unfollow,username_to_unfollow,cookies_str,cookies_dict['csrftoken'])
             users_followed_array.remove(users_followed_array[0])
-            users_followed_string = ''.join(item for item in users_followed_array)
+            users_followed_string = ''.join(item + ";" for item in users_followed_array)
+            users_followed_split = users_followed_string.split(";")
+            final_string = ''
+            for user in users_followed_split:
+                if len(user) > 2:
+                    final_string += user + ";"
+            final_string = final_string[:-1]
             updateUserFollowed(users_followed_string,username)
 
 
