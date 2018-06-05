@@ -6,7 +6,6 @@ import time
 #Funzione da non chiamare dal main, permette di andare a prendere la pagina instagram collegata al nome passato come parametro
 #e prende l'id della persona
 def getPage(nome):
-    nome = nome[:-1]
 
     headers = {
         'authority': 'www.instagram.com',
