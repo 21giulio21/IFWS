@@ -27,6 +27,10 @@ delta_t = 150 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 
 max_requests = 300
 
 while True:
+
+    print("Attendo DT")
+    printFile("Attendo DT")
+
     time.sleep(delta_t)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")

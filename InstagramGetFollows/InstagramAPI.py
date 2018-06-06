@@ -50,7 +50,6 @@ def richiestaLike(username, cookies, csrf):
         'content-length': '0',
     }
 
-    print('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/')
     response = requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers)
 
 
@@ -89,7 +88,7 @@ def unfollow(id,username, cookies, csrf):
     }
 
     response = requests.post('https://www.instagram.com/web/friendships/'+id+'/unfollow/', headers=headers)
-    print("UNFOLLOW" + username + response.content)
+    print("UNFOLLOW " + username + response.content)
 
 
 def login(username,password):
