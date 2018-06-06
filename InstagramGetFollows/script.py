@@ -21,8 +21,8 @@ import re
 
 
 
-delta_t = 100 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
-max_requests = 300
+delta_t = 1 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
+max_requests = 10
 
 while True:
     time.sleep(delta_t)
@@ -30,7 +30,7 @@ while True:
 
     #Chiedo quanti utenti ho nel database
     count = countUserIntoDatabase()
-    print("Ho un totale di " + str(count) + " utenti")
+    print("Ho un totale di " + str(count) + " utenti che devo gestire per mandare le richieste")
 
     #Ora ciclo sul totale di persone che ho nel database
     for index in range(0,int(count)): #Deve partire da 0
@@ -46,7 +46,15 @@ while True:
         users_followed_array = re.split(';', user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")])
         users_followed_string =  user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")]
         password_instagram = user[user.find("u'PASSWORD_INSTAGRAM': u'") + len("u'PASSWORD_INSTAGRAM': u'"):user.find("', u'USERS_FOLLOWED'")]
+        script_attivo = user[user.find("u'SCRIPT_ACTIVE': u'")+len("u'SCRIPT_ACTIVE': u'"):user.find("', u'PASSWORD_SITE'")]
+
         print("Processo l'utente: " + username)
+
+        #Se script_attivo e' 0 allora non devo fare nulla per quel user e passo allo user successivo
+        if script_attivo == "0":
+            print("L'utente: " + username + " ha script_attivo = 0 quindi non lo devo processare")
+            continue
+
         #Controllo che siano settati i cookie dell'utente altrimenti li chiedo a instagram
         #facendo il login
         if len(cookie) == 0:
