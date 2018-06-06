@@ -1,9 +1,6 @@
 import base64
 import requests
-import re
-import time
 import json
-import random
 
 
 #fedez: 46071423
@@ -53,7 +50,7 @@ def richiestaLike(username, cookies, csrf):
     response = requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers)
 
 
-def follow(id,username, cookies, csrf):
+def follow(id, username, cookies, csrf):
 
 	headers = {
     'cookie' : cookies,
@@ -67,7 +64,9 @@ def follow(id,username, cookies, csrf):
 	}
 
 	response = requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
-	print("FOLLOW" + username + response.content)
+	return "FOLLOW " + username + response.content
+
+
 
 def unfollow(id,username, cookies, csrf):
 
@@ -88,7 +87,7 @@ def unfollow(id,username, cookies, csrf):
     }
 
     response = requests.post('https://www.instagram.com/web/friendships/'+id+'/unfollow/', headers=headers)
-    print("UNFOLLOW " + username + response.content)
+    return "UNFOLLOW " + username + response.content
 
 
 def login(username,password):
@@ -187,8 +186,7 @@ def getIDFromUsername(username):
     id = unicode(str(inizio_id[:inizio_id.find("\"")]), 'utf-8')
     return id
 
-if __name__ == "__main__":
-	follow('','')
+
 
 
 

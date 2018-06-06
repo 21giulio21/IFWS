@@ -1,0 +1,109 @@
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 2 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database
+Processo l'utente: viktoria_crt non segue ancora nessuno, deve iniziare a seguire gente
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 3 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
