@@ -21,11 +21,11 @@ import re
 
 
 
-delta_t = 290 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
+delta_t = 100 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
 max_requests = 300
 
 while True:
-    #time.sllep(delta_t)
+    time.sleep(delta_t)
     print("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
@@ -45,13 +45,12 @@ while True:
         follow_unfollow = user[user.find("u'FOLLOW_UNFOLLOW': u'")+len("u'FOLLOW_UNFOLLOW': u'"):user.find("'}]")]
         users_followed_array = re.split(';', user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")])
         users_followed_string =  user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")]
-
+        password_instagram = user[user.find("u'PASSWORD_INSTAGRAM': u'") + len("u'PASSWORD_INSTAGRAM': u'"):user.find("', u'USERS_FOLLOWED'")]
+        print("Processo l'utente: " + username)
         #Controllo che siano settati i cookie dell'utente altrimenti li chiedo a instagram
         #facendo il login
         if len(cookie) == 0:
-            username = "ginotani82324"
-            password = "21giulio21"
-            r = login(username, password)
+            r = login(username, password_instagram)
             cookies_dict = r.cookies.get_dict()
 
             #Salvo la variabile cookies_dict sul server
@@ -64,7 +63,7 @@ while True:
 
         if len(id) == 0:
 
-            print("Username: " + username + " non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database")
+            print("Processo l'utente: " + username + " non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database")
             id = getIDFromUsername(username)
             saveIdIntoDatabase(username, id)
 
@@ -72,19 +71,16 @@ while True:
         if len(users_followed_array) == 1:
             #Devo iniziare a seguire
 
-            print("Username: " + username + " non segue ancora nessuno, deve iniziare a seguire gente")
+            print("Processo l'utente: " + username + " non segue ancora nessuno, deve iniziare a seguire gente")
 
 
             follow_unfollow = str('1')
             updateFollowUnfollowDatabase(username, str(follow_unfollow))
 
-
-        print(follow_unfollow)
-
         #controllo che sono al massimo di persone che posso seguire al giorno
-        if len(users_followed_array) > 10: #max_requests:
+        if len(users_followed_array) > max_requests: #max_requests:
 
-            print("Username: " + username + " segue gia il numero massimo di user giornalieri, ora bisogna iniziare a fare unfollow")
+            print("Processo l'utente: " + username + " segue gia il numero massimo di user giornalieri, ora bisogna iniziare a fare unfollow")
 
 
             #Se sono al numero di persone massime imposto users_followed a 0
@@ -98,7 +94,7 @@ while True:
         #Se follow_unfollow e' 1 allora devo seguire una persona a caso tra tutte quelle  nel database
         if follow_unfollow == "1":
 
-            print("Username: " + username + " deve mandare richieste di follow")
+            print("Processo l'utente: " + username + " deve mandare richieste di follow")
 
             #Ottengo il numero totale di persone che sono nella tabella degli utenti da seguire
             count_user_to_follow = getCountUsersToFollow()
@@ -113,27 +109,50 @@ while True:
             follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
 
             #Devo aggiundere l'utente alla stringa totale delle persone seguite
-            users_followed_string = users_followed_string + ";" + username_user_to_follow
+            if users_followed_string == "":
+                users_followed_string =  username_user_to_follow + ";"
+
+            else:
+                users_followed_string = users_followed_string +username_user_to_follow + ";"
             updateUserFollowed(users_followed_string,username)
 
         else:
-            print("Username: " + username + " deve mandare richieste di unfollow")
+            print("Processo l'utente: " + username + " deve mandare richieste di unfollow")
+
+            #Faccio in modo che la stringa contenente tutti gli user che seguo che e' sul mio database sia
+            #ben fatta, in particolare che non ci siano situazioni in cui ho user;user;user;
+            #in questo caso andrebbe tolto l'ultimo ;
+            users_followed_array_temp = users_followed_array
+            for i in users_followed_array_temp:
+                if i == "":
+                    users_followed_array.remove(i)
+
+            #elimino il primo user che ho seguito
+            username_user_to_unfollow = users_followed_array.pop(0)
+
+            #Costruisco nuovamente la stringa da mandare al mio server
+            for i in range(0,len(users_followed_array)):
+                if i == 0:
+                    users_followed_string = users_followed_array[i] + ";"
+                elif i == len(users_followed_array)-1:
+                    users_followed_string = users_followed_string + users_followed_array[i]
+                else:
+                    users_followed_string = users_followed_string + users_followed_array[i] + ";"
+
+            if len(users_followed_array) == 0:
+                users_followed_string = ""
+                id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
+                unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
+                updateUserFollowed(users_followed_string, username)
+            else:
+
+                #Mando la richiesta di unfollow
+                print("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
+                id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
+                unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken'])
+                updateUserFollowed(users_followed_string,username)
 
 
-            # Devo fare richieste di UNFOLLOW
-            username_to_unfollow = users_followed_array[0]
-            id_to_unfollow = getIDFromUsername(username_to_unfollow)
-            if username_to_unfollow != "":
-                unfollow(id_to_unfollow,username_to_unfollow,cookies_str,cookies_dict['csrftoken'])
-            users_followed_array.remove(users_followed_array[0])
-            users_followed_string = ''.join(item + ";" for item in users_followed_array)
-            users_followed_split = users_followed_string.split(";")
-            final_string = ''
-            for user in users_followed_split:
-                if len(user) > 2:
-                    final_string += user + ";"
-            final_string = final_string[:-1]
-            updateUserFollowed(users_followed_string,username)
 
 
 
