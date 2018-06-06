@@ -1,6 +1,7 @@
 import base64
 import time
 import ast
+from LogFile import printFile
 from InstagramAPI import updateFollowUnfollowDatabase
 from InstagramAPI import updateUserFollowed
 from InstagramAPI import saveIdIntoDatabase
@@ -13,6 +14,7 @@ from InstagramAPI import countUserIntoDatabase
 from InstagramAPI import selectUserFromDatabase
 from InstagramAPI import getIDFromUsername
 from InstagramAPI import getCountUsersToFollow
+from InstagramAPI import richiestaLike
 from random import randint
 
 import re
@@ -21,19 +23,24 @@ import re
 
 
 
-delta_t = 1 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
-max_requests = 10
+delta_t = 150 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
+max_requests = 300
 
 while True:
     time.sleep(delta_t)
     print("Tempo DT passato, inizio lo script.")
+    printFile("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
     count = countUserIntoDatabase()
     print("Ho un totale di " + str(count) + " utenti che devo gestire per mandare le richieste")
+    printFile("Ho un totale di " + str(count) + " utenti che devo gestire per mandare le richieste")
+
 
     #Ora ciclo sul totale di persone che ho nel database
     for index in range(0,int(count)): #Deve partire da 0
+
+        time.sleep(10) #Tempo da attendere per ogni utente che viene provessato
 
         #Seleziono la tupla relativa all'utente
         user = str(selectUserFromDatabase(index))
@@ -49,10 +56,12 @@ while True:
         script_attivo = user[user.find("u'SCRIPT_ACTIVE': u'")+len("u'SCRIPT_ACTIVE': u'"):user.find("', u'PASSWORD_SITE'")]
 
         print("Processo l'utente: " + username)
+        printFile("Processo l'utente: " + username)
 
         #Se script_attivo e' 0 allora non devo fare nulla per quel user e passo allo user successivo
         if script_attivo == "0":
             print("L'utente: " + username + " ha script_attivo = 0 quindi non lo devo processare")
+            printFile("L'utente: " + username + " ha script_attivo = 0 quindi non lo devo processare")
             continue
 
         #Controllo che siano settati i cookie dell'utente altrimenti li chiedo a instagram
@@ -72,6 +81,8 @@ while True:
         if len(id) == 0:
 
             print("Processo l'utente: " + username + " non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database")
+            printFile("Processo l'utente: " + username + " non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database")
+
             id = getIDFromUsername(username)
             saveIdIntoDatabase(username, id)
 
@@ -80,6 +91,7 @@ while True:
             #Devo iniziare a seguire
 
             print("Processo l'utente: " + username + " non segue ancora nessuno, deve iniziare a seguire gente")
+            printFile("Processo l'utente: " + username + " non segue ancora nessuno, deve iniziare a seguire gente")
 
 
             follow_unfollow = str('1')
@@ -89,7 +101,7 @@ while True:
         if len(users_followed_array) > max_requests: #max_requests:
 
             print("Processo l'utente: " + username + " segue gia il numero massimo di user giornalieri, ora bisogna iniziare a fare unfollow")
-
+            printFile("Processo l'utente: " + username + " segue gia il numero massimo di user giornalieri, ora bisogna iniziare a fare unfollow")
 
             #Se sono al numero di persone massime imposto users_followed a 0
             # In questo modo inizio a fare richieste di unfollow
@@ -103,6 +115,7 @@ while True:
         if follow_unfollow == "1":
 
             print("Processo l'utente: " + username + " deve mandare richieste di follow")
+            printFile("Processo l'utente: " + username + " deve mandare richieste di follow")
 
             #Ottengo il numero totale di persone che sono nella tabella degli utenti da seguire
             count_user_to_follow = getCountUsersToFollow()
@@ -113,8 +126,12 @@ while True:
             username_user_to_follow = user_to_follow[user_to_follow.find("u'USERNAME': u'") + len("u'USERNAME': u'"): user_to_follow.find("', u'ID':")]
             id_user_to_follow = user_to_follow[user_to_follow.find("', u'ID': u'") + len("', u'ID': u'"): user_to_follow.find("'}")]
 
-            #Seguo la persona che ho scaricato
+            #Seguo la persona che ho scaricato e gli metto un like alla prima foto
             follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
+
+            #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
+            #se il profilo e' publico funziona bene
+            richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
 
             #Devo aggiundere l'utente alla stringa totale delle persone seguite
             if users_followed_string == "":
@@ -126,6 +143,7 @@ while True:
 
         else:
             print("Processo l'utente: " + username + " deve mandare richieste di unfollow")
+            printFile("Processo l'utente: " + username + " deve mandare richieste di unfollow")
 
             #Faccio in modo che la stringa contenente tutti gli user che seguo che e' sul mio database sia
             #ben fatta, in particolare che non ci siano situazioni in cui ho user;user;user;
@@ -156,6 +174,8 @@ while True:
 
                 #Mando la richiesta di unfollow
                 print("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
+                printFile("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
+
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken'])
                 updateUserFollowed(users_followed_string,username)

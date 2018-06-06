@@ -11,6 +11,49 @@ import random
 
 url_get_all_user = "http://getfollowersoninstagram.altervista.org/getAllUser.php"
 
+
+def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
+
+    headers = {
+        'authority': 'www.instagram.com',
+        'cache-control': 'max-age=0',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.139 Chrome/66.0.3359.139 Safari/537.36',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'cookie': cookies,
+    }
+
+    response = str(requests.get('https://www.instagram.com/' + username + "/", headers=headers).content)
+    posizione__typename = response.find("GraphImage")
+    stringa = response[posizione__typename + len("GraphImage") + 8  : posizione__typename + 100]
+    posizione_id_foto = stringa.find("\"")
+
+    return stringa[:posizione_id_foto]
+
+def richiestaLike(username, cookies, csrf):
+
+    headers = {
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.139 Chrome/66.0.3359.139 Safari/537.36',
+        'cookie': cookies,
+        'x-csrftoken': csrf,
+        'x-instagram-ajax': 'd2dfd728ae44',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'referer': 'https://www.instagram.com/p/BjIEnJAgwYS/?taken-by=' + username,
+        'authority': 'www.instagram.com',
+        'content-length': '0',
+    }
+
+    print('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/')
+    response = requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers)
+
+
 def follow(id,username, cookies, csrf):
 
 	headers = {
