@@ -11,10 +11,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="script.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="158">
               <caret line="174" column="118" selection-start-line="174" selection-start-column="118" selection-end-line="174" selection-end-column="118" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
+            <state relative-caret-position="15">
               <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetUsersToFollowFromUsernamePassword.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GetUsersToFollowFromUsernamePassword.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" selection-start-line="14" selection-end-line="29" selection-end-column="63" />
+            <state relative-caret-position="330">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -68,7 +68,7 @@
       <file leaf-file-name="OttengoIdUsernameDaFIle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="109">
               <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
@@ -80,7 +80,7 @@
       <file leaf-file-name="Login.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="303">
               <caret line="24" column="84" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="87" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -152,12 +152,12 @@
         <option value="$PROJECT_DIR$/FollowersList.py" />
         <option value="$PROJECT_DIR$/Like.py" />
         <option value="$PROJECT_DIR$/AccountCreation.py" />
-        <option value="$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py" />
         <option value="$PROJECT_DIR$/OttengoIdUsernameDaFIle.py" />
         <option value="$PROJECT_DIR$/Login.py" />
         <option value="$PROJECT_DIR$/LogFile.py" />
         <option value="$PROJECT_DIR$/InstagramAPI.py" />
         <option value="$PROJECT_DIR$/script.py" />
+        <option value="$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py" />
       </list>
     </option>
   </component>
@@ -172,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,7 +184,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.script">
+  <component name="RunManager" selected="Python.FollowersList">
     <configuration name="AccountCreation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,9 +307,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.FollowersList" />
         <item itemvalue="Python.script" />
         <item itemvalue="Python.AccountCreation" />
-        <item itemvalue="Python.FollowersList" />
         <item itemvalue="Python.Login" />
         <item itemvalue="Python.OttengoIdUsernameDaFIle" />
       </list>
@@ -329,15 +329,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1360" height="710" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1360" height="710" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16323529" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16323529" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.20598006" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.20598006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -470,36 +469,6 @@
     <entry file="file://$PROJECT_DIR$/instagram_fisso_mio.txt" />
     <entry file="file://$PROJECT_DIR$/Click.py" />
     <entry file="file://$PROJECT_DIR$/AccountCreation.py" />
-    <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="29" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#1#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Like.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -514,9 +483,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="174" column="118" selection-start-line="174" selection-start-column="118" selection-end-line="174" selection-end-column="118" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="24" column="84" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
+        <state relative-caret-position="15">
           <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -524,12 +523,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.py">
+    <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="174" column="118" selection-start-line="174" selection-start-column="118" selection-end-line="174" selection-end-column="118" />
+        <state relative-caret-position="330">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
