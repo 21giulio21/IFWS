@@ -67,7 +67,6 @@ def follow(id, username, cookies, csrf):
 	return "FOLLOW " + username + response.content
 
 
-
 def unfollow(id,username, cookies, csrf):
 
     headers = {

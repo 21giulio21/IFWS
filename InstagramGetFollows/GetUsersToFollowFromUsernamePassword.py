@@ -51,7 +51,7 @@ def findUsername(content_originale):
 
 headers = {
     'pragma': 'no-cache',
-    'cookie': 'csrftoken=M9hDLKHUHgxBSnmnu4DbTzNbQmH4yOW4; rur=FRC; mid=WxknwgAEAAGl82aft9P3SbdxtGr_; ds_user_id=7914483784; sessionid=IGSC5d2324a5fd49edcfdc098f4e896a94e9405a83e66e0ab80fad97220febea196d%3AR6ZsN489PUmch6Xrq68uX4mPnRKuPJKZ%3A%7B%22_auth_user_id%22%3A7914483784%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227914483784%3Akul866H9wytMPLXCHLmjsntAJOURCLlO%3A11e23f566bd991a76a72c92e6546b1f505979d1843aad7b9b9bd203059314fb3%22%2C%22last_refreshed%22%3A1528375234.6884109974%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1528375235\\054 \\"193.55.113.196\\": 2200}:1fQuDu:2yGAvvVvMEhmR4r-i82MkFRiACE"',
+    'cookie': 'csrftoken=M9hDLKHUHgxBSnmnu4DbTzNbQmH4yOW4; mid=WxknwgAEAAGl82aft9P3SbdxtGr_; ds_user_id=7914483784; sessionid=IGSC5d2324a5fd49edcfdc098f4e896a94e9405a83e66e0ab80fad97220febea196d%3AR6ZsN489PUmch6Xrq68uX4mPnRKuPJKZ%3A%7B%22_auth_user_id%22%3A7914483784%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227914483784%3Akul866H9wytMPLXCHLmjsntAJOURCLlO%3A11e23f566bd991a76a72c92e6546b1f505979d1843aad7b9b9bd203059314fb3%22%2C%22last_refreshed%22%3A1528375234.6884109974%7D; ig_cb=1; mcd=3; rur=ATN; urlgen="{\\"time\\": 1528375235\\054 \\"193.55.113.196\\": 2200}:1fRFrh:z2LPAzP6FiZoFS8mZO3grnUDQsU"',
     'accept-encoding': 'gzip, deflate, br',
     'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
@@ -59,14 +59,17 @@ headers = {
     'cache-control': 'no-cache',
     'authority': 'www.instagram.com',
     'x-requested-with': 'XMLHttpRequest',
-    'x-instagram-gis': 'fcaa4e4dddf2e10d66fe8bcd1f4a5273',
-    'referer': 'https://www.instagram.com/ssavinow/followers/',
+    'x-instagram-gis': '160871e0e470327fa2efcf4366a48bc6',
+    'referer': 'https://www.instagram.com/instagram/followers/',
 }
 
 params = (
     ('query_hash', '37479f2b8209594dde7facb0d904896a'),
-    ('variables', '{"id":"1077103383","first":50}'),
+    ('variables', '{"id":"25025320","first":24}'),
 )
+
+response = requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params)
+
 
 
     #Cerco tutti gli account
@@ -77,7 +80,7 @@ content_originale = str(requests.get('https://www.instagram.com/graphql/query/',
 for i in range(1,100000):
     headers = {
         'pragma': 'no-cache',
-        'cookie': 'csrftoken=M9hDLKHUHgxBSnmnu4DbTzNbQmH4yOW4; rur=FRC; mid=WxknwgAEAAGl82aft9P3SbdxtGr_; ds_user_id=7914483784; sessionid=IGSC5d2324a5fd49edcfdc098f4e896a94e9405a83e66e0ab80fad97220febea196d%3AR6ZsN489PUmch6Xrq68uX4mPnRKuPJKZ%3A%7B%22_auth_user_id%22%3A7914483784%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227914483784%3Akul866H9wytMPLXCHLmjsntAJOURCLlO%3A11e23f566bd991a76a72c92e6546b1f505979d1843aad7b9b9bd203059314fb3%22%2C%22last_refreshed%22%3A1528375234.6884109974%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1528375235\\054 \\"193.55.113.196\\": 2200}:1fQuDy:wdO1DmCJEdFgEI3LjOZFRU4JJno"',
+        'cookie': 'csrftoken=M9hDLKHUHgxBSnmnu4DbTzNbQmH4yOW4; mid=WxknwgAEAAGl82aft9P3SbdxtGr_; ds_user_id=7914483784; sessionid=IGSC5d2324a5fd49edcfdc098f4e896a94e9405a83e66e0ab80fad97220febea196d%3AR6ZsN489PUmch6Xrq68uX4mPnRKuPJKZ%3A%7B%22_auth_user_id%22%3A7914483784%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%227914483784%3Akul866H9wytMPLXCHLmjsntAJOURCLlO%3A11e23f566bd991a76a72c92e6546b1f505979d1843aad7b9b9bd203059314fb3%22%2C%22last_refreshed%22%3A1528375234.6884109974%7D; ig_cb=1; mcd=3; rur=ATN; urlgen="{\\"time\\": 1528375235\\054 \\"193.55.113.196\\": 2200}:1fRFs6:tlQh7cu6gD_ix1PU_hQK5H6_o5A"',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
@@ -85,14 +88,15 @@ for i in range(1,100000):
         'cache-control': 'no-cache',
         'authority': 'www.instagram.com',
         'x-requested-with': 'XMLHttpRequest',
-        'x-instagram-gis': 'b267d4e2d75162fbf6d469bb21fe30bc',
-        'referer': 'https://www.instagram.com/ssavinow/followers/',
+        'x-instagram-gis': 'b98925e607145afc74f947ba6a301127',
+        'referer': 'https://www.instagram.com/instagram/followers/',
     }
 
+ 
     params = (
         ('query_hash', '37479f2b8209594dde7facb0d904896a'),
         ('variables',
-         '{"id":"1077103383","first":50,"after":"' + findUsername(content_originale) + '"}'),
+         '{"id":"25025320","first":50,"after":"' + findUsername(content_originale) + '"}'),
     )
 
     response = requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params)
