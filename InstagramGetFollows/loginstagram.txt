@@ -5293,3 +5293,495 @@ Ho un totale di 8 utenti che devo gestire per mandare le richieste
 Processo l'utente: ginotani82324
 L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
 Processo l'utente: giulio_tavella
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow daniel_4054
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW gianmarco_pignata{"result": "requested", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW farzin857{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW chrisrtm100{"result": "requested", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow bitchlikestoshop
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW teo_cesc_dorre{"result": "requested", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow keepfashion1492
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW plaga_mundialtigers{"result": "requested", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW kamelya9530{"result": "requested", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW hasanbashoroh{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow ditamcs
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW liliasyrine2018{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow denilson_678
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW dipjyoti_bora{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW seif_cilabre{"result": "requested", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW margheritadonghi{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow swagcewindu
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW shamrumours{"result": "requested", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow bqlq_dinq
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW hggfcghyyyyy{"result": "requested", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW gopa9691{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW kenthecommanderinchief{"result": "requested", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow yunitalim12
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW issaba6738{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow chulazmayariz
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW lucabolis1{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW carmen_anaya_g{"result": "requested", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW _clement_hls_{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow __nadiafilipa__
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW tobiabacchini{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow nemethadam_39
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW chechenes11{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW bryan_choeun{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW g00dfree{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow fmdaaan
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW pa.nkaj1676{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow ste_maio_03
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW ilmanualedelpalestrato{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW pratapsinghtomarabhay{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW krasnov1337{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow benanertiftk
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW onur_verdi{"result": "requested", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow vasily_pupkin061
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW er_trifo_333{"result": "requested", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW therealgiopro{"result": "requested", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW wajdinaimi11{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow officialbishop_banks
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW hell_rell__{"result": "requested", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow adamdns
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW chacha_cskerz2{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW jurgenhabilaj__{"result": "requested", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW carlotta.ca{"result": "requested", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow edoardozanisi
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW alghamdi050{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow liuk_l.s
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW a_proud_christ_follower{"result": "requested", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW ookwankhokwan{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW scottchesney1{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow charlyfox.shoes
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW anjaky86{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow _peps05
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW hlniferiany{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW crash_sultan{"result": "requested", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW naxo_florex{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+UNFOLLOW mrs.mei01{"status": "ok"}
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW sonebab{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow gionnyjonny
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW ben_symons1{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow theflipfloptales
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW ilaria.latinakis{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW prince_kraar{"result": "requested", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW samerzizo103{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official non segue ancora nessuno, deve iniziare a seguire gente
+Processo l'utente: instatrack_official deve mandare richieste di follow
+FOLLOW luca_morabito01<html>
+<head>
+<title>5xx Server Error</title>
+</head>
+
+<body>
+<h1>5xx Server Error</h1>
+</body>
+
+</html>
+
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW naitsirhc.c<html>
+<head>
+<title>5xx Server Error</title>
+</head>
+
+<body>
+<h1>5xx Server Error</h1>
+</body>
+
+</html>
+
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow supercars_spotss
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW zdname4180{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW woli_miracle{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW omoloyeadeleke{"result": "following", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di follow
+FOLLOW shuwri{"result": "following", "status": "ok"}
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW rfael_danillo{"result": "requested", "status": "ok"}
+Attendo DT
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow peppeanversa
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW singapore.ireland{"result": "requested", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW anastasia_kurdina{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW xhorxhi.95{"status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di follow
+FOLLOW iam_jarvishoward{"result": "requested", "status": "ok"}
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW agnesioana960203{"result": "requested", "status": "ok"}
+Attendo DT
+Attendo DT
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di unfollow
+Processo l'utente: giulio_tavella username_user_to_unfollow pecomarco
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: gctrains deve mandare richieste di follow
+FOLLOW ybs.jersey{"result": "following", "status": "ok"}

@@ -25,6 +25,9 @@ import re
 #dopo 300 richieste di follow ne faccio 300 di unfollo e cosi via
 max_requests = 300
 
+#numero di richieste dopo il quale si decrementa il DT
+number_requests_update_delta_t = 1000
+
 
 
 
@@ -33,18 +36,18 @@ while True:
     print("Attendo DT")
     printFile("Attendo DT")
 
-    #time.sleep(delta_t)
+    time.sleep(90)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
-    countUserIntoDatabase = countUserIntoDatabase()
-    print("Ho un totale di " + str(countUserIntoDatabase) + " utenti che devo gestire per mandare le richieste")
-    printFile("Ho un totale di " + str(countUserIntoDatabase) + " utenti che devo gestire per mandare le richieste")
+    numberUsersIntoDatabase = countUserIntoDatabase()
+    print("Ho un totale di " + str(numberUsersIntoDatabase) + " utenti che devo gestire per mandare le richieste")
+    printFile("Ho un totale di " + str(numberUsersIntoDatabase) + " utenti che devo gestire per mandare le richieste")
 
 
     #Ora ciclo sul totale di persone che ho nel database
-    for index in range(0, int(countUserIntoDatabase)): #Deve partire da 0
+    for index in range(0, int(numberUsersIntoDatabase)): #Deve partire da 0
 
         #Seleziono la tupla relativa all'utente
         user = selectUserFromDatabase(index)
@@ -140,13 +143,13 @@ while True:
         #Mando al server il nuovo valore di number_requests_done
         updateNumberRequestsDone(username,str(number_requests_done))
 
-        #numero di richieste che si devono fare prima di diminuire il DT: 100 per ogni utente
-        if int(number_requests_done) == 100:
+        #numero di richieste che si devono fare prima di diminuire il DT: 1000 per ogni utente
+        if int(number_requests_done) > number_requests_update_delta_t:
             #Entro qui dentro dopo 100 richieste per ogni utente fatte
             #In questo modo diminuisco DT per quell'utente perche ne ho gia fatte 100
             delta_t = int(delta_t) - 1
             updateDeltaT(username,str(delta_t))
-            print("Aggiorno Delta T per l'utente " + username + " perche e arrivato a 100 richieste mandate")
+            print("Aggiorno Delta T per l'utente " + username + " perche e arrivato a "+number_requests_update_delta_t+" richieste mandate")
 
             #aggiorno a 0 il numero di richieste mandate perche ho gia diminuito delta t
             updateNumberRequestsDone(username, str(0))
