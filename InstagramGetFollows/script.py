@@ -131,7 +131,9 @@ while True:
             id_user_to_follow = user_to_follow[user_to_follow.find("', u'ID': u'") + len("', u'ID': u'"): user_to_follow.find("'}")]
 
             #Seguo la persona che ho scaricato e gli metto un like alla prima foto
-            printFile(follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken']))
+            content_follow = follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
+            printFile(content_follow)
+            print(content_follow)
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             #se il profilo e' publico funziona bene
