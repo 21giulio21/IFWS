@@ -21,8 +21,6 @@ import re
 
 
 
-
-
 delta_t = 100 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
 max_requests = 300
 
@@ -52,12 +50,13 @@ while True:
         #Prendo id della persona, se nullo lo chiedo a instagram
         id = str(user[user.find(", u'ID': u'")+len(", u'ID': u'"):user.find("', u'FOLLOW_UNFOLLOW'")])
         username = str(user[user.find("u'USERNAME': u'")+len("u'USERNAME': u'"):user.find("', u'COOKIES'")])
-        cookie = user[user.find("u'COOKIES': u'")+len("u'COOKIES': u'"):user.find("', u'PASSWORD_INSTAGRAM'")]
+        cookie = user[user.find("u'COOKIES': u'")+len("u'COOKIES': u'"):user.find("', u'SECONDI_ULTIMA_RICHIESTA'")]
         follow_unfollow = user[user.find("u'FOLLOW_UNFOLLOW': u'")+len("u'FOLLOW_UNFOLLOW': u'"):user.find("'}]")]
         users_followed_array = re.split(';', user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")])
         users_followed_string =  user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")]
         password_instagram = user[user.find("u'PASSWORD_INSTAGRAM': u'") + len("u'PASSWORD_INSTAGRAM': u'"):user.find("', u'USERS_FOLLOWED'")]
         script_attivo = user[user.find("u'SCRIPT_ACTIVE': u'")+len("u'SCRIPT_ACTIVE': u'"):user.find("', u'PASSWORD_SITE'")]
+
 
         print("Processo l'utente: " + username)
         printFile("Processo l'utente: " + username)

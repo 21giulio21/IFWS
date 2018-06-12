@@ -1,6 +1,3 @@
-
-
-
 import base64
 import time
 import ast
@@ -34,7 +31,7 @@ while True:
     print("Attendo DT")
     printFile("Attendo DT")
 
-    #time.sleep(delta_t)
+    time.sleep(delta_t)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")
 
@@ -61,9 +58,6 @@ while True:
         users_followed_string =  user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")]
         password_instagram = user[user.find("u'PASSWORD_INSTAGRAM': u'") + len("u'PASSWORD_INSTAGRAM': u'"):user.find("', u'USERS_FOLLOWED'")]
         script_attivo = user[user.find("u'SCRIPT_ACTIVE': u'")+len("u'SCRIPT_ACTIVE': u'"):user.find("', u'PASSWORD_SITE'")]
-        delta_t = user
-        print(delta_t)
-
 
         print("Processo l'utente: " + username)
         printFile("Processo l'utente: " + username)
@@ -138,9 +132,6 @@ while True:
 
             #Seguo la persona che ho scaricato e gli metto un like alla prima foto
             content_follow = follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
-           #TODO>>> if content_follow.__contains__("Please wait a few minutes before you try again"):
-
-
             printFile(content_follow)
             print(content_follow)
 
