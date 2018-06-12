@@ -2,7 +2,7 @@ import base64
 import time
 import ast
 from LogFile import printFile
-from InstagramAPI import update_secondi_ultima_richiesta
+from InstagramAPI import update_secondi_ultima_richiesta, updateTempoBlocco
 from InstagramAPI import updateFollowUnfollowDatabase
 from InstagramAPI import updateUserFollowed
 from InstagramAPI import saveIdIntoDatabase
@@ -36,7 +36,7 @@ while True:
     print("Attendo DT")
     printFile("Attendo DT")
 
-    time.sleep(90)
+    #time.sleep(90)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")
 
@@ -62,6 +62,7 @@ while True:
         users_followed_array = re.split(';', users_followed_string)
         password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
         script_attivo = str(user[0]['SCRIPT_ACTIVE'])
+        tempo_attesa_blocco = str(user[0]['TEMPO_ATTESA_BLOCCO'])
 
         # questa variabile indica le richieste fatte fino ad ora,
         # in particolare dopo 100 richieste diminuisco di 1 secondo DT relativo
@@ -83,6 +84,10 @@ while True:
         #Controllo che secondi_ultima_richiesta + delta_t sia maggiore di ora, se lo e' allora devo processare
         #altrimenti non devo processare
         tempo_ora = int(time.time())
+
+        if int(secondi_ultima_richiesta) + int(tempo_attesa_blocco) > tempo_ora:
+            print("Username " + username + " ancora in blocco")
+            continue
 
         if int(secondi_ultima_richiesta) + int(delta_t) > tempo_ora:
             print("L'utente " + username + " NON deve mandare richieste perche non e' ancora passato il suo DT")
@@ -178,7 +183,8 @@ while True:
             printFile(content_follow)
             print(content_follow)
 
-            #TODO  if content_follow.__contains__("Please wait a few minutes before you try again"):
+            if content_follow.__contains__("Please wait a few minutes before you try again"):
+                updateTempoBlocco(username,600)
 
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
@@ -223,7 +229,13 @@ while True:
             if len(users_followed_array) == 0:
                 users_followed_string = ""
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
-                printFile(unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken']))
+                content_unfollow = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
+                printFile(content_unfollow)
+                print(content_unfollow)
+
+                if content_unfollow.__contains__("Please wait a few minutes before you try again"):
+                    updateTempoBlocco(username, 600)
+
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
                 updateUserFollowed(users_followed_string, username)
@@ -234,7 +246,13 @@ while True:
                 printFile("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
 
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
-                unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken'])
+                content_unfollow = unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken'])
+
+                printFile(content_unfollow)
+                print(content_unfollow)
+
+                if content_unfollow.__contains__("Please wait a few minutes before you try again"):
+                    updateTempoBlocco(username, 600)
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))

@@ -5785,3 +5785,27 @@ L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
 Processo l'utente: gctrains
 Processo l'utente: gctrains deve mandare richieste di follow
 FOLLOW ybs.jersey{"result": "following", "status": "ok"}
+Attendo DT
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
