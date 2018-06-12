@@ -47,15 +47,40 @@ while True:
     #Ora ciclo sul totale di persone che ho nel database
     for index in range(0,int(count)): #Deve partire da 0
 
-        time.sleep(10) #Tempo da attendere per ogni utente che viene provessato
+        #time.sleep(10) #Tempo da attendere per ogni utente che viene provessato
 
         #Seleziono la tupla relativa all'utente
-        user = str(selectUserFromDatabase(index))
+        user = selectUserFromDatabase(index)
+
+        id = str(user[0]['ID'])
+        username = str(user[0]['USERNAME'])
+        cookie = str(user[0]['COOKIES'])
+        secondi_ultima_richiesta = str(user[0]['SECONDI_ULTIMA_RICHIESTA'])
+        delta_t = str(user[0]['DELTA_T'])
+        follow_unfollow = str(user[0]['FOLLOW_UNFOLLOW'])
+        users_followed_string = str(user[0]['USERS_FOLLOWED'])
+        users_followed_array = re.split(';', users_followed_string)
+        password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
+        script_attivo = str(user[0]['SCRIPT_ACTIVE'])
+        print("USERNAME " + username)
+        print("ID " + id)
+        print("cookie " + cookie)
+        print("secondiUlrichiesta " + secondi_ultima_richiesta)
+        print("delta_t " + delta_t)
+        print("follow_unfollow " + follow_unfollow)
+        print("script_attivo " + script_attivo)
+        print("password_instagram " + password_instagram)
+        print("users_followed_string " + users_followed_string)
+
+
+
+
+        '''
 
         #Prendo id della persona, se nullo lo chiedo a instagram
         id = str(user[user.find(", u'ID': u'")+len(", u'ID': u'"):user.find("', u'FOLLOW_UNFOLLOW'")])
         username = str(user[user.find("u'USERNAME': u'")+len("u'USERNAME': u'"):user.find("', u'COOKIES'")])
-        cookie = user[user.find("u'COOKIES': u'")+len("u'COOKIES': u'"):user.find("', u'PASSWORD_INSTAGRAM'")]
+        cookie = user[user.find("u'COOKIES': u'")+len("u'COOKIES': u'"):user.find("', u'SECONDI_ULTIMA_RICHIESTA'")]
         follow_unfollow = user[user.find("u'FOLLOW_UNFOLLOW': u'")+len("u'FOLLOW_UNFOLLOW': u'"):user.find("'}]")]
         users_followed_array = re.split(';', user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")])
         users_followed_string =  user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")]
@@ -195,7 +220,7 @@ while True:
                 unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken'])
                 updateUserFollowed(users_followed_string,username)
 
-
+        '''
 
 
 

@@ -29,7 +29,7 @@ while True:
     print("Attendo DT")
     printFile("Attendo DT")
 
-    time.sleep(delta_t)
+    #time.sleep(delta_t)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")
 
@@ -45,17 +45,19 @@ while True:
         time.sleep(10) #Tempo da attendere per ogni utente che viene provessato
 
         #Seleziono la tupla relativa all'utente
-        user = str(selectUserFromDatabase(index))
+        user = selectUserFromDatabase(index)
 
         #Prendo id della persona, se nullo lo chiedo a instagram
-        id = str(user[user.find(", u'ID': u'")+len(", u'ID': u'"):user.find("', u'FOLLOW_UNFOLLOW'")])
-        username = str(user[user.find("u'USERNAME': u'")+len("u'USERNAME': u'"):user.find("', u'COOKIES'")])
-        cookie = user[user.find("u'COOKIES': u'")+len("u'COOKIES': u'"):user.find("', u'SECONDI_ULTIMA_RICHIESTA'")]
-        follow_unfollow = user[user.find("u'FOLLOW_UNFOLLOW': u'")+len("u'FOLLOW_UNFOLLOW': u'"):user.find("'}]")]
-        users_followed_array = re.split(';', user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")])
-        users_followed_string =  user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")]
-        password_instagram = user[user.find("u'PASSWORD_INSTAGRAM': u'") + len("u'PASSWORD_INSTAGRAM': u'"):user.find("', u'USERS_FOLLOWED'")]
-        script_attivo = user[user.find("u'SCRIPT_ACTIVE': u'")+len("u'SCRIPT_ACTIVE': u'"):user.find("', u'PASSWORD_SITE'")]
+        id = str(user[0]['ID'])
+        username = str(user[0]['USERNAME'])
+        cookie = str(user[0]['COOKIES'])
+        secondi_ultima_richiesta = str(user[0]['SECONDI_ULTIMA_RICHIESTA'])
+        delta_t = str(user[0]['DELTA_T'])
+        follow_unfollow = str(user[0]['FOLLOW_UNFOLLOW'])
+        users_followed_string = str(user[0]['USERS_FOLLOWED'])
+        users_followed_array = re.split(';', users_followed_string)
+        password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
+        script_attivo = str(user[0]['SCRIPT_ACTIVE'])
 
 
         print("Processo l'utente: " + username)

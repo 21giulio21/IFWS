@@ -15,10 +15,19 @@
         <entry file="file://$PROJECT_DIR$/script.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
@@ -35,8 +44,8 @@
       <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="65" column="116" lean-forward="true" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
+            <state relative-caret-position="94">
+              <caret line="161" column="11" lean-forward="true" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -53,7 +62,7 @@
       <file leaf-file-name="GetUsersToFollowFromUsernamePassword.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
+            <state relative-caret-position="1440">
               <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -65,7 +74,7 @@
       <file leaf-file-name="OttengoIdUsernameDaFIle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="180">
               <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
@@ -97,8 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>__typename</find>
-      <find>1769740579740952024</find>
       <find>qchangg_83</find>
       <find>BiPYa5IDaXY</find>
       <find>richiestaLike</find>
@@ -127,6 +134,8 @@
       <find>FOLLOW</find>
       <find>mandare richieste di follow</find>
       <find>SCRIPT_ACTIVE</find>
+      <find>selectUserFromDatabase</find>
+      <find>passw</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -153,8 +162,8 @@
         <option value="$PROJECT_DIR$/Login.py" />
         <option value="$PROJECT_DIR$/LogFile.py" />
         <option value="$PROJECT_DIR$/InstagramAPI.py" />
-        <option value="$PROJECT_DIR$/script2.py" />
         <option value="$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py" />
+        <option value="$PROJECT_DIR$/script2.py" />
         <option value="$PROJECT_DIR$/script.py" />
       </list>
     </option>
@@ -306,8 +315,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.script" />
-        <item itemvalue="Python.FollowersList" />
         <item itemvalue="Python.script2" />
+        <item itemvalue="Python.FollowersList" />
         <item itemvalue="Python.AccountCreation" />
         <item itemvalue="Python.Login" />
       </list>
@@ -327,14 +336,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="710" extended-state="6" />
+    <frame x="0" y="25" width="1360" height="710" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16178624" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16176471" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.538206" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.46179402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -483,7 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script2.py" />
     <entry file="file://$PROJECT_DIR$/loginstagram.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -493,7 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
+        <state relative-caret-position="1440">
           <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -501,16 +509,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="65" column="116" lean-forward="true" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="180">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
@@ -518,10 +519,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="161" column="11" lean-forward="true" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
