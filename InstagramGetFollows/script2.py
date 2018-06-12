@@ -5,6 +5,7 @@ import base64
 import time
 import ast
 from LogFile import printFile
+from InstagramAPI import update_secondi_ultima_richiesta
 from InstagramAPI import updateFollowUnfollowDatabase
 from InstagramAPI import updateUserFollowed
 from InstagramAPI import saveIdIntoDatabase
@@ -22,11 +23,6 @@ from random import randint
 
 import re
 
-
-
-
-
-delta_t = 100 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
 max_requests = 300
 
 while True:
@@ -62,32 +58,6 @@ while True:
         users_followed_array = re.split(';', users_followed_string)
         password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
         script_attivo = str(user[0]['SCRIPT_ACTIVE'])
-        print("USERNAME " + username)
-        print("ID " + id)
-        print("cookie " + cookie)
-        print("secondiUlrichiesta " + secondi_ultima_richiesta)
-        print("delta_t " + delta_t)
-        print("follow_unfollow " + follow_unfollow)
-        print("script_attivo " + script_attivo)
-        print("password_instagram " + password_instagram)
-        print("users_followed_string " + users_followed_string)
-
-
-
-
-        '''
-
-        #Prendo id della persona, se nullo lo chiedo a instagram
-        id = str(user[user.find(", u'ID': u'")+len(", u'ID': u'"):user.find("', u'FOLLOW_UNFOLLOW'")])
-        username = str(user[user.find("u'USERNAME': u'")+len("u'USERNAME': u'"):user.find("', u'COOKIES'")])
-        cookie = user[user.find("u'COOKIES': u'")+len("u'COOKIES': u'"):user.find("', u'SECONDI_ULTIMA_RICHIESTA'")]
-        follow_unfollow = user[user.find("u'FOLLOW_UNFOLLOW': u'")+len("u'FOLLOW_UNFOLLOW': u'"):user.find("'}]")]
-        users_followed_array = re.split(';', user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")])
-        users_followed_string =  user[user.find("u'USERS_FOLLOWED': u'")+len("u'USERS_FOLLOWED': u'"):user.find("', u'SCRIPT_ACTIVE'")]
-        password_instagram = user[user.find("u'PASSWORD_INSTAGRAM': u'") + len("u'PASSWORD_INSTAGRAM': u'"):user.find("', u'USERS_FOLLOWED'")]
-        script_attivo = user[user.find("u'SCRIPT_ACTIVE': u'")+len("u'SCRIPT_ACTIVE': u'"):user.find("', u'PASSWORD_SITE'")]
-        delta_t = user
-        print(delta_t)
 
 
         print("Processo l'utente: " + username)
@@ -98,6 +68,16 @@ while True:
             print("L'utente: " + username + " ha script_attivo = 0 quindi non lo devo processare")
             printFile("L'utente: " + username + " ha script_attivo = 0 quindi non lo devo processare")
             continue
+
+        #Controllo che secondi_ultima_richiesta + delta_t sia maggiore di ora, se lo e' allora devo processare
+        #altrimenti non devo processare
+        tempo_ora = int(time.time())
+
+        if int(secondi_ultima_richiesta) + int(delta_t) > tempo_ora:
+            print("L'utente " + username + " NON deve mandare richieste perche non e' ancora passato il suo DT")
+            continue
+
+
 
         #Controllo che siano settati i cookie dell'utente altrimenti li chiedo a instagram
         #facendo il login
@@ -173,6 +153,9 @@ while True:
             #se il profilo e' publico funziona bene
             richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
 
+            #Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
+            update_secondi_ultima_richiesta(username, int(time.time()))
+
             #Devo aggiundere l'utente alla stringa totale delle persone seguite
             if users_followed_string == "":
                 users_followed_string =  username_user_to_follow + ";"
@@ -209,6 +192,8 @@ while True:
                 users_followed_string = ""
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 printFile(unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken']))
+                # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
+                update_secondi_ultima_richiesta(username, int(time.time()))
                 updateUserFollowed(users_followed_string, username)
             else:
 
@@ -218,9 +203,12 @@ while True:
 
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken'])
+
+                # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
+                update_secondi_ultima_richiesta(username, int(time.time()))
+
                 updateUserFollowed(users_followed_string,username)
 
-        '''
 
 
 

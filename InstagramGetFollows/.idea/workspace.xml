@@ -11,10 +11,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="script.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="15">
               <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -23,11 +23,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="80">
+              <caret line="207" column="47" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="47" />
+              <folding>
+                <element signature="e#3#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,8 +47,8 @@
       <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="161" column="11" lean-forward="true" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="21" />
+            <state relative-caret-position="110">
+              <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -106,8 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>qchangg_83</find>
-      <find>BiPYa5IDaXY</find>
       <find>richiestaLike</find>
       <find>1785680784913412973</find>
       <find>GraphImage</find>
@@ -136,6 +137,8 @@
       <find>SCRIPT_ACTIVE</find>
       <find>selectUserFromDatabase</find>
       <find>passw</find>
+      <find>update_secondi_ultima_richiesta</find>
+      <find>FOLL</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -161,10 +164,10 @@
         <option value="$PROJECT_DIR$/OttengoIdUsernameDaFIle.py" />
         <option value="$PROJECT_DIR$/Login.py" />
         <option value="$PROJECT_DIR$/LogFile.py" />
-        <option value="$PROJECT_DIR$/InstagramAPI.py" />
         <option value="$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py" />
-        <option value="$PROJECT_DIR$/script2.py" />
         <option value="$PROJECT_DIR$/script.py" />
+        <option value="$PROJECT_DIR$/InstagramAPI.py" />
+        <option value="$PROJECT_DIR$/script2.py" />
       </list>
     </option>
   </component>
@@ -179,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +193,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.script">
+  <component name="RunManager" selected="Python.script2">
     <configuration name="AccountCreation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,8 +317,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.script" />
         <item itemvalue="Python.script2" />
+        <item itemvalue="Python.script" />
         <item itemvalue="Python.FollowersList" />
         <item itemvalue="Python.AccountCreation" />
         <item itemvalue="Python.Login" />
@@ -341,9 +344,10 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16176471" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.46179402" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.46179402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -354,7 +358,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -521,24 +524,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="161" column="11" lean-forward="true" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="110">
+          <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="15">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="207" column="47" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="47" />
+          <folding>
+            <element signature="e#3#16#0" expanded="true" />
           </folding>
         </state>
       </provider>

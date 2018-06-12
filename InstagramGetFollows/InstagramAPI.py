@@ -166,6 +166,14 @@ def getCountUsersToFollow():
     url = "http://getfollowersoninstagram.altervista.org/getCountUsersToFollow.php"
     return requests.get(url).content
 
+
+#aggiorno nel mio databse la tupla con username: username e setto il tempo: time
+def update_secondi_ultima_richiesta(username,time):
+    url = "http://getfollowersoninstagram.altervista.org/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
+    print(url)
+    return requests.get(url).content
+
+
 #Ottengo l id del utente attraverso lo username
 def getIDFromUsername(username):
 
