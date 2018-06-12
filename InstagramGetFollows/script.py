@@ -23,7 +23,7 @@ import re
 
 
 
-delta_t = 150 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
+delta_t = 100 #Perche ci sono 86400 secondi in un giorno e devo mandare massimo 300 richieste di follow o di unfollow al giorno
 max_requests = 300
 
 while True:
