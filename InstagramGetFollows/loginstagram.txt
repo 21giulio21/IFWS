@@ -4930,3 +4930,366 @@ L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
 Processo l'utente: gctrains
 Processo l'utente: gctrains deve mandare richieste di follow
 FOLLOW ssorojam{"result": "following", "status": "ok"}
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di follow
+FOLLOW lucarossi84{"result": "following", "status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di follow
+FOLLOW pic_dot_30{"result": "requested", "status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di unfollow
+Processo l'utente: instatrack_official username_user_to_unfollow franksavilly
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di follow
+FOLLOW ryysy995{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+FOLLOW ari.marciano{"result": "requested", "status": "ok"}
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: gctrains
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella

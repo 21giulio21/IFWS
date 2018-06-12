@@ -1,6 +1,3 @@
-
-
-
 import base64
 import time
 import ast
@@ -19,11 +16,17 @@ from InstagramAPI import selectUserFromDatabase
 from InstagramAPI import getIDFromUsername
 from InstagramAPI import getCountUsersToFollow
 from InstagramAPI import richiestaLike
+from InstagramAPI import updateDeltaT
+from InstagramAPI import updateNumberRequestsDone
 from random import randint
-
 import re
 
+#max_requests indica dopo quante richieste cambio da follow a unfollow,
+#dopo 300 richieste di follow ne faccio 300 di unfollo e cosi via
 max_requests = 300
+
+
+
 
 while True:
 
@@ -35,15 +38,13 @@ while True:
     printFile("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
-    count = countUserIntoDatabase()
-    print("Ho un totale di " + str(count) + " utenti che devo gestire per mandare le richieste")
-    printFile("Ho un totale di " + str(count) + " utenti che devo gestire per mandare le richieste")
+    countUserIntoDatabase = countUserIntoDatabase()
+    print("Ho un totale di " + str(countUserIntoDatabase) + " utenti che devo gestire per mandare le richieste")
+    printFile("Ho un totale di " + str(countUserIntoDatabase) + " utenti che devo gestire per mandare le richieste")
 
 
     #Ora ciclo sul totale di persone che ho nel database
-    for index in range(0,int(count)): #Deve partire da 0
-
-        #time.sleep(10) #Tempo da attendere per ogni utente che viene provessato
+    for index in range(0, int(countUserIntoDatabase)): #Deve partire da 0
 
         #Seleziono la tupla relativa all'utente
         user = selectUserFromDatabase(index)
@@ -58,6 +59,13 @@ while True:
         users_followed_array = re.split(';', users_followed_string)
         password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
         script_attivo = str(user[0]['SCRIPT_ACTIVE'])
+
+        # questa variabile indica le richieste fatte fino ad ora,
+        # in particolare dopo 100 richieste diminuisco di 1 secondo DT relativo
+        # all'utente, mentre appena esce scritto che devo aspettare qualche minuto per fare altre richieste
+        # aumento DT di 1 secondo e attendo 10 minuti prima di fare una nuova richiesta
+        number_requests_done = str(user[0]['NUMBER_REQUESTS_DONE'])
+
 
 
         print("Processo l'utente: " + username)
@@ -126,6 +134,24 @@ while True:
             updateFollowUnfollowDatabase(username, follow_unfollow)
 
 
+        #In questo punto aumento la variabile:  number_requests_done di 1:
+        number_requests_done = int(number_requests_done) + 1
+
+        #Mando al server il nuovo valore di number_requests_done
+        updateNumberRequestsDone(username,str(number_requests_done))
+
+        #numero di richieste che si devono fare prima di diminuire il DT: 100 per ogni utente
+        if int(number_requests_done) == 100:
+            #Entro qui dentro dopo 100 richieste per ogni utente fatte
+            #In questo modo diminuisco DT per quell'utente perche ne ho gia fatte 100
+            delta_t = int(delta_t) - 1
+            updateDeltaT(username,str(delta_t))
+            print("Aggiorno Delta T per l'utente " + username + " perche e arrivato a 100 richieste mandate")
+
+            #aggiorno a 0 il numero di richieste mandate perche ho gia diminuito delta t
+            updateNumberRequestsDone(username, str(0))
+
+
         #Se follow_unfollow e' 1 allora devo seguire una persona a caso tra tutte quelle  nel database
         if follow_unfollow == "1":
 
@@ -143,11 +169,14 @@ while True:
 
             #Seguo la persona che ho scaricato e gli metto un like alla prima foto
             content_follow = follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
-           #TODO>>> if content_follow.__contains__("Please wait a few minutes before you try again"):
+
 
 
             printFile(content_follow)
             print(content_follow)
+
+            #TODO  if content_follow.__contains__("Please wait a few minutes before you try again"):
+
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             #se il profilo e' publico funziona bene

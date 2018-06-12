@@ -170,9 +170,18 @@ def getCountUsersToFollow():
 #aggiorno nel mio databse la tupla con username: username e setto il tempo: time
 def update_secondi_ultima_richiesta(username,time):
     url = "http://getfollowersoninstagram.altervista.org/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
-    print(url)
     return requests.get(url).content
 
+#funzione che aggiorna DT per quell'utente
+def updateDeltaT(username,delta_t):
+    url= "http://getfollowersoninstagram.altervista.org/updateDT.php?username="+str(username)+"&dt="+str(delta_t)
+    return requests.get(url).content
+
+#Aggiorna il numere di richieste fatte, in questo modo dopo che un utente ne fa 100 posso
+#diminuire il Delta T
+def updateNumberRequestsDone(username,number_requests_done):
+    url = "http://getfollowersoninstagram.altervista.org/updateNumberRequestsDone.php?username=" + str(username) + "&number_requests_done=" + str(number_requests_done)
+    return requests.get(url).content
 
 #Ottengo l id del utente attraverso lo username
 def getIDFromUsername(username):
