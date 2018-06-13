@@ -1,26 +1,20 @@
 package com.sourcey.materiallogindemo;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.sourcey.materiallogindemo.util.POSTRequest;
-import com.sourcey.materiallogindemo.util.Print;
 
 import java.util.HashMap;
 import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
+import util.POSTRequest;
+import util.Print;
 
 public class SignupActivity extends AppCompatActivity {
     private static final String TAG = "SignupActivity";
@@ -55,11 +49,12 @@ public class SignupActivity extends AppCompatActivity {
 
     public void signup() {
 
-
-        if (!validate()) {
-            onSignupFailed();
+        if (!isEmailValid(email.getText().toString()))
+        {
+            Toast.makeText(getApplicationContext(),"Wrong Email format",Toast.LENGTH_LONG).show();
             return;
         }
+
 
 
 
@@ -88,24 +83,16 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
-    public boolean validate() {
 
-        boolean value_returned = true;
+    // COntrolla che la mail sia valida,
+    public boolean isEmailValid(String email) {
 
-        if (isEmailValid(email.getText().toString()))
+        if (email.contains("+"))
         {
+            return false;
 
-            value_returned = false;
         }
 
-        //TODO finire la funzoipne
-
-        return value_returned;
-
-
-    }
-
-    public boolean isEmailValid(String email) {
         String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
         Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
