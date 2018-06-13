@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -12,8 +13,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_main);
 
+
+        //Se non sono loggato allora faccio aprire l'activity di login/Registrazione
 
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);

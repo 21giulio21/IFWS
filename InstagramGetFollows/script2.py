@@ -234,7 +234,14 @@ while True:
                 print(content_unfollow)
 
                 if content_unfollow.__contains__("Please wait a few minutes before you try again"):
+
+                    #Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
                     updateTempoBlocco(username, 600)
+
+                    #aumentoDelta t di 10 secondi
+                    delta_t = int(delta_t) + 10
+                    updateDeltaT(username,delta_t)
+
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
@@ -252,7 +259,12 @@ while True:
                 print(content_unfollow)
 
                 if content_unfollow.__contains__("Please wait a few minutes before you try again"):
+                    # Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
                     updateTempoBlocco(username, 600)
+
+                    # aumentoDelta t di 10 secondi
+                    delta_t = int(delta_t) + 10
+                    updateDeltaT(username, delta_t)
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))

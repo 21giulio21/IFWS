@@ -1,6 +1,8 @@
 package com.sourcey.materiallogindemo;
 
+import android.app.DownloadManager;
 import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -12,10 +14,26 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+
 public class LoginActivity extends AppCompatActivity {
+
+
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
@@ -34,7 +52,11 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                login();
+                try {
+                    login();
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -51,10 +73,10 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void login() {
+    public void login() throws UnsupportedEncodingException {
         Log.d(TAG, "Login");
 
-        if (!validate()) {
+        if (!requestAltervistaCredenzialiAccessoCorrette()) {
             onLoginFailed();
             return;
         }
@@ -113,26 +135,27 @@ public class LoginActivity extends AppCompatActivity {
         _loginButton.setEnabled(true);
     }
 
-    public boolean validate() {
+    //Faccio una richiesta ad Altervista per vedere se esiste un account con quelle credenziali
+    public boolean requestAltervistaCredenzialiAccessoCorrette() throws UnsupportedEncodingException {
         boolean valid = true;
 
         String email = _emailText.getText().toString();
         String password = _passwordText.getText().toString();
 
-        if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText.setError("enter a valid email address");
-            valid = false;
-        } else {
-            _emailText.setError(null);
-        }
+        // Creo un finto username perche non posso creare una tupla
+        // senza username
+        String username_instagram = UUID.randomUUID().toString();
 
-        if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-            _passwordText.setError("between 4 and 10 alphanumeric characters");
-            valid = false;
-        } else {
-            _passwordText.setError(null);
-        }
 
         return valid;
     }
+
+
+
+
+
+
+
+
+
 }
