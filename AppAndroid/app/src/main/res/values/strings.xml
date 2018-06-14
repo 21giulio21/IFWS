@@ -4,5 +4,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="url_login_user">http://getfollowersoninstagram.altervista.org/app/checkUserIntoDatabase.php</string>
+
+
     <string name="url_register_user">https://getfollowersoninstagram.altervista.org/app/insertUserIntoDatabase.php</string>
 </resources>

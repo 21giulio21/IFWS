@@ -26,15 +26,18 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ExecutionException;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import util.POSTRequest;
+import util.Print;
+import util.UTIL;
 
 
 public class LoginActivity extends AppCompatActivity {
 
 
-    private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
     @BindView(R.id.input_email) EditText _emailText;
@@ -47,14 +50,24 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+
+
         
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 try {
-                    login();
+
+                    final String email = _emailText.getText().toString();
+                    final String password = _passwordText.getText().toString();
+
+                    login(email,password);
                 } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
                     e.printStackTrace();
                 }
             }
@@ -73,11 +86,21 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void login() throws UnsupportedEncodingException {
-        Log.d(TAG, "Login");
+    public void login(String email,String password) throws UnsupportedEncodingException, ExecutionException, InterruptedException {
 
-        if (!requestAltervistaCredenzialiAccessoCorrette()) {
-            onLoginFailed();
+        Print.printError(email);
+
+        // COntrollo che la mail sia valida
+        if (!UTIL.isValidEmail(email))
+        {
+            Toast.makeText(getApplicationContext(),"Wrong Email format",Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        // Controllo che la password sia almeno di 8 caratteri
+        if (!UTIL.isValidPassword(password))
+        {
+            Toast.makeText(getApplicationContext(),"Password 8 caratteri minimo",Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -89,10 +112,31 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Authenticating...");
         progressDialog.show();
 
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
+        // Se sono qui allora devo inserire l'account nel database di altervista
+        // Creo la mappa contenete chiave e valore per l'utente che creo
+        HashMap<String,String> valori = new HashMap<>();
+        valori.put("url",getResources().getString(R.string.url_login_user));
+        valori.put("email",email);
+        valori.put("password",password);
 
-        // TODO: Implement your own authentication logic here.
+        POSTRequest request = new POSTRequest();
+        final String ritorno = request.execute(valori).get();
+
+        if(!ritorno.equals("success"))
+        {
+
+            new android.os.Handler().postDelayed(
+                    new Runnable() {
+                        public void run() {
+                            progressDialog.dismiss();
+                            Toast.makeText(getApplicationContext(),ritorno,Toast.LENGTH_LONG).show();
+                            _loginButton.setEnabled(true);
+                        }
+                    }, 3000);
+
+            return;
+        }
+
 
         new android.os.Handler().postDelayed(
                 new Runnable() {
@@ -110,9 +154,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_SIGNUP) {
             if (resultCode == RESULT_OK) {
-
-                // TODO: Implement successful signup logic here
-                // By default we just finish the Activity and log them in automatically
                 this.finish();
             }
         }
@@ -129,26 +170,7 @@ public class LoginActivity extends AppCompatActivity {
         finish();
     }
 
-    public void onLoginFailed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
 
-        _loginButton.setEnabled(true);
-    }
-
-    //Faccio una richiesta ad Altervista per vedere se esiste un account con quelle credenziali
-    public boolean requestAltervistaCredenzialiAccessoCorrette() throws UnsupportedEncodingException {
-        boolean valid = true;
-
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
-
-        // Creo un finto username perche non posso creare una tupla
-        // senza username
-        String username_instagram = UUID.randomUUID().toString();
-
-
-        return valid;
-    }
 
 
 

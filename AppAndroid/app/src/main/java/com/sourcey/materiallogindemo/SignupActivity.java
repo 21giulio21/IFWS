@@ -20,13 +20,14 @@ import java.util.regex.Pattern;
 import butterknife.ButterKnife;
 import util.POSTRequest;
 import util.Print;
+import util.UTIL;
 
 public class SignupActivity extends AppCompatActivity {
     private static final String TAG = "SignupActivity";
 
     EditText email,password,confirm_password;
     Button buttonSingUp;
-
+    ProgressDialog progressDialog;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public class SignupActivity extends AppCompatActivity {
                 Print.printError(password.getText().toString());
                 Print.printError(confirm_password.getText().toString());
 
-                final ProgressDialog progressDialog = new ProgressDialog(SignupActivity.this,
+                progressDialog = new ProgressDialog(SignupActivity.this,
                         R.style.AppTheme_Dark_Dialog);
                 progressDialog.setMessage("Authenticating...");
                 progressDialog.show();
@@ -74,10 +75,10 @@ public class SignupActivity extends AppCompatActivity {
 
     public void signup() throws ExecutionException, InterruptedException, JSONException {
 
-
+        buttonSingUp.setEnabled(false);
 
         // COntrollo che la mail sia valida
-        if (!isValidEmail(email.getText().toString()))
+        if (!UTIL.isValidEmail(email.getText().toString()))
         {
             Toast.makeText(getApplicationContext(),"Wrong Email format",Toast.LENGTH_LONG).show();
             return;
@@ -85,7 +86,7 @@ public class SignupActivity extends AppCompatActivity {
 
 
         // Controllo che la password sia almeno di 8 caratteri
-        if (!isValidPassword(password.getText().toString()))
+        if (!UTIL.isValidPassword(password.getText().toString()))
         {
             Toast.makeText(getApplicationContext(),"Password 8 caratteri minimo",Toast.LENGTH_LONG).show();
             return;
@@ -111,30 +112,41 @@ public class SignupActivity extends AppCompatActivity {
         valori.put("username_instagram", UUID.randomUUID().toString());
 
         POSTRequest request = new POSTRequest();
-        String ritorno = request.execute(valori).get();
-        Toast.makeText(getApplicationContext(),ritorno,Toast.LENGTH_LONG).show();
+        final String ritorno = request.execute(valori).get();
 
-    }
-
-
-
-    // COntrolla che la mail sia valida,
-    public boolean isValidEmail(String email) {
-
-        if (email.contains("+"))
+        if(!ritorno.equals("success"))
         {
-            return false;
 
+            new android.os.Handler().postDelayed(
+                    new Runnable() {
+                        public void run() {
+                            progressDialog.dismiss();
+                            Toast.makeText(getApplicationContext(),ritorno,Toast.LENGTH_LONG).show();
+                            buttonSingUp.setEnabled(true);
+                        }
+                    }, 3000);
+
+            return;
         }
 
-        String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
-        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(email);
-        return matcher.matches();
+        new android.os.Handler().postDelayed(
+                new Runnable() {
+                    public void run() {
+                        // On complete call either onLoginSuccess or onLoginFailed
+                        onLoginSuccess();
+                        // onLoginFailed();
+                        progressDialog.dismiss();
+                    }
+                }, 3000);
+
+
+
     }
 
-    //Password di almeno 8 caratteri
-    public boolean isValidPassword(String password) {
-        return password.length() > 7;
+    public void onLoginSuccess() {
+        buttonSingUp.setEnabled(true);
+        finish();
     }
+
+
 }
