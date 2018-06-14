@@ -1,5 +1,6 @@
 package com.sourcey.materiallogindemo;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -7,8 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.UUID;
+import java.util.concurrent.ExecutionException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -40,23 +45,61 @@ public class SignupActivity extends AppCompatActivity {
                 Print.printError(password.getText().toString());
                 Print.printError(confirm_password.getText().toString());
 
-                signup();
+                final ProgressDialog progressDialog = new ProgressDialog(SignupActivity.this,
+                        R.style.AppTheme_Dark_Dialog);
+                progressDialog.setMessage("Authenticating...");
+                progressDialog.show();
+
+
+                // faccio partire la funzione singup che prevede di registrare l'utente
+                new android.os.Handler().postDelayed(
+                        new Runnable() {
+                            public void run() {
+                                try {
+                                    signup();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+
+                                progressDialog.dismiss();
+                            }
+                        }, 3000);
+
+
             }
         });
 
 
     }
 
-    public void signup() {
+    public void signup() throws ExecutionException, InterruptedException, JSONException {
 
-        if (!isEmailValid(email.getText().toString()))
+
+
+        // COntrollo che la mail sia valida
+        if (!isValidEmail(email.getText().toString()))
         {
             Toast.makeText(getApplicationContext(),"Wrong Email format",Toast.LENGTH_LONG).show();
             return;
         }
 
 
+        // Controllo che la password sia almeno di 8 caratteri
+        if (!isValidPassword(password.getText().toString()))
+        {
+            Toast.makeText(getApplicationContext(),"Password 8 caratteri minimo",Toast.LENGTH_LONG).show();
+            return;
+        }
 
+
+        // Controllo che la password sia uguale alla conferma Password
+
+
+        if (!password.getText().toString().equals(confirm_password.getText().toString()))
+        {
+            Toast.makeText(getApplicationContext(),"Password inserite non coincidono",Toast.LENGTH_LONG).show();
+            return;
+        }
 
 
         // Se sono qui allora devo inserire l'account nel database di altervista
@@ -68,24 +111,15 @@ public class SignupActivity extends AppCompatActivity {
         valori.put("username_instagram", UUID.randomUUID().toString());
 
         POSTRequest request = new POSTRequest();
-        request.execute(valori);
-
-
-
-    }
-
-
-    public void onSignupSuccess() {
+        String ritorno = request.execute(valori).get();
+        Toast.makeText(getApplicationContext(),ritorno,Toast.LENGTH_LONG).show();
 
     }
 
-    public void onSignupFailed() {
-
-    }
 
 
     // COntrolla che la mail sia valida,
-    public boolean isEmailValid(String email) {
+    public boolean isValidEmail(String email) {
 
         if (email.contains("+"))
         {
@@ -97,5 +131,10 @@ public class SignupActivity extends AppCompatActivity {
         Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
+    }
+
+    //Password di almeno 8 caratteri
+    public boolean isValidPassword(String password) {
+        return password.length() > 7;
     }
 }

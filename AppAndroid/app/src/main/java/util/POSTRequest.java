@@ -3,6 +3,9 @@ package util;
 
 import android.os.AsyncTask;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -19,6 +22,7 @@ public class POSTRequest extends AsyncTask<HashMap<String,String>, Void, String>
 
         String url = hashMaps[0].remove("url");
         Object keys [] = hashMaps[0].keySet().toArray();
+        String text = "";
 
         String data = "";
 
@@ -56,7 +60,7 @@ public class POSTRequest extends AsyncTask<HashMap<String,String>, Void, String>
 
         }
 
-        String text = "";
+
         BufferedReader reader=null;
 
         // Send data
@@ -96,9 +100,24 @@ public class POSTRequest extends AsyncTask<HashMap<String,String>, Void, String>
             ex.printStackTrace();
         }
 
+        // Parso il json che ritorno, formati: { "success":"success" } oppure { "success":"failes", "reason": "..."}
+        JSONObject obj = null;
+        try {
+            obj = new JSONObject(text);
+            String success = obj.getString("success");
+            if (success.equals("success"))
+            {
+                return "success";
+            }else
+            {
+                return obj.getString("reason");
+            }
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-        return null;
+        return text;
     }
 
 
