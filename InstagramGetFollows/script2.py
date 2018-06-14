@@ -154,7 +154,7 @@ while True:
             #In questo modo diminuisco DT per quell'utente perche ne ho gia fatte 100
             delta_t = int(delta_t) - 1
             updateDeltaT(username,str(delta_t))
-            print("Aggiorno Delta T per l'utente " + username + " perche e arrivato a "+number_requests_update_delta_t+" richieste mandate")
+            print("Aggiorno Delta T per l'utente " + username + " perche e arrivato a "+str(number_requests_update_delta_t)+" richieste mandate")
 
             #aggiorno a 0 il numero di richieste mandate perche ho gia diminuito delta t
             updateNumberRequestsDone(username, str(0))
