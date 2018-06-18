@@ -9,10 +9,12 @@ $username = "getfollowersoninstagram";
 $password = "";
 $dbname = "my_getfollowersoninstagram";
 
-$username = $_POST["username"];
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+
+$username = $_POST["username"];
+
 
 // prima guardo se per caso c'è un altro utente con quella username, nel caso dico che ho gia inserito
 $query = "SELECT * FROM `REGISTERED_USERS` WHERE `USERNAME` = '{$username}' ";

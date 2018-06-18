@@ -206,6 +206,31 @@ def getIDFromUsername(username):
     id = unicode(str(inizio_id[:inizio_id.find("\"")]), 'utf-8')
     return id
 
+def ottengoURLImmagineProfilo(username):
+    headers = {
+        'authority': 'www.instagram.com',
+        'pragma': 'no-cache',
+        'cache-control': 'no-cache',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+    }
+    response = str(requests.get('https://www.instagram.com/' + username, headers=headers).content)
+    temp = response[response.find("<meta property=\"og:image\" content=\"") + len("<meta property=\"og:image\" content=\""):]
+    url_immagine = temp[:temp.find("\" />") ]
+    return url_immagine
+
+
+#mando al mio server in formato Base64 l'url dell'immagine profilo in questo modo poi posso vederla sul'app o sito
+def updateURLImmagineProfilo(username,url_immagine):
+    url_encode = base64.b64encode(str(url_immagine))
+    url = "https://getfollowersoninstagram.altervista.org/insertURLImageProfilo.php?username=" + str(username) + "&immagine_profilo=" + str(url_encode)
+    return requests.get(url).content
+
+
+
 
 
 

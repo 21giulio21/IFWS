@@ -5809,3 +5809,559 @@ Processo l'utente: instatrack_official
 Processo l'utente: davidevolterra
 Attendo DT
 Tempo DT passato, inizio lo script.
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+L'utente: viktoria_crt ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow the.solehah
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow oivanrosales
+UNFOLLOW oivanrosales{"status": "ok"}
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di unfollow
+Processo l'utente: viktoria_crt username_user_to_unfollow phil_beck
+UNFOLLOW phil_beck{"status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Inserisco l'url dell'immagine profilo dell'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di unfollow
+Processo l'utente: giuliogradisca_hr username_user_to_unfollow m_aasif_khan
+UNFOLLOW m_aasif_khan{"status": "ok"}
+Processo l'utente: instatrack_official
+Inserisco l'url dell'immagine profilo dell'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di follow
+FOLLOW toystoryblonde{"result": "following", "status": "ok"}
+Processo l'utente: davidevolterra
+Inserisco l'url dell'immagine profilo dell'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di unfollow
+Processo l'utente: davidevolterra username_user_to_unfollow antonellaspa1212gmailcom
+UNFOLLOW antonellaspa1212gmailcom{"status": "ok"}
+Processo l'utente: tripinyourshoes
+Inserisco l'url dell'immagine profilo dell'utente: tripinyourshoes
+Processo l'utente: tripinyourshoes deve mandare richieste di follow
+FOLLOW _jusuf___{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Inserisco l'url dell'immagine profilo dell'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Inserisco l'url dell'immagine profilo dell'utente: instatrack_official
+Processo l'utente: davidevolterra
+Inserisco l'url dell'immagine profilo dell'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Inserisco l'url dell'immagine profilo dell'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow ovilia_santoso
+UNFOLLOW ovilia_santoso{"status": "ok"}
+Processo l'utente: viktoria_crt
+Inserisco l'url dell'immagine profilo dell'utente: viktoria_crt
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow niuschis
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow niuschis
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow niuschis
+UNFOLLOW niuschis{"status": "ok"}
+Processo l'utente: viktoria_crt
+Inserisco l'url dell'immagine profilo dell'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di unfollow
+Processo l'utente: viktoria_crt username_user_to_unfollow feraee06
+UNFOLLOW feraee06{"status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Inserisco l'url dell'immagine profilo dell'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di unfollow
+Processo l'utente: giuliogradisca_hr username_user_to_unfollow g_carmo12
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow austin.higgs
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow austin.higgs
+UNFOLLOW austin.higgs{"status": "ok"}
+Processo l'utente: viktoria_crt
+Inserisco l'url dell'immagine profilo dell'utente: viktoria_crt
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow joseph_matemu
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+Inserisco l'url dell'immagine profilo dell'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Inserisco l'url dell'immagine profilo dell'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow joseph_matemu
+UNFOLLOW joseph_matemu{"status": "ok"}
+Processo l'utente: viktoria_crt
+Inserisco l'url dell'immagine profilo dell'utente: viktoria_crt
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Inserisco l'url dell'immagine profilo dell'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di unfollow
+Processo l'utente: viktoria_crt username_user_to_unfollow ti.ago9490
+UNFOLLOW ti.ago9490{"status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Inserisco l'url dell'immagine profilo dell'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di unfollow
+Processo l'utente: giuliogradisca_hr username_user_to_unfollow g_carmo12
+UNFOLLOW g_carmo12{"status": "ok"}
+Processo l'utente: instatrack_official
+Inserisco l'url dell'immagine profilo dell'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di follow
+FOLLOW shuangshuang112{"result": "following", "status": "ok"}
+Processo l'utente: davidevolterra
+Inserisco l'url dell'immagine profilo dell'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di unfollow
+Processo l'utente: davidevolterra username_user_to_unfollow itwosent_me
+UNFOLLOW itwosent_me{"status": "ok"}
+Processo l'utente: tripinyourshoes
+Inserisco l'url dell'immagine profilo dell'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: davide_bagnato_hr deve mandare richieste di unfollow
+Processo l'utente: davide_bagnato_hr username_user_to_unfollow michilollosaa
+UNFOLLOW michilollosaa{"status": "ok"}
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Inserisco l'url dell'immagine profilo dell'utente: tripinyourshoes
+Processo l'utente: tripinyourshoes deve mandare richieste di follow
+FOLLOW edit.for.youtubers.ita{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: viktoria_crt deve mandare richieste di unfollow
+Processo l'utente: viktoria_crt username_user_to_unfollow ppofm__queen
+UNFOLLOW ppofm__queen{"status": "ok"}
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: giuliogradisca_hr deve mandare richieste di unfollow
+Processo l'utente: giuliogradisca_hr username_user_to_unfollow _.nic.o._
+UNFOLLOW _.nic.o._{"status": "ok"}
+Processo l'utente: instatrack_official
+Processo l'utente: instatrack_official deve mandare richieste di follow
+FOLLOW cuteboyharshil{"result": "following", "status": "ok"}
+Processo l'utente: davidevolterra
+Processo l'utente: davidevolterra deve mandare richieste di unfollow
+Processo l'utente: davidevolterra username_user_to_unfollow bob80662018
+UNFOLLOW bob80662018{"status": "ok"}
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official
+Processo l'utente: davidevolterra
+Processo l'utente: tripinyourshoes
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: ginotani82324
+L'utente: ginotani82324 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davide_bagnato_hr
+Processo l'utente: viktoria_crt
+Processo l'utente: giuliogradisca_hr
+Processo l'utente: instatrack_official

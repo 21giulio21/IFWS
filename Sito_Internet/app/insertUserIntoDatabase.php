@@ -5,12 +5,12 @@ $servername = "localhost";
 $username = "getfollowersoninstagram";
 $password = "";
 $dbname = "my_getfollowersoninstagram";
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 $email_user = $_POST["email"];
 $password_user = $_POST["password"];
 $username_instagram = $_POST["username_instagram"];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 // prima guardo se per caso c'è un altro utente con quella mail, nel caso dico che ho gia inserito
 $query = "SELECT * FROM `REGISTERED_USERS` WHERE `EMAIL` = '$email_user' ";

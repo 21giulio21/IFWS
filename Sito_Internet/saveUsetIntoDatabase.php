@@ -1,6 +1,8 @@
 <?php
 $id = $_GET["id"];
 $username_profilo = $_GET["username"];
+
+
 $servername = "localhost";
 $username = "getfollowersoninstagram";
 $password = "";

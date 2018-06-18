@@ -5,10 +5,12 @@ from LogFile import printFile
 from InstagramAPI import update_secondi_ultima_richiesta, updateTempoBlocco
 from InstagramAPI import updateFollowUnfollowDatabase
 from InstagramAPI import updateUserFollowed
+from InstagramAPI import ottengoURLImmagineProfilo
 from InstagramAPI import saveIdIntoDatabase
 from InstagramAPI import seveCookieIntoServer
 from InstagramAPI import follow
 from InstagramAPI import login
+from InstagramAPI import updateURLImmagineProfilo
 from InstagramAPI import unfollow
 from InstagramAPI import getRandomUserToFollow
 from InstagramAPI import countUserIntoDatabase
@@ -63,6 +65,7 @@ while True:
         password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
         script_attivo = str(user[0]['SCRIPT_ACTIVE'])
         tempo_attesa_blocco = str(user[0]['TEMPO_ATTESA_BLOCCO'])
+        url_immagine_profilo = str(user[0]['URL_IMMAGINE_PROFILO'])
 
         # questa variabile indica le richieste fatte fino ad ora,
         # in particolare dopo 100 richieste diminuisco di 1 secondo DT relativo
@@ -74,6 +77,13 @@ while True:
 
         print("Processo l'utente: " + username)
         printFile("Processo l'utente: " + username)
+
+        #inserisco per primo l'url della immagine profilo della persona
+        if url_immagine_profilo == "":
+            print("Inserisco l'url dell'immagine profilo dell'utente: " + username)
+            printFile("Inserisco l'url dell'immagine profilo dell'utente: " + username)
+            url = ottengoURLImmagineProfilo(username)
+            updateURLImmagineProfilo(username,url)
 
         #Se script_attivo e' 0 allora non devo fare nulla per quel user e passo allo user successivo
         if script_attivo == "0":
