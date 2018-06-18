@@ -180,6 +180,7 @@ def updateDeltaT(username,delta_t):
 #Aggiorno il tempo di blocco che deve attendere un utente prima che rinizi a mandare richieste
 def updateTempoBlocco(username,tempo):
     url = "http://getfollowersoninstagram.altervista.org/updateTempoBlocco.php?username="+str(username)+"&tempo_blocco="+str(tempo)
+    return requests.get(url).content
 
 #Aggiorna il numere di richieste fatte, in questo modo dopo che un utente ne fa 100 posso
 #diminuire il Delta T

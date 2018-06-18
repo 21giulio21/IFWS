@@ -31,6 +31,8 @@ max_requests = 300
 number_requests_update_delta_t = 1000
 
 
+tempo_blocco_se_esce_errore = 10000
+
 
 
 while True:
@@ -95,8 +97,12 @@ while True:
         #altrimenti non devo processare
         tempo_ora = int(time.time())
 
-        if int(secondi_ultima_richiesta) + int(tempo_attesa_blocco) > tempo_ora:
-            print("Username " + username + " ancora in blocco")
+
+        #Controllo che deve fermarsi se ho un tempo di blocco attivo, in particolare se ho tempo_attesa_blocco > 0 devo continuare  senza processarlo
+        if int(tempo_attesa_blocco) > 0:
+            tempo_attesa_blocco = int(tempo_attesa_blocco) - 1
+            updateTempoBlocco(username,str(tempo_attesa_blocco))
+            print("Username " + username + " ancora in blocco per un totale di cicli: " + str(tempo_attesa_blocco))
             continue
 
         if int(secondi_ultima_richiesta) + int(delta_t) > tempo_ora:
@@ -188,13 +194,14 @@ while True:
             #Seguo la persona che ho scaricato e gli metto un like alla prima foto
             content_follow = follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
 
-
-
             printFile(content_follow)
             print(content_follow)
 
             if content_follow.__contains__("Please wait a few minutes before you try again"):
-                updateTempoBlocco(username,600)
+                updateTempoBlocco(username,tempo_blocco_se_esce_errore)
+                # aumentoDelta t di 10 secondi
+                delta_t = int(delta_t) + 10
+                updateDeltaT(username, str(delta_t))
 
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
@@ -243,14 +250,15 @@ while True:
                 printFile(content_unfollow)
                 print(content_unfollow)
 
+
                 if content_unfollow.__contains__("Please wait a few minutes before you try again"):
 
                     #Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
-                    updateTempoBlocco(username, 600)
+                    updateTempoBlocco(username, tempo_blocco_se_esce_errore)
 
                     #aumentoDelta t di 10 secondi
                     delta_t = int(delta_t) + 10
-                    updateDeltaT(username,delta_t)
+                    updateDeltaT(username,str(delta_t))
 
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
@@ -268,13 +276,14 @@ while True:
                 printFile(content_unfollow)
                 print(content_unfollow)
 
+
                 if content_unfollow.__contains__("Please wait a few minutes before you try again"):
                     # Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
-                    updateTempoBlocco(username, 600)
+                    updateTempoBlocco(username, tempo_blocco_se_esce_errore)
 
                     # aumentoDelta t di 10 secondi
                     delta_t = int(delta_t) + 10
-                    updateDeltaT(username, delta_t)
+                    updateDeltaT(username, str(delta_t))
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))

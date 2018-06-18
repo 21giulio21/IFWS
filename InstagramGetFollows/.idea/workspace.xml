@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="script2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
+            <state relative-caret-position="135">
+              <caret line="200" column="70" selection-start-line="200" selection-start-column="70" selection-end-line="200" selection-end-column="70" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="225" column="114" selection-start-line="225" selection-start-column="114" selection-end-line="225" selection-end-column="114" />
+            <state relative-caret-position="125">
+              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
             </state>
           </provider>
         </entry>
@@ -43,11 +43,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>txt</find>
-      <find>460563723</find>
-      <find>max_rich_</find>
-      <find>geralsb16</find>
-      <find>csrftoken</find>
       <find>csrf</find>
       <find>all</find>
       <find>getUsersToFollow</find>
@@ -73,6 +68,11 @@
       <find>coo</find>
       <find>encode</find>
       <find>ottengoURLImmagineProfilo</find>
+      <find>blocco</find>
+      <find>davide_bagnato_hr</find>
+      <find>updateTempoBlocco</find>
+      <find>follo</find>
+      <find>TODO: TEST</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -101,15 +101,15 @@
         <option value="$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py" />
         <option value="$PROJECT_DIR$/script.py" />
         <option value="$PROJECT_DIR$/prova.py" />
-        <option value="$PROJECT_DIR$/script2.py" />
         <option value="$PROJECT_DIR$/InstagramAPI.py" />
+        <option value="$PROJECT_DIR$/script2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="71" />
-    <option name="y" value="52" />
-    <option name="width" value="670" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="282" />
+    <option name="y" value="79" />
+    <option name="width" value="660" />
     <option name="height" value="531" />
   </component>
   <component name="ProjectView">
@@ -279,15 +279,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1360" height="710" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1366" height="710" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16102941" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16032211" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.46179402" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.46179402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -455,20 +454,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prova.py" />
-    <entry file="file://$PROJECT_DIR$/script2.py">
+    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
+    <entry file="file://$PROJECT_DIR$/script2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="225" column="114" selection-start-line="225" selection-start-column="114" selection-end-line="225" selection-end-column="114" />
+        <state relative-caret-position="135">
+          <caret line="200" column="70" selection-start-line="200" selection-start-column="70" selection-end-line="200" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
