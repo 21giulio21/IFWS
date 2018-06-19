@@ -1,4 +1,5 @@
 import base64
+import json
 import time
 import ast
 from LogFile import printFile
@@ -12,6 +13,7 @@ from InstagramAPI import follow
 from InstagramAPI import login
 from InstagramAPI import updateURLImmagineProfilo
 from InstagramAPI import unfollow
+from InstagramAPI import updatePasswordErrataAndProcessing
 from InstagramAPI import getRandomUserToFollow
 from InstagramAPI import countUserIntoDatabase
 from InstagramAPI import selectUserFromDatabase
@@ -20,6 +22,7 @@ from InstagramAPI import getCountUsersToFollow
 from InstagramAPI import richiestaLike
 from InstagramAPI import updateDeltaT
 from InstagramAPI import updateNumberRequestsDone
+from InstagramAPI import updateProcessing
 from random import randint
 import re
 
@@ -75,6 +78,12 @@ while True:
         # aumento DT di 1 secondo e attendo 10 minuti prima di fare una nuova richiesta
         number_requests_done = str(user[0]['NUMBER_REQUESTS_DONE'])
 
+
+        #Processing va settato a 0 se ho fatto un login corretto
+        processing = str(user[0]['PROCESSING'])
+        print("PROCESSING " + processing)
+        #PASSWORD_ERRATA e' a 1 se la password di instagram e' sbagliata
+        password_errata = str(user[0]['PASSWORD_ERRATA'])
 
 
         print("Processo l'utente: " + username)
@@ -197,11 +206,26 @@ while True:
             printFile(content_follow)
             print(content_follow)
 
+            content_follow_JSON = json.loads(content_follow)
+            print(content_follow_JSON)
+
             if content_follow.__contains__("Please wait a few minutes before you try again"):
                 updateTempoBlocco(username,tempo_blocco_se_esce_errore)
                 # aumentoDelta t di 10 secondi
                 delta_t = int(delta_t) + 10
                 updateDeltaT(username, str(delta_t))
+                continue
+
+            elif processing == "1":
+                if 'message' in  content_follow_JSON:
+                    #Caso in cui ho sbagliato la password
+                    print("Errore, password dello username " + username + " ERRATA ")
+                    #mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                    updatePasswordErrataAndProcessing(username,1)
+                    continue
+                else:
+                    #Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
+                    updateProcessing(username,0)
 
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like

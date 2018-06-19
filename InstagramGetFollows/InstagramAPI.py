@@ -63,8 +63,9 @@ def follow(id, username, cookies, csrf):
 
 	}
 
-	response = requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
-	return "FOLLOW " + username + response.content
+	return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers).content
+
+
 
 
 def unfollow(id,username, cookies, csrf):
@@ -85,8 +86,8 @@ def unfollow(id,username, cookies, csrf):
         'content-length': '0',
     }
 
-    response = requests.post('https://www.instagram.com/web/friendships/'+id+'/unfollow/', headers=headers)
-    return "UNFOLLOW " + username + response.content
+    return requests.post('https://www.instagram.com/web/friendships/'+id+'/unfollow/', headers=headers).content
+
 
 
 def login(username,password):
@@ -117,7 +118,23 @@ def login(username,password):
     response = requests.post('https://www.instagram.com/accounts/login/ajax/', headers=headers, data=data)
     return response
 
+#Questa funzione viene chiamata nel momento in cui un utente appena inserito ha sbagliato la password di instagram
+#in particolare pre prima mette PASSWORD_SBAGLIATA a 1 nel database poi merre PROCESSING a 0 cosi lato app se ne accorge
+def updatePasswordErrataAndProcessing(username,passwordErrata):
+    updateSctiptActive(username,0)
+    url = "http://getfollowersoninstagram.altervista.org/updatePasswordErrata.php?username=" + username + "&password_errata=" + str(
+        passwordErrata)
+    requests.get(url)
+    updateSctiptActive(username,str(0))
+    updateProcessing(username,0)
 
+def updateProcessing(username,value):
+    url = "http://getfollowersoninstagram.altervista.org/updateProcessing.php?username=" + username + "&processing=" + str(value)
+    requests.get(url)
+
+def updateSctiptActive(username,valore):
+    url = "http://getfollowersoninstagram.altervista.org/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
+    requests.get(url)
 
 def getUsersToFollow():
     return json.loads(requests.get(url_get_all_user).content)
