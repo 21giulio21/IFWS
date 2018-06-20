@@ -43,7 +43,7 @@ while True:
     print("Attendo DT")
     printFile("Attendo DT")
 
-    #time.sleep(90)
+    time.sleep(20)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")
 
@@ -81,7 +81,8 @@ while True:
 
         #Processing va settato a 0 se ho fatto un login corretto
         processing = str(user[0]['PROCESSING'])
-        print("PROCESSING " + processing)
+
+
         #PASSWORD_ERRATA e' a 1 se la password di instagram e' sbagliata
         password_errata = str(user[0]['PASSWORD_ERRATA'])
 
@@ -204,10 +205,10 @@ while True:
             content_follow = follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
 
             printFile(content_follow)
-            print(content_follow)
+            print("Richiesta di FOLLOW mandata a: username_user_to_follow " + content_follow)
 
             content_follow_JSON = json.loads(content_follow)
-            print(content_follow_JSON)
+
 
             if content_follow.__contains__("Please wait a few minutes before you try again"):
                 updateTempoBlocco(username,tempo_blocco_se_esce_errore)

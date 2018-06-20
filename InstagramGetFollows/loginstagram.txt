@@ -10929,3 +10929,1458 @@ Tempo DT passato, inizio lo script.
 Ho un totale di 8 utenti che devo gestire per mandare le richieste
 Processo l'utente: viktoria_crt
 Processo l'utente: viktoria_crt deve mandare richieste di follow
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Inserisco l'url dell'immagine profilo dell'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database
+Processo l'utente: giulio_tavella non segue ancora nessuno, deve iniziare a seguire gente
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Inserisco l'url dell'immagine profilo dell'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+Processo l'utente: giulio_tavella non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database
+Processo l'utente: giulio_tavella non segue ancora nessuno, deve iniziare a seguire gente
+Processo l'utente: giulio_tavella deve mandare richieste di follow
+{"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/28003531/follow/", "status": "fail"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giulio_tavella
+L'utente: giulio_tavella ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 7 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Inserisco l'url dell'immagine profilo dell'utente: _kkofficial_
+Processo l'utente: _kkofficial_ non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database
+Processo l'utente: _kkofficial_ non segue ancora nessuno, deve iniziare a seguire gente
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Inserisco l'url dell'immagine profilo dell'utente: klitonmarku
+Processo l'utente: klitonmarku non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database
+Processo l'utente: klitonmarku non segue ancora nessuno, deve iniziare a seguire gente
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: klitonmarku
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 8 utenti che devo gestire per mandare le richieste
+Processo l'utente: magic_host
+L'utente: magic_host ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: giuliogradisca_hr
+L'utente: giuliogradisca_hr ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: instatrack_official
+L'utente: instatrack_official ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: davidevolterra
+L'utente: davidevolterra ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: 9bloobie7
+L'utente: 9bloobie7 ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: tripinyourshoes
+L'utente: tripinyourshoes ha script_attivo = 0 quindi non lo devo processare
+Processo l'utente: _kkofficial_
+Processo l'utente: _kkofficial_ deve mandare richieste di follow
+{"result": "requested", "status": "ok"}
+Processo l'utente: klitonmarku
+Processo l'utente: klitonmarku deve mandare richieste di follow
+{"result": "following", "status": "ok"}
+Attendo DT
