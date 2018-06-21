@@ -125,12 +125,12 @@ def updatePasswordErrataAndProcessing(username,passwordErrata):
     url = "http://getfollowersoninstagram.altervista.org/updatePasswordErrata.php?username=" + username + "&password_errata=" + str(
         passwordErrata)
     requests.get(url)
-    updateSctiptActive(username,str(0))
     updateProcessing(username,0)
 
 def updateProcessing(username,value):
     url = "http://getfollowersoninstagram.altervista.org/updateProcessing.php?username=" + username + "&processing=" + str(value)
-    requests.get(url)
+    print url
+    print requests.get(url).content
 
 def updateSctiptActive(username,valore):
     url = "http://getfollowersoninstagram.altervista.org/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)

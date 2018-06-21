@@ -43,7 +43,7 @@ while True:
     print("Attendo DT")
     printFile("Attendo DT")
 
-    time.sleep(20)
+    time.sleep(0)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")
 
@@ -96,6 +96,7 @@ while True:
             printFile("Inserisco l'url dell'immagine profilo dell'utente: " + username)
             url = ottengoURLImmagineProfilo(username)
             updateURLImmagineProfilo(username,url)
+            continue
 
         #Se script_attivo e' 0 allora non devo fare nulla per quel user e passo allo user successivo
         if script_attivo == "0":
