@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b983b9-2501-4c32-8d8a-b842de65e214" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/LogFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/LogFile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/loginstagram.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loop.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.sh" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="SaveUsersToFollowIntoDatabase.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+            <state relative-caret-position="106">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -253,8 +253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        <state relative-caret-position="106">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

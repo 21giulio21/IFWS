@@ -8,8 +8,8 @@ import time
 #Permette di scrivere i log su un file di testo
 def myPrint(text):
     print(text)
-    with open("LOG/logSaveUsersToFollowIntoDatabase.txt", "a") as myfile:
-        myfile.write(text + "\n")
+    #with open("LOG/logSaveUsersToFollowIntoDatabase.txt", "a") as myfile:
+    #   myfile.write(text + "\n")
 
 
 # Get instance
