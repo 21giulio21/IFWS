@@ -1,9 +1,15 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 import base64
 import json
 import time
 import ast
 from LogFile import printFile
-from InstagramAPI import update_secondi_ultima_richiesta, updateTempoBlocco
+from InstagramAPI import updateTempoBlocco
+from InstagramAPI import comment
+from InstagramAPI import update_secondi_ultima_richiesta
 from InstagramAPI import updateFollowUnfollowDatabase
 from InstagramAPI import updateUserFollowed
 from InstagramAPI import ottengoURLImmagineProfilo
@@ -43,7 +49,7 @@ while True:
     print("Attendo DT")
     printFile("Attendo DT")
 
-    time.sleep(0)
+    #time.sleep(20)
     print("Tempo DT passato, inizio lo script.")
     printFile("Tempo DT passato, inizio lo script.")
 
@@ -232,7 +238,12 @@ while True:
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             #se il profilo e' publico funziona bene
-            richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
+            print(richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken']))
+
+            #Metto un commento all'ultima foto
+            print("Commento")
+            print(comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow))
+
 
             #Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
             update_secondi_ultima_richiesta(username, int(time.time()))

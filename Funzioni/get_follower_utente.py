@@ -3,34 +3,39 @@ import requests
 from time import sleep
 import time
 
+#Permette di scrivere i log su un file di testo
+def printFile(text):
+    with open("logFollowers.txt", "a") as myfile:
+        myfile.write(str(text) + "\n")
+
 
 def checkType(follower,follows,media):
                 
                 if follows == 0 or follower / follows > 2:
                     is_selebgram = True
                     is_fake_account = False
-                    print('   >>>This is probably Selebgram account')
+                    printFile('   >>>This is probably Selebgram account')
                     return 'Fake'
                 elif follower == 0 or follows / follower > 2:
                     is_fake_account = True
                     is_selebgram = False
-                    print('   >>>This is probably Fake account')
+                    printFile('   >>>This is probably Fake account')
                     return 'Fake'
 
                 else:
                     is_selebgram = False
                     is_fake_account = False
-                    print('   >>>This is a normal account')
+                    printFile('   >>>This is a normal account')
                     
 
                 if media > 0 and follows / media < 10 and follower / media < 10:
                     is_active_user = True
-                    print('   >>>This user is active')
+                    printFile('   >>>This user is active')
                     return 'Attivo'
 
                 else:
                     is_active_user = False
-                    print('   >>>This user is passive')
+                    printFile('   >>>This user is passive')
                     return 'Passivo'
 
                 
@@ -38,7 +43,7 @@ def checkType(follower,follows,media):
 
 # Get instance
 L = instaloader.Instaloader()
-Natura=[ 'hanwagofficial' , 'slow_food_italia', 'visit_lazio', 'slowfood_international' , 'vibramfivefingers', 'gregorypacks' , 'yourabruzzo' , 'vaudesport']
+Natura=[ 'hanwagofficial' ]
 # Login or load session
 L.login('magic_host', '21giulio21')        # (login)
 #L.interactive_login(USER)      # (ask password on terminal)
@@ -53,7 +58,7 @@ media=0
 for id in Natura:
     profile = instaloader.Profile.from_username(L.context, id)
     followers=profile.followers
-    print(followers)
+    printFile(str(followers))
     totale+=followers
 print(totale)
 for id in Natura:
@@ -66,16 +71,16 @@ for id in Natura:
             followees=follower.followees
             mediacount=follower.mediacount
             checkTypeFollowee=checkType(followers,followees,mediacount)
-            print (checkTypeFollowee)
+            printFile(checkTypeFollowee)
             response = requests.get("http://getfollowersoninstagram.altervista.org/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s&TYPE=%s&FOLLOWER=%s&FOLLOWEE=%s&MEDIA=%s"%(str(follower.userid),str(follower.username),'Natura',checkTypeFollowee,followers,followees,mediacount))
 
             i+=1
-            print((i/totale)*100)
-            print(response)
+            printFile((i/totale)*100)
+            printFile(response)
             sleep(1)
             media+= (time.time()-start)
-            print(media/i)
+            printFile(media/i)
 
-            print((totale-i)*(media/i))
-    print(id)
+            printFile((totale-i)*(media/i))
+    printFile(id)
 

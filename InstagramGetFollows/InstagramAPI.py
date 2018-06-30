@@ -1,12 +1,40 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+
 import base64
 import requests
 import json
+import itertools
+import random
 
 
-#fedez: 46071423
-#fedex: 232257039
+
+comment_list=[["Questa","La tua","La"],
+                  ["foto", "fotografia", "immagine"],
+                  ["è veramente", "è proprio", "è davvero"],
+                  ["pazzesca", "unica", "sensazionale", "bellissima", "magnifica", "indimenticabile",
+                   "meravigliosa", "straordinaria", "eccezionale", "magica",
+                   "emozionante"],
+                  [" "," "," "," "," "," ","❤"," "],
+                  [".", "..", "...", "!", "!!", "!!!"]]
+
+
+
 
 url_get_all_user = "http://getfollowersoninstagram.altervista.org/getAllUser.php"
+
+
+# genera un commento a caso usando le parole di comment_list
+def generate_comment():
+        c_list = list(itertools.product(*comment_list))
+
+        repl = [("  ", " "), (" .", "."), (" !", "!")]
+        res = " ".join(random.choice(c_list))
+        for s, r in repl:
+            res = res.replace(s, r)
+        return res.capitalize()
 
 
 def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
@@ -48,6 +76,32 @@ def richiestaLike(username, cookies, csrf):
     }
 
     response = requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers)
+
+
+
+#Permette di mettere un commento al media_id che gli passo
+def comment(cookies, csrf,username_to_comment):
+
+    headers = {
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'x-requested-with': 'XMLHttpRequest',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
+        'cookie': cookies,
+        'x-csrftoken': csrf,
+        'x-instagram-ajax': 'ac942a8a720f',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'referer': 'https://www.instagram.com/p/BkkwR3ihMUn/?taken-by=' + str(username_to_comment),
+        'authority': 'www.instagram.com',
+    }
+
+    data = [
+        ('comment_text', generate_comment()),
+    ]
+
+    return requests.post('https://www.instagram.com/web/comments/'+ottengoIdPrimaFotoDaUsername(username_to_comment, cookies, csrf)+'/add/', headers=headers, data=data).content
 
 
 def follow(id, username, cookies, csrf):

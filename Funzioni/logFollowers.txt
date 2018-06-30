@@ -1,0 +1,5241 @@
+8035
+   >>>This is probably Selebgram account
+Fake
+0.012445550715619164
+<Response [200]>
+4.695804834365845
+37726.0960392952
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.02489110143123833
+<Response [200]>
+3.3707847595214844
+27077.513973236084
+   >>>This is probably Fake account
+Fake
+0.0373366521468575
+<Response [200]>
+2.898740291595459
+23282.682022094727
+   >>>This is probably Fake account
+Fake
+0.04978220286247666
+<Response [200]>
+2.576427698135376
+20691.290843725204
+   >>>This is probably Fake account
+Fake
+0.06222775357809583
+<Response [200]>
+2.6999959468841555
+21680.967453479767
+   >>>This is probably Fake account
+Fake
+0.074673304293715
+<Response [200]>
+2.6768004496892295
+21492.030810554825
+   >>>This is probably Fake account
+Fake
+0.08711885500933415
+<Response [200]>
+2.6135075773511613
+20981.238830975122
+   >>>This is probably Fake account
+Fake
+0.09956440572495331
+<Response [200]>
+3.1455707252025604
+25249.496211200953
+   >>>This is probably Fake account
+Fake
+0.11200995644057249
+<Response [200]>
+3.122803317175971
+25063.619423654345
+   >>>This is probably Fake account
+Fake
+0.12445550715619166
+<Response [200]>
+3.2914277791976927
+26413.707928061485
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.13690105787181084
+<Response [200]>
+3.415810996835882
+27408.467438611115
+   >>>This is probably Fake account
+Fake
+0.14934660858743
+<Response [200]>
+3.528309484322866
+28307.626992722355
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.16179215930304916
+<Response [200]>
+3.396209955215454
+27244.396260738373
+   >>>This is probably Fake account
+Fake
+0.1742377100186683
+<Response [200]>
+3.4388266631535123
+27582.82866515432
+   >>>This is probably Fake account
+Fake
+0.18668326073428748
+<Response [200]>
+3.3593712488810223
+26942.1574160258
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.19912881144990663
+<Response [200]>
+3.528818368911743
+28297.59450030327
+   >>>This is probably Fake account
+Fake
+0.21157436216552583
+<Response [200]>
+3.481007085126989
+27910.714808548197
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.22401991288114498
+<Response [200]>
+3.4531244966718884
+27683.69908981853
+   >>>This is probably Fake account
+Fake
+0.23646546359676418
+<Response [200]>
+3.4002049094752262
+27256.042554353415
+   >>>This is probably Fake account
+Fake
+0.24891101431238333
+<Response [200]>
+3.4533101201057432
+27678.280612647533
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.2613565650280025
+<Response [200]>
+3.390631289709182
+27172.519155729384
+   >>>This is probably Fake account
+Fake
+0.2738021157436217
+<Response [200]>
+3.3647603446787056
+26961.82464191047
+   >>>This is probably Fake account
+Fake
+0.2862476664592408
+<Response [200]>
+3.337885794432267
+26743.140984991325
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.29869321717486
+<Response [200]>
+3.350321779648463
+26839.427776763834
+   >>>This is probably Fake account
+Fake
+0.3111387678904792
+<Response [200]>
+3.322438678741455
+26612.733816719054
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.3235843186060983
+<Response [200]>
+3.323184370994568
+26615.383627295494
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.33602986932171747
+<Response [200]>
+3.402455789071542
+27246.865958884908
+   >>>This is probably Fake account
+Fake
+0.3484754200373366
+<Response [200]>
+3.517437790121351
+28164.12438550166
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.3609209707529558
+<Response [200]>
+3.697346103602442
+29600.95290544115
+   >>>This is probably Fake account
+Fake
+0.37336652146857496
+<Response [200]>
+3.766849668820699
+30153.631598909695
+   >>>This is probably Fake account
+Fake
+0.3858120721841941
+<Response [200]>
+3.8598193199403825
+30893.993836802823
+   >>>This is probably Fake account
+Fake
+0.39825762289981326
+<Response [200]>
+3.8585385754704475
+30879.88421948999
+   >>>This is probably Fake account
+Fake
+0.41070317361543246
+<Response [200]>
+3.9472983822678076
+31586.281654906998
+   >>>This is probably Selebgram account
+Fake
+0.42314872433105166
+<Response [200]>
+3.895136510624605
+31164.987221507465
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.43559427504667086
+<Response [200]>
+3.8762393474578856
+31009.914779663086
+   >>>This is probably Fake account
+Fake
+0.44803982576228996
+<Response [200]>
+3.942505545086331
+31536.10185514556
+   >>>This is probably Fake account
+Fake
+0.46048537647790916
+<Response [200]>
+3.9168913493285307
+31327.29701192959
+   >>>This is probably Fake account
+Fake
+0.47293092719352836
+<Response [200]>
+3.9847930230592428
+31866.389805404764
+   >>>This is probably Fake account
+Fake
+0.48537647790914745
+<Response [200]>
+3.943220175229586
+31529.988521135772
+   >>>This is probably Fake account
+Fake
+0.49782202862476665
+<Response [200]>
+3.8982490718364717
+31166.50132933259
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.5102675793403858
+<Response [200]>
+3.901015182820762
+31184.715371469174
+   >>>This is probably Selebgram account
+Fake
+0.522713130056005
+<Response [200]>
+3.8583967174802507
+30840.164962819643
+   >>>This is probably Fake account
+Fake
+0.5351586807716241
+<Response [200]>
+3.879324280938437
+31003.55965325999
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.5476042314872434
+<Response [200]>
+3.899475336074829
+31160.70741057396
+   >>>This is probably Fake account
+Fake
+0.5600497822028625
+<Response [200]>
+3.911006858613756
+31248.944800323912
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.5724953329184816
+<Response [200]>
+3.87178927919139
+30931.724551460014
+   >>>This is probably Fake account
+Fake
+0.5849408836341008
+<Response [200]>
+3.883562240194767
+31021.8951746758
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.59738643434972
+<Response [200]>
+3.849841187397639
+30748.68156374494
+   >>>This is probably Fake account
+Fake
+0.6098319850653391
+<Response [200]>
+3.829313575005045
+30580.89820999029
+   >>>This is probably Fake account
+Fake
+0.6222775357809583
+<Response [200]>
+3.798519535064697
+30331.17848749161
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.6347230864965775
+<Response [200]>
+3.822666836719887
+30520.17202437158
+   >>>This is probably Selebgram account
+Fake
+0.6471686372121966
+<Response [200]>
+3.793019643196693
+30279.6758116392
+   >>>This is probably Fake account
+Fake
+0.6596141879278158
+<Response [200]>
+3.7596136533989095
+30009.236181430097
+   >>>This is probably Fake account
+Fake
+0.6720597386434349
+<Response [200]>
+3.7616687262499773
+30021.878104201067
+   >>>This is probably Fake account
+Fake
+0.6845052893590542
+<Response [200]>
+3.7473511132326993
+29903.86188359694
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.6969508400746732
+<Response [200]>
+3.7691652604511807
+30074.16961313997
+   >>>This is probably Fake account
+Fake
+0.7093963907902925
+<Response [200]>
+3.7383977404811928
+29824.937173558956
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.7218419415059116
+<Response [200]>
+3.7544421450845125
+29949.184991339156
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.7342874922215308
+<Response [200]>
+3.767269898269136
+30047.74470859463
+   >>>This is probably Fake account
+Fake
+0.7467330429371499
+<Response [200]>
+3.780586135387421
+30150.17442971468
+   >>>This is probably Fake account
+Fake
+0.7591785936527692
+<Response [200]>
+3.7671012682992906
+30038.865513418543
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.7716241443683882
+<Response [200]>
+3.741991450709681
+29834.897836508288
+   >>>This is probably Fake account
+Fake
+0.7840696950840075
+<Response [200]>
+3.734641294630747
+29772.560400796312
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.7965152457996265
+<Response [200]>
+3.712365247309208
+29591.263386301696
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.8089607965152459
+<Response [200]>
+3.728620246740488
+29717.10336652169
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.8214063472308649
+<Response [200]>
+3.702905774116516
+29508.456113934517
+   >>>This is probably Fake account
+Fake
+0.8338518979464841
+<Response [200]>
+3.671760971866437
+29256.59142383177
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+0.8462974486621033
+<Response [200]>
+3.6844337267034195
+29353.883500646145
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.8587429993777225
+<Response [200]>
+3.6957216781118643
+29440.11888783911
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.8711885500933417
+<Response [200]>
+3.6756934574672155
+29276.89838872637
+   >>>This is probably Selebgram account
+Fake
+0.8836341008089608
+<Response [200]>
+3.657779579431238
+29130.556570590383
+   >>>This is probably Selebgram account
+Fake
+0.8960796515245799
+<Response [200]>
+3.6382584306928845
+28971.45188360744
+   >>>This is probably Selebgram account
+Fake
+0.9085252022401992
+<Response [200]>
+3.6211229187168485
+28831.38067882355
+   >>>This is probably Fake account
+Fake
+0.9209707529558183
+<Response [200]>
+3.6247791599582984
+28856.866892428014
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+0.9334163036714374
+<Response [200]>
+3.6152938842773437
+28777.739318847656
+   >>>This is probably Selebgram account
+Fake
+0.9458618543870567
+<Response [200]>
+3.6187038798081246
+28801.264179392863
+   >>>This is probably Fake account
+Fake
+0.9583074051026758
+<Response [200]>
+3.6037477920581766
+28678.62492919897
+   >>>This is probably Fake account
+Fake
+0.9707529558182949
+<Response [200]>
+3.6055550483556895
+28689.401519766223
+   >>>This is probably Fake account
+Fake
+0.9831985065339142
+<Response [200]>
+3.586215858218036
+28531.933367982692
+   >>>This is probably Fake account
+Fake
+0.9956440572495333
+<Response [200]>
+3.611018657684326
+28725.653421878815
+   >>>This is probably Fake account
+Fake
+1.0080896079651525
+<Response [200]>
+3.5940173849647428
+28586.814280009563
+   >>>This is probably Fake account
+Fake
+1.0205351586807716
+<Response [200]>
+3.585474572530607
+28515.279275335917
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.0329807093963908
+<Response [200]>
+3.6159848707268036
+28754.311692019543
+   >>>This is probably Fake account
+Fake
+1.04542626011201
+<Response [200]>
+3.5975740239733742
+28604.3110646123
+   >>>This is probably Fake account
+Fake
+1.057871810827629
+<Response [200]>
+3.631221274768605
+28868.20913441041
+   >>>This is probably Fake account
+Fake
+1.0703173615432482
+<Response [200]>
+3.6327688139538434
+28876.8793021191
+   >>>This is probably Fake account
+Fake
+1.0827629122588676
+<Response [200]>
+3.6433774602824243
+28957.564054324706
+   >>>This is probably Fake account
+Fake
+1.0952084629744867
+<Response [200]>
+3.6464127735658125
+28978.04231152751
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.1076540136901059
+<Response [200]>
+3.63595370764143
+28891.288160918804
+   >>>This is probably Selebgram account
+Fake
+1.120099564405725
+<Response [200]>
+3.659542595015632
+29075.065917399195
+   >>>This is probably Fake account
+Fake
+1.1325451151213441
+<Response [200]>
+3.696703158892118
+29366.609894238984
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.1449906658369633
+<Response [200]>
+3.695953861526821
+29356.961522107536
+   >>>This is probably Fake account
+Fake
+1.1574362165525824
+<Response [200]>
+3.6840921114849787
+29259.0595494137
+   >>>This is probably Fake account
+Fake
+1.1698817672682016
+<Response [200]>
+3.690896095113551
+29309.40589129671
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.1823273179838207
+<Response [200]>
+3.6767202552996183
+29193.15882707897
+   >>>This is probably Fake account
+Fake
+1.19477286869944
+<Response [200]>
+3.6719280456503234
+29151.43675441792
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.207218419415059
+<Response [200]>
+3.7054428611834025
+29413.80543207385
+   >>>This is probably Fake account
+Fake
+1.2196639701306782
+<Response [200]>
+3.706457184285534
+29418.15067167428
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.2321095208462975
+<Response [200]>
+3.7004936006334095
+29367.117214626738
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.2445550715619167
+<Response [200]>
+3.689827244281769
+29278.779183375835
+   >>>This is probably Fake account
+Fake
+1.2570006222775356
+<Response [200]>
+3.6721863628614066
+29135.1266029424
+   >>>This is probably Selebgram account
+Fake
+1.269446172993155
+<Response [200]>
+3.6576424346250644
+29016.077433880637
+   >>>This is probably Fake account
+Fake
+1.2818917237087741
+<Response [200]>
+3.6481507750390803
+28937.131947609985
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.2943372744243933
+<Response [200]>
+3.6539974762843204
+28979.853984410944
+   >>>This is probably Selebgram account
+Fake
+1.3067828251400124
+<Response [200]>
+3.6870285874321347
+29238.136698336828
+   >>>This is probably Fake account
+Fake
+1.3192283758556316
+<Response [200]>
+3.697397641415866
+29316.6658987864
+   >>>This is probably Fake account
+Fake
+1.331673926571251
+<Response [200]>
+3.6919779888937407
+29270.001495949575
+   >>>This is probably Fake account
+Fake
+1.3441194772868699
+<Response [200]>
+3.7010349145642034
+29338.10376775044
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.356565028002489
+<Response [200]>
+3.7200126254230463
+29484.820069103065
+   >>>This is probably Fake account
+Fake
+1.3690105787181084
+<Response [200]>
+3.721122310378335
+29489.894309748302
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+1.3814561294337275
+<Response [200]>
+3.7416261359378025
+29648.645501171148
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.3939016801493465
+<Response [200]>
+3.7383958228996823
+29619.31010483418
+   >>>This is probably Fake account
+Fake
+1.4063472308649658
+<Response [200]>
+3.72609202629697
+29518.101032324594
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.418792781580585
+<Response [200]>
+3.7211759174079226
+29475.434441788155
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.4312383322962041
+<Response [200]>
+3.7170674178911294
+29439.173949697746
+   >>>This is probably Fake account
+Fake
+1.4436838830118233
+<Response [200]>
+3.714425084919765
+29414.53224747962
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.4561294337274424
+<Response [200]>
+3.724628153010311
+29491.605715535643
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+1.4685749844430616
+<Response [200]>
+3.712532192973767
+29392.117371773315
+   >>>This is probably Fake account
+Fake
+1.481020535158681
+<Response [200]>
+3.6977992077835466
+29271.778528814557
+   >>>This is probably Fake account
+Fake
+1.4934660858742999
+<Response [200]>
+3.6995363692442575
+29281.8303625683
+   >>>This is probably Fake account
+Fake
+1.505911636589919
+<Response [200]>
+3.703207315492236
+29307.182694805553
+   >>>This is probably Fake account
+Fake
+1.5183571873055384
+<Response [200]>
+3.6941529961883046
+29231.832658838055
+   >>>This is probably Fake account
+Fake
+1.5308027380211575
+<Response [200]>
+3.692641682741119
+29216.18099384773
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.5432482887367764
+<Response [200]>
+3.6824288310543185
+29131.694482470713
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.5556938394523958
+<Response [200]>
+3.679082681655884
+29101.54401189804
+   >>>This is probably Fake account
+Fake
+1.568139390168015
+<Response [200]>
+3.668933047188653
+29017.591470215055
+   >>>This is probably Fake account
+Fake
+1.580584940883634
+<Response [200]>
+3.6568660829949566
+28918.496984324116
+   >>>This is probably Fake account
+Fake
+1.593030491599253
+<Response [200]>
+3.6581485476344824
+28924.980566145852
+   >>>This is probably Fake account
+Fake
+1.6054760423148726
+<Response [200]>
+3.653223305709602
+28882.383454940114
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.6179215930304918
+<Response [200]>
+3.6420500351832463
+28790.405528123563
+   >>>This is probably Fake account
+Fake
+1.6303671437461107
+<Response [200]>
+3.633386469979323
+28718.286658716566
+   >>>This is probably Fake account
+Fake
+1.6428126944617298
+<Response [200]>
+3.6258624177990537
+28655.19068786592
+   >>>This is probably Fake account
+Fake
+1.655258245177349
+<Response [200]>
+3.6180540798301983
+28589.863338818228
+   >>>This is probably Fake account
+Fake
+1.6677037958929681
+<Response [200]>
+3.6162442538275648
+28571.94584949159
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+1.6801493466085875
+<Response [200]>
+3.6055010071507207
+28483.457956490693
+   >>>This is probably Fake account
+Fake
+1.6925948973242066
+<Response [200]>
+3.60781927319134
+28498.164438938395
+   >>>This is probably Fake account
+Fake
+1.7050404480398258
+<Response [200]>
+3.6002206680548454
+28434.54283629717
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.717485998755445
+<Response [200]>
+3.5970389497452886
+28405.816586138542
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.7299315494710639
+<Response [200]>
+3.600705647640091
+28431.17179376616
+   >>>This is probably Fake account
+Fake
+1.7423771001866835
+<Response [200]>
+3.595004803793771
+28382.56292595182
+   >>>This is probably Fake account
+Fake
+1.7548226509023026
+<Response [200]>
+3.5936287954343973
+28368.105711159133
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.7672682016179215
+<Response [200]>
+3.583422340137858
+28283.952530708113
+   >>>This is probably Fake account
+Fake
+1.7797137523335407
+<Response [200]>
+3.57825373102735
+28239.578445267845
+   >>>This is probably Fake account
+Fake
+1.7921593030491598
+<Response [200]>
+3.573610928323534
+28199.363835401007
+   >>>This is probably Fake account
+Fake
+1.804604853764779
+<Response [200]>
+3.5628747150815765
+28111.081501993638
+   >>>This is probably Fake account
+Fake
+1.8170504044803983
+<Response [200]>
+3.5718261215784777
+28178.13627313261
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+1.8294959551960175
+<Response [200]>
+3.586090167363485
+28287.07924016317
+   >>>This is probably Fake account
+Fake
+1.8419415059116366
+<Response [200]>
+3.584388633032103
+28270.073148724194
+   >>>This is probably Fake account
+Fake
+1.8543870566272558
+<Response [200]>
+3.574103753838763
+28185.382202772485
+   >>>This is probably Fake account
+Fake
+1.8668326073428747
+<Response [200]>
+3.5655473931630453
+28114.341195090612
+   >>>This is probably Fake account
+Fake
+1.8792781580584939
+<Response [200]>
+3.586061679764299
+28272.510283261734
+   >>>This is probably Fake account
+Fake
+1.8917237087741134
+<Response [200]>
+3.575654752944645
+28186.886417462636
+   >>>This is probably Fake account
+Fake
+1.9041692594897324
+<Response [200]>
+3.573505658729404
+28166.371602105162
+   >>>This is probably Fake account
+Fake
+1.9166148102053515
+<Response [200]>
+3.5655530443439236
+28100.123542474463
+   >>>This is probably Selebgram account
+Fake
+1.9290603609209707
+<Response [200]>
+3.5722743280472296
+28149.52170501217
+   >>>This is probably Fake account
+Fake
+1.9415059116365898
+<Response [200]>
+3.573742926120758
+28157.520514905453
+   >>>This is probably Fake account
+Fake
+1.9539514623522092
+<Response [200]>
+3.570593562095788
+28129.136082190616
+   >>>This is probably Fake account
+Fake
+1.9663970130678283
+<Response [200]>
+3.5632064448127263
+28067.377165789843
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+1.9788425637834475
+<Response [200]>
+3.559389295817921
+28033.75009386195
+   >>>This is probably Fake account
+Fake
+1.9912881144990666
+<Response [200]>
+3.548558862507343
+27944.90104224533
+   >>>This is probably Fake account
+Fake
+2.0037336652146855
+<Response [200]>
+3.5431238731242116
+27898.557376980043
+   >>>This is probably Fake account
+Fake
+2.016179215930305
+<Response [200]>
+3.5638075286959423
+28057.856673423154
+   >>>This is probably Fake account
+Fake
+2.0286247666459243
+<Response [200]>
+3.5571231008307334
+28001.673049739533
+   >>>This is probably Fake account
+Fake
+2.041070317361543
+<Response [200]>
+3.5498860711004676
+27941.15326563178
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+2.0535158680771626
+<Response [200]>
+3.5479735027660024
+27922.55146676844
+   >>>This is probably Fake account
+Fake
+2.0659614187927815
+<Response [200]>
+3.5399321073509125
+27855.72575274433
+   >>>This is probably Fake account
+Fake
+2.078406969508401
+<Response [200]>
+3.5396070765877914
+27849.628478592742
+   >>>This is probably Fake account
+Fake
+2.09085252022402
+<Response [200]>
+3.5335013369719186
+27798.055017958082
+   >>>This is probably Fake account
+Fake
+2.103298070939639
+<Response [200]>
+3.559660732393434
+28000.291321006753
+   >>>This is probably Fake account
+Fake
+2.115743621655258
+<Response [200]>
+3.552205765948576
+27938.09834918555
+   >>>This is probably Fake account
+Fake
+2.1281891723708775
+<Response [200]>
+3.5504968835596453
+27921.10749231305
+   >>>This is probably Fake account
+Fake
+2.1406347230864964
+<Response [200]>
+3.5432108557501505
+27860.266958763434
+   >>>This is probably Fake account
+Fake
+2.1530802738021158
+<Response [200]>
+3.541688344382137
+27844.753763532364
+   >>>This is probably Fake account
+Fake
+2.165525824517735
+<Response [200]>
+3.537165552720256
+27805.658409933934
+   >>>This is probably Selebgram account
+Fake
+2.177971375233354
+<Response [200]>
+3.5431769861493794
+27849.37111113412
+   >>>This is probably Fake account
+Fake
+2.1904169259489734
+<Response [200]>
+3.5379261022264306
+27804.561237397516
+   >>>This is probably Fake account
+Fake
+2.2028624766645923
+<Response [200]>
+3.5380373351318015
+27801.897379465696
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.2153080273802117
+<Response [200]>
+3.5387388521365906
+27803.87116123719
+   >>>This is probably Fake account
+Fake
+2.2277535780958306
+<Response [200]>
+3.5446928772846413
+27847.107243948143
+   >>>This is probably Fake account
+Fake
+2.24019912881145
+<Response [200]>
+3.5545119418038262
+27920.691302869054
+   >>>This is probably Fake account
+Fake
+2.2526446795270694
+<Response [200]>
+3.558379546054819
+27947.512954714548
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.2650902302426883
+<Response [200]>
+3.5559143050686344
+27924.595037703984
+   >>>This is probably Fake account
+Fake
+2.277535780958307
+<Response [200]>
+3.5705897899273316
+28036.271030509408
+   >>>This is probably Fake account
+Fake
+2.2899813316739266
+<Response [200]>
+3.561569562424784
+27961.88263459698
+   >>>This is probably Fake account
+Fake
+2.3024268823895455
+<Response [200]>
+3.5626455087919493
+27966.767244016803
+   >>>This is probably Fake account
+Fake
+2.314872433105165
+<Response [200]>
+3.5681222920776694
+28006.19187051763
+   >>>This is probably Fake account
+Fake
+2.3273179838207843
+<Response [200]>
+3.5618138479038994
+27953.1150783498
+   >>>This is probably Fake account
+Fake
+2.339763534536403
+<Response [200]>
+3.566494216310217
+27986.28011538627
+   >>>This is probably Fake account
+Fake
+2.3522090852520225
+<Response [200]>
+3.579261889533391
+28082.88878527899
+   >>>This is probably Fake account
+Fake
+2.3646546359676415
+<Response [200]>
+3.572761007359153
+28028.310102732557
+   >>>This is probably Selebgram account
+Fake
+2.3771001866832604
+<Response [200]>
+3.56512238717204
+27964.820004977482
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.38954573739888
+<Response [200]>
+3.572330149511496
+28017.785362618662
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.401991288114499
+<Response [200]>
+3.5717095439298165
+28009.34624349762
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.414436838830118
+<Response [200]>
+3.5635587173638883
+27941.863902850248
+   >>>This is probably Fake account
+Fake
+2.4268823895457374
+<Response [200]>
+3.5641685229081372
+27943.081219599797
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+2.4393279402613564
+<Response [200]>
+3.55905288944439
+27899.415600354572
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.4517734909769757
+<Response [200]>
+3.556473788876219
+27875.641557211806
+   >>>This is probably Fake account
+Fake
+2.464219041692595
+<Response [200]>
+3.5714609683162033
+27989.539608694085
+   >>>This is probably Fake account
+Fake
+2.476664592408214
+<Response [200]>
+3.571796439999911
+27988.596903839305
+   >>>This is probably Fake account
+Fake
+2.4891101431238334
+<Response [200]>
+3.566854758262634
+27946.30703098774
+   >>>This is probably Selebgram account
+Fake
+2.5015556938394523
+<Response [200]>
+3.5638446048717594
+27919.158634565363
+   >>>This is probably Fake account
+Fake
+2.5140012445550712
+<Response [200]>
+3.5570151640637087
+27862.09978011103
+   >>>This is probably Fake account
+Fake
+2.526446795270691
+<Response [200]>
+3.5509291975369006
+27810.877475109006
+   >>>This is probably Fake account
+Fake
+2.53889234598631
+<Response [200]>
+3.5476455361235377
+27781.612193383426
+   >>>This is probably Fake account
+Fake
+2.551337896701929
+<Response [200]>
+3.546577969993033
+27769.705505045447
+   >>>This is probably Fake account
+Fake
+2.5637834474175483
+<Response [200]>
+3.5495904996557144
+27789.74402180459
+   >>>This is probably Fake account
+Fake
+2.576228998133167
+<Response [200]>
+3.5493014077633473
+27783.931419971483
+   >>>This is probably Fake account
+Fake
+2.5886745488487866
+<Response [200]>
+3.5512432226767907
+27795.580703891243
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.601120099564406
+<Response [200]>
+3.546015862642863
+27751.120141043048
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.613565650280025
+<Response [200]>
+3.557513165473938
+27837.540519833565
+   >>>This is probably Fake account
+Fake
+2.6260112009956442
+<Response [200]>
+3.556658734642499
+27827.297939842912
+   >>>This is probably Fake account
+Fake
+2.638456751711263
+<Response [200]>
+3.553807014564298
+27801.432274936506
+   >>>This is probably Fake account
+Fake
+2.650902302426882
+<Response [200]>
+3.55173329008577
+27781.657795050894
+   >>>This is probably Fake account
+Fake
+2.663347853142502
+<Response [200]>
+3.5624708193484866
+27862.084278124516
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.675793403858121
+<Response [200]>
+3.5561471573142116
+27809.070770197133
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.6882389545737397
+<Response [200]>
+3.554913329857367
+27795.867326154756
+   >>>This is probably Fake account
+Fake
+2.700684505289359
+<Response [200]>
+3.549377527105094
+27749.033506907625
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.713130056004978
+<Response [200]>
+3.5454402385501687
+27714.706344746668
+   >>>This is probably Fake account
+Fake
+2.7255756067205974
+<Response [200]>
+3.5392444688979894
+27662.734768906685
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.7380211574362168
+<Response [200]>
+3.5336349032141947
+27615.35676861893
+   >>>This is probably Fake account
+Fake
+2.7504667081518357
+<Response [200]>
+3.5361235530128305
+27631.269443242258
+   >>>This is probably Fake account
+Fake
+2.762912258867455
+<Response [200]>
+3.543232791058652
+27683.27779654125
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.775357809583074
+<Response [200]>
+3.537221315195742
+27632.77291430914
+   >>>This is probably Fake account
+Fake
+2.787803360298693
+<Response [200]>
+3.5450463305626596
+27690.356888024933
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.8002489110143123
+<Response [200]>
+3.5601156626807318
+27804.503325536516
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.8126944617299316
+<Response [200]>
+3.5752294696537796
+27918.966928526366
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.8251400124455506
+<Response [200]>
+3.572284063053551
+27892.393964322127
+   >>>This is probably Fake account
+Fake
+2.83758556316117
+<Response [200]>
+3.5717179074622036
+27884.401703557425
+   >>>This is probably Fake account
+Fake
+2.850031113876789
+<Response [200]>
+3.5694705773649256
+27863.28732691061
+   >>>This is probably Selebgram account
+Fake
+2.8624766645924082
+<Response [200]>
+3.5663548448811406
+27835.399564297302
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.8749222153080276
+<Response [200]>
+3.5658421939585634
+27827.83248165263
+   >>>This is probably Fake account
+Fake
+2.8873677660236465
+<Response [200]>
+3.56584520792139
+27824.290157410604
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.899813316739266
+<Response [200]>
+3.5627805327141235
+27796.813716235592
+   >>>This is probably Fake account
+Fake
+2.912258867454885
+<Response [200]>
+3.566606828290173
+27823.09986749164
+   >>>This is probably Fake account
+Fake
+2.9247044181705038
+<Response [200]>
+3.5802239894866945
+27925.747117996216
+   >>>This is probably Fake account
+Fake
+2.937149968886123
+<Response [200]>
+3.5776101310374373
+27901.781411960972
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.9495955196017425
+<Response [200]>
+3.592460293307083
+28014.005367208632
+   >>>This is probably Fake account
+Fake
+2.962041070317362
+<Response [200]>
+3.5884966289295868
+27979.508215763988
+   >>>This is probably Selebgram account
+Fake
+2.974486621032981
+<Response [200]>
+3.6018301443076033
+28079.867805022077
+   >>>This is probably Fake account
+Fake
+2.9869321717485997
+<Response [200]>
+3.6006949484348296
+28067.417123049498
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+2.999377722464219
+<Response [200]>
+3.5974670129198256
+28038.65789869712
+   >>>This is probably Fake account
+Fake
+3.011823273179838
+<Response [200]>
+3.595586051625654
+28020.402100318723
+   >>>This is probably Fake account
+Fake
+3.0242688238954574
+<Response [200]>
+3.599782451190085
+28049.504859673143
+   >>>This is probably Fake account
+Fake
+3.0367143746110767
+<Response [200]>
+3.5941058582946903
+28001.678741973934
+   >>>This is probably Fake account
+Fake
+3.0491599253266957
+<Response [200]>
+3.6024814021830656
+28063.330123006082
+   >>>This is probably Fake account
+Fake
+3.061605476042315
+<Response [200]>
+3.597675689836828
+28022.295948139054
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.074051026757934
+<Response [200]>
+3.5934494613153247
+27985.78440472375
+   >>>This is probably Selebgram account
+Fake
+3.086496577473553
+<Response [200]>
+3.600403678994025
+28036.343448326472
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.0989421281891727
+<Response [200]>
+3.6139457666251555
+28138.181738943462
+   >>>This is probably Fake account
+Fake
+3.1113876789047916
+<Response [200]>
+3.609701379776001
+28101.52524155617
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+3.1238332296204105
+<Response [200]>
+3.609741293576609
+28098.226229200325
+   >>>This is probably Fake account
+Fake
+3.13627878033603
+<Response [200]>
+3.613790720228165
+28126.133175535808
+   >>>This is probably Fake account
+Fake
+3.1487243310516493
+<Response [200]>
+3.613981668185811
+28124.00534182198
+   >>>This is probably Fake account
+Fake
+3.161169881767268
+<Response [200]>
+3.6236612796783447
+28195.7084171772
+   >>>This is probably Fake account
+Fake
+3.1736154324828876
+<Response [200]>
+3.6241478377697516
+28195.87017784867
+   >>>This is probably Fake account
+Fake
+3.186060983198506
+<Response [200]>
+3.6282636523246765
+28224.26295143366
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+3.198506533914126
+<Response [200]>
+3.625612198610714
+28200.011680794134
+   >>>This is probably Fake account
+Fake
+3.2109520846297452
+<Response [200]>
+3.623624652855156
+28180.92892525455
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.2233976353453637
+<Response [200]>
+3.6179403881308656
+28133.104458105612
+   >>>This is probably Fake account
+Fake
+3.2358431860609835
+<Response [200]>
+3.6133303238795356
+28093.64326816339
+   >>>This is probably Fake account
+Fake
+3.248288736776602
+<Response [200]>
+3.610020260244494
+28064.297503140697
+   >>>This is probably Fake account
+Fake
+3.2607342874922214
+<Response [200]>
+3.6110848843596366
+28068.962806127456
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.273179838207841
+<Response [200]>
+3.6115335339375774
+28068.83862576285
+   >>>This is probably Fake account
+Fake
+3.2856253889234597
+<Response [200]>
+3.611394278027795
+28064.144934553995
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.298070939639079
+<Response [200]>
+3.60722248149368
+28028.118681205895
+   >>>This is probably Fake account
+Fake
+3.310516490354698
+<Response [200]>
+3.607210009617913
+28024.414564721566
+   >>>This is probably Fake account
+Fake
+3.3229620410703173
+<Response [200]>
+3.6027924505512368
+27986.49175588201
+   >>>This is probably Fake account
+Fake
+3.3354075917859363
+<Response [200]>
+3.613538459165772
+28066.353212340553
+   >>>This is probably Fake account
+Fake
+3.3478531425015556
+<Response [200]>
+3.6091700539713014
+28028.81463914113
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+3.360298693217175
+<Response [200]>
+3.6093125387474343
+28026.311863373827
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.372744243932794
+<Response [200]>
+3.6148097427128865
+28065.382842422852
+   >>>This is probably Fake account
+Fake
+3.3851897946484133
+<Response [200]>
+3.6086986511945724
+28014.327629223466
+   >>>This is probably Fake account
+Fake
+3.3976353453640322
+<Response [200]>
+3.602813877902188
+27965.041320276785
+   >>>This is probably Fake account
+Fake
+3.4100808960796516
+<Response [200]>
+3.6073812629184583
+27996.885981510153
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.422526446795271
+<Response [200]>
+3.6013154012506656
+27946.207513705165
+   >>>This is probably Fake account
+Fake
+3.43497199751089
+<Response [200]>
+3.60459440946579
+27968.048023045063
+   >>>This is probably Selebgram account
+Fake
+3.4474175482265093
+<Response [200]>
+3.6014802894867715
+27940.28408583837
+   >>>This is probably Fake account
+Fake
+3.4598630989421277
+<Response [200]>
+3.5950842075210683
+27887.068197740926
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.4723086496577475
+<Response [200]>
+3.6018958766827875
+27936.3044195517
+   >>>This is probably Fake account
+Fake
+3.484754200373367
+<Response [200]>
+3.5975694494588035
+27899.15108055302
+   >>>This is probably Selebgram account
+Fake
+3.4971997510889854
+<Response [200]>
+3.595987190131191
+27883.284672277252
+   >>>This is probably Fake account
+Fake
+3.509645301804605
+<Response [200]>
+3.591527287841689
+27845.111062636613
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.5220908525202237
+<Response [200]>
+3.5868544645949725
+27805.29580954023
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.534536403235843
+<Response [200]>
+3.5882703855004108
+27812.683758013685
+   >>>This is probably Fake account
+Fake
+3.546981953951462
+<Response [200]>
+3.592768817198904
+27843.958333291506
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.5594275046670814
+<Response [200]>
+3.5970098313751753
+27873.22918332623
+   >>>This is probably Fake account
+Fake
+3.5718730553827007
+<Response [200]>
+3.5953068583684518
+27856.437538638766
+   >>>This is probably Fake account
+Fake
+3.5843186060983196
+<Response [200]>
+3.607502737806903
+27947.32370979008
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+3.596764156813939
+<Response [200]>
+3.6054191209865687
+27927.576511161962
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.609209707529558
+<Response [200]>
+3.600956684967567
+27889.409525073806
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.6216552582451773
+<Response [200]>
+3.604059402065998
+27909.83600959909
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.6341008089607967
+<Response [200]>
+3.61628493707474
+28000.894267769712
+   >>>This is probably Fake account
+Fake
+3.6465463596764156
+<Response [200]>
+3.616348922456084
+27997.773357655
+   >>>This is probably Fake account
+Fake
+3.658991910392035
+<Response [200]>
+3.611221719761284
+27954.4673326721
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.671437461107654
+<Response [200]>
+3.61088082669145
+27948.217598591822
+   >>>This is probably Fake account
+Fake
+3.6838830118232733
+<Response [200]>
+3.6079957219394476
+27922.278892089384
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.6963285625388926
+<Response [200]>
+3.604139273415511
+27888.829697689223
+   >>>This is probably Fake account
+Fake
+3.7087741132545116
+<Response [200]>
+3.5992050538927116
+27847.04950196791
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+3.721219663970131
+<Response [200]>
+3.601684657227634
+27862.632508312978
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.7336652146857494
+<Response [200]>
+3.596704630057017
+27820.510313491028
+   >>>This is probably Fake account
+Fake
+3.7461107654013692
+<Response [200]>
+3.5909666175462083
+27772.535820102374
+   >>>This is probably Fake account
+Fake
+3.7585563161169877
+<Response [200]>
+3.5859538971983045
+27730.18148703449
+   >>>This is probably Fake account
+Fake
+3.7710018668326075
+<Response [200]>
+3.5826672390349232
+27701.183092218027
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.783447417548227
+<Response [200]>
+3.5792095143544045
+27670.8687554739
+   >>>This is probably Fake account
+Fake
+3.7958929682638454
+<Response [200]>
+3.580362217543555
+27676.19994161168
+   >>>This is probably Fake account
+Fake
+3.8083385189794647
+<Response [200]>
+3.575926056874344
+27638.332493581802
+   >>>This is probably Fake account
+Fake
+3.8207840696950837
+<Response [200]>
+3.572096896093909
+27605.16481301373
+   >>>This is probably Fake account
+Fake
+3.833229620410703
+<Response [200]>
+3.5687271410768684
+27575.554619100963
+   >>>This is probably Fake account
+Fake
+3.845675171126323
+<Response [200]>
+3.566337105525736
+27553.520477291837
+   >>>This is probably Fake account
+Fake
+3.8581207218419413
+<Response [200]>
+3.5609696726645192
+27508.49072133341
+   >>>This is probably Fake account
+Fake
+3.8705662725575607
+<Response [200]>
+3.5559229628449467
+27465.94896501437
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.8830118232731796
+<Response [200]>
+3.5565044536040378
+27466.883895183983
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+3.895457373988799
+<Response [200]>
+3.553408966277735
+27439.42403759667
+   >>>This is probably Fake account
+Fake
+3.9079029247044184
+<Response [200]>
+3.550255636500705
+27411.523769421943
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+3.9203484754200373
+<Response [200]>
+3.5511485372270855
+27414.8667073931
+   >>>This is probably Fake account
+Fake
+3.9327940261356567
+<Response [200]>
+3.5493582524830782
+27397.49635091688
+   >>>This is probably Fake account
+Fake
+3.9452395768512756
+<Response [200]>
+3.5457271499212606
+27365.922143092288
+   >>>This is probably Fake account
+Fake
+3.957685127566895
+<Response [200]>
+3.5530437508469106
+27418.83862528561
+   >>>This is probably Fake account
+Fake
+3.970130678282514
+<Response [200]>
+3.5490326903830502
+27384.336238995616
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+3.9825762289981332
+<Response [200]>
+3.5460596762597563
+27357.85040234402
+   >>>This is probably Selebgram account
+Fake
+3.9950217797137526
+<Response [200]>
+3.5440204804560107
+27338.573986237665
+   >>>This is probably Fake account
+Fake
+4.007467330429371
+<Response [200]>
+3.5414822760576046
+27315.452795232304
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.0199128811449905
+<Response [200]>
+3.549054007781179
+27370.304508008452
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.03235843186061
+<Response [200]>
+3.5493843032989973
+27369.30236273857
+   >>>This is probably Fake account
+Fake
+4.044803982576229
+<Response [200]>
+3.5539218909923846
+27400.737779551284
+   >>>This is probably Fake account
+Fake
+4.057249533291849
+<Response [200]>
+3.551241095812043
+27376.51760761504
+   >>>This is probably Fake account
+Fake
+4.069695084007467
+<Response [200]>
+3.5522889864918654
+27381.043507879298
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.082140634723086
+<Response [200]>
+3.550066854895615
+27360.365250680505
+   >>>This is probably Fake account
+Fake
+4.094586185438706
+<Response [200]>
+3.5440249377833313
+27310.25617055835
+   >>>This is probably Fake account
+Fake
+4.107031736154325
+<Response [200]>
+3.539777587399338
+27273.9863109119
+   >>>This is probably Fake account
+Fake
+4.1194772868699445
+<Response [200]>
+3.5352216595249235
+27235.34766498001
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.131922837585563
+<Response [200]>
+3.5430565038359307
+27292.164249048175
+   >>>This is probably Fake account
+Fake
+4.144368388301182
+<Response [200]>
+3.539753110559137
+27263.178457526476
+   >>>This is probably Fake account
+Fake
+4.156813939016802
+<Response [200]>
+3.5435590594114657
+27288.948316527698
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.169259489732421
+<Response [200]>
+3.5409250650832904
+27265.123001141335
+   >>>This is probably Fake account
+Fake
+4.18170504044804
+<Response [200]>
+3.544144203265508
+27286.36622094115
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.194150591163659
+<Response [200]>
+3.5539561046690897
+27358.35409374265
+   >>>This is probably Fake account
+Fake
+4.206596141879278
+<Response [200]>
+3.5554650739805234
+27366.414674428088
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.219041692594897
+<Response [200]>
+3.5509843411347157
+27328.37548937277
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.231487243310516
+<Response [200]>
+3.550287450762356
+27319.461933616327
+   >>>This is probably Fake account
+Fake
+4.2439327940261355
+<Response [200]>
+3.5462753625908903
+27285.04263977431
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.256378344741755
+<Response [200]>
+3.5445527082298236
+27268.243984412034
+   >>>This is probably Fake account
+Fake
+4.268823895457374
+<Response [200]>
+3.5435580498275536
+27257.048519273543
+   >>>This is probably Fake account
+Fake
+4.281269446172993
+<Response [200]>
+3.5415747851826422
+27238.251672839702
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.293714996888612
+<Response [200]>
+3.5366164725759757
+27196.580674109253
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.3061605476042315
+<Response [200]>
+3.5353808127386723
+27183.54306914765
+   >>>This is probably Fake account
+Fake
+4.318606098319851
+<Response [200]>
+3.5301409241789012
+27139.72342508739
+   >>>This is probably Fake account
+Fake
+4.33105164903547
+<Response [200]>
+3.5264330177471557
+27107.690607422384
+   >>>This is probably Fake account
+Fake
+4.343497199751089
+<Response [200]>
+3.5231350219693773
+27078.815778856635
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.355942750466708
+<Response [200]>
+3.5251728779929024
+27090.953567375454
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.3683883011823275
+<Response [200]>
+3.52235455186958
+27065.772376565852
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.380833851897947
+<Response [200]>
+3.5325514315204187
+27140.592648371377
+   >>>This is probably Fake account
+Fake
+4.393279402613565
+<Response [200]>
+3.5275339080659256
+27098.51548176244
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.405724953329185
+<Response [200]>
+3.532094215269143
+27130.015667482287
+   >>>This is probably Fake account
+Fake
+4.418170504044804
+<Response [200]>
+3.5310939318697216
+27118.801396759463
+   >>>This is probably Fake account
+Fake
+4.430616054760423
+<Response [200]>
+3.538640088579628
+27173.217240202965
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.443061605476043
+<Response [200]>
+3.5471620092204974
+27235.10990679498
+   >>>This is probably Fake account
+Fake
+4.455507156191661
+<Response [200]>
+3.555615828689916
+27296.462716852486
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.467952706907281
+<Response [200]>
+3.5544125555617563
+27283.670776492043
+   >>>This is probably Fake account
+Fake
+4.4803982576229
+<Response [200]>
+3.551354922188653
+27256.64902779791
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.4928438083385185
+<Response [200]>
+3.546594453980718
+27216.56583984803
+   >>>This is probably Fake account
+Fake
+4.505289359054139
+<Response [200]>
+3.543251826618258
+27187.371265641894
+   >>>This is probably Fake account
+Fake
+4.517734909769757
+<Response [200]>
+3.539483494009853
+27154.917366043595
+   >>>This is probably Fake account
+Fake
+4.530180460485377
+<Response [200]>
+3.5402109098958445
+27156.957889811023
+   >>>This is probably Fake account
+Fake
+4.542626011200996
+<Response [200]>
+3.5379272101676627
+27135.90170198597
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.555071561916614
+<Response [200]>
+3.537535186022357
+27129.357341605457
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.567517112632234
+<Response [200]>
+3.5407567511462386
+27150.522767789356
+   >>>This is probably Fake account
+Fake
+4.579962663347853
+<Response [200]>
+3.5459142618853114
+27186.524645874684
+   >>>This is probably Fake account
+Fake
+4.5924082140634725
+<Response [200]>
+3.549274001341202
+27208.734494281653
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.604853764779091
+<Response [200]>
+3.5452894623215134
+27174.643728694402
+   >>>This is probably Fake account
+Fake
+4.61729931549471
+<Response [200]>
+3.541544469540331
+27142.396814557098
+   >>>This is probably Fake account
+Fake
+4.62974486621033
+<Response [200]>
+3.5407093814624253
+27132.455990146565
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.642190416925949
+<Response [200]>
+3.545241360370339
+27163.63930315754
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.6546359676415685
+<Response [200]>
+3.5424564764461417
+27138.75906605389
+   >>>This is probably Fake account
+Fake
+4.667081518357187
+<Response [200]>
+3.5403217798868813
+27118.864833933512
+   >>>This is probably Fake account
+Fake
+4.679527069072806
+<Response [200]>
+3.5423119378850814
+27130.567132261836
+   >>>This is probably Fake account
+Fake
+4.691972619788426
+<Response [200]>
+3.538478006418567
+27097.664573153386
+   >>>This is probably Fake account
+Fake
+4.704418170504045
+<Response [200]>
+3.539546460701675
+27102.307249592726
+   >>>This is probably Fake account
+Fake
+4.7168637212196645
+<Response [200]>
+3.536323285039937
+27074.091070265757
+   >>>This is probably Selebgram account
+Fake
+4.729309271935283
+<Response [200]>
+3.5464281628006384
+27147.90758623889
+   >>>This is probably Fake account
+Fake
+4.741754822650902
+<Response [200]>
+3.5443878048674016
+27128.74425845509
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.754200373366521
+<Response [200]>
+3.5471542137455567
+27146.371197794746
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.76664592408214
+<Response [200]>
+3.5441011479878237
+27119.461984402828
+   >>>This is probably Fake account
+Fake
+4.77909147479776
+<Response [200]>
+3.544323501487573
+27117.619109881423
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.791537025513379
+<Response [200]>
+3.551551030518173
+27169.36538346402
+   >>>This is probably Fake account
+Fake
+4.803982576228998
+<Response [200]>
+3.5582111579766544
+27216.75714736343
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.816428126944617
+<Response [200]>
+3.554534426647255
+27185.079294998206
+   >>>This is probably Fake account
+Fake
+4.828873677660236
+<Response [200]>
+3.5503435233204637
+27149.476922831585
+   >>>This is probably Fake account
+Fake
+4.8413192283758555
+<Response [200]>
+3.5550402595941697
+27181.837824857022
+   >>>This is probably Fake account
+Fake
+4.853764779091475
+<Response [200]>
+3.5516165287066728
+27152.108361962513
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.866210329807094
+<Response [200]>
+3.548531426188281
+27124.97422178322
+   >>>This is probably Fake account
+Fake
+4.878655880522713
+<Response [200]>
+3.560280531644821
+27211.224103361368
+   >>>This is probably Fake account
+Fake
+4.891101431238332
+<Response [200]>
+3.5585007188277693
+27194.062493281814
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+4.9035469819539514
+<Response [200]>
+3.559729674140814
+27199.89444010996
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.915992532669571
+<Response [200]>
+3.5659081163285653
+27243.538008750238
+   >>>This is probably Fake account
+Fake
+4.92843808338519
+<Response [200]>
+3.563308819375857
+27220.11607121217
+   >>>This is probably Fake account
+Fake
+4.940883634100809
+<Response [200]>
+3.565922779760673
+27236.51819181202
+   >>>This is probably Fake account
+Fake
+4.953329184816428
+<Response [200]>
+3.5737754645659097
+27292.92322288985
+   >>>This is probably Fake account
+Fake
+4.965774735532047
+<Response [200]>
+3.571317213818543
+27270.578244718396
+   >>>This is probably Fake account
+Fake
+4.978220286247667
+<Response [200]>
+3.5685673391819
+27246.01163465381
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+4.990665836963286
+<Response [200]>
+3.5701249704099354
+27254.33402410945
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.003111387678905
+<Response [200]>
+3.5732120275497437
+27274.327406287193
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.015556938394524
+<Response [200]>
+3.5745225976181976
+27280.756465022085
+   >>>This is probably Fake account
+Fake
+5.0280024891101425
+<Response [200]>
+3.575812545743319
+27287.025536567267
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.040448039825762
+<Response [200]>
+3.5749005876941444
+27276.491484106322
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.052893590541382
+<Response [200]>
+3.581102241436249
+27320.22899991714
+   >>>This is probably Fake account
+Fake
+5.065339141257001
+<Response [200]>
+3.5824144079878524
+27326.657104131336
+   >>>This is probably Fake account
+Fake
+5.07778469197262
+<Response [200]>
+3.5857557514134575
+27348.55911603044
+   >>>This is probably Fake account
+Fake
+5.090230242688238
+<Response [200]>
+3.58321770129402
+27325.6181900682
+   >>>This is probably Fake account
+Fake
+5.102675793403858
+<Response [200]>
+3.5845646049918196
+27332.305113062626
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.115121344119478
+<Response [200]>
+3.58687281376544
+27346.318332147715
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.1275668948350965
+<Response [200]>
+3.5842265446209214
+27322.558949645285
+   >>>This is probably Fake account
+Fake
+5.140012445550716
+<Response [200]>
+3.5831358063307572
+27310.661115853032
+   >>>This is probably Fake account
+Fake
+5.152457996266334
+<Response [200]>
+3.58663871322853
+27333.773633514626
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.164903546981954
+<Response [200]>
+3.588926978283618
+27347.623574521167
+   >>>This is probably Selebgram account
+Fake
+5.177349097697573
+<Response [200]>
+3.59308613378268
+27375.723253290238
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.1897946484131925
+<Response [200]>
+3.5975026129532774
+27405.77490547807
+   >>>This is probably Selebgram account
+Fake
+5.202240199128812
+<Response [200]>
+3.596386481129952
+27393.675826766845
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.21468574984443
+<Response [200]>
+3.598228030671368
+27404.104681593137
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.22713130056005
+<Response [200]>
+3.5973361038026357
+27393.714430457072
+   >>>This is probably Fake account
+Fake
+5.239576851275669
+<Response [200]>
+3.5931689218217575
+27358.388170750863
+   >>>This is probably Selebgram account
+Fake
+5.2520224019912884
+<Response [200]>
+3.5916256057142646
+27343.045736302698
+   >>>This is probably Fake account
+Fake
+5.264467952706908
+<Response [200]>
+3.591420258754252
+27337.891009637366
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.276913503422526
+<Response [200]>
+3.593680368279511
+27351.501282975358
+   >>>This is probably Selebgram account
+Fake
+5.289359054138146
+<Response [200]>
+3.590761920143576
+27325.698212292613
+   >>>This is probably Fake account
+Fake
+5.301804604853764
+<Response [200]>
+3.5915896338476263
+27328.40552394659
+   >>>This is probably Fake account
+Fake
+5.314250155569384
+<Response [200]>
+3.589523738106185
+27309.096599511853
+   >>>This is probably Fake account
+Fake
+5.326695706285004
+<Response [200]>
+3.5872266576668927
+27288.033184872053
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.339141257000622
+<Response [200]>
+3.5869510512807707
+27282.349696041543
+   >>>This is probably Fake account
+Fake
+5.351586807716242
+<Response [200]>
+3.5876017664754114
+27283.711434045505
+   >>>This is probably Fake account
+Fake
+5.36403235843186
+<Response [200]>
+3.5839138689284535
+27252.081059331962
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.3764779091474795
+<Response [200]>
+3.5967909782021135
+27346.401807270668
+   >>>This is probably Fake account
+Fake
+5.388923459863099
+<Response [200]>
+3.594142436981201
+27322.67080593109
+   >>>This is probably Fake account
+Fake
+5.401369010578718
+<Response [200]>
+3.595310066702179
+27327.95181700326
+   >>>This is probably Fake account
+Fake
+5.413814561294338
+<Response [200]>
+3.5958387994218146
+27328.37487560579
+   >>>This is probably Fake account
+Fake
+5.426260112009956
+<Response [200]>
+3.59924640732074
+27350.673449230304
+   >>>This is probably Fake account
+Fake
+5.438705662725575
+<Response [200]>
+3.6020116211347775
+27368.08429738204
+   >>>This is probably Fake account
+Fake
+5.451151213441195
+<Response [200]>
+3.6093610263850593
+27420.315717447294
+   >>>This is probably Fake account
+Fake
+5.463596764156814
+<Response [200]>
+3.6140084440452904
+27452.008140968028
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.4760423148724335
+<Response [200]>
+3.6123855823820286
+27436.068498191507
+   >>>This is probably Fake account
+Fake
+5.488487865588052
+<Response [200]>
+3.613766858366882
+27442.9455224381
+   >>>This is probably Fake account
+Fake
+5.500933416303671
+<Response [200]>
+3.6202406689052666
+27488.48739899769
+   >>>This is probably Fake account
+Fake
+5.513378967019291
+<Response [200]>
+3.6247908240247257
+27519.41193599572
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.52582451773491
+<Response [200]>
+3.6244609329077573
+27513.282941702786
+   >>>This is probably Fake account
+Fake
+5.5382700684505295
+<Response [200]>
+3.624789242262251
+27512.150348770483
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.550715619166148
+<Response [200]>
+3.6224493574133905
+27490.76817341022
+   >>>This is probably Fake account
+Fake
+5.563161169881767
+<Response [200]>
+3.6221766167839102
+27485.076168156313
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.575606720597386
+<Response [200]>
+3.619973922414439
+27464.74214935835
+   >>>This is probably Fake account
+Fake
+5.588052271313006
+<Response [200]>
+3.6178863303433015
+27445.285701984285
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.600497822028625
+<Response [200]>
+3.616499881214566
+27431.151599012483
+   >>>This is probably Fake account
+Fake
+5.612943372744244
+<Response [200]>
+3.615985828069784
+27423.636520081243
+   >>>This is probably Fake account
+Fake
+5.625388923459863
+<Response [200]>
+3.6140234359597736
+27405.139714882964
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.637834474175482
+<Response [200]>
+3.612253152771501
+27388.103404313522
+   >>>This is probably Fake account
+Fake
+5.650280024891101
+<Response [200]>
+3.619082344786186
+27436.263255824077
+   >>>This is probably Fake account
+Fake
+5.6627255756067205
+<Response [200]>
+3.6221754687173027
+27456.090052877153
+   >>>This is probably Selebgram account
+Fake
+5.67517112632234
+<Response [200]>
+3.62927680946233
+27506.288938915
+   >>>This is probably Fake account
+Fake
+5.687616677037959
+<Response [200]>
+3.6275007609987155
+27489.200766848266
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.700062227753578
+<Response [200]>
+3.6236782105208483
+27456.60980111647
+   >>>This is probably Fake account
+Fake
+5.712507778469197
+<Response [200]>
+3.622372571679242
+27443.094603041936
+   >>>This is probably Fake account
+Fake
+5.7249533291848165
+<Response [200]>
+3.622636521899182
+27441.471653386303
+   >>>This is probably Fake account
+Fake
+5.737398879900436
+<Response [200]>
+3.620628526567637
+27422.640460223283
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.749844430616055
+<Response [200]>
+3.6192604024688917
+27408.659027896916
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.762289981331674
+<Response [200]>
+3.6274007082500415
+27466.678162869313
+   >>>This is probably Fake account
+Fake
+5.774735532047293
+<Response [200]>
+3.6235692136246582
+27434.04251635229
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.787181082762912
+<Response [200]>
+3.627489096631286
+27460.092461498833
+   >>>This is probably Fake account
+Fake
+5.799626633478532
+<Response [200]>
+3.624702658264422
+27435.374420403412
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.81207218419415
+<Response [200]>
+3.622674028674336
+27416.397049007377
+   >>>This is probably Selebgram account
+Fake
+5.82451773490977
+<Response [200]>
+3.6309947157517457
+27475.737014093458
+   >>>This is probably Fake account
+Fake
+5.836963285625389
+<Response [200]>
+3.6296587193698517
+27461.997870752297
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.8494088363410075
+<Response [200]>
+3.62865145713725
+27450.748273243295
+   >>>This is probably Fake account
+Fake
+5.861854387056628
+<Response [200]>
+3.629316686318432
+27452.15141531262
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.874299937772246
+<Response [200]>
+3.6291733565977062
+27447.43809594845
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.886745488487866
+<Response [200]>
+3.626268567292937
+27421.84290586919
+   >>>This is probably Fake account
+Fake
+5.899191039203485
+<Response [200]>
+3.624290911457207
+27403.26358152794
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+5.9116365899191035
+<Response [200]>
+3.621260850805985
+27376.73203209325
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.924082140634724
+<Response [200]>
+3.6272710772121655
+27418.54207264676
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.936527691350342
+<Response [200]>
+3.6265377808416916
+27409.372547601506
+   >>>This is probably Fake account
+Fake
+5.948973242065962
+<Response [200]>
+3.626341952938415
+27404.2661383556
+   >>>This is probably Fake account
+Fake
+5.96141879278158
+<Response [200]>
+3.622779034373656
+27373.718383727344
+   >>>This is probably Fake account
+Fake
+5.973864343497199
+<Response [200]>
+3.6245387812455494
+27383.390492310125
+   >>>This is probably Fake account
+Fake
+5.986309894212819
+<Response [200]>
+3.622085447370882
+27361.23346943964
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+5.998755444928438
+<Response [200]>
+3.627529054261837
+27398.72694683965
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.0112009956440575
+<Response [200]>
+3.62495742130477
+27375.678445693622
+   >>>This is probably Fake account
+Fake
+6.023646546359676
+<Response [200]>
+3.6219460279488365
+27349.314457041663
+   >>>This is probably Fake account
+Fake
+6.036092097075295
+<Response [200]>
+3.6259094720034257
+27375.616513625864
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.048537647790915
+<Response [200]>
+3.6260978371027566
+27373.41257228871
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.060983198506534
+<Response [200]>
+3.6224061409795554
+27341.921552113683
+   >>>This is probably Fake account
+Fake
+6.0734287492221535
+<Response [200]>
+3.6248191902871993
+27356.510429097492
+   >>>This is probably Fake account
+Fake
+6.085874299937772
+<Response [200]>
+3.629806351807951
+27390.5187307428
+   >>>This is probably Fake account
+Fake
+6.098319850653391
+<Response [200]>
+3.637103929325026
+27441.94914675732
+   >>>This is probably Selebgram account
+Fake
+6.110765401369011
+<Response [200]>
+3.6391307108271147
+27453.602082479752
+   >>>This is probably Selebgram account
+Fake
+6.12321095208463
+<Response [200]>
+3.6376340505553455
+27438.67364333897
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.135656502800249
+<Response [200]>
+3.636356486268266
+27425.400619435262
+   >>>This is probably Fake account
+Fake
+6.148102053515868
+<Response [200]>
+3.6381669618822783
+27435.41705955426
+   >>>This is probably Fake account
+Fake
+6.160547604231487
+<Response [200]>
+3.6377695449674974
+27428.78236905493
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+6.172993154947106
+<Response [200]>
+3.6345120653990777
+27400.586461043647
+   >>>This is probably Fake account
+Fake
+6.185438705662725
+<Response [200]>
+3.6319612214263057
+27377.72368711149
+   >>>This is probably Fake account
+Fake
+6.197884256378345
+<Response [200]>
+3.6319316893696305
+27373.869142778905
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.210329807093964
+<Response [200]>
+3.6302188384031244
+27357.329166205946
+   >>>This is probably Fake account
+Fake
+6.222775357809583
+<Response [200]>
+3.632283847808838
+27369.258793239595
+   >>>This is probably Fake account
+Fake
+6.235220908525202
+<Response [200]>
+3.6290709030128525
+27341.42018329883
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+6.247666459240821
+<Response [200]>
+3.6286541883689
+27334.652000982926
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+6.2601120099564405
+<Response [200]>
+3.6351194832007407
+27379.71994746798
+   >>>This is probably Fake account
+Fake
+6.27255756067206
+<Response [200]>
+3.6376077111751313
+27394.823672859915
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+6.285003111387678
+<Response [200]>
+3.6376052738416313
+27391.167712027484
+   >>>This is probably Fake account
+Fake
+6.297448662103299
+<Response [200]>
+3.63492058812394
+27367.317107985145
+   >>>This is probably Fake account
+Fake
+6.309894212818917
+<Response [200]>
+3.638423486103908
+27390.05200339022
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.322339763534536
+<Response [200]>
+3.6391718941410693
+27392.04684719983
+   >>>This is probably Fake account
+Fake
+6.334785314250156
+<Response [200]>
+3.6399649889857923
+27394.376507107074
+   >>>This is probably Fake account
+Fake
+6.347230864965775
+<Response [200]>
+3.637099121131149
+27369.170886511896
+   >>>This is probably Fake account
+Fake
+6.359676415681394
+<Response [200]>
+3.6333097147148417
+27337.02229351447
+   >>>This is probably Fake account
+Fake
+6.372121966397012
+<Response [200]>
+3.631390363909304
+27318.949707689695
+   >>>This is probably Fake account
+Fake
+6.384567517112632
+<Response [200]>
+3.628228402741936
+27291.53404542484
+   >>>This is probably Fake account
+Fake
+6.397013067828252
+<Response [200]>
+3.6285657409564065
+27290.442937733133
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.40945861854387
+<Response [200]>
+3.6267721782610254
+27273.32678052291
+   >>>This is probably Fake account
+Fake
+6.4219041692594905
+<Response [200]>
+3.634314378564672
+27326.409812427766
+   >>>This is probably Selebgram account
+Fake
+6.434349719975109
+<Response [200]>
+3.6324666012186606
+27308.883907961892
+   >>>This is probably Fake account
+Fake
+6.446795270690727
+<Response [200]>
+3.6297648040484276
+27284.94203203203
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.459240821406348
+<Response [200]>
+3.630423987761628
+27286.266692016397
+   >>>This is probably Fake account
+Fake
+6.471686372121967
+<Response [200]>
+3.631813640777881
+27293.079510445776
+   >>>This is probably Fake account
+Fake
+6.4841319228375855
+<Response [200]>
+3.6336655795230977
+27303.363164536557
+   >>>This is probably Fake account
+Fake
+6.496577473553204
+<Response [200]>
+3.6320885022481284
+27287.88091739019
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.509023024268824
+<Response [200]>
+3.6330317607573295
+27291.33458680906
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+6.521468574984443
+<Response [200]>
+3.634065259048957
+27295.464160716718
+   >>>This is probably Fake account
+Fake
+6.533914125700062
+<Response [200]>
+3.6340707924252467
+27291.8716511136
+   >>>This is probably Selebgram account
+Fake
+6.546359676415682
+<Response [200]>
+3.634508476511154
+27291.524150122255
+   >>>This is probably Fake account
+Fake
+6.558805227131301
+<Response [200]>
+3.63264833817672
+27273.923723030814
+   >>>This is probably Fake account
+Fake
+6.571250777846919
+<Response [200]>
+3.636056638576768
+27295.877185795798
+   >>>This is probably Fake account
+Fake
+6.583696328562539
+<Response [200]>
+3.6388565538510935
+27313.25729320631
+   >>>This is probably Fake account
+Fake
+6.596141879278158
+<Response [200]>
+3.635869407203962
+27287.199901065735
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+6.6085874299937775
+<Response [200]>
+3.6361161692667814
+27285.41573417793
+   >>>This is probably Fake account
+Fake
+6.621032980709396
+<Response [200]>
+3.6383574896288993
+27298.596244685632
+   >>>This is probably Fake account
+Fake
+6.633478531425016
+<Response [200]>
+3.6434998360181168
+27333.535769807913
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.645924082140635
+<Response [200]>
+3.650096001696497
+27379.370108725427
+   >>>This is probably Fake account
+Fake
+6.658369632856253
+<Response [200]>
+3.6483146328792393
+27362.359746594295
+   >>>This is probably Fake account
+Fake
+6.6708151835718725
+<Response [200]>
+3.646411863280766
+27344.442562742464
+   >>>This is probably Fake account
+Fake
+6.683260734287493
+<Response [200]>
+3.6449224345066917
+27329.628413931176
+   >>>This is probably Fake account
+Fake
+6.695706285003111
+<Response [200]>
+3.6453375935997663
+27329.095939217448
+   >>>This is probably Fake account
+Fake
+6.70815183571873
+<Response [200]>
+3.649124592266189
+27353.837943627354
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.72059738643435
+<Response [200]>
+3.648403395988323
+27344.783452932483
+   >>>This is probably Selebgram account
+Fake
+6.733042937149969
+<Response [200]>
+3.6487821571928296
+27343.973486003066
+   >>>This is probably Fake account
+Fake
+6.745488487865588
+<Response [200]>
+3.645956081657832
+27319.148919862135
+   >>>This is probably Fake account
+Fake
+6.757934038581208
+<Response [200]>
+3.651520718088027
+27357.193219915498
+   >>>This is probably Fake account
+Fake
+6.770379589296827
+<Response [200]>
+3.655132587341701
+27380.598211776683
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.782825140012445
+<Response [200]>
+3.654418773388644
+27371.596612680944
+   >>>This is probably Fake account
+Fake
+6.7952706907280644
+<Response [200]>
+3.6563979317417075
+27382.76411081365
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.807716241443684
+<Response [200]>
+3.655405839574838
+27371.67892673639
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.820161792159303
+<Response [200]>
+3.657299059150863
+27382.19805586251
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.832607342874922
+<Response [200]>
+3.6567555190435526
+27374.471815560035
+   >>>This is probably Fake account
+Fake
+6.845052893590542
+<Response [200]>
+3.6552634204517713
+27359.646702081507
+   >>>This is probably Fake account
+Fake
+6.85749844430616
+<Response [200]>
+3.65165044694544
+27328.951944939672
+   >>>This is probably Fake account
+Fake
+6.86994399502178
+<Response [200]>
+3.649392967638762
+27308.40757684086
+   >>>This is probably Fake account
+Fake
+6.882389545737398
+<Response [200]>
+3.646208776918932
+27280.93406890745
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.8948350964530185
+<Response [200]>
+3.652869833505541
+27327.119224454953
+   >>>This is probably Fake account
+Fake
+6.907280647168637
+<Response [200]>
+3.6553340740032025
+27341.898873543956
+   >>>This is probably Fake account
+Fake
+6.9197261978842555
+<Response [200]>
+3.6528033279686523
+27319.31608987755
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+6.932171748599876
+<Response [200]>
+3.6549839669540924
+27331.970104882705
+   >>>This is probably Fake account
+Fake
+6.944617299315495
+<Response [200]>
+3.6543107250685334
+27323.281291337426
+   >>>This is probably Fake account
+Fake
+6.957062850031114
+<Response [200]>
+3.6534615556754453
+27313.278590229627
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+6.969508400746734
+<Response [200]>
+3.6499142216784612
+27283.108807046498
+   >>>This is probably Fake account
+Fake
+6.981953951462352
+<Response [200]>
+3.6502780557316257
+27282.17818853817
+   >>>This is probably Fake account
+Fake
+6.994399502177971
+<Response [200]>
+3.651543501008872
+27287.9845830393
+   >>>This is probably Fake account
+Fake
+7.00684505289359
+<Response [200]>
+3.650850862635177
+27279.157645610045
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.01929060360921
+<Response [200]>
+3.6505596307998007
+27273.33100170531
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.031736154324829
+<Response [200]>
+3.6562343069937375
+27312.07027324322
+   >>>This is probably Fake account
+Fake
+7.044181705040447
+<Response [200]>
+3.6551960580340546
+27300.659357456352
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.056627255756068
+<Response [200]>
+3.653575118046379
+27284.898981570357
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.069072806471686
+<Response [200]>
+3.6514682039408615
+27265.513078826414
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.0815183571873055
+<Response [200]>
+3.6486135149253482
+27240.54850243265
+   >>>This is probably Fake account
+Fake
+7.093963907902924
+<Response [200]>
+3.6464099628883497
+27220.45037296153
+   >>>This is probably Fake account
+Fake
+7.106409458618544
+<Response [200]>
+3.644297269096308
+27201.03481653484
+   >>>This is probably Fake account
+Fake
+7.118855009334163
+<Response [200]>
+3.6456996381699622
+27207.85639966243
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.131300560049782
+<Response [200]>
+3.6455202135948195
+27202.871833844543
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.1437461107654014
+<Response [200]>
+3.647569703308132
+27214.517556381972
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.156191661481021
+<Response [200]>
+3.645075335295304
+27192.262001302966
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.168637212196639
+<Response [200]>
+3.642170137829251
+27166.94705806838
+   >>>This is probably Fake account
+Fake
+7.1810827629122596
+<Response [200]>
+3.6402644590447224
+27149.09233555554
+   >>>This is probably Fake account
+Fake
+7.193528313627878
+<Response [200]>
+3.6387066593632156
+27133.8355588715
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.205973864343497
+<Response [200]>
+3.6391936913261347
+27133.82816252766
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.218419415059116
+<Response [200]>
+3.6389868103224656
+27128.64667095398
+   >>>This is probably Fake account
+Fake
+7.230864965774736
+<Response [200]>
+3.637364255786968
+27112.913162636058
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.243310516490355
+<Response [200]>
+3.643962347220719
+27158.45137383602
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.255756067205973
+<Response [200]>
+3.6452102775639164
+27164.106988406304
+   >>>This is probably Fake account
+Fake
+7.268201617921593
+<Response [200]>
+3.6446163519604564
+27156.036438457362
+   >>>This is probably Fake account
+Fake
+7.280647168637213
+<Response [200]>
+3.641781987491836
+27131.275806814177
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.293092719352831
+<Response [200]>
+3.63862543952343
+27104.120899010028
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.30553827006845
+<Response [200]>
+3.6369644222714426
+27088.111017077703
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.31798382078407
+<Response [200]>
+3.638538890549926
+27096.1991179253
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.330429371499688
+<Response [200]>
+3.637702171183199
+27086.3303666301
+   >>>This is probably Fake account
+Fake
+7.342874922215308
+<Response [200]>
+3.6368512872922216
+27076.35783389059
+   >>>This is probably Fake account
+Fake
+7.355320472930928
+<Response [200]>
+3.637132926640777
+27074.817505913943
+   >>>This is probably Fake account
+Fake
+7.3677660236465465
+<Response [200]>
+3.6358280496017352
+27061.468173185716
+   >>>This is probably Selebgram account
+Fake
+7.380211574362165
+<Response [200]>
+3.634559632955876
+27048.39278845763
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.392657125077785
+<Response [200]>
+3.6373614723032173
+27065.60671540824
+   >>>This is probably Fake account
+Fake
+7.405102675793404
+<Response [200]>
+3.6427608425877676
+27102.14066885299
+   >>>This is probably Fake account
+Fake
+7.417548226509023
+<Response [200]>
+3.650914939057907
+27159.15623165177
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.429993777224642
+<Response [200]>
+3.6491990748362326
+27142.7427186319
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.442439327940262
+<Response [200]>
+3.6471503163659853
+27123.856902813834
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.45488487865588
+<Response [200]>
+3.644866185912704
+27103.224958446866
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.467330429371499
+<Response [200]>
+3.6429614996910096
+27085.418750202658
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.479775980087119
+<Response [200]>
+3.6409447946881692
+27066.78360371185
+   >>>This is probably Fake account
+Fake
+7.4922215308027384
+<Response [200]>
+3.637734421859944
+27039.27995768496
+   >>>This is probably Fake account
+Fake
+7.504667081518357
+<Response [200]>
+3.6348353752844766
+27014.09650911423
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.517112632233975
+<Response [200]>
+3.633746979252392
+27002.373802824524
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.529558182949596
+<Response [200]>
+3.6309629479715646
+26978.054703428726
+   >>>This is probably Fake account
+Fake
+7.542003733665215
+<Response [200]>
+3.627574384409209
+26949.250101776015
+   >>>This is probably Fake account
+Fake
+7.5544492843808335
+<Response [200]>
+3.627805474562543
+26947.339065050568
+   >>>This is probably Fake account
+Fake
+7.566894835096454
+<Response [200]>
+3.6278955320778645
+26944.3801167423
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.579340385812072
+<Response [200]>
+3.6267155724010247
+26931.98984065001
+   >>>This is probably Fake account
+Fake
+7.591785936527691
+<Response [200]>
+3.625812340955265
+26921.656631592843
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.604231487243311
+<Response [200]>
+3.6311327416065673
+26957.529473687155
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.6166770379589295
+<Response [200]>
+3.6315126535939237
+26956.718427627697
+   >>>This is probably Fake account
+Fake
+7.629122588674549
+<Response [200]>
+3.6285109146578667
+26930.808008590688
+   >>>This is probably Fake account
+Fake
+7.641568139390167
+<Response [200]>
+3.627327016199839
+26918.393787219004
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.654013690105788
+<Response [200]>
+3.6250797663277727
+26898.091866152074
+   >>>This is probably Fake account
+Fake
+7.666459240821406
+<Response [200]>
+3.627145897645455
+26909.79541463163
+   >>>This is probably Fake account
+Fake
+7.678904791537025
+<Response [200]>
+3.6271174379067443
+26905.95715439223
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.691350342252646
+<Response [200]>
+3.6251231520692895
+26887.53841889792
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.703795892968264
+<Response [200]>
+3.6279230406673353
+26904.67726958896
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.716241443683883
+<Response [200]>
+3.6253958417523293
+26882.31016659352
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.728686994399501
+<Response [200]>
+3.625847835663628
+26882.035853610138
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.741132545115121
+<Response [200]>
+3.6294709110566656
+26905.267863663063
+   >>>This is probably Selebgram account
+Fake
+7.753578095830741
+<Response [200]>
+3.6278789625121926
+26889.83887014037
+   >>>This is probably Fake account
+Fake
+7.766023646546359
+<Response [200]>
+3.6259472396893377
+26871.894993337683
+   >>>This is probably Fake account
+Fake
+7.7784691972619795
+<Response [200]>
+3.6248532428741456
+26860.16252969742
+   >>>This is probably Fake account
+Fake
+7.790914747977598
+<Response [200]>
+3.6232166236962753
+26844.411964965704
+   >>>This is probably Fake account
+Fake
+7.8033602986932165
+<Response [200]>
+3.623755013923706
+26844.777143146814
+   >>>This is probably Fake account
+Fake
+7.815805849408837
+<Response [200]>
+3.6286303655357117
+26877.265117523017
+   >>>This is probably Fake account
+Fake
+7.828251400124456
+<Response [200]>
+3.6305759707391734
+26888.04563929432
+   >>>This is probably Fake account
+Fake
+7.840696950840075
+<Response [200]>
+3.6319551687391978
+26894.62802451376
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.853142501555693
+<Response [200]>
+3.628888636874699
+26868.291467420273
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.865588052271313
+<Response [200]>
+3.626053528695167
+26843.674272930322
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.878033602986932
+<Response [200]>
+3.6243489782957106
+26827.43113734485
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.890479153702551
+<Response [200]>
+3.6221965088829258
+26807.876362242532
+   >>>This is probably Fake account
+Fake
+7.902924704418171
+<Response [200]>
+3.6203545562864288
+26790.623716519574
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.91537025513379
+<Response [200]>
+3.6175554402219423
+26766.29270220215
+   >>>This is probably Fake account
+Fake
+7.927815805849408
+<Response [200]>
+3.614519998828882
+26740.218951336068
+   >>>This is probably Fake account
+Fake
+7.940261356565028
+<Response [200]>
+3.6147244469872835
+26738.116734364936
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+7.952706907280647
+<Response [200]>
+3.6159968495555512
+26743.912699312856
+   >>>This is probably Fake account
+Fake
+7.9651524579962665
+<Response [200]>
+3.6147379584610464
+26730.987202819437
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+7.977598008711885
+<Response [200]>
+3.614519200347329
+26725.75496736815
+   >>>This is probably Fake account
+Fake
+7.990043559427505
+<Response [200]>
+3.6174968952701843
+26744.154546732472
+   >>>This is probably Fake account
+Fake
+8.002489110143124
+<Response [200]>
+3.615345728712542
+26724.63562664311
+   >>>This is probably Fake account
+Fake
+8.014934660858742
+<Response [200]>
+3.6157273698297345
+26723.84099041157
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.027380211574362
+<Response [200]>
+3.6156503108120703
+26719.6557969012
+   >>>This is probably Fake account
+Fake
+8.039825762289981
+<Response [200]>
+3.6139367778234806
+26703.378851337697
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.052271313005601
+<Response [200]>
+3.612603473884429
+26689.914465058162
+   >>>This is probably Fake account
+Fake
+8.06471686372122
+<Response [200]>
+3.6145186019532476
+26700.44891262864
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.07716241443684
+<Response [200]>
+3.6126214928913556
+26682.82234649555
+   >>>This is probably Fake account
+Fake
+8.089607965152458
+<Response [200]>
+3.610941791167626
+26666.805127772917
+   >>>This is probably Fake account
+Fake
+8.102053515868077
+<Response [200]>
+3.608541534426758
+26645.47069020718
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.114499066583697
+<Response [200]>
+3.6077038952909364
+26635.677858932984
+   >>>This is probably Fake account
+Fake
+8.126944617299316
+<Response [200]>
+3.6057866287815625
+26617.916893665493
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.139390168014934
+<Response [200]>
+3.6056724203471378
+26613.468134582225
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.151835718730553
+<Response [200]>
+3.610306184710437
+26644.059643163026
+   >>>This is probably Fake account
+Fake
+8.164281269446173
+<Response [200]>
+3.6089567578420407
+26630.491916116418
+   >>>This is probably Selebgram account
+Fake
+8.176726820161791
+<Response [200]>
+3.6088208248626152
+26625.880045836377
+   >>>This is probably Fake account
+Fake
+8.189172370877412
+<Response [200]>
+3.609299081074793
+26625.79932108875
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.201617921593032
+<Response [200]>
+3.608075705211333
+26613.16640163879
+   >>>This is probably Fake account
+Fake
+8.21406347230865
+<Response [200]>
+3.607193253618298
+26603.050245434948
+   >>>This is probably Fake account
+Fake
+8.226509023024269
+<Response [200]>
+3.6074470564745558
+26601.314594443375
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.238954573739889
+<Response [200]>
+3.6075575290489774
+26598.52166167811
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.251400124455508
+<Response [200]>
+3.605144885510521
+26577.12809598356
+   >>>This is probably Fake account
+Fake
+8.263845675171126
+<Response [200]>
+3.6063475332346306
+26582.387667472463
+   >>>This is probably Selebgram account
+Fake
+8.276291225886744
+<Response [200]>
+3.603695194703296
+26559.23358496329
+   >>>This is probably Fake account
+Fake
+8.288736776602365
+<Response [200]>
+3.6022030258321904
+26544.63409735741
+   >>>This is probably Fake account
+Fake
+8.301182327317983
+<Response [200]>
+3.6011226123598203
+26533.071407867155
+   >>>This is probably Selebgram account
+Fake
+8.313627878033603
+<Response [200]>
+3.599250923373742
+26515.681552494356
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+8.326073428749222
+<Response [200]>
+3.5988922842593114
+26509.44056585409
+   >>>This is probably Fake account
+Fake
+8.338518979464842
+<Response [200]>
+3.5985400943613763
+26503.247794971536
+   >>>This is probably Fake account
+Fake
+8.35096453018046
+<Response [200]>
+3.5960011606600175
+26480.95254710037
+   >>>This is probably Fake account
+Fake
+8.36341008089608
+<Response [200]>
+3.6005143345821473
+26510.58704552835
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.3758556316117
+<Response [200]>
+3.6007435314722613
+26508.673878698788
+   >>>This is probably Fake account
+Fake
+8.388301182327318
+<Response [200]>
+3.599966516834338
+26499.353530417564
+   >>>This is probably Selebgram account
+Fake
+8.400746733042936
+<Response [200]>
+3.60457051453767
+26529.63898699725
+   >>>This is probably Fake account
+Fake
+8.413192283758557
+<Response [200]>
+3.6039662424629255
+26521.58757828467
+   >>>This is probably Fake account
+Fake
+8.425637834474175
+<Response [200]>
+3.6033393611231794
+26513.371019144353
+   >>>This is probably Fake account
+Fake
+8.438083385189794
+<Response [200]>
+3.604506226767481
+26518.35231032836
+   >>>This is probably Fake account
+Fake
+8.450528935905414
+<Response [200]>
+3.602829771645817
+26502.41580022663
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.462974486621032
+<Response [200]>
+3.602055864123737
+26493.120880630086
+   >>>This is probably Fake account
+Fake
+8.475420037336653
+<Response [200]>
+3.5997480943514564
+26472.54748586061
+   >>>This is probably Fake account
+Fake
+8.487865588052271
+<Response [200]>
+3.5989357663039936
+26462.974689633265
+   >>>This is probably Selebgram account
+Fake
+8.500311138767891
+<Response [200]>
+3.5959598323436643
+26437.49668739062
+   >>>This is probably Fake account
+Fake
+8.51275668948351
+<Response [200]>
+3.5965427073121767
+26438.185441451813
+   >>>This is probably Fake account
+Fake
+8.525202240199128
+<Response [200]>
+3.593648047690844
+26413.313150527705
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+8.537647790914749
+<Response [200]>
+3.5929473325740493
+26404.56994708669
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+8.550093341630367
+<Response [200]>
+3.589921105202976
+26378.740281031467
+   >>>This is probably Fake account
+Fake
+8.562538892345986
+<Response [200]>
+3.5899084335149722
+26375.0572610345
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+8.574984443061604
+<Response [200]>
+3.5875449367462293
+26354.1051053378
+   >>>This is probably Fake account
+Fake
+8.587429993777224
+<Response [200]>
+3.5887515828229377
+26359.380375834477
+   >>>This is probably Fake account
+Fake
+8.599875544492845
+<Response [200]>
+3.589611421273172
+26362.106277830175
+   >>>This is probably Fake account
+Fake
+8.612321095208463
+<Response [200]>
+3.587118189458902
+26340.208865196717
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.624766645924083
+<Response [200]>
+3.5866195708298236
+26332.960889032565
+   >>>This is probably Fake account
+Fake
+8.637212196639702
+<Response [200]>
+3.583741606484229
+26308.247133200723
+   >>>This is probably Fake account
+Fake
+8.64965774735532
+<Response [200]>
+3.5814324107959115
+26287.713895241992
+   >>>This is probably Fake account
+Fake
+8.66210329807094
+<Response [200]>
+3.5831396764722365
+26296.662085629745
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.674548848786559
+<Response [200]>
+3.583749620610022
+26297.554716036342
+   >>>This is probably Fake account
+Fake
+8.686994399502177
+<Response [200]>
+3.5830888939450327
+26289.123214874704
+   >>>This is probably Fake account
+Fake
+8.699439950217796
+<Response [200]>
+3.586829549764871
+26312.981577075094
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.711885500933416
+<Response [200]>
+3.5858020067214964
+26301.857719302177
+   >>>This is probably Fake account
+Fake
+8.724331051649035
+<Response [200]>
+3.5842152648577508
+26286.634752466744
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.736776602364655
+<Response [200]>
+3.5818729923661277
+26265.874653020815
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.749222153080275
+<Response [200]>
+3.58225014877862
+26265.05809084484
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+8.761667703795894
+<Response [200]>
+3.5836497369137676
+26271.73622131483
+   >>>This is probably Fake account
+Fake
+8.774113254511512
+<Response [200]>
+3.5828764479211035
+26262.48436326169
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.78655880522713
+<Response [200]>
+3.5841738428002374
+26268.41009388294
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+8.79900435594275
+<Response [200]>
+3.5819034704561785
+26248.188631502875
+   >>>This is probably Fake account
+Fake
+8.81144990665837
+<Response [200]>
+3.5799334274846957
+26230.172223180365
+   >>>This is probably Fake account
+Fake
+8.823895457373988
+<Response [200]>
+3.577990539655699
+26212.35869351765
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+8.836341008089608
+<Response [200]>
+3.576638552840327
+26198.877399555393
+   >>>This is probably Fake account
+Fake
+8.848786558805227
+<Response [200]>
+3.5755833405817947
+26187.572386421063
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.861232109520847
+<Response [200]>
+3.573824437816491
+26171.116358130166
+   >>>This is probably Fake account
+Fake
+8.873677660236465
+<Response [200]>
+3.571583581004203
+26151.134980112773
+   >>>This is probably Fake account
+Fake
+8.886123210952086
+<Response [200]>
+3.572777839935794
+26156.306566169947
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.898568761667704
+<Response [200]>
+3.5724109322874695
+26150.048024344276
+   >>>This is probably Fake account
+Fake
+8.911014312383323
+<Response [200]>
+3.5707534824669693
+26134.344738175747
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.923459863098943
+<Response [200]>
+3.5688401365878692
+26116.772119550027
+   >>>This is probably Fake account
+Fake
+8.935905413814561
+<Response [200]>
+3.5666191641002642
+26096.952423721632
+   >>>This is probably Selebgram account
+Fake
+8.94835096453018
+<Response [200]>
+3.569425497665193
+26113.916940918552
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+8.9607965152458
+<Response [200]>
+3.5679472313986884
+26099.533997681407
+   >>>This is probably Fake account
+Fake
+8.973242065961418
+<Response [200]>
+3.569995615915518
+26110.9479348061
+   >>>This is probably Fake account
+Fake
+8.985687616677037
+<Response [200]>
+3.568618414474656
+26097.30646505316
+   >>>This is probably Fake account
+Fake
+8.998133167392657
+<Response [200]>
+3.567371176815956
+26084.618044878272
+   >>>This is probably Fake account
+Fake
+9.010578718108277
+<Response [200]>
+3.568159532810443
+26086.814344377148
+   >>>This is probably Fake account
+Fake
+9.023024268823896
+<Response [200]>
+3.5656727817140776
+26065.068034329906
+   >>>This is probably Fake account
+Fake
+9.035469819539514
+<Response [200]>
+3.5637773144015266
+26047.648390960756
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.047915370255135
+<Response [200]>
+3.5699944883134047
+26089.519720594362
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.060360920970753
+<Response [200]>
+3.569415343659265
+26081.717916118247
+   >>>This is probably Fake account
+Fake
+9.072806471686372
+<Response [200]>
+3.575352442117385
+26121.524942109616
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.085252022401992
+<Response [200]>
+3.574963540247042
+26115.108661504644
+   >>>This is probably Selebgram account
+Fake
+9.09769757311761
+<Response [200]>
+3.574611268519703
+26108.96070526791
+   >>>This is probably Fake account
+Fake
+9.110143123833229
+<Response [200]>
+3.57404509854447
+26101.251354670265
+   >>>This is probably Fake account
+Fake
+9.122588674548847
+<Response [200]>
+3.576119501301244
+26112.824598501684
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.135034225264468
+<Response [200]>
+3.574935628217962
+26100.60502161934
+   >>>This is probably Fake account
+Fake
+9.147479775980088
+<Response [200]>
+3.572786616954674
+26081.342303769117
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.159925326695706
+<Response [200]>
+3.5736378774694773
+26083.982867649713
+   >>>This is probably Fake account
+Fake
+9.172370877411327
+<Response [200]>
+3.573235906124762
+26077.475642898513
+   >>>This is probably Fake account
+Fake
+9.184816428126945
+<Response [200]>
+3.570956235655601
+26057.26765157892
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.197261978842564
+<Response [200]>
+3.5683733794298806
+26034.852176320408
+   >>>This is probably Fake account
+Fake
+9.209707529558182
+<Response [200]>
+3.568427590099541
+26031.679269776152
+   >>>This is probably Fake account
+Fake
+9.222153080273802
+<Response [200]>
+3.566331083475337
+26012.818922869108
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.23459863098942
+<Response [200]>
+3.5686356446171064
+26026.059756192557
+   >>>This is probably Fake account
+Fake
+9.24704418170504
+<Response [200]>
+3.567088758319737
+26011.21122566752
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.25948973242066
+<Response [200]>
+3.568780207185335
+26019.976490588277
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.27193528313628
+<Response [200]>
+3.5692356272831858
+26019.727722894426
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.284380833851898
+<Response [200]>
+3.571304899757733
+26031.241414334116
+   >>>This is probably Fake account
+Fake
+9.296826384567517
+<Response [200]>
+3.5693000400241917
+26013.058691696308
+   >>>This is probably Fake account
+Fake
+9.309271935283137
+<Response [200]>
+3.5681121097529
+26000.832943769383
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.321717485998755
+<Response [200]>
+3.5673796363443495
+25991.92803040493
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.334163036714374
+<Response [200]>
+3.568401824951172
+25995.80729476929
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.346608587429994
+<Response [200]>
+3.569481113144307
+26000.10042814313
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.359054138145613
+<Response [200]>
+3.5689864434460374
+25992.92826761749
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.371499688861231
+<Response [200]>
+3.568267558833676
+25984.12436342683
+   >>>This is probably Fake account
+Fake
+9.383945239576851
+<Response [200]>
+3.5670758893698533
+25971.8795505019
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.39639079029247
+<Response [200]>
+3.5650121152006236
+25953.28819866054
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.40883634100809
+<Response [200]>
+3.562776820684867
+25933.45247776515
+   >>>This is probably Fake account
+Fake
+9.421281891723709
+<Response [200]>
+3.561455912130197
+25920.276128483576
+   >>>This is probably Fake account
+Fake
+9.433727442439329
+<Response [200]>
+3.560028334406246
+25906.326189474254
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.446172993154947
+<Response [200]>
+3.55915944127069
+25896.44409468554
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.458618543870566
+<Response [200]>
+3.560170166743429
+25900.237963058447
+   >>>This is probably Fake account
+Fake
+9.471064094586186
+<Response [200]>
+3.56067468302322
+25900.347644310903
+   >>>This is probably Fake account
+Fake
+9.483509645301805
+<Response [200]>
+3.55885707455983
+25883.567503273644
+   >>>This is probably Selebgram account
+Fake
+9.495955196017423
+<Response [200]>
+3.559228463066671
+25882.70938342083
+   >>>This is probably Fake account
+Fake
+9.508400746733042
+<Response [200]>
+3.559241485845356
+25879.244843581582
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.520846297448662
+<Response [200]>
+3.5574960982877446
+25862.996634551902
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.53329184816428
+<Response [200]>
+3.558440596876817
+25866.304698697582
+   >>>This is probably Fake account
+Fake
+9.5457373988799
+<Response [200]>
+3.560435185998173
+25877.24293183472
+   >>>This is probably Fake account
+Fake
+9.55818294959552
+<Response [200]>
+3.561051863556107
+25878.16389246223
+   >>>This is probably Fake account
+Fake
+9.57062850031114
+<Response [200]>
+3.565431344028567
+25906.424145711568
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.583074051026758
+<Response [200]>
+3.569577236299391
+25932.978621715076
+   >>>This is probably Fake account
+Fake
+9.595519601742378
+<Response [200]>
+3.5705947443050476
+25936.800222631868
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.607965152457997
+<Response [200]>
+3.569642056455266
+25926.310256034598
+   >>>This is probably Fake account
+Fake
+9.620410703173615
+<Response [200]>
+3.568239136470089
+25912.552609045786
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.632856253889233
+<Response [200]>
+3.566516067014492
+25896.47316259223
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.645301804604854
+<Response [200]>
+3.56556550118231
+25886.005538583573
+   >>>This is probably Fake account
+Fake
+9.657747355320472
+<Response [200]>
+3.564967113979084
+25878.09628037417
+   >>>This is probably Fake account
+Fake
+9.670192906036092
+<Response [200]>
+3.566719828425227
+25887.252514710297
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.682638456751711
+<Response [200]>
+3.568883569197667
+25899.38806166747
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.695084007467331
+<Response [200]>
+3.572781143200719
+25924.099975064415
+   >>>This is probably Fake account
+Fake
+9.70752955818295
+<Response [200]>
+3.5761448854055162
+25944.93114361702
+   >>>This is probably Selebgram account
+Fake
+9.719975108898568
+<Response [200]>
+3.574187522355787
+25927.156287168877
+   >>>This is probably Fake account
+Fake
+9.732420659614188
+<Response [200]>
+3.5726258074840924
+25912.254981682123
+   >>>This is probably Fake account
+Fake
+9.744866210329807
+<Response [200]>
+3.5712888523993365
+25898.98675759999
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.757311761045425
+<Response [200]>
+3.574708359886189
+25920.21031753476
+   >>>This is probably Selebgram account
+Fake
+9.769757311761046
+<Response [200]>
+3.577190921261052
+25934.634179142628
+   >>>This is probably Fake account
+Fake
+9.782202862476664
+<Response [200]>
+3.5755548173841327
+25919.196871217577
+   >>>This is probably Fake account
+Fake
+9.794648413192283
+<Response [200]>
+3.575530610211771
+25915.445862814915
+   >>>This is probably Fake account
+Fake
+9.807093963907903
+<Response [200]>
+3.575205067087551
+25909.51112118348
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.819539514623523
+<Response [200]>
+3.57814131490178
+25927.211967778298
+   >>>This is probably Fake account
+Fake
+9.831985065339142
+<Response [200]>
+3.583705778363385
+25963.948364242726
+   >>>This is probably Fake account
+Fake
+9.84443061605476
+<Response [200]>
+3.582790028732435
+25953.73096813776
+   >>>This is probably Fake account
+Fake
+9.85687616677038
+<Response [200]>
+3.5824334777966893
+25947.565679681422
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+9.869321717485999
+<Response [200]>
+3.5799581980494803
+25926.057270274337
+   >>>This is probably Fake account
+Fake
+9.881767268201617
+<Response [200]>
+3.5787043538441887
+25913.39822618577
+   >>>This is probably Fake account
+Fake
+9.894212818917238
+<Response [200]>
+3.5823163251456975
+25935.97019405485
+   >>>This is probably Fake account
+Fake
+9.906658369632856
+<Response [200]>
+3.5866330972867995
+25963.63699125914
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.919103920348475
+<Response [200]>
+3.5868871711577794
+25961.88934484001
+   >>>This is probably Fake account
+Fake
+9.931549471064095
+<Response [200]>
+3.5849756411741254
+25944.468715177147
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.943995021779713
+<Response [200]>
+3.582945565556704
+25926.19411236831
+   >>>This is probably Fake account
+Fake
+9.956440572495334
+<Response [200]>
+3.5813596948981283
+25911.13739258796
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.968886123210952
+<Response [200]>
+3.5811599717753357
+25906.11123582278
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+9.981331673926572
+<Response [200]>
+3.578653183363917
+25884.398475271213
+   >>>This is probably Fake account
+Fake
+9.99377722464219
+<Response [200]>
+3.5805322996260665
+25894.409590895713
+   >>>This is probably Fake account
+Fake
+10.00622277535781
+<Response [200]>
+3.5790135525352325
+25879.846998382265
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+10.01866832607343
+<Response [200]>
+3.577890640756358
+25868.14933266847
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+10.031113876789048
+<Response [200]>
+3.5766508585170245
+25855.60905621957
+   >>>This is probably Fake account
+Fake
+10.043559427504666
+<Response [200]>
+3.580989618135946
+25883.39295988662
+   >>>This is probably Fake account
+Fake
+10.056004978220285
+<Response [200]>
+3.5836064281440017
+25898.7236561967
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+10.068450528935905
+<Response [200]>
+3.58284792086692
+25889.659076184365
+   >>>This is probably Fake account
+Fake
+10.080896079651524
+<Response [200]>
+3.5844433975808414
+25897.60354752158
+   >>>This is probably Selebgram account
+Fake
+10.093341630367144
+<Response [200]>
+3.5852992696326993
+25900.20192382662
+   >>>This is probably Fake account
+Fake
+10.105787181082764
+<Response [200]>
+3.584444713709977
+25890.444167127163
+   >>>This is probably Fake account
+Fake
+10.118232731798383
+<Response [200]>
+3.5840037511283622
+25883.67509064903
+   >>>This is probably Selebgram account
+Fake
+10.130678282514001
+<Response [200]>
+3.5821593777260556
+25866.772866559848
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+10.14312383322962
+<Response [200]>
+3.58160231245076
+25859.16869589449
+   >>>This is probably Selebgram account
+Fake
+10.15556938394524
+<Response [200]>
+3.582322013728759
+25860.78261710791
+   >>>This is probably Fake account
+Fake
+10.168014934660858
+<Response [200]>
+3.5831411144578764
+25863.112564156952
+   >>>This is probably Fake account
+Fake
+10.180460485376477
+<Response [200]>
+3.583231654027272
+25860.182847114822
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+10.192906036092097
+<Response [200]>
+3.584534115552611
+25865.99817782764
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+10.205351586807716
+<Response [200]>
+3.5848458711693927
+25864.662960487167
+   >>>This is probably Fake account
+Fake
+10.217797137523336
+<Response [200]>
+3.585050843955538
+25862.556788295253
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+10.230242688238956
+<Response [200]>
+3.5871153370887403
+25873.862926421083
+   >>>This is a normal account
+   >>>This user is passive
+Passivo
+10.242688238954575
+<Response [200]>
+3.5857455159740055
+25860.396661204526
+   >>>This is a normal account
+   >>>This user is active
+Attivo
+10.255133789670193
+<Response [200]>
