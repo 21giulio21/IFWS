@@ -220,7 +220,7 @@ while True:
             if content_follow.__contains__("Please wait a few minutes before you try again"):
                 updateTempoBlocco(username,tempo_blocco_se_esce_errore)
                 # aumentoDelta t di 10 secondi
-                delta_t = int(delta_t) + 10
+                delta_t = int(delta_t) + 100
                 updateDeltaT(username, str(delta_t))
                 continue
 
@@ -234,6 +234,15 @@ while True:
                 else:
                     #Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
                     updateProcessing(username,0)
+
+
+            #COntrollo che l'utente non abbia cambiato la password
+            if 'message' in content_follow_JSON:
+                # Caso in cui ho sbagliato la password
+                print("Errore, password dello username " + username + " ERRATA ")
+                # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                updatePasswordErrataAndProcessing(username, 1)
+                continue
 
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
@@ -287,6 +296,7 @@ while True:
                 printFile(content_unfollow)
                 print(content_unfollow)
 
+                content_follow_JSON = json.loads(content_unfollow)
 
                 if content_unfollow.__contains__("Please wait a few minutes before you try again"):
 
@@ -296,11 +306,29 @@ while True:
                     #aumentoDelta t di 10 secondi
                     delta_t = int(delta_t) + 10
                     updateDeltaT(username,str(delta_t))
+                elif processing == "1":
+                    if 'message' in content_follow_JSON:
+                        # Caso in cui ho sbagliato la password
+                        print("Errore, password dello username " + username + " ERRATA ")
+                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                        updatePasswordErrataAndProcessing(username, 1)
+                        continue
+                    else:
+                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
+                        updateProcessing(username, 0)
 
+                        # COntrollo che l'utente non abbia cambiato la password
+                    if 'message' in content_follow_JSON:
+                        # Caso in cui ho sbagliato la password
+                        print("Errore, password dello username " + username + " ERRATA ")
+                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                        updatePasswordErrataAndProcessing(username, 1)
+                        continue
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
                 updateUserFollowed(users_followed_string, username)
+
             else:
 
                 #Mando la richiesta di unfollow
@@ -312,6 +340,7 @@ while True:
 
                 printFile(content_unfollow)
                 print(content_unfollow)
+                content_follow_JSON = json.loads(content_unfollow)
 
 
                 if content_unfollow.__contains__("Please wait a few minutes before you try again"):
@@ -321,6 +350,24 @@ while True:
                     # aumentoDelta t di 10 secondi
                     delta_t = int(delta_t) + 10
                     updateDeltaT(username, str(delta_t))
+                elif processing == "1":
+                    if 'message' in content_follow_JSON:
+                        # Caso in cui ho sbagliato la password
+                        print("Errore, password dello username " + username + " ERRATA ")
+                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                        updatePasswordErrataAndProcessing(username, 1)
+                        continue
+                    else:
+                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
+                        updateProcessing(username, 0)
+
+                        # COntrollo che l'utente non abbia cambiato la password
+                if 'message' in content_follow_JSON:
+                    # Caso in cui ho sbagliato la password
+                    print("Errore, password dello username " + username + " ERRATA ")
+                    # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                    updatePasswordErrataAndProcessing(username, 1)
+                    continue
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))

