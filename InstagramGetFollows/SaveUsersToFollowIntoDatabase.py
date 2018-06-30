@@ -1,7 +1,16 @@
 import instaloader
 import requests
 from time import sleep
+
 import time
+
+
+#Permette di scrivere i log su un file di testo
+def myPrint(text):
+    print(text)
+    with open("LOG/logSaveUsersToFollowIntoDatabase.txt", "a") as myfile:
+        myfile.write(text + "\n")
+
 
 # Get instance
 L = instaloader.Instaloader()
@@ -20,9 +29,9 @@ media = 0
 for user in Users:
     profile = instaloader.Profile.from_username(L.context, user)
     followers = profile.followers
-    print("Followers totali del profilo " + str(user) + ": " + str(followers))
+    myPrint("Followers totali del profilo " + str(user) + ": " + str(followers))
     followers_totali += followers
-print("Followers totali dei profili: "+ str(followers_totali))
+myPrint("Followers totali dei profili: "+ str(followers_totali))
 
 
 
@@ -41,8 +50,8 @@ for user in Users:
             int(is_private)))
 
         i += 1
-        print(str(i) + ") Salvo il followers :" + str(follower.username) +" dell'utente " + str(user) )
+        myPrint(str(i) + ") Salvo il followers :" + str(follower.username) +" dell'utente " + str(user) )
         sleep(1)
 
-    print("Finito l'utente " + str(user))
+    myPrint("Finito l'utente " + str(user))
 
