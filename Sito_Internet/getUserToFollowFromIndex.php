@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 
 
-$query = "SELECT * FROM idnumeri LIMIT {$index},1";
+$query = "SELECT * FROM USERS_TO_FOLLOW LIMIT {$index},1";
 $result = $conn->query($query) or die ("queru");
 
 

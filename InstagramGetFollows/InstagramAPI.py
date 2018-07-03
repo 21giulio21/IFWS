@@ -212,13 +212,22 @@ def seveCookieIntoServer(username,cookie):
     url = "http://getfollowersoninstagram.altervista.org/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
     print(requests.get(url).content)
 
+#Questa funzione permette di settare il tempo di blocco
+def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
+    print("Imposto il tempo di blocco per l'utente: " + username + " perche ha fatto troppe richueste")
+    # Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
+    updateTempoBlocco(username, tempo_blocco_se_esce_errore)
+    # aumentoDelta t di 10 secondi
+    delta_t = int(delta_t) + 50
+    updateDeltaT(username, str(delta_t))
+
 
 
 
 #prendo come input un numero random da 1 al numero massimo di persone che ho nel database di persone che posso
 #seguire e facci ola richiesta pert farmene tornare 1 a caso
-def getRandomUserToFollow(index):
-    url = "http://getfollowersoninstagram.altervista.org/getUserToFollowFromIndex.php?index=" + str(index)
+def getRandomUserToFollow(username_whants_to_follow):
+    url = "http://getfollowersoninstagram.altervista.org/getUserToFollowFromUser.php?USERNAME=" + str(username_whants_to_follow)
     return json.loads(requests.get(url).content)
 
 #Ritorna quanti siano gli utenti registrati

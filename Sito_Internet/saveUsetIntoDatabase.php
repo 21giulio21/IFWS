@@ -15,7 +15,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO idnumeri VALUES ('{$id}', '{$username_profilo}');";
+$sql = "INSERT INTO USERS_TO_FOLLOW VALUES ('{$id}', '{$username_profilo}');";
 $result = $conn->query($sql);
 
 

@@ -6,7 +6,6 @@ import base64
 import json
 import time
 import ast
-from LogFile import printFile
 from InstagramAPI import updateTempoBlocco
 from InstagramAPI import comment
 from InstagramAPI import update_secondi_ultima_richiesta
@@ -29,6 +28,7 @@ from InstagramAPI import richiestaLike
 from InstagramAPI import updateDeltaT
 from InstagramAPI import updateNumberRequestsDone
 from InstagramAPI import updateProcessing
+from InstagramAPI import setBlockTime
 from random import randint
 import re
 
@@ -47,16 +47,13 @@ tempo_blocco_se_esce_errore = 10000
 while True:
 
     print("Attendo DT")
-    printFile("Attendo DT")
 
-    #time.sleep(20)
+    time.sleep(1)
     print("Tempo DT passato, inizio lo script.")
-    printFile("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
     numberUsersIntoDatabase = countUserIntoDatabase()
     print("Ho un totale di " + str(numberUsersIntoDatabase) + " utenti che devo gestire per mandare le richieste")
-    printFile("Ho un totale di " + str(numberUsersIntoDatabase) + " utenti che devo gestire per mandare le richieste")
 
 
     #Ora ciclo sul totale di persone che ho nel database
@@ -77,6 +74,7 @@ while True:
         script_attivo = str(user[0]['SCRIPT_ACTIVE'])
         tempo_attesa_blocco = str(user[0]['TEMPO_ATTESA_BLOCCO'])
         url_immagine_profilo = str(user[0]['URL_IMMAGINE_PROFILO'])
+        commenta = str(user[0]['COMMENTA'])
 
         # questa variabile indica le richieste fatte fino ad ora,
         # in particolare dopo 100 richieste diminuisco di 1 secondo DT relativo
@@ -94,12 +92,10 @@ while True:
 
 
         print("Processo l'utente: " + username)
-        printFile("Processo l'utente: " + username)
 
         #inserisco per primo l'url della immagine profilo della persona
         if url_immagine_profilo == "":
             print("Inserisco l'url dell'immagine profilo dell'utente: " + username)
-            printFile("Inserisco l'url dell'immagine profilo dell'utente: " + username)
             url = ottengoURLImmagineProfilo(username)
             updateURLImmagineProfilo(username,url)
             continue
@@ -107,7 +103,6 @@ while True:
         #Se script_attivo e' 0 allora non devo fare nulla per quel user e passo allo user successivo
         if script_attivo == "0":
             print("L'utente: " + username + " ha script_attivo = 0 quindi non lo devo processare")
-            printFile("L'utente: " + username + " ha script_attivo = 0 quindi non lo devo processare")
             continue
 
         #Controllo che secondi_ultima_richiesta + delta_t sia maggiore di ora, se lo e' allora devo processare
@@ -145,7 +140,6 @@ while True:
         if len(id) == 0:
 
             print("Processo l'utente: " + username + " non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database")
-            printFile("Processo l'utente: " + username + " non ha l'id settato, lo chiedo a Instagram e lo salvo sul mio database")
 
             id = getIDFromUsername(username)
             saveIdIntoDatabase(username, id)
@@ -155,7 +149,6 @@ while True:
             #Devo iniziare a seguire
 
             print("Processo l'utente: " + username + " non segue ancora nessuno, deve iniziare a seguire gente")
-            printFile("Processo l'utente: " + username + " non segue ancora nessuno, deve iniziare a seguire gente")
 
 
             follow_unfollow = str('1')
@@ -165,7 +158,6 @@ while True:
         if len(users_followed_array) > max_requests: #max_requests:
 
             print("Processo l'utente: " + username + " segue gia il numero massimo di user giornalieri, ora bisogna iniziare a fare unfollow")
-            printFile("Processo l'utente: " + username + " segue gia il numero massimo di user giornalieri, ora bisogna iniziare a fare unfollow")
 
             #Se sono al numero di persone massime imposto users_followed a 0
             # In questo modo inizio a fare richieste di unfollow
@@ -197,31 +189,27 @@ while True:
         if follow_unfollow == "1":
 
             print("Processo l'utente: " + username + " deve mandare richieste di follow")
-            printFile("Processo l'utente: " + username + " deve mandare richieste di follow")
 
             #Ottengo il numero totale di persone che sono nella tabella degli utenti da seguire
             count_user_to_follow = getCountUsersToFollow()
 
-            #Seleziono 1 utente tra 0 e count_user_to_follow da seguire
-            random_number_user_to_follow = str(randint(1, int(count_user_to_follow)))
-            user_to_follow = str(getRandomUserToFollow(random_number_user_to_follow))
-            username_user_to_follow = user_to_follow[user_to_follow.find("u'USERNAME': u'") + len("u'USERNAME': u'"): user_to_follow.find("', u'ID':")]
-            id_user_to_follow = user_to_follow[user_to_follow.find("', u'ID': u'") + len("', u'ID': u'"): user_to_follow.find("'}")]
+            #Mi faccio tornare un utente da seguire con stesso target
+            #dell'utente che sto processando. Questo è realizzato dal php
+            user_to_follow = getRandomUserToFollow(username)
+            id_user_to_follow = str(user_to_follow[0]["ID"])
+            username_user_to_follow = str(user_to_follow[0]["USERNAME"])
 
             #Seguo la persona che ho scaricato e gli metto un like alla prima foto
             content_follow = follow(id_user_to_follow,username_user_to_follow,cookies_str,cookies_dict['csrftoken'])
 
-            printFile(content_follow)
-            print("Richiesta di FOLLOW mandata a: username_user_to_follow " + content_follow)
+            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + content_follow)
 
             content_follow_JSON = json.loads(content_follow)
 
 
-            if content_follow.__contains__("Please wait a few minutes before you try again"):
-                updateTempoBlocco(username,tempo_blocco_se_esce_errore)
-                # aumentoDelta t di 10 secondi
-                delta_t = int(delta_t) + 100
-                updateDeltaT(username, str(delta_t))
+            if content_follow.__contains__("Please wait a few minutes before you try again") or content_follow.__contains__("Attendi"):
+                # Chiamo la funzione per impostare il tempo di blocco.
+                setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
                 continue
 
             elif processing == "1":
@@ -250,8 +238,11 @@ while True:
             print(richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken']))
 
             #Metto un commento all'ultima foto
-            print("Commento")
-            print(comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow))
+            if commenta == "1":
+                print("L'utente " + username + " commenta la foto di " + username_user_to_follow)
+                print(comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow))
+            else:
+                print("L'utente " + username + " NON commenta la foto di " + username_user_to_follow + " perchè non ha COMMENTA a 1")
 
 
             #Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
@@ -267,7 +258,6 @@ while True:
 
         else:
             print("Processo l'utente: " + username + " deve mandare richieste di unfollow")
-            printFile("Processo l'utente: " + username + " deve mandare richieste di unfollow")
 
             #Faccio in modo che la stringa contenente tutti gli user che seguo che e' sul mio database sia
             #ben fatta, in particolare che non ci siano situazioni in cui ho user;user;user;
@@ -293,20 +283,18 @@ while True:
                 users_followed_string = ""
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 content_unfollow = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
-                printFile(content_unfollow)
-                print(content_unfollow)
+                print("UNFOLLOW " + username_user_to_unfollow +" " +  content_unfollow)
 
                 content_follow_JSON = json.loads(content_unfollow)
 
-                if content_unfollow.__contains__("Please wait a few minutes before you try again"):
+                if content_unfollow.__contains__("Please wait a few minutes before you try again") or content_unfollow.__contains__("Attendi"):
 
-                    #Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
-                    updateTempoBlocco(username, tempo_blocco_se_esce_errore)
+                    #Chiamo la funzione per impostare il tempo di blocco.
+                    setBlockTime(username,tempo_blocco_se_esce_errore,delta_t)
+                    continue
 
-                    #aumentoDelta t di 10 secondi
-                    delta_t = int(delta_t) + 10
-                    updateDeltaT(username,str(delta_t))
-                elif processing == "1":
+                #Se devo ancora processare l'utente lo processo
+                if processing == "1":
                     if 'message' in content_follow_JSON:
                         # Caso in cui ho sbagliato la password
                         print("Errore, password dello username " + username + " ERRATA ")
@@ -318,50 +306,7 @@ while True:
                         updateProcessing(username, 0)
 
                         # COntrollo che l'utente non abbia cambiato la password
-                    if 'message' in content_follow_JSON:
-                        # Caso in cui ho sbagliato la password
-                        print("Errore, password dello username " + username + " ERRATA ")
-                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                        updatePasswordErrataAndProcessing(username, 1)
-                        continue
 
-                # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
-                update_secondi_ultima_richiesta(username, int(time.time()))
-                updateUserFollowed(users_followed_string, username)
-
-            else:
-
-                #Mando la richiesta di unfollow
-                print("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
-                printFile("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
-
-                id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
-                content_unfollow = unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken'])
-
-                printFile(content_unfollow)
-                print(content_unfollow)
-                content_follow_JSON = json.loads(content_unfollow)
-
-
-                if content_unfollow.__contains__("Please wait a few minutes before you try again"):
-                    # Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
-                    updateTempoBlocco(username, tempo_blocco_se_esce_errore)
-
-                    # aumentoDelta t di 10 secondi
-                    delta_t = int(delta_t) + 10
-                    updateDeltaT(username, str(delta_t))
-                elif processing == "1":
-                    if 'message' in content_follow_JSON:
-                        # Caso in cui ho sbagliato la password
-                        print("Errore, password dello username " + username + " ERRATA ")
-                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                        updatePasswordErrataAndProcessing(username, 1)
-                        continue
-                    else:
-                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
-                        updateProcessing(username, 0)
-
-                        # COntrollo che l'utente non abbia cambiato la password
                 if 'message' in content_follow_JSON:
                     # Caso in cui ho sbagliato la password
                     print("Errore, password dello username " + username + " ERRATA ")
@@ -371,7 +316,61 @@ while True:
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
+                updateUserFollowed(users_followed_string, username)
 
+            else:
+
+                #Mando la richiesta di unfollow
+                print("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
+
+                id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
+                content_unfollow = str(unfollow(id_to_unfollow,username_user_to_unfollow,cookies_str,cookies_dict['csrftoken']))
+
+                print(content_unfollow)
+                try:
+                    content_follow_JSON = json.loads(content_unfollow)
+
+                except ValueError:
+                   print("")
+
+
+                if content_unfollow.__contains__("Please wait a few minutes before you try again") or content_unfollow.__contains__("Attendi"):
+                    # Chiamo la funzione per impostare il tempo di blocco.
+                    setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
+                    continue
+
+                elif processing == "1":
+                    if 'message' in content_follow_JSON:
+                        # Caso in cui ho sbagliato la password
+                        print("Errore, password dello username " + username + " ERRATA ")
+                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                        updatePasswordErrataAndProcessing(username, 1)
+
+                        # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
+                        update_secondi_ultima_richiesta(username, int(time.time()))
+                        updateUserFollowed(users_followed_string, username)
+
+                        continue
+                    else:
+                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
+                        updateProcessing(username, 0)
+
+
+                        # COntrollo che l'utente non abbia cambiato la password
+                if 'message' in content_follow_JSON:
+                    # Caso in cui ho sbagliato la password
+                    print("Errore, password dello username " + username + " ERRATA ")
+                    # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+                    updatePasswordErrataAndProcessing(username, 1)
+
+                    # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
+                    update_secondi_ultima_richiesta(username, int(time.time()))
+                    updateUserFollowed(users_followed_string, username)
+
+                    continue
+
+                # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
+                update_secondi_ultima_richiesta(username, int(time.time()))
                 updateUserFollowed(users_followed_string,username)
 
 

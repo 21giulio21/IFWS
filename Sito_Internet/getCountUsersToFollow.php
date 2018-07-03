@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
  
 
-$query = "SELECT COUNT(*) AS COUNT FROM idnumeri";
+$query = "SELECT COUNT(*) AS COUNT FROM USERS_TO_FOLLOW";
 $result = $conn->query($query) or die ("queru");
 $data = $result->fetch_array(MYSQLI_NUM);   
 print_r($data[0]);

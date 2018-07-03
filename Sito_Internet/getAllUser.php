@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
  
 
-$query = "SELECT * FROM idnumeri";
+$query = "SELECT * FROM USERS_TO_FOLLOW";
 $result = $conn->query($query) or die ("queru");
 
 

@@ -18,8 +18,8 @@ $result = $conn->query($query) or die ("queru");
 $myArray = array();
 while ($row = $result->fetch_object())
 {
-                $tempArray = $row;
-                array_push($myArray, $tempArray);
+  $tempArray = $row;
+  array_push($myArray, $tempArray);
 }
 echo json_encode($myArray);
 
