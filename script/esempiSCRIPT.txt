@@ -1,0 +1,1 @@
+sh scriptProva.sh giuliogradisca_hr hermitred NATURE low_food_italia,visit_lazio,slowfood_international,vibramfivefingers

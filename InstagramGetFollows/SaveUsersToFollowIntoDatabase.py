@@ -1,5 +1,6 @@
 import instaloader
 import requests
+import sys
 from time import sleep
 
 import time
@@ -15,18 +16,21 @@ def myPrint(text):
 # Get instance
 L = instaloader.Instaloader()
 
-target = "NATURE"
-Users = ['hanwagofficial', 'slow_food_italia', 'visit_lazio', 'slowfood_international', 'vibramfivefingers',
-          'gregorypacks', 'yourabruzzo', 'vaudesport']
+username = str(sys.argv[1])
+password = str(sys.argv[2])
+target = str(sys.argv[3])
+ustenti_da_cui_prendere_followers = str(sys.argv[4]).split(',')
+print("Prendo followers fa questi username")
+for i in ustenti_da_cui_prendere_followers:
+    print(i)
 
-
-# Login or load session
-L.login('magic_host', '21giulio21')  # (login)
+print("Inizio lo script con username: " + username +" password " + password+ " target: " + target+ " utenti da cui prendere followers: " + str(ustenti_da_cui_prendere_followers)  )
+L.login(username, password)  # (login)
 
 i = 0
 followers_totali = 0
 media = 0
-for user in Users:
+for user in ustenti_da_cui_prendere_followers:
     profile = instaloader.Profile.from_username(L.context, user)
     followers = profile.followers
     myPrint("Followers totali del profilo " + str(user) + ": " + str(followers))
@@ -35,7 +39,7 @@ myPrint("Followers totali dei profili: "+ str(followers_totali))
 
 
 
-for user in Users:
+for user in ustenti_da_cui_prendere_followers:
     profile = instaloader.Profile.from_username(L.context, user)
     # Print list of followers
     for follower in profile.get_followers():

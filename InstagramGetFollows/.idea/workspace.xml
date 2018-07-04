@@ -14,17 +14,32 @@
       <file leaf-file-name="script2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="208" column="53" selection-start-line="208" selection-start-column="53" selection-end-line="208" selection-end-column="53" />
+            <state relative-caret-position="62">
+              <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+              <folding>
+                <element signature="e#48#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SaveUsersToFollowIntoDatabase.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="26" column="172" selection-start-line="26" selection-start-column="172" selection-end-line="26" selection-end-column="172" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="227" column="70" selection-start-line="227" selection-start-column="57" selection-end-line="227" selection-end-column="70" />
+            <state relative-caret-position="62">
+              <caret line="238" selection-start-line="238" selection-end-line="238" />
             </state>
           </provider>
         </entry>
@@ -40,22 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>follow</find>
-      <find>FOLLOW</find>
-      <find>SCRIPT_ACTIVE</find>
-      <find>selectUserFromDatabase</find>
-      <find>passw</find>
-      <find>update_secondi_ultima_richiesta</find>
-      <find>FOLL</find>
-      <find>countUser</find>
-      <find>getIDFromUsername</find>
-      <find>updateURLImmagineProfilo</find>
-      <find>seveCookieIntoServer</find>
-      <find>coo</find>
-      <find>encode</find>
-      <find>ottengoURLImmagineProfilo</find>
-      <find>blocco</find>
-      <find>davide_bagnato_hr</find>
       <find>updateTempoBlocco</find>
       <find>follo</find>
       <find>giulio</find>
@@ -67,9 +66,25 @@
       <find>ottengoIdPrimaFotoDaUsername</find>
       <find>like</find>
       <find>commen</find>
-      <find>updatePasswordErrataAndProcessing</find>
       <find>getRandomUserToFollow</find>
       <find>passwo</find>
+      <find>content_foll</find>
+      <find>richie</find>
+      <find>updatePasswordErrataAndProcessing</find>
+      <find>cookies_dict['csrftoken']</find>
+      <find>username_user_to_unfollow</find>
+      <find>except ValueError:</find>
+      <find>try</find>
+      <find>print</find>
+      <find>passw</find>
+      <find>password_errata</find>
+      <find>password</find>
+      <find>elif</find>
+      <find>el</find>
+      <find>updateS</find>
+      <find>test</find>
+      <find>number_requests_done</find>
+      <find>index</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -100,6 +115,7 @@
         <option value="$PROJECT_DIR$/prova.py" />
         <option value="$PROJECT_DIR$/InstagramAPI.py" />
         <option value="$PROJECT_DIR$/script2.py" />
+        <option value="$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py" />
       </list>
     </option>
   </component>
@@ -259,7 +275,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="710" extended-state="7" />
+    <frame x="0" y="25" width="1360" height="710" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16029412" />
@@ -267,7 +283,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.46179402" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.5481728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -282,22 +298,22 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16029412" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.179402" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16029412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.46179402" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6096346" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -305,11 +321,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Click.py" />
     <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2146">
@@ -425,13 +440,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginstagram.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/loginstagram.txt" />
     <entry file="file://$PROJECT_DIR$/OttengoIdUsernameDaFIle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -454,17 +463,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script2.py">
+    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="208" column="53" selection-start-line="208" selection-start-column="53" selection-end-line="208" selection-end-column="53" />
+        <state relative-caret-position="62">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
+    <entry file="file://$PROJECT_DIR$/script2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="227" column="70" selection-start-line="227" selection-start-column="57" selection-end-line="227" selection-end-column="70" />
+        <state relative-caret-position="62">
+          <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="26" column="172" selection-start-line="26" selection-start-column="172" selection-end-line="26" selection-end-column="172" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

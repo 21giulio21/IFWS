@@ -73,7 +73,7 @@ def richiestaLike(username, cookies, csrf):
         'content-length': '0',
     }
 
-    response = requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers)
+    return str(requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers).content)
 
 
 
@@ -181,8 +181,7 @@ def updatePasswordErrataAndProcessing(username,passwordErrata):
 
 def updateProcessing(username,value):
     url = "http://getfollowersoninstagram.altervista.org/updateProcessing.php?username=" + username + "&processing=" + str(value)
-    print(url)
-    print(requests.get(url).content)
+    requests.get(url)
 
 def updateSctiptActive(username,valore):
     url = "http://getfollowersoninstagram.altervista.org/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
@@ -210,7 +209,7 @@ def saveIdIntoDatabase(username,id):
 def seveCookieIntoServer(username,cookie):
     cookie =  base64.b64encode(str(cookie))
     url = "http://getfollowersoninstagram.altervista.org/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
-    print(requests.get(url).content)
+    requests.get(url)
 
 #Questa funzione permette di settare il tempo di blocco
 def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
@@ -308,6 +307,18 @@ def updateURLImmagineProfilo(username,url_immagine):
     url = "https://getfollowersoninstagram.altervista.org/insertURLImageProfilo.php?username=" + str(username) + "&immagine_profilo=" + str(url_encode)
     return requests.get(url).content
 
+
+
+#Controllo che ci sia scritto messagge nel content_request_JSON, nel caso in cui c'e allora dico che la passowrd e' errata
+def messageINTOcontent_request_JSON(username,content_request_JSON):
+    if 'message' in content_request_JSON:
+        # Caso in cui ho sbagliato la password
+        print("Errore, password dello username " + username + " ERRATA ")
+        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
+        updatePasswordErrataAndProcessing(username, 1)
+        return True
+    else:
+        return False
 
 
 
