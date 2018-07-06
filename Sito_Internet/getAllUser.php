@@ -6,8 +6,6 @@ $stmt = $conn->prepare($query);
 $stmt->execute();
 $result = $stmt->get_result();
 
-
-
 $myArray = array();
 while ($row = $result->fetch_object())
 {
