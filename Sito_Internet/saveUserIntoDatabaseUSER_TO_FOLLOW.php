@@ -1,14 +1,5 @@
 <?php
-
-
-$servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
-
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once('util/connect.php');
 
 $username = $_GET["USERNAME"];
 $id = $_GET["ID"];
@@ -21,7 +12,7 @@ $private = $_GET["PRIVATE"];
 
 
 $query = "INSERT INTO `my_getfollowersoninstagram`.`USERS_TO_FOLLOW` (`ID`, `USERNAME`, `TARGET`, `TYPE`, `FOLLOWER`, `FOLLOWEE`, `MEDIA`, `PRIVATE`) VALUES ('{$id}', '{$username}', '{$target}', '{$type}', '{$follower}', '{$followee}', '{$media}','{$private}');";
-$result = $conn->query($query) or die ("queru");
+$result = $conn->query($query) or die ("Query non funzionante");
 
 
 

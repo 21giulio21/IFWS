@@ -1,14 +1,5 @@
 <?php
-
-//Questa pagina in automatico torna un utente che ha stesso target del utente chiamante
-// oppure torna uno a caso se l'utewnte chiamante non ha un target
-
-
-$servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once('util/connect.php');
 
 // username della persona che desidera seguirne un'altra
 $username_whants_to_follow = $_GET["USERNAME"];

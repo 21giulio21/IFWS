@@ -1,22 +1,15 @@
 <?php
 
-$servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
+require_once('util/connect.php');
 
-
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 
 $username = $_GET["username"];
-$number_requests_done = $_GET["number_requests_done"]; 
+$number_requests_done = $_GET["number_requests_done"];
 
 
 $query = "UPDATE `my_getfollowersoninstagram`.`REGISTERED_USERS` SET `NUMBER_REQUESTS_DONE` = '{$number_requests_done}' WHERE `REGISTERED_USERS`.`USERNAME` = '{$username}';";
-$result = $conn->query($query) or die ("queru");
+$result = $conn->query($query) or die ("Query non funzionante");
 
 
 

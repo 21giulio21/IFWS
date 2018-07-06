@@ -1,14 +1,8 @@
 <?php
 
 
-$servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
+require_once('../util/connect.php');
 
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 
 
@@ -17,7 +11,7 @@ $script_active = $_POST["script_active"];
 
 
 $query = "UPDATE `my_getfollowersoninstagram`.`REGISTERED_USERS` SET `SCRIPT_ACTIVE` = '{$script_active}' WHERE `REGISTERED_USERS`.`USERNAME` = '{$username}';";
-$result = $conn->query($query) or die ("queru");
+$result = $conn->query($query) or die ("Query non funzionante");
 
 
 ?>

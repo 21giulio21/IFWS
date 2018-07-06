@@ -1,25 +1,19 @@
 <?php
-
-
-$servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
- 
+require_once('util/connect.php');
 
 $query = "SELECT * FROM USERS_TO_FOLLOW";
-$result = $conn->query($query) or die ("queru");
+$stmt = $conn->prepare($query);
+$stmt->execute();
+$result = $stmt->get_result();
+
 
 
 $myArray = array();
-while ($row = $result->fetch_object()) 
+while ($row = $result->fetch_object())
 {
-                $tempArray = $row;
-                array_push($myArray, $tempArray);
-            }
-        echo json_encode($myArray);
+  $tempArray = $row;
+  array_push($myArray, $tempArray);
+}
+echo json_encode($myArray);
 
 ?>

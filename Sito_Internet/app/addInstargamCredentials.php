@@ -1,11 +1,7 @@
 <?php
 
+require_once('../util/connect.php');
 
-$servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 
 
@@ -19,7 +15,7 @@ $email = $_POST["email"];
 //script controllera che ho `PROCESSING` = '1' e lo processa per vedere se le credenziali
 // di instagram inserite sono corrette
 $query = "UPDATE `my_getfollowersoninstagram`.`REGISTERED_USERS` SET `USERNAME` = '{$username_instagram}',`DELTA_T` = '150', `PASSWORD_INSTAGRAM` = '{$password_instagram}', `PROCESSING` = '1' WHERE `REGISTERED_USERS`.`EMAIL` = '{$email}';";
-$result = $conn->query($query) or die ("queru");
+$result = $conn->query($query) or die ("Query non funzionante");
 
 
 

@@ -1,17 +1,11 @@
 <?php
-
-
-$servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
+require_once('util/connect.php');
 $index = $_GET["index"];
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 
 
 $query = "SELECT * FROM USERS_TO_FOLLOW LIMIT {$index},1";
-$result = $conn->query($query) or die ("queru");
+$result = $conn->query($query) or die ("Query non funzionante");
 
 
 $myArray = array();
