@@ -8,8 +8,11 @@ $username = $_GET["username"];
 $number_requests_done = $_GET["number_requests_done"];
 
 
-$query = "UPDATE `my_getfollowersoninstagram`.`REGISTERED_USERS` SET `NUMBER_REQUESTS_DONE` = '{$number_requests_done}' WHERE `REGISTERED_USERS`.`USERNAME` = '{$username}';";
-$result = $conn->query($query) or die ("Query non funzionante");
+$query = "UPDATE `my_getfollowersoninstagram`.`REGISTERED_USERS` SET `NUMBER_REQUESTS_DONE` = ? WHERE `REGISTERED_USERS`.`USERNAME` = ? ";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("ss",$number_requests_done,$username);
+$stmt->execute();
+
 
 
 

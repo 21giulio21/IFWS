@@ -7,11 +7,14 @@ require_once('../util/connect.php');
 $email_user = $_POST["email"];
 $password_user = $_POST["password"];
 
+// CONTROLLO che la mail e la password siano contenute nel database
+$query = "SELECT * FROM `REGISTERED_USERS` WHERE `EMAIL` = ? AND `PASSWORD_SITE` = ? ";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("ss",$email_user,$password_user);
+$stmt->execute();
+$stmt->store_result();
 
-// prima guardo se per caso c'è un altro utente con quella mail, nel caso dico che ho gia inserito
-$query = "SELECT * FROM `REGISTERED_USERS` WHERE `EMAIL` = '{$email_user}' AND `PASSWORD_SITE` = '$password_user'";
-$result = $conn->query($query) or die ("Query non funzionante");
-if($result->num_rows > 0 )
+if ($stmt->num_rows == 1 )
 {
 // Se sono qui allora ho un utente con quella email e password e quindi va bene
 $return = '{ "success":"success" }';

@@ -11,8 +11,10 @@ $type = $_GET["TYPE"];
 $private = $_GET["PRIVATE"];
 
 
-$query = "INSERT INTO `my_getfollowersoninstagram`.`USERS_TO_FOLLOW` (`ID`, `USERNAME`, `TARGET`, `TYPE`, `FOLLOWER`, `FOLLOWEE`, `MEDIA`, `PRIVATE`) VALUES ('{$id}', '{$username}', '{$target}', '{$type}', '{$follower}', '{$followee}', '{$media}','{$private}');";
-$result = $conn->query($query) or die ("Query non funzionante");
+$query = "INSERT INTO `my_getfollowersoninstagram`.`USERS_TO_FOLLOW` (`ID`, `USERNAME`, `TARGET`, `TYPE`, `FOLLOWER`, `FOLLOWEE`, `MEDIA`, `PRIVATE`) VALUES (? , ? , ? , ? , ? , ? , ? ,? );";
+$stmt = $conn->prepare($query)or die("Errore nella prepare");
+$stmt->bind_param("ssssssss",$id,$username,$target,$type,$follower,$followee,$media,$private)or die("Errore nella bild_param");
+$stmt->execute()or die("Errore nella execute");
 
 
 

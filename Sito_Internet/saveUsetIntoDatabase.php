@@ -12,8 +12,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO USERS_TO_FOLLOW VALUES ('{$id}', '{$username_profilo}');";
-$result = $conn->query($sql);
+$sql = "INSERT INTO USERS_TO_FOLLOW VALUES (? , ? );";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("ss",$id,$username_profilo);
+$stmt->execute();
 
 
 ?>
