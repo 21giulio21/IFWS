@@ -9,6 +9,13 @@ require_once('../util/connect.php');
 
 $username = $_POST["username"];
 
+// COntrollo che non sia vuoto il valore di $username
+if(!isset($_POST["username"]))
+{
+  $return = '{ "success":"failed", "reason":"Username not specified" }';
+  echo $return;
+  return;
+}
 
 // prima guardo se per caso c'è un altro utente con quella username, nel caso dico che ho gia inserito
 $query = "SELECT * FROM `REGISTERED_USERS` WHERE `USERNAME` = ? ";

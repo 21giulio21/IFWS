@@ -13,5 +13,4 @@ while ($row = $result->fetch_object())
   array_push($myArray, $tempArray);
 }
 echo json_encode($myArray);
-
 ?>
