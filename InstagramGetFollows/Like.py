@@ -4,7 +4,7 @@ import time
 
 import requests
 
-url_get_all_user = "http://getfollowersoninstagram.altervista.org/getAllUser.php"
+url_get_all_user = "http://2.230.243.113/instagram/getAllUser.php"
 
 
 def ottengoIdPrimaFotoDaUsername(username):

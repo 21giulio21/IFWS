@@ -49,7 +49,7 @@ for user in ustenti_da_cui_prendere_followers:
         is_private = follower.is_private
 
         response = requests.get(
-            "http://getfollowersoninstagram.altervista.org/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s&TYPE=%s&FOLLOWER=%s&FOLLOWEE=%s&MEDIA=%s&PRIVATE=%d" % (
+            "http://2.230.243.113/instagram/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s&TYPE=%s&FOLLOWER=%s&FOLLOWEE=%s&MEDIA=%s&PRIVATE=%d" % (
             str(follower.userid), str(follower.username), target, '', followers, followees, mediacount,
             int(is_private)))
 

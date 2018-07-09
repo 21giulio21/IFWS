@@ -21,7 +21,7 @@ comment_list=[["Questa","La tua","La"],
 
 
 
-url_get_all_user = "http://getfollowersoninstagram.altervista.org/getAllUser.php"
+url_get_all_user = "http://2.230.243.113/instagram/getAllUser.php"
 
 
 # genera un commento a caso usando le parole di comment_list
@@ -174,17 +174,17 @@ def login(username,password):
 #in particolare pre prima mette PASSWORD_SBAGLIATA a 1 nel database poi merre PROCESSING a 0 cosi lato app se ne accorge
 def updatePasswordErrataAndProcessing(username,passwordErrata):
     updateSctiptActive(username,0)
-    url = "http://getfollowersoninstagram.altervista.org/updatePasswordErrata.php?username=" + username + "&password_errata=" + str(
+    url = "http://2.230.243.113/instagram/updatePasswordErrata.php?username=" + username + "&password_errata=" + str(
         passwordErrata)
     requests.get(url)
     updateProcessing(username,0)
 
 def updateProcessing(username,value):
-    url = "http://getfollowersoninstagram.altervista.org/updateProcessing.php?username=" + username + "&processing=" + str(value)
+    url = "http://2.230.243.113/instagram/updateProcessing.php?username=" + username + "&processing=" + str(value)
     requests.get(url)
 
 def updateSctiptActive(username,valore):
-    url = "http://getfollowersoninstagram.altervista.org/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
+    url = "http://2.230.243.113/instagram/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
     requests.get(url)
 
 def getUsersToFollow():
@@ -192,23 +192,23 @@ def getUsersToFollow():
 
 #Update follow_unfollow nel database
 def updateFollowUnfollowDatabase(username,follow_unfollow):
-    url="http://getfollowersoninstagram.altervista.org/updateFollowUnfollow.php?username="+username+"&follow_unfollow="+follow_unfollow
+    url="http://2.230.243.113/instagram/updateFollowUnfollow.php?username="+username+"&follow_unfollow="+follow_unfollow
     requests.get(url)
 
 #Agggiorno l'array sul database
 def updateUserFollowed(userFollowed,username):
-    url = "http://getfollowersoninstagram.altervista.org/updateUserFollowed.php?username="+username+"&users_followed="+userFollowed
+    url = "http://2.230.243.113/instagram/updateUserFollowed.php?username="+username+"&users_followed="+userFollowed
     requests.get(url)
 
 #Salvo id dell'utente nel database
 def saveIdIntoDatabase(username,id):
-    url = "http://getfollowersoninstagram.altervista.org/saveIdIntoDatabase.php?username="+username+"&id="+id
+    url = "http://2.230.243.113/instagram/saveIdIntoDatabase.php?username="+username+"&id="+id
     requests.get(url)
 
 #salvo i cookie di un relativo utente sul server
 def seveCookieIntoServer(username,cookie):
     cookie =  base64.b64encode(str(cookie))
-    url = "http://getfollowersoninstagram.altervista.org/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
+    url = "http://2.230.243.113/instagram/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
     requests.get(url)
 
 #Questa funzione permette di settare il tempo di blocco
@@ -226,43 +226,43 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 #prendo come input un numero random da 1 al numero massimo di persone che ho nel database di persone che posso
 #seguire e facci ola richiesta pert farmene tornare 1 a caso
 def getRandomUserToFollow(username_whants_to_follow):
-    url = "http://getfollowersoninstagram.altervista.org/getUserToFollowFromUser.php?USERNAME=" + str(username_whants_to_follow)
+    url = "http://2.230.243.113/instagram/getUserToFollowFromUser.php?USERNAME=" + str(username_whants_to_follow)
     return json.loads(requests.get(url).content)
 
 #Ritorna quanti siano gli utenti registrati
 def countUserIntoDatabase():
-    url = "http://getfollowersoninstagram.altervista.org/getCountUsers.php"
+    url = "http://2.230.243.113/instagram/getCountUsers.php"
     return requests.get(url).content
 
 def selectUserFromDatabase(index):
-    url = "http://getfollowersoninstagram.altervista.org/getUserFromIndex.php?index=" +str(index)
+    url = "http://2.230.243.113/instagram/getUserFromIndex.php?index=" +str(index)
     return json.loads(requests.get(url).content)
 
 #Ritorna il numero di utenti che sono nella tabella oin cui sono contenuti tutti
 def getCountUsersToFollow():
-    url = "http://getfollowersoninstagram.altervista.org/getCountUsersToFollow.php"
+    url = "http://2.230.243.113/instagram/getCountUsersToFollow.php"
     return requests.get(url).content
 
 
 #aggiorno nel mio databse la tupla con username: username e setto il tempo: time
 def update_secondi_ultima_richiesta(username,time):
-    url = "http://getfollowersoninstagram.altervista.org/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
+    url = "http://2.230.243.113/instagram/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
     return requests.get(url).content
 
 #funzione che aggiorna DT per quell'utente
 def updateDeltaT(username,delta_t):
-    url= "http://getfollowersoninstagram.altervista.org/updateDT.php?username="+str(username)+"&dt="+str(delta_t)
+    url= "http://2.230.243.113/instagram/updateDT.php?username="+str(username)+"&dt="+str(delta_t)
     return requests.get(url).content
 
 #Aggiorno il tempo di blocco che deve attendere un utente prima che rinizi a mandare richieste
 def updateTempoBlocco(username,tempo):
-    url = "http://getfollowersoninstagram.altervista.org/updateTempoBlocco.php?username="+str(username)+"&tempo_blocco="+str(tempo)
+    url = "http://2.230.243.113/instagram/updateTempoBlocco.php?username="+str(username)+"&tempo_blocco="+str(tempo)
     return requests.get(url).content
 
 #Aggiorna il numere di richieste fatte, in questo modo dopo che un utente ne fa 100 posso
 #diminuire il Delta T
 def updateNumberRequestsDone(username,number_requests_done):
-    url = "http://getfollowersoninstagram.altervista.org/updateNumberRequestsDone.php?username=" + str(username) + "&number_requests_done=" + str(number_requests_done)
+    url = "http://2.230.243.113/instagram/updateNumberRequestsDone.php?username=" + str(username) + "&number_requests_done=" + str(number_requests_done)
     return requests.get(url).content
 
 #Ottengo l id del utente attraverso lo username
@@ -304,7 +304,7 @@ def ottengoURLImmagineProfilo(username):
 #mando al mio server in formato Base64 l'url dell'immagine profilo in questo modo poi posso vederla sul'app o sito
 def updateURLImmagineProfilo(username,url_immagine):
     url_encode = base64.b64encode(str(url_immagine))
-    url = "https://getfollowersoninstagram.altervista.org/insertURLImageProfilo.php?username=" + str(username) + "&immagine_profilo=" + str(url_encode)
+    url = "http://2.230.243.113/instagram/insertURLImageProfilo.php?username=" + str(username) + "&immagine_profilo=" + str(url_encode)
     return requests.get(url).content
 
 
@@ -319,10 +319,3 @@ def messageINTOcontent_request_JSON(username,content_request_JSON):
         return True
     else:
         return False
-
-
-
-
-
-
-

@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $servername = "localhost";
-$username = "getfollowersoninstagram";
-$password = "";
-$dbname = "my_getfollowersoninstagram";
+$username = "uciim";
+$password = "uciim";
+$dbname = "instagram";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

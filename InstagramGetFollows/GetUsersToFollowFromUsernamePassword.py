@@ -2,7 +2,7 @@ import requests
 import time
 from threading import Thread
 
-url_server_save_followers = "http://getfollowersoninstagram.altervista.org/saveUsetIntoDatabase.php"
+url_server_save_followers = "http://2.230.243.113/instagram/saveUsetIntoDatabase.php"
 
 def find_end_cursor(content_originale,content):
     # Cerco end_cursor da mettere in input alla richiesta dopo
