@@ -36,8 +36,7 @@ echo $return;
 }else{
 
 
-  //$query = "INSERT INTO REGISTERED_USERS (ID, USERNAME, COOKIES, SCRIPT_ACTIVE, FOLLOW_UNFOLLOW, USERS_FOLLOWED, EMAIL, PASSWORD_SITE, PASSWORD_INSTAGRAM,DELTA_T, SECONDI_ULTIMA_RICHIESTA, NUMBER_REQUESTS_DONE, TEMPO_ATTESA_BLOCCO, URL_IMMAGINE_PROFILO, PROCESSING, PASSWORD_ERRATA, TARGET,COMMENTA) VALUES ('', 'gggggg', '', '0', '1', '', 'gggggg', 'erggggg', '', '100', '0', '0', '0', '', '0', '0', '', '0')";
-  $query = "INSERT INTO `my_getfollowersoninstagram`.`REGISTERED_USERS` (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`, `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_SITE`, `PASSWORD_INSTAGRAM`, `DELTA_T`, `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`, `URL_IMMAGINE_PROFILO`, `PROCESSING`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`) VALUES ('', ? , '', '0', '1', '', ? , ? , '', '100', '0', '0', '0', '', '0', '0', '', '0');";
+  $query = "INSERT INTO `REGISTERED_USERS` (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`, `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_SITE`, `PASSWORD_INSTAGRAM`, `DELTA_T`, `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`, `URL_IMMAGINE_PROFILO`, `PROCESSING`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`) VALUES ('', ? , '', '0', '1', '', ? , ? , '', '100', '0', '0', '0', '', '0', '0', '', '0');";
   $stmt = $conn->prepare($query);
   $stmt->bind_param("sss",$username_instagram,$email_user,$password_user);
   $stmt->execute()or die("Errore nella execute");

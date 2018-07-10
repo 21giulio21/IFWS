@@ -54,6 +54,7 @@ for user in ustenti_da_cui_prendere_followers:
             int(is_private)))
 
         i += 1
+        print(response.content)
         myPrint(str(i) + ") Salvo il followers :" + str(follower.username) +" dell'utente " + str(user) )
         sleep(1)
 
