@@ -14,11 +14,11 @@ $password_site = $_POST["PASSWORD_SITE"];
 
 
 // prima guardo se per caso c'è un altro utente con quella mail, nel caso dico che ho gia inserito
-$query = "SELECT * FROM REGISTERED_USERS WHERE EMAIL = ? ";
-$stmt = $conn->prepare($query);
-$stmt->bind_param("s",$email);
-$stmt->execute();
-$stmt->close();
+$query = "SELECT * FROM `REGISTERED_USERS_FROM_WEBSITE` WHERE `EMAIL` = ? ";
+$stmt = $conn->prepare($query) or die("Errore nella prepare");
+$stmt->bind_param("s",$email) or die("Errore nella bind_param");
+$stmt->execute() or die("Errore nella execute");
+$stmt->store_result();
 if($stmt->num_rows == 1  )
 {
 // Se sono qui allora ho gia inserito un utente con quell'username
@@ -26,9 +26,9 @@ $return = '{ "success":"failed", "reason":"Email already in use" }';
 echo $return;
 
 }else{
-
+  $stmt->close();
 // Se sono qui allora devo inserire l'utente nel database REGISTERED_USERS_FROM_WEBSITE
-  $query = "INSERT INTO `REGISTERED_USERS_FROM_WEBSITE` (`EMAIL`, `PASSWORD_SITE`, `ID_UTENTE`, `DATA_REGISTRAZIONE`) VALUES (?, ? , NULL, '');";
+  $query = "INSERT INTO `REGISTERED_USERS_FROM_WEBSITE` (`EMAIL`, `PASSWORD_SITE`, `DATA_REGISTRAZIONE`) VALUES (?, ? , '');";
   $stmt = $conn->prepare($query);
   $stmt->bind_param("ss",$email,$password_site);
   $stmt->execute()or die("Errore nella execute");

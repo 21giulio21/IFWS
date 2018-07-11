@@ -9,14 +9,14 @@ import random
 
 
 
-comment_list=[["Questa","La tua","La"],
-                  ["foto", "fotografia", "immagine"],
-                  ["è veramente", "è proprio", "è davvero"],
-                  ["pazzesca", "unica", "sensazionale", "bellissima", "magnifica", "indimenticabile",
-                   "meravigliosa", "straordinaria", "eccezionale", "magica",
-                   "emozionante"],
-                  [" "," "," "," "," "," ","❤"," "],
-                  [".", "..", "...", "!", "!!", "!!!"]]
+comment_list=[  ["Complimenti","Bravo","Grande"],
+                ["!",".","..","...","!","!!","!!!","!!!!"]
+                ["Questa ","La tua","La"],
+                ["foto", "fotografia", "immagine"],
+                [" è veramente ", " è proprio ", " è davvero "," è "," secondo me è"],
+                ["pazzesca", "unica", "sensazionale", "bellissima", "magnifica", "indimenticabile","meravigliosa", "straordinaria", "eccezionale", "magica","emozionante"],
+                [" "," "," "," "," "," ","❤"," "],
+                [".", "..", "...", "!", "!!", "!!!"," "]]
 
 
 
@@ -144,12 +144,19 @@ def unfollow(id,username, cookies, csrf):
 
 def login(username,password):
 
+    #Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
+    primoNumero = random.randint(2,100)
+    secondoNumero = random.randint(2,100)
+    terzoNumero = random.randint(2, 100)
+    quartoNumero = random.randint(2, 100)
+    ip = str(str(primoNumero) + "."+ str(secondoNumero) + "."+ str(terzoNumero) + "."+ str(quartoNumero) + ".")
+
     headers = {
         'cookie': 'ig_cb=1',
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
         'x-requested-with': 'XMLHttpRequest',
         'x-csrftoken': 'Y5RToHUnJaNvziqQ24edFlMB0CFd3fH6',
         'pragma': 'no-cache',

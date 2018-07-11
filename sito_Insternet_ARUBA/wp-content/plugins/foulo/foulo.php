@@ -29,8 +29,8 @@ function login_func( $atts ){
   } else {
     $result .= '
       <form method="post">
-        <input type="email" name="email" placeholder="Insert your email" value="" required/>
-        <input type="password" name="password" value="" required />
+        <input type="text" name="email" placeholder="Insert your email" value="" required/>
+        <input type="text" name="password" value="" required />
         <input type="submit" name="submit" value="Login">
       </form>
     ';
@@ -50,9 +50,9 @@ function register_func( $atts ){
 
   $result .= '
     <form method="post">
-      <input type="email" name="register_email" placeholder="Insert your email" value="" required/>
-      <input type="password" name="register_password" placeholder="Choose your password" value="" required />
-      <input type="text" name="register_instagram_account" placeholder="Insert your Instagram account username" value="" required />
+      <input type="text" name="register_email" placeholder="Insert your email" value="" required/>
+      <input type="text" name="register_password" placeholder="Choose your password" value="" required />
+      <input type="text" name="register_confirm_password" placeholder="Confirm password" value="" required />
       <input type="submit" name="submit" value="Register">
     </form>
   ';
@@ -62,26 +62,48 @@ function register_func( $atts ){
 
 add_shortcode( 'register', 'register_func' );
 
+function getInstagramProfilesFromEmail()
+{
+  $target_url = "http://2.230.243.113/instagram/app/getInstagramProfilesFromEmail.php";
+  $params =
+   array(
+     "EMAIL" => $_POST['email']
+   );
 
+  $curl_response = curl_request($target_url, $params);
+  $parsed_response = json_decode($curl_response);
+  return $parsed_response;
+
+}
 
 function process_post() {
 
      // handling login process
      if( isset( $_POST['email'], $_POST['password'] ) ) {
-
-       $target_url = "https://getfollowersoninstagram.altervista.org/app/checkUserIntoDatabase.php";
+       $target_url = "http://2.230.243.113/instagram/app/login.php";
        $params =
         array(
-          "email" => $_POST['email'],
-          "password" => $_POST['password']
+          "EMAIL" => $_POST['email'],
+          "PASSWORD_SITE" => $_POST['password']
         );
+       echo "1";
+       $curl_response = curl_request($target_url, $params)or die("Non riesco a fare la curl");
+       print_r($curl_response);
 
-       $curl_response = curl_request($target_url, $params);
        $parsed_response = json_decode($curl_response);
+       print_r($parsed_response);
 
-       if(isset($parsed_response->success) && $parsed_response->success == "success") {
+       if(isset($parsed_response->success) && $parsed_response->success == "success")
+       {
 
          if (session_status() == PHP_SESSION_NONE) {
+           /*
+            Se il login è andato a buon fine scarico tutti gli account Instagram collegati a questa mail
+            TODO....
+           */
+           $arrayUtentiInstagram = getInstagramProfilesFromEmail($email);
+          print_r($arrayUtentiInstagram);
+
            session_start();
          }
 
@@ -92,14 +114,13 @@ function process_post() {
      }
 
      // handling register process
-     if( isset( $_POST['register_email'], $_POST['register_password'], $_POST['register_instagram_account'] ) ) {
+     if( isset( $_POST['register_email'], $_POST['register_password'], $_POST['register_confirm_password'] ) ) {
 
-       $target_url = "https://getfollowersoninstagram.altervista.org/app/insertUserIntoDatabase.php";
+       $target_url = "http://2.230.243.113/instagram/app/register.php";
        $params =
         array(
-          "email" => $_POST['register_email'],
-          "password" => $_POST['register_password'],
-          "username_instagram" => $_POST['register_instagram_account']
+          "EMAIL" => $_POST['register_email'],
+          "PASSWORD_SITE" => $_POST['register_password']
         );
 
        $curl_response = curl_request($target_url, $params);
@@ -132,7 +153,7 @@ function curl_request($target_url, array $arguments){
 
   // receive server response ...
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  $server_output = curl_exec ($ch);
+  $server_output = curl_exec ($ch)or die("Errore nella curl_exec");
   curl_close ($ch);
   return $server_output;
 

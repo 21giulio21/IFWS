@@ -49,7 +49,7 @@ while True:
 
     print("Attendo DT")
 
-    time.sleep(2)
+    time.sleep(5)
     print("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database

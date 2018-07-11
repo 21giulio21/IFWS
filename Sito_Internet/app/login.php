@@ -12,13 +12,16 @@ e controllo che questo utente sia gia nel database, se è nel database restituis
 con scritto success.
 
 */
-$email_user = $_POST["EMAIL"];
+$email = $_POST["EMAIL"];
 $password_site = $_POST["PASSWORD_SITE"];
 
+
+
+
 // Controllo che ci sia un utente con queste credenziali.
-$query = "SELECT * FROM `REGISTERED_USERS` WHERE `EMAIL` = ? AND `PASSWORD_SITE` = ? ";
+$query = "SELECT * FROM `REGISTERED_USERS_FROM_WEBSITE` WHERE `EMAIL` = ? AND `PASSWORD_SITE` = ? ";
 $stmt = $conn->prepare($query);
-$stmt->bind_param("ss",$email_user,$password_site);
+$stmt->bind_param("ss",$email,$password_site);
 $stmt->execute();
 $stmt->store_result();
 
