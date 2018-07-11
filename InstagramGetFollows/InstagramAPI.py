@@ -174,8 +174,9 @@ def login(username,password):
         ('password', password),
         ('queryParams', '{}'),
     ]
-
     response = requests.post('https://www.instagram.com/accounts/login/ajax/', headers=headers, data=data)
+    print("Risposta alla richiesta di LOGIN: " + response.content)
+
     return response
 
 #Questa funzione viene chiamata nel momento in cui un utente appena inserito ha sbagliato la password di instagram
