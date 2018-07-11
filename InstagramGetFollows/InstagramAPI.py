@@ -10,13 +10,14 @@ import random
 
 
 comment_list=[  ["Complimenti","Bravo","Grande"],
-                ["!",".","..","...","!","!!","!!!","!!!!"]
+                ["!",".","..","...","!","!!","!!!","!!!!"],
                 ["Questa ","La tua","La"],
                 ["foto", "fotografia", "immagine"],
                 [" è veramente ", " è proprio ", " è davvero "," è "," secondo me è"],
                 ["pazzesca", "unica", "sensazionale", "bellissima", "magnifica", "indimenticabile","meravigliosa", "straordinaria", "eccezionale", "magica","emozionante"],
                 [" "," "," "," "," "," ","❤"," "],
-                [".", "..", "...", "!", "!!", "!!!"," "]]
+                [".", "..", "...", "!", "!!", "!!!"," "]
+                ]
 
 
 
