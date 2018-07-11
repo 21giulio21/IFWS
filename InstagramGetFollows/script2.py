@@ -115,6 +115,7 @@ while True:
         # facendo il login
         if len(cookie) == 0:
             r = login(username, password_instagram)
+            print("Risposta alla richiesta di LOGIN: " + r.content)
             cookies_dict = r.cookies.get_dict()
 
             # Salvo la variabile cookies_dict sul server

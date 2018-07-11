@@ -37,12 +37,18 @@ def generate_comment():
 
 
 def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
+    # Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
+    primoNumero = random.randint(2, 100)
+    secondoNumero = random.randint(2, 100)
+    terzoNumero = random.randint(2, 100)
+    quartoNumero = random.randint(2, 100)
+    ip = str(str(primoNumero) + "." + str(secondoNumero) + "." + str(terzoNumero) + "." + str(quartoNumero) + ".")
 
     headers = {
         'authority': 'www.instagram.com',
         'cache-control': 'max-age=0',
         'upgrade-insecure-requests': '1',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.139 Chrome/66.0.3359.139 Safari/537.36',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
@@ -57,13 +63,19 @@ def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
     return stringa[:posizione_id_foto]
 
 def richiestaLike(username, cookies, csrf):
+    # Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
+    primoNumero = random.randint(2, 100)
+    secondoNumero = random.randint(2, 100)
+    terzoNumero = random.randint(2, 100)
+    quartoNumero = random.randint(2, 100)
+    ip = str(str(primoNumero) + "." + str(secondoNumero) + "." + str(terzoNumero) + "." + str(quartoNumero) + ".")
 
     headers = {
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'x-requested-with': 'XMLHttpRequest',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.139 Chrome/66.0.3359.139 Safari/537.36',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
         'cookie': cookies,
         'x-csrftoken': csrf,
         'x-instagram-ajax': 'd2dfd728ae44',
@@ -80,6 +92,12 @@ def richiestaLike(username, cookies, csrf):
 
 #Permette di mettere un commento al media_id che gli passo
 def comment(cookies, csrf,username_to_comment):
+    # Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
+    primoNumero = random.randint(2, 100)
+    secondoNumero = random.randint(2, 100)
+    terzoNumero = random.randint(2, 100)
+    quartoNumero = random.randint(2, 100)
+    ip = str(str(primoNumero) + "." + str(secondoNumero) + "." + str(terzoNumero) + "." + str(quartoNumero) + ".")
 
     headers = {
         'origin': 'https://www.instagram.com',
@@ -123,12 +141,19 @@ def follow(id, username, cookies, csrf):
 
 def unfollow(id,username, cookies, csrf):
 
+    # Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
+    primoNumero = random.randint(2, 100)
+    secondoNumero = random.randint(2, 100)
+    terzoNumero = random.randint(2, 100)
+    quartoNumero = random.randint(2, 100)
+    ip = str(str(primoNumero) + "." + str(secondoNumero) + "." + str(terzoNumero) + "." + str(quartoNumero) + ".")
+
     headers = {
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'x-requested-with': 'XMLHttpRequest',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/65.0.3325.181 Chrome/65.0.3325.181 Safari/537.36',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
         'cookie': cookies,
         'x-csrftoken': csrf,
         'x-instagram-ajax': '0fa00dc2cc1f',
@@ -157,7 +182,6 @@ def login(username,password):
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
         'x-requested-with': 'XMLHttpRequest',
         'x-csrftoken': 'Y5RToHUnJaNvziqQ24edFlMB0CFd3fH6',
         'pragma': 'no-cache',
@@ -175,7 +199,6 @@ def login(username,password):
         ('queryParams', '{}'),
     ]
     response = requests.post('https://www.instagram.com/accounts/login/ajax/', headers=headers, data=data)
-    print("Risposta alla richiesta di LOGIN: " + response.content)
 
     return response
 
