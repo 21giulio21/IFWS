@@ -141,19 +141,13 @@ def follow(id, username, cookies, csrf):
 
 def unfollow(id,username, cookies, csrf):
 
-    # Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
-    primoNumero = random.randint(2, 100)
-    secondoNumero = random.randint(2, 100)
-    terzoNumero = random.randint(2, 100)
-    quartoNumero = random.randint(2, 100)
-    ip = str(str(primoNumero) + "." + str(secondoNumero) + "." + str(terzoNumero) + "." + str(quartoNumero) + ".")
+
 
     headers = {
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'x-requested-with': 'XMLHttpRequest',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
         'cookie': cookies,
         'x-csrftoken': csrf,
         'x-instagram-ajax': '0fa00dc2cc1f',
@@ -170,12 +164,6 @@ def unfollow(id,username, cookies, csrf):
 
 def login(username,password):
 
-    #Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
-    primoNumero = random.randint(2,100)
-    secondoNumero = random.randint(2,100)
-    terzoNumero = random.randint(2, 100)
-    quartoNumero = random.randint(2, 100)
-    ip = str(str(primoNumero) + "."+ str(secondoNumero) + "."+ str(terzoNumero) + "."+ str(quartoNumero) + ".")
 
     headers = {
         'cookie': 'ig_cb=1',
