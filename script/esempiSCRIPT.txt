@@ -1,1 +1,30 @@
-sh scriptProva.sh giuliogradisca_hr hermitred NATURE low_food_italia,visit_lazio,slowfood_international,vibramfivefingers
+sh scriptProva.sh test_12345_f test_12345_ff NATURE slowfood_international
+
+sh scriptProva.sh test_18772 21giulio21 NATURE gregorypacks
+
+sh scriptProva.sh test_alias14 21giulio21 NATURE yourabruzzo
+
+sh scriptProva.sh instatrack_alias11 21giulio21 NATURE vaudesport
+
+sh scriptProva.sh test_alias13 21giulio21 NATURE gregorypacks
+
+sh scriptProva.sh test_42018 21giulio21 NATURE vibramfivefingers
+
+
+sh scriptProva.sh alias1271 21giulio21 NATURE slow_food_italia
+
+sh scriptProva.sh alias32018 21giulio21 NATURE hanwagofficial
+
+sh scriptProva.sh alias212121 21giulio21 NATURE paramooutdoor
+
+sh scriptProva.sh alias320086 21giulio21 NATURE Montagnapassione
+
+sh scriptProva.sh alias634 21giulio21 NATURE il_mondo_insieme_
+
+sh scriptProva.sh alias791 21giulio21 NATURE escursionismo.it
+
+sh scriptProva.sh alias82018 21giulio21 NATURE visit_lazio
+
+sh scriptProva.sh alias92018 21giulio21 NATURE low_food_italia,visit_lazio,slowfood_international,vibramfivefingers
+
+sh scriptProva.sh alias102018 21giulio21 NATURE low_food_italia,visit_lazio,slowfood_international,vibramfivefingers
