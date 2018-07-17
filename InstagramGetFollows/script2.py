@@ -3,7 +3,6 @@
 
 
 import base64
-import json
 import time
 import ast
 from InstagramAPI import updateTempoBlocco
@@ -29,8 +28,8 @@ from InstagramAPI import updateDeltaT
 from InstagramAPI import updateNumberRequestsDone
 from InstagramAPI import updateProcessing
 from InstagramAPI import setBlockTime
-from InstagramAPI import messageINTOcontent_request_JSON
 from  InstagramAPI import updateSctiptActive
+from InstagramAPI import parse_content_request
 import re
 
 #max_requests indica dopo quante richieste cambio da follow a unfollow,
@@ -49,13 +48,13 @@ while True:
 
     print("Attendo DT")
 
-    time.sleep(5)
+    time.sleep(1)
     print("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
     numberUsersIntoDatabase = countUserIntoDatabase()
     print("Ho un totale di " + str(numberUsersIntoDatabase) + " utenti che devo gestire per mandare le richieste")
-    print("")
+
 
     #Ora ciclo sul totale di persone che ho nel database
     for index in range(0, int(numberUsersIntoDatabase)): #Deve partire da 0
@@ -114,9 +113,9 @@ while True:
         # Controllo che siano settati i cookie dell'utente altrimenti li chiedo a instagram
         # facendo il login
         if len(cookie) == 0:
-            r = login(username, password_instagram)
-            print("Risposta alla richiesta di LOGIN: " + r.content)
-            cookies_dict = r.cookies.get_dict()
+            content_request = login(username, password_instagram)
+            parse_content_request(content_request,"LOGIN",username,tempo_blocco_se_esce_errore,delta_t)
+            cookies_dict = content_request.cookies.get_dict()
 
             # Salvo la variabile cookies_dict sul server
             seveCookieIntoServer(username, cookies_dict)
@@ -175,25 +174,8 @@ while True:
                                            cookies_dict['csrftoken'])
                 print("Mando una richiesta di UNFOLLOW a " + username_user_to_unfollow + " per eliminare tutti gli utenti che ho seguito con lo script, " + content_request)
 
-                content_request_JSON = json.loads(content_request)
+                parse_content_request(content_request,"FOLLOW-UNFOLLOW",username,tempo_blocco_se_esce_errore,delta_t)
 
-                if content_request.__contains__(
-                        "Please wait a few minutes before you try again") or content_request.__contains__("Attendi"):
-                    # Chiamo la funzione per impostare il tempo di blocco.
-                    setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
-                    continue
-
-                # Se devo ancora processare l'utente lo processo
-                if processing == "1":
-                    if messageINTOcontent_request_JSON(username, content_request_JSON):
-                        continue
-                    else:
-                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
-                        updateProcessing(username, 0)
-
-                        # COntrollo che l'utente non abbia cambiato la password
-                if messageINTOcontent_request_JSON(username, content_request_JSON):
-                    continue
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
@@ -204,58 +186,18 @@ while True:
                 # Mando la richiesta di unfollow
 
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
-                content_request = str(
-                    unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken']))
+                content_request = str(unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken']))
 
                 print("Mando una richiesta di UNFOLLOW a " + username_user_to_unfollow + " per eliminare tutti gli utenti che ho seguito con lo script, " + content_request)
 
-                try:
-                    content_request_JSON = json.loads(content_request)
 
-                except ValueError:
-                    update_secondi_ultima_richiesta(username, int(time.time()))
-                    updateUserFollowed(users_followed_string, username)
-                    continue
+                parse_content_request(content_request,"FOLLOW-UNFOLLOW",username,tempo_blocco_se_esce_errore,delta_t)
 
 
-                if content_request.__contains__(
-                        "Please wait a few minutes before you try again") or content_request.__contains__("Attendi"):
-                    # Chiamo la funzione per impostare il tempo di blocco.
-                    setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
-                    continue
-
-                elif processing == "1":
-                    if 'message' in content_request_JSON:
-                        # Caso in cui ho sbagliato la password
-                        print("Errore, password dello username " + username + " ERRATA ")
-                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                        updatePasswordErrataAndProcessing(username, 1)
-
-                        # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
-                        update_secondi_ultima_richiesta(username, int(time.time()))
-                        updateUserFollowed(users_followed_string, username)
-
-                        continue
-                    else:
-                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
-                        updateProcessing(username, 0)
-
-                        # COntrollo che l'utente non abbia cambiato la password
-                if 'message' in content_request_JSON:
-                    # Caso in cui ho sbagliato la password
-                    print("Errore, password dello username " + username + " ERRATA ")
-                    # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                    updatePasswordErrataAndProcessing(username, 1)
-
-                    # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
-                    update_secondi_ultima_richiesta(username, int(time.time()))
-                    updateUserFollowed(users_followed_string, username)
-
-                    continue
-
-                # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
                 updateUserFollowed(users_followed_string, username)
+
+
 
             continue
 
@@ -302,7 +244,7 @@ while True:
             print("Aggiorno Delta T per l'utente " + username + " perche e arrivato a "+str(number_requests_update_delta_t)+" richieste mandate")
 
             #aggiorno a 0 il numero di richieste mandate perche ho gia diminuito delta t
-            updateNumberRequestsDone(username, str(0))
+            updateNumberRequestsDone(username, "0")
 
 
         #Se follow_unfollow e' 1 allora devo seguire una persona a caso tra tutte quelle  nel database
@@ -325,17 +267,18 @@ while True:
             # In questo punto aumento la variabile:  number_requests_done di 1 e mando al server il nuovo valore di number_requests_done
             updateNumberRequestsDone(username, str(int(number_requests_done) + 1))
 
-            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + contet_request)
+            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request))
 
-            content_request_JSON = json.loads(contet_request)
+            parse_content_request(contet_request,'FOLLOW-UNFOLLOW',username,tempo_blocco_se_esce_errore,delta_t)
 
-
+            '''
             if contet_request.__contains__("Please wait a few minutes before you try again") or contet_request.__contains__("Attendi"):
                 # Chiamo la funzione per impostare il tempo di blocco.
                 setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
                 continue
+            '''
 
-            elif processing == "1":
+            if processing == "1":
                 if 'message' in  content_request_JSON:
                     #Caso in cui ho sbagliato la password
                     print("Errore, password dello username " + username + " ERRATA ")
@@ -346,7 +289,7 @@ while True:
                     #Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
                     updateProcessing(username,0)
 
-
+            '''
             #COntrollo che l'utente non abbia cambiato la password
             if 'message' in content_request_JSON:
                 # Caso in cui ho sbagliato la password
@@ -354,7 +297,7 @@ while True:
                 # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
                 updatePasswordErrataAndProcessing(username, 1)
                 continue
-
+            '''
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             #se il profilo e' publico funziona bene
@@ -409,7 +352,7 @@ while True:
                 content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
                 print("UNFOLLOW " + username_user_to_unfollow +" " + content_request)
 
-                content_request_JSON = json.loads(content_request)
+                parse_content_request(content_request,'FOLLOW-UNFOLLOW',username,tempo_blocco_se_esce_errore,delta_t)
 
                 if content_request.__contains__("Please wait a few minutes before you try again") or content_request.__contains__("Attendi"):
                     #Chiamo la funzione per impostare il tempo di blocco.
@@ -443,7 +386,8 @@ while True:
 
                 print(content_request)
                 try:
-                    content_request_JSON = json.loads(content_request)
+                    parse_content_request(content_request,"FOLLOW-UNFOLLOW",username,tempo_blocco_se_esce_errore,delta_t)
+
 
                 except ValueError:
                     update_secondi_ultima_richiesta(username, int(time.time()))

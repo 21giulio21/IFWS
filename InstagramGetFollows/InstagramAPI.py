@@ -134,7 +134,7 @@ def follow(id, username, cookies, csrf):
 
 	}
 
-	return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers).content
+	return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
 
 
 
@@ -329,13 +329,47 @@ def updateURLImmagineProfilo(username,url_immagine):
 
 
 
-#Controllo che ci sia scritto messagge nel content_request_JSON, nel caso in cui c'e allora dico che la passowrd e' errata
-def messageINTOcontent_request_JSON(username,content_request_JSON):
-    if 'message' in content_request_JSON:
-        # Caso in cui ho sbagliato la password
-        print("Errore, password dello username " + username + " ERRATA ")
-        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-        updatePasswordErrataAndProcessing(username, 1)
-        return True
-    else:
-        return False
+
+
+#Parso la risposta da Instagram nel momento in cui ho mandato una richiesta, content_request_JSON e' il ritorno dela richiesta una volta mandata
+#
+#Nella richiesta di login: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/297458948/follow/", "status": "fail"} ->Login errato
+#Nella richiesta di login: {"authenticated": false, "user": true, "status": "ok"}-> Login errato
+#Nella richiesta di login: {"authenticated": true, "user": true, "userId": "6045478794", "oneTapPrompt": false, "status": "ok"}-> Se tutto e' andato a buon fine
+#Nella rchiesta di FOLLOW: {"result": "following", "status": "ok"} -> se andata a buonfine
+#Nella richiesta di FOLLOW se l'utente cambia password e quindi deve risettare i coockie: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/365506590/follow/", "status": "fail"}
+def parse_content_request(content_request, type_request,username,tempo_blocco_se_esce_errore,delta_t):
+
+    print("Sono nella funzione: parse_content_request e la risposta della richiesta di "+ type_request+" vale: " + str(content_request.content))
+
+
+
+
+    if type_request == "LOGIN":
+        # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
+        content_request_JSON = json.loads(content_request.content)
+
+        authenticated = str(content_request_JSON["authenticated"]).upper()
+
+        #In questo caso mi sono loggato in maniera corretta.
+        if authenticated == "FALSE":
+            print("Autenticazione non riuscita")
+            updatePasswordErrataAndProcessing(username,1)
+
+    elif type_request == "FOLLOW-UNFOLLOW":
+
+
+        #Se la risposta contiene Attendi perche ne ho fatte troppe di fila allora setto il blocco time per quell'utente
+        if content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi"):
+            print("L'utente: " + username + " ha fatto troppe richieste di follow, devo attendere qualche minuto prima di riniziare")
+            setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
+            return
+        #Altrimenti puo accadere che ci sia la password errata perche puo aver cambiato password l'utente e devo rifare i coockie
+        # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
+        content_request_JSON = json.loads(content_request.content)
+
+        message = str(content_request_JSON["message"]).upper()
+        if message == "UNAUTHORIZED":
+            print("L'utente "+ username+" ha cambiato password")
+            updatePasswordErrataAndProcessing(username, 1)
+

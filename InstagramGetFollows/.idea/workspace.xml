@@ -14,22 +14,10 @@
       <file leaf-file-name="script2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="125" column="87" selection-start-line="125" selection-start-column="83" selection-end-line="125" selection-end-column="87" />
+            <state relative-caret-position="62">
+              <caret line="39" column="30" selection-start-line="39" selection-end-line="39" selection-end-column="30" />
               <folding>
                 <element signature="e#48#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaveUsersToFollowIntoDatabase.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,8 +26,8 @@
       <file leaf-file-name="InstagramAPI.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="130" column="110" selection-start-line="130" selection-start-column="110" selection-end-line="130" selection-end-column="123" />
+            <state relative-caret-position="324">
+              <caret line="369" lean-forward="true" selection-start-line="369" selection-end-line="369" />
             </state>
           </provider>
         </entry>
@@ -55,36 +43,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>giulio_</find>
-      <find>gi</find>
-      <find>updateProcessing</find>
-      <find>url_server_save_followers</find>
-      <find>ottengoIdPrimaFotoDaUsername</find>
-      <find>like</find>
-      <find>commen</find>
-      <find>getRandomUserToFollow</find>
-      <find>passwo</find>
-      <find>content_foll</find>
-      <find>richie</find>
-      <find>updatePasswordErrataAndProcessing</find>
-      <find>cookies_dict['csrftoken']</find>
-      <find>username_user_to_unfollow</find>
-      <find>except ValueError:</find>
-      <find>try</find>
-      <find>print</find>
-      <find>passw</find>
-      <find>password_errata</find>
-      <find>password</find>
       <find>elif</find>
       <find>el</find>
       <find>updateS</find>
       <find>test</find>
-      <find>number_requests_done</find>
       <find>index</find>
       <find>tempo_blocco_se_esce_errore</find>
       <find>max_requests</find>
       <find>logi</find>
       <find>cook</find>
+      <find>Password</find>
+      <find>updatePassword</find>
+      <find>test_18772</find>
+      <find>content_request_JSON = json.loads(content_request)</find>
+      <find>password</find>
+      <find>Risposta alla richiesta di LOGIN</find>
+      <find>UNFOLLO</find>
+      <find>contet_request</find>
+      <find>JSON</find>
+      <find>login</find>
+      <find>passwo</find>
+      <find>updatePasswordErrataAndProcessing</find>
+      <find>follow</find>
+      <find>deve mandare richieste di follow</find>
+      <find>parse_content_request</find>
+      <find>follow(</find>
+      <find>Aggiorno</find>
+      <find>messageINTOcontent_request_JSON</find>
+      <find>updateNumberRequestsDone</find>
+      <find>number_requests_done</find>
+      <find>number_requests_update_delta_t</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -119,9 +107,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="250" />
-    <option name="y" value="27" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="275" />
+    <option name="y" value="114" />
     <option name="width" value="660" />
     <option name="height" value="531" />
   </component>
@@ -275,12 +263,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1360" height="710" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1360" height="710" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16029412" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.5481728" />
@@ -294,26 +282,25 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.16029412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.179402" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6096346" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5082612" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -321,7 +308,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -465,7 +452,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="142">
           <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -475,8 +462,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="125" column="87" selection-start-line="125" selection-start-column="83" selection-end-line="125" selection-end-column="87" />
+        <state relative-caret-position="62">
+          <caret line="39" column="30" selection-start-line="39" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="e#48#61#0" expanded="true" />
           </folding>
@@ -485,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="130" column="110" selection-start-line="130" selection-start-column="110" selection-end-line="130" selection-end-column="123" />
+        <state relative-caret-position="324">
+          <caret line="369" lean-forward="true" selection-start-line="369" selection-end-line="369" />
         </state>
       </provider>
     </entry>
