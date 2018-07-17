@@ -271,33 +271,6 @@ while True:
 
             parse_content_request(contet_request,'FOLLOW-UNFOLLOW',username,tempo_blocco_se_esce_errore,delta_t)
 
-            '''
-            if contet_request.__contains__("Please wait a few minutes before you try again") or contet_request.__contains__("Attendi"):
-                # Chiamo la funzione per impostare il tempo di blocco.
-                setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
-                continue
-            '''
-
-            if processing == "1":
-                if 'message' in  content_request_JSON:
-                    #Caso in cui ho sbagliato la password
-                    print("Errore, password dello username " + username + " ERRATA ")
-                    #mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                    updatePasswordErrataAndProcessing(username,1)
-                    continue
-                else:
-                    #Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
-                    updateProcessing(username,0)
-
-            '''
-            #COntrollo che l'utente non abbia cambiato la password
-            if 'message' in content_request_JSON:
-                # Caso in cui ho sbagliato la password
-                print("Errore, password dello username " + username + " ERRATA ")
-                # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                updatePasswordErrataAndProcessing(username, 1)
-                continue
-            '''
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             #se il profilo e' publico funziona bene
@@ -354,23 +327,6 @@ while True:
 
                 parse_content_request(content_request,'FOLLOW-UNFOLLOW',username,tempo_blocco_se_esce_errore,delta_t)
 
-                if content_request.__contains__("Please wait a few minutes before you try again") or content_request.__contains__("Attendi"):
-                    #Chiamo la funzione per impostare il tempo di blocco.
-                    setBlockTime(username,tempo_blocco_se_esce_errore,delta_t)
-                    continue
-
-                #Se devo ancora processare l'utente lo processo
-                if processing == "1":
-                    if messageINTOcontent_request_JSON(username, content_request_JSON):
-                        continue
-                    else:
-                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
-                        updateProcessing(username, 0)
-
-                        # COntrollo che l'utente non abbia cambiato la password
-                if messageINTOcontent_request_JSON(username,content_request_JSON):
-                    continue
-
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
@@ -382,54 +338,9 @@ while True:
                 print("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
 
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
-                content_request = str(unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken']))
+                content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
 
-                print(content_request)
-                try:
-                    parse_content_request(content_request,"FOLLOW-UNFOLLOW",username,tempo_blocco_se_esce_errore,delta_t)
-
-
-                except ValueError:
-                    update_secondi_ultima_richiesta(username, int(time.time()))
-                    updateUserFollowed(users_followed_string, username)
-                    continue
-
-
-
-                if content_request.__contains__("Please wait a few minutes before you try again") or content_request.__contains__("Attendi"):
-                    # Chiamo la funzione per impostare il tempo di blocco.
-                    setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
-                    continue
-
-                elif processing == "1":
-                    if 'message' in content_request_JSON:
-                        # Caso in cui ho sbagliato la password
-                        print("Errore, password dello username " + username + " ERRATA ")
-                        # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                        updatePasswordErrataAndProcessing(username, 1)
-
-                        # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
-                        update_secondi_ultima_richiesta(username, int(time.time()))
-                        updateUserFollowed(users_followed_string, username)
-
-                        continue
-                    else:
-                        # Caso in cui va tutto bene: Se ho PROCESSING a 1 devo metterlo a 0
-                        updateProcessing(username, 0)
-
-
-                        # COntrollo che l'utente non abbia cambiato la password
-                if 'message' in content_request_JSON:
-                    # Caso in cui ho sbagliato la password
-                    print("Errore, password dello username " + username + " ERRATA ")
-                    # mando sul server il valore di PASSWORD ERRATA a 1 cosi dall'app me ne posso accordere e rimettere la password
-                    updatePasswordErrataAndProcessing(username, 1)
-
-                    # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
-                    update_secondi_ultima_richiesta(username, int(time.time()))
-                    updateUserFollowed(users_followed_string, username)
-
-                    continue
+                parse_content_request(content_request,"FOLLOW-UNFOLLOW",username,tempo_blocco_se_esce_errore,delta_t)
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))

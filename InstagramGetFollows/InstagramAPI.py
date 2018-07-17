@@ -158,7 +158,7 @@ def unfollow(id,username, cookies, csrf):
         'content-length': '0',
     }
 
-    return requests.post('https://www.instagram.com/web/friendships/'+id+'/unfollow/', headers=headers).content
+    return requests.post('https://www.instagram.com/web/friendships/'+id+'/unfollow/', headers=headers)
 
 
 
@@ -347,7 +347,11 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
     if type_request == "LOGIN":
         # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
-        content_request_JSON = json.loads(content_request.content)
+        try:
+            content_request_JSON = json.loads(content_request.content)
+        except ValueError:
+            return
+
 
         authenticated = str(content_request_JSON["authenticated"]).upper()
 
@@ -366,10 +370,15 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
             return
         #Altrimenti puo accadere che ci sia la password errata perche puo aver cambiato password l'utente e devo rifare i coockie
         # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
-        content_request_JSON = json.loads(content_request.content)
+        try:
+            content_request_JSON = json.loads(content_request.content)
+        except ValueError:
+            return
 
-        message = str(content_request_JSON["message"]).upper()
-        if message == "UNAUTHORIZED":
-            print("L'utente "+ username+" ha cambiato password")
-            updatePasswordErrataAndProcessing(username, 1)
+        #Controllo se la risposta contiene message
+        if 'message' in content_request_JSON:
+            message = str(content_request_JSON["message"]).upper()
+            if message == "UNAUTHORIZED":
+                print("L'utente "+ username+" ha cambiato password")
+                updatePasswordErrataAndProcessing(username, 1)
 
