@@ -340,7 +340,6 @@ def updateURLImmagineProfilo(username,url_immagine):
 #Nella richiesta di FOLLOW se l'utente cambia password e quindi deve risettare i coockie: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/365506590/follow/", "status": "fail"}
 def parse_content_request(content_request, type_request,username,tempo_blocco_se_esce_errore,delta_t):
 
-    print("Sono nella funzione: parse_content_request e la risposta della richiesta di "+ type_request+" vale: " + str(content_request.content))
 
 
 
@@ -362,12 +361,12 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
     elif type_request == "FOLLOW-UNFOLLOW":
 
-
         #Se la risposta contiene Attendi perche ne ho fatte troppe di fila allora setto il blocco time per quell'utente
         if content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi"):
             print("L'utente: " + username + " ha fatto troppe richieste di follow, devo attendere qualche minuto prima di riniziare")
             setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
             return
+
         #Altrimenti puo accadere che ci sia la password errata perche puo aver cambiato password l'utente e devo rifare i coockie
         # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
         try:

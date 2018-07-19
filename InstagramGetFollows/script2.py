@@ -172,7 +172,7 @@ while True:
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str,
                                            cookies_dict['csrftoken'])
-                print("Mando una richiesta di UNFOLLOW a " + username_user_to_unfollow + " per eliminare tutti gli utenti che ho seguito con lo script, " + content_request)
+                print("Mando una richiesta di UNFOLLOW a " + str(username_user_to_unfollow) + " per eliminare tutti gli utenti che ho seguito con lo script, " + str(content_request.content))
 
                 parse_content_request(content_request,"FOLLOW-UNFOLLOW",username,tempo_blocco_se_esce_errore,delta_t)
 
@@ -186,9 +186,9 @@ while True:
                 # Mando la richiesta di unfollow
 
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
-                content_request = str(unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken']))
+                content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
 
-                print("Mando una richiesta di UNFOLLOW a " + username_user_to_unfollow + " per eliminare tutti gli utenti che ho seguito con lo script, " + content_request)
+                print("Mando una richiesta di UNFOLLOW a " + username_user_to_unfollow + " per eliminare tutti gli utenti che ho seguito con lo script, " + str(content_request.content))
 
 
                 parse_content_request(content_request,"FOLLOW-UNFOLLOW",username,tempo_blocco_se_esce_errore,delta_t)
@@ -239,12 +239,12 @@ while True:
         if int(number_requests_done) > number_requests_update_delta_t and script_attivo == "1":
             #Entro qui dentro dopo 100 richieste per ogni utente fatte
             #In questo modo diminuisco DT per quell'utente perche ne ho gia fatte 100
-            delta_t = int(delta_t) - 1
-            updateDeltaT(username,str(delta_t))
+            #delta_t = int(delta_t) - 1
+            #updateDeltaT(username,str(delta_t))
             print("Aggiorno Delta T per l'utente " + username + " perche e arrivato a "+str(number_requests_update_delta_t)+" richieste mandate")
 
             #aggiorno a 0 il numero di richieste mandate perche ho gia diminuito delta t
-            updateNumberRequestsDone(username, "0")
+            #updateNumberRequestsDone(username, "0")
 
 
         #Se follow_unfollow e' 1 allora devo seguire una persona a caso tra tutte quelle  nel database
@@ -267,14 +267,14 @@ while True:
             # In questo punto aumento la variabile:  number_requests_done di 1 e mando al server il nuovo valore di number_requests_done
             updateNumberRequestsDone(username, str(int(number_requests_done) + 1))
 
-            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request))
+            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request.content))
 
             parse_content_request(contet_request,'FOLLOW-UNFOLLOW',username,tempo_blocco_se_esce_errore,delta_t)
 
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             #se il profilo e' publico funziona bene
-            print("Richiesta LIKE: " + richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken']))
+            #print("Richiesta LIKE: " + richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken']))
 
             #Metto un commento all'ultima foto
             if commenta == "1":
@@ -323,7 +323,7 @@ while True:
                 users_followed_string = ""
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
-                print("UNFOLLOW " + username_user_to_unfollow +" " + content_request)
+                print("UNFOLLOW " + username_user_to_unfollow +" " + str(content_request.content))
 
                 parse_content_request(content_request,'FOLLOW-UNFOLLOW',username,tempo_blocco_se_esce_errore,delta_t)
 
