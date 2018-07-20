@@ -25,14 +25,59 @@ function login_func( $atts ){
     !empty($_SESSION["email"])
   ){
     $result .= '<h1>Ciao ' . $_SESSION["email"] . '</h1>';
-    $result .= print_r($_SESSION, true);
+    $result .= print_r($_SESSION, true) . "<br/>";
+    if(!empty($_SESSION["instagram_linked_accounts"]))
+      $result .= '
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="table-responsive account-list">
+            <table class="table">
+              <th>Account Instagram</th>
+              <th>Stato Bot</th>
+              <th>Azione</th>
+      ';
+    foreach ($_SESSION["instagram_linked_accounts"] as $instagram_account ) {
+      $result .= '
+          <tr>
+            <td>
+              <a href="https://www.instagram.com/'.$instagram_account.'" target="_blank">
+                @'.$instagram_account.'
+              </a>
+            </td>
+            <td>
+              <p>attivo</p>
+            </td>
+            <td>
+              <button class="btn btn-danger" instagram-account="'.$instagram_account.'">
+                  Disattiva
+              </button>
+            </td>
+          </tr>
+      ';
+    }
+    if(!empty($_SESSION["instagram_linked_accounts"]))
+      $result .= '
+            </table>
+          </div>
+        </div>
+      ';
   } else {
     $result .= '
-      <form method="post">
-        <input type="text" name="email" placeholder="Insert your email" value="" required/>
-        <input type="text" name="password" value="" required />
-        <input type="submit" name="submit" value="Login">
-      </form>
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+          <form method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="email" placeholder="Insert your email" value="" required/>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Insert your password" value="" required />
+            </div>
+            <div class="form-group">
+              <input type="submit" name="submit" value="Login">
+            </div>
+          </form>
+        </div>
+      </div>
     ';
   }
 	return $result;
@@ -62,19 +107,7 @@ function register_func( $atts ){
 
 add_shortcode( 'register', 'register_func' );
 
-function getInstagramProfilesFromEmail()
-{
-  $target_url = "http://2.230.243.113/instagram/app/getInstagramProfilesFromEmail.php";
-  $params =
-   array(
-     "EMAIL" => $_POST['email']
-   );
 
-  $curl_response = curl_request($target_url, $params);
-  $parsed_response = json_decode($curl_response);
-  return $parsed_response;
-
-}
 
 function process_post() {
 
@@ -86,28 +119,28 @@ function process_post() {
           "EMAIL" => $_POST['email'],
           "PASSWORD_SITE" => $_POST['password']
         );
-       echo "1";
+
        $curl_response = curl_request($target_url, $params)or die("Non riesco a fare la curl");
-       print_r($curl_response);
-
        $parsed_response = json_decode($curl_response);
-       print_r($parsed_response);
 
-       if(isset($parsed_response->success) && $parsed_response->success == "success")
-       {
+       if(isset($parsed_response->success) && $parsed_response->success == "success") {
 
          if (session_status() == PHP_SESSION_NONE) {
-           /*
-            Se il login è andato a buon fine scarico tutti gli account Instagram collegati a questa mail
-            TODO....
-           */
-           $arrayUtentiInstagram = getInstagramProfilesFromEmail($email);
-          print_r($arrayUtentiInstagram);
-
            session_start();
          }
 
+         $arrayUtentiInstagram = getInstagramProfilesFromEmail($email);
+         print_r($arrayUtentiInstagram);
+         $instagram_linked_accounts = array();
+
+         foreach ($arrayUtentiInstagram as $instagram_user) {
+             $instagram_linked_accounts[] = $instagram_user->USERNAME . "," .
+                $instagram_user->SCRIPT_ACTIVE . "," . $instagram_user->PASSWORD_ERRATA;
+         }
+
+
          $_SESSION["email"] = $_POST['email'];
+         $_SESSION["instagram_linked_accounts"] = $instagram_linked_accounts;
 
        }
 
@@ -124,7 +157,6 @@ function process_post() {
         );
 
        $curl_response = curl_request($target_url, $params);
-       print_r($curl_response);
 
        $parsed_response = json_decode($curl_response);
        if(isset($parsed_response->success) && $parsed_response->success == "success") {
@@ -156,6 +188,19 @@ function curl_request($target_url, array $arguments){
   $server_output = curl_exec ($ch)or die("Errore nella curl_exec");
   curl_close ($ch);
   return $server_output;
+
+}
+
+function getInstagramProfilesFromEmail(){
+  $target_url = "http://2.230.243.113/instagram/app/getInstagramProfilesFromEmail.php";
+  $params =
+   array(
+     "EMAIL" => $_POST['email']
+   );
+
+  $curl_response = curl_request($target_url, $params);
+  $parsed_response = json_decode($curl_response);
+  return $parsed_response;
 
 }
 

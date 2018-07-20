@@ -337,6 +337,7 @@ def updateURLImmagineProfilo(username,url_immagine):
 #Nella richiesta di login: {"authenticated": false, "user": true, "status": "ok"}-> Login errato
 #Nella richiesta di login: {"authenticated": true, "user": true, "userId": "6045478794", "oneTapPrompt": false, "status": "ok"}-> Se tutto e' andato a buon fine
 #Nella rchiesta di FOLLOW: {"result": "following", "status": "ok"} -> se andata a buonfine
+#Nella richiesta di Follow {"message": "This action was blocked. Please try again later.", "status": "fail"} -> se devo bloccare per un po di clicli
 #Nella richiesta di FOLLOW se l'utente cambia password e quindi deve risettare i coockie: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/365506590/follow/", "status": "fail"}
 def parse_content_request(content_request, type_request,username,tempo_blocco_se_esce_errore,delta_t):
 
@@ -362,7 +363,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
     elif type_request == "FOLLOW-UNFOLLOW":
 
         #Se la risposta contiene Attendi perche ne ho fatte troppe di fila allora setto il blocco time per quell'utente
-        if content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi"):
+        if content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi") or content_request.content.__contains__("This action") :
             print("L'utente: " + username + " ha fatto troppe richieste di follow, devo attendere qualche minuto prima di riniziare")
             setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
             return
