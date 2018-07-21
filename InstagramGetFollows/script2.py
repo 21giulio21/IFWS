@@ -5,6 +5,7 @@
 import base64
 import time
 import ast
+import random
 from InstagramAPI import updateTempoBlocco
 from InstagramAPI import comment
 from InstagramAPI import update_secondi_ultima_richiesta
@@ -17,7 +18,6 @@ from InstagramAPI import follow
 from InstagramAPI import login
 from InstagramAPI import updateURLImmagineProfilo
 from InstagramAPI import unfollow
-from InstagramAPI import updatePasswordErrataAndProcessing
 from InstagramAPI import getRandomUserToFollow
 from InstagramAPI import countUserIntoDatabase
 from InstagramAPI import selectUserFromDatabase
@@ -26,8 +26,6 @@ from InstagramAPI import getCountUsersToFollow
 from InstagramAPI import richiestaLike
 from InstagramAPI import updateDeltaT
 from InstagramAPI import updateNumberRequestsDone
-from InstagramAPI import updateProcessing
-from InstagramAPI import setBlockTime
 from  InstagramAPI import updateSctiptActive
 from InstagramAPI import parse_content_request
 import re
@@ -48,7 +46,7 @@ while True:
 
     print("Attendo DT")
 
-    time.sleep(20)
+    time.sleep(4)
     print("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
@@ -84,12 +82,11 @@ while True:
         number_requests_done = str(user[0]['NUMBER_REQUESTS_DONE'])
 
 
-        #Processing va settato a 0 se ho fatto un login corretto
-        processing = str(user[0]['PROCESSING'])
-
-
         #PASSWORD_ERRATA e' a 1 se la password di instagram e' sbagliata
         password_errata = str(user[0]['PASSWORD_ERRATA'])
+
+        #Se è 1 allora bisogna che l'utente metta like.
+        set_like = str(user[0]['SET_LIKE'])
 
 
         print("Processo l'utente: " + username)
@@ -137,7 +134,7 @@ while True:
         tempo_ora = int(time.time())
 
         if int(secondi_ultima_richiesta) + int(delta_t) > tempo_ora:
-            print("L'utente " + username + " NON deve mandare richieste perche non e' ancora passato il suo DT")
+            print("Processo l'utente: " + username + " NON deve mandare richieste perche non e' ancora passato il suo DT")
             continue
 
         #Se script_attivo e' 0 allora devo smettere di seguire tutti quelli che sono nell'array di persone che seguo
@@ -274,14 +271,34 @@ while True:
 
             #Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             #se il profilo e' publico funziona bene
-            #print("Richiesta LIKE: " + richiestaLike(username_user_to_follow,cookies_str,cookies_dict['csrftoken']))
+            #Se set_like è uno allora con probabilità 1 / 4 mettero un like
+            if set_like == "1":
+                # Faccio in modo che con probabilità 1/4 metta like quindi non verra messo sempre, in modo
+                # tale da aumentare il nuemro di richiueste di follow
+                random_number = random.randint(1, 4)
 
-            #Metto un commento all'ultima foto
+                #Solamente se random_number è 2 allora mando una richiesta di like, in questo modo sono sicuro che
+                #ho la probabilità di 1/4 di mettere like. quindi non dovrebbe bloccarlo.
+                if random_number == 2:
+                    print("Processo l'utente: " + username + " mette like  alla foto di " + username_user_to_follow)
+                    content_request = richiestaLike(username_user_to_follow, cookies_str, cookies_dict['csrftoken'])
+                    parse_content_request(content_request, 'LIKE', username, tempo_blocco_se_esce_errore, delta_t)
+                else:
+                    print("Processo l'utente: " + username + " non mette il like, forse la prossima volta ?")
+
+
+            #Metto un commento all'ultima foto con probabilità 1/4 in questo modo non verrà bloccato l'account
             if commenta == "1":
-                print("L'utente " + username + " commenta la foto di " + username_user_to_follow)
-                print(comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow))
+                # Faccio in modo che con probabilità 1/4 commenta quindi non verra messo sempre, in modo
+                # tale da aumentare il nuemro di richiueste di follow
+                random_number = random.randint(1, 4)
+                if random_number == 2:
+                    print("Processo l'utente: " + username + " commenta la foto di " + username_user_to_follow)
+                    print(comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow))
+                else:
+                    print("Processo l'utente: " + username + " non commenta, forse la prossima volta ?")
             else:
-                print("L'utente " + username + " NON commenta la foto di " + username_user_to_follow + " perchè non ha COMMENTA a 1")
+                print("Processo l'utente: " + username + " NON commenta la foto di " + username_user_to_follow + " perchè non ha COMMENTA a 1")
 
 
             #Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo

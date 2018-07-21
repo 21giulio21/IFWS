@@ -63,19 +63,14 @@ def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
     return stringa[:posizione_id_foto]
 
 def richiestaLike(username, cookies, csrf):
-    # Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
-    primoNumero = random.randint(2, 100)
-    secondoNumero = random.randint(2, 100)
-    terzoNumero = random.randint(2, 100)
-    quartoNumero = random.randint(2, 100)
-    ip = str(str(primoNumero) + "." + str(secondoNumero) + "." + str(terzoNumero) + "." + str(quartoNumero) + ".")
+
+
 
     headers = {
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'x-requested-with': 'XMLHttpRequest',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
         'cookie': cookies,
         'x-csrftoken': csrf,
         'x-instagram-ajax': 'd2dfd728ae44',
@@ -85,8 +80,7 @@ def richiestaLike(username, cookies, csrf):
         'authority': 'www.instagram.com',
         'content-length': '0',
     }
-
-    return str(requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers).content)
+    return requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers)
 
 
 
@@ -336,9 +330,10 @@ def updateURLImmagineProfilo(username,url_immagine):
 #Nella richiesta di login: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/297458948/follow/", "status": "fail"} ->Login errato
 #Nella richiesta di login: {"authenticated": false, "user": true, "status": "ok"}-> Login errato
 #Nella richiesta di login: {"authenticated": true, "user": true, "userId": "6045478794", "oneTapPrompt": false, "status": "ok"}-> Se tutto e' andato a buon fine
-#Nella rchiesta di FOLLOW: {"result": "following", "status": "ok"} -> se andata a buonfine
+#Nella richiesta di FOLLOW: {"result": "following", "status": "ok"} -> se andata a buonfine
 #Nella richiesta di Follow {"message": "This action was blocked. Please try again later.", "status": "fail"} -> se devo bloccare per un po di clicli
 #Nella richiesta di FOLLOW se l'utente cambia password e quindi deve risettare i coockie: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/365506590/follow/", "status": "fail"}
+#Nella richiesta di LIKE se inizia con <!DOCTYPE html> allora non ha potuto mettere like perche la foto era nascosta
 def parse_content_request(content_request, type_request,username,tempo_blocco_se_esce_errore,delta_t):
 
 
@@ -364,7 +359,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
         #Se la risposta contiene Attendi perche ne ho fatte troppe di fila allora setto il blocco time per quell'utente
         if content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi") or content_request.content.__contains__("This action") :
-            print("L'utente: " + username + " ha fatto troppe richieste di follow, devo attendere qualche minuto prima di riniziare")
+            print("Processo l'utente: " + username + " ha fatto troppe richieste di follow, devo attendere qualche minuto prima di riniziare")
             setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
             return
 
@@ -382,3 +377,9 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
                 print("L'utente "+ username+" ha cambiato password")
                 updatePasswordErrataAndProcessing(username, 1)
 
+    elif type_request == "LIKE":
+        if content_request.content.__contains__("<!DOCTYPE html>"):
+            print("Processo l'utente: "+username+" non ha messo like alla foto perche era un profilo privato")
+
+        else:
+            print("Processo l'utente: "+username+" ha messo like alla foto con esito: " + str(content_request.content))

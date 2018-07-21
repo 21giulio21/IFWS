@@ -33,12 +33,10 @@ echo $return;
 
 }else{
 
-  // Inserisco le credenziali dell'utente e imposto `PROCESSING` = '1' in questo modo lo
-  //script controllera che ho `PROCESSING` = '1' e lo processa per vedere se le credenziali
-  // di instagram inserite sono corrette
+  // Inserisco le credenziali dell'utente
   $query = "
-  INSERT INTO `REGISTERED_USERS` (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`, `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_SITE`, `PASSWORD_INSTAGRAM`, `DELTA_T`, `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`, `URL_IMMAGINE_PROFILO`, `PROCESSING`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`)
-  VALUES ('', ?, '', '0', '1', '', ? , '', ?, '200', '0', '0', '0', '', '0', '0', '', '0');";
+  INSERT INTO `REGISTERED_USERS` (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`, `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_INSTAGRAM`, `DELTA_T`, `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`, `URL_IMMAGINE_PROFILO`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`)
+  VALUES ('', ?, '', '0', '1', '', ? , ?, '200', '0', '0', '0', '', '0', '', '0');";
   $stmt = $conn->prepare($query);
   $stmt->bind_param("sss",$username_instagram,$email,$password_instagram);
   $stmt->execute();
