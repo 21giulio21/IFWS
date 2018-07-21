@@ -26,17 +26,16 @@ if ($stmt->num_rows == 1 )
 {
 // Se sono qui allora lo username passato e' gia preso da un altra persona
 
-$return = '{ "success":"failed", "reason":"Username already in use" }';
-echo $return;
-
-
+  $return = '{ "success":"failed", "reason":"Username already in use" }';
+  echo $return;
 
 }else{
 
   // Inserisco le credenziali dell'utente
   $query = "
-  INSERT INTO `REGISTERED_USERS` (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`, `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_INSTAGRAM`, `DELTA_T`, `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`, `URL_IMMAGINE_PROFILO`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`)
-  VALUES ('', ?, '', '0', '1', '', ? , ?, '200', '0', '0', '0', '', '0', '', '0');";
+  INSERT INTO `REGISTERED_USERS`
+  (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`, `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_INSTAGRAM`, `DELTA_T`, `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`, `SET_LIKE`)
+  VALUES ('', ?, '', '0', '1', '', ?, ?, '200', '0', '0', '0', '0', '', '0', '0');";
   $stmt = $conn->prepare($query);
   $stmt->bind_param("sss",$username_instagram,$email,$password_instagram);
   $stmt->execute();
