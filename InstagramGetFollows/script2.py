@@ -22,7 +22,7 @@ from InstagramAPI import selectUserFromDatabase
 from InstagramAPI import getIDFromUsername
 from InstagramAPI import getCountUsersToFollow
 from InstagramAPI import richiestaLike
-from InstagramAPI import updateDeltaT
+from InstagramAPI import updateDevePagare
 from InstagramAPI import updateNumberRequestsDone
 from  InstagramAPI import updateSctiptActive
 from InstagramAPI import parse_content_request
@@ -44,7 +44,7 @@ while True:
 
     print("Attendo DT")
 
-    time.sleep(4)
+    time.sleep(10)
     print("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
@@ -85,8 +85,28 @@ while True:
         #Se è 1 allora bisogna che l'utente metta like.
         set_like = str(user[0]['SET_LIKE'])
 
+        #Qui inserisco il tempo in cui si e' iscritto al sito. In questo modo potendo solo dare 3 giorni di tempo come test se passano 3 giorni allora devom impostare
+        #il valore: DEVE_PAGARE a 1 .
+        tempo_iscrizione = str(user[0]['TEMPO_ISCRIZIONE'])
+
+        # HA_PAGATO e' a 1 solo se l'utente ha pagato. in caso contrario e' 0.
+        ha_pagato = str(user[0]['HA_PAGATO'])
+
+        # deve_pagare e' a 1 solo se l'utente non ha pagato.
+        deve_pagare = str(user[0]['DEVE_PAGARE'])
+
 
         print("Processo l'utente: " + username)
+
+
+        #Controllo il tempo_iscrizione, se sono passati 3 giorni allora deve pagare ossia impostare: DEVE_PAGARE a 1
+        tempo_di_ora = time.time()
+        secondi_in_tre_giorni = 259200
+        if ha_pagato == "0" and len(tempo_iscrizione) > 5: #Se l'utente non ha pagato e l'ho inserito dal sito internet
+            if int(tempo_iscrizione) + secondi_in_tre_giorni < tempo_di_ora and deve_pagare == "0": #Se sono passati 3 giorni come prova
+                #Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
+                print("Processo l'utente: " + username + " deve pagare")
+                print(updateDevePagare(username,1))
 
         #Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
         if password_errata == '1':

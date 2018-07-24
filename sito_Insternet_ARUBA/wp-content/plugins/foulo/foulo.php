@@ -13,6 +13,7 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 function login_func( $atts ){
+  wp_enqueue_script('foulo', plugin_dir_url(__FILE__) .'/js/foulo.js', array('jquery'), null, true);
 
   $result = "";
 
@@ -25,37 +26,85 @@ function login_func( $atts ){
     !empty($_SESSION["email"])
   ){
     $result .= '<h1>Ciao ' . $_SESSION["email"] . '</h1>';
-    $result .= print_r($_SESSION, true) . "<br/>";
-    if(!empty($_SESSION["instagram_linked_accounts"]))
+    $category = getTargetFromDatabase();
+    $arrayUtentiInstagram = getInstagramProfilesFromEmail($_SESSION["email"]);
+
+    $instagram_linked_accounts = array();
+
+    foreach ($arrayUtentiInstagram as $instagram_user) {
+        $instagram_linked_accounts[] = $instagram_user->USERNAME . "," .
+           $instagram_user->SCRIPT_ACTIVE . "," .
+           $instagram_user->PASSWORD_ERRATA . ',' .
+           $instagram_user->COMMENTA
+           ;
+    }
+
+    if(!empty($instagram_linked_accounts))
       $result .= '
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-10">
           <div class="table-responsive account-list">
             <table class="table">
               <th>Account Instagram</th>
               <th>Stato Bot</th>
-              <th>Azione</th>
+              <th>Attiva/Disattiva Bot</th>
+              <th>Attiva/Disattiva Commenti</th>
+              <th>Attiva/Disattiva Like</th>
+              <th>TARGET</th>
       ';
-    foreach ($_SESSION["instagram_linked_accounts"] as $instagram_account ) {
+    foreach ($instagram_linked_accounts as $instagram_account ) {
+      $instagram_account_details = explode(",", $instagram_account);
+      $instagram_account_state = $instagram_account_details[1] == 1 ?
+         '<i class="fa fa-check" aria-hidden="true"></i>' :
+         '<i class="fa fa-times" aria-hidden="true"></i>';
+      $instagram_account_state_button = $instagram_account_details[1] == 1 ?
+         '<button type="button" class="btn btn-danger" action="toggle-bot" instagram-account="'.$instagram_account_details[0].'">
+             Disattiva
+         </button>' :
+         '<button type="button" class="btn btn-danger" action="toggle-bot" instagram-account="'.$instagram_account_details[0].'">
+             Attiva
+         </button>'
+         ;
+      $instagram_comments_state = $instagram_account_details[3] == 1 ?
+        '<button type="button" class="btn btn-danger" action="toggle-comments" instagram-account="'.$instagram_account_details[0].'">
+            Disattiva
+        </button>' :
+        '<button type="button" class="btn btn-danger" action="toggle-comments" instagram-account="'.$instagram_account_details[0].'">
+            Attiva
+        </button>';
       $result .= '
           <tr>
             <td>
-              <a href="https://www.instagram.com/'.$instagram_account.'" target="_blank">
-                @'.$instagram_account.'
+              <a href="https://www.instagram.com/'.$instagram_account_details[0].'" target="_blank">
+                @'.$instagram_account_details[0].'
               </a>
             </td>
             <td>
-              <p>attivo</p>
+              <p>' . $instagram_account_state .'</p>
             </td>
             <td>
-              <button class="btn btn-danger" instagram-account="'.$instagram_account.'">
+              '.$instagram_account_state_button .'
+            </td>
+            <td>
+              '.$instagram_comments_state.'
+            </td>
+            <td>
+              <button class="btn disabled" action="toggle-likes" instagram-account="'.$instagram_account_details[0].'">
                   Disattiva
               </button>
             </td>
+
+            <td>
+              <select>
+                '.$category.'
+              </select>
+            </td>
+
+
           </tr>
       ';
     }
-    if(!empty($_SESSION["instagram_linked_accounts"]))
+    if(!empty($instagram_linked_accounts))
       $result .= '
             </table>
           </div>
@@ -85,7 +134,21 @@ function login_func( $atts ){
 
 add_shortcode( 'login', 'login_func' );
 
+function getTargetFromDatabase()
+{
+  $target_url = "http://2.230.243.113/instagram/app/getCategory.php";
+  $params = array();
 
+  $curl_response = curl_request($target_url, $params)or die("Non riesco a fare la curl");
+  $parsed_response = json_decode($curl_response);
+  $return_string = "";
+  foreach ($parsed_response as $target) {
+    $return_string = $return_string ."<option value=\"{$target->CATEGORY}\">{$target->CATEGORY}</option>";
+
+  }
+
+  return $return_string;
+}
 
 
 
@@ -129,18 +192,7 @@ function process_post() {
            session_start();
          }
 
-         $arrayUtentiInstagram = getInstagramProfilesFromEmail($email);
-         print_r($arrayUtentiInstagram);
-         $instagram_linked_accounts = array();
-
-         foreach ($arrayUtentiInstagram as $instagram_user) {
-             $instagram_linked_accounts[] = $instagram_user->USERNAME . "," .
-                $instagram_user->SCRIPT_ACTIVE . "," . $instagram_user->PASSWORD_ERRATA;
-         }
-
-
          $_SESSION["email"] = $_POST['email'];
-         $_SESSION["instagram_linked_accounts"] = $instagram_linked_accounts;
 
        }
 
@@ -191,11 +243,11 @@ function curl_request($target_url, array $arguments){
 
 }
 
-function getInstagramProfilesFromEmail(){
+function getInstagramProfilesFromEmail($email){
   $target_url = "http://2.230.243.113/instagram/app/getInstagramProfilesFromEmail.php";
   $params =
    array(
-     "EMAIL" => $_POST['email']
+     "EMAIL" => $email
    );
 
   $curl_response = curl_request($target_url, $params);

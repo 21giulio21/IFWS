@@ -299,7 +299,9 @@ def getIDFromUsername(username):
     return id
 
 
-
+def updateDevePagare(username, value):
+    url = "http://2.230.243.113/instagram/updateDevePagare.php?username=" + str(username) + "&DEVE_PAGARE=" + str(value)
+    return requests.get(url).content
 
 #Parso la risposta da Instagram nel momento in cui ho mandato una richiesta, content_request_JSON e' il ritorno dela richiesta una volta mandata
 #
@@ -311,10 +313,6 @@ def getIDFromUsername(username):
 #Nella richiesta di FOLLOW se l'utente cambia password e quindi deve risettare i coockie: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/365506590/follow/", "status": "fail"}
 #Nella richiesta di LIKE se inizia con <!DOCTYPE html> allora non ha potuto mettere like perche la foto era nascosta
 def parse_content_request(content_request, type_request,username,tempo_blocco_se_esce_errore,delta_t):
-
-
-
-
 
     if type_request == "LOGIN":
         # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
