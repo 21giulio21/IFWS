@@ -16,7 +16,7 @@ from InstagramAPI import seveCookieIntoServer
 from InstagramAPI import follow
 from InstagramAPI import login
 from InstagramAPI import unfollow
-from InstagramAPI import getRandomUserToFollow
+from InstagramAPI import getUserToFollwFromTarget
 from InstagramAPI import countUserIntoDatabase
 from InstagramAPI import selectUserFromDatabase
 from InstagramAPI import getIDFromUsername
@@ -95,8 +95,12 @@ while True:
         # deve_pagare e' a 1 solo se l'utente non ha pagato.
         deve_pagare = str(user[0]['DEVE_PAGARE'])
 
+        # deve_pagare e' a 1 solo se l'utente non ha pagato.
+        target = str(user[0]['TARGET'])
 
-        print("Processo l'utente: " + username)
+
+        print("Processo l'utente: " + username )
+        time.sleep(10)
 
 
         #Controllo il tempo_iscrizione, se sono passati 3 giorni allora deve pagare ossia impostare: DEVE_PAGARE a 1
@@ -264,7 +268,7 @@ while True:
 
             #Mi faccio tornare un utente da seguire con stesso target
             #dell'utente che sto processando. Questo è realizzato dal php
-            user_to_follow = getRandomUserToFollow(username)
+            user_to_follow = getUserToFollwFromTarget(target)
             id_user_to_follow = str(user_to_follow[0]["ID"])
             username_user_to_follow = str(user_to_follow[0]["USERNAME"])
 

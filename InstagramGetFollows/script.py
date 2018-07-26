@@ -9,7 +9,7 @@ from InstagramAPI import seveCookieIntoServer
 from InstagramAPI import follow
 from InstagramAPI import login
 from InstagramAPI import unfollow
-from InstagramAPI import getRandomUserToFollow
+from InstagramAPI import getUserToFollwFromTarget
 from InstagramAPI import countUserIntoDatabase
 from InstagramAPI import selectUserFromDatabase
 from InstagramAPI import getIDFromUsername
@@ -127,7 +127,7 @@ while True:
 
             #Seleziono 1 utente tra 0 e count_user_to_follow da seguire
             random_number_user_to_follow = str(randint(1, int(count_user_to_follow)))
-            user_to_follow = str(getRandomUserToFollow(random_number_user_to_follow))
+            user_to_follow = str(getUserToFollwFromTarget(random_number_user_to_follow))
             username_user_to_follow = user_to_follow[user_to_follow.find("u'USERNAME': u'") + len("u'USERNAME': u'"): user_to_follow.find("', u'ID':")]
             id_user_to_follow = user_to_follow[user_to_follow.find("', u'ID': u'") + len("', u'ID': u'"): user_to_follow.find("'}")]
 

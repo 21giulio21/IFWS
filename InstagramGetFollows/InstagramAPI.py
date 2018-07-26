@@ -157,22 +157,21 @@ def unfollow(id,username, cookies, csrf):
 
 
 def login(username,password):
-
-
     headers = {
-        'cookie': 'ig_cb=1',
+        'cookie': 'ig_cb=1; mid=W1nvMQAEAAFu2gGrVLf9bSIPaRj0; mcd=3; fbm_124024574287414=base_domain=.instagram.com; shbid=18815; rur=FRC; csrftoken=8PTQJQ7SinBSjbsmVnBExspM0dwYyNZ8; fbsr_124024574287414=8YD7u-K_rHKaSPA5xcY6uah59VJCd41My7qDi7TU_Hc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUURTdTZuVG0zbVl2YXhPd2UwWXdnQ2JUVlZsM3VRTEltRzNmelk5cll6MlZEemhWQW1DejJONFpjUjN1NURKNjNSUndjSlBPU282dF9sNHlfN3U1eHE4TDNoMGFXUTNrUDc4YkFHM1JleFBSbjhoMzhXRFBpbjhBLWRYaTBtcER6MHJ1TE1LaUdsMUgzcmlDd2ZkV1UtTnMwX2Zld2VGelFBQXQyNnFMRGhMZTgtRnJfTVhIWXFGSFFrUnVJTmhZdGx2Tl9Gc254el9MOVlibWgwVTNJRllOYnM5VUFPaU9JdndPTWhwalR0Zm13NG5fRmduYlZ3VGV0TXpSbG9OdlZ1cGxZbGxDNGw4a3dqaDlTYW84dUdtUHJ4YUxQS2YzRjFGdUs5Y2ZzS1pkSFNOdE91LXdaaWVrWDl5M1Q0QkVITnpnZTNydzR2MllCTGNvRDFiNDBmRSIsImlzc3VlZF9hdCI6MTUzMjYyMDkxMCwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1532620593\\054 \\"193.55.113.196\\": 2200}:1fiiiC:RUN1GvUYgXRNI-ZXGepzKJ_5Ybs"',
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
         'x-requested-with': 'XMLHttpRequest',
-        'x-csrftoken': 'Y5RToHUnJaNvziqQ24edFlMB0CFd3fH6',
+        'x-csrftoken': '8PTQJQ7SinBSjbsmVnBExspM0dwYyNZ8',
         'pragma': 'no-cache',
-        'x-instagram-ajax': '8958fe1e75ab',
+        'x-instagram-ajax': 'f122ed33a26e',
         'content-type': 'application/x-www-form-urlencoded',
         'accept': '*/*',
         'cache-control': 'no-cache',
         'authority': 'www.instagram.com',
-        'referer': 'https://www.instagram.com/',
+        'referer': 'https://www.instagram.com/accounts/login/',
     }
 
     data = [
@@ -180,6 +179,9 @@ def login(username,password):
         ('password', password),
         ('queryParams', '{}'),
     ]
+
+
+
     response = requests.post('https://www.instagram.com/accounts/login/ajax/', headers=headers, data=data)
 
     return response
@@ -239,8 +241,8 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 
 #prendo come input un numero random da 1 al numero massimo di persone che ho nel database di persone che posso
 #seguire e facci ola richiesta pert farmene tornare 1 a caso
-def getRandomUserToFollow(username_whants_to_follow):
-    url = "http://2.230.243.113/instagram/getUserToFollowFromUser.php?USERNAME=" + str(username_whants_to_follow)
+def getUserToFollwFromTarget(target):
+    url = "http://2.230.243.113/instagram/getUserToFollowFromUser.php?target=" + str(target)
     return json.loads(requests.get(url).content)
 
 #Ritorna quanti siano gli utenti registrati

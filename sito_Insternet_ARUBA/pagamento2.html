@@ -3,10 +3,14 @@
 <script>
 paypal.Button.render({
   // Configure environment
-  env: 'sandbox',
+  // Configure environment
+  env: 'production',
+    client: {
+      production: 'AbuzFtw77DFKtZMPkCjduWWwd67dGIA3EBQ4VroO7IeAz__0THosuQo51Ta4wIQ8O4VVEnjRI2q2Ol7S' //Enter your live client ID here
+    },
   client: {
-    sandbox: 'demo_sandbox_client_id',
-    production: 'demo_production_client_id'
+    sandbox: 'AdXdacvd6FSl1q3wJf8MHg8yqQv0smaHXIbDYh3f0e4Iy2ULhhup4lVf5ejs15qIk0nkMAbHNdCVlpNb',
+    production: 'AbuzFtw77DFKtZMPkCjduWWwd67dGIA3EBQ4VroO7IeAz__0THosuQo51Ta4wIQ8O4VVEnjRI2q2Ol7S'
   },
   // Customize button (optional)
   locale: 'en_US',
