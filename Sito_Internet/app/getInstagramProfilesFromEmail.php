@@ -8,6 +8,12 @@ prendo come input
 
 require_once('../util/connect.php');
 
+if(!isset($_POST["EMAIL"]))
+{
+  $return = '{ "success":"failed", "reason":"POST data not valid" }';
+  echo $return;
+  return;
+}
 
 $email = $_POST["EMAIL"];
 

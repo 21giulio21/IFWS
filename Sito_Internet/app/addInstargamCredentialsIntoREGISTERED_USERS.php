@@ -9,9 +9,20 @@ tabella personale dell'utente dal sito internet
 */
 
 
-$username_instagram = "prova"; //$_POST["USERNAME"];
-$password_instagram = "prova";//$_POST["PASSWORD_INSTAGRAM"];
-$email = "instatrack" ; //$_POST["EMAIL"];
+
+if(!isset($_POST["USERNAME"]) || !isset($_POST["PASSWORD_INSTAGRAM"]) || !isset($_POST["EMAIL"]) )
+{
+  $return = '{ "success":"failed", "reason":"POST data not valid" }';
+  echo $return;
+  return;
+}
+
+
+$username_instagram = $_POST["USERNAME"];
+$password_instagram = $_POST["PASSWORD_INSTAGRAM"];
+$email = $_POST["EMAIL"];
+
+
 
 //Questa variabile contiene il secondo in cui viene chiamata la pagina,
 //in maniera tale che una volta passati 3 giorni devo far pagare l'utente.
@@ -42,10 +53,10 @@ if ($stmt->num_rows == 1 )
    `TEMPO_ATTESA_BLOCCO`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`, `SET_LIKE`, `DEVE_PAGARE`,
     `TEMPO_ISCRIZIONE`) VALUES
     ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', '', '0', '0', '0', ? );";
-  $stmt = $conn->prepare($query);
-  $stmt->bind_param("ssss",$username_instagram,$email,$password_instagram,$secondi);
-  $stmt->execute();
-  $stmt->store_result();
+  $stmt = $conn->prepare($query)or die("Errore nella prepare");
+  $stmt->bind_param("ssss",$username_instagram,$email,$password_instagram,$secondi)or die("Errore nella bind_param");
+  $stmt->execute()or die("Errore nella execute");
+  $stmt->store_result()or die("Errore nella store_result");
 
   $return = '{ "success":"success" }';
 
@@ -56,7 +67,7 @@ if ($stmt->num_rows == 1 )
 
 
 
-
+""
 
 
 

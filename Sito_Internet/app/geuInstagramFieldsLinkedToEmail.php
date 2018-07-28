@@ -7,14 +7,16 @@ Questo file prende in input la mail dell'utente e restituisce in output tutti gl
 
 require_once('../util/connect.php');
 
+if(!isset($_POST["EMAIL"]))
+{
+  $return = '{ "success":"failed", "reason":"POST data not valid" }';
+  echo $return;
+  return;
+}
+
 
 $email = $_POST["EMAIL"];
 
-// COntrollo che non sia vuoto il valore di $_POST["EMAIL"]
-if(!isset($_POST["EMAIL"]))
-{
-  return;
-}
 
 // restituisco tutti gli gli account Instagram collegati a quella mail
 $query = "SELECT * FROM `REGISTERED_USERS` WHERE `EMAIL` = ? ";

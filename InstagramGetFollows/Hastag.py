@@ -1,35 +1,40 @@
+import sys
 
 import instaloader
 import requests
 import time
 
 
-hastag = 'unige'
+hastag =  str(sys.argv[1])
 
-
+def saveUserAndIdIntoDatabase(id,username):
+    response = requests.get("http://2.230.243.113/instagram/saveUserIntoDatabaseUSER_TO_FOLLOW_HASTAG.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET=HASTAG"+hastag)
+    print(response.content)
 
 
 def find_end_cursor(content):
     content = str(content)
     return content[content.find("\"end_cursor\":\"") + len("\"end_cursor\":\""):content.find("\"}")]
 
-def geuUsernameFromId(id,L):
-    profile = instaloader.Profile.from_id(L.context, int(id))
-    print("username: "+profile.username + " id " + str(id))
-    saveUserAndIdIntoDatabase(id, str(profile.username))
+def geuUsernameFromId(id):
+    print("Attendo 10 secondi prima di fare trovare l'username dall'identificativo")
+    time.sleep(10)
+    L = instaloader.Instaloader()
+    try:
+        profile = instaloader.Profile.from_id(L.context, int(id))
+        print("username: " + profile.username + " id " + str(id))
+        saveUserAndIdIntoDatabase(id, profile.username)
 
-def writeToFileID(ID):
-    with open("username.txt", "a") as myfile:
-        print("Scrivo su file ID:" + ID)
-        myfile.write(ID + "\n")
+    except instaloader.exceptions.LoginRequiredException:
+        print("impossibile trovare username, passo al prossimo")
 
-def findUsernameAndId(content,L):
+
+def findUsernameAndId(content):
     array= content.split(",\"owner\":{\"id\":\"")
     for i in array:
         stringa = i[:i.find("\"},")]
         if len(stringa) < 30:
-            writeToFileID(stringa)
-            #geuUsernameFromId(stringa,L)
+            geuUsernameFromId(stringa)
 
 
 headers = {
@@ -55,7 +60,7 @@ response = requests.get('https://www.instagram.com/graphql/query/', headers=head
 
 
 #Con questa funziona immediatamente trovo username e mando sul server pero trappe richieste insieme
-findUsernameAndId(str(response.content),L)
+findUsernameAndId(str(response.content))
 
 end_cursor = find_end_cursor(response.content)
 
@@ -64,7 +69,6 @@ print("Primo Cursore")
 print(end_cursor)
 
 for i in range(0,1000):
-    time.sleep(10)
     headers = {
     'pragma': 'no-cache',
     'cookie': 'mid=W1c7RAAEAAFDeNK-N46r0Fu-kuQk; mcd=3; fbm_124024574287414=base_domain=.instagram.com; ig_cb=1; csrftoken=AxACHvi2CAl59FwDmIuKf7BCtGX1LzJN; shbid=18440; ds_user_id=1327040148; sessionid=IGSCa3dc5ebb359939240ed8ffaebe5f3cf584dd9cd63fb9c2f827bba01d17f4a174%3AP9RnSh8stKJ991oCoOClVn4hypdySrYx%3A%7B%22_auth_user_id%22%3A1327040148%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%221327040148%3Ac7k0keTYTDLQZJH0RLPgVsYVuRku6are%3A745f46e58b55bc832676244f57538d13c7c42b2f4342ef6de221ed3af51bfbf4%22%2C%22last_refreshed%22%3A1532504340.0497331619%7D; rur=PRN; fbsr_124024574287414=FfiugrGnU-jFeFKKX60n1hCEBSWhPfCefGkQBrJjcpk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUUMzR0ZOdnZTVUVVZmxRektoUk1FWktCcGRzTEpwZkE5ZGJ5WUx3dk1oM2pMSnZyVHpNXzI3d1pyUGlndjd0eFJfVm56TmRHT3lnOHJlQTIycXlLZGRaSmdVbldieWJWN1RuelczbVV0R2ZCaEFmeEVPZEhGclptTlJLdDZ4dUZtcHhPSFpxdVdKeWlhbUVKTTBuV3ZDWE9FVTRoNE1QUVR2SzdRMnlrQXlXVEdlbUZiX3JRa1JaMnhwa2VUWS1GQ3FYTVlJODh5TWJ1VFlScmlPOGZkWHlaUVYyb25Hamxra3AyaWl5OGItcVp5V2pid1UxTVRjbVR5bkJRNEE5QkJiSDFhSGhZVVAwRGc4YnBwUzlIemhteE1TQVRPbEtVRDZFdk9ESHpGTUtWem9MWVRnZWlGUDd6UWZzQTU2WVV2Q0Z3NEhFYUJyUGEyWFNpeGpDUWl3MSIsImlzc3VlZF9hdCI6MTUzMjUyNTQ4OCwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; shbts=1532525583.2673147; urlgen="{\\"time\\": 1532504308\\054 \\"193.55.113.196\\": 2200}:1fiJuZ:q0GV9kfFMSwNSAZaCVR3GNG4t0Y"',
@@ -88,5 +92,5 @@ for i in range(0,1000):
 
     print(response2.content)
     end_cursor = find_end_cursor(response2.content)
-    findUsernameAndId(str(response2.content), L)
+    findUsernameAndId(str(response2.content))
 

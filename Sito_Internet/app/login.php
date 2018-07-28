@@ -12,6 +12,16 @@ e controllo che questo utente sia gia nel database, se è nel database restituis
 con scritto success.
 
 */
+
+if( !isset($_POST["EMAIL"]) || !isset($_POST["PASSWORD_SITE"]) )
+{
+  $return = '{ "success":"failed", "reason":"POST data not valid" }';
+  echo $return;
+  return;
+}
+
+
+
 $email = $_POST["EMAIL"];
 $password_site = $_POST["PASSWORD_SITE"];
 

@@ -8,6 +8,16 @@ In particolare passo qui i dati che devono essere inseriti nel database REGISTER
 
 */
 
+if( !isset($_POST["EMAIL"]) || !isset($_POST["PASSWORD_SITE"]) )
+{
+  $return = '{ "success":"failed", "reason":"POST data not valid" }';
+  echo $return;
+  return;
+}
+
+
+
+
 $email = $_POST["EMAIL"];
 $password_site = $_POST["PASSWORD_SITE"];
 
