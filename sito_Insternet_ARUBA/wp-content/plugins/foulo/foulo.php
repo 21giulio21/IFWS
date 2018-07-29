@@ -10,11 +10,15 @@ License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 */
 
+//Includo il file login.php perchè contiene la funzione di login,
+// non è in questo file la funzione di login per ordine.
+require_once("login.php");
+
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 function login_func( $atts ){
   wp_enqueue_script('foulo', plugin_dir_url(__FILE__) .'/js/foulo.js', array('jquery'), null, true);
-
+  wp_enqueue_style( "foulocss", plugin_dir_url(__FILE__) .'/css/foulo.css');
   $result = "";
 
   if (session_status() == PHP_SESSION_NONE) {
@@ -25,7 +29,18 @@ function login_func( $atts ){
     isset($_SESSION["email"]) &&
     !empty($_SESSION["email"])
   ){
-    $result .= '<h1>Ciao ' . $_SESSION["email"] . '</h1>';
+    $result .= '
+      <div class="row" style="margin-bottom:30px;">
+        <div class="col-lg-10">
+          <h1 style="margin:0">Ciao ' . $_SESSION["email"] . '</h1>
+        </div>
+        <div class="col-lg-2">
+        <button type="button" id="toggle-account-box" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Aggiungi account
+        </button>
+        </div>
+      </div>
+    ';
     $category = getTargetFromDatabase();
     $arrayUtentiInstagram = getInstagramProfilesFromEmail($_SESSION["email"]);
 
@@ -226,6 +241,28 @@ function process_post() {
 }
 
 add_action( 'init', 'process_post' );
+
+function custom_code_footer_function() {
+    echo '
+    <div id="new-account-box">
+      <div>
+        <div class="upper-bar">
+          Aggiungi un nuovo account Instagram
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-at" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+          <input type="password" id="account-password" class="form-control" placeholder="Password">
+        </div>
+        <button id="new-account">Inserisci nuovo account</button>
+      </div>
+    </div>';
+}
+add_action( 'wp_footer', 'custom_code_footer_function' );
 
 
 function curl_request($target_url, array $arguments){

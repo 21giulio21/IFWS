@@ -1,9 +1,8 @@
 const plugin_home = "https://www.instatrack.eu/wp-content/plugins/foulo/";
 
 jQuery(window).on('load', function(){
-  console.log('Mantovani caricato');
 
-  jQuery('button').on('click', function(){
+  jQuery('.account-list button').on('click', function(){
 
     var currentElement = jQuery(this);
     var address = plugin_home + "action-handler.php";
@@ -32,6 +31,21 @@ jQuery(window).on('load', function(){
 
   });
 
+  jQuery('#toggle-account-box').on('click', function(){
+    if(jQuery('#new-account-box').css('display') == "none"){
+      jQuery('#new-account-box')
+        .css("display", "flex")
+        .hide()
+        .fadeIn();
+    } else {
+
+    }
+  });
+
+  jQuery('#new-account-box i').on('click', function(){
+    jQuery('#new-account-box').hide('slow');
+  });
+
 } );
 
 
@@ -39,7 +53,7 @@ function handleToggle(currentElement) {
   if(jQuery(currentElement).text() == "Disattiva"){
     jQuery(currentElement).text("Attiva");
     jQuery("i", jQuery(currentElement).parent().parent()).removeClass("fa-check").addClass("fa-times");
-  } else {
+  } else if(jQuery(currentElement).text() == "Attiva"){
     jQuery(currentElement).text("Disattiva");
     console.log(jQuery("i", jQuery(currentElement).parent().parent()));
     jQuery("i", jQuery(currentElement).parent().parent()).removeClass("fa-times").addClass("fa-check");
