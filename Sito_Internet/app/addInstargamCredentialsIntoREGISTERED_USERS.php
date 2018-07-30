@@ -32,7 +32,7 @@ $secondi = time();
 // prima guardo se per caso c'è un altro utente con quella username, nel caso dico che ho gia inserito
 $query = "SELECT * FROM `REGISTERED_USERS` WHERE `USERNAME` = ? ";
 $stmt = $conn->prepare($query);
-$stmt->bind_param("s",$username);
+$stmt->bind_param("s",$username_instagram);
 $stmt->execute();
 $stmt->store_result();
 
@@ -55,7 +55,7 @@ if ($stmt->num_rows == 1 )
     ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', '', '0', '0', '0', ? );";
   $stmt = $conn->prepare($query)or die("Errore nella prepare");
   $stmt->bind_param("ssss",$username_instagram,$email,$password_instagram,$secondi)or die("Errore nella bind_param");
-  $stmt->execute()or die("Errore nella execute");
+  $stmt->execute()or die("Errore nella execute nel file addInstagra... riga 58");
   $stmt->store_result()or die("Errore nella store_result");
 
   $return = '{ "success":"success" }';
@@ -66,8 +66,6 @@ if ($stmt->num_rows == 1 )
 }
 
 
-
-""
 
 
 

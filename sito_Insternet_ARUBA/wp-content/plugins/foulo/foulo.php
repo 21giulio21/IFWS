@@ -65,6 +65,7 @@ function login_func( $atts ){
               <th>Attiva/Disattiva Bot</th>
               <th>Attiva/Disattiva Commenti</th>
               <th>Attiva/Disattiva Like</th>
+              <th>Rinnova</th>
               <th>TARGET</th>
       ';
     foreach ($instagram_linked_accounts as $instagram_account ) {
@@ -104,9 +105,15 @@ function login_func( $atts ){
               '.$instagram_comments_state.'
             </td>
             <td>
-              <button class="btn disabled" action="toggle-likes" instagram-account="'.$instagram_account_details[0].'">
+              <button class="btn" action="toggle-likes" instagram-account="'.$instagram_account_details[0].'">
                   Disattiva
               </button>
+            </td>
+
+            <td>
+            <button id="button-rinnova" type="button" class="btn btn-danger">
+                Rinnova
+            </button>
             </td>
 
             <td>
@@ -114,6 +121,7 @@ function login_func( $atts ){
                 '.$category.'
               </select>
             </td>
+
 
 
           </tr>
@@ -252,17 +260,24 @@ function custom_code_footer_function() {
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-at" aria-hidden="true"></i></span>
-          <input type="text" class="form-control" placeholder="Username">
+          <input type="text" id="popup-username" class="form-control" placeholder="Username">
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-          <input type="password" id="account-password" class="form-control" placeholder="Password">
+          <input type="password" id="popup-password" class="form-control" placeholder="Password">
         </div>
         <button id="new-account">Inserisci nuovo account</button>
       </div>
     </div>';
 }
 add_action( 'wp_footer', 'custom_code_footer_function' );
+
+
+
+
+
+
+
 
 
 function curl_request($target_url, array $arguments){

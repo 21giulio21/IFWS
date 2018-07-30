@@ -13,6 +13,7 @@ if( !isset($_POST["username"]) || !isset($_POST["script_active"]) )
 $username = $_POST["username"];
 $script_active = $_POST["script_active"];
 
+echo $username." ".$script_active;
 
 
 

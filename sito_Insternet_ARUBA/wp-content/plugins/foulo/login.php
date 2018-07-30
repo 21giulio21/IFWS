@@ -2,14 +2,13 @@
 
 
 
-
 function login($username,$password)
 {
   $ch = curl_init();
 
   curl_setopt($ch, CURLOPT_URL, "https://www.instagram.com/accounts/login/ajax/");
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, "username=reg&password=21CICCIO21ciccioK&queryParams=%7B%7D");
+  curl_setopt($ch, CURLOPT_POSTFIELDS, "username=".$username."&password=".$password."&queryParams=%7B%7D");
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
 
@@ -49,23 +48,28 @@ La variabile $authenticated è 1 solamente se "authenticated": true altrimenti n
 */
 
   $authenticated = $obj->{'authenticated'};
-  echo $result." ";
-  echo "au->". $authenticated." ";
+  $return = array();
   if($authenticated == '1')
   {
-    //TODO:
-    // Se sono qui il login è eseguito ocn successo quindi da qui devo mandate i dati al mio server,
-    // in particolare devo registrare un nuovo utente
+    // Torno success perche le credenziali sono corrette.
+    $return["success"] = "success";
+    return json_encode($return);
 
   }else{
-    //TODO:
-    // Se sono qui il login è eseguito non è eseguito correttamente
+
+    $return["success"] = "success";
+    $return["reason"] = "Credentials not valid";
+
+    return json_encode($return);
+
   }
-  return $result;
+
 
 
 }
 
-login("$username","$password");
+
+
+
 
 ?>

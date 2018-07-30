@@ -17,6 +17,8 @@ if( !isset($_POST["username"]) || !isset($_POST["commenta"]) )
 $username = $_POST["username"];
 $commenta = $_POST["commenta"];
 
+echo $username." ".$commenta;
+
 $query = "UPDATE `REGISTERED_USERS` SET `COMMENTA` = ? WHERE `REGISTERED_USERS`.`USERNAME` = ? ";
 $stmt = $conn->prepare($query)or die("Errore nella prepare");
 $stmt->bind_param("ss",$commenta,$username)or die("Errore nella bind_param");
