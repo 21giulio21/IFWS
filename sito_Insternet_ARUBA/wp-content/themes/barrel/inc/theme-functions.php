@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * Additional theme functions
  **/
 
@@ -13,7 +13,7 @@ require_once ('class-tgm-plugin-activation.php');
 if (!function_exists('barrel_register_required_plugins')) :
 function barrel_register_required_plugins() {
     $plugins = array(
-        
+
         array(
             'name'                  => esc_html__('Barrel Visual Page Builder', 'barrel'), // The plugin name
             'slug'                  => 'js_composer', // The plugin slug (typically the folder name)
@@ -23,7 +23,7 @@ function barrel_register_required_plugins() {
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'          => '', // If set, overrides default API URL and points to an external URL
-        ),        
+        ),
         array(
             'name'                  => esc_html__('Barrel Theme Addons', 'barrel'), // The plugin name
             'slug'                  => 'barrel-theme-addons', // The plugin slug (typically the folder name)
@@ -173,7 +173,7 @@ function barrel_google_fonts_url() {
         $font_url = add_query_arg( 'family', urlencode( $font_header.$font_body.$font_buttons.$font_additional ), "//fonts.googleapis.com/css" );
 
     }
-    
+
     return $font_url;
 }
 endif;
@@ -223,7 +223,7 @@ function barrel_menu_top_show() {
 
     if(isset($barrel_theme_options['disable_top_menu']) && (!$barrel_theme_options['disable_top_menu'])): ?>
 
-    <?php 
+    <?php
 
     // DEMO SETTINGS
     if ( defined('DEMO_MODE') && isset($_GET['top_menu_position']) ) {
@@ -244,7 +244,7 @@ function barrel_menu_top_show() {
         if(isset($barrel_theme_options['header_logo_position']) && $barrel_theme_options['header_logo_position'] == 'center') {
           $barrel_theme_options['header_menu_layout'] = 'menu_below_header';
         }
-        
+
         if((isset($barrel_theme_options['header_menu_layout'])) && ($barrel_theme_options['header_menu_layout'] == 'menu_in_header')) {
             $add_class = ' top-menu-position-'.$barrel_theme_options['top_menu_position'];
         } else {
@@ -256,7 +256,7 @@ function barrel_menu_top_show() {
         if(isset($barrel_theme_options['header_fullwidth']) && $barrel_theme_options['header_fullwidth']) {
           $header_container_class = 'container-fluid';
         }
-        
+
     }
 
     // Top menu align
@@ -270,7 +270,7 @@ function barrel_menu_top_show() {
         <div class="<?php echo esc_attr($header_container_class); ?>">
           <div class="row">
             <div class="col-md-12">
-            <?php 
+            <?php
             // Header top text
             if((isset($barrel_theme_options['header_top_text'])) && ($barrel_theme_options['header_top_text'] <> '')) {
               echo '<div class="header-top-text">';
@@ -295,7 +295,7 @@ function barrel_menu_top_show() {
             'fallback_cb'    => false,
             ));
             ?>
-            
+
             </div>
           </div>
         </div>
@@ -316,7 +316,7 @@ function barrel_menu_below_header_show() {
     if(isset($barrel_theme_options['header_logo_position']) && $barrel_theme_options['header_logo_position'] == 'center') {
       $barrel_theme_options['header_menu_layout'] = 'menu_below_header';
     }
-    
+
     // Demo settings
     if ( defined('DEMO_MODE') && isset($_GET['header_menu_layout']) ) {
       $barrel_theme_options['header_menu_layout'] = esc_html($_GET['header_menu_layout']);
@@ -335,9 +335,9 @@ function barrel_menu_below_header_show() {
     }
 
     // MainMenu Below header position
-    if((isset($barrel_theme_options['header_menu_layout'])) && ($barrel_theme_options['header_menu_layout'] == 'menu_below_header')): 
+    if((isset($barrel_theme_options['header_menu_layout'])) && ($barrel_theme_options['header_menu_layout'] == 'menu_below_header')):
     ?>
-    <?php 
+    <?php
     // Main menu below header color scheme
     if(!isset($barrel_theme_options['header_menu_color_scheme'])) {
         $barrel_theme_options['header_menu_color_scheme'] = 'dark';
@@ -399,7 +399,7 @@ function barrel_menu_below_header_show() {
 
     if (!empty($menu)):
     ?>
-      <?php 
+      <?php
       $add_class = '';
 
       if(isset($barrel_theme_options['header_menu_style']) && $barrel_theme_options['header_menu_style']) {
@@ -422,7 +422,7 @@ function barrel_menu_below_header_show() {
                   'menu_class'      => 'nav',
                   'fallback_cb'    => false,
                   'walker'          => new barrel_megamenu_walker
-                  )); 
+                  ));
               } else {
                  wp_nav_menu(array(
                   'theme_location'  => 'primary',
@@ -430,9 +430,9 @@ function barrel_menu_below_header_show() {
                   'menu_class'      => 'nav',
                   'fallback_cb'    => false,
                   'walker'          => new barrel_mainmenu_walker
-                  ));  
+                  ));
               }
-              
+
               ?>
               </div>
           </div>
@@ -440,9 +440,9 @@ function barrel_menu_below_header_show() {
       <?php endif; ?>
 
     </div>
-    <?php 
+    <?php
     endif;
-    // MainMenu Below header position END 
+    // MainMenu Below header position END
 }
 endif;
 
@@ -457,7 +457,7 @@ function barrel_header_logo_show() {
     // Text logo
     if((isset($barrel_theme_options['logo_text_enable'])) && ($barrel_theme_options['logo_text_enable'])&&(isset($barrel_theme_options['logo_text'])) && ($barrel_theme_options['logo_text']!=='')) {
         ?>
-        <a class="logo-link logo-text" href="<?php echo esc_url(home_url()); ?>"><?php echo wp_kses_post($barrel_theme_options['logo_text']);?></a>
+        <a class="logo-link logo-text" href="<?php echo esc_url(home_url()); ?>">Instatrack.eu</a>
         <?php
     // Image logo
     } else {
@@ -491,17 +491,17 @@ function barrel_header_logo_show() {
 
         if (!empty($main_menu)) {
 
-            echo '<div class="mobile-main-menu-toggle" data-toggle="collapse" data-target=".collapse"><i class="fa fa-bars"></i></div>';       
+            echo '<div class="mobile-main-menu-toggle" data-toggle="collapse" data-target=".collapse"><i class="fa fa-bars"></i></div>';
         }
 
         // Mobile search toggle toggle
         if(isset($barrel_theme_options['enable_fullscreen_search'])&&($barrel_theme_options['enable_fullscreen_search'])) {
-            
+
             echo '<div class="mobile-trigger-search"><a class="search-toggle-btn"><i class="fa fa-search"></i></a></div>';
         }
     }
 
-    
+
 }
 endif;
 
@@ -512,7 +512,7 @@ if (!function_exists('barrel_header_info_show')) :
 function barrel_header_info_show() {
 
     $barrel_theme_options = barrel_get_theme_options();
-    
+
     if((isset($barrel_theme_options['header_info_text'])) && ($barrel_theme_options['header_info_text'] <> '')) {
         echo '<div class="header-info-text">'.do_shortcode(wp_kses_post($barrel_theme_options['header_info_text'])).'</div>';
     }
@@ -527,7 +527,7 @@ if (!function_exists('barrel_header_side_info_show')) :
 function barrel_header_side_info_show() {
 
     $barrel_theme_options = barrel_get_theme_options();
-    
+
     if((isset($barrel_theme_options['header_side_info_text'])) && ($barrel_theme_options['header_side_info_text'] <> '')) {
         echo '<div class="header-side-info-text">'.do_shortcode(wp_kses_post($barrel_theme_options['header_side_info_text'])).'</div>';
     }
@@ -601,13 +601,13 @@ function barrel_header_side_show() {
             barrel_social_icons_show();
         }
         ?>
-        <?php 
+        <?php
         // Header info text
         barrel_header_side_info_show();
         ?>
     </div>
     <?php
-   
+
 }
 endif;
 
@@ -635,14 +635,14 @@ function barrel_woocommerce_header_add_to_cart_fragment( $fragments ) {
   ob_start();
   ?>
   <div class="shopping-cart" id="shopping-cart">
-   
-        <a class="cart-toggle-btn" href="<?php echo esc_url(wc_get_cart_url()); ?>"><i class="fa fa-shopping-cart"></i> 
+
+        <a class="cart-toggle-btn" href="<?php echo esc_url(wc_get_cart_url()); ?>"><i class="fa fa-shopping-cart"></i>
         <?php if($woocommerce->cart->cart_contents_count > 0): ?>
         <div class="shopping-cart-count"><?php echo esc_html($woocommerce->cart->cart_contents_count); ?></div>
         <?php endif; ?>
         <span class="<?php echo esc_attr($add_class); ?>"><?php esc_html_e('Shopping cart', 'barrel'); ?></span>
         </a>
-        
+
       <div class="shopping-cart-content">
       <?php
       $cart_products_i = 0;
@@ -691,18 +691,18 @@ function barrel_woocommerce_header_add_to_cart_fragment( $fragments ) {
       <div class="shopping-cart-product-more"><?php esc_html_e('And', 'barrel'); ?> <?php echo wp_kses_post($cart_products_more); ?> <?php esc_html_e('more product(s) in cart.', 'barrel'); ?></div>
       <?php endif; ?>
       </div>
-      
+
       <div class="shopping-cart-subtotal clearfix"><div class="shopping-cart-subtotal-text"><?php esc_html_e('Subtotal', 'barrel'); ?></div><div class="shopping-cart-subtotal-value"><?php echo wp_kses_post(wc_cart_totals_subtotal_html()); ?></div></div>
       <a class="btn mgt-button" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php esc_html_e('View your shopping cart', 'barrel'); ?>"><?php esc_html_e('View cart', 'barrel'); ?></a> <a class="btn mgt-button mgt-style-bordered mgt-button-checkout" href="<?php echo esc_url(wc_get_checkout_url()); ?>" title="<?php esc_html_e('Proceed to checkout', 'barrel'); ?>"><?php esc_html_e('Proceed to checkout', 'barrel'); ?></a>
       <?php else : ?>
         <div class="empty-cart-icon-mini">
-            
+
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 
         </div>
         <div class="empty"><?php esc_html_e('No products in the cart.', 'barrel'); ?></div>
       <?php endif; ?>
-      
+
       </div>
     </div>
   <?php
@@ -722,13 +722,13 @@ if (!function_exists('barrel_header_left_show')) :
 function barrel_header_left_show() {
 
     $barrel_theme_options = barrel_get_theme_options();
-    
+
     if(isset($barrel_theme_options['header_logo_position']) && $barrel_theme_options['header_logo_position'] == 'center') {
         barrel_header_info_show();
     } else {
         barrel_header_logo_show();
     }
-    
+
 }
 endif;
 
@@ -752,7 +752,7 @@ function barrel_header_center_show() {
     } else {
 
         // MainMenu in Header position
-        if((isset($barrel_theme_options['header_menu_layout'])) && ($barrel_theme_options['header_menu_layout'] == 'menu_in_header')): 
+        if((isset($barrel_theme_options['header_menu_layout'])) && ($barrel_theme_options['header_menu_layout'] == 'menu_in_header')):
         ?>
         <?php
         // Main Menu in header
@@ -813,7 +813,7 @@ function barrel_header_center_show() {
             <div id="navbar" class="navbar navbar-default clearfix<?php echo esc_attr($add_class); ?>">
               <div class="navbar-inner">
 
-                 
+
                   <?php
                     if(isset($barrel_theme_options['megamenu_enable']) && $barrel_theme_options['megamenu_enable']) {
                         wp_nav_menu(array(
@@ -822,7 +822,7 @@ function barrel_header_center_show() {
                           'menu_class'      => 'nav',
                           'fallback_cb'    => false,
                           'walker'          => new barrel_megamenu_walker
-                          )); 
+                          ));
                     } else {
                          wp_nav_menu(array(
                           'theme_location'  => 'primary',
@@ -830,7 +830,7 @@ function barrel_header_center_show() {
                           'menu_class'      => 'nav',
                           'fallback_cb'    => false,
                           'walker'          => new barrel_mainmenu_walker
-                          ));  
+                          ));
                     }
                   ?>
 
@@ -842,10 +842,10 @@ function barrel_header_center_show() {
         // Header info
         barrel_header_info_show();
         ?>
-        <?php 
+        <?php
         endif;
         // MainMenu in Header position END
-       
+
     }
 
 }
@@ -864,31 +864,31 @@ function barrel_header_right_show() {
     }
 
     ?>
-    
+
     <ul class="header-nav">
         <?php
-        if(isset($barrel_theme_options['enable_fullscreen_search'])&&($barrel_theme_options['enable_fullscreen_search'])): 
+        if(isset($barrel_theme_options['enable_fullscreen_search'])&&($barrel_theme_options['enable_fullscreen_search'])):
         ?>
         <li class="search-toggle"><div id="trigger-search"><a class="search-toggle-btn"><i class="fa fa-search"></i></a></div></li>
         <?php endif; ?>
         <?php
-        if(isset($barrel_theme_options['header_menu_type'])&&($barrel_theme_options['header_menu_type'] == 'offcanvas')): 
+        if(isset($barrel_theme_options['header_menu_type'])&&($barrel_theme_options['header_menu_type'] == 'offcanvas')):
         ?>
         <li class="header-advanced-menu-toggle"><div class="st-sidebar-trigger-effects"><a class="float-sidebar-toggle-btn" data-effect="st-sidebar-effect-2"><i class="fa fa-bars"></i></a></div></li>
         <?php endif; ?>
 
         <?php
-        if(isset($barrel_theme_options['header_menu_type'])&&($barrel_theme_options['header_menu_type'] == 'fullscreen')): 
+        if(isset($barrel_theme_options['header_menu_type'])&&($barrel_theme_options['header_menu_type'] == 'fullscreen')):
         ?>
         <li class="header-advanced-menu-toggle"><div class="header-advanced-menu-toggle-inside"><a class="header-advanced-menu-toggle-btn"><i class="fa fa-bars"></i></a></div></li>
         <?php endif; ?>
 
         <?php
-        if(isset($barrel_theme_options['enable_woocommerce_cart'])&&($barrel_theme_options['enable_woocommerce_cart'])): 
+        if(isset($barrel_theme_options['enable_woocommerce_cart'])&&($barrel_theme_options['enable_woocommerce_cart'])):
         ?>
         <?php if (class_exists('Woocommerce')): ?>
         <li class="woocommerce-mini-cart">
-        <?php 
+        <?php
         // Show cart dropdown
         $fragments = array();
         $cart_display = barrel_woocommerce_header_add_to_cart_fragment($fragments);
@@ -898,7 +898,7 @@ function barrel_header_right_show() {
         ?>
         </li>
         <?php endif; ?>
-        
+
         <?php endif; ?>
       </ul>
 
@@ -916,7 +916,7 @@ function barrel_show_footer_copyright($footer_col_class) {
     <div class="<?php echo esc_attr($footer_col_class);?> footer-copyright">
     <?php
     if(isset($barrel_theme_options['footer_copyright_text'])) {
-      echo do_shortcode(wp_kses_post($barrel_theme_options['footer_copyright_text'])); 
+      echo do_shortcode(wp_kses_post($barrel_theme_options['footer_copyright_text']));
     }
     ?>
     </div>
@@ -1033,19 +1033,19 @@ function barrel_cmb2_get_images_src( $post_id, $file_list_meta_key, $img_size = 
     $attachments_image_urls_array = Array();
 
     foreach ( (array) $files as $attachment_id => $attachment_url ) {
-        
+
         $current_attach = wp_get_attachment_image_src( $attachment_id, $img_size );
 
         $attachments_image_urls_array[] = $current_attach[0];
-     
+
     }
 
     if($attachments_image_urls_array[0] == '') {
         $attachments_image_urls_array = array();
     }
-     
+
     return $attachments_image_urls_array;
-    
+
 }
 endif;
 
@@ -1071,10 +1071,10 @@ class barrel_mainmenu_walker extends Walker_Nav_Menu{
            $class_names = $value = '';
            $classes = empty( $item->classes ) ? array() : (array) $item->classes;
            $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
-          
+
            $add_class = '';
-           
-           $post = get_post($item->object_id);          
+
+           $post = get_post($item->object_id);
 
                $class_names = ' class="'.$add_class.' '. esc_attr( $class_names ) . '"';
                $output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';

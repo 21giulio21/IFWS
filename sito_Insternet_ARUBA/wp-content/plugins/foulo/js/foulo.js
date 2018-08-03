@@ -1,7 +1,10 @@
 const plugin_home = "https://www.instatrack.eu/wp-content/plugins/foulo/";
 
-jQuery(window).on('load', function(){
 
+
+
+
+jQuery(window).on('load', function(){
   jQuery('.account-list button').on('click', function(){
 
     var currentElement = jQuery(this);
@@ -54,20 +57,63 @@ jQuery(window).on('load', function(){
 
   });
 
-  //Quando premo il pulsante rinnova apro un pupop con la descrizione fino a quando è attivo e la possibilità di rinnovo
-  jQuery('#button-rinnova').on('click', function(){
-    console.log("Press rinnova button");
-    if(jQuery('#new-account-box').css('display') == "none"){
-      jQuery('#new-account-box')
-        .css("display", "flex")
-        .hide()
-        .fadeIn();
-    } else {
+
+  // Codice che viener chiamato quando premo il pulsante piu o il pulsante meno
+  jQuery('#plus-button').on('click', function(){
+    var valore = parseInt(jQuery('#tempo').text())
+    valore = valore + 1;
+
+    jQuery('#tempo').html(valore);
+    ScrivoSulloSpanMonths();
+  });
+
+// quando premo il pulsante conferma il mio ordine deve aprirsi la pagina per confermare l'ordine
+  jQuery('#myBtn').on('click', function(){
+    window.open('http://google.com');
+  });
+
+// per il bottone meno, fa descescere il valore sul pupop
+  jQuery('#minus-button').on('click', function(){
+
+    var valore = parseInt(jQuery('#tempo').text())
+    if(valore != 0)
+    {
+      valore = valore - 1;
+
+      jQuery('#tempo').html(valore);
+      ScrivoSulloSpanMonths();
 
     }
+  });
+
+// funzione che permette di capire se scrivere months o month in base ai valori
+  function ScrivoSulloSpanMonths()
+  {
+    var valore = parseInt(jQuery('#tempo').text())
+    if(valore == 0) jQuery('#months').html(" Months");
+    else if(valore == 1) jQuery('#months').html(" Month");
+    else jQuery('#months').html(" Months");
+  }
+
+
+
+
+   ///// Menu per pagare
+   jQuery('#button-rinnova').on('click', function(){
+   if(jQuery('#popup-pay').css('display') == "none"){
+    jQuery('#popup-pay')
+      .css("display", "flex")
+      .hide()
+      .fadeIn();
+   } else {
+
+   }
    });
 
-  jQuery('#toggle-account-box').on('click', function(){
+
+
+   ///Fine per pagare
+     jQuery('#toggle-account-box').on('click', function(){
     if(jQuery('#new-account-box').css('display') == "none"){
       jQuery('#new-account-box')
         .css("display", "flex")
@@ -108,14 +154,92 @@ jQuery(window).on('load', function(){
 } );
 
 
+function reguirePayment(price)
+{
+  price = "'".concat(price).concat("'");
+  console.log(price);
+
+paypal.Button.render({
+  // Configure environment
+  // Configure environment
+  env: "production",
+    client: {
+      production: "AbuzFtw77DFKtZMPkCjduWWwd67dGIA3EBQ4VroO7IeAz__0THosuQo51Ta4wIQ8O4VVEnjRI2q2Ol7S"
+    },
+  client: {
+    sandbox: "AdXdacvd6FSl1q3wJf8MHg8yqQv0smaHXIbDYh3f0e4Iy2ULhhup4lVf5ejs15qIk0nkMAbHNdCVlpNb",
+    production: "AbuzFtw77DFKtZMPkCjduWWwd67dGIA3EBQ4VroO7IeAz__0THosuQo51Ta4wIQ8O4VVEnjRI2q2Ol7S"
+  },
+  // Customize button (optional)
+  locale: 'en_US',
+  style: {
+    size: 'small',
+    color: 'gold',
+    shape: 'pill',
+  },
+  // Set up a payment
+  payment: function (data, actions) {
+  return actions.payment.create({
+    transactions: [{
+      amount: {
+        total: '30.00',
+        currency: 'EUR',
+        details: {
+          subtotal: '30.00',
+          tax: '0.00',
+          shipping: '0.00',
+          handling_fee: '0.00',
+          shipping_discount: '0.00',
+          insurance: '0.00'
+        }
+
+      },
+      description: 'The payment transaction description.',
+      custom: '90048630024435',
+      //invoice_number: '12345', Insert a unique invoice number
+      payment_options: {
+        allowed_payment_method: 'INSTANT_FUNDING_SOURCE'
+      },
+      soft_descriptor: 'ECHI5786786',
+      item_list: {
+        items: [
+          {
+            name: 'Instatrack Services ',
+            description: '',
+            quantity: '1',
+            price: '30.00',
+            tax: '0.00',
+            sku: '1',
+            currency: 'EUR'
+          }
+        ]
+      }
+    }],
+    note_to_payer: 'Contact us for any questions on your order.'
+  });
+},
+  // Execute the payment
+  onAuthorize: function (data, actions) {
+    return actions.payment.execute()
+      .then(function () {
+        // Show a confirmation message to the buyer
+        window.alert('Thank you for your purchase!');
+      });
+  }
+}, '#paypal-button');
+
+}
+
 function handleToggle(currentElement) {
-  if(jQuery(currentElement).text() == "Disattiva"){
+  const trifolo = jQuery(currentElement).text().replace(/^\s+|\s+$/g,'');
+  if(trifolo == "Disattiva"){
     jQuery(currentElement).text("Attiva");
-    jQuery("i", jQuery(currentElement).parent().parent()).removeClass("fa-check").addClass("fa-times");
-  } else if(jQuery(currentElement).text() == "Attiva"){
+    if(jQuery(currentElement).attr('action') == "toggle-bot")
+      jQuery("i", jQuery(currentElement).parent().parent()).removeClass("fa-check").addClass("fa-times");
+  } else if(trifolo == "Attiva"){
     jQuery(currentElement).text("Disattiva");
-    console.log(jQuery("i", jQuery(currentElement).parent().parent()));
-    jQuery("i", jQuery(currentElement).parent().parent()).removeClass("fa-times").addClass("fa-check");
+    if(jQuery(currentElement).attr('action') == "toggle-bot")
+      jQuery("i", jQuery(currentElement).parent().parent()).removeClass("fa-times").addClass("fa-check");
   }
 }
 

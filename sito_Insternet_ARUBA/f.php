@@ -1,6 +1,6 @@
 <?php
 
-
+login("vika.giulio","21giulio21");
 
 function login($username,$password)
 {
@@ -28,43 +28,22 @@ function login($username,$password)
   $headers[] = "Authority: www.instagram.com";
   $headers[] = "Referer: https://www.instagram.com/accounts/login/";
   curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+  curl_setopt($ch,CURLOPT_HEADER,1);
 
   $result = curl_exec($ch);
 
-  echo "<script></script>";
+  preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $result, $matches);
+  $cookies = array();
+  foreach($matches[1] as $item) {
+    parse_str($item, $cookie);
+    $cookies = array_merge($cookies, $cookie);
+  }
+  var_dump($cookies);
 
   if (curl_errno($ch)) {
       echo 'Error:' . curl_error($ch);
   }
   curl_close ($ch);
-/*
-Da qui parsiamo il ritorno della curl.
-Nel caso sia andata a buon fine: {"authenticated": true, "user": true, "userId": "819693525", "oneTapPrompt": false, "status": "ok"}
-Quindi cerco di capire quando authenticated è true.
-*/
-
-  $obj = json_decode($result);
-
-/*
-La variabile $authenticated è 1 solamente se "authenticated": true altrimenti non esce nulla scritto.
-*/
-
-  $authenticated = $obj->{'authenticated'};
-  $return = array();
-  if($authenticated == '1')
-  {
-    // Torno success perche le credenziali sono corrette.
-    $return["success"] = "success";
-    return json_encode($return);
-
-  }else{
-
-    $return["success"] = "success";
-    $return["reason"] = "Credentials not valid";
-
-    return json_encode($return);
-
-  }
 
 
 

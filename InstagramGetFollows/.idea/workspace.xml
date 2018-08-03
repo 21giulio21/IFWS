@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf0897f-0674-4ac2-add2-8a5fd8d4727c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hastag.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hastag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/addInstargamCredentialsIntoREGISTERED_USERS.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/addInstargamCredentialsIntoREGISTERED_USERS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/getFieldsUserFromEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/getFieldsUserFromEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/getInstagramProfilesFromEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/getInstagramProfilesFromEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/geuInstagramFieldsLinkedToEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/geuInstagramFieldsLinkedToEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/removeInstagramAccountFromUsername.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/removeInstagramAccountFromUsername.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/removeuserFromREGISTERED_USERS_FROM_WEBSITE.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/removeuserFromREGISTERED_USERS_FROM_WEBSITE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/updateCommenta.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/updateCommenta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/updateLike.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/updateLike.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sito_Internet/app/updateScriptActive.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Sito_Internet/app/updateScriptActive.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../venv/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-process-wp.php" beforeDir="false" afterPath="$PROJECT_DIR$/../sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-process-wp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sito_Insternet_ARUBA/wp-content/themes/barrel/inc/theme-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/../sito_Insternet_ARUBA/wp-content/themes/barrel/inc/theme-functions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +15,11 @@
     <session id="1546290552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -95,7 +84,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hastag.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
+            <state relative-caret-position="393">
               <caret line="94" column="21" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="21" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -208,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,12 +209,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="d&#9;null&#9;null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ClickMouse" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -505,7 +494,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hastag.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
+        <state relative-caret-position="393">
           <caret line="94" column="21" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="21" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />

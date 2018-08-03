@@ -322,8 +322,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
             content_request_JSON = json.loads(content_request.content)
         except ValueError:
             return
-
-
+        print("Processo la risposta: "+ str(content_request.content) )
         authenticated = str(content_request_JSON["authenticated"]).upper()
 
         #In questo caso mi sono loggato in maniera corretta.
@@ -348,6 +347,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
         #Controllo se la risposta contiene message
         if 'message' in content_request_JSON:
+            print("FOULO" + str(content_request_JSON))
             message = str(content_request_JSON["message"]).upper()
             if message == "UNAUTHORIZED":
                 print("L'utente "+ username+" ha cambiato password")

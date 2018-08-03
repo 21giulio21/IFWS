@@ -36,7 +36,7 @@ max_requests = 300
 number_requests_update_delta_t = 1000
 
 
-tempo_blocco_se_esce_errore = 10000
+tempo_blocco_se_esce_errore = 500
 
 
 
@@ -44,7 +44,7 @@ while True:
 
     print("Attendo DT")
 
-    time.sleep(10)
+    #time.sleep(10)
     print("Tempo DT passato, inizio lo script.")
 
     #Chiedo quanti utenti ho nel database
@@ -95,8 +95,13 @@ while True:
         # deve_pagare e' a 1 solo se l'utente non ha pagato.
         deve_pagare = str(user[0]['DEVE_PAGARE'])
 
+        # Tempo in uci deve finire lo script
+        tempo_fine_iscrizione = str(user[0]['TEMPO_FINE_ISCRIZIONE'])
+
         # deve_pagare e' a 1 solo se l'utente non ha pagato.
         target = str(user[0]['TARGET'])
+
+
 
 
         print("Processo l'utente: " + username )
@@ -104,10 +109,13 @@ while True:
 
 
         #Controllo il tempo_iscrizione, se sono passati 3 giorni allora deve pagare ossia impostare: DEVE_PAGARE a 1
-        tempo_di_ora = time.time()
+        tempo_di_ora = str(time.time())
+        tempo_di_ora = tempo_di_ora[:-3]
+
         secondi_in_tre_giorni = 259200
         if ha_pagato == "0" and len(tempo_iscrizione) > 5: #Se l'utente non ha pagato e l'ho inserito dal sito internet
-            if int(tempo_iscrizione) + secondi_in_tre_giorni < tempo_di_ora and deve_pagare == "0": #Se sono passati 3 giorni come prova
+            print("FOULO")
+            if tempo_fine_iscrizione < tempo_di_ora and deve_pagare == "0": #Se sono passati 3 giorni come prova oppure è passato il tempo per cui ha pagato
                 #Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
                 print("Processo l'utente: " + username + " deve pagare")
                 print(updateDevePagare(username,1))

@@ -45,16 +45,20 @@ if ($stmt->num_rows == 1 )
 
 }else{
 
+  //Calcolo la fine iscrizione 3 giorni dopo perche è una prova di e giorni.
+  $data_fine_iscrizione = ((int)time()) + 259200 ;
+
   // Inserisco le credenziali dell'utente
   $query = "
   INSERT INTO `REGISTERED_USERS`
-  (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`, `USERS_FOLLOWED`,
-   `EMAIL`, `PASSWORD_INSTAGRAM`, `DELTA_T`, `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`,
-   `TEMPO_ATTESA_BLOCCO`, `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`, `SET_LIKE`, `DEVE_PAGARE`,
-    `TEMPO_ISCRIZIONE`) VALUES
-    ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', '', '0', '0', '0', ? );";
+  (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`,
+  `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_INSTAGRAM`, `DELTA_T`,
+  `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`,
+  `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`, `SET_LIKE`, `DEVE_PAGARE`,
+  `TEMPO_ISCRIZIONE`, `TEMPO_FINE_ISCRIZIONE`, `HA_PAGATO`) VALUES
+  ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', '', '0', '0', '0', ? , ? , '0');";
   $stmt = $conn->prepare($query)or die("Errore nella prepare");
-  $stmt->bind_param("ssss",$username_instagram,$email,$password_instagram,$secondi)or die("Errore nella bind_param");
+  $stmt->bind_param("sssss",$username_instagram,$email,$password_instagram,$secondi,$data_fine_iscrizione)or die("Errore nella bind_param");
   $stmt->execute()or die("Errore nella execute nel file addInstagra... riga 58");
   $stmt->store_result()or die("Errore nella store_result");
 

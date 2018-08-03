@@ -10,6 +10,8 @@ License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 */
 
+
+
 //Includo il file login.php perchè contiene la funzione di login,
 // non è in questo file la funzione di login per ordine.
 require_once("login.php");
@@ -38,6 +40,11 @@ function login_func( $atts ){
         <button type="button" id="toggle-account-box" class="btn btn-default btn-lg">
           <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Aggiungi account
         </button>
+
+        <button type="button" id="button-rinnova" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Update Subscription
+        </button>
+
         </div>
       </div>
     ';
@@ -50,9 +57,11 @@ function login_func( $atts ){
         $instagram_linked_accounts[] = $instagram_user->USERNAME . "," .
            $instagram_user->SCRIPT_ACTIVE . "," .
            $instagram_user->PASSWORD_ERRATA . ',' .
-           $instagram_user->COMMENTA
-           ;
+           $instagram_user->COMMENTA . ',' .
+           $instagram_user->DEVE_PAGARE . ',' .
+           $instagram_user->TEMPO_FINE_ISCRIZIONE ;
     }
+
 
     if(!empty($instagram_linked_accounts))
       $result .= '
@@ -65,11 +74,23 @@ function login_func( $atts ){
               <th>Attiva/Disattiva Bot</th>
               <th>Attiva/Disattiva Commenti</th>
               <th>Attiva/Disattiva Like</th>
-              <th>Rinnova</th>
+              <th>Subscription</th>
               <th>TARGET</th>
       ';
     foreach ($instagram_linked_accounts as $instagram_account ) {
       $instagram_account_details = explode(",", $instagram_account);
+
+      $DEVE_PAGARE = $instagram_account_details[4];
+      $secondi = $instagram_account_details[5];
+      $testo = "";
+      if($DEVE_PAGARE == "1") $testo = '<p style="color:red;">NOT ACTIVE</p>' ;
+      else {
+        //Ottengo la data per quanto ancora ha pagato e quindi copre l'abbonamento
+        $date = date('Y-m-d', $secondi);
+        $testo = '<p style="color:green;">Active up to'.$date.' </p>' ;
+      }
+
+
       $instagram_account_state = $instagram_account_details[1] == 1 ?
          '<i class="fa fa-check" aria-hidden="true"></i>' :
          '<i class="fa fa-times" aria-hidden="true"></i>';
@@ -111,9 +132,7 @@ function login_func( $atts ){
             </td>
 
             <td>
-            <button id="button-rinnova" type="button" class="btn btn-danger">
-                Rinnova
-            </button>
+            '.$testo.'
             </td>
 
             <td>
@@ -249,7 +268,6 @@ function process_post() {
 }
 
 add_action( 'init', 'process_post' );
-
 function custom_code_footer_function() {
     echo '
     <div id="new-account-box">
@@ -272,11 +290,71 @@ function custom_code_footer_function() {
 }
 add_action( 'wp_footer', 'custom_code_footer_function' );
 
+////////////////////MENU per il plus
+
+
+function popup_pay() {
+
+// Costruisco un menu a discesa dove ho tutti gli account
+
+  $arrayUtentiInstagram = getInstagramProfilesFromEmail($_SESSION["email"]);
+  print_r($arrayUtentiInstagram);
+  $instagram_username = array();
+  $instagram_TEMPO_FINE_ISCRIZIONE = array();
+  $username_string = "";
+  foreach ($arrayUtentiInstagram as $instagram_user) {
+    $username_string = $username_string ."<option value=\"{$instagram_user->USERNAME}\">{$instagram_user->USERNAME}</option>";
+    $instagram_username[] = $instagram_user->USERNAME;
+    $instagram_TEMPO_FINE_ISCRIZIONE = $instagram_user->TEMPO_FINE_ISCRIZIONE;
+  }
+
+  if(!empty($instagram_username))
+  {
+    echo '
+    <div id="popup-pay">
+      <div>
+        <div class="upper-bar">
+          Renew your subscription
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="input-group" align="center">
+          Choose your account:
+            <select>
+              '.$username_string.'
+            </select>
+        </div>
+        <div class="input-group" align="center" >
+        Period:
+            <button id="plus-button"><i class="fa fa-plus-square" aria-hidden="true"></i></button>&nbsp;
+            <button id="minus-button"><i class="fa fa-minus"></i></button>&nbsp;
+            <span id="tempo">0</span><span id="months"> Months</span>
+        </div>
+        <div class="input-group" align="center">
+          <select name="plane">
+            <option value="1">Grow speed Medium - €19.99 per month </option>
+            <option value="2">Grow speed Fast - €35.99 per month</option>
+            <option value="3">Grow speed Turbo - €69.99 per month</option>
+          </select>
+          <button id="myBtn">Confirm your order</button>
+        </div>
+
+
+
+      </div>
+    </div>';
+  }
+}
+
+
+
+add_action( 'wp_footer', 'popup_pay' );
 
 
 
 
 
+
+////////////Fine
 
 
 
