@@ -32,13 +32,15 @@ function login($username,$password)
 
   $result = curl_exec($ch);
 
-  preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $result, $matches);
+  preg_match_all('/^Set-Cookie:s*([^;]*)/mi', $result, $matches);
   $cookies = array();
   foreach($matches[1] as $item) {
     parse_str($item, $cookie);
     $cookies = array_merge($cookies, $cookie);
   }
-  var_dump($cookies);
+  foreach ($cookies as $key => $value) {
+    echo "Key: $key; Value: $value";
+}
 
   if (curl_errno($ch)) {
       echo 'Error:' . curl_error($ch);

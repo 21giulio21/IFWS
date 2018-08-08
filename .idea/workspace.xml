@@ -2,1160 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b983b9-2501-4c32-8d8a-b842de65e214" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/IFWS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IFWS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClickMouse/ClickMouse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/script2.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/script2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito_Internet/app/addInstargamCredentialsIntoREGISTERED_USERS.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito_Internet/app/addInstargamCredentialsIntoREGISTERED_USERS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/.user.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/.user.ini.07052018192524" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/.user.ini.07052018192612" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/pagamento.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/pagamento2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/readme.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-activate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/admin-ajax.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/admin-footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/admin-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/admin-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/admin-post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/async-upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/comment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/credits.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/about-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/about-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/about.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/about.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/admin-menu-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/admin-menu-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/admin-menu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/admin-menu.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/code-editor-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/code-editor-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/code-editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/code-editor.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/color-picker-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/color-picker-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/color-picker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/color-picker.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/common-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/common-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/common.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-controls-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-controls-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-controls.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-controls.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-nav-menus-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-nav-menus-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-nav-menus.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-nav-menus.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-widgets-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-widgets-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/customize-widgets.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/dashboard-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/dashboard-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/dashboard.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/deprecated-media-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/deprecated-media-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/deprecated-media.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/deprecated-media.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/edit-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/edit-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/edit.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/edit.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/farbtastic-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/farbtastic-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/farbtastic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/farbtastic.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/forms-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/forms-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/forms.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/ie-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/ie-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/ie.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/install-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/install-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/install.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/install.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/l10n-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/l10n-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/l10n.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/l10n.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/list-tables-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/list-tables-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/list-tables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/list-tables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/login-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/login-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/login.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/media-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/media-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/media.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/media.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/nav-menus-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/nav-menus-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/nav-menus.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/nav-menus.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/revisions-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/revisions-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/revisions.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/revisions.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/site-icon-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/site-icon-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/site-icon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/site-icon.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/themes-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/themes-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/themes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/themes.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/widgets-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/widgets-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/widgets.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/wp-admin-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/wp-admin-rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/wp-admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/css/wp-admin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/custom-background.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/custom-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/customize.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/edit-comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/edit-form-advanced.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/edit-form-comment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/edit-link-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/edit-tag-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/edit-tags.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/export.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/freedoms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/import.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/install-helper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/install.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/link-add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/link-manager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/link-parse-opml.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/link.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/load-scripts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/load-styles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/maint/repair.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/media-new.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/media-upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/media.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/menu-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/menu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/moderation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-delete-site.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-options.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-sites.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-themes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-upgrade-network.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/ms-users.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/my-sites.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/nav-menus.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/freedoms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/menu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/plugin-editor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/plugin-install.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/setup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/site-new.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/site-users.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/theme-editor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/themes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/upgrade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/user-edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/network/user-new.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options-discussion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options-general.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options-head.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options-media.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options-permalink.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options-reading.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options-writing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/options.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/plugin-editor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/plugin-install.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/plugins.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/post-new.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/press-this.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/privacy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/profile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/revision.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/setup-config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/term.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/theme-editor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/theme-install.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/themes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/tools.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/update-core.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/upgrade-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/upgrade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user-edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user-new.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/credits.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/freedoms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/menu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/privacy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/profile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/user/user-edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/users.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-blog-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-comments-post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/revslider/barrel-10.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/11/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/11/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/11/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/11/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/11/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/12/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/12/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/12/revslider/barrel-12.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/12/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/12/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/12/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/13/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/13/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/13/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/13/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/13/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/14/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/14/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/14/revslider/barrel-14.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/14/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/14/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/14/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/15/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/15/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/15/revslider/barrel-15.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/15/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/15/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/15/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/16/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/16/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/16/revslider/barrel-16.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/16/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/16/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/16/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/2/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/2/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/2/revslider/barrel-2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/2/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/2/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/2/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/3/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/3/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/3/revslider/barrel-3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/3/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/3/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/3/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/4/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/4/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/4/revslider/barrel-4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/4/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/4/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/4/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/5/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/5/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/5/revslider/barrel-5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/5/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/5/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/5/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/6/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/6/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/6/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/6/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/6/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/7/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/7/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/7/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/7/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/7/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/8/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/8/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/8/revslider/barrel-8.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/8/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/8/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/8/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/9/content.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/9/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/9/revslider/barrel-9.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/9/theme-preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/9/theme_options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/9/widgets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/importer/img/import_placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/importer/img/loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/importer/parsers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/importer/radium-importer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/importer/wordpress-importer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-button.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-calltoaction-block.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-clients-reviews.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-countdown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-counter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-flipbox.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-header-block.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-icon-box.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-images-slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-item-price.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-message-box.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-portfolio-grid.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-post-list.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-pricing-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-process.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-promo-block.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/mgt-signup-block.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/templates/vc_gallery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/templates/vc_images_carousel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/templates/vc_row.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/templates/vc_single_image.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/visual-composer/vc-row-custom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-button-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-calltoaction-block-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-clients-reviews-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-countdown-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-counter-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-flipbox-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-header-block-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-icon-box-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-images-slider-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-item-price-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-message-box-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-portfolio-grid-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-post-list-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-pricing-table-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-process-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-promo-block-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/shortcodes/wp/mgt-signup-block-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/css/foulo.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/css/foulo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/foulo.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/foulo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/js/foulo.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/js/foulo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/themes/barrel/inc/theme-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/themes/barrel/inc/theme-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-cron.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/admin-bar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/atomlib.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/author-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/bookmark-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/bookmark.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/canonical.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/capabilities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/category-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-IXR.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-feed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-http.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-json.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-oembed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-phpass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-phpmailer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-pop3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-requests.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-simplepie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-smtp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-snoopy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-walker-category-dropdown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-walker-category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-walker-comment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-walker-nav-menu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-walker-page-dropdown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-walker-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-admin-bar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-ajax-response.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-comment-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-comment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-customize-control.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-customize-manager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-customize-nav-menus.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-customize-panel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-customize-section.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-customize-setting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-customize-widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-dependency.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-editor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-embed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-feed-cache-transient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-feed-cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-hook.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-cookie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-curl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-encoding.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-ixr-client.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-proxy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-requests-hooks.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-requests-response.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-response.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-http-streams.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-image-editor-gd.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-image-editor-imagick.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-image-editor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-list-util.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-locale-switcher.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-locale.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-matchesmapregex.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-meta-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-metadata-lazyloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-network-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-network.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-oembed-controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-post-type.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-rewrite.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-role.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-roles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-session-tokens.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-simplepie-file.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-simplepie-sanitize-kses.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-site-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-site.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-tax-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-taxonomy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-term-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-term.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-text-diff-renderer-inline.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-text-diff-renderer-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-theme.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-user-meta-session-tokens.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-user-query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-walker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-widget-factory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-widget.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp-xmlrpc-server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class-wp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class.wp-dependencies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class.wp-scripts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/class.wp-styles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/comment-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/comment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/compat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/cron.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/date.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/default-constants.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/default-filters.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/default-widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/embed-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/embed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/feed-atom-comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/feed-atom.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/feed-rdf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/feed-rss.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/feed-rss2-comments.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/feed-rss2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/feed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/formatting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/functions.wp-scripts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/functions.wp-styles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/general-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/http.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/kses.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/l10n.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/link-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/load.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/locale.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/media-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/media.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/meta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-blogs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-default-constants.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-default-filters.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-files.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-load.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/ms-settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/nav-menu-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/nav-menu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/option.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/pluggable-deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/pluggable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/plugin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/post-formats.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/post-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/post-thumbnail-template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/post.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/registration-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/registration.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/revision.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rewrite.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rss-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rss.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/script-loader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/shortcodes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/spl-autoload-compat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/taxonomy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/template-loader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/template.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/theme.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/vars.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/version.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/wlwmanifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/wp-db.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/wp-diff.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-links-opml.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-load.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-signup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-trackback.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/xmlrpc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libfreetype-6ed94974.so.6.16.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libjpeg-3fe7dfc0.so.9.3.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/liblcms2-a6801db4.so.2.0.8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/liblzma-90de1f11.so.5.2.2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libopenjp2-e366d6b0.so.2.1.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libpng16-8793a1b2.so.16.32.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libtiff-8a6d997d.so.5.3.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libwebp-8ccd29fd.so.7.0.2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libwebpdemux-eba3dc32.so.2.0.4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libwebpmux-1c63fe99.so.3.0.2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/.libs/libz-a147dcb0.so.1.2.3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/BdfFontFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/BlpImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/BmpImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/BufrStubImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ContainerIO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/CurImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/DcxImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/DdsImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/EpsImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ExifTags.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/FitsStubImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/FliImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/FontFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/FpxImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/FtexImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/GbrImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/GdImageFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/GifImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/GimpGradientFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/GimpPaletteFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/GribStubImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/Hdf5StubImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/IcnsImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/IcoImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/Image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageChops.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageCms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageColor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageDraw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageDraw2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageEnhance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageFilter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageFont.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageGrab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageMath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageMode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageMorph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageOps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImagePalette.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImagePath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageQt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageSequence.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageShow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageStat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageTk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageTransform.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImageWin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/ImtImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/IptcImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/Jpeg2KImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/JpegImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/JpegPresets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/McIdasImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/MicImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/MpegImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/MpoImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/MspImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/OleFileIO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PSDraw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PaletteFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PalmImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PcdImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PcfFontFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PcxImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PdfImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PdfParser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PixarImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PngImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PpmImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PsdImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/PyAccess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/SgiImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/SpiderImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/SunImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/TarIO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/TgaImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/TiffImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/TiffTags.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/WalImageFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/WebPImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/WmfImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/XVThumbImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/XbmImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/XpmImagePlugin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_binary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_imaging.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_imagingcms.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_imagingft.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_imagingmath.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_imagingmorph.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_imagingtk.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_tkinter_finder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/_webp.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PIL/features.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/Pillow-5.2.0.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/Pillow-5.2.0.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/Pillow-5.2.0.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/Pillow-5.2.0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/Pillow-5.2.0.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/Pillow-5.2.0.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/Pillow-5.2.0.dist-info/zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyScreeze-0.1.18-py3.6.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyScreeze-0.1.18-py3.6.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyScreeze-0.1.18-py3.6.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyScreeze-0.1.18-py3.6.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyScreeze-0.1.18-py3.6.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyScreeze-0.1.18-py3.6.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyTweening-1.0.3-py3.6.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyTweening-1.0.3-py3.6.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyTweening-1.0.3-py3.6.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyTweening-1.0.3-py3.6.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/PyTweening-1.0.3-py3.6.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi-2018.4.16.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi/cacert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/certifi/core.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet-3.0.4.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/big5freq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/big5prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/chardistribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/charsetgroupprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/charsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/cli/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/cli/chardetect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/codingstatemachine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/cp949prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/enums.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/escprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/escsm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/eucjpprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/euckrfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/euckrprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/euctwfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/euctwprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/gb2312freq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/gb2312prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/hebrewprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/jisfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/jpcntx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/langbulgarianmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/langcyrillicmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/langgreekmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/langhebrewmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/langhungarianmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/langthaimodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/langturkishmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/latin1prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/mbcharsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/mbcsgroupprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/mbcssm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/sbcharsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/sbcsgroupprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/sjisprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/universaldetector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/utf8prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/chardet/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/easy-install.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna-2.7.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna-2.7.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna-2.7.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna-2.7.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna-2.7.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna-2.7.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/codec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/core.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/idnadata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/intranges.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/package_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/idna/uts46data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader-4.0.4-py3.6.egg-info/zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader/instaloader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader/instaloadercontext.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/instaloader/structures.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO/not-zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/EGG-INFO/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/basecommand.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/baseparser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/build_env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cache.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cmdoptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/check.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/completion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/configuration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/download.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/freeze.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/hash.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/help.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/show.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/uninstall.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/wheel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/configuration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/download.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/index.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/locations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/models/index.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/check.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/freeze.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/prepare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/pep425tags.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_set.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_uninstall.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/resolve.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/status_codes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/appdirs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/deprecation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/encoding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/filesystem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/glibc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/hashes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/logging.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/misc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/outdated.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/packaging.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/setuptools_build.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/temp_dir.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/typing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/ui.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/bazaar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/git.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/mercurial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/subversion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/wheel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/appdirs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/_cmd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/cache.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/file_cache.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/filewrapper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/heuristics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/serialize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/cacert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/core.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/big5freq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/big5prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/chardistribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetgroupprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cli/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cli/chardetect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/codingstatemachine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cp949prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/enums.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/escprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/escsm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/eucjpprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euckrprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euctwprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/gb2312prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/jisfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/jpcntx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/langgreekmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/langhungarianmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/langturkishmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/latin1prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcharsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcsgroupprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcssm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcsgroupprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sjisprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/universaldetector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/utf8prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/initialise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/win32.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/winterm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/misc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/index.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/locators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/manifest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/markers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/metadata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/resources.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/scripts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t32.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w32.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/wheel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_ihatexml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_inputstream.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_tokenizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/datrie.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/py.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/lint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/genshi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/sax.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/dom.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/genshi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/codec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/core.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/idnadata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/intranges.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/package_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/uts46data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/ipaddress.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/linklockfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/mkdirlockfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/symlinklockfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/_version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/fallback.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/__about__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_structures.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/markers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/requirements.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/specifiers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/py31compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/bar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/counter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/helpers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/spinner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pyparsing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/core.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/writer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/__version__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/_internal_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/adapters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/certs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/cookies.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/help.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/hooks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/packages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/sessions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/status_codes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/structures.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/retrying.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/_collections.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connectionpool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/appengine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/ntlmpool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/pyopenssl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/securetransport.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/socks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/fields.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/filepost.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/backports/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/backports/makefile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ordered_dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/poolmanager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/response.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/connection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/response.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/retry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/selectors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/ssl_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/timeout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/url.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/wait.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/labels.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/mklabels.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/x_user_defined.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/_pyautogui_java.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/_pyautogui_osx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/_pyautogui_win.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/_pyautogui_x11.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/_window_win.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/screenshotUtil.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyautogui/tweens.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pymsgbox/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pymsgbox/_native_java.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pymsgbox/_native_osx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pymsgbox/_native_win.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pymsgbox/_native_x11.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pymsgbox/native.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pyscreeze/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/pytweening/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests-2.19.1.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/__version__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/_internal_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/adapters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/certs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/cookies.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/help.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/hooks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/packages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/sessions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/status_codes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/structures.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/setuptools-39.1.0-py3.6.egg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/setuptools.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/_collections.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/connection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/connectionpool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/appengine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/ntlmpool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/pyopenssl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/securetransport.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/contrib/socks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/fields.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/filepost.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/packages/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/packages/backports/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/packages/backports/makefile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/packages/ordered_dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/packages/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/packages/ssl_match_hostname/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/poolmanager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/response.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/connection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/queue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/response.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/retry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/ssl_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/timeout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/url.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64/python3.6/site-packages/urllib3/util/wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito_Internet/app/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito_Internet/app/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/f.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/f.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/pagamento.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/pagamento.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/admin-filters.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/admin-filters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/ajax-actions.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/ajax-actions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/class-wp-screen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/class-wp-screen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/continents-cities.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/continents-cities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/file.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/misc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/misc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/schema.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/schema.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/widgets.json" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/widgets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/widgets.json" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/widgets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/action-handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/css/foulo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/foulo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/js/foulo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/themes/barrel-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/themes/barrel-child/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/charmap/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/charmap/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/colorpicker/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/colorpicker/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/directionality/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/directionality/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/fullscreen/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/fullscreen/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/hr/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/hr/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/link/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/link/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/media/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/media/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.inline.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.inline.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/skin.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/skin.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/wordpress/wp-content.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/wordpress/wp-content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/tinymce.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/tinymce.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/wp-tinymce.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/wp-tinymce.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-release.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-release.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-meta-fields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1167,19 +106,21 @@
     <session id="1697410675">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="47" />
+          <entry key="py" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="47" />
+          <entry key="Python" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -1196,20 +137,22 @@
     <session id="1399910531">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="158" />
+          <entry key="py" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="158" />
+          <entry key="Python" value="196" />
         </counts>
       </usages-collector>
     </session>
@@ -1249,8 +192,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="324" column="68" selection-start-line="324" selection-start-column="68" selection-end-line="324" selection-end-column="68" />
+            <state relative-caret-position="813">
+              <caret line="349" selection-start-line="349" selection-end-line="349" />
               <folding>
                 <element signature="e#47#60#0" expanded="true" />
               </folding>
@@ -1261,8 +204,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
+            <state relative-caret-position="155">
+              <caret line="380" column="45" selection-start-line="380" selection-start-column="43" selection-end-line="380" selection-end-column="45" />
               <folding>
                 <element signature="e#48#61#0" expanded="true" />
               </folding>
@@ -1282,7 +225,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getRandomUserToFollow</find>
-      <find>id</find>
       <find>com</find>
       <find>comment</find>
       <find>username_user_to_unfollow</find>
@@ -1295,7 +237,6 @@
       <find>login</find>
       <find>getUsernameinstagramFromEmailSitePasswordSite</find>
       <find>processin</find>
-      <find>follow</find>
       <find>richiestaLike</find>
       <find>parse</find>
       <find>like</find>
@@ -1308,6 +249,10 @@
       <find>idFrom</find>
       <find>unfollow</find>
       <find>upp</find>
+      <find>follow</find>
+      <find>follow(</find>
+      <find>getUserToFollwFromTarget</find>
+      <find>id</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -1509,13 +454,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="710" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30454206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30379745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32931036" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7051724" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1601,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="324" column="68" selection-start-line="324" selection-start-column="68" selection-end-line="324" selection-end-column="68" />
+        <state relative-caret-position="813">
+          <caret line="349" selection-start-line="349" selection-end-line="349" />
           <folding>
             <element signature="e#47#60#0" expanded="true" />
           </folding>
@@ -1611,8 +557,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="155">
+          <caret line="380" column="45" selection-start-line="380" selection-start-column="43" selection-end-line="380" selection-end-column="45" />
           <folding>
             <element signature="e#48#61#0" expanded="true" />
           </folding>

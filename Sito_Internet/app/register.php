@@ -5,7 +5,6 @@ require_once('../util/connect.php');
 /*
 Questa pagina viene chiamata nel momento in cui volgio registrare un utente
 In particolare passo qui i dati che devono essere inseriti nel database REGISTERED_USERS_FROM_WEBSITE
-
 */
 
 if( !isset($_POST["EMAIL"]) || !isset($_POST["PASSWORD_SITE"]) )
@@ -45,45 +44,11 @@ echo $return;
   $stmt->close();
   $return = '{ "success":"success" }';
   echo $return;
-
-
-
-
-
-$stmt->close();
+  $stmt->close();
 
 
 }
 
-function checkifUsernameAlreadyOccupate($username)
-{
-
-
-  // COntrollo che non sia vuoto il valore di $username
-  if(!isset($_POST["username_instagram"]))
-  {
-    return false;
-  }
-
-  // prima guardo se per caso c'è un altro utente con quella username, nel caso dico che ho gia inserito
-  $query = "SELECT * FROM REGISTERED_USERS WHERE USERNAME = ? ";
-  global $conn;
-  $stmt = $conn->prepare($query);
-  $stmt->bind_param("s",$username);
-  $stmt->execute();
-
-  $stmt->store_result();
-
-  if ($stmt->num_rows == 1 )
-  {
-    $stmt->close();
-    // Se sono qui allora lo username passato e' gia preso da un altra persona
-    return false;
-  }else{
-    $stmt->close();
-    return true;
-  }
-}
 
 
 

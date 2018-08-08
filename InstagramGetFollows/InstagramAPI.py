@@ -347,7 +347,6 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
         #Controllo se la risposta contiene message
         if 'message' in content_request_JSON:
-            print("FOULO" + str(content_request_JSON))
             message = str(content_request_JSON["message"]).upper()
             if message == "UNAUTHORIZED":
                 print("L'utente "+ username+" ha cambiato password")
