@@ -214,7 +214,7 @@ def updateFollowUnfollowDatabase(username,follow_unfollow):
 #Agggiorno l'array sul database
 def updateUserFollowed(userFollowed,username):
     url = "http://2.230.243.113/instagram/updateUserFollowed.php?username="+username+"&users_followed="+userFollowed
-    requests.get(url)
+    return requests.get(url).content
 
 #Salvo id dell'utente nel database
 def saveIdIntoDatabase(username,id):
@@ -245,13 +245,25 @@ def getUserToFollwFromTarget(target):
     url = "http://2.230.243.113/instagram/getUserToFollowFromUser.php?target=" + str(target)
     return json.loads(requests.get(url).content)
 
-#Ritorna quanti siano gli utenti registrati
+#Ritorna quanti siano gli utenti registrati da quel thread
+def countUserIntoDatabaseFromTread(thread):
+    url = "http://2.230.243.113/instagram/getCountUsersFromThread.php?THREAD="+str(thread)
+    return requests.get(url).content
+
+#Ritorna quanti siano gli utenti registrati totali
 def countUserIntoDatabase():
     url = "http://2.230.243.113/instagram/getCountUsers.php"
     return requests.get(url).content
 
+#Seleziona un utente dal database con un preciso indice
 def selectUserFromDatabase(index):
     url = "http://2.230.243.113/instagram/getUserFromIndex.php?index=" +str(index)
+    return json.loads(requests.get(url).content)
+
+
+#Seleziona un utente dal database con un preciso indice
+def selectUserFromDatabaseAndThread(index,thread):
+    url = "http://2.230.243.113/instagram/getUserFromIndexAndThread.php?index=" +str(index)+"&THREAD="+str(thread)
     return json.loads(requests.get(url).content)
 
 #Ritorna il numero di utenti che sono nella tabella oin cui sono contenuti tutti

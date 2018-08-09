@@ -14,10 +14,10 @@ require_once("instatrack_mail.php");
 
 function sendMailToUser($codeMail)
 {
-  $to = "21giulio21@gmail.com";
+  $to = $_SESSION["email"];
   $subject = "Instatrack.eu";
   $txt = getTextMail($codeMail);
-  $headers = "From: info@giuliotavella.info\r\n";
+  $headers = "From: verify@instatrack.eu\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
@@ -62,7 +62,6 @@ function confirmEmailAddress()
     if($code == $verification_code)
     {
 
-      // qui devo salvare i dati dell'utente TODO
       $response = sendEmailAndPasswordToServerToRegisterUser($_SESSION["email"],$_SESSION["password"]);
       header('Location: http://www.instatrack.eu/dashboard');
 

@@ -33,10 +33,10 @@ function dashboard_func( $atts ){
   ){
     $result .= '
       <div class="row" style="margin-bottom:30px;">
-        <div class="col-lg-10">
+        <div class="col-lg-7">
           <h1 style="margin:0">Ciao ' . $_SESSION["email"] . '</h1>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-5">
         <button type="button" id="toggle-account-box" class="btn btn-default btn-lg">
           <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Aggiungi account
         </button>
@@ -66,7 +66,7 @@ function dashboard_func( $atts ){
     if(!empty($instagram_linked_accounts))
       $result .= '
       <div class="row">
-        <div class="col-lg-10">
+        <div class="col-lg-12">
           <div class="table-responsive account-list">
             <table class="table">
               <th>Instagram Account</th>
@@ -100,7 +100,7 @@ function dashboard_func( $atts ){
       else {
         //Ottengo la data per quanto ancora ha pagato e quindi copre l'abbonamento
         $date = date('Y-m-d', $secondi);
-        $testo = '<p style="color:green; font-size: 15px">Active up to'.$date.' </p>' ;
+        $testo = '<p style="color:green; font-size: 15px">Active up to '.$date.' </p>' ;
 
         //ALtrimenti deve essere possibile attivare/Disattivare l'account
         $bottoneAttiva = '<button type="button" class="btn btn-danger" action="toggle-bot" instagram-account="'.$instagram_account_details[0].'">
@@ -108,7 +108,6 @@ function dashboard_func( $atts ){
         </button>';
       }
 
-      print_r($bottoneAttiva);
 
 
       $instagram_account_state = $instagram_account_details[1] == 1 ?
@@ -307,11 +306,11 @@ function popup_pay() {
       <div>
         <div class="upper-bar">
           Renew your subscription
-          <i class="fa fa-times" aria-hidden="true"></i>
+          <i id="clouse-button" class="fa fa-times" aria-hidden="true"></i>
         </div>
         <div class="input-group" align="center">
           Choose your account:
-            <select>
+            <select id="box-username">
               '.$username_string.'
             </select>
         </div>

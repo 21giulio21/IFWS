@@ -2,99 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b983b9-2501-4c32-8d8a-b842de65e214" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/scriptScript2Thread.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/script2.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/script2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito_Internet/app/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito_Internet/app/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/f.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/pagamento.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/pagamento.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/admin-filters.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/admin-filters.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/ajax-actions.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/ajax-actions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/class-wp-screen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/class-wp-screen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/continents-cities.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/continents-cities.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/file.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/misc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/misc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/schema.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/schema.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/includes/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/dashboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-admin/js/updates.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito_Internet/updateUserFollowed.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito_Internet/updateUserFollowed.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-it_IT.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/admin-network-it_IT.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/continents-cities-it_IT.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/languages/it_IT.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/content.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/widgets.json" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/1/widgets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/widgets.json" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/barrel-theme-addons/inc/oneclick-demo-import/demo-files/10/widgets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/action-handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/css/foulo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/foulo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/js/foulo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/foulo/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/confirmEmailAddress/confirmEmailAddress.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/confirmEmailAddress/confirmEmailAddress.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/dashboard/css/foulo.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/dashboard/css/foulo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/dashboard/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/dashboard/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/dashboard/js/foulo.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/dashboard/js/foulo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/revslider/public/assets/fonts/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/revslider/public/assets/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/revslider/public/assets/fonts/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/plugins/revslider/public/assets/fonts/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/themes/barrel-child/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/themes/barrel-child/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/charmap/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/charmap/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/colorpicker/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/colorpicker/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/directionality/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/directionality/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/fullscreen/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/fullscreen/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/hr/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/hr/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/link/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/link/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/media/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/media/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wordpress/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpeditimage/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wplink/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/plugins/wpview/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.inline.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.inline.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/content.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/skin.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/lightgray/skin.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/wordpress/wp-content.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/skins/wordpress/wp-content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/inlite/theme.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/themes/modern/theme.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/tinymce.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/tinymce.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/wp-tinymce.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/tinymce/wp-tinymce.js.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/twemoji.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-loader.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-release.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/js/wp-emoji-release.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-meta-fields.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/uploads/js-cache-.js" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/uploads/js-cache-.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/uploads/style-cache-.css" beforeDir="false" afterPath="$PROJECT_DIR$/sito_Insternet_ARUBA/wp-content/uploads/style-cache-.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,53 +32,72 @@
     <session id="1697410675">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="91" />
+          <entry key="py" value="390" />
+          <entry key="sh" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="91" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Python" value="390" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="6" />
+          <entry key="sh" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
     </session>
     <session id="1399910531">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="196" />
+          <entry key="dummy" value="6" />
+          <entry key="py" value="531" />
+          <entry key="sh" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="196" />
+          <entry key="PLAIN_TEXT" value="146" />
+          <entry key="Python" value="531" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="sh" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -160,31 +105,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="55" selection-start-line="55" selection-end-line="55" selection-end-column="56" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#48#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/scriptScript2.sh">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/scriptUnfollow.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+            <state relative-caret-position="315">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+              <folding>
+                <element signature="e#48#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
-              <caret line="349" selection-start-line="349" selection-end-line="349" />
+            <state relative-caret-position="376">
+              <caret line="266" selection-start-line="266" selection-end-line="266" />
               <folding>
                 <element signature="e#47#60#0" expanded="true" />
               </folding>
@@ -202,13 +141,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py">
+        <entry file="file://$PROJECT_DIR$/script/scriptScript2Thread.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="380" column="45" selection-start-line="380" selection-start-column="43" selection-end-line="380" selection-end-column="45" />
-              <folding>
-                <element signature="e#48#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="124" selection-start-line="2" selection-start-column="124" selection-end-line="2" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -224,11 +160,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getRandomUserToFollow</find>
-      <find>com</find>
       <find>comment</find>
       <find>username_user_to_unfollow</find>
-      <find>selectUserFromDatabase</find>
       <find>contain</find>
       <find>printFi</find>
       <find>unfollo</find>
@@ -253,6 +186,10 @@
       <find>follow(</find>
       <find>getUserToFollwFromTarget</find>
       <find>id</find>
+      <find>secondi_in_tre_giorni</find>
+      <find>updateUserFollowed</find>
+      <find>countUserIntoDatabas</find>
+      <find>selectUserFromDatabase</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -273,12 +210,16 @@
         <option value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py" />
         <option value="$PROJECT_DIR$/script/scriptUnfollow.sh" />
         <option value="$PROJECT_DIR$/ClickMouse/ClickMouse.py" />
-        <option value="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" />
+        <option value="$PROJECT_DIR$/script/scriptScript2Random.sh" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/script2.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Random.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" />
+        <option value="$PROJECT_DIR$/script/scriptScript2Thread.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="250" />
     <option name="y" value="27" />
     <option name="width" value="660" />
@@ -289,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,11 +246,6 @@
             <path>
               <item name="IFWS" type="b2602c69:ProjectViewProjectNode" />
               <item name="IFWS" type="462c0819:PsiDirectoryNode" />
-              <item name="Funzioni" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IFWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IFWS" type="462c0819:PsiDirectoryNode" />
               <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,7 +257,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,10 +389,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="710" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1366" height="710" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30379745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30305287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -484,13 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="34" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="75" column="17" selection-start-line="75" selection-end-line="75" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -525,9 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -545,23 +470,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1021">
+          <caret line="75" column="17" selection-start-line="75" selection-end-line="75" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Hastag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/scriptHastag.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="55" selection-start-line="55" selection-end-line="55" selection-end-column="56" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="349" selection-start-line="349" selection-end-line="349" />
+        <state relative-caret-position="376">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
           <folding>
             <element signature="e#47#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py">
+    <entry file="file://$PROJECT_DIR$/script/scriptScript2Thread.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="380" column="45" selection-start-line="380" selection-start-column="43" selection-end-line="380" selection-end-column="45" />
-          <folding>
-            <element signature="e#48#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="124" selection-start-line="2" selection-start-column="124" selection-end-line="2" selection-end-column="124" />
         </state>
       </provider>
     </entry>

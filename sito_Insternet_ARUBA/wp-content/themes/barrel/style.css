@@ -455,7 +455,7 @@ body.transparent-header header.mainmenu-position-menu_in_header.top-menu-positio
     padding-bottom: 60px;  
 }
 .page-item-title h1 {
-    color: #2A2F35;
+    color: #ffffff;
     font-weight: normal;
     font-size: 30px;
     margin-bottom: 30px;
@@ -559,7 +559,7 @@ header .logo-link img {
     max-width: 100%;
 }
 header .logo-link.logo-text {
-    color: #2A2F35;
+    color: #ffffff;
     font-size: 30px;
 }
 header.transparent-header .logo-link.logo-text,

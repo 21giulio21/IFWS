@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-06 09:23:33+0000\n"
+"PO-Revision-Date: 2018-08-07 11:57:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4153,7 +4153,7 @@ msgstr "Attiva il tema %s"
 #: wp-includes/script-loader.php:846
 msgctxt "theme"
 msgid "Network Activate %s"
-msgstr "Attiva %s sul network"
+msgstr "Attiva %s nel network"
 
 #: wp-includes/script-loader.php:844
 msgctxt "plugin"
@@ -4302,7 +4302,7 @@ msgstr "Oggi"
 
 #: wp-includes/script-loader.php:841
 msgid "Network Activate"
-msgstr "Attiva sul network"
+msgstr "Attiva nel network"
 
 #. translators: %s: Error string for a failed deletion
 #: wp-includes/script-loader.php:837
@@ -4311,7 +4311,7 @@ msgstr "Eliminazione fallita: %s"
 
 #: wp-includes/script-loader.php:835
 msgid "Deleting..."
-msgstr "Cancellazione&hellip;"
+msgstr "Eliminazione..."
 
 #: wp-includes/script-loader.php:834
 msgid "Caution: These themes may be active on other sites in the network. Are you sure you want to proceed?"
@@ -6123,7 +6123,7 @@ msgstr "Installa ora"
 
 #: wp-includes/script-loader.php:807
 msgid "Installing..."
-msgstr "Installazione&hellip;"
+msgstr "Installazione..."
 
 #: wp-includes/script-loader.php:825
 msgid "Installing... please wait."

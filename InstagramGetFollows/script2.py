@@ -30,7 +30,7 @@ import re
 
 #max_requests indica dopo quante richieste cambio da follow a unfollow,
 #dopo 300 richieste di follow ne faccio 300 di unfollo e cosi via
-max_requests = 300
+max_requests = 250
 
 #numero di richieste dopo il quale si decrementa il DT
 number_requests_update_delta_t = 1000
@@ -114,7 +114,6 @@ while True:
 
         secondi_in_tre_giorni = 259200
         if ha_pagato == "0" and len(tempo_iscrizione) > 5: #Se l'utente non ha pagato e l'ho inserito dal sito internet
-            print("FOULO")
             if tempo_fine_iscrizione < tempo_di_ora and deve_pagare == "0": #Se sono passati 3 giorni come prova oppure è passato il tempo per cui ha pagato
                 #Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
                 print("Processo l'utente: " + username + " deve pagare")
@@ -333,7 +332,9 @@ while True:
 
             else:
                 users_followed_string = users_followed_string +username_user_to_follow + ";"
-            updateUserFollowed(users_followed_string,username)
+
+            return_update_followers_into_database = updateUserFollowed(users_followed_string,username)
+            print("AAAAAAAAAAAAAAAAAAAAAAAAAAA return_update_followers_into_database " +  return_update_followers_into_database )
 
         elif script_attivo == "1" and follow_unfollow == "0":
             print("Processo l'utente: " + username + " deve mandare richieste di unfollow")

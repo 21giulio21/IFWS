@@ -72,6 +72,12 @@
   cursor: pointer;
 }
 
+.account-list td:first-child a
+{
+  font-size: 19px;
+  position: relative;
+  top: 7px;
+}
 
 /* The Modal (background) */
 .modal {

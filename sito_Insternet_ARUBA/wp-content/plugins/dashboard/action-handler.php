@@ -7,7 +7,6 @@ require_once("login.php");
 
 if(isset($_POST["action"], $_POST["parameters"])) {
 
-
   switch ($_POST["action"]) {
     case 'toggle-bot':
       $target_address = "http://2.230.243.113/instagram/app/updateScriptActive.php";
@@ -36,6 +35,12 @@ if(isset($_POST["action"], $_POST["parameters"])) {
         print_r(curl_request($target_address, $_POST["parameters"]));
         break;
       }
+      break;
+    case 'RENEW-SUBSCRIPTION':
+      $target_url = "http://2.230.243.113/instagram/app/updateTEMPO_FINE_ISCRIZIONE.php";
+      $return = curl_request($target_url,$_POST['parameters']);
+      echo"console.log($return)";
+      break;
 
 
 
@@ -45,6 +50,7 @@ if(isset($_POST["action"], $_POST["parameters"])) {
   }
 
 }
+
 
 
 

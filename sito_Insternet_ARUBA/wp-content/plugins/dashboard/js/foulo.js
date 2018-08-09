@@ -64,7 +64,8 @@ jQuery(window).on('load', function(){
         //Devo far aprire il menu dove posso pagare
         if(jQuery('#popup-pay').css('display') == "none"){
 
-          loadButtonPaypal(0);
+          loadButtonPaypal(0,0);
+
 
          jQuery('#popup-pay')
            .css("display", "flex")
@@ -151,7 +152,7 @@ function changeEuroToPay(quanti_mesi)
   }
   console.log("piano scelto: " + pianoScelto);
 
-  loadButtonPaypal(prezzo.toString());
+  loadButtonPaypal(prezzo.toString(),quanti_mesi);
 
 }
 
@@ -165,9 +166,44 @@ function changeEuroToPay(quanti_mesi)
     else if(quanti_mesi == 1) jQuery('#months').html(" Month");
     else jQuery('#months').html(" Months");
   }
-
-  function loadButtonPaypal( price)
+  function updateTEMPO_FINE_ISCRIZIONEOnDatabase(quanti_mesi)
   {
+    //Ottengo lo username specificato:
+    var username_selected = jQuery("#box-username").val();
+
+    // Ottengo il numero di seondi per cui vale l'abbonamento.
+    var secondi_in_cui_vale_abbonamento = 2678400 * quanti_mesi
+
+    //Calcolo i secondi per la fine dell'abbonamento
+    var tempo_fine_abbonamento = Math.floor(new Date() / 1000) + secondi_in_cui_vale_abbonamento ;
+
+    //Aggiorno il campo TEMPO_FINE_ISCRIZIONE nel database per lo username specificato
+    var curl_request2 = {
+      action: "RENEW-SUBSCRIPTION"
+    }
+    curl_request2.parameters = {
+      USERNAME: username_selected,
+      TEMPO_FINE_ISCRIZIONE: tempo_fine_abbonamento ,
+    }
+
+    var address = plugin_home + "action-handler.php"
+    ajaxRequest(address, curl_request2)
+      .done(function(msg){
+        console.log("ajaxRequest done: " + msg);
+
+
+      })
+      .fail(function(xhr, status, error) {
+        console.log("Error: status " + status + " message: " + error);
+      });
+
+
+  }
+
+  function loadButtonPaypal( price,quanti_mesi)
+  {
+
+    updateTEMPO_FINE_ISCRIZIONEOnDatabase(quanti_mesi);
     paypal.Button.render({
       // Configure environment
       // Configure environment
@@ -231,6 +267,8 @@ function changeEuroToPay(quanti_mesi)
       onAuthorize: function (data, actions) {
         return actions.payment.execute()
           .then(function () {
+            //se sono qui dentro allora devo
+
             // Show a confirmation message to the buyer
             window.alert('Thank you for your purchase!');
           });
@@ -244,15 +282,12 @@ function changeEuroToPay(quanti_mesi)
 
    ///// Menu per pagare
    jQuery('#button-rinnova').on('click', function(){
+     if(jQuery('#popup-pay').css('display') == "none"){
 
-   if(jQuery('#popup-pay').css('display') == "none"){
+      loadButtonPaypal(0,0);
 
-     loadButtonPaypal(0);
 
-    jQuery('#popup-pay')
-      .css("display", "flex")
-      .hide()
-      .fadeIn();
+      jQuery('#popup-pay').css("display", "flex").hide().fadeIn();
    } else {
 
    }
@@ -285,6 +320,12 @@ function changeEuroToPay(quanti_mesi)
     }
   });
 
+  jQuery('#clouse-button').on('click', function(){
+    jQuery('#popup-pay').hide('slow');
+    jQuery('html').removeClass('prevent-scrolling');
+    location.reload();
+  });
+
   jQuery('#new-account-box i').on('click', function(){
     jQuery('#new-account-box').hide('slow');
     jQuery('html').removeClass('prevent-scrolling');
@@ -314,6 +355,8 @@ function changeEuroToPay(quanti_mesi)
         if(msg.includes("reason"))
         {
           jQuery('#errore-paragrafo').html("Username already in use");
+        }else {
+          location.reload();
         }
       })
       .fail(function(xhr, status, error) {
