@@ -137,27 +137,6 @@ function parseDataFromPost2()
     $_SESSION["code"]= rand(10000,99999);
     header('Location: http://www.instatrack.eu/confirmEmailAddress');
 
-/*
-    //Mando i dati al server che controlla in utomatico se sono gia inserite credenziali ugiali o altro,
-    //Devo solo fare un pars della risposta.
-    $response = sendCredentialsToServer($email,$password);
-
-  // se response è null allora è funzionato bene tutto, altrimenti stampo nella parte sopra del form la response
-    if (is_null($response))
-    {
-
-      session_start();
-
-      $_SESSION["email"] = $email;
-
-      // Mi sposto sulla pagina della dashboard
-      header('Location: http://www.instatrack.eu/confirmEmailAddress');
-      return;
-
-    }else{
-      return $response;
-    }
-    */
   }
 }
 

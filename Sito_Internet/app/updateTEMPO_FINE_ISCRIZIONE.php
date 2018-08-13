@@ -15,11 +15,33 @@ if( !isset($_POST["USERNAME"]) || !isset($_POST["TEMPO_FINE_ISCRIZIONE"]) )
 $username = $_POST["USERNAME"];
 $tempo_fine_iscrizione = $_POST["TEMPO_FINE_ISCRIZIONE"];
 
+// Faccio una query in cui mi faccio tornare la data fine abbonamento, nel caso sia minore di ora allora imposto:
+// TEMPO_FINE_ISCRIZIONE = ora + secondi che ho passato come parametro in post
+// Altrimenti TEMPO_FINE_ISCRIZIONE = TEMPO_FINE_ISCRIZIONE(che torna dalla query) + secondi che passo come parametro in post
+$query = "SELECT `TEMPO_FINE_ISCRIZIONE` FROM `REGISTERED_USERS` WHERE `USERNAME` = ? ";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("s",$username)or die("Errore nella bind_param");
+$stmt->execute();
+$result = $stmt->get_result();
+$row = $result->fetch_object();
 
-$query = "UPDATE `REGISTERED_USERS` SET `TEMPO_FINE_ISCRIZIONE` = ? WHERE `REGISTERED_USERS`.`USERNAME` = ? ";
-echo "Dati ricevuti: ".$username.$tempo_fine_iscrizione;
+$TEMPO_FINE_ISCRIZIONE = $row->TEMPO_FINE_ISCRIZIONE;
+$tempo_ora = time();
+if($tempo_ora > $TEMPO_FINE_ISCRIZIONE)
+{
+  $TEMPO_FINE_ISCRIZIONE = $tempo_fine_iscrizione + $tempo_ora;
+}else {
+  $TEMPO_FINE_ISCRIZIONE = $TEMPO_FINE_ISCRIZIONE + $tempo_fine_iscrizione;
+}
+$stmt->close();
+echo "TEMPO FINE ISCRIZIONE DA SETTARE ".$TEMPO_FINE_ISCRIZIONE;
+
+
+
+
+$query = "UPDATE `REGISTERED_USERS` SET `TEMPO_FINE_ISCRIZIONE` = ?, `DEVE_PAGARE` = 0 WHERE `REGISTERED_USERS`.`USERNAME` = ? ";
 $stmt = $conn->prepare($query)or die("Errore nella prepare");
-$stmt->bind_param("is",$tempo_fine_iscrizione,$username)or die("Errore nella bind_param");
+$stmt->bind_param("is",$TEMPO_FINE_ISCRIZIONE,$username)or die("Errore nella bind_param");
 $stmt->execute()or die("Errore nella execute");
 
 

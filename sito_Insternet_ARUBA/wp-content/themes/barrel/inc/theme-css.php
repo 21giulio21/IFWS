@@ -375,7 +375,7 @@
     if($color_skin_name == 'default') {
         $theme_body_color = '#FFFFFF';
         $theme_text_color = '#2A2F35';
-        $theme_main_color = '#2C99ED';
+        $theme_main_color = '#413FE8';
         $theme_header_bg_color = '#FFFFFF';
         $theme_top_menu_bg_color = '#F5F5F5';
         $theme_top_menu_color = '#828282';

@@ -1661,8 +1661,8 @@ $ipanel_barrel_option[] = array(
 $ipanel_barrel_option[] = array(
 	"name" => esc_html__('Theme Main color', 'barrel'),
 	"id" => "theme_main_color",
-	"std" => "#2C99ED",
-	"desc" => wp_kses_post(__('Used in many theme places, links, buttons, tabs color, default: #2C99ED', 'barrel')),
+	"std" => "#413FE8",
+	"desc" => wp_kses_post(__('Used in many theme places, links, buttons, tabs color, default: #413FE8', 'barrel')),
 	"field_options" => array(
 		//'desc_in_tooltip' => true
 	),

@@ -38,13 +38,13 @@ $stmt->store_result();
 if ($stmt->num_rows == 1 )
 {
 //Se sono qui allora ritorno che ho unutente con quelle credenziali
-$return = '{ "success":"success" }';
+$return = "1";
 
 echo $return;
 
 }else{
 
-  $return = '{ "success":"failed", "reason":"Credentials not valid" }';
+  $return = "0";
   echo $return;
 
 

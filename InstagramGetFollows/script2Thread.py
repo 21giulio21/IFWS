@@ -116,7 +116,8 @@ while True:
             if tempo_fine_iscrizione < tempo_di_ora and deve_pagare == "0":  # Se sono passati 3 giorni come prova oppure è passato il tempo per cui ha pagato
                 # Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
                 print("Processo l'utente: " + username + " deve pagare")
-                print(updateDevePagare(username, 1))
+                updateSctiptActive(username, 0)
+                updateDevePagare(username, 1)
 
         # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
         if password_errata == '1':

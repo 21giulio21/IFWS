@@ -79,10 +79,7 @@ function confirmEmailAddress()
 //Prendo come input i parametri della pagina precedente e creo un codice da inserire che deve essere convalidato via mail.
 $password =  $_SESSION["password"];
 $email = $_SESSION["email"];
-
-
 $codeMail = $_SESSION["code"];
-
 // mando la mail all'utente con uqella mail.
 sendMailToUser($codeMail);
 

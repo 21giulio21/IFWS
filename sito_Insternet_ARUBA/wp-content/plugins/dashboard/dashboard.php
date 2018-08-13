@@ -15,10 +15,14 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 //Includo il file login.php perchè contiene la funzione di login,
 // non è in questo file la funzione di login per ordine.
 require_once("login.php");
+require_once("removeInstagramAccount.php");
 session_start();
-
-
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+
+if(isset($_GET["username"]))
+{
+  removeInstagramAccount($_GET["username"]);
+}
 
 
 function dashboard_func( $atts ){
@@ -31,14 +35,14 @@ function dashboard_func( $atts ){
     isset($_SESSION["email"]) &&
     !empty($_SESSION["email"])
   ){
-    $result .= '
+    $result .= '<br><br>
       <div class="row" style="margin-bottom:30px;">
         <div class="col-lg-7">
-          <h1 style="margin:0">Ciao ' . $_SESSION["email"] . '</h1>
+          <h1 style="margin:0">Hi ' . $_SESSION["email"] . '</h1>
         </div>
         <div class="col-lg-5">
         <button type="button" id="toggle-account-box" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Aggiungi account
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add account
         </button>
 
         <button type="button" id="button-rinnova" class="btn btn-default btn-lg">
@@ -62,8 +66,16 @@ function dashboard_func( $atts ){
            $instagram_user->TEMPO_FINE_ISCRIZIONE ;
     }
 
+    //Nel caso non abbia account allora scrivo che non ho account disponibili.
+    if(empty($instagram_linked_accounts))
+    {
+      $result .= '<div align="center" style="margin-button:100px; height:200px; background-color: #D3D3D3; border:1px solid red">
+                    <h1>No accounts available</h1>
+                    <p>Please add a new Instagram account.</p>
+                  </div>';
 
-    if(!empty($instagram_linked_accounts))
+
+    }else
       $result .= '
       <div class="row">
         <div class="col-lg-12">
@@ -132,6 +144,7 @@ function dashboard_func( $atts ){
               <a href="https://www.instagram.com/'.$instagram_account_details[0].'" target="_blank">
                 @'.$instagram_account_details[0].'
               </a>
+              <a href="https://www.instatrack.eu/dashboard?username='.$instagram_account_details[0].'" style="color:red; font-size: 15px" >Remove</a>
             </td>
             <td>
               <p>' . $instagram_account_state .'</p>

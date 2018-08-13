@@ -2103,7 +2103,7 @@ msgid "Theme Main color"
 msgstr ""
 
 #: inc/iPanel/options.php:1665
-msgid "Used in many theme places, links, buttons, tabs color, default: #2C99ED"
+msgid "Used in many theme places, links, buttons, tabs color, default: #413FE8"
 msgstr ""
 
 #: inc/iPanel/options.php:1673

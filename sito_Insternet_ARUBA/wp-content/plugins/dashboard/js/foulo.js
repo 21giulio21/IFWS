@@ -168,14 +168,15 @@ function changeEuroToPay(quanti_mesi)
   }
   function updateTEMPO_FINE_ISCRIZIONEOnDatabase(quanti_mesi)
   {
+    console.log("Aggiorno il tempo di fine iscrizione " + quanti_mesi);
+
     //Ottengo lo username specificato:
     var username_selected = jQuery("#box-username").val();
 
     // Ottengo il numero di seondi per cui vale l'abbonamento.
     var secondi_in_cui_vale_abbonamento = 2678400 * quanti_mesi
 
-    //Calcolo i secondi per la fine dell'abbonamento
-    var tempo_fine_abbonamento = Math.floor(new Date() / 1000) + secondi_in_cui_vale_abbonamento ;
+
 
     //Aggiorno il campo TEMPO_FINE_ISCRIZIONE nel database per lo username specificato
     var curl_request2 = {
@@ -183,7 +184,7 @@ function changeEuroToPay(quanti_mesi)
     }
     curl_request2.parameters = {
       USERNAME: username_selected,
-      TEMPO_FINE_ISCRIZIONE: tempo_fine_abbonamento ,
+      TEMPO_FINE_ISCRIZIONE: secondi_in_cui_vale_abbonamento ,
     }
 
     var address = plugin_home + "action-handler.php"
