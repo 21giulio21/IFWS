@@ -23,11 +23,14 @@ def getIDFromUsername(username):
 
 
 
-def writeToFIleAllUsersToUnfollow():
+def unfollw():
+
+
+    #Ottengo i primi 24 che seguo e ne prendo 1
 
     headers = {
         'pragma': 'no-cache',
-        'cookie': 'csrftoken=kzhnCxTTMNcKqmcnIzItNO2AUuD7fWlK; shbid=18815; rur=FRC; mid=W1RylQAEAAH5JaMUhqG2ayFfFT9S; ds_user_id=819693525; sessionid=IGSC2ca26b47e37a210f08669a862ca2efbbff5053caf87ddf5ef338e36972107ba0%3AgCgZqIdtVuCMi3sb32t9M1aMPxSWXLnx%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3ADJcqY0MGaC0Ubl7p3s5adpKpjTGfvWJd%3Abe6fbe0257aee3d66c7c74b7f00e113adb82111935919abaf8d24a9fec6e978a%22%2C%22last_refreshed%22%3A1532261014.1639788151%7D; ig_cb=1; mcd=3; shbts=1532261356.7046137; urlgen="{\\"time\\": 1532261028\\054 \\"91.252.42.170\\": 24608}:1fhDAr:Cxv3eGXQioodmKWAr-czG06ZH0Q"',
+        'cookie': 'mid=W2MaRwAEAAFRBmtwITPHl2lN9cn3; mcd=3; ig_cb=1; fbm_124024574287414=base_domain=.instagram.com; datr=PKN6W-keB-dHGIzDbTv5Z51-; csrftoken=5a2VFQiu4y5pTzldlrfFznAwnBGEfQ2y; shbid=4294; ds_user_id=6374451695; sessionid=IGSC97217a987a9356856fe6d42f49dfb813275bb639722069c1df8b842431a0eba2%3AqEpWEscTZsmlSJUnuNsiNcx9W1Uluequ%3A%7B%22_auth_user_id%22%3A6374451695%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%226374451695%3AUya4R8y8f4At9JfacirW2XbWPF8RR53a%3A62231ebbe7c43399024f0bba6408d8ecd671840ec7edd2b3bf5f3b1ddde05c76%22%2C%22last_refreshed%22%3A1534769728.9096515179%7D; rur=ATN; fbsr_124024574287414=sZoYf3WemGclsH3-8CGvHY7qQcL_Fl3U5_x2NoT7_DQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUUFVdW1iSWQ0aTFaaXZUSExYdkxoTHJlNFNkeEZuNExpMFVrQjJhenNoVkc2d0pkYWxyaG9DTEg1M3M1RHRxMFRMazBDNzJFNGQ2Q2F4cnpXVWFKcTNocWhST0o1NW5oTG1DMGR1anJCUFJzQkQ2VUU3NU1adWZsUUxKVmlNN2x6OXNNNjRrZmhJMXVOMGxjVGh4ZUVkbUlvYV9OZE5zcmpxN3F0Qm1SYXZnT3NsR3BNc0loQXdVLW5qbWctWDdyWnBrM2I2RkdnN1IwUFNyTEFqZ05ETkZpNWc2UHlDZ2lWYUVnUXhNTGN0bDA0eGpxY08wckF3MThYbDliUFVxaWlDT3FJSnpLeWV0dHlnTC1veWx4QldzQVcwbFFoXzl6VS1sLXlucjJJa0RNVERNYXM3bF9FSHdpeDk1b3Uwei1uWllmdjJ2UjVtZVpKenRDdE5OTnY4VCIsImlzc3VlZF9hdCI6MTUzNDc2OTczMSwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"37.227.59.128\\": 24608}:1frjiz:i-DhFUQYUXIiiIpah9upPjrZ7rs"',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
@@ -35,41 +38,44 @@ def writeToFIleAllUsersToUnfollow():
         'cache-control': 'no-cache',
         'authority': 'www.instagram.com',
         'x-requested-with': 'XMLHttpRequest',
-        'x-instagram-gis': 'd41a558092d3ac856ca28cfea25a460a',
-        'referer': 'https://www.instagram.com/giulio_tavella/following/',
+        'x-instagram-gis': 'ffbdaa4416896b3c821c9a0f96adb7f1',
+        'referer': 'https://www.instagram.com/dietabarfitalia/following/',
     }
 
     params = (
-        ('query_hash', '9335e35a1b280f082a47b98c5aa10fa4'),
-        ('variables', '{"id":"819693525","first":24}'),
+        ('query_hash', 'c56ee0ae1f89cdbd1c89e2bc6b8f3d18'),
+        ('variables', '{"id":"6374451695","include_reel":true,"first":24}'),
     )
 
     content_request =  str(requests.get('https://www.instagram.com/graphql/query/', headers=headers, params=params).content)
     usernameToUnfollow = content_request[content_request.find("username") + len("username\":\""):content_request.find("\",\"full_name\"")]
     idToUnfollow = getIDFromUsername(usernameToUnfollow)
 
-
+    #Ottengo username - identificativo e faccio unfollow
 
     headers = {
-        'cookie': 'csrftoken=kzhnCxTTMNcKqmcnIzItNO2AUuD7fWlK; shbid=18815; rur=FRC; mid=W1RylQAEAAH5JaMUhqG2ayFfFT9S; ds_user_id=819693525; sessionid=IGSC2ca26b47e37a210f08669a862ca2efbbff5053caf87ddf5ef338e36972107ba0%3AgCgZqIdtVuCMi3sb32t9M1aMPxSWXLnx%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3ADJcqY0MGaC0Ubl7p3s5adpKpjTGfvWJd%3Abe6fbe0257aee3d66c7c74b7f00e113adb82111935919abaf8d24a9fec6e978a%22%2C%22last_refreshed%22%3A1532261014.1639788151%7D; ig_cb=1; mcd=3; shbts=1532262307.7787287; urlgen="{\\"time\\": 1532261028\\054 \\"91.252.42.170\\": 24608}:1fhDQB:qsmWL6Imrd9aEH2gIploahdSprk"',
+        'cookie': 'mid=W2MaRwAEAAFRBmtwITPHl2lN9cn3; mcd=3; ig_cb=1; fbm_124024574287414=base_domain=.instagram.com; datr=PKN6W-keB-dHGIzDbTv5Z51-; csrftoken=5a2VFQiu4y5pTzldlrfFznAwnBGEfQ2y; shbid=4294; ds_user_id=6374451695; sessionid=IGSC97217a987a9356856fe6d42f49dfb813275bb639722069c1df8b842431a0eba2%3AqEpWEscTZsmlSJUnuNsiNcx9W1Uluequ%3A%7B%22_auth_user_id%22%3A6374451695%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%226374451695%3AUya4R8y8f4At9JfacirW2XbWPF8RR53a%3A62231ebbe7c43399024f0bba6408d8ecd671840ec7edd2b3bf5f3b1ddde05c76%22%2C%22last_refreshed%22%3A1534769728.9096515179%7D; rur=ATN; fbsr_124024574287414=sZoYf3WemGclsH3-8CGvHY7qQcL_Fl3U5_x2NoT7_DQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUUFVdW1iSWQ0aTFaaXZUSExYdkxoTHJlNFNkeEZuNExpMFVrQjJhenNoVkc2d0pkYWxyaG9DTEg1M3M1RHRxMFRMazBDNzJFNGQ2Q2F4cnpXVWFKcTNocWhST0o1NW5oTG1DMGR1anJCUFJzQkQ2VUU3NU1adWZsUUxKVmlNN2x6OXNNNjRrZmhJMXVOMGxjVGh4ZUVkbUlvYV9OZE5zcmpxN3F0Qm1SYXZnT3NsR3BNc0loQXdVLW5qbWctWDdyWnBrM2I2RkdnN1IwUFNyTEFqZ05ETkZpNWc2UHlDZ2lWYUVnUXhNTGN0bDA0eGpxY08wckF3MThYbDliUFVxaWlDT3FJSnpLeWV0dHlnTC1veWx4QldzQVcwbFFoXzl6VS1sLXlucjJJa0RNVERNYXM3bF9FSHdpeDk1b3Uwei1uWllmdjJ2UjVtZVpKenRDdE5OTnY4VCIsImlzc3VlZF9hdCI6MTUzNDc2OTczMSwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"37.227.59.128\\": 24608}:1frjkE:-QNU2hLolLm3GuH5phzEwegRXLk"',
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
         'x-requested-with': 'XMLHttpRequest',
-        'x-csrftoken': 'kzhnCxTTMNcKqmcnIzItNO2AUuD7fWlK',
+        'x-csrftoken': '5a2VFQiu4y5pTzldlrfFznAwnBGEfQ2y',
         'pragma': 'no-cache',
-        'x-instagram-ajax': '314b21580dde',
+        'x-instagram-ajax': '6c1f67754dc0',
         'content-type': 'application/x-www-form-urlencoded',
         'accept': '*/*',
         'cache-control': 'no-cache',
         'authority': 'www.instagram.com',
-        'referer': 'https://www.instagram.com/giulio_tavella/following/',
+        'referer': 'https://www.instagram.com/dietabarfitalia/following/',
         'content-length': '0',
     }
 
-    response = requests.post('https://www.instagram.com/web/friendships/'+str(idToUnfollow)+'/unfollow/', headers=headers)
+    link = 'https://www.instagram.com/web/friendships/'+str(idToUnfollow)+'/unfollow/'
+    print(link)
+
+    response = requests.post(link, headers=headers)
     print("UNFOLLOW " + str(usernameToUnfollow) + " " + str(response.content))
 for i in range(0,3000):
-    writeToFIleAllUsersToUnfollow()
-    time.sleep(100)
+    unfollw()
+    time.sleep(30)

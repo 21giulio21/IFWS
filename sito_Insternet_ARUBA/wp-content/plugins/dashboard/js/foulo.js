@@ -2,10 +2,10 @@ const plugin_home = "https://www.instatrack.eu/wp-content/plugins/dashboard/";
 
 
 
-
 jQuery(window).on('load', function(){
 
   functionRequireJS();
+
 
   jQuery('.account-list button').on('click', function(){
       switch (jQuery(this).attr('action'))
@@ -104,8 +104,43 @@ jQuery(window).on('load', function(){
     changeEuroToPay(quanti_mesi);
 
   });
+
+
+//Quando modifico la select della category fa la query al bot.
+jQuery('#box-category').on('change', function() {
+  var category = jQuery('#box-category').val();
+  var username_selected = jQuery('#username').text()
+  console.log(category);
+  console.log(username);
+
+  var curl_request2 = {
+    action: "CHOOSE-CATEGORY"
+  }
+  curl_request2.parameters = {
+    USERNAME: username_selected,
+    CATEGORY: category
+  }
+
+  var address = plugin_home + "action-handler.php"
+  ajaxRequest(address, curl_request2)
+    .done(function(msg){
+      console.log("ajaxRequest done: " + msg);
+      location.reload();
+
+    })
+    .fail(function(xhr, status, error) {
+      console.log("Error: status " + status + " message: " + error);
+      location.reload();
+    });
+
+
+
+});
+
+
+
   //Quando modifico la select del prezzo deve modificare il prezzo finale.
-  jQuery('select').on('change', function() {
+  jQuery('#box-username, #box-plane').on('change', function() {
     var quanti_mesi = parseInt(jQuery('#tempo').text())
     changeEuroToPay(quanti_mesi);
 
@@ -166,6 +201,8 @@ function changeEuroToPay(quanti_mesi)
     else if(quanti_mesi == 1) jQuery('#months').html(" Month");
     else jQuery('#months').html(" Months");
   }
+
+
   function updateTEMPO_FINE_ISCRIZIONEOnDatabase(quanti_mesi)
   {
     console.log("Aggiorno il tempo di fine iscrizione " + quanti_mesi);
@@ -204,7 +241,7 @@ function changeEuroToPay(quanti_mesi)
   function loadButtonPaypal( price,quanti_mesi)
   {
 
-    updateTEMPO_FINE_ISCRIZIONEOnDatabase(quanti_mesi);
+
     paypal.Button.render({
       // Configure environment
       // Configure environment
@@ -269,7 +306,7 @@ function changeEuroToPay(quanti_mesi)
         return actions.payment.execute()
           .then(function () {
             //se sono qui dentro allora devo
-
+            updateTEMPO_FINE_ISCRIZIONEOnDatabase(quanti_mesi);
             // Show a confirmation message to the buyer
             window.alert('Thank you for your purchase!');
           });
@@ -293,7 +330,13 @@ function changeEuroToPay(quanti_mesi)
 
    }
    });
+funzionamento
 
+//Quando uno preme sul bottone: "Come funziona deve avere una pagina con spiegato il funzionamento"
+jQuery('#funzionamento').on('click', function(){
+  window.location.href="https://www.instatrack.eu/funzionamento/";
+
+});
 
 
    ///Fine per pagare
@@ -357,7 +400,8 @@ function changeEuroToPay(quanti_mesi)
         {
           jQuery('#errore-paragrafo').html("Username already in use");
         }else {
-          location.reload();
+          window.location.href="https://www.instatrack.eu/come-funziona/";
+
         }
       })
       .fail(function(xhr, status, error) {

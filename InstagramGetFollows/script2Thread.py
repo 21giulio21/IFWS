@@ -33,7 +33,7 @@ import sys
 
 # max_requests indica dopo quante richieste cambio da follow a unfollow,
 # dopo 300 richieste di follow ne faccio 300 di unfollo e cosi via
-max_requests = 250
+#max_requests = 250
 
 # numero di richieste dopo il quale si decrementa il DT
 number_requests_update_delta_t = 1000
@@ -45,6 +45,9 @@ tempo_passato_come_patametro = int(sys.argv[1])
 
 #Definisce il pc su cui deve andare
 thread_passato_come_patametro = int(sys.argv[2])
+
+#Definisco il numero massimo di richieste che devo fare
+max_requests = int(sys.argv[3])
 
 while True:
 
@@ -104,8 +107,9 @@ while True:
         # deve_pagare e' a 1 solo se l'utente non ha pagato.
         target = str(user[0]['TARGET'])
 
+
         print("Processo l'utente: " + username)
-        time.sleep(10)
+
 
         # Controllo il tempo_iscrizione, se sono passati 3 giorni allora deve pagare ossia impostare: DEVE_PAGARE a 1
         tempo_di_ora = str(time.time())
@@ -267,8 +271,6 @@ while True:
 
             print("Processo l'utente: " + username + " deve mandare richieste di follow")
 
-            # Ottengo il numero totale di persone che sono nella tabella degli utenti da seguire
-            count_user_to_follow = getCountUsersToFollow()
 
             # Mi faccio tornare un utente da seguire con stesso target
             # dell'utente che sto processando. Questo è realizzato dal php
@@ -276,6 +278,8 @@ while True:
             user_to_follow = getUserToFollwFromTarget(target)
             id_user_to_follow = str(user_to_follow[0]["ID"])
             username_user_to_follow = str(user_to_follow[0]["USERNAME"])
+            target = str(user_to_follow[0]["TARGET"])
+
 
             # Seguo la persona che ho scaricato e gli metto un like alla prima foto
             contet_request = follow(id_user_to_follow, username_user_to_follow, cookies_str, cookies_dict['csrftoken'])
@@ -283,7 +287,7 @@ while True:
             # In questo punto aumento la variabile:  number_requests_done di 1 e mando al server il nuovo valore di number_requests_done
             updateNumberRequestsDone(username, str(int(number_requests_done) + 1))
 
-            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request.content))
+            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request.content) + " TARGET DELL?UTENTE CHE SEGUO: " + target )
 
             parse_content_request(contet_request, 'FOLLOW-UNFOLLOW', username, tempo_blocco_se_esce_errore, delta_t)
 

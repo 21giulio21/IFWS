@@ -56,7 +56,7 @@ if ($stmt->num_rows == 1 )
   `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`,
   `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`, `SET_LIKE`, `DEVE_PAGARE`,
   `TEMPO_ISCRIZIONE`, `TEMPO_FINE_ISCRIZIONE`, `HA_PAGATO`) VALUES
-  ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', '', '0', '0', '0', ? , ? , '0');";
+  ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', 'GENERAL', '0', '0', '0', ? , ? , '0');";
   $stmt = $conn->prepare($query)or die("Errore nella prepare");
   $stmt->bind_param("sssss",$username_instagram,$email,$password_instagram,$secondi,$data_fine_iscrizione)or die("Errore nella bind_param");
   $stmt->execute()or die("Errore nella execute nel file addInstagra... riga 58");

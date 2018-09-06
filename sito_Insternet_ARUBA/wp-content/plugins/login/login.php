@@ -11,7 +11,8 @@ License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 */
 
-   function curl_request5($target_url, array $arguments){
+   function curl_request5($target_url, array $arguments)
+   {
 
      $ch = curl_init();
      curl_setopt($ch, CURLOPT_URL,$target_url);
@@ -20,7 +21,7 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 
      // receive server response ...
      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-     $server_output = curl_exec ($ch)or die("Errore nella curl_exec");
+     $server_output = curl_exec ($ch);
      curl_close ($ch);
      return $server_output;
 
@@ -30,6 +31,8 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 // Se la funzione non risponde nulla allora è funzionato benissimo!
 function sendCredentialsToServer2($email,$password)
 {
+
+
   $target_url = "http://2.230.243.113/instagram/app/login.php";
   $params =
    array(
@@ -39,10 +42,9 @@ function sendCredentialsToServer2($email,$password)
    );
 
   $curl_response = curl_request5($target_url, $params);
-  $parsed_response = json_decode($curl_response);
-  if (! is_null($parsed_response->reason))
+  if ($curl_response == "0")
   {
-    return $parsed_response->reason;
+    return "Pasword errata";
 
   }
 
@@ -130,6 +132,7 @@ function parseDataPost()
 
       // Mi sposto sulla pagina della dashboard
       header('Location: http://www.instatrack.eu/dashboard');
+      
       return;
 
     }else{
@@ -158,20 +161,20 @@ function login_func( ){
          $result .='
 
 
-         <h3>Log in to Instatrack</h3>
+         <h3>Accedi ad Instatrack</h3>
            <form method="post">
 
 
              <div class="input-group">
                <span class="input-group-addon" style=" width: 44px; " ><i class="fa fa-envelope" aria-hidden="true"></i></span>
-               <input type="email" name="register_email" placeholder="Insert your email" value="" required/>
+               <input type="email" name="register_email" placeholder="Inserisci la tua email" value="" required/>
              </div>
 
               <br>
 
              <div class="input-group">
                <span class="input-group-addon" style=" width: 44px; " ><i class="fa fa-lock" aria-hidden="true"></i></span>
-                <input type="password" name="register_password" placeholder="Insert your password" value="" required />
+                <input type="password" name="register_password" placeholder="Inserisci la tua password" value="" required />
              </div>
 
              <br>
@@ -179,7 +182,9 @@ function login_func( ){
              <div class="form-group">
                <br><div class="g-recaptcha" data-sitekey="6LcnSGgUAAAAAF3pZ9cr8-1rZeGivwOydDhEgNdo"></div><br>
 
-               <span>New to Instatrack?  <a href="https://www.instatrack.eu/register">Create an account now.</a></span><br><br>
+
+              <span>Password dimenticata?  <a href="http://www.instatrack.eu/reset-password/">Clicca qui</a></span><br><br>
+               <span>Nuovo su Instatrack?  <a href="https://www.instatrack.eu/register">Crea un account ora.</a></span><br><br>
 
                <input type="submit" name="submit" value="Login">
              </div>

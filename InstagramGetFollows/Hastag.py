@@ -8,7 +8,7 @@ import time
 hastag =  str(sys.argv[1])
 
 def saveUserAndIdIntoDatabase(id,username):
-    response = requests.get("http://2.230.243.113/instagram/saveUserIntoDatabaseUSER_TO_FOLLOW_HASTAG.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET=HASTAG"+hastag)
+    response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUSER_TO_FOLLOW_HASTAG.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET=HASTAG"+hastag)
     print(response.content)
 
 

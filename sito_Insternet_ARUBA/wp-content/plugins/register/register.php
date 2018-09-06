@@ -111,14 +111,14 @@ function parseDataFromPost2()
     //Controllo che la mail sia veramente una mail
     if (!checkEmail2($email))
     {
-      return 'Enter a valid email address';
+      return 'Indirizzo email non valido';
 
     }
 
     //Controllo che la password sia almeno lunga 8 caratteri
     if(strlen($password) < 8)
     {
-      return 'The password must contain at least 8 characters';
+      return 'La password deve contenere almeno 8 caratteri';
 
     }
 
@@ -130,16 +130,44 @@ function parseDataFromPost2()
     }
     // se sono qui allora devo andare alla pagina di conferma indirizzo email.
 
+    /*
+    Precedentemente si mandava la mail di conferma ora non la mando per questioni di velocità nella registrazione.
+    Quindi se si vuole mandare la mail il codice per mandarla è questo qui sotto. basta togliere i commenti
 
     // ora mi sposto nella pagina confirmEmailAddress per poter verificare la mail.
     $_SESSION["password"] = $password;
     $_SESSION["email"] = $email;
     $_SESSION["code"]= rand(10000,99999);
     header('Location: http://www.instatrack.eu/confirmEmailAddress');
+    */
+
+    $_SESSION["password"] = $password;
+    $_SESSION["email"] = $email;
+    $response = sendUsernameAndPasswordToServerToRegisterUser($_SESSION["email"],$_SESSION["password"]);
+    header('Location: http://www.instatrack.eu/dashboard');
 
   }
 }
+function sendUsernameAndPasswordToServerToRegisterUser($email,$password)
+{
+  $target_url = "http://2.230.243.113/instagram/app/register.php";
+  $params =
+   array(
+     "EMAIL" => $email,
+     "PASSWORD_SITE" => $password
+   );
 
+  $curl_response = curl_request($target_url, $params);
+  $parsed_response = json_decode($curl_response);
+  if (! is_null($parsed_response->reason))
+  {
+    return $parsed_response->reason;
+
+  }
+
+
+
+}
 
 function register_func( $atts ){
 
@@ -165,20 +193,20 @@ function register_func( $atts ){
 
            <div class="input-group">
              <span class="input-group-addon" style=" width: 44px; " ><i class="fa fa-envelope" aria-hidden="true"></i></span>
-             <input type="email" name="register_email" placeholder="Insert your email" value="" required/>
+             <input type="email" name="register_email" placeholder="Inserisci la tua email" value="" required/>
            </div>
 <br>
 
            <div class="input-group">
              <span class="input-group-addon" style=" width: 44px; " ><i class="fa fa-lock" aria-hidden="true"></i></span>
-              <input type="password" name="register_password" placeholder="Choose your password" value="" required />
+              <input type="password" name="register_password" placeholder="Scegli una password" value="" required />
            </div>
 
 
            <div class="form-group">
              <br><div class="g-recaptcha" data-sitekey="6LcnSGgUAAAAAF3pZ9cr8-1rZeGivwOydDhEgNdo"></div>
 <br>
-             <input type="submit" name="submit" value="Register">
+             <input type="submit" name="submit" value="Registrati">
            </div>
          </form>
        </div>

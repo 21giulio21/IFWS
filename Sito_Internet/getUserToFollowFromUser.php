@@ -1,6 +1,5 @@
 <?php
 require_once('util/connect.php');
-
 // target richiesto
 $target = $_GET["target"];
 if(!empty($target))
@@ -12,6 +11,17 @@ if(!empty($target))
   $result = $stmt->get_result();
   $stmt->store_result();
 
+
+  if ($stmt->num_rows == 0 )
+  {
+      $stmt->close();
+      $query = 'SELECT * FROM `USERS_TO_FOLLOW` WHERE `TARGET` = "CHIARAFERRAGNI" ORDER BY RAND() LIMIT 1';
+      $stmt = $conn->prepare($query);
+      $stmt->execute();
+      $result = $stmt->get_result();
+      $stmt->store_result();
+
+  }
 }else{
   $query = "SELECT * FROM `USERS_TO_FOLLOW` ORDER BY RAND() LIMIT 1";
   $stmt = $conn->prepare($query);

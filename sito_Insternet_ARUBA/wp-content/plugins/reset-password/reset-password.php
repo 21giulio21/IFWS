@@ -26,7 +26,7 @@ function parseDataPost3()
     echo "FFFF ".$_POST["reset_password"];
     if(strlen($_POST["reset_password"])<7)
     {
-      return "The password must contain at least 8 characters";
+      return "La password inserita deve contenere almeno 8 caratteri";
     }
 
     echo "email_reset_password ".$_SESSION["email_reset_password"];
@@ -35,7 +35,9 @@ function parseDataPost3()
     $response = sendToDatabaseNewPassword($_SESSION["email_reset_password"],$_POST["reset_password"]);
     if($response == "OK")
     {
-      echo "Password cambiata";
+      header('Location: http://www.instatrack.eu/e-mail-changed-successfully/');
+
+
     }
   }
 
@@ -56,7 +58,7 @@ function parseDataPost3()
     //Controllo che la mail sia corretta.
     if (!checkIfInputIsEmail($email))
     {
-      return 'Enter a valid email address';
+      return 'Inserisci un indirizzo email valido';
 
     }
 
@@ -104,14 +106,14 @@ function reset_password_function( ){
          $result .='
 
 
-         <h3>Reset your password</h3>
-         <p>To reset your password, enter the email address you use to sign in into instatrack.eu</p>
+         <h3>Reset della password</h3>
+         <p>Per effettuare correttamente il reset della password inserisci l\'indirizzo email che utilizzi per entrare su instatrack.eu.eu</p>
            <form method="post">
 
 
              <div class="input-group">
                <span class="input-group-addon" style=" width: 44px; " ><i class="fa fa-envelope" aria-hidden="true"></i></span>
-               <input type="email" name="reset_email" placeholder="Insert your email" value="" required/>
+               <input type="email" name="reset_email" placeholder="Inserisci la tua email" value="" required/>
              </div>
 
               <br>
@@ -120,7 +122,7 @@ function reset_password_function( ){
 
              <div class="form-group">
                <br><div class="g-recaptcha" data-sitekey="6LcnSGgUAAAAAF3pZ9cr8-1rZeGivwOydDhEgNdo"></div><br>
-               <input type="submit" name="submit" value="Get Reset Link">
+               <input type="submit" name="submit" value="Ottieni un Reset Link">
              </div>
            </form>
          </div>
@@ -166,7 +168,7 @@ function enter_new_password(){
 
           <div class="input-group">
             <span class="input-group-addon" style=" width: 44px; " ><i class="fa fa-lock" aria-hidden="true"></i></span>
-            <input type="password" name="reset_password" placeholder="Insert your new password" value="" required/>
+            <input type="password" name="reset_password" placeholder="Inserisci la tua nuova password" value="" required/>
           </div>
 
            <br>
@@ -175,7 +177,7 @@ function enter_new_password(){
 
           <div class="form-group">
             <br><div class="g-recaptcha" data-sitekey="6LcnSGgUAAAAAF3pZ9cr8-1rZeGivwOydDhEgNdo"></div><br>
-            <input type="submit" name="submit" value="Get Reset Link">
+            <input type="submit" name="submit" value="Ottieni il reset Link">
           </div>
         </form>
       </div>

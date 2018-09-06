@@ -25,9 +25,6 @@ if( !isset($_POST["EMAIL"]) || !isset($_POST["PASSWORD_SITE"]) )
 $email = $_POST["EMAIL"];
 $password_site = $_POST["PASSWORD_SITE"];
 
-
-
-
 // Controllo che ci sia un utente con queste credenziali.
 $query = "SELECT * FROM `REGISTERED_USERS_FROM_WEBSITE` WHERE `EMAIL` = ? AND `PASSWORD_SITE` = ? ";
 $stmt = $conn->prepare($query);

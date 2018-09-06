@@ -22,8 +22,17 @@ if(isset($_POST["action"], $_POST["parameters"])) {
       $target_address = "http://2.230.243.113/instagram/app/updateLike.php";
       print_r(curl_request($target_address, $_POST["parameters"]));
       break;
+    case "CHOOSE-CATEGORY":
+    $target_address = "http://2.230.243.113/instagram/app/updateCategoryFromUsername.php";
+    print_r(curl_request($target_address, $_POST["parameters"]));
+
+    break;
     case 'ADD_INSTAGRAM_ACCOUNT':
+    /* TOLGI IL COMMENTO A QUESTO CODICE SE VUOI PRIMA FARE IL LOGIN SU INSTAGRAM PER CONTROLLARE LE CREDENZIALI
+
+
       //Faccio per prima il login per vedere se i dati dell nuovo utente sono corretti, poi lo inserisco dentro al mio server
+
 
       $response_login = json_decode(login($_POST['parameters']['USERNAME'],$_POST['parameters']['PASSWORD_INSTAGRAM']));
       // se login torna: '{ "success":"failed", "reason":"Username already in use" }' allora non devo proseguire
@@ -32,9 +41,16 @@ if(isset($_POST["action"], $_POST["parameters"])) {
         // allora inserisco l'utente nel mio database
         $target_address = "http://2.230.243.113/instagram/app/addInstargamCredentialsIntoREGISTERED_USERS.php";
         $_POST['parameters']['EMAIL']  = $_SESSION["email"] ;
-        print_r(curl_request($target_address, $_POST["parameters"]));
+        curl_request($target_address, $_POST["parameters"]);
         break;
-      }
+      }*/
+
+      // inserisco l'utente forzato senza login
+      $target_address = "http://2.230.243.113/instagram/app/addInstargamCredentialsIntoREGISTERED_USERS.php";
+      $_POST['parameters']['EMAIL']  = $_SESSION["email"] ;
+      curl_request($target_address, $_POST["parameters"]);
+
+
       break;
     case 'RENEW-SUBSCRIPTION':
       $target_url = "http://2.230.243.113/instagram/app/updateTEMPO_FINE_ISCRIZIONE.php";

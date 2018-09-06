@@ -20,13 +20,15 @@ username = str(sys.argv[1])
 password = str(sys.argv[2])
 target = str(sys.argv[3])
 ustenti_da_cui_prendere_followers = str(sys.argv[4]).split(',')
+
+
+
 print("Prendo followers fa questi username")
 for i in ustenti_da_cui_prendere_followers:
     print(i)
 
 print("Inizio lo script con username: " + username +" password " + password+ " target: " + target+ " utenti da cui prendere followers: " + str(ustenti_da_cui_prendere_followers)  )
-L.login(username, password)  # (login)
-
+L.login(user=username,passwd=password)
 i = 0
 followers_totali = 0
 media = 0
@@ -47,11 +49,15 @@ for user in ustenti_da_cui_prendere_followers:
         followees = follower.followees
         mediacount = follower.mediacount
         is_private = follower.is_private
+        if target == "CHIARAFERRAGNI":
+            response = requests.get("http://aabbccddee.altervista.org/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
+            print("Inserisco in aabbccddee")
 
-        response = requests.get(
-            "http://2.230.243.113/instagram/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s&TYPE=%s&FOLLOWER=%s&FOLLOWEE=%s&MEDIA=%s&PRIVATE=%d" % (
-            str(follower.userid), str(follower.username), target, '', followers, followees, mediacount,
-            int(is_private)))
+        else:
+            response = requests.get(
+                "http://altridatabase.altervista.org/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s" % (
+                str(follower.userid), str(follower.username), target))
+            print("Inserisco in altridatabase")
 
         i += 1
         print(response.content)

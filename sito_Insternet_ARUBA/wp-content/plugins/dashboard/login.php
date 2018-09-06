@@ -1,7 +1,6 @@
 <?php
 
 
-
 function login($username,$password)
 {
   $ch = curl_init();
@@ -30,8 +29,8 @@ function login($username,$password)
   curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
   $result = curl_exec($ch);
-
-  echo "<script></script>";
+  print_r($result);
+//Se non posso loggarmi torna: {"authenticated": false, "user": true, "status": "ok"}
 
   if (curl_errno($ch)) {
       echo 'Error:' . curl_error($ch);
@@ -40,35 +39,39 @@ function login($username,$password)
 /*
 Da qui parsiamo il ritorno della curl.
 Nel caso sia andata a buon fine: {"authenticated": true, "user": true, "userId": "819693525", "oneTapPrompt": false, "status": "ok"}
+Nel caso non sia andato a buon fine: {"authenticated": false, "user": true, "status": "ok"}
+Nel caso in cui ho un checpoint: {"message": "checkpoint_required", "checkpoint_url": "/challenge/5533752318/qPy0tI3duD/", "lock": false, "status": "fail"}
+
+In tutti gli altri casi devo dire che c'è il checkpoint
+
 Quindi cerco di capire quando authenticated è true.
 */
 
-  $obj = json_decode($result);
-
-/*
-La variabile $authenticated è 1 solamente se "authenticated": true altrimenti non esce nulla scritto.
-*/
-
-  $authenticated = $obj->{'authenticated'};
-  $return = array();
-  if($authenticated == '1')
+  if(strpos($result, '"authenticated": true'))
   {
-    // Torno success perche le credenziali sono corrette.
     $return["success"] = "success";
     return json_encode($return);
 
-  }else{
-
-    $return["success"] = "success";
+  }else if(strpos($result, '"authenticated": false'))
+  {
+    $return["success"] = "unsuccess";
     $return["reason"] = "Credentials not valid";
 
+    return json_encode($return);
+  }else
+  {
+    $return["success"] = "success";
+    $return["reason"] = "checkpoint_required";
     return json_encode($return);
 
   }
 
 
-
 }
+
+
+
+
 
 
 

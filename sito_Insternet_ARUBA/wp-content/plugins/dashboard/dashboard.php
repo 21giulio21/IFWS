@@ -38,21 +38,25 @@ function dashboard_func( $atts ){
     $result .= '<br><br>
       <div class="row" style="margin-bottom:30px;">
         <div class="col-lg-7">
-          <h1 style="margin:0">Hi ' . $_SESSION["email"] . '</h1>
+          <h1 style="margin:0">Ciao ' . $_SESSION["email"] . '</h1>
         </div>
         <div class="col-lg-5">
         <button type="button" id="toggle-account-box" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add account
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Aggiungi account
+        </button>
+
+        <button type="button" id="funzionamento" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Come funziona?
         </button>
 
         <button type="button" id="button-rinnova" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Update Subscription
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Rinnova account
         </button>
 
         </div>
       </div>
     ';
-    $category = getTargetFromDatabase();
+
     $arrayUtentiInstagram = getInstagramProfilesFromEmail($_SESSION["email"]);
 
     $instagram_linked_accounts = array();
@@ -70,8 +74,8 @@ function dashboard_func( $atts ){
     if(empty($instagram_linked_accounts))
     {
       $result .= '<div align="center" style="margin-button:100px; height:200px; background-color: #D3D3D3; border:1px solid red">
-                    <h1>No accounts available</h1>
-                    <p>Please add a new Instagram account.</p>
+                    <h1>Nessun account Instagram collegato</h1>
+                    <p>Aggiungi un account Instagram.</p>
                   </div>';
 
 
@@ -141,8 +145,8 @@ function dashboard_func( $atts ){
       $result .= '
           <tr>
             <td>
-              <a href="https://www.instagram.com/'.$instagram_account_details[0].'" target="_blank">
-                @'.$instagram_account_details[0].'
+              <a  href="https://www.instagram.com/'.$instagram_account_details[0].'" target="_blank">
+                <p id="username">'.$instagram_account_details[0].'</p>
               </a>
               <a href="https://www.instatrack.eu/dashboard?username='.$instagram_account_details[0].'" style="color:red; font-size: 15px" >Remove</a>
             </td>
@@ -166,8 +170,8 @@ function dashboard_func( $atts ){
             </td>
 
             <td>
-              <select>
-                '.$category.'
+              <select id="box-category">
+                '.getTargetFromDatabase($instagram_account_details[0]).'
               </select>
             </td>
 
@@ -192,17 +196,32 @@ function dashboard_func( $atts ){
 
 
 add_shortcode( 'dashboard', 'dashboard_func' );
-
-
-
-function getTargetFromDatabase()
+function getTargetFromDatabase($username)
 {
-  $target_url = "http://2.230.243.113/instagram/app/getCategory.php";
-  $params = array();
+    $params = array(
+      "USERNAME" => $username
+    );
+  //Per prima inserisco la catogoria scelta dall'utente in modo che sia visibile sulla select a destra per prima la categoria che preferisce
+  $target_url ="http://2.230.243.113/instagram/app/getCategoryFromUsername.php";
 
   $curl_response = curl_request2($target_url, $params)or die("Non riesco a fare la curl");
   $parsed_response = json_decode($curl_response);
   $return_string = "";
+
+  // Attraverso questo ciclo inserisco come primo dato della select quello scelto dall'utente.
+  foreach ($parsed_response as $target) {
+    $return_string = $return_string ."<option value=\"{$target->TARGET}\">{$target->TARGET}</option>";
+
+  }
+
+
+
+  $target_url = "http://2.230.243.113/instagram/app/getCategory.php";
+
+
+  $curl_response = curl_request2($target_url, $params)or die("Non riesco a fare la curl");
+  $parsed_response = json_decode($curl_response);
+
   foreach ($parsed_response as $target) {
     $return_string = $return_string ."<option value=\"{$target->CATEGORY}\">{$target->CATEGORY}</option>";
 
@@ -269,13 +288,16 @@ function process_post() {
 
 }
 
+/*
+Questa funzione permette di far vedere il pupop per inserire un nuovo account
+*/
 add_action( 'init', 'process_post' );
 function custom_code_footer_function() {
     echo '
     <div id="new-account-box">
       <div>
         <div class="upper-bar">
-          Aggiungi un nuovo account Instagram
+          Aggiungi un account Instagram
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <div class="input-group">
@@ -289,11 +311,27 @@ function custom_code_footer_function() {
         <h3 id="errore-paragrafo" style="color: red;"  align="center" ></h3>
         <div id="box-loader" class="loader"></div>
         <br>
-        <button id="new-account">Inserisci nuovo account</button>
+        <button id="new-account">Continua</button>
       </div>
     </div>';
 }
 add_action( 'wp_footer', 'custom_code_footer_function' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ////////////////////MENU per il plus
 
@@ -388,6 +426,21 @@ function getInstagramProfilesFromEmail($email){
   $curl_response = curl_request2($target_url, $params);
   $parsed_response = json_decode($curl_response);
   return $parsed_response;
+
+}
+
+// QUesta funzione permette di aprire una pagina che nel caso sia avvenuto correttamente l'aggiunta di un account
+// Instagram spiega cosa fa Instatrack, in particolare che fa 250 richieste di FOllow e Unfollow
+add_shortcode( 'come_funziona', 'come_funziona_function' );
+function come_funziona_function( ){
+session_start();
+
+}
+
+// QUesta funzione permette di aprire una pagina che spiega cosa fa Instatrack, in particolare che fa 250 richieste di FOllow e Unfollow
+add_shortcode( 'funzionamento', 'funzionamento_function' );
+function funzionamento_function( ){
+session_start();
 
 }
 

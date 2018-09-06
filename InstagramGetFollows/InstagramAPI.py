@@ -242,7 +242,16 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 #prendo come input un numero random da 1 al numero massimo di persone che ho nel database di persone che posso
 #seguire e facci ola richiesta pert farmene tornare 1 a caso
 def getUserToFollwFromTarget(target):
-    url = "http://2.230.243.113/instagram/getUserToFollowFromUser.php?target=" + str(target)
+    #Se il target è CHIARAFERRAGNI allora devo andare a interrogare il server: aabbccddee.altervista.org altrimenti altridatabase.altervista.org
+
+    target_chiara_ferragni = "ANIMALS ARTS DESIGN DJ FASHION FOOD GENERAL INFLUENCER LIFESTYLE NATURE SPORT TECHNOLOGY TRIP CHIARAFERRAGNI"
+    if target_chiara_ferragni.__contains__(target):
+        url = "http://www.aabbccddee.altervista.org/getUserToFollowFromUser.php?target=" + str(target)
+        print("Mando richiesta al target CHIARAFERRAGNI")
+    else:
+        print("Mando una richiesta al target: " + str(target))
+        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUser.php?target=" + str(target)
+
     return json.loads(requests.get(url).content)
 
 #Ritorna quanti siano gli utenti registrati da quel thread
@@ -360,7 +369,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
         #Controllo se la risposta contiene message
         if 'message' in content_request_JSON:
             message = str(content_request_JSON["message"]).upper()
-            if message == "UNAUTHORIZED":
+            if message == "selectUserFromDatabaseAndThread":
                 print("L'utente "+ username+" ha cambiato password")
                 updatePasswordErrataAndProcessing(username, 1)
 
