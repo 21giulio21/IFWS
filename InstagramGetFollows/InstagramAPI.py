@@ -2,10 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import base64
+from email.mime.text import MIMEText
+
 import requests
 import json
 import itertools
 import random
+import smtplib
+from email.mime.multipart import MIMEMultipart
 
 
 
@@ -188,12 +192,18 @@ def login(username,password):
 
 #Questa funzione viene chiamata nel momento in cui un utente appena inserito ha sbagliato la password di instagram
 #in particolare pre prima mette PASSWORD_SBAGLIATA a 1 nel database poi merre PROCESSING a 0 cosi lato app se ne accorge
-def updatePasswordErrataAndProcessing(username,passwordErrata):
+def updatePasswordErrataAndProcessing(username,passwordErrata,email):
     updateSctiptActive(username,0)
     url = "http://2.230.243.113/instagram/updatePasswordErrata.php?username=" + username + "&password_errata=" + str(
         passwordErrata)
     requests.get(url)
     updateProcessing(username,0)
+
+    #MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
+    print("Mando la mail a " + email + " per comunicare che la password Instagram è errata")
+    msg = "Ciao " + username + ",\n\nLa password Instagram sul tuo account è errata, collegati al sito www.instatrack.eu per reinserire la password corretta!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
+    subject = "Instatrack.eu - Password Instagram Errata"
+    sendMailToUser(email, msg, subject)
 
 def updateProcessing(username,value):
     url = "http://2.230.243.113/instagram/updateProcessing.php?username=" + username + "&processing=" + str(value)
@@ -244,13 +254,15 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 def getUserToFollwFromTarget(target):
     #Se il target è CHIARAFERRAGNI allora devo andare a interrogare il server: aabbccddee.altervista.org altrimenti altridatabase.altervista.org
 
-    target_chiara_ferragni = "ANIMALS ARTS DESIGN DJ FASHION FOOD GENERAL INFLUENCER LIFESTYLE NATURE SPORT TECHNOLOGY TRIP CHIARAFERRAGNI"
-    if target_chiara_ferragni.__contains__(target):
-        url = "http://www.aabbccddee.altervista.org/getUserToFollowFromUser.php?target=" + str(target)
-        print("Mando richiesta al target CHIARAFERRAGNI")
+    target_italiano = "ANIMALS ARTS DESIGN DJ FASHION FOOD GENERAL INFLUENCER LIFESTYLE NATURE SPORT TECHNOLOGY TRIP ITALIANO"
+    if target_italiano.__contains__(target):
+        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUser.php?target=ITALIANO"
+        print("Mando richiesta al target ITALIANO")
     else:
         print("Mando una richiesta al target: " + str(target))
         url = "http://www.altridatabase.altervista.org/getUserToFollowFromUser.php?target=" + str(target)
+        print("Mando richiesta al target" + str(target))
+
 
     return json.loads(requests.get(url).content)
 
@@ -335,7 +347,7 @@ def updateDevePagare(username, value):
 #Nella richiesta di Follow {"message": "This action was blocked. Please try again later.", "status": "fail"} -> se devo bloccare per un po di clicli
 #Nella richiesta di FOLLOW se l'utente cambia password e quindi deve risettare i coockie: {"message": "unauthorized", "redirect_url": "/accounts/login/?next=/web/friendships/365506590/follow/", "status": "fail"}
 #Nella richiesta di LIKE se inizia con <!DOCTYPE html> allora non ha potuto mettere like perche la foto era nascosta
-def parse_content_request(content_request, type_request,username,tempo_blocco_se_esce_errore,delta_t):
+def parse_content_request(content_request, type_request,username,tempo_blocco_se_esce_errore,delta_t,email):
 
     if type_request == "LOGIN":
         # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
@@ -349,7 +361,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
         #In questo caso mi sono loggato in maniera corretta.
         if authenticated == "FALSE":
             print("Autenticazione non riuscita")
-            updatePasswordErrataAndProcessing(username,1)
+            updatePasswordErrataAndProcessing(username,1,email)
 
     elif type_request == "FOLLOW-UNFOLLOW":
 
@@ -371,7 +383,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
             message = str(content_request_JSON["message"]).upper()
             if message == "selectUserFromDatabaseAndThread":
                 print("L'utente "+ username+" ha cambiato password")
-                updatePasswordErrataAndProcessing(username, 1)
+                updatePasswordErrataAndProcessing(username, 1,email)
 
     elif type_request == "LIKE":
         if content_request.content.__contains__("<!DOCTYPE html>"):
@@ -379,3 +391,25 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
         else:
             print("Processo l'utente: "+username+" ha messo like alla foto con esito: " + str(content_request.content))
+
+#Questa funzione permette di mandare la mail in caso sia finita la prova o il pacchertto
+def sendMailToUser(mail_to,messaggio,subject):
+    mail_from = "instatrack.eu@gmail.com"
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(mail_from, "21giulio21")
+
+    msg = MIMEMultipart()
+    msg['From'] = mail_from
+    msg['To'] = mail_to
+    msg['Subject'] = subject
+    msg.attach(MIMEText(messaggio, 'plain'))
+    text = msg.as_string()
+
+    #Mando la mail all'utente
+    server.sendmail(mail_from, mail_to, text)
+
+    #Mando la mail anche a me cosi capisco cosa sta sucedendo
+    server.sendmail(mail_from, "21giulio21@gmail.com", messaggio)
+    server.quit()
+

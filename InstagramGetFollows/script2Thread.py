@@ -115,8 +115,7 @@ while True:
         tempo_di_ora = str(time.time())
         tempo_di_ora = tempo_di_ora[:-3]
 
-        if ha_pagato == "0" and len(
-                tempo_iscrizione) > 5:  # Se l'utente non ha pagato e l'ho inserito dal sito internet
+        if ha_pagato == "0" and len(tempo_iscrizione) > 5:  # Se l'utente non ha pagato e l'ho inserito dal sito internet
             if tempo_fine_iscrizione < tempo_di_ora and deve_pagare == "0":  # Se sono passati 3 giorni come prova oppure è passato il tempo per cui ha pagato
                 # Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
                 print("Processo l'utente: " + username + " deve pagare")
@@ -158,8 +157,7 @@ while True:
         tempo_ora = int(time.time())
 
         if int(secondi_ultima_richiesta) + int(delta_t) > tempo_ora:
-            print(
-                "Processo l'utente: " + username + " NON deve mandare richieste perche non e' ancora passato il suo DT")
+            print("Processo l'utente: " + username + " NON deve mandare richieste perche non e' ancora passato il suo DT")
             continue
 
         # Se script_attivo e' 0 allora devo smettere di seguire tutti quelli che sono nell'array di persone che seguo
@@ -359,9 +357,9 @@ while True:
             if len(users_followed_array) == 0:
                 users_followed_string = ""
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
-                content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str,
-                                           cookies_dict['csrftoken'])
-                print("UNFOLLOW " + username_user_to_unfollow + " " + str(content_request.content))
+                content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str,cookies_dict['csrftoken'])
+                print("UNFOLLOW " + username_user_to_unfollow + " " + str(
+                    content_request.content))
 
                 parse_content_request(content_request, 'FOLLOW-UNFOLLOW', username, tempo_blocco_se_esce_errore,
                                       delta_t)

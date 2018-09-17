@@ -12,8 +12,6 @@ if( !isset($_POST["username"]) || !isset($_POST["commenta"]) )
 }
 
 
-
-
 $username = $_POST["username"];
 $commenta = $_POST["commenta"];
 
