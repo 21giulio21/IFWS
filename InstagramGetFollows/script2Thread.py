@@ -6,6 +6,7 @@ import base64
 import time
 import ast
 import random
+from InstagramAPI import sendMailToUser
 from InstagramAPI import updateTempoBlocco
 from InstagramAPI import comment
 from InstagramAPI import update_secondi_ultima_richiesta
@@ -28,6 +29,8 @@ from InstagramAPI import updateSctiptActive
 from InstagramAPI import parse_content_request
 from InstagramAPI import countUserIntoDatabaseFromTread
 from InstagramAPI import selectUserFromDatabaseAndThread
+from InstagramAPI import checkIfYetFollowing
+
 import re
 import sys
 
@@ -41,7 +44,7 @@ number_requests_update_delta_t = 1000
 tempo_blocco_se_esce_errore = 500
 
 #Passo come parametro dello script un tempo ad esmepio 30 in questo modo lo script ogni volta aspetta 3 secondi
-tempo_passato_come_patametro = int(sys.argv[1])
+tempo_passato_come_patametro =  int(sys.argv[1])
 
 #Definisce il pc su cui deve andare
 thread_passato_come_patametro = int(sys.argv[2])
@@ -51,7 +54,7 @@ max_requests = int(sys.argv[3])
 
 while True:
 
-    print("Attendo DT")
+    print("\nAttendo DT")
 
     time.sleep(tempo_passato_come_patametro)
     print("Tempo DT passato, inizio lo script.")
@@ -107,8 +110,11 @@ while True:
         # deve_pagare e' a 1 solo se l'utente non ha pagato.
         target = str(user[0]['TARGET'])
 
+        #mail dell'utente
+        email = str(user[0]['EMAIL'])
 
-        print("Processo l'utente: " + username)
+
+        print("Processo l'utente: " + username + " che ha una mail " + email)
 
 
         # Controllo il tempo_iscrizione, se sono passati 3 giorni allora deve pagare ossia impostare: DEVE_PAGARE a 1
@@ -119,8 +125,18 @@ while True:
             if tempo_fine_iscrizione < tempo_di_ora and deve_pagare == "0":  # Se sono passati 3 giorni come prova oppure è passato il tempo per cui ha pagato
                 # Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
                 print("Processo l'utente: " + username + " deve pagare")
-                updateSctiptActive(username, 0)
-                updateDevePagare(username, 1)
+                updateSctiptActive(username, 0) #Metto sctipt_attivo = 0
+                updateDevePagare(username, 1) # Imposto che deve pagare
+
+                #se è stata settata la mail allora manda la mail con scritto che deve poagare
+                if len(email) > 3:
+                    print("Mando la mail all'utente " +str(username) + " per avvertire che bisogna pagare")
+
+                    # mando la mail che l'utente deve pagare, preparo la mail e la invio, invio anche una copia al miop
+                    #Indirizzo cosi so sempre cosa accade!
+                    msg = "Ciao " + username + ",\n\nL'abbonamento sul tuo account e' staduto, collegati al sito www.instatrack.eu per scegliere il pacchetto più adatto a te!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
+                    subject = "Instatrack.eu - Fine Prova"
+                    sendMailToUser(email,msg,subject)
 
         # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
         if password_errata == '1':
@@ -134,17 +150,17 @@ while True:
         # facendo il login
         if len(cookie) == 0:
             content_request = login(username, password_instagram)
-            parse_content_request(content_request, "LOGIN", username, tempo_blocco_se_esce_errore, delta_t)
+            parse_content_request(content_request, "LOGIN", username, tempo_blocco_se_esce_errore, delta_t,email)
             cookies_dict = content_request.cookies.get_dict()
 
             # Salvo la variabile cookies_dict sul server
             seveCookieIntoServer(username, cookies_dict)
         else:
-            cookies_dict = ast.literal_eval(base64.b64decode(str(cookie)))
+            temp = base64.b64decode(str(cookie))
+            cookies_dict = ast.literal_eval(temp)
 
         # Sia se ho ottenuto i cookie da instagram o dal mio server setto bene la variabile cookies_str
         cookies_str = ''.join(key + "=" + str(cookies_dict[key]) + "; " for key in cookies_dict)
-
         # Controllo che deve fermarsi se ho un tempo di blocco attivo, in particolare se ho tempo_attesa_blocco > 0 devo continuare  senza processarlo
         if int(tempo_attesa_blocco) > 0:
             tempo_attesa_blocco = int(tempo_attesa_blocco) - 1
@@ -197,7 +213,7 @@ while True:
                     content_request.content))
 
                 parse_content_request(content_request, "FOLLOW-UNFOLLOW", username, tempo_blocco_se_esce_errore,
-                                      delta_t)
+                                      delta_t,email)
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
@@ -216,7 +232,7 @@ while True:
                         content_request.content))
 
                 parse_content_request(content_request, "FOLLOW-UNFOLLOW", username, tempo_blocco_se_esce_errore,
-                                      delta_t)
+                                      delta_t,email)
 
                 update_secondi_ultima_richiesta(username, int(time.time()))
                 updateUserFollowed(users_followed_string, username)
@@ -274,9 +290,14 @@ while True:
             # dell'utente che sto processando. Questo è realizzato dal php
 
             user_to_follow = getUserToFollwFromTarget(target)
-            id_user_to_follow = str(user_to_follow[0]["ID"])
+            id_user_to_follow = str(user_to_follow[0]["ID_INSTATRAM"])
             username_user_to_follow = str(user_to_follow[0]["USERNAME"])
             target = str(user_to_follow[0]["TARGET"])
+
+            #Controllo se la persona è gia precedentemente stata seguita
+            if checkIfYetFollowing(username_user_to_follow,cookies_str) == True:
+                print("L'utente " + str(username) + " seguiva gia lo username: " + str(username_user_to_follow))
+                continue
 
 
             # Seguo la persona che ho scaricato e gli metto un like alla prima foto
@@ -287,7 +308,7 @@ while True:
 
             print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request.content) + " TARGET DELL?UTENTE CHE SEGUO: " + target )
 
-            parse_content_request(contet_request, 'FOLLOW-UNFOLLOW', username, tempo_blocco_se_esce_errore, delta_t)
+            parse_content_request(contet_request, 'FOLLOW-UNFOLLOW', username, tempo_blocco_se_esce_errore, delta_t,email)
 
             # Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
             # se il profilo e' publico funziona bene
@@ -297,15 +318,18 @@ while True:
                 # tale da aumentare il nuemro di richiueste di follow
                 random_number = random.randint(1, 4)
 
+                ''' Per far andare l'auto like devo solo scommentare questo
+
                 # Solamente se random_number è 2 allora mando una richiesta di like, in questo modo sono sicuro che
                 # ho la probabilità di 1/4 di mettere like. quindi non dovrebbe bloccarlo.
                 if random_number == 2:
                     print("Processo l'utente: " + username + " mette like  alla foto di " + username_user_to_follow)
                     content_request = richiestaLike(username_user_to_follow, cookies_str, cookies_dict['csrftoken'])
-                    parse_content_request(content_request, 'LIKE', username, tempo_blocco_se_esce_errore, delta_t)
+                    parse_content_request(content_request, 'LIKE', username, tempo_blocco_se_esce_errore, delta_t,email)
                 else:
                     print("Processo l'utente: " + username + " non mette il like, forse la prossima volta ?")
-
+                
+                '''
             # Metto un commento all'ultima foto con probabilità 1/4 in questo modo non verrà bloccato l'account
             if commenta == "1":
                 # Faccio in modo che con probabilità 1/4 commenta quindi non verra messo sempre, in modo
@@ -362,7 +386,7 @@ while True:
                     content_request.content))
 
                 parse_content_request(content_request, 'FOLLOW-UNFOLLOW', username, tempo_blocco_se_esce_errore,
-                                      delta_t)
+                                      delta_t,email)
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))
@@ -378,7 +402,7 @@ while True:
                                            cookies_dict['csrftoken'])
 
                 parse_content_request(content_request, "FOLLOW-UNFOLLOW", username, tempo_blocco_se_esce_errore,
-                                      delta_t)
+                                      delta_t,email)
 
                 # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
                 update_secondi_ultima_richiesta(username, int(time.time()))

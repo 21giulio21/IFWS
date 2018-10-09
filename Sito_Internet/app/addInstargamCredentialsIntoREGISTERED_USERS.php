@@ -21,6 +21,7 @@ if(!isset($_POST["USERNAME"]) || !isset($_POST["PASSWORD_INSTAGRAM"]) || !isset(
 $username_instagram = $_POST["USERNAME"];
 $password_instagram = $_POST["PASSWORD_INSTAGRAM"];
 $email = $_POST["EMAIL"];
+$get_like = "0";
 
 
 
@@ -54,11 +55,11 @@ if ($stmt->num_rows == 1 )
   (`ID`, `USERNAME`, `COOKIES`, `SCRIPT_ACTIVE`, `FOLLOW_UNFOLLOW`,
   `USERS_FOLLOWED`, `EMAIL`, `PASSWORD_INSTAGRAM`, `DELTA_T`,
   `SECONDI_ULTIMA_RICHIESTA`, `NUMBER_REQUESTS_DONE`, `TEMPO_ATTESA_BLOCCO`,
-  `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`, `SET_LIKE`, `DEVE_PAGARE`,
+  `PASSWORD_ERRATA`, `TARGET`, `COMMENTA`, `SET_LIKE`,`GET_LIKE`, `DEVE_PAGARE`,
   `TEMPO_ISCRIZIONE`, `TEMPO_FINE_ISCRIZIONE`, `HA_PAGATO`) VALUES
-  ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', 'GENERAL', '0', '0', '0', ? , ? , '0');";
+  ('', ? , '', '0', '1', '', ? , ? , '200', '0', '0', '0', '0', 'GENERAL', '0', '0',?, '0', ? , ? , '0');";
   $stmt = $conn->prepare($query)or die("Errore nella prepare");
-  $stmt->bind_param("sssss",$username_instagram,$email,$password_instagram,$secondi,$data_fine_iscrizione)or die("Errore nella bind_param");
+  $stmt->bind_param("ssssss",$username_instagram,$email,$password_instagram,$get_like,$secondi,$data_fine_iscrizione)or die("Errore nella bind_param");
   $stmt->execute()or die("Errore nella execute nel file addInstagra... riga 58");
   $stmt->store_result()or die("Errore nella store_result");
 

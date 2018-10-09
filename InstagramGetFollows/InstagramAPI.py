@@ -84,7 +84,7 @@ def richiestaLike(username, cookies, csrf):
         'authority': 'www.instagram.com',
         'content-length': '0',
     }
-    return requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf)+'/like/', headers=headers)
+    return requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username, cookies, csrf) +'/like/', headers=headers)
 
 
 
@@ -201,9 +201,40 @@ def updatePasswordErrataAndProcessing(username,passwordErrata,email):
 
     #MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
     print("Mando la mail a " + email + " per comunicare che la password Instagram è errata")
-    msg = "Ciao " + username + ",\n\nLa password Instagram sul tuo account è errata, collegati al sito www.instatrack.eu per reinserire la password corretta!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
+    msg = "Ciao " + username + ",\n\nLa password Instagram sul tuo account e' errata, collegati al sito www.instatrack.eu per reinserire la password corretta!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
     subject = "Instatrack.eu - Password Instagram Errata"
     sendMailToUser(email, msg, subject)
+
+
+#QUesta funzione prmette di capire se gia precedentemente seguivo una persona.
+#Se gia seguivo una persona allora non rimando la richiesta
+#QUesta funziona torna: true nel caso in cui precedentemente seguivo gia la persona
+def checkIfYetFollowing(username_user_to_follow,cookies):
+
+    headers = {
+        'authority': 'www.instagram.com',
+        'cache-control': 'max-age=0',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/69.0.3497.81 Chrome/69.0.3497.81 Safari/537.36',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'cookie': cookies
+    }
+
+    params = (
+        ('__a', '1'),
+    )
+
+    ritorno = requests.get('https://www.instagram.com/'+username_user_to_follow+'/', headers=headers, params=params).content
+
+    #ritorno è ugiale a tru o fals nel caso in cui precedentemente seguivo gia o meno l'utente
+    ritorno = ritorno[ritorno.find("followed_by_viewer\":") + len("followed_by_viewer\":") : ritorno.find("followed_by_viewer\":") + len("followed_by_viewer\":") + 4 ]
+    if ritorno.__contains__("tru"):
+        return True
+    else:
+        return False
+
 
 def updateProcessing(username,value):
     url = "http://2.230.243.113/instagram/updateProcessing.php?username=" + username + "&processing=" + str(value)
@@ -254,22 +285,20 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 def getUserToFollwFromTarget(target):
     #Se il target è CHIARAFERRAGNI allora devo andare a interrogare il server: aabbccddee.altervista.org altrimenti altridatabase.altervista.org
 
-    target_italiano = "ANIMALS ARTS DESIGN DJ FASHION FOOD GENERAL INFLUENCER LIFESTYLE NATURE SPORT TECHNOLOGY TRIP ITALIANO"
-    if target_italiano.__contains__(target):
-        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUser.php?target=ITALIANO"
-        print("Mando richiesta al target ITALIANO")
-    else:
-        print("Mando una richiesta al target: " + str(target))
-        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUser.php?target=" + str(target)
-        print("Mando richiesta al target" + str(target))
+
+    print("Mando una richiesta al target: " + str(target))
+    url = "http://www.altridatabase.altervista.org/getUserToFollowFromUTENTI_DA_SEGUIRE.php?target=" + str(target)
 
 
     return json.loads(requests.get(url).content)
+
+
 
 #Ritorna quanti siano gli utenti registrati da quel thread
 def countUserIntoDatabaseFromTread(thread):
     url = "http://2.230.243.113/instagram/getCountUsersFromThread.php?THREAD="+str(thread)
     return requests.get(url).content
+
 
 #Ritorna quanti siano gli utenti registrati totali
 def countUserIntoDatabase():
@@ -362,6 +391,12 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
         if authenticated == "FALSE":
             print("Autenticazione non riuscita")
             updatePasswordErrataAndProcessing(username,1,email)
+        else:
+            # MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
+            print("Mando la mail a " + email + " per comunicare che da oggi iniziano i 3 giorni di prova")
+            msg = "Ciao " + username + ",\n\nLa da oggi iniziano i 3 giorni di prova gratuiti!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
+            subject = "Instatrack.eu - Inizio Prova Gratuita"
+            sendMailToUser(email, msg, subject)
 
     elif type_request == "FOLLOW-UNFOLLOW":
 
@@ -394,22 +429,6 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
 #Questa funzione permette di mandare la mail in caso sia finita la prova o il pacchertto
 def sendMailToUser(mail_to,messaggio,subject):
-    mail_from = "instatrack.eu@gmail.com"
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(mail_from, "21giulio21")
-
-    msg = MIMEMultipart()
-    msg['From'] = mail_from
-    msg['To'] = mail_to
-    msg['Subject'] = subject
-    msg.attach(MIMEText(messaggio, 'plain'))
-    text = msg.as_string()
-
-    #Mando la mail all'utente
-    server.sendmail(mail_from, mail_to, text)
-
-    #Mando la mail anche a me cosi capisco cosa sta sucedendo
-    server.sendmail(mail_from, "21giulio21@gmail.com", messaggio)
-    server.quit()
+    response = requests.get("http://2.230.243.113/instagram/send_MAIL/insert_mail_into_database.php?MESSAGGIO="+messaggio+"&EMAIL="+mail_to+"&OGGETTO="+subject)
+    print(response.content)
 

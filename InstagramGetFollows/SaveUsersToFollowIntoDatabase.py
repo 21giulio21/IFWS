@@ -49,15 +49,9 @@ for user in ustenti_da_cui_prendere_followers:
         followees = follower.followees
         mediacount = follower.mediacount
         is_private = follower.is_private
-        if target == "CHIARAFERRAGNI":
-            response = requests.get("http://aabbccddee.altervista.org/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
-            print("Inserisco in aabbccddee")
 
-        else:
-            response = requests.get(
-                "http://altridatabase.altervista.org/saveUserIntoDatabaseUSER_TO_FOLLOW.php?ID=%s&USERNAME=%s&TARGET=%s" % (
-                str(follower.userid), str(follower.username), target))
-            print("Inserisco in altridatabase")
+        response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
+        print("Inserisco in altridatabase con Target " + str(target))
 
         i += 1
         print(response.content)

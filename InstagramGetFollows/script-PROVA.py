@@ -42,13 +42,13 @@ number_requests_update_delta_t = 1000
 tempo_blocco_se_esce_errore = 500
 
 #Passo come parametro dello script un tempo ad esmepio 30 in questo modo lo script ogni volta aspetta 3 secondi
-tempo_passato_come_patametro =  5 #int(sys.argv[1])
+tempo_passato_come_patametro =  5
 
 #Definisce il pc su cui deve andare
-thread_passato_come_patametro =  10 #int(sys.argv[2])
+thread_passato_come_patametro = 0
 
 #Definisco il numero massimo di richieste che devo fare
-max_requests = 250 #int(sys.argv[3])
+max_requests = 200
 
 while True:
 
@@ -132,7 +132,7 @@ while True:
 
                     # mando la mail che l'utente deve pagare, preparo la mail e la invio, invio anche una copia al miop
                     #Indirizzo cosi so sempre cosa accade!
-                    msg = "Ciao " + username + ",\n\nLa prova sul tuo account è staduta, collegati al sito www.instatrack.eu per scegliere il pacchetto più adatto a te!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
+                    msg = "Ciao " + username + ",\n\nL'abbonamento sul tuo account è staduto, collegati al sito www.instatrack.eu per scegliere il pacchetto più adatto a te!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
                     subject = "Instatrack.eu - Fine Prova"
                     sendMailToUser(email,msg,subject)
 
@@ -208,7 +208,7 @@ while True:
                                            cookies_dict['csrftoken'])
                 print("Mando una richiesta di UNFOLLOW a " + str(
                     username_user_to_unfollow) + " per eliminare tutti gli utenti che ho seguito con lo script, " + str(
-                    content_request.content))
+                    content_request))
 
                 parse_content_request(content_request, "FOLLOW-UNFOLLOW", username, tempo_blocco_se_esce_errore,
                                       delta_t,email)
@@ -299,7 +299,7 @@ while True:
             # In questo punto aumento la variabile:  number_requests_done di 1 e mando al server il nuovo valore di number_requests_done
             updateNumberRequestsDone(username, str(int(number_requests_done) + 1))
 
-            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request.content) + " TARGET DELL?UTENTE CHE SEGUO: " + target )
+            print("Richiesta di FOLLOW mandata a:  " + username_user_to_follow + " " + str(contet_request.content) + " TARGET DELL UTENTE CHE SEGUO: " + target )
 
             parse_content_request(contet_request, 'FOLLOW-UNFOLLOW', username, tempo_blocco_se_esce_errore, delta_t,email)
 

@@ -39,7 +39,7 @@ echo "TEMPO FINE ISCRIZIONE DA SETTARE ".$TEMPO_FINE_ISCRIZIONE;
 
 
 
-$query = "UPDATE `REGISTERED_USERS` SET `TEMPO_FINE_ISCRIZIONE` = ?, `DEVE_PAGARE` = 0 WHERE `REGISTERED_USERS`.`USERNAME` = ? ";
+$query = "UPDATE `REGISTERED_USERS` SET `SCRIPT_ACTIVE` = 1 ,`TEMPO_FINE_ISCRIZIONE` = ?, `DEVE_PAGARE` = 0 WHERE `REGISTERED_USERS`.`USERNAME` = ? ";
 $stmt = $conn->prepare($query)or die("Errore nella prepare");
 $stmt->bind_param("is",$TEMPO_FINE_ISCRIZIONE,$username)or die("Errore nella bind_param");
 $stmt->execute()or die("Errore nella execute");
