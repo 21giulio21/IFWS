@@ -285,9 +285,12 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 def getUserToFollwFromTarget(target):
     #Se il target è CHIARAFERRAGNI allora devo andare a interrogare il server: aabbccddee.altervista.org altrimenti altridatabase.altervista.org
 
-
-    print("Mando una richiesta al target: " + str(target))
-    url = "http://www.altridatabase.altervista.org/getUserToFollowFromUTENTI_DA_SEGUIRE.php?target=" + str(target)
+    if target == "HARDSTYLE":
+        print("Mando una richiesta al target: " + str(target) + " cambiando Database")
+        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUser.php?target=" + str(target)
+    else:
+        print("Mando una richiesta al target: " + str(target))
+        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUTENTI_DA_SEGUIRE.php?target=" + str(target)
 
 
     return json.loads(requests.get(url).content)

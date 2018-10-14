@@ -4,10 +4,10 @@ import instaloader
 import requests
 import time
 
-target = "GENOVA_UNIVERSITARI"
+target = "GENOVA_PALESTRA"
+posizione =  "hifit-genova"
+id_posizione = "480454162"
 
-posizione =  "universita-di-genova-architettura"
-id_posizione = "1003390103140375"
 
 def saveUserAndIdIntoDatabase(id,username):
 
@@ -25,7 +25,7 @@ def geuUsernameFromId(id):
     L = instaloader.Instaloader()
     try:
         profile = instaloader.Profile.from_id(L.context, int(id))
-        print("username: " + profile.username + " id " + str(id))
+        print("username: " + profile.username + " id " + str(id) + " target: "+target + " posizione: "+ posizione)
         saveUserAndIdIntoDatabase(id, profile.username)
 
     except instaloader.exceptions.LoginRequiredException:
@@ -41,7 +41,7 @@ def findUsernameAndId(content):
 
 
 headers = {
-    'cookie': 'csrftoken=CE2VyW7yiDQ7w0mUIcZxwDgAeOtBKHJK; ig_cb=1; shbid=18815; mid=W6psGQAEAAF5riW6zcT8sQriqsly; ds_user_id=819693525; mcd=3; csrftoken=CE2VyW7yiDQ7w0mUIcZxwDgAeOtBKHJK; rur=FRC; sessionid=IGSC7c58080aa928e195fef60c92f0f70010918e8a40cef395630eb98dc0573821d5%3A6r1bFcIxw3AFhiGtR0nU80BjmSmtZaz1%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3AAp1XRAMIbbIDL5jP9K9Tdx1g4Dyi3T9K%3A9438ede6546fdde51d4ab5394491ff9a1e041abca41944a68c98b9a8a9d0978e%22%2C%22last_refreshed%22%3A1539005517.3767206669%7D; shbts=1539005794.4424503; urlgen="{\\"93.41.120.53\\": 12874\\054 \\"37.162.69.104\\": 51207}:1g9ViB:tTEAgroko6Y_XLVNu11Dq2gQW4Y"',
+    'cookie': 'ig_cb=1; shbid=18815; mid=W6psGQAEAAF5riW6zcT8sQriqsly; mcd=3; rur=FRC; csrftoken=9fqTt9iMcoT7Ny8M2Ral5dSnIasl1VVy; ds_user_id=8688326939; sessionid=IGSCf8f0ef554fac890ac2ba2f47be00e15f0cf421903a9dd2e0765ed16f7ec55f20%3ALZCMcH0ob1oTwNYUy0wmQ4w3V40pWoxd%3A%7B%22_auth_user_id%22%3A8688326939%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%228688326939%3A9l8MOiZZP05vgZBw94idyNFu3J2ugcUg%3A24d2ec11b7340b11b74a840c1d81023dba7255069f2baa93b29f208542da4435%22%2C%22last_refreshed%22%3A1539250908.1195034981%7D; urlgen="{\\"2.230.243.113\\": 12874}:1gAXtt:4kAvOKCaZ97eJX-3r0k10Iaox6A"',
     'accept-encoding': 'gzip, deflate, br',
     'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/69.0.3497.81 Chrome/69.0.3497.81 Safari/537.36',
@@ -49,8 +49,9 @@ headers = {
     'referer': 'https://www.instagram.com/explore/locations/'+id_posizione+'/'+posizione+'/',
     'authority': 'www.instagram.com',
     'x-requested-with': 'XMLHttpRequest',
-    'x-instagram-gis': 'e90b5452fbe122df9fd3f5cab4d4cc9c',
+    'x-instagram-gis': '2c4301ef7ff7d551a03c56533d78da7b',
 }
+
 
 params = (
     ('query_hash', '1b84447a4d8b6d6d0426fefb34514485'),
@@ -74,7 +75,7 @@ print(end_cursor)
 
 for i in range(0,1000):
     headers = {
-        'cookie': 'csrftoken=CE2VyW7yiDQ7w0mUIcZxwDgAeOtBKHJK; ig_cb=1; shbid=18815; mid=W6psGQAEAAF5riW6zcT8sQriqsly; ds_user_id=819693525; mcd=3; csrftoken=CE2VyW7yiDQ7w0mUIcZxwDgAeOtBKHJK; rur=FRC; sessionid=IGSC7c58080aa928e195fef60c92f0f70010918e8a40cef395630eb98dc0573821d5%3A6r1bFcIxw3AFhiGtR0nU80BjmSmtZaz1%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3AAp1XRAMIbbIDL5jP9K9Tdx1g4Dyi3T9K%3A9438ede6546fdde51d4ab5394491ff9a1e041abca41944a68c98b9a8a9d0978e%22%2C%22last_refreshed%22%3A1539005517.3767206669%7D; shbts=1539005794.4424503; urlgen="{\\"93.41.120.53\\": 12874\\054 \\"37.162.69.104\\": 51207}:1g9ViB:tTEAgroko6Y_XLVNu11Dq2gQW4Y"',
+        'cookie': 'ig_cb=1; shbid=18815; mid=W6psGQAEAAF5riW6zcT8sQriqsly; mcd=3; rur=FRC; csrftoken=9fqTt9iMcoT7Ny8M2Ral5dSnIasl1VVy; ds_user_id=8688326939; sessionid=IGSCf8f0ef554fac890ac2ba2f47be00e15f0cf421903a9dd2e0765ed16f7ec55f20%3ALZCMcH0ob1oTwNYUy0wmQ4w3V40pWoxd%3A%7B%22_auth_user_id%22%3A8688326939%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%228688326939%3A9l8MOiZZP05vgZBw94idyNFu3J2ugcUg%3A24d2ec11b7340b11b74a840c1d81023dba7255069f2baa93b29f208542da4435%22%2C%22last_refreshed%22%3A1539250908.1195034981%7D; urlgen="{\\"2.230.243.113\\": 12874}:1gAXtt:4kAvOKCaZ97eJX-3r0k10Iaox6A"',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/69.0.3497.81 Chrome/69.0.3497.81 Safari/537.36',
@@ -82,7 +83,7 @@ for i in range(0,1000):
         'referer': 'https://www.instagram.com/explore/locations/' + id_posizione + '/' + posizione + '/',
         'authority': 'www.instagram.com',
         'x-requested-with': 'XMLHttpRequest',
-        'x-instagram-gis': 'e90b5452fbe122df9fd3f5cab4d4cc9c',
+        'x-instagram-gis': '2c4301ef7ff7d551a03c56533d78da7b',
     }
 
     params = (

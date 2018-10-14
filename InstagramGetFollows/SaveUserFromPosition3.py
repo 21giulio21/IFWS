@@ -3,12 +3,12 @@ import sys
 import instaloader
 import requests
 import time
-
+import login from InstagramAPI
 
 
 target = "GENOVA_LICEALI"
-posizione =  "liceo-s-pertini"
-id_posizione = "771601924"
+posizione =  "liceo-classico-c-colombo"
+id_posizione = "13583591"
 
 def saveUserAndIdIntoDatabase(id,username):
 

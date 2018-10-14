@@ -290,7 +290,7 @@ while True:
             # dell'utente che sto processando. Questo è realizzato dal php
 
             user_to_follow = getUserToFollwFromTarget(target)
-            id_user_to_follow = str(user_to_follow[0]["ID_INSTATRAM"])
+            id_user_to_follow = str(user_to_follow[0]["ID"])
             username_user_to_follow = str(user_to_follow[0]["USERNAME"])
             target = str(user_to_follow[0]["TARGET"])
 

@@ -4,6 +4,6 @@
 #stringa del tipo USER1,USER2,USER3....
 while [ true ] ; do
 
-python3 ../InstagramGetFollows/Hastag.py $1
+python3 ../InstagramGetFollows/Hastag.py $1 $2 $3 $4
 done
 
