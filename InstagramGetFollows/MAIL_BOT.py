@@ -10,7 +10,7 @@ import requests
 
 #questa funzione interroga il db e ottenere la prima mail da mandare
 def ottengoMailDalDatabase():
-    url = "http://2.230.243.113/instagram/send_MAIL/get_mail_from_database.php"
+    url = "http://www.elenarosina.com/instatrack/send_MAIL/get_mail_from_database.php"
     return json.loads(requests.get(url).content)
 
 #questa funzione manda la mail all'utente

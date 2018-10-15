@@ -26,7 +26,7 @@ comment_list=[  ["Complimenti","Bravo","Grande"],
 
 
 
-url_get_all_user = "http://2.230.243.113/instagram/getAllUser.php"
+url_get_all_user = "http://www.elenarosina.com/instatrack/instagram/getAllUser.php"
 
 
 # genera un commento a caso usando le parole di comment_list
@@ -194,7 +194,7 @@ def login(username,password):
 #in particolare pre prima mette PASSWORD_SBAGLIATA a 1 nel database poi merre PROCESSING a 0 cosi lato app se ne accorge
 def updatePasswordErrataAndProcessing(username,passwordErrata,email):
     updateSctiptActive(username,0)
-    url = "http://2.230.243.113/instagram/updatePasswordErrata.php?username=" + username + "&password_errata=" + str(
+    url = "http://www.elenarosina.com/instatrack/updatePasswordErrata.php?username=" + username + "&password_errata=" + str(
         passwordErrata)
     requests.get(url)
     updateProcessing(username,0)
@@ -237,11 +237,11 @@ def checkIfYetFollowing(username_user_to_follow,cookies):
 
 
 def updateProcessing(username,value):
-    url = "http://2.230.243.113/instagram/updateProcessing.php?username=" + username + "&processing=" + str(value)
+    url = "http://www.elenarosina.com/instatrack/updateProcessing.php?username=" + username + "&processing=" + str(value)
     requests.get(url)
 
 def updateSctiptActive(username,valore):
-    url = "http://2.230.243.113/instagram/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
+    url = "http://www.elenarosina.com/instatrack/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
     requests.get(url)
 
 def getUsersToFollow():
@@ -249,23 +249,23 @@ def getUsersToFollow():
 
 #Update follow_unfollow nel database
 def updateFollowUnfollowDatabase(username,follow_unfollow):
-    url="http://2.230.243.113/instagram/updateFollowUnfollow.php?username="+username+"&follow_unfollow="+follow_unfollow
+    url="http://www.elenarosina.com/instatrack/updateFollowUnfollow.php?username="+username+"&follow_unfollow="+follow_unfollow
     requests.get(url)
 
 #Agggiorno l'array sul database
 def updateUserFollowed(userFollowed,username):
-    url = "http://2.230.243.113/instagram/updateUserFollowed.php?username="+username+"&users_followed="+userFollowed
+    url = "http://www.elenarosina.com/instatrack/updateUserFollowed.php?username="+username+"&users_followed="+userFollowed
     return requests.get(url).content
 
 #Salvo id dell'utente nel database
 def saveIdIntoDatabase(username,id):
-    url = "http://2.230.243.113/instagram/saveIdIntoDatabase.php?username="+username+"&id="+id
+    url = "http://www.elenarosina.com/instatrack/saveIdIntoDatabase.php?username="+username+"&id="+id
     requests.get(url)
 
 #salvo i cookie di un relativo utente sul server
 def seveCookieIntoServer(username,cookie):
     cookie =  base64.b64encode(str(cookie))
-    url = "http://2.230.243.113/instagram/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
+    url = "http://www.elenarosina.com/instatrack/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
     requests.get(url)
 
 #Questa funzione permette di settare il tempo di blocco
@@ -299,51 +299,51 @@ def getUserToFollwFromTarget(target):
 
 #Ritorna quanti siano gli utenti registrati da quel thread
 def countUserIntoDatabaseFromTread(thread):
-    url = "http://2.230.243.113/instagram/getCountUsersFromThread.php?THREAD="+str(thread)
+    url = "http://www.elenarosina.com/instatrack/getCountUsersFromThread.php?THREAD="+str(thread)
     return requests.get(url).content
 
 
 #Ritorna quanti siano gli utenti registrati totali
 def countUserIntoDatabase():
-    url = "http://2.230.243.113/instagram/getCountUsers.php"
+    url = "http://www.elenarosina.com/instatrack/getCountUsers.php"
     return requests.get(url).content
 
 #Seleziona un utente dal database con un preciso indice
 def selectUserFromDatabase(index):
-    url = "http://2.230.243.113/instagram/getUserFromIndex.php?index=" +str(index)
+    url = "http://www.elenarosina.com/instatrack/getUserFromIndex.php?index=" +str(index)
     return json.loads(requests.get(url).content)
 
 
 #Seleziona un utente dal database con un preciso indice
 def selectUserFromDatabaseAndThread(index,thread):
-    url = "http://2.230.243.113/instagram/getUserFromIndexAndThread.php?index=" +str(index)+"&THREAD="+str(thread)
+    url = "http://www.elenarosina.com/instatrack/getUserFromIndexAndThread.php?index=" +str(index)+"&THREAD="+str(thread)
     return json.loads(requests.get(url).content)
 
 #Ritorna il numero di utenti che sono nella tabella oin cui sono contenuti tutti
 def getCountUsersToFollow():
-    url = "http://2.230.243.113/instagram/getCountUsersToFollow.php"
+    url = "http://www.elenarosina.com/instatrack/getCountUsersToFollow.php"
     return requests.get(url).content
 
 
 #aggiorno nel mio databse la tupla con username: username e setto il tempo: time
 def update_secondi_ultima_richiesta(username,time):
-    url = "http://2.230.243.113/instagram/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
+    url = "http://www.elenarosina.com/instatrack/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
     return requests.get(url).content
 
 #funzione che aggiorna DT per quell'utente
 def updateDeltaT(username,delta_t):
-    url= "http://2.230.243.113/instagram/updateDT.php?username="+str(username)+"&dt="+str(delta_t)
+    url= "http://www.elenarosina.com/instatrack/updateDT.php?username="+str(username)+"&dt="+str(delta_t)
     return requests.get(url).content
 
 #Aggiorno il tempo di blocco che deve attendere un utente prima che rinizi a mandare richieste
 def updateTempoBlocco(username,tempo):
-    url = "http://2.230.243.113/instagram/updateTempoBlocco.php?username="+str(username)+"&tempo_blocco="+str(tempo)
+    url = "http://www.elenarosina.com/instatrack/updateTempoBlocco.php?username="+str(username)+"&tempo_blocco="+str(tempo)
     return requests.get(url).content
 
 #Aggiorna il numere di richieste fatte, in questo modo dopo che un utente ne fa 100 posso
 #diminuire il Delta T
 def updateNumberRequestsDone(username,number_requests_done):
-    url = "http://2.230.243.113/instagram/updateNumberRequestsDone.php?username=" + str(username) + "&number_requests_done=" + str(number_requests_done)
+    url = "http://www.elenarosina.com/instatrack/updateNumberRequestsDone.php?username=" + str(username) + "&number_requests_done=" + str(number_requests_done)
     return requests.get(url).content
 
 #Ottengo l id del utente attraverso lo username
@@ -367,7 +367,7 @@ def getIDFromUsername(username):
 
 
 def updateDevePagare(username, value):
-    url = "http://2.230.243.113/instagram/updateDevePagare.php?username=" + str(username) + "&DEVE_PAGARE=" + str(value)
+    url = "http://www.elenarosina.com/instatrack/updateDevePagare.php?username=" + str(username) + "&DEVE_PAGARE=" + str(value)
     return requests.get(url).content
 
 #Parso la risposta da Instagram nel momento in cui ho mandato una richiesta, content_request_JSON e' il ritorno dela richiesta una volta mandata
@@ -432,6 +432,6 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
 #Questa funzione permette di mandare la mail in caso sia finita la prova o il pacchertto
 def sendMailToUser(mail_to,messaggio,subject):
-    response = requests.get("http://2.230.243.113/instagram/send_MAIL/insert_mail_into_database.php?MESSAGGIO="+messaggio+"&EMAIL="+mail_to+"&OGGETTO="+subject)
+    response = requests.get("http://www.elenarosina.com/instatrack/send_MAIL/insert_mail_into_database.php?MESSAGGIO="+messaggio+"&EMAIL="+mail_to+"&OGGETTO="+subject)
     print(response.content)
 

@@ -1,3 +1,5 @@
+import json
+import re
 import sys
 
 import requests
@@ -5,16 +7,24 @@ import base64
 import requests
 import time
 
-from InstagramAPI import login
+from InstagramAPI import login, updateUserFollowed
 
-
-
-username = "giulio_tavella"#str(sys.argv[1])
-password = "21CICCIO21ciccio"#str(sys.argv[2])
-numero_utenti_da_defollow = 140
+username = "Matte92"#str(sys.argv[1])
+password = "Elbipededoro.724"#str(sys.argv[2])
+numero_utenti_da_defollow = 1000
 
 def accorcioResponse(response):
     return response[response.find("\"username\":\"") + len("\"username\":\""):]
+
+def geuUserFromUsername(username):
+    url="http://www.elenarosina.com/instatrack/getUserFromUsername.php?username="+str(username)
+    return json.loads(requests.get(url).content)
+
+
+#ottengo dal mio server le persone che seguo gia.
+user = geuUserFromUsername(username)
+users_followed_string = str(user[0]['USERS_FOLLOWED'])
+users_followed_array = re.split(';', users_followed_string)
 
 
 headers = {
@@ -90,4 +100,17 @@ while len(array_utenti_da_defollow) < numero_utenti_da_defollow:
             array_utenti_da_defollow.append(username)
         response = accorcioResponse(response)
 
-print(array_utenti_da_defollow)
+
+utenti_da_defollow_string = ""
+for i in array_utenti_da_defollow:
+    utenti_da_defollow_string = utenti_da_defollow_string + ";" + i
+
+print(utenti_da_defollow_string)
+
+if users_followed_string == "":
+    users_followed_string = utenti_da_defollow_string[1:]
+else:
+    users_followed_string = users_followed_string + utenti_da_defollow_string
+print(users_followed_string)
+print(updateUserFollowed(users_followed_string, username))
+

@@ -46,12 +46,12 @@ def findUsernameAndId(content):
 
 def controlloSeNelDBHoGiaUnUtenteConQuelID(id):
     #Faccio una richiueata al url: http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=1632792873    torna TRUE SE POSSO INSERIRE L?UTENTE
-    url = "http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + id
+    url = "http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + id + "&TARGET="+target
     response = requests.get(url)
     if str(response.content).__contains__("TR"):
         geuUsernameFromId(id)
     else:
-        print("ID Gia inserito " + id)
+        print("ID Gia inserito " + id + " con il target" + target)
 
 #per prima cosa effettuo il login con quelle credenziali
 content_request = login(username, password)

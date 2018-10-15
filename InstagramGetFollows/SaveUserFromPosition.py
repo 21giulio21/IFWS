@@ -14,6 +14,16 @@ target = str(sys.argv[3])
 posizione =  str(sys.argv[4])#"virgin-active-genova"
 id_posizione = str(sys.argv[5])#"136816787000290"
 
+
+def controlloSeNelDBHoGiaUnUtenteConQuelID(id):
+    #Faccio una richiueata al url: http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=1632792873    torna TRUE SE POSSO INSERIRE L?UTENTE
+    url = "http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + id + "&TARGET="+ target
+    response = requests.get(url)
+    if str(response.content).__contains__("TR"):
+        geuUsernameFromId(id)
+    else:
+        print("ID Gia inserito " + id + ": " + id + " e un target: "+target)
+
 def saveUserAndIdIntoDatabase(id,username):
 
     response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET="+target)
@@ -42,7 +52,7 @@ def findUsernameAndId(content):
     for i in array:
         stringa = i[:i.find("\"},")]
         if len(stringa) < 30:
-            geuUsernameFromId(stringa)
+            controlloSeNelDBHoGiaUnUtenteConQuelID(stringa)
 
 #per prima cosa effettuo il login con quelle credenziali
 content_request = login(username, password)

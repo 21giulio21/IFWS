@@ -4,7 +4,7 @@ import time
 
 import requests
 
-url_get_all_user = "http://2.230.243.113/instagram/getAllUser.php"
+url_get_all_user = "http://www.elenarosina.com/instatrack/instagram/getAllUser.php"
 
 
 def ottengoIdPrimaFotoDaUsername(username):
