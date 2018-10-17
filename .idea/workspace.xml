@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b983b9-2501-4c32-8d8a-b842de65e214" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.dropbox" beforeDir="false" afterPath="$PROJECT_DIR$/.dropbox" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/Like.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/Like.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/clickForDatabase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +20,7 @@
     <session id="1697410675">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
@@ -40,7 +41,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="py" value="8952" />
+          <entry key="py" value="9522" />
           <entry key="sh" value="31" />
         </counts>
       </usages-collector>
@@ -48,12 +49,12 @@
         <counts>
           <entry key="Bash" value="26" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="8952" />
+          <entry key="Python" value="9522" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="61" />
+          <entry key="py" value="66" />
           <entry key="sh" value="4" />
         </counts>
       </usages-collector>
@@ -61,7 +62,7 @@
         <counts>
           <entry key="Bash" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="61" />
+          <entry key="Python" value="66" />
         </counts>
       </usages-collector>
     </session>
@@ -204,98 +205,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="110" column="36" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-              <folding>
-                <marker date="1539524395152" expanded="true" signature="342:344" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="97" column="43" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="98" column="36" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="114" column="33" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script-PROVA.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="313" column="48" selection-start-line="313" selection-start-column="47" selection-end-line="313" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/scriptAutomaticallyLike.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+            <state relative-caret-position="367">
+              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -311,10 +225,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Like</find>
-      <find>id</find>
-      <find>owner</find>
-      <find>findUsernameAndId</find>
       <find>user_to</find>
       <find>Primo</find>
       <find>cursor</find>
@@ -341,6 +251,10 @@
       <find>230</find>
       <find>UU</find>
       <find>2.</find>
+      <find>delta_t</find>
+      <find>if scri</find>
+      <find>username_user_to_unfollow</find>
+      <find>followers</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -371,7 +285,6 @@
         <option value="$PROJECT_DIR$/InstagramGetFollows/script.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/scriptUserFromPosition2.py" />
         <option value="$PROJECT_DIR$/script/scriptSaveUserFromPosition2.sh" />
-        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition2.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition3.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/clickForDatabase.py" />
@@ -380,10 +293,11 @@
         <option value="$PROJECT_DIR$/InstagramGetFollows/Hastag.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py" />
-        <option value="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/Like.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" />
       </list>
     </option>
@@ -451,7 +365,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.unfollowAllUserFollowerd2">
+  <component name="RunManager" selected="Python.SaveUsersToFollowIntoDatabase">
+    <configuration name="SaveUsersToFollowIntoDatabase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InstagramGetFollows" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="IFWS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -519,9 +454,11 @@
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.clickForDatabase" />
       <item itemvalue="Python.unfollowAllUserFollowerd2" />
+      <item itemvalue="Python.SaveUsersToFollowIntoDatabase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SaveUsersToFollowIntoDatabase" />
         <item itemvalue="Python.unfollowAllUserFollowerd2" />
         <item itemvalue="Python.clickForDatabase" />
       </list>
@@ -551,14 +488,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1360" height="710" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24906507" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24906507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49741468" visible="true" weight="0.3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49741468" weight="0.3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -665,28 +601,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Hastag.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="117" column="36" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="36" />
           <folding>
-            <marker date="1539456701385" expanded="true" signature="1461:1466" ph="..." />
-            <marker date="1539456701385" expanded="true" signature="1461:1893" ph="..." />
+            <marker date="1539592479000" expanded="true" signature="1461:1466" ph="..." />
+            <marker date="1539592479000" expanded="true" signature="1461:1941" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="267" column="11" lean-forward="true" selection-start-line="267" selection-start-column="11" selection-end-line="267" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -700,30 +622,6 @@
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserActiveToFollowIntoDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="110" column="36" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition2.py">
@@ -747,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/scriptAutomaticallyLike.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -770,11 +661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <marker date="1539524395152" expanded="true" signature="342:344" ph="..." />
-          </folding>
+        <state relative-caret-position="377">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
@@ -785,10 +673,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="276" column="5" selection-start-line="276" selection-start-column="5" selection-end-line="276" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="402" column="150" selection-start-line="402" selection-start-column="150" selection-end-line="402" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserActiveToFollowIntoDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="367">
+          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
         </state>
       </provider>
     </entry>

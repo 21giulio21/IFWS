@@ -6,13 +6,9 @@
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppAndroid/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../AppAndroid/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hastag.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hastag.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Like.py" beforeDir="false" afterPath="$PROJECT_DIR$/Like.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAIL_BOT.py" beforeDir="false" afterPath="$PROJECT_DIR$/MAIL_BOT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SaveUserFromPosition.py" beforeDir="false" afterPath="$PROJECT_DIR$/SaveUserFromPosition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clickForDatabase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script2Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/script2Thread.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unfollowAllUserFollowerd2.py" beforeDir="false" afterPath="$PROJECT_DIR$/unfollowAllUserFollowerd2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/chardetect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
@@ -366,39 +362,39 @@
     <session id="1590215570">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="12" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="21" />
+          <entry key="py" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="21" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="18" />
-          <entry key="py" value="2076" />
+          <entry key="py" value="2238" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="2076" />
+          <entry key="Python" value="2238" />
         </counts>
       </usages-collector>
     </session>
@@ -408,7 +404,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SaveUserFromPosition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="306">
               <caret line="24" column="60" selection-start-line="24" selection-end-line="25" />
             </state>
           </provider>
@@ -417,21 +413,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script2Thread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="350" column="12" lean-forward="true" selection-start-line="350" selection-start-column="12" selection-end-line="355" selection-end-column="63" />
+            <state relative-caret-position="5440">
+              <caret line="350" column="12" selection-start-line="350" selection-start-column="12" selection-end-line="355" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="187">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1539592529146" expanded="true" signature="411:763" ph="..." />
+                <marker date="1539619394378" expanded="true" signature="414:766" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script-PROVA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="303" column="33" selection-start-line="303" selection-start-column="12" selection-end-line="303" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SaveUserActiveToFollowIntoDatabase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -439,7 +462,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hastag.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="799">
               <caret line="53" column="65" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
             </state>
           </provider>
@@ -448,8 +471,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
+            <state relative-caret-position="478">
               <caret line="256" column="59" selection-start-line="256" selection-start-column="49" selection-end-line="256" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -465,7 +497,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>6079617117</find>
       <find>271671369</find>
       <find>1334788531</find>
       <find>findUsernameAndId</find>
@@ -495,6 +526,7 @@
       <find>sipone_michele</find>
       <find>updateUserFollowed</find>
       <find>controlloSeNelDBHoGiaUnUtenteConQuelID</find>
+      <find>sl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -534,7 +566,6 @@
         <option value="$PROJECT_DIR$/scriptIfYetFollow.py" />
         <option value="$PROJECT_DIR$/script2Thread.py" />
         <option value="$PROJECT_DIR$/scriptAutomaticallyLike.py" />
-        <option value="$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py" />
         <option value="$PROJECT_DIR$/SaveUserFromPosition3.py" />
         <option value="$PROJECT_DIR$/SaveUserFromPosition2.py" />
         <option value="$PROJECT_DIR$/unfollowAllUserFollowerd.py" />
@@ -542,6 +573,7 @@
         <option value="$PROJECT_DIR$/SaveUserFromPosition.py" />
         <option value="$PROJECT_DIR$/Hastag.py" />
         <option value="$PROJECT_DIR$/unfollowAllUserFollowerd2.py" />
+        <option value="$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py" />
       </list>
     </option>
   </component>
@@ -765,12 +797,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25755167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25755167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275862" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.3232682" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.3232682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5714286" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -840,13 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script-PROVA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4675">
-          <caret line="303" column="33" selection-start-line="303" selection-start-column="12" selection-end-line="303" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SaveUserFromPosition3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
@@ -855,24 +880,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LogFile.py" />
-    <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Like.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -897,52 +908,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SaveUserActiveToFollowIntoDatabase.py">
+    <entry file="file://$PROJECT_DIR$/SaveUserFromPosition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="24" column="60" selection-start-line="24" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script2Thread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="350" column="12" lean-forward="true" selection-start-line="350" selection-start-column="12" selection-end-line="355" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="256" column="59" selection-start-line="256" selection-start-column="49" selection-end-line="256" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaveUserFromPosition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="24" column="60" selection-start-line="24" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hastag.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="53" column="65" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
+        <state relative-caret-position="5440">
+          <caret line="350" column="12" selection-start-line="350" selection-start-column="12" selection-end-line="355" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1539592529146" expanded="true" signature="411:763" ph="..." />
+            <marker date="1539619394378" expanded="true" signature="414:766" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script-PROVA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="303" column="33" selection-start-line="303" selection-start-column="12" selection-end-line="303" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveUserActiveToFollowIntoDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GetUsersToFollowFromUsernamePassword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hastag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="53" column="65" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="256" column="59" selection-start-line="256" selection-start-column="49" selection-end-line="256" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveUsersToFollowIntoDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>

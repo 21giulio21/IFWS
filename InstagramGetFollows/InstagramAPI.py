@@ -274,8 +274,8 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
     # Aggiorno ad attesa 10 minuti per l'utente a cui e' arrivato il blocco e aumento DT di 10 secondi
     updateTempoBlocco(username, tempo_blocco_se_esce_errore)
     # aumentoDelta t di 10 secondi
-    delta_t = int(delta_t) + 50
-    updateDeltaT(username, str(delta_t))
+    #delta_t = int(delta_t) + 50
+    #updateDeltaT(username, str(delta_t))
 
 
 

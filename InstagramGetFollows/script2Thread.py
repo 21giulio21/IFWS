@@ -383,7 +383,7 @@ while True:
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str,cookies_dict['csrftoken'])
                 print("UNFOLLOW " + username_user_to_unfollow + " " + str(
-                    content_request.content))
+                    content_request))
 
                 parse_content_request(content_request, 'FOLLOW-UNFOLLOW', username, tempo_blocco_se_esce_errore,
                                       delta_t,email)
@@ -395,11 +395,12 @@ while True:
             else:
 
                 # Mando la richiesta di unfollow
-                print("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow)
+
 
                 id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
                 content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str,
                                            cookies_dict['csrftoken'])
+                print("Processo l'utente: " + username + " username_user_to_unfollow " + username_user_to_unfollow + " " + str(content_request.content))
 
                 parse_content_request(content_request, "FOLLOW-UNFOLLOW", username, tempo_blocco_se_esce_errore,
                                       delta_t,email)

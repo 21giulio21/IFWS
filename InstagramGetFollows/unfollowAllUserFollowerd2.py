@@ -9,9 +9,9 @@ import time
 
 from InstagramAPI import login, updateUserFollowed
 
-username = "Matte92"#str(sys.argv[1])
-password = "Elbipededoro.724"#str(sys.argv[2])
-numero_utenti_da_defollow = 1000
+username = "stefanocarservice"#str(sys.argv[1])
+password = "viaquinto	"#str(sys.argv[2])
+numero_utenti_da_defollow = 500
 
 def accorcioResponse(response):
     return response[response.find("\"username\":\"") + len("\"username\":\""):]
@@ -100,6 +100,7 @@ while len(array_utenti_da_defollow) < numero_utenti_da_defollow:
             array_utenti_da_defollow.append(username)
         response = accorcioResponse(response)
 
+print("Numero di utenti da defollow: " + str(len(array_utenti_da_defollow)))
 
 utenti_da_defollow_string = ""
 for i in array_utenti_da_defollow:

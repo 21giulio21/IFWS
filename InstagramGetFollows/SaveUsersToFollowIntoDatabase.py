@@ -45,18 +45,35 @@ for user in ustenti_da_cui_prendere_followers:
     profile = instaloader.Profile.from_username(L.context, user)
     # Print list of followers
     for follower in profile.get_followers():
+        username = follower.username
         followers = follower.followers
         followees = follower.followees
         mediacount = follower.mediacount
+        viewable_story = follower.has_viewable_story
         is_private = follower.is_private
 
-        response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
-        print("Inserisco in altridatabase con Target " + str(target))
+        #Se l'utente ha piu di 7k di followers non lo prendo neanche
+        if int(followers) > 7000:
+            print("L'utente: "+username + " ha piu di 7k followers, quindi non lo prendo nel nostro database")
+            continue
 
+        if int(followees) > int(followers) and viewable_story == True and int(mediacount) > 3:
+            print("Username: " + str(username) + " followers: " + str(followers) + " followees: "+ str(followees) + " viewable_story: "+str(viewable_story) + " mediacount: " + str(mediacount) + " is_private: " + str(is_private))
+            response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
+            print("Inserisco in altridatabase con Target " + str(target) + " \n")
+            print(response.content)
+            myPrint(str(i) + ") Salvo il followers :" + str(follower.username) + " dell'utente " + str(user))
+
+        if int(followees) > 400 and viewable_story == True and int(mediacount) > 3:
+            print("Username: " + str(username) + " followers: " + str(followers) + " followees: "+ str(followees) + " viewable_story: "+str(viewable_story) + " mediacount: " + str(mediacount) + " is_private: " + str(is_private))
+            response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
+            print("Inserisco in altridatabase con Target " + str(target) + " \n")
+            print(response.content)
+            myPrint(str(i) + ") Salvo il followers :" + str(follower.username) + " dell'utente " + str(user))
+
+        print("Processo l'utente :" + str(i))
         i += 1
-        print(response.content)
-        myPrint(str(i) + ") Salvo il followers :" + str(follower.username) +" dell'utente " + str(user) )
-        sleep(1)
+
 
     myPrint("Finito l'utente " + str(user))
 
