@@ -9,21 +9,21 @@ if(isset($_POST["action"], $_POST["parameters"])) {
 
   switch ($_POST["action"]) {
     case 'toggle-bot':
-      $target_address = "http://2.230.243.113/instagram/app/updateScriptActive.php";
+      $target_address = "http://www.elenarosina.com/instatrack/app/updateScriptActive.php";
       print_r(curl_request($target_address, $_POST["parameters"]));
       break;
 
     case 'toggle-comments':
-      $target_address = "http://2.230.243.113/instagram/app/updateCommenta.php";
+      $target_address = "http://www.elenarosina.com/instatrack/app/updateCommenta.php";
       print_r(curl_request($target_address, $_POST["parameters"]));
       break;
 
     case 'toggle-likes':
-      $target_address = "http://2.230.243.113/instagram/app/updateLike.php";
+      $target_address = "http://www.elenarosina.com/instatrack/app/updateLike.php";
       print_r(curl_request($target_address, $_POST["parameters"]));
       break;
     case "CHOOSE-CATEGORY":
-    $target_address = "http://2.230.243.113/instagram/app/updateCategoryFromUsername.php";
+    $target_address = "http://www.elenarosina.com/instatrack/app/updateCategoryFromUsername.php";
     print_r(curl_request($target_address, $_POST["parameters"]));
 
     break;
@@ -39,21 +39,21 @@ if(isset($_POST["action"], $_POST["parameters"])) {
       if ($response_login->success == "success")
       {
         // allora inserisco l'utente nel mio database
-        $target_address = "http://2.230.243.113/instagram/app/addInstargamCredentialsIntoREGISTERED_USERS.php";
+        $target_address = "http://www.elenarosina.com/instatrack/app/addInstargamCredentialsIntoREGISTERED_USERS.php";
         $_POST['parameters']['EMAIL']  = $_SESSION["email"] ;
         curl_request($target_address, $_POST["parameters"]);
         break;
       }*/
 
       // inserisco l'utente forzato senza login
-      $target_address = "http://2.230.243.113/instagram/app/addInstargamCredentialsIntoREGISTERED_USERS.php";
+      $target_address = "http://www.elenarosina.com/instatrack/app/addInstargamCredentialsIntoREGISTERED_USERS.php";
       $_POST['parameters']['EMAIL']  = $_SESSION["email"] ;
       curl_request($target_address, $_POST["parameters"]);
 
 
       break;
     case 'RENEW-SUBSCRIPTION':
-      $target_url = "http://2.230.243.113/instagram/app/updateTEMPO_FINE_ISCRIZIONE.php";
+      $target_url = "http://www.elenarosina.com/instatrack/app/updateTEMPO_FINE_ISCRIZIONE.php";
       $return = curl_request($target_url,$_POST['parameters']);
       echo"console.log($return)";
       break;

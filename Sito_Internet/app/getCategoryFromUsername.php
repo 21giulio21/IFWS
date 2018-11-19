@@ -20,7 +20,7 @@ $query = "SELECT `TARGET` FROM `REGISTERED_USERS` WHERE `USERNAME` = ? ";
 $stmt = $conn->prepare($query);
 $stmt->bind_param("s", $username);
 $stmt->execute();
-$result = $stmt->get_result();
+$result = get_result($stmt);
 $myArray = array();
 while ($row = $result->fetch_object())
 {

@@ -9,15 +9,15 @@ Questo file permette di ottenere una sola tupa dal database: SMS_INSTATRACK
 $query = "SELECT * FROM `MAIL_INSTATRACK` LIMIT 0,1";
 $stmt = $conn->prepare($query);
 $stmt->execute();
-$result = $stmt->get_result();
+$result = get_result($stmt);
 $myArray = array();
-while ($row = $result->fetch_object())
+foreach ($result as $row)
 {
   $tempArray = $row;
   array_push($myArray, $tempArray);
 }
 echo json_encode($myArray);
-$id = $myArray[0]->ID;
+$id = $myArray[0]["ID"];
 // Da qui devo rimuogere il messaggio.
 
 $query = "DELETE FROM `MAIL_INSTATRACK` WHERE `MAIL_INSTATRACK`.`ID` = ? ";

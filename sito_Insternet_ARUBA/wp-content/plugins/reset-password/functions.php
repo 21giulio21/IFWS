@@ -53,7 +53,7 @@ function checkIfInputIsEmail($email) {
 // Se la funzione non risponde nulla allora è funzionato benissimo!
 function checkIfEmailIsIntoDatabase($email)
 {
-  $target_url = "http://2.230.243.113/instagram/app/reset-password/checkIfEmailIsIntoDatabase.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/reset-password/checkIfEmailIsIntoDatabase.php";
   $params =
    array(
      "EMAIL" => $email
@@ -71,7 +71,7 @@ function checkIfEmailIsIntoDatabase($email)
 }
 function sendTokenAndTempoScadenzaTokenToServer($email,$token,$tempo_scadenza_token)
 {
-  $target_url = "http://2.230.243.113/instagram/app/reset-password/setTokenAndTempoScadenzaToken.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/reset-password/setTokenAndTempoScadenzaToken.php";
   $params =
    array(
      "EMAIL" => $email,
@@ -101,7 +101,7 @@ function sendTokenMailToUser($text,$email)
 
 function getTokenFromDatabaseFromEmail($email,$token)
 {
-  $target_url = "http://2.230.243.113/instagram/app/reset-password/getTokenFromEmail.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/reset-password/getTokenFromEmail.php";
   $params =
    array(
      "EMAIL" => $email,
@@ -115,7 +115,7 @@ function getTokenFromDatabaseFromEmail($email,$token)
 function sendToDatabaseNewPassword($email,$password)
 {
     
-  $target_url = "http://2.230.243.113/instagram/app/reset-password/setPasswordIntoDatabase.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/reset-password/setPasswordIntoDatabase.php";
   $params =
    array(
      "EMAIL" => $email,

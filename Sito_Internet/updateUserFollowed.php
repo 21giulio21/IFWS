@@ -6,8 +6,8 @@ require_once('util/connect.php');
 
 
 
-$username = $_GET["username"];
-$users_followed = $_GET["users_followed"];
+$username = $_POST["username"];
+$users_followed = $_POST["users_followed"];
 
 
 $query = "UPDATE `REGISTERED_USERS` SET `USERS_FOLLOWED` = ? WHERE `REGISTERED_USERS`.`USERNAME` = ? ";

@@ -22,8 +22,8 @@ $query = "SELECT `TEMPO_FINE_ISCRIZIONE` FROM `REGISTERED_USERS` WHERE `USERNAME
 $stmt = $conn->prepare($query);
 $stmt->bind_param("s",$username)or die("Errore nella bind_param");
 $stmt->execute();
-$result = $stmt->get_result();
-$row = $result->fetch_object();
+$result = get_result($stmt);
+$row = json_decode(json_encode($result[0]), FALSE);;
 
 $TEMPO_FINE_ISCRIZIONE = $row->TEMPO_FINE_ISCRIZIONE;
 $tempo_ora = time();

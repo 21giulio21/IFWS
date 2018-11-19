@@ -5,7 +5,7 @@ function removeinstagramAccount($username)
   if(isset($username))
   {
     //Devo cancellare quello username dal database
-    $target_address = "http://2.230.243.113/instagram/app/removeInstagramAccount.php";
+    $target_address = "http://www.elenarosina.com/instatrack/app/removeInstagramAccount.php";
     $parametri = array();
     $parametri["username"] = $username;
     curl_request_remove_account($target_address, $parametri);

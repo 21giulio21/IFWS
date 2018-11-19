@@ -202,7 +202,7 @@ function getTargetFromDatabase($username)
       "USERNAME" => $username
     );
   //Per prima inserisco la catogoria scelta dall'utente in modo che sia visibile sulla select a destra per prima la categoria che preferisce
-  $target_url ="http://2.230.243.113/instagram/app/getCategoryFromUsername.php";
+  $target_url ="http://www.elenarosina.com/instatrack/app/getCategoryFromUsername.php";
 
   $curl_response = curl_request2($target_url, $params)or die("Non riesco a fare la curl");
   $parsed_response = json_decode($curl_response);
@@ -216,7 +216,7 @@ function getTargetFromDatabase($username)
 
 
 
-  $target_url = "http://2.230.243.113/instagram/app/getCategory.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/getCategory.php";
 
 
   $curl_response = curl_request2($target_url, $params)or die("Non riesco a fare la curl");
@@ -239,7 +239,7 @@ function process_post() {
 
      // handling login process
      if( isset( $_POST['email'], $_POST['password'] ) ) {
-       $target_url = "http://2.230.243.113/instagram/app/login.php";
+       $target_url = "http://www.elenarosina.com/instatrack/app/login.php";
        $params =
         array(
           "EMAIL" => $_POST['email'],
@@ -264,7 +264,7 @@ function process_post() {
      // handling register process
      if( isset( $_POST['register_email'], $_POST['register_password'], $_POST['register_confirm_password'] ) ) {
 
-       $target_url = "http://2.230.243.113/instagram/app/register.php";
+       $target_url = "http://www.elenarosina.com/instatrack/app/register.php";
        $params =
         array(
           "EMAIL" => $_POST['register_email'],
@@ -417,7 +417,7 @@ function curl_request2($target_url, array $arguments){
 }
 
 function getInstagramProfilesFromEmail($email){
-  $target_url = "http://2.230.243.113/instagram/app/getInstagramProfilesFromEmail.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/getInstagramProfilesFromEmail.php";
   $params =
    array(
      "EMAIL" => $email

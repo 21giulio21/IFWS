@@ -1,4 +1,2 @@
-#!/bin/sh
-while [ true ] ; do
-python ../InstagramGetFollows/unfollowAllUserFollowerd.py $1 $2
-done
+python ../InstagramGetFollows/unfollowAllUserFollowerd2.py $1 $2 $3
+

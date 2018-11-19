@@ -9,9 +9,9 @@ $query = "SELECT * FROM REGISTERED_USERS LIMIT ?,1";
 $stmt = $conn->prepare($query);
 $stmt->bind_param("i", $index);
 $stmt->execute();
-$result = $stmt->get_result();
+$result = get_result($stmt);
 $myArray = array();
-while ($row = $result->fetch_object())
+foreach ($result as $row)
 {
   $tempArray = $row;
   array_push($myArray, $tempArray);

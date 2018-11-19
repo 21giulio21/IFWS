@@ -31,7 +31,7 @@ Chiedo al server se la mail è gia occupata. In particolare la funziona tornando
 */
 function sendEmailAndPasswordToServerToRegisterUser($email,$password)
 {
-  $target_url = "http://2.230.243.113/instagram/app/register.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/register.php";
   $params =
    array(
      "EMAIL" => $email,

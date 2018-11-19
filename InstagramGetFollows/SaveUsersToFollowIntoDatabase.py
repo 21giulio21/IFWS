@@ -1,9 +1,67 @@
+
 import instaloader
 import requests
 import sys
 from time import sleep
-
+import random
+import threading
 import time
+
+
+class myThread (threading.Thread):
+   def __init__(self, follower):
+      threading.Thread.__init__(self)
+      self.follower = follower
+
+   def run(self):
+        self.function_thread()
+
+
+   def function_thread(self):
+       follower = self.follower
+       followers = follower.followers
+       username = follower.username
+       # Se l'utente ha piu di 7k di followers non lo prendo neanche
+       if int(followers) > 10000:
+           print("L'utente: " + username + " ha piu di 10k followers, quindi non lo prendo nel nostro database")
+           return
+
+        #Controllo se la biografia è settata
+       biografia = str(follower.biography)
+
+
+
+       if not biografia.__contains__("a") or not biografia.__contains__("e") or not biografia.__contains__("i") or not biografia.__contains__("o") or not biografia.__contains__("u"):
+           print("La biografia non contiene vocali, quindi non prendo l'utente")
+           return
+
+       mediacount = follower.mediacount
+       if int(mediacount) > 14:
+
+           is_private = follower.is_private
+
+           if 1==1 :
+
+               followees = follower.followees
+               if int(followees) > int(followers):
+                   id = follower.userid
+                   username = follower.username
+                   response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET="+str(target))
+                   print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
+                       target) + " media:" + str(mediacount) + " is_private" + str(is_private) + " followers:" + str(
+                       followers) + " followee:" + str(followees))
+                   print(response.content)
+
+               elif int(followees) < 1200:
+                   id = follower.userid
+                   username = follower.username
+                   response = requests.get(
+                       "http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
+                           id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
+                   print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
+                       target) + " media:" + str(mediacount) + " is_private" + str(is_private) + " followers:" + str(
+                       followers) + " followee:" + str(followees))
+                   print(response.content)
 
 
 #Permette di scrivere i log su un file di testo
@@ -11,7 +69,6 @@ def myPrint(text):
     print(text)
     #with open("LOG/logSaveUsersToFollowIntoDatabase.txt", "a") as myfile:
     #   myfile.write(text + "\n")
-
 
 # Get instance
 L = instaloader.Instaloader()
@@ -39,41 +96,20 @@ for user in ustenti_da_cui_prendere_followers:
     followers_totali += followers
 myPrint("Followers totali dei profili: "+ str(followers_totali))
 
+random.shuffle(ustenti_da_cui_prendere_followers)
 
 
 for user in ustenti_da_cui_prendere_followers:
+    print("\n 1 \n")
     profile = instaloader.Profile.from_username(L.context, user)
     # Print list of followers
     for follower in profile.get_followers():
-        username = follower.username
-        followers = follower.followers
-        followees = follower.followees
-        mediacount = follower.mediacount
-        viewable_story = follower.has_viewable_story
-        is_private = follower.is_private
-
-        #Se l'utente ha piu di 7k di followers non lo prendo neanche
-        if int(followers) > 7000:
-            print("L'utente: "+username + " ha piu di 7k followers, quindi non lo prendo nel nostro database")
-            continue
-
-        if int(followees) > int(followers) and viewable_story == True and int(mediacount) > 3:
-            print("Username: " + str(username) + " followers: " + str(followers) + " followees: "+ str(followees) + " viewable_story: "+str(viewable_story) + " mediacount: " + str(mediacount) + " is_private: " + str(is_private))
-            response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
-            print("Inserisco in altridatabase con Target " + str(target) + " \n")
-            print(response.content)
-            myPrint(str(i) + ") Salvo il followers :" + str(follower.username) + " dell'utente " + str(user))
-
-        if int(followees) > 400 and viewable_story == True and int(mediacount) > 3:
-            print("Username: " + str(username) + " followers: " + str(followers) + " followees: "+ str(followees) + " viewable_story: "+str(viewable_story) + " mediacount: " + str(mediacount) + " is_private: " + str(is_private))
-            response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=%s&USERNAME=%s&TARGET=%s" % (str(follower.userid), str(follower.username), target))
-            print("Inserisco in altridatabase con Target " + str(target) + " \n")
-            print(response.content)
-            myPrint(str(i) + ") Salvo il followers :" + str(follower.username) + " dell'utente " + str(user))
-
-        print("Processo l'utente :" + str(i))
         i += 1
+        print(i)
+        # Create new threads
+        thread1 = myThread(follower)
+        thread1.start()
 
+        sleep(1)
 
-    myPrint("Finito l'utente " + str(user))
 

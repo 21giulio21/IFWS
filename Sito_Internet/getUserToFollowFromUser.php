@@ -8,17 +8,16 @@ if(!empty($target))
   $stmt = $conn->prepare($query);
   $stmt->bind_param("s", $target);
   $stmt->execute();
-  $result = $stmt->get_result();
-  $stmt->store_result();
+  $result = get_result($stmt);
 
 
-  if ($stmt->num_rows == 0 )
+  if (count($result) == 0 )
   {
       $stmt->close();
       $query = 'SELECT * FROM `USERS_TO_FOLLOW` WHERE `TARGET` = "CHIARAFERRAGNI" ORDER BY RAND() LIMIT 1';
       $stmt = $conn->prepare($query);
       $stmt->execute();
-      $result = $stmt->get_result();
+      $result = get_result($stmt);
       $stmt->store_result();
 
   }
@@ -26,7 +25,7 @@ if(!empty($target))
   $query = "SELECT * FROM `USERS_TO_FOLLOW` ORDER BY RAND() LIMIT 1";
   $stmt = $conn->prepare($query);
   $stmt->execute();
-  $result = $stmt->get_result();
+  $result = get_result($stmt);
   $stmt->store_result();
 
 }
@@ -35,7 +34,7 @@ if(!empty($target))
 $myArray = array();
 
 
-while ($row = $result->fetch_object())
+foreach ($result as $row)
 {
     $tempArray = $row;
 	array_push($myArray, $tempArray);

