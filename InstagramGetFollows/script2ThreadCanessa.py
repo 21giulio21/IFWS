@@ -35,6 +35,7 @@ from InstagramAPI import selectUserFromDatabaseAndThread
 from InstagramAPI import checkIfYetFollowing
 from InstagramAPI import sendMailToUser
 from InstagramAPI import getIdFromUsernameToUnfollow
+from InstagramAPI import automaticLIKE
 import threading
 from threading import *
 import re
@@ -45,7 +46,7 @@ import sys
 #max_requests = 250
 
 # numero di richieste dopo il quale si decrementa il DT
-from InstagramAPI import automaticLIKE
+
 
 number_requests_update_delta_t = 1000
 
@@ -227,6 +228,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
                 username_user_to_unfollow, cookies_str, cookies_dict
                 , username, tempo_blocco_se_esce_errore, delta_t, email, users_followed_string)
 
+
             continue
         else:
 
@@ -235,6 +237,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             unfollow_thread(
                 username_user_to_unfollow, cookies_str, cookies_dict
                 , username, tempo_blocco_se_esce_errore, delta_t, email, users_followed_string)
+
 
         continue
 
@@ -253,12 +256,11 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         messaggio = "INIZIO A CON LE RICHIESTE DI FOLLOW"
         stampa(username, messaggio)
 
-
         follow_unfollow = str('1')
         updateFollowUnfollowDatabase(username, str(follow_unfollow))
 
-    # controllo che sono al massimo di persone che posso seguire al giorno
-    if len(users_followed_array) > max_requests and script_attivo == "1":  # max_requests:
+    #Se seguo un numero di persone pari al massimo di quelle che devo seguire allora deo fare un unfollow
+    if ((len(users_followed_array) == max_requests) or (len(users_followed_array) > max_requests)) and script_attivo == "1":  # max_requests:
 
         messaggio = "MASSIMO UTENTI SEGUITI - imposto follow_unfollow a 0"
         stampa(username, messaggio)
@@ -266,14 +268,17 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
         # Se sono al numero di persone massime imposto users_followed a 0
         # In questo modo inizio a fare richieste di unfollow
-        follow_unfollow = str("0")
-
+        follow_unfollow = "0"
         # Aggiorno il server dicendo che follow_unfollow e' zero
         updateFollowUnfollowDatabase(username, follow_unfollow)
 
 
-    # Se follow_unfollow e' 1 allora devo seguire una persona a caso tra tutte quelle  nel database
-    if follow_unfollow == "1" and script_attivo == "1":
+
+
+    #Se non seguo ancora il numero massimo di persone
+    if follow_unfollow == "1" and script_attivo == "1" and (len(users_followed_array) < max_requests):
+
+
 
         #Se devo mettere follow
         if auto_follow == "1":
@@ -304,6 +309,9 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
             #aggiorno il database
 
+            if not users_followed_string.endswith(";"):
+                users_followed_string = users_followed_string + ";"
+
             updateUserFollowed(users_followed_string, username)
 
         # Tale richiesta va a buon fine solo se il profilo non e' privato. Nel caso sia privato non funziona la richiesta di like
@@ -311,15 +319,16 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         # Se set_like è uno allora con probabilità 1 / 4 mettero un like
         if auto_like == "1":
 
-            # Prendo un utente dal database a cui mettere like
+            #Prendo un utente dal database a cui mettere like
             user_to_follow = getUserToFollwFromTarget(target, username)
             id_user_to_follow = str(user_to_follow[0]["ID"])
             username_user_to_follow = str(user_to_follow[0]["USERNAME"])
             target = str(user_to_follow[0]["TARGET"])
 
+
             # Faccio in modo che con probabilità 1/4 metta like quindi non verra messo sempre, in modo
             # tale da aumentare il nuemro di richiueste di follow
-            random_number = random.randint(1, 60)
+            random_number = random.randint(1, 20)
 
             # Solamente se random_number è 1 allora mando una richiesta di like, in questo modo sono sicuro che
             # ho la probabilità di 1/3 di mettere like. quindi non dovrebbe bloccarlo.
@@ -330,7 +339,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
                 content_request = richiestaLike(username_user_to_follow, cookies_str, cookies_dict['csrftoken'])
                 parse_content_request(content_request, 'LIKE', username, tempo_blocco_se_esce_errore, delta_t,email)
                 '''
-                # In questo caso metto like alle persone che hanno AUTO_LIKE a 1
+                #In questo caso metto like alle persone che hanno AUTO_LIKE a 1
                 automaticLIKE(username, cookies_str, cookies_dict)
 
 
@@ -343,7 +352,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         if auto_comment == "1":
             # Faccio in modo che con probabilità 1/4 commenta quindi non verra messo sempre, in modo
             # tale da aumentare il nuemro di richiueste di follow
-            random_number = random.randint(1, 3)
+            random_number = random.randint(1,4)
             if random_number == 2:
 
                 risposta_commento = comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow)
@@ -363,6 +372,9 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
 
     elif script_attivo == "1" and follow_unfollow == "0":
+
+        print("sssssssssss")
+
         # Faccio in modo che la stringa contenente tutti gli user che seguo che e' sul mio database sia
         # ben fatta, in particolare che non ci siano situazioni in cui ho user;user;user;
         # in questo caso andrebbe tolto l'ultimo ;
@@ -375,6 +387,8 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         # elimino il primo user che ho seguito
         username_user_to_unfollow = users_followed_array.pop(0)
 
+        print("DOVREI FARE UNFOLLOW DI: " + username_user_to_unfollow)
+
         # Costruisco nuovamente la stringa da mandare al mio server
         for i in range(0, len(users_followed_array)):
             if i == 0:
@@ -385,27 +399,28 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
                 users_followed_string = users_followed_string + users_followed_array[i] + ";"
 
         if len(users_followed_array) == 0:
+
             users_followed_string = ""
+            unfollow_thread(
+                username_user_to_unfollow, cookies_str, cookies_dict
+                , username, tempo_blocco_se_esce_errore, delta_t, email, users_followed_string)
+
+        else:
+
+
+
+            if not users_followed_string.endswith(";"):
+                users_followed_string = users_followed_string + ";"
+            # mando la richiesta di unfollow all'utente come thread
 
             unfollow_thread(
                 username_user_to_unfollow,cookies_str,cookies_dict
                 ,username,tempo_blocco_se_esce_errore,delta_t,email,users_followed_string)
 
 
-
-        else:
-
-
-            # mando la richiesta di unfollow all'utente come thread
-            unfollow_thread(
-                username_user_to_unfollow, cookies_str, cookies_dict
-                , username, tempo_blocco_se_esce_errore, delta_t, email, users_followed_string)
-
-
-
-
-
-
+        #In questo caso riparto da capo
+        if (len(users_followed_array) == max_requests) or (len(users_followed_array) < max_requests) :
+            updateFollowUnfollowDatabase(username,"1")
 
 
 

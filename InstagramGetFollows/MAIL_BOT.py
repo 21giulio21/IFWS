@@ -33,7 +33,7 @@ def sendMailToUser(mail_to, messaggio, subject):
     # Mando la mail anche a me cosi capisco cosa sta sucedendo
     server.sendmail(mail_from, "21giulio21@gmail.com", text)
     server.sendmail(mail_from, "m.denurchis@gmail.com", text)
-    server.sendmail(mail_from, "antonio.global.manhattan@gmail.com", text)
+    server.sendmail(mail_from, "canessa.luca8@gmail.com", text)
 
     server.quit()
 

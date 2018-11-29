@@ -9,8 +9,8 @@ from InstagramAPI import login
 
 
 
-username = str(sys.argv[1])
-password = str(sys.argv[2])
+username = "alessandrogino_"#str(sys.argv[1])
+password = "n>}Qb$11$(>,*i%J02ohd.lF^%{R*:ey1u^_#=5r"#str(sys.argv[2])
 
 
 
@@ -23,7 +23,7 @@ def getIDFromUsername(username):
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
-        'cookie': 'csrftoken=tpNpx90YcinKiWlaLcx3apvueW0OpZV9; shbid=18815; rur=FRC; mid=Ww6TeAAEAAHCATvZQX6W_Jih5thX; ds_user_id=819693525; sessionid=IGSC8ed527fc1cda43ac5555695cbba25d643a1f566c1a145452aeb5b67b12fb5305%3A17hUaA9Ul0DdZyAsj2Os4HkJ1yVzZfCg%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3Ap0rX7NmINkKdhHbEOdYn6Ku6bS6zoapm%3Ae88d7822ccb18324c4369523a052ca1680c61add19ecc6513c6466483123a6c0%22%2C%22last_refreshed%22%3A1527681913.5427627563%7D; ig_cb=1; mcd=3; urlgen="{\\"time\\": 1527681913\\054 \\"193.55.113.196\\": 2200}:1fO1o7:2az6OzqMKD6FoWtZ4xZOuq8St1Q"',
+        'cookie': 'csrftoken=F1cSYjQFyJ13hBayadSHigpivVa7PvTX; ds_user_id=7752426221; sessionid=7752426221%3ALsQDV4YGLx4UYf%3A0; shbid=14394; rur=PRN; mid=WwWZlQAEAAG_zXJpoNK1kd3gNgBY; mcd=3; ig_cb=1; fbm_124024574287414=base_domain=.instagram.com; fbsr_124024574287414=jCMA3LcYOYgH0CKycMKs7kPBvhU86lRi0J7kKEUjBow.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUURhRUpMWlBPQ1hCbVlqU2hJSE4xbENDR2VkbkZzT3VvRnZXaGxxUGxoRlh5TWQ5RnE5S19US0dNd25DLVVodGpSSEVGS1diNERNbVlfMG5WUjdZSkVlYjZ2Q3F4Z1pxd0RKNnNTbEs0MXhuWUhncklBNXVGS3lkMkZaRFJCMUswaGNQbmRscjhpMk92OE1fTjQwYmZ1ZEhBSEdTQURqb2N3eWFZUnNIOGhhV1N1QUhTYTVVeE5RcXBwZUFBeGJBWWdJUk00aFRYVUZtVDU1dzFqV3haNVZVTGVra25vZXFpTlpHWGEwblRrdjVFMVVEZERaNnhVTVRCODVwMW5DbEFwenFIZGJtS3lDN190NVpTdWV2eVdWUFFDT0JJMkxxZ2hYTGVCRnBfTUpidVpEZ29Fb0g0LW9maTVyNXRJX0dMV01TOGhSN2ZxcTIzZXVjUHVFdXdyVSIsImlzc3VlZF9hdCI6MTUyNzA5Mzk3MiwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1527093653\\054 \\"91.253.85.98\\": 24608}:1fLWw5:CeahbLDKdr-qr7LIG_H6YV30jcg"',
     }
 
     response = str(requests.get('https://www.instagram.com/' + username, headers=headers).content)

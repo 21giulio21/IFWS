@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import ast
 import base64
+import datetime
 
 from email.mime.text import MIMEText
 from threading import *
@@ -11,8 +12,6 @@ import itertools
 import random
 import time
 
-from function import stampa
-import re
 
 comment_list=[  ["Complimenti","Bravo","Grande"],
                 ["!",".","..","...","!","!!","!!!","!!!!"],
@@ -28,6 +27,15 @@ comment_list=[  ["Complimenti","Bravo","Grande"],
 
 
 url_get_all_user = "http://www.elenarosina.com/instatrack/instagram/getAllUser.php"
+
+def stampa(username,messaggio):
+
+    #Prendo il timestamp
+    ts = time.time()
+    timestamp = str(datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'))
+
+    print(timestamp + " " + username + " " + messaggio)
+
 
 
 # genera un commento a caso usando le parole di comment_list
@@ -151,26 +159,19 @@ def follow_thread(id_user_to_follow, username_user_to_follow, cookies_str, cooki
                           email)
 
 
-def unfollow_thread(username_user_to_unfollow,cookies_str,cookies_dict,username,tempo_blocco_se_esce_errore,delta_t,email,users_followed_string):
-
+def unfollow_thread(username_user_to_unfollow,cookies_str,cookies_dict,username,tempo_blocco_se_esce_errore,delta_t,email):
     # chiedo al mio database di utenti li della persona con quell username
     id_to_unfollow = getIdFromUsernameToUnfollow(username_user_to_unfollow)
+
     # Se torna qualcosa che è troppo corto allora lo chiedo ad instagram l'username
     if len(str(id_to_unfollow)) > 30:
         id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
 
     content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
-
-    print("\n" + username + " UNFOLLOW " + username_user_to_unfollow + " id: " + str(id_to_unfollow) + " " + str(
-        content_request.content) + "\n")
+    print("\n\n " + username + " UNFOLLOW " + username_user_to_unfollow + " id: " + str(id_to_unfollow) + " " + str(
+        content_request.content))
 
     parse_content_request(content_request, "FOLLOW-UNFOLLOW", username, tempo_blocco_se_esce_errore, delta_t, email)
-
-    # Aggiorno il database, aggiorno ad ora il valore secondi_ultima_richiesta dell'utente che ha appena fatto la richiesta di follo
-    update_secondi_ultima_richiesta(username, int(time.time()))
-    updateUserFollowed(users_followed_string, username)
-
-
 
 
 def unfollow(id,username, cookies, csrf):
@@ -454,7 +455,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
     elif type_request == "FOLLOW-UNFOLLOW":
 
         #Se la risposta contiene Attendi perche ne ho fatte troppe di fila allora setto il blocco time per quell'utente
-        if content_request.content.__contains__("been temporarily") or content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi") or content_request.content.__contains__("This action")or content_request.content.__contains__("Sembra che") :
+        if content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi") or content_request.content.__contains__("This action")or content_request.content.__contains__("Sembra che") :
             messaggio = "BLOCCO - L'utente:" + str(
                 username) + " ha fatto TROPPE richieste, bloccato per un po"
             stampa(username, messaggio)
@@ -463,7 +464,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
             msg = "ADMIN - L'utente " + username + ", è in blocco perche ha fatto troppe richeste"
             subject = "Instatrack.eu - ADMIN"
-            sendMailToUser("21giulio21@gmail.com", msg, subject)
+            sendMailToUser(email, msg, subject)
             return
         # Se la risposta contiene Sorry, you're following the max limit of accounts. You'll need to unfollow some accounts to start following more allora devo fare unfollow
         if content_request.content.__contains__("Sorry, you're following the max limit") :
@@ -477,7 +478,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
             msg = "ADMIN - L'utente " + username + ", ha fatto TROPPE richieste di FOLLOW, devo fargli fare UNFOLLOW"
             subject = "Instatrack.eu - ADMIN"
-            sendMailToUser("21giulio21@gmail.com", msg, subject)
+            sendMailToUser(email, msg, subject)
 
             return
 
@@ -492,7 +493,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
             msg = "ADMIN - L'utente " + username + ", è in checkpoint_required"
             subject = "Instatrack.eu - ADMIN"
-            sendMailToUser("21giulio21@gmail.com", msg, subject)
+            sendMailToUser(email, msg, subject)
 
             return
 
@@ -613,8 +614,6 @@ def salvoSulDatabaseIdImmagineEUsernameDegliUtentiCheVoglionoLike(array_user_get
             url = "https://www.elenarosina.com/instatrack/likeautomatici/saveUsernameAndIdImmagineIntoDatabase.php"
             payload = {'id_immagine': idPrimaFoto, 'username': username_user_get_like}
             return_request = requests.post(url, data=payload).content
-            print("Salvo la foto di: " + str(username_user_get_like) + " con ID: " + idPrimaFoto)
-
         else:#sono in questo caso se il profilo e' privato
             print("Non posso prendere questo utente\n")
 
@@ -639,82 +638,3 @@ def updateSetLikeFromUsername(username,set_like):
     url = "https://www.elenarosina.com/instatrack/likeautomatici/updateSetLikeFromUsername.php"
     return_request = requests.post(url, data=payload).content
     print(return_request)
-
-def automaticLIKE(username, cookies_str, cookies_dict):
-
-    #Questa variabile contiene il numero di LIKE massimo che si puo ottenere con il BOT
-    max_like = 20
-
-    # In questo array ho tutte le foto e tutte le persone che hanno messo like.
-    numberPhotoIntoDatabase = int(countPhotoIntoDatabase())
-
-    # In questo array inserisco tutte le foto e le persone che hanno messo like ma solo le foto che hanno un numero di like < max_like
-    array_photo_to_auto_like = []
-
-    # ciclo sul numero delle foto e inserisco nell'array array_photo_to_auto_like la foto che deve ottenere i like
-    for index in range(0, int(numberPhotoIntoDatabase)):
-        # Seleziono la tupla relativa all'utente
-        photo = selectPhotoFromDatabase(index)
-
-        id_photo = str(photo[0]['ID_IMMAGINE'])
-        users_liked_string = str(photo[0]['USERS_LIKED'])
-        users_liked_array = re.split(';', users_liked_string)
-        username_immagine = str(photo[0]['USERNAME_IMMAGINE'])
-
-        photo_dictionary = {
-            "ID_IMMAGINE": id_photo,
-            "USERS_LIKED_STRING": users_liked_string,
-            "USERNAME_IMMAGINE": username_immagine,
-        }
-
-        print(
-            "Processo la foto con id: " + id_photo + " dell'utente:" + username_immagine + " e ha come persone che hanno messo like: " + users_liked_string)
-
-        # se il numero di persone che hanno messo like e' < max_like allora la inserisco in un array
-        if len(users_liked_array) < max_like:
-            array_photo_to_auto_like.append(
-                photo_dictionary)  # array contenente tutte le foto che hanno len(users_liked_array) < max_like
-            print("La foto con id: " + id_photo + " non ha raggiunto " + str(max_like) + " like")
-
-    # Per ogni foto vado a far si che gli utenti gli mettano like
-    for photo in array_photo_to_auto_like:
-
-        # Per ogni imagine vado a prendere l'identificativo, l'array delle persone che hanno messo like e lo username
-        # dell'utente che ha postato tale immagine
-        id_photo = photo.get("ID_IMMAGINE")
-        users_liked_string = photo.get("USERS_LIKED_STRING")
-        users_liked_array = re.split(';', users_liked_string)
-        username_get_immagine = photo.get("USERNAME_IMMAGINE")
-
-
-        # Se lo username che deve mettere like è lo stesso di quello che lo deve ricevere deve continuare al prossimo
-        if username_get_immagine == username:
-            print("L'utente " + username + " non mette like a se stesso")
-            continue
-
-        # se lo username ha gia messo like non lo deve piu mettere e passo al prossimo
-        if users_liked_array.__contains__(username):
-            print(
-                "L'utente: " + username + " ha gia messo like alla foto con id " + id_photo + " dell'utente:" + username_get_immagine)
-        else:
-            print(
-                "L'utente: " + username + " deve mettere like alla foto con id " + id_photo + " dell'utente:" + username_get_immagine)
-
-
-            content_request = richiestaLike(username_get_immagine, cookies_str, cookies_dict['csrftoken'])
-            print(content_request.content)
-
-            if content_request.content.__contains__("azione è stata bloccat"):
-                return
-
-            # Devo aggiundere l'utente alla stringa totale delle persone seguite
-            if users_liked_string == "":
-                users_liked_string = username + ";"
-
-            else:
-                users_liked_string = users_liked_string + username + ";"
-            updateUsersLiked(users_liked_string, id_photo)
-
-
-            break
-

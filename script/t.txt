@@ -1,0 +1,6 @@
+
+Attendo DT
+Tempo DT passato, inizio lo script.
+Ho un totale di 1 utenti che devo gestire per mandare le richieste
+2018-11-28 22:43:26 giulio_tavella MASSIMO UTENTI SEGUITI - imposto follow_unfollow a 0
+MESSO - controllo 

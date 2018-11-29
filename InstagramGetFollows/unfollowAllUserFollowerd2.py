@@ -77,6 +77,7 @@ array_utenti_da_defollow = []
 
 for i in range(0,numero_username):
 
+
     username = response[:response.find("\",\"full_name\"")]
 
 
@@ -88,6 +89,8 @@ for i in range(0,numero_username):
 
 #Qui ne chiedo altri 50
 while len(array_utenti_da_defollow) < numero_utenti_da_defollow:
+
+
 
     headers = {
         'cookie': 'ig_cb=1; mid=W3qsUgAEAAGu-ppm_wmUJoV5q9wR; mcd=3; fbm_124024574287414=base_domain=.instagram.com; csrftoken=c5pdl6sExADIjF69mmwgKEcWHz4YIVrj; shbid=18440; shbts=1542453514.0048485; ds_user_id=819693525; sessionid=IGSC8164133ce2a8afbe954e0035fd173fc1a031b84d61c368b72dcab014a2e4796d%3AfkgWWcEgSUHEVVnBoscuOJFzb0HgG1bq%3A%7B%22_auth_user_id%22%3A819693525%2C%22_auth_user_backend%22%3A%22accounts.backends.CaseInsensitiveModelBackend%22%2C%22_auth_user_hash%22%3A%22%22%2C%22_platform%22%3A4%2C%22_token_ver%22%3A2%2C%22_token%22%3A%22819693525%3ArqenMsQy95BQSJ5YYEcz4aWvP4SmLRTx%3A208ed358d825b42841b44bbed8693c29af3a23662b4df9d23eac4f52d2e48718%22%2C%22last_refreshed%22%3A1542453514.0061211586%7D; rur=FTW; urlgen="{\\"37.227.104.199\\": 24608}:1gNycm:xegbf6pnWDoWYArFIvnTbC1Bp2w"',

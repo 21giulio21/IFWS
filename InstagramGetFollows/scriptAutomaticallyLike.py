@@ -15,7 +15,7 @@ import requests
 
 from InstagramAPI import countUserIntoDatabaseFromTread, getIdPhotoNotLiked, countPhotoIntoDatabase, \
     selectPhotoFromDatabase, salvoSulDatabaseIdImmagineEUsernameDegliUtentiCheVoglionoLike, parse_content_request, \
-    updateGetLikeFromUsername, updateSetLikeFromUsername
+    updateGetLikeFromUsername, updateSetLikeFromUsername, updateTempoBlocco
 from InstagramAPI import selectUserFromDatabaseAndThread
 from InstagramAPI import checkIfYetFollowing
 from InstagramAPI import ottengoIdPrimaFotoDaUsername
@@ -45,6 +45,7 @@ array_user_get_like = []
 
 #QUesto for serve semplicemente per far si che un utente che ha script_attivo=1 allora puo solo ricevere like,
 #Mentre quelli che hanno script_attivo=0 mettono like
+'''
 for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
     # Seleziono la tupla relativa all'utente
@@ -59,12 +60,13 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     # Valori di auto_like=1 solo se l'utente ha la possibilita' di mettere like
     # Valori di get_like=1 solo se l'utente ha la possibilita' di mettere like
     #Quindi se ho script_attivo = 0 devo mettere auto_like=1 e get_like=0
-    if script_attivo == "1" and auto_like == "1" :
+    if script_attivo == "1"  and auto_like == "1" :
         updateGetLikeFromUsername(username,0)
         updateSetLikeFromUsername(username,1)
     elif script_attivo == "1" and get_like == "1":
         updateGetLikeFromUsername(username, 1)
         updateSetLikeFromUsername(username, 0)
+'''
 
 
 #QUesto For fa si che posso creare 2 array, uno che mette like e uno che li riceve
@@ -104,17 +106,27 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     #Vado a mettere like solo se il profilo non va nel bot, altrimenti non mette like un profilo di cui sta andando il bot.
     if get_like == "1" and script_attivo == "1":
         array_user_get_like.append(user_dictionary)
-    if auto_like == "1" and script_attivo == "0":
+    if auto_like == "1" and script_attivo == "1":
         array_user_auto_like.append(user_dictionary)
 
+        #Imposto 300 secondi di stop del bot
+        updateTempoBlocco(username, str("200"))
+
+
+time.sleep(100)
+print("Totale username che vogliono LIKE:" + str(len(array_user_get_like)))
+print("Totale username che mettono LIKE:" + str(len(array_user_auto_like)))
+
+
+#Per ogni username salvo l'id della relativa immagine su cui gli utenti metteranno like
+salvoSulDatabaseIdImmagineEUsernameDegliUtentiCheVoglionoLike(array_user_get_like)
 
 #In questo array ho tutte le foto e tutte le persone che hanno messo like.
 numberPhotoIntoDatabase = int(countPhotoIntoDatabase())
-print(numberPhotoIntoDatabase)
+
 
 #In questo array inserisco tutte le foto e le persone che hanno messo like ma solo le foto che hanno un numero di like < max_like
 array_photo_to_auto_like = []
-
 
 #ciclo sul numero delle foto e inserisco nell'array array_photo_to_auto_like la foto che deve ottenere i like
 for index in range(0, int(numberPhotoIntoDatabase)):
@@ -160,8 +172,13 @@ for photo in array_photo_to_auto_like:
         print(username_auto_like)
 
         cookie_user_auto_like = user_auto_like.get("COOKIES")
-        #se lo username ha gia messo like non lo deve piu mettere e passo al prossimo
 
+        #Se lo username che deve mettere like è lo stesso di quello che lo deve ricevere deve continuare al prossimo
+        if username_get_immagine == username_auto_like:
+            print("L'utente " + username_auto_like + " non mette like a se stesso")
+            continue
+
+        #se lo username ha gia messo like non lo deve piu mettere e passo al prossimo
         if users_liked_array.__contains__(username_auto_like):
             print("L'utente: " + username_auto_like + " ha gia messo like alla foto con id " +id_photo + " dell'utente:"+ username_get_immagine)
         else:
@@ -174,6 +191,9 @@ for photo in array_photo_to_auto_like:
 
             content_request = richiestaLike(username_get_immagine, cookies_str, cookies_dict['csrftoken'])
             print(content_request.content)
+
+            print("STOP 50 secondi")
+            time.sleep(50)
 
             if not str(content_request.content).__contains__("status\": \"ok"):
                 print("Passo ad un altro account")
