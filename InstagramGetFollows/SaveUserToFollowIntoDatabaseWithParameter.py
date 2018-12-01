@@ -107,6 +107,7 @@ random.shuffle(ustenti_da_cui_prendere_followers)
 for user in ustenti_da_cui_prendere_followers:
     print("\n 1 \n")
     profile = instaloader.Profile.from_username(L.context, user)
+
     # Print list of followers
     for follower in profile.get_followers():
         i += 1
@@ -114,7 +115,6 @@ for user in ustenti_da_cui_prendere_followers:
         # Create new threads
         thread1 = myThread(follower)
         thread1.start()
-
         sleep(1)
 
 
