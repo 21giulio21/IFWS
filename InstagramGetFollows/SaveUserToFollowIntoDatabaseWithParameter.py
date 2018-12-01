@@ -78,9 +78,10 @@ def myPrint(text):
 # Get instance
 L = instaloader.Instaloader()
 
-
-target = str(sys.argv[1])
-ustenti_da_cui_prendere_followers = str(sys.argv[2]).split(',')
+username = str(sys.argv[1])
+password = str(sys.argv[2])
+target = str(sys.argv[3])
+ustenti_da_cui_prendere_followers = str(sys.argv[4]).split(',')
 
 
 
@@ -89,7 +90,7 @@ for i in ustenti_da_cui_prendere_followers:
     print(i)
 
 print("Inizio lo script con username: " + username +" password " + password+ " target: " + target+ " utenti da cui prendere followers: " + str(ustenti_da_cui_prendere_followers)  )
-#L.login(user=username,passwd=password)
+L.login(user=username,passwd=password)
 i = 0
 followers_totali = 0
 media = 0
