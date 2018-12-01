@@ -6,10 +6,10 @@ import time
 
 from InstagramAPI import login
 
-username = str(sys.argv[1])
-password = str(sys.argv[2])
-target = str(sys.argv[3])
-hastag =  str(sys.argv[4]) #"pugilato"
+username    =   str(sys.argv[1])
+password    =   str(sys.argv[2])
+target      =   str(sys.argv[3])
+hastag      =   str(sys.argv[4]) #"pugilato"
 
 
 def saveUserAndIdIntoDatabase(id,username):
@@ -28,7 +28,55 @@ def geuUsernameFromId(id):
     try:
         profile = instaloader.Profile.from_id(L.context, int(id))
         print("username: " + profile.username + " id " + str(id) + " hastag="+hastag + " target="+target)
-        saveUserAndIdIntoDatabase(id, profile.username)
+        username = profile.username
+
+        #Ottengo i dati se posso/non posso inserirlo
+        followers = str(requests.get("https://www.elenarosina.com/instatrack/getFollowersFromUser.php?username=" + str(username)).content)
+
+
+        #Parso i dati
+
+
+        followers = followers.replace("b", "")
+        followers = followers.replace("'", "")
+        followers = followers.replace(" ", "")
+
+
+
+        #Controllo se nela stringa followers ci sia la k
+        if followers.__contains__("k"):
+            print("\nLo username: " + username + " ha troppi followers\n")
+            return
+
+        #Controllo i paradigmi
+        media = str(requests.get("https://www.elenarosina.com/instatrack/getPostsFromUser.php?username=" + str(username)).content)
+        media = media.replace("b", "")
+        media = media.replace("'", "")
+        media = media.replace(" ", "")
+
+        if int(media)< 8:
+            print("\nLo username: " + username + " non ha piu di 8 media\n")
+            return
+
+        if int(followers) > 5000:
+            print("\nLo username: " + username + " ha piu di 5k followers\n")
+            return
+
+        followee = str(requests.get("https://www.elenarosina.com/instatrack/getFollowersFromUser.php?username=" + str(username)).content)
+        followee = followee.replace("'", "")
+        followee = followee.replace("b", "")
+        followee = followee.replace(" ", "")
+
+        if int(followee) > int(followers):
+            print("Salvo l' username: " + str(username) + " followers: "+str(followers) + " followee: " + str(followee) + " media: " + str(media))
+            saveUserAndIdIntoDatabase(id, profile.username)
+            return
+
+        if int(followee) < 1200 and int(followee) > 300:
+            print("Salvo l' username: " + str(username) + " followers: " + str(followers) + " followee: " + str(
+                followee) + " media: " + str(media))
+            saveUserAndIdIntoDatabase(id, profile.username)
+            return
 
     except instaloader.exceptions.LoginRequiredException:
         print("impossibile trovare username, passo al prossimo")
