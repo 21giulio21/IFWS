@@ -24,45 +24,13 @@ class myThread (threading.Thread):
 
    def function_thread(self):
        follower = self.follower
-       followers = follower.followers
+
+       id = follower.userid
        username = follower.username
-       # Se l'utente ha piu di 7k di followers non lo prendo neanche
-       if int(followers) > 7000:
-           print("L'utente: " + username + " ha piu di 7k followers, quindi non lo prendo nel nostro database")
-           return
+       response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET="+str(target))
+       print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(target))
+       print(response.content)
 
-        #Controllo se la biografia è settata
-       biografia = str(follower.biography)
-
-
-
-       mediacount = follower.mediacount
-       if int(mediacount) > 3:
-
-           is_private = follower.is_private
-
-           if is_private==False :
-
-               followees = follower.followees
-               if int(followees) > int(followers):
-                   id = follower.userid
-                   username = follower.username
-                   response = requests.get("http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET="+str(target))
-                   print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
-                       target) + " media:" + str(mediacount) + " is_private" + str(is_private) + " followers:" + str(
-                       followers) + " followee:" + str(followees))
-                   print(response.content)
-
-               elif int(followees) > 300:
-                   id = follower.userid
-                   username = follower.username
-                   response = requests.get(
-                       "http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
-                           id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
-                   print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
-                       target) + " media:" + str(mediacount) + " is_private" + str(is_private) + " followers:" + str(
-                       followers) + " followee:" + str(followees))
-                   print(response.content)
 
 
 #Permette di scrivere i log su un file di testo
@@ -101,7 +69,6 @@ random.shuffle(ustenti_da_cui_prendere_followers)
 
 
 for user in ustenti_da_cui_prendere_followers:
-    print("\n 1 \n")
     profile = instaloader.Profile.from_username(L.context, user)
     # Print list of followers
     for follower in profile.get_followers():
