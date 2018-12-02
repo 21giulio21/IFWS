@@ -11,6 +11,17 @@ target      =   str(sys.argv[1])
 hastag      =   str(sys.argv[2]) #"pugilato"
 
 
+def controlloSeNelDBHoGiaUnUtenteConQuelID(id):
+
+    #Faccio una richiueata al url: http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=1632792873    torna TRUE SE POSSO INSERIRE L?UTENTE
+    url = "http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + id + "&TARGET="+target
+    response = requests.get(url)
+    if str(response.content).__contains__("TR"):
+        return 1
+
+    else:
+        print("ID Gia inserito " + id + " con il target" + target)
+        return 2
 
 class myThread (threading.Thread):
    def __init__(self, follower):
@@ -76,11 +87,12 @@ posts = L.get_hashtag_posts(hastag)
 
 for i in posts:
 
-    username = i.owner_username
-    profilo = instaloader.Profile.from_username(L.context, username)
+    id = i.owner_id
 
-
-    thread1 = myThread(profilo)
-    thread1.start()
+    if controlloSeNelDBHoGiaUnUtenteConQuelID(id)   ==  1:
+        username = i.owner_username
+        profilo = instaloader.Profile.from_username(L.context, username)
+        thread1 = myThread(profilo)
+        thread1.start()
     #sleep(0.5)
 

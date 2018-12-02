@@ -27,9 +27,12 @@ from InstagramAPI import selectUserFromDatabase
 from InstagramAPI import countUserIntoDatabase
 
 from InstagramAPI import richiestaLike
+import time
+## dd/mm/yyyy format
+
 
 #Ogni foto attraverso il nostro bot va a ricereve al massimo 20 like
-
+print("Inizio script:" + str(time.strftime("%d/%m/%Y")))
 
 
 numberUsersIntoDatabase = countUserIntoDatabase()
@@ -82,3 +85,6 @@ print("Totale utenti che dovranno ricevere like: " + str(len(array_user_auto_lik
 
 #Per ogni username salvo l'id della relativa immagine su cui gli utenti metteranno like
 salvoSulDatabaseIdImmagineEUsernameDegliUtentiCheVoglionoLike(array_user_auto_like)
+
+#Aspetto 1 giorno prima di rifarlo
+time.sleep(86400)
