@@ -14,7 +14,7 @@ hastag      =   str(sys.argv[2]) #"pugilato"
 def controlloSeNelDBHoGiaUnUtenteConQuelID(id):
 
     #Faccio una richiueata al url: http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=1632792873    torna TRUE SE POSSO INSERIRE L?UTENTE
-    url = "http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + id + "&TARGET="+target
+    url = "http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + str(id) + "&TARGET="+target
     response = requests.get(url)
     if str(response.content).__contains__("TR"):
         return 1
@@ -87,7 +87,7 @@ posts = L.get_hashtag_posts(hastag)
 
 for i in posts:
 
-    id = i.owner_id
+    id = str(i.owner_id)
 
     if controlloSeNelDBHoGiaUnUtenteConQuelID(id)   ==  1:
         username = i.owner_username
