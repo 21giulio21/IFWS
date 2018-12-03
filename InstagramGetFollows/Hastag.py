@@ -5,8 +5,6 @@ from time import sleep
 import  instaloader
 import requests
 
-from InstagramAPI import getIDFromUsername
-
 target      =   str(sys.argv[1])
 hastag      =   str(sys.argv[2]) #"pugilato"
 
@@ -24,17 +22,23 @@ def controlloSeNelDBHoGiaUnUtenteConQuelID(id):
         return 2
 
 class myThread (threading.Thread):
-   def __init__(self, follower):
+   def __init__(self, post):
       threading.Thread.__init__(self)
-      self.follower = follower
+      self.post = post
 
    def run(self):
         self.function_thread()
 
 
    def function_thread(self):
-       follower = self.follower
-       followers = follower.followers
+
+       id = self.post.owner_profile.userid
+       username = self.post.owner_profile.username
+
+       followers = self.post.owner_profile.followers
+       followees = self.post.owner_profile.followees
+
+       print(username + " " + str(id) + " " + str(followers) + " " + str(followees))
 
 
        # Se l'utente ha piu di 7k di followers non lo prendo neanche
@@ -46,17 +50,14 @@ class myThread (threading.Thread):
        #biografia = str(follower.biography)
 
 
-       mediacount = follower.mediacount
+       mediacount = self.post.owner_profile.mediacount
        if int(mediacount) > 8:
 
-           is_private = follower.is_private
+           is_private = self.post.owner_profile.is_private
 
            if is_private == False :
 
-               followees = follower.followees
                if int(followees) > int(followers):
-                   id = follower.userid
-                   username = follower.username
                    response = requests.get(
                        "http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
                            id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
@@ -68,8 +69,6 @@ class myThread (threading.Thread):
 
 
                elif int(followees) < 1200 and int(followees) > 300:
-                   id = follower.userid
-                   username = follower.username
                    response = requests.get(
                        "http://altridatabase.altervista.org/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
                            id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
@@ -85,14 +84,11 @@ class myThread (threading.Thread):
 L = instaloader.Instaloader()
 posts = L.get_hashtag_posts(hastag)
 
-for i in posts:
+for post in posts:
 
-    id = str(i.owner_id)
+    thread1 = myThread(post)
+    thread1.start()
 
-    if controlloSeNelDBHoGiaUnUtenteConQuelID(id)   ==  1:
-        username = i.owner_username
-        profilo = instaloader.Profile.from_username(L.context, username)
-        thread1 = myThread(profilo)
-        thread1.start()
-    #sleep(0.5)
+    sleep(1)
+
 
