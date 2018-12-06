@@ -326,14 +326,8 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 def getUserToFollwFromTarget(target,username):
     #Se il target e' CHIARAFERRAGNI allora devo andare a interrogare il server: aabbccddee.altervista.org altrimenti altridatabase.altervista.org
 
-    if target == "HARDSTYLE":
-        print(str(username) + " richiesta  al target: " + str(target))
-        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUser.php?target=" + str(target)
-    else:
-        print( str(username) + " richiesta  al target: " + str(target))
-        url = "http://www.altridatabase.altervista.org/getUserToFollowFromUTENTI_DA_SEGUIRE.php?target=" + str(target)
-
-
+    print( str(username) + " richiesta  al target: " + str(target))
+    url = "https://www.elenarosina.com/instatrack/saveUserToFollow/getUserToFollowFromUTENTI_DA_SEGUIRE.php?TARGET=" + str(target)
     return json.loads(requests.get(url).content)
 
 

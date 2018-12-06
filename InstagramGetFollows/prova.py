@@ -1,71 +1,41 @@
-#QUesto file permette di fare una scansione giorno dei profili che utilizzano il bot.
-#Per ogni profilo viene salvato: username, followers, followees e media.
-import time
+import json
 
+from termcolor import colored
 import requests
-
-from InstagramAPI import countUserIntoDatabase
-from InstagramAPI import selectUserFromDatabase
+import datetime
 
 
+'''
+In questo file inserisco tutte le funzioni necessarie all'invio di messaggi
 
-numberUsersIntoDatabase = countUserIntoDatabase()
-print("Ho un totale di " + str(numberUsersIntoDatabase) + " utenti")
+I campi che controllo e' che il numero sia  con il + altrimenti restituisco un errore
+'''
 
-#Array di utenti che hanno script attivo, solo su questo array si fanno le statistiche
-array_utenti_con_script_attivo = []
+def getCurrentTime():
+    now = datetime.datetime.now()
+    return str(now.strftime("%Y-%m-%d %H:%M"))
 
-# Ora ciclo sul totale di persone che ho nel database
-for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
+#questa funzione interroga il db per ottenere il primo SMS sa mandare
+def ottengoSMSDalDatabase():
+    url = "http://www.elenarosina.com/instatrack/send_SMS/get_sms_from_database.php"
+    if
+    temp = json.loads(requests.get(url).content)
 
-    # Seleziono la tupla relativa all'utente
-    user = selectUserFromDatabase(index)
+    ID_MESSAGGIO = temp[0]['ID_MESSAGGIO']
+    NUMERO_TELEFONICO = temp[0]['NUMERO_TELEFONICO']
+    MESSAGGIO = temp[0]['MESSAGGIO']
 
-    username = str(user[0]['USERNAME'])
-    script_attivo = str(user[0]['SCRIPT_ACTIVE'])
-    target = str(user[0]['TARGET'])
+    return
 
-    if script_attivo == "1":
-        user_dictionary = {
-            "USERNAME": username,
-            "TARGET": target
-        }
-        array_utenti_con_script_attivo.append(user_dictionary)
+#def sendSMS(numero,messaggio):
 
-print("Ho un totale di: " +  str(len(array_utenti_con_script_attivo)) + " utenti per cui fare le statistiche ")
-
-#Per ogni utente di cui devo fare le statistiche devo chiedere i media,followees,followers
-for utente in array_utenti_con_script_attivo:
-
-    username = utente["USERNAME"]
-    target = utente["TARGET"]
-
-    url_media = "https://www.elenarosina.com/instatrack/getPostsFromUser.php?username="
-    url_followers = "https://www.elenarosina.com/instatrack/getFollowersFromUser.php?username="
-    url_followees = "https://www.elenarosina.com/instatrack/getFolloweeFromUser.php?username="
+    #Controllo che il nuemro di telefono inizia per +
+    #Questo e' un esempio di come dovrebbe essere la chiamata
+    #risposta = requests.post("https://www.instatrack.eu/sms/sms.php", data={'numero': '+393426788719', 'messaggio': 'ELEFANTI INFINITI', 'password': 'yY3KKeSfzyHynay28eSfCpzqw5Xn7zYt'}).content
+    #print(risposta)
 
 
-    media       =   str(requests.get(url_media      + username,verify=False).content)
-    followers   =   str(requests.get(url_followers  + username,verify=False).content)
-    followees   =   str(requests.get(url_followees  + username,verify=False).content)
 
-    media = media.replace("'","")
-    media = media.replace("b", "")
-
-    followers = followers.replace("'", "")
-    followers = followers.replace("b", "")
-
-    followees = followees.replace("'", "")
-    followees = followees.replace("b", "")
-
-    time.sleep(1)
-    #Creo il
-    ora = time.strftime("%H:%M:%S")
-    data = str(time.strftime("%d/%m/%Y"))
-
-    tempo = data + " - " + ora
-
-    print( tempo + " Username: " + username + " Followers: "+followers + " Follwees: " +followees)
-
-    #Chiedo
-
+print(colored(getCurrentTime(), 'green') , colored("Inizio controllo", 'green') )
+print(ottengoSMSDalDatabase())
+print(colored('hello', 'red'), colored('world', 'green'))
