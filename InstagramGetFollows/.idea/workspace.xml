@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf0897f-0674-4ac2-add2-8a5fd8d4727c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/saveIntoDatabaseSTATISTICHE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.dropbox" beforeDir="false" afterPath="$PROJECT_DIR$/../.dropbox" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppAndroid/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../AppAndroid/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SaveUserToFollowIntoDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/SaveUserToFollowIntoDatabase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prova.py" beforeDir="false" afterPath="$PROJECT_DIR$/prova.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/chardetect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
@@ -116,17 +111,13 @@
       <change beforePath="$PROJECT_DIR$/../script/esempiSCRIPT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../script/esempiSCRIPT.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/saveActiveUserToFollow.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/saveActiveUserToFollow.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/saveIDAndUsernameIntoLIKE_AUTOMATICI.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/saveIDAndUsernameIntoLIKE_AUTOMATICI.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../script/saveStatistiche.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/saveStatistiche.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/saveUserToFollowIntoDatabase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/saveUserToFollowIntoDatabase.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/saveUserToFollowIntoDatabaseWithParameter.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/saveUserToFollowIntoDatabaseWithParameter.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/scriptHastag.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/scriptHastag.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/scriptLogin.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/scriptLogin.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/scriptProva.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/scriptSaveUserFromPosition.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/scriptSaveUserFromPosition.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/scriptSaveUserFromPosition2.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/scriptSaveUserFromPosition3.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/scriptScript2.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/scriptScript2Thread.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/scriptScript2Thread.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/t.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/chardetect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/easy_install" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/bin/easy_install-3.6" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/easy_install-3.6" afterDir="false" />
@@ -213,7 +204,82 @@
       <change beforePath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/urllib3/util/timeout.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/urllib3/util/timeout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/urllib3/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/urllib3/util/url.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/urllib3/util/wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/urllib3/util/wait.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../venv/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libfreetype-6ed94974.so.6.16.1" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libfreetype-6ed94974.so.6.16.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libjpeg-3fe7dfc0.so.9.3.0" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libjpeg-3fe7dfc0.so.9.3.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/liblcms2-a6801db4.so.2.0.8" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/liblcms2-a6801db4.so.2.0.8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/liblzma-90de1f11.so.5.2.2" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/liblzma-90de1f11.so.5.2.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libopenjp2-e366d6b0.so.2.1.0" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libopenjp2-e366d6b0.so.2.1.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libpng16-8793a1b2.so.16.32.0" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libpng16-8793a1b2.so.16.32.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libtiff-8a6d997d.so.5.3.0" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libtiff-8a6d997d.so.5.3.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libwebp-8ccd29fd.so.7.0.2" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libwebp-8ccd29fd.so.7.0.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libwebpdemux-eba3dc32.so.2.0.4" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libwebpdemux-eba3dc32.so.2.0.4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libwebpmux-1c63fe99.so.3.0.2" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libwebpmux-1c63fe99.so.3.0.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libz-a147dcb0.so.1.2.3" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/.libs/libz-a147dcb0.so.1.2.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imaging.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imaging.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingcms.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingcms.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingft.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingft.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingmath.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingmath.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingmorph.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingmorph.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingtk.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_imagingtk.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_webp.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/PIL/_webp.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna-2.7.dist-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/codec.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/codec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/idnadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/idnadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/intranges.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/intranges.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/package_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/package_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/uts46data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/idna/uts46data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t32.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t64.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w32.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w64.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/DESCRIPTION.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/DESCRIPTION.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3-1.23.dist-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/_collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/_collections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/connectionpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/connectionpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/bindings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/_securetransport/low_level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/appengine.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/appengine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/ntlmpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/ntlmpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/pyopenssl.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/pyopenssl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/securetransport.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/securetransport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/socks.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/contrib/socks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/filepost.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/filepost.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/backports/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/backports/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/backports/makefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/backports/makefile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/ordered_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/ordered_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/ssl_match_hostname/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/ssl_match_hostname/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/poolmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/poolmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/retry.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/retry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/ssl_.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/ssl_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/timeout.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/timeout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/wait.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -292,14 +358,14 @@
     <session id="1590215570">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="80" />
+          <entry key="project.closed" value="81" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.4" value="2" />
@@ -309,12 +375,12 @@
           <entry key="project.open.time.8" value="10" />
           <entry key="project.open.time.9" value="5" />
           <entry key="project.open.time.98" value="1" />
-          <entry key="project.opened" value="92" />
+          <entry key="project.opened" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="94" />
+          <entry key="py" value="97" />
           <entry key="txt" value="1" />
           <entry key="w" value="1" />
         </counts>
@@ -322,19 +388,19 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="94" />
+          <entry key="Python" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="108" />
-          <entry key="py" value="17872" />
+          <entry key="py" value="19979" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="108" />
-          <entry key="Python" value="17872" />
+          <entry key="Python" value="19979" />
         </counts>
       </usages-collector>
     </session>
@@ -344,35 +410,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="329" column="11" selection-start-line="329" selection-start-column="11" selection-end-line="329" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SaveUserFromPosition.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="60" selection-start-line="24" selection-end-line="25" />
+            <state relative-caret-position="168">
+              <caret line="577" lean-forward="true" selection-start-line="577" selection-end-line="577" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py">
+        <entry file="file://$PROJECT_DIR$/prova.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="63" column="88" selection-start-line="62" selection-start-column="24" selection-end-line="63" selection-end-column="88" />
+            <state relative-caret-position="183">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1544143800528" expanded="true" signature="310:1341" ph="..." />
+                <marker date="1544143800528" expanded="true" signature="1151:1341" ph="..." />
+                <marker date="1544143800528" expanded="true" signature="1371:1376" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script2ThreadCanessa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="143" column="12" lean-forward="true" selection-start-line="143" selection-start-column="12" selection-end-line="145" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -380,44 +443,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MAIL_BOT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="50" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/saveIDAndUsernameIntoLIKE_AUTOMATICI.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="88" selection-start-line="88" selection-end-line="89" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SaveUserActiveToFollowIntoDatabase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hastag.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scriptAutomaticallyLike.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2023">
-              <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="144" selection-end-column="5" />
+            <state relative-caret-position="68">
+              <caret line="11" column="1" selection-start-line="10" selection-end-line="13" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -433,11 +460,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>countUserIntoDatabaseFromTread</find>
-      <find>updateDevePagare</find>
-      <find>stampa</find>
-      <find>login_from_GUI</find>
-      <find>print</find>
       <find>ADMIN</find>
       <find>users_fo</find>
       <find>updateUserFollowed</find>
@@ -461,8 +483,13 @@
       <find>updatet</find>
       <find>ultima</find>
       <find>follow</find>
-      <find>ottengoMailDalDatabase</find>
       <find>altri</find>
+      <find>Invio</find>
+      <find>sendM</find>
+      <find>sendMailToUser</find>
+      <find>json</find>
+      <find>dicendo che ho</find>
+      <find>ottengoMailDalDatabase</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -518,18 +545,18 @@
         <option value="$PROJECT_DIR$/SaveUserActiveToFollowIntoDatabase.py" />
         <option value="$PROJECT_DIR$/Hastag.py" />
         <option value="$PROJECT_DIR$/saveIntoDatabaseSTATISTICHE.py" />
-        <option value="$PROJECT_DIR$/prova.py" />
         <option value="$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py" />
         <option value="$PROJECT_DIR$/InstagramAPI.py" />
         <option value="$PROJECT_DIR$/SaveUserToFollowIntoDatabase.py" />
+        <option value="$PROJECT_DIR$/prova.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
-    <option name="y" value="246" />
-    <option name="width" value="1086" />
-    <option name="height" value="786" />
+    <option name="y" value="411" />
+    <option name="width" value="1365" />
+    <option name="height" value="618" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -539,23 +566,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="InstagramGetFollows" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -752,12 +779,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26550078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14785373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3268206" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.3785166" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5714286" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -899,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script2ThreadCanessa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script2Thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -913,10 +933,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MAIL_BOT.py">
+    <entry file="file://$PROJECT_DIR$/saveIntoDatabaseSTATISTICHE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="478">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveUserFromPosition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="60" selection-start-line="24" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="63" column="88" selection-start-line="62" selection-start-column="24" selection-end-line="63" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -948,55 +989,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saveIntoDatabaseSTATISTICHE.py">
+    <entry file="file://$PROJECT_DIR$/script2ThreadCanessa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-          <folding>
-            <element signature="e#159#170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prova.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1544027670955" expanded="true" signature="270:740" ph="..." />
-            <marker date="1544027670955" expanded="true" signature="771:772" ph="..." />
-            <marker date="1544027670955" expanded="true" signature="771:831" ph="..." />
-            <marker date="1544027670955" expanded="true" signature="771:893" ph="..." />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="143" column="12" lean-forward="true" selection-start-line="143" selection-start-column="12" selection-end-line="145" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="329" column="11" selection-start-line="329" selection-start-column="11" selection-end-line="329" selection-end-column="67" />
+        <state relative-caret-position="168">
+          <caret line="577" lean-forward="true" selection-start-line="577" selection-end-line="577" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabase.py">
+    <entry file="file://$PROJECT_DIR$/MAIL_BOT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+        <state relative-caret-position="68">
+          <caret line="11" column="1" selection-start-line="10" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SaveUserFromPosition.py">
+    <entry file="file://$PROJECT_DIR$/prova.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="60" selection-start-line="24" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="63" column="88" selection-start-line="62" selection-start-column="24" selection-end-line="63" selection-end-column="88" />
+        <state relative-caret-position="183">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1544143800528" expanded="true" signature="310:1341" ph="..." />
+            <marker date="1544143800528" expanded="true" signature="1151:1341" ph="..." />
+            <marker date="1544143800528" expanded="true" signature="1371:1376" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
