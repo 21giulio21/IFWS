@@ -9,17 +9,16 @@ target      =   str(sys.argv[1])
 hastag      =   str(sys.argv[2]) #"pugilato"
 
 
-def controlloSeNelDBHoGiaUnUtenteConQuelID(id):
-
-    #Faccio una richiueata al url: http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=1632792873    torna TRUE SE POSSO INSERIRE L?UTENTE
-    url = "http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + str(id) + "&TARGET="+target
+def controlloSeNelDBHoGiaUnUtenteConQuelIDETarget(id, target):
+    # Faccio una richiueata al url: http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=1632792873    torna TRUE SE POSSO INSERIRE L?UTENTE
+    url = "https://www.elenarosina.com/instatrack/saveUserToFollow/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + str(id) + "&TARGET=" + target
     response = requests.get(url)
     if str(response.content).__contains__("TR"):
-        return 1
-
+        return False
     else:
-        print("ID Gia inserito " + id + " con il target" + target)
-        return 2
+        print("ID Gia inserito " + str(id) + " con il target" + target)
+        return True
+
 
 class myThread (threading.Thread):
    def __init__(self, post):
@@ -30,15 +29,18 @@ class myThread (threading.Thread):
         self.function_thread()
 
 
+
+
    def function_thread(self):
 
        id = self.post.owner_profile.userid
+
+
        username = self.post.owner_profile.username
 
        followers = self.post.owner_profile.followers
        followees = self.post.owner_profile.followees
 
-       print(username + " " + str(id) + " " + str(followers) + " " + str(followees))
 
 
        # Se l'utente ha piu di 7k di followers non lo prendo neanche
@@ -46,7 +48,7 @@ class myThread (threading.Thread):
            print("L'utente:  ha piu di 5k followers, quindi non lo prendo nel nostro database")
            return
 
-        #Controllo se la biografia è settata
+        #Controllo se la biografia e' settata
        #biografia = str(follower.biography)
 
 
@@ -84,10 +86,15 @@ class myThread (threading.Thread):
 L = instaloader.Instaloader()
 posts = L.get_hashtag_posts(hastag)
 
+index = 0
+
 for post in posts:
 
     thread1 = myThread(post)
     thread1.start()
+
+    index = index + 1
+    print(index)
 
     sleep(1)
 

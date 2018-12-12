@@ -1,4 +1,4 @@
-import re
+import random
 import time
 
 from termcolor import colored
@@ -6,19 +6,13 @@ import datetime
 from email.mime.text import MIMEText
 import json
 import smtplib
-import random
 from email.mime.multipart import MIMEMultipart
 import requests
 
-from InstagramAPI import countUserIntoDatabase, selectUserFromDatabase, scrivoColoratoSuFile, updateTreadFromUsername
+from InstagramAPI import scrivoColoratoSuFile, countUserIntoDatabase, selectUserFromDatabase, updateTreadFromUsername
 
 '''
-In questo file inserisco tutte le funzioni necessarie per:
-1) Invio SMS
-2) Invio Mail
-3) Controllo deigli utenti che ci sono su ogni thread: Per ogni thread controllo il numero degli
-utenti che ho, se sono sbilanciati li bilancio
-4) Elimino tutti i contatti che hanno il tempo di fine iscrizione > 2 mesi
+In questo file inserisco tutte le funzioni necessarie all'invio di messaggi
 
 I campi che controllo e' che il numero sia  con il + altrimenti restituisco un errore
 '''
@@ -96,9 +90,13 @@ def sendSMS(numero,messaggio):
     success = json.loads(risposta)
 
     if success["success"] == "success":
-        print(colored(getCurrentTime(), 'green'), colored("SMS - SMS inviato", 'green'))
+        messaggio = "SMS - SMS inviato"
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
     else:
-        print(colored(getCurrentTime(), 'red'), colored("SMS - Messaggio non inviato con il seguente errore: " + success, 'red'))
+        messaggio = "SMS - Messaggio non inviato con il seguente errore: " + success
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
+
         # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
         msg = "ERRORE NELL' INVIO SMS - ERRORE nell'invio dell'SMS, risposta ottenuta da instatrack.eu/sms/sms.php: " + success
         subject = "ERRORE"
@@ -122,8 +120,13 @@ if 'success' in risposta:
     #Se la pagina php ha come risposta qualcosa che non sia: { "success":"failed", "reason":"Non ho SMS da prendere dal DB" }
     #Allora mando la mail a me dicendo che ho un problema
     if risposta["reason"] != "Non ho SMS da prendere dal DB":
-        print(colored(getCurrentTime(), 'red'), colored("SMS - " + str(risposta), 'red'))
-        print(colored(getCurrentTime(), 'red'), colored("SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore", 'red'))
+
+
+        messaggio = "SMS - " + str(risposta)
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
+
+        messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
 
         #Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
         msg = "ERRORE NELL' INVIO SMS - Risposta ottenuta: " + str(risposta)
@@ -133,23 +136,39 @@ if 'success' in risposta:
 
     #Entro dentro l'else solamente se risposta["reason"] == "Non ho SMS da prendere dal DB". In questo scrivo che non ho SMS da processare
     else:
-        print(colored(getCurrentTime(), 'green'), colored("SMS - " + str(risposta), 'green'))
 
+        messaggio = "SMS - " + str(risposta)
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
 else:
-    print(colored(getCurrentTime(), 'green'), colored("SMS - Ho un SMS da processare", 'green'))
-    print(colored(getCurrentTime(), 'green'), colored("SMS - " + str(risposta), 'green'))
+
+    messaggio = "SMS - Ho un SMS da processare"
+    scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
+    messaggio = "SMS - " + str(risposta)
+    scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
 
     #Mappo il messagio
     NUMERO_TELEFONICO = str(risposta[0]["NUMERO_TELEFONICO"])
     MESSAGGIO = str(risposta[0]["MESSAGGIO"])
 
     if checkNumeroTelefonico(NUMERO_TELEFONICO):
-        print(colored(getCurrentTime(), 'green'), colored("SMS - Invio messaggio:" + MESSAGGIO + " al numero: " + NUMERO_TELEFONICO, 'green'))
+
+        messaggio = "SMS - Invio messaggio:" + MESSAGGIO + " al numero: " + NUMERO_TELEFONICO
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
         sendSMS(NUMERO_TELEFONICO, MESSAGGIO)
+
+
+
     else:
-        print(colored(getCurrentTime(), 'red'), colored("SMS - Il numero telefonico non inizia con il +", 'red'))
-        print(colored(getCurrentTime(), 'red'),
-              colored("SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore", 'red'))
+
+
+        messaggio = "SMS - Il numero telefonico non inizia con il +"
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
+
+        messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
 
         # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
         msg = "ERRORE NELL' INVIO SMS - Il numero di telefono a cui voglio mandare l'SMS ("+str(NUMERO_TELEFONICO)+") non inizia con il + "
@@ -174,8 +193,14 @@ if 'success' in risposta:
     #Se la pagina php ha come risposta qualcosa che non sia: { "success":"failed", "reason":"Non ho MAIL da prendere dal DB" }
     #Allora mando la mail a me dicendo che ho un problema
     if risposta["reason"] != "Non ho MAIL da prendere dal DB":
-        print(colored(getCurrentTime(), 'red'), colored("MAIL - " + str(risposta), 'red'))
-        print(colored(getCurrentTime(), 'red'), colored("MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore", 'red'))
+
+        messaggio = "MAIL - " + str(risposta)
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
+
+        messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
+
+
 
         #Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
         msg = "ERRORE NELL' INVIO MAIL - Risposta ottenuta: " + str(risposta)
@@ -185,11 +210,17 @@ if 'success' in risposta:
 
     #Entro dentro l'else solamente se risposta["reason"] == "Non ho SMS da prendere dal DB". In questo scrivo che non ho SMS da processare
     else:
-        print(colored(getCurrentTime(), 'green'), colored( "MAIL - " + str(risposta), 'green'))
+        messaggio = "MAIL - " + str(risposta)
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
 
 else:
-    print(colored(getCurrentTime(), 'green'), colored("MAIL - Ho una MAIL da processare", 'green'))
-    print(colored(getCurrentTime(), 'green'), colored("MAIL - " + str(risposta), 'green'))
+
+    messaggio = "MAIL - Ho una MAIL da processare"
+    scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
+    messaggio = "MAIL - " + str(risposta)
+    scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
 
     #Mappo il messagio
     EMAIL = str(risposta[0]["EMAIL"])
@@ -198,19 +229,79 @@ else:
 
 
     if checkMailCorrect(EMAIL):
-        print(colored(getCurrentTime(), 'green'), colored("MAIL - Invio messaggio:" + MESSAGGIO + " alla mail: " + EMAIL, 'green'))
+
+        messaggio = "MAIL - Invio messaggio:" + MESSAGGIO + " alla mail: " + EMAIL
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
         sendMailToUser(EMAIL, MESSAGGIO, OGGETTO)
 
     else:
-        print(colored(getCurrentTime(), 'red'), colored("MAIL - Indirizzo mail non valido", 'red'))
-        print(colored(getCurrentTime(), 'red'),
-              colored("MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore", 'red'))
+        messaggio = "MAIL - Indirizzo mail non valido"
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
+
+        messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+        scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "red")
+
 
         # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
         msg = "ERRORE NELL' INVIO MAIL  - La mail non contiene la @  ("+str(EMAIL)+") "
         subject = "ERRORE"
         email = "21giulio21@gmail.com"
         sendMailToUser(email, msg, subject)
+################ INIZIO SCRIPT BILANCIAMENTO THREAD ############
+#QUuesto parte solamente 1 volta su 200
+
+
+
+
+numero_casuale = int(random.randint(0, 100))
+
+
+if numero_casuale == 50:
+
+    #Se sono qui dentro allora inizio il bilanciamento dei thread
+
+    messaggio = "Inizio a spostare gli utenti con: PSW errata / deve pagare = 1 su thread 0"
+    scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
+    #In questa variabile inserisco il tempo di ora
+    tempo_di_ora = str(time.time())
+    tempo_di_ora = tempo_di_ora[:-3]
+
+    #scarico tute le tuple che ho nel database
+    numberUsersIntoDatabase = countUserIntoDatabase()
+    for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
+
+        # Seleziono la tupla relativa all'utente
+        user = selectUserFromDatabase(index)
+
+        username = str(user[0]['USERNAME'])
+
+        # PASSWORD_ERRATA e' a 1 se la password di instagram e' sbagliata
+        password_errata = str(user[0]['PASSWORD_ERRATA'])
+
+
+        # deve_pagare e' a 1 solo se l'utente non ha pagato.
+        deve_pagare = str(user[0]['DEVE_PAGARE'])
+
+        # Tempo in uci deve finire lo script
+        tempo_fine_iscrizione = str(user[0]['TEMPO_FINE_ISCRIZIONE'])
+
+        # mail dell'utente, utile perche contattiamo l'utente per
+        # dirgli che e' da un mese che non accede
+        email = str(user[0]['EMAIL'])
+
+        thread = str(user[0]['THREAD'])
+
+         #1) Se gli username hanno password errata / deve pagare = 1 allora li sposto sullo 0
+        if int(thread) != 0 and (password_errata == '1' or deve_pagare == '1'):
+            messaggio = "sposto l'utente: " + username + " sul thread 0"
+            scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+            updateTreadFromUsername(username, "0")
+
+    messaggio = "Fine bilanciamento thread"
+    scrivoColoratoSuFile("SMS_MAIL.html", messaggio, "green")
+
 
 
 

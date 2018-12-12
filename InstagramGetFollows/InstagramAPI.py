@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import ast
 import base64
+import datetime
 
 from email.mime.text import MIMEText
 from threading import *
@@ -10,6 +11,8 @@ import json
 import itertools
 import random
 import time
+
+from termcolor import colored
 
 from function import stampa
 import re
@@ -711,4 +714,22 @@ def automaticLIKE(username, cookies_str, cookies_dict):
 
 
             break
+
+################################# QUESTE FUNZIONI SERVONO PER IL LOG ##################
+
+def getCurrentTime():
+    now = datetime.datetime.now()
+    return str(now.strftime("%Y-%m-%d %H:%M"))
+
+
+#QUesta funzione scrive nella cartella LOG il file
+#Esempio di come deve essere chiamata:scrivoColoratoSuFile("prova.html", "hhhh", "green")
+def scrivoColoratoSuFile(nomeFIle, testo, colore):
+
+    #Ottengo l'ora di ora
+    timestamp = getCurrentTime()
+    with open( nomeFIle, "a") as myfile:
+        print(colored(timestamp +" "+testo, colore))
+        myfile.write('<p style="color: '+ colore+';">' +timestamp +" "+testo+'</p>')
+
 
