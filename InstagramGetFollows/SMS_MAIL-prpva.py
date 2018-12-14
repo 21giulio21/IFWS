@@ -1,5 +1,7 @@
 import random
 import time
+import schedule
+import time
 
 from termcolor import colored
 import datetime
@@ -107,165 +109,148 @@ def sendSMS(numero,messaggio):
         email = "21giulio21@gmail.com"
         sendMailToUser(email, msg, subject)
 
-
-#TODO: Rimuovere per inserire un qualcosa di figo
-time.sleep(10)
-
-##################### INIZIO SCRIPT PER SMS #####################
 #QUESTA PARTE PERMETTE DI MANDARE SMS AGLI UTENTI
+def SMS():
+    risposta = ottengoSMSDalDatabase();
+    #Ora controllo la risposta, se la risposta e' qualcosa di simile:
+    #{ "success":"failed", "reason":"Non ho SMS da prendere dal DB" }
+#   Allora non devo proseguire perche non ho messaggi.
+    if 'success' in risposta:
+
+        #Se la pagina php ha come risposta qualcosa che non sia: { "success":"failed", "reason":"Non ho SMS da prendere dal DB" }
+        #Allora mando la mail a me dicendo che ho un problema
+        if risposta["reason"] != "Non ho SMS da prendere dal DB":
 
 
-risposta = ottengoSMSDalDatabase();
-#Ora controllo la risposta, se la risposta e' qualcosa di simile:
-#{ "success":"failed", "reason":"Non ho SMS da prendere dal DB" }
-#Allora non devo proseguire perche non ho messaggi.
-if 'success' in risposta:
+            messaggio = "SMS - " + str(risposta)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
-    #Se la pagina php ha come risposta qualcosa che non sia: { "success":"failed", "reason":"Non ho SMS da prendere dal DB" }
-    #Allora mando la mail a me dicendo che ho un problema
-    if risposta["reason"] != "Non ho SMS da prendere dal DB":
+            messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
+            #Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
+            msg = "ERRORE NELL' INVIO SMS - Risposta ottenuta: " + str(risposta)
+            subject = "ERRORE"
+            email = "21giulio21@gmail.com"
+            sendMailToUser(email, msg, subject)
 
-        messaggio = "SMS - " + str(risposta)
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+        #Entro dentro l'else solamente se risposta["reason"] == "Non ho SMS da prendere dal DB". In questo scrivo che non ho SMS da processare
+        else:
 
-        messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
-
-        #Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
-        msg = "ERRORE NELL' INVIO SMS - Risposta ottenuta: " + str(risposta)
-        subject = "ERRORE"
-        email = "21giulio21@gmail.com"
-        sendMailToUser(email, msg, subject)
-
-    #Entro dentro l'else solamente se risposta["reason"] == "Non ho SMS da prendere dal DB". In questo scrivo che non ho SMS da processare
+            messaggio = "SMS - " + str(risposta)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
     else:
+
+        messaggio = "SMS - Ho un SMS da processare"
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
         messaggio = "SMS - " + str(risposta)
         scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-else:
-
-    messaggio = "SMS - Ho un SMS da processare"
-    scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-
-    messaggio = "SMS - " + str(risposta)
-    scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
 
-    #Mappo il messagio
-    NUMERO_TELEFONICO = str(risposta[0]["NUMERO_TELEFONICO"])
-    MESSAGGIO = str(risposta[0]["MESSAGGIO"])
+        #Mappo il messagio
+        NUMERO_TELEFONICO = str(risposta[0]["NUMERO_TELEFONICO"])
+        MESSAGGIO = str(risposta[0]["MESSAGGIO"])
 
-    if checkNumeroTelefonico(NUMERO_TELEFONICO):
+        if checkNumeroTelefonico(NUMERO_TELEFONICO):
 
-        messaggio = "SMS - Invio messaggio:" + MESSAGGIO + " al numero: " + NUMERO_TELEFONICO
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+            messaggio = "SMS - Invio messaggio:" + MESSAGGIO + " al numero: " + NUMERO_TELEFONICO
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
-        sendSMS(NUMERO_TELEFONICO, MESSAGGIO)
+            sendSMS(NUMERO_TELEFONICO, MESSAGGIO)
 
 
 
-    else:
+        else:
 
 
-        messaggio = "SMS - Il numero telefonico non inizia con il +"
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+            messaggio = "SMS - Il numero telefonico non inizia con il +"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
-        messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+            messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
-        # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
-        msg = "ERRORE NELL' INVIO SMS - Il numero di telefono a cui voglio mandare l'SMS ("+str(NUMERO_TELEFONICO)+") non inizia con il + "
-        subject = "ERRORE"
-        email = "21giulio21@gmail.com"
-        sendMailToUser(email, msg, subject)
-
-##################### FINE SCRIPT PER SMS #####################
+            # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
+            msg = "ERRORE NELL' INVIO SMS - Il numero di telefono a cui voglio mandare l'SMS ("+str(NUMERO_TELEFONICO)+") non inizia con il + "
+            subject = "ERRORE"
+            email = "21giulio21@gmail.com"
+            sendMailToUser(email, msg, subject)
 
 
 ##################### INIZIO SCRIPT PER MAIL #####################
-
-risposta = ottengoMailDalDatabase()
-#Ora controllo la risposta, se la risposta e' qualcosa di simile:
-#{ "success":"failed", "reason":"Non ho SMS da prendere dal DB" }
-#Allora non devo proseguire perche non ho messaggi.
-
-
-
-if 'success' in risposta:
-
-    #Se la pagina php ha come risposta qualcosa che non sia: { "success":"failed", "reason":"Non ho MAIL da prendere dal DB" }
-    #Allora mando la mail a me dicendo che ho un problema
-    if risposta["reason"] != "Non ho MAIL da prendere dal DB":
-
-        messaggio = "MAIL - " + str(risposta)
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
-
-        messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+def MAIL():
+    risposta = ottengoMailDalDatabase()
+    #Ora controllo la risposta, se la risposta e' qualcosa di simile:
+    #{ "success":"failed", "reason":"Non ho SMS da prendere dal DB" }
+    #Allora non devo proseguire perche non ho messaggi.
 
 
 
-        #Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
-        msg = "ERRORE NELL' INVIO MAIL - Risposta ottenuta: " + str(risposta)
-        subject = "ERRORE"
-        email = "21giulio21@gmail.com"
-        sendMailToUser(email, msg, subject)
+    if 'success' in risposta:
 
-    #Entro dentro l'else solamente se risposta["reason"] == "Non ho SMS da prendere dal DB". In questo scrivo che non ho SMS da processare
+        #Se la pagina php ha come risposta qualcosa che non sia: { "success":"failed", "reason":"Non ho MAIL da prendere dal DB" }
+        #Allora mando la mail a me dicendo che ho un problema
+        if risposta["reason"] != "Non ho MAIL da prendere dal DB":
+
+            messaggio = "MAIL - " + str(risposta)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+
+            messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+
+
+
+            #Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
+            msg = "ERRORE NELL' INVIO MAIL - Risposta ottenuta: " + str(risposta)
+            subject = "ERRORE"
+            email = "21giulio21@gmail.com"
+            sendMailToUser(email, msg, subject)
+
+        #Entro dentro l'else solamente se risposta["reason"] == "Non ho SMS da prendere dal DB". In questo scrivo che non ho SMS da processare
+        else:
+            messaggio = "MAIL - " + str(risposta)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+
     else:
+
+        messaggio = "MAIL - Ho una MAIL da processare"
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+
         messaggio = "MAIL - " + str(risposta)
         scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
-else:
 
-    messaggio = "MAIL - Ho una MAIL da processare"
-    scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-
-    messaggio = "MAIL - " + str(risposta)
-    scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+        #Mappo il messagio
+        EMAIL = str(risposta[0]["EMAIL"])
+        MESSAGGIO = str(risposta[0]["MESSAGGIO"])
+        OGGETTO = str(risposta[0]["OGGETTO"])
 
 
-    #Mappo il messagio
-    EMAIL = str(risposta[0]["EMAIL"])
-    MESSAGGIO = str(risposta[0]["MESSAGGIO"])
-    OGGETTO = str(risposta[0]["OGGETTO"])
+        if checkMailCorrect(EMAIL):
+
+            messaggio = "MAIL - Invio messaggio:" + MESSAGGIO + " alla mail: " + EMAIL
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+
+            sendMailToUser(EMAIL, MESSAGGIO, OGGETTO)
+
+        else:
+            messaggio = "MAIL - Indirizzo mail non valido"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+
+            messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
 
-    if checkMailCorrect(EMAIL):
-
-        messaggio = "MAIL - Invio messaggio:" + MESSAGGIO + " alla mail: " + EMAIL
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-
-        sendMailToUser(EMAIL, MESSAGGIO, OGGETTO)
-
-    else:
-        messaggio = "MAIL - Indirizzo mail non valido"
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
-
-        messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
-
-
-        # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
-        msg = "ERRORE NELL' INVIO MAIL  - La mail non contiene la @  ("+str(EMAIL)+") "
-        subject = "ERRORE"
-        email = "21giulio21@gmail.com"
-        sendMailToUser(email, msg, subject)
+            # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
+            msg = "ERRORE NELL' INVIO MAIL  - La mail non contiene la @  ("+str(EMAIL)+") "
+            subject = "ERRORE"
+            email = "21giulio21@gmail.com"
+            sendMailToUser(email, msg, subject)
 
 ################ Inizio a spostare gli utenti con: PSW errata / deve pagare = 1 su thread 0 ############
 #Questo script permette di far si che tutti i profili con password errata = 1 o che hanno deve pagare = 1
 #vengano spostati sul thread 0 in modo da non intasare gli altri
-
-
-
-#QUuesto parte solamente 1 volta su 1000
-
-
-numero_casuale = int(random.randint(0, 1000))
-
-
-if numero_casuale == 50:
+def SPOSTAMENTO_UTENTI():
 
     #Se sono qui dentro allora inizio il bilanciamento dei thread
 
@@ -324,13 +309,11 @@ if numero_casuale == 50:
 #Questo script permette di effettuare una scansione dei profili che utilizzano il bot.
 #Per ogni profilo viene salvato: username, followers, followees e media.
 
-numero_casuale = int(random.randint(0, 1000))
 
 
 
-if numero_casuale == 50:
+def STATISTICHE():
     numberUsersIntoDatabase = countUserIntoDatabase()
-
     messaggio = "Inizio il processo di creazione delle statistiche con un totale di utenti:"+str(numberUsersIntoDatabase)
     scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
@@ -387,8 +370,17 @@ if numero_casuale == 50:
                 messaggio = "STATISTICHE - ERRORE nel salvataggio della tupla di: " + str(username) + " " + str(risposta)
                 scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
-##################### FINE - STATISTICHE #####################
+
+#Inserisco qui dentro le code
+schedule.every().second.do(SMS)
+schedule.every().second.do(MAIL)
+
+schedule.every().day.do(STATISTICHE)
+
+schedule.every().day.do(SPOSTAMENTO_UTENTI)
 
 
-
+while True:
+    schedule.run_pending()
+    time.sleep(6)
 

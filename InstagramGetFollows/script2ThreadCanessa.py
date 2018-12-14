@@ -50,7 +50,7 @@ import sys
 
 number_requests_update_delta_t = 1000
 
-tempo_blocco_se_esce_errore = 100
+tempo_blocco_se_esce_errore = 500
 
 #Passo come parametro dello script un tempo ad esmepio 30 in questo modo lo script ogni volta aspetta 3 secondi
 tempo_passato_come_patametro =  int(sys.argv[1])
