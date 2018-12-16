@@ -9,6 +9,9 @@ target      =   str(sys.argv[1])
 hastag      =   str(sys.argv[2]) #"pugilato"
 
 
+URL_SALVATAGGIO_UTENTI = "http://www.utentidaseguire.eu/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php"
+
+
 def controlloSeNelDBHoGiaUnUtenteConQuelIDETarget(id, target):
     # Faccio una richiueata al url: http://altridatabase.altervista.org/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=1632792873    torna TRUE SE POSSO INSERIRE L?UTENTE
     url = "https://www.elenarosina.com/instatrack/saveUserToFollow/controlloSeNelDBHoGiaUnUtenteConQuelID.php?ID=" + str(id) + "&TARGET=" + target
@@ -61,7 +64,7 @@ class myThread (threading.Thread):
 
                if int(followees) > int(followers):
                    response = requests.get(
-                       "https://www.elenarosina.com/instatrack/saveUserToFollow/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
+                       URL_SALVATAGGIO_UTENTI + "?ID=" + str(
                            id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
                    print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
                        target) + "\nmedia: " + str(mediacount) + "\nis_private" + str(
@@ -72,7 +75,7 @@ class myThread (threading.Thread):
 
                elif int(followees) < 1200 and int(followees) > 300:
                    response = requests.get(
-                       "https://www.elenarosina.com/instatrack/saveUserToFollow/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
+                       URL_SALVATAGGIO_UTENTI + "?ID=" + str(
                            id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
                    print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
                        target) + "\nmedia: " + str(mediacount) + "\nis_private" + str(

@@ -327,10 +327,9 @@ def setBlockTime(username,tempo_blocco_se_esce_errore,delta_t):
 #prendo come input un numero random da 1 al numero massimo di persone che ho nel database di persone che posso
 #seguire e facci ola richiesta pert farmene tornare 1 a caso
 def getUserToFollwFromTarget(target,username):
-    #Se il target e' CHIARAFERRAGNI allora devo andare a interrogare il server: aabbccddee.altervista.org altrimenti altridatabase.altervista.org
 
     print( str(username) + " richiesta  al target: " + str(target))
-    url = "https://www.elenarosina.com/instatrack/saveUserToFollow/getUserToFollowFromUTENTI_DA_SEGUIRE.php?TARGET=" + str(target)
+    url = "http://www.utentidaseguire.eu/getUserToFollowFromUTENTI_DA_SEGUIRE.php?TARGET=" + str(target)
     return json.loads(requests.get(url).content)
 
 
