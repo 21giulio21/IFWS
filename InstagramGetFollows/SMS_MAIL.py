@@ -1,7 +1,9 @@
 import random
+import re
 import time
+
 import schedule
-import time
+from schedule import *
 
 from termcolor import colored
 import datetime
@@ -164,14 +166,14 @@ def SMS():
         else:
 
 
-            messaggio = "SMS - Il numero telefonico non inizia con il +"
+            messaggio = "SMS - Il numero telefonico non inizia con il +, il messaggio sarebbe stato:\n" + str(MESSAGGIO)
             scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
-            messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+            messaggio = "SMS - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore, il messaggio sarebbe stato:\n"+str(MESSAGGIO)
             scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
             # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
-            msg = "ERRORE NELL' INVIO SMS - Il numero di telefono a cui voglio mandare l'SMS ("+str(NUMERO_TELEFONICO)+") non inizia con il + "
+            msg = "ERRORE NELL' INVIO SMS - Il numero di telefono a cui voglio mandare l'SMS ("+str(NUMERO_TELEFONICO)+") non inizia con il + , il messaggio sarebbe stato:\n" + str(MESSAGGIO)
             subject = "ERRORE"
             email = "21giulio21@gmail.com"
             sendMailToUser(email, msg, subject)
@@ -237,12 +239,12 @@ def MAIL():
             messaggio = "MAIL - Indirizzo mail non valido"
             scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
-            messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore"
+            messaggio = "MAIL - Invio la mail all'indirizzo: 21giulio21@gmail.com dicendo che ho un errore, il messaggio sarebbe stato:\n"+str(MESSAGGIO)
             scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
 
             # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
-            msg = "ERRORE NELL' INVIO MAIL  - La mail non contiene la @  ("+str(EMAIL)+") "
+            msg = "ERRORE NELL' INVIO MAIL  - La mail non contiene la @  ("+str(EMAIL)+"), il messaggio sarebbe stato:\n"+str(MESSAGGIO)
             subject = "ERRORE"
             email = "21giulio21@gmail.com"
             sendMailToUser(email, msg, subject)
@@ -286,8 +288,17 @@ def SPOSTAMENTO_UTENTI():
 
         thread = str(user[0]['THREAD'])
 
-         #1) Se gli username hanno password errata / deve pagare = 1 allora li sposto sullo 0
-        if int(thread) != 0 and (password_errata == '1' or deve_pagare == '1'):
+        users_followed_string = str(user[0]['USERS_FOLLOWED'])
+        users_followed_array = re.split(';', users_followed_string)
+
+
+         #1) Se gli username hanno password errata allora li sposto sullo 0
+        if int(thread) != 0 and password_errata == '1' :
+            messaggio = "sposto l'utente: " + username + " sul thread 0"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+            updateTreadFromUsername(username, "0")
+        #Solamente se rispetta queste condizioni allora sposto gli utenti, altrimenti no.
+        elif int(thread) != 0 and deve_pagare == '1' and len(users_followed_array) == 0:
             messaggio = "sposto l'utente: " + username + " sul thread 0"
             scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
             updateTreadFromUsername(username, "0")
@@ -304,81 +315,11 @@ def SPOSTAMENTO_UTENTI():
 
 
 
-
-##################### INIZIO - STATISTICHE #####################
-#Questo script permette di effettuare una scansione dei profili che utilizzano il bot.
-#Per ogni profilo viene salvato: username, followers, followees e media.
-
-
-
-
-def STATISTICHE():
-    numberUsersIntoDatabase = countUserIntoDatabase()
-    messaggio = "Inizio il processo di creazione delle statistiche con un totale di utenti:"+str(numberUsersIntoDatabase)
-    scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-
-
-    #Array di utenti che hanno script attivo, solo su questo array si fanno le statistiche
-    array_utenti_con_script_attivo = []
-
-    # Ora ciclo sul totale di persone che ho nel database
-    for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
-
-        # Seleziono la tupla relativa all'utente
-        user = selectUserFromDatabase(index)
-
-        username = str(user[0]['USERNAME'])
-        script_attivo = str(user[0]['SCRIPT_ACTIVE'])
-        target = str(user[0]['TARGET'])
-
-        if script_attivo == "1":
-            url_media = "https://www.elenarosina.com/instatrack/getPostsFromUser.php?username="
-            url_followers = "https://www.elenarosina.com/instatrack/getFollowersFromUser.php?username="
-            url_followees = "https://www.elenarosina.com/instatrack/getFolloweeFromUser.php?username="
-
-
-            media       =   str(requests.get(url_media      + username,verify=False).content)
-            followers   =   str(requests.get(url_followers  + username,verify=False).content)
-            followees   =   str(requests.get(url_followees  + username,verify=False).content)
-
-            media = media.replace("'","")
-            media = media.replace("b", "")
-
-            followers = followers.replace("'", "")
-            followers = followers.replace("b", "")
-
-            followees = followees.replace("'", "")
-            followees = followees.replace("b", "")
-
-            time.sleep(1)
-
-            #Ottengo i secondi in modo da poter definire quando ho fatto il check
-            timestamp = int(time.time())
-
-            #Ora mando i dati al server
-
-            #Url a cui mandare i dati
-            url = "https://www.elenarosina.com/instatrack/STATISTICHE/saveUsernameFolloweesFollowersIntoDatabase.php"
-
-            messaggio = " Username: " + username + " Followers: "+followers + " Follwees: " +followees
-            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-            risposta = requests.get(url + "?USERNAME=" + username + "&FOLLOWEES=" + str(followees) + "&FOLLOWERS=" + str(followers)+ "&TARGET=" + target + "&TIMESTAMP=" + str(timestamp)).content
-
-            success = json.loads(risposta)
-
-            if success['success'] != 'success' :
-                messaggio = "STATISTICHE - ERRORE nel salvataggio della tupla di: " + str(username) + " " + str(risposta)
-                scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
-
-
 #Inserisco qui dentro le code
 schedule.every().second.do(SMS)
 schedule.every().second.do(MAIL)
 
-schedule.every().day.do(STATISTICHE)
-
 schedule.every().day.do(SPOSTAMENTO_UTENTI)
-
 
 while True:
     schedule.run_pending()

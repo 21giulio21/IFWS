@@ -12,6 +12,8 @@ import time
 #
 #
 
+URL_SALVATAGGIO_UTENTI = "http://www.utentidaseguire.eu/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php"
+
 
 class myThread (threading.Thread):
    def __init__(self, follower):
@@ -47,7 +49,7 @@ class myThread (threading.Thread):
                    id = follower.userid
                    username = follower.username
                    response = requests.get(
-                       "https://www.elenarosina.com/instatrack/saveUserToFollow/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
+                       URL_SALVATAGGIO_UTENTI + "?ID=" + str(
                            id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
                    print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
                        target) + "\nmedia: " + str(mediacount) + "\nis_private" + str(
@@ -60,7 +62,7 @@ class myThread (threading.Thread):
                    id = follower.userid
                    username = follower.username
                    response = requests.get(
-                       "https://www.elenarosina.com/instatrack/saveUserToFollow/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID=" + str(
+                       URL_SALVATAGGIO_UTENTI + "?ID=" + str(
                            id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
                    print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
                        target) + "\nmedia: " + str(mediacount) + "\nis_private" + str(

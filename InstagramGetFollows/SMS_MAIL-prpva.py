@@ -369,6 +369,10 @@ def STATISTICHE():
             if success['success'] != 'success' :
                 messaggio = "STATISTICHE - ERRORE nel salvataggio della tupla di: " + str(username) + " " + str(risposta)
                 scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+#QUesta funzione permette di pulire il database contenente tutti gli utenti da seguire
+#In particolare vengono cancellati tuti gli account che hanno cambiato username o sono stati eliminati
+def PULISCI_UTENTI_DA_SEGUIRE():
+    return
 
 
 #Inserisco qui dentro le code
@@ -379,8 +383,39 @@ schedule.every().day.do(STATISTICHE)
 
 schedule.every().day.do(SPOSTAMENTO_UTENTI)
 
+schedule.every().friday.do(PULISCI_UTENTI_DA_SEGUIRE)
+
 
 while True:
     schedule.run_pending()
     time.sleep(6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
