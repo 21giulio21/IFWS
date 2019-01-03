@@ -21,7 +21,7 @@ from InstagramAPI import scrivoColoratoSuFile, countUserIntoDatabase, selectUser
 In Questo dile vado ad inserire tutte le statistiche nel database di: utentidaseguire.eu
 '''
 
-#FILE_NAME è il nome del file che è scritto!
+#FILE_NAME e' il nome del file che e' scritto!
 FILE_NAME = "STATISTICHE.html"
 
 #Controllo che il campo EMAIL contenga la chiocciola: @
@@ -78,16 +78,20 @@ def STATISTICHE():
         requests.get("https://www.elenarosina.com/instatrack/STATISTICHE/getUsernameAndTargetFromDatabase.php").text)
 
     for utente in utenti:
+
+        #Attendo 10 secondi tra un utente e l'altro
+        time.sleep(10)
+
         username = utente["USERNAME"]
         target = utente["TARGET"]
 
-        url_media = "https://www.elenarosina.com/instatrack/getPostsFromUser.php?username="
         url_followers = "https://www.elenarosina.com/instatrack/getFollowersFromUser.php?username="
         url_followees = "https://www.elenarosina.com/instatrack/getFolloweeFromUser.php?username="
 
-        media = requests.get(url_media + username, verify=False).content.decode('utf-8')
         followers = requests.get(url_followers + username, verify=False).content.decode('utf-8')
         followees = requests.get(url_followees + username, verify=False).content.decode('utf-8')
+
+        time.sleep(10)
 
 
         # Ottengo i secondi in modo da poter definire quando ho fatto il check
@@ -100,9 +104,13 @@ def STATISTICHE():
 
         messaggio = " Username: " + username + " Followers: " + followers + " Follwees: " + followees
         scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-        risposta = requests.get(url + "?USERNAME=" + username + "&FOLLOWEES=" + str(followees) + "&FOLLOWERS=" + str(
-            followers) + "&TARGET=" + target + "&TIMESTAMP=" + str(timestamp)).content
+        url_request = url + "?USERNAME=" + username + "&FOLLOWEES=" + str(followees) + "&FOLLOWERS=" + str(
+            followers) + "&TARGET=" + target + "&TIMESTAMP=" + str(timestamp)
+        print(url_request)
+        risposta = requests.get(url_request).content
 
+        #TODO mettere a posto qui perche non torna un json
+        print(risposta)
         success = json.loads(risposta)
 
         if success['success'] != 'success':
@@ -111,11 +119,11 @@ def STATISTICHE():
 
 
 #Inserisco qui dentro le code
-schedule.every().second.do(STATISTICHE)
+schedule.every(5).seconds.do(STATISTICHE)
 
 
 
 while True:
     schedule.run_pending()
-    time.sleep(6)
+    time.sleep(5)
 

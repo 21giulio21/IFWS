@@ -27,7 +27,7 @@ class myThread (threading.Thread):
 
        id = follower.userid
        username = follower.username
-       response = requests.get("https://www.elenarosina.com/instatrack/saveUserToFollow/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET="+str(target))
+       response = requests.get("http://www.utentidaseguire.eu/instatrack/saveUserToFollow/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php?ID="+str(id)+"&USERNAME="+str(username)+"&TARGET="+str(target))
        print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(target))
        print(response.content)
 

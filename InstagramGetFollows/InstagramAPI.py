@@ -17,7 +17,11 @@ from termcolor import colored
 from function import stampa
 import re
 
-comment_list=[  ["Complimenti","Bravo","Grande"],
+
+url_bot = "http://www.giuliovittoria.it"
+url_sms_mail = "http://www.utentidaseguire.eu"
+
+commenta_list=[  ["Complimenti","Bravo","Grande"],
                 ["!",".","..","...","!","!!","!!!","!!!!"],
                 ["Questa ","La tua","La"],
                 ["foto", "fotografia", "immagine"],
@@ -28,9 +32,22 @@ comment_list=[  ["Complimenti","Bravo","Grande"],
                 ]
 
 
+comment_list = [["\n"],
+                ["Ciao ❄","Ciao!! ❄","Ciao!!! ❄","Buongiorno ❄","Buongiorno!! ❄","Buongiorno! ❄","Ehy! ❄","Ehy!!! ❄","Ehy!! ❄","Ehy ❄"],
+                [" 🔥Aumenta i tuoi seguaci \n"],
+                [" ▶️REALI \n"],
+                [" ▶️ATTIVI \n "],
+                [" ▶️100% IN TARGET"],
+                [" 🚀 Collegati al sito per accedere alla PROMOZIONE LANCIO  \n"],
+                [" ▶️ www.instatrack.eu"],
+                [" Per info"," Per maggiori informazioni"],
+                [" contattami in privato! 🎉"]
+                ]
 
 
-url_get_all_user = "http://www.elenarosina.com/instatrack/instagram/getAllUser.php"
+
+
+
 
 
 # genera un commento a caso usando le parole di comment_list
@@ -278,38 +295,39 @@ def checkIfYetFollowing(username_user_to_follow,cookies):
 
 
 def updateProcessing(username,value):
-    url = "https://www.elenarosina.com/instatrack/updateProcessing.php?username=" + username + "&processing=" + str(value)
+    url = url_bot + "/instatrack/updateProcessing.php?username=" + username + "&processing=" + str(value)
     requests.get(url)
 
 def updateSctiptActive(username,valore):
-    url = "https://www.elenarosina.com/instatrack/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
+    url = url_bot + "/instatrack/updateScriptActive.php?username=" + username + "&script_active=" + str(valore)
     requests.get(url)
 
 def getUsersToFollow():
+    url_get_all_user = url_bot + "/instatrack/instagram/getAllUser.php"
     return json.loads(requests.get(url_get_all_user).content)
 
 #Update follow_unfollow nel database
 def updateFollowUnfollowDatabase(username,follow_unfollow):
-    url="https://www.elenarosina.com/instatrack/updateFollowUnfollow.php?username="+username+"&follow_unfollow="+follow_unfollow
+    url= url_bot + "/instatrack/updateFollowUnfollow.php?username="+username+"&follow_unfollow="+follow_unfollow
     requests.get(url)
 
 #Agggiorno l'array sul database
 def updateUserFollowed(userFollowed,username):
 
-    url = "https://www.elenarosina.com/instatrack/updateUserFollowed.php"
+    url = url_bot + "/instatrack/updateUserFollowed.php"
     return_request = requests.post(url, data={'username': username, 'users_followed': userFollowed}).content
 
     return return_request
 
 #Salvo id dell'utente nel database
 def saveIdIntoDatabase(username,id):
-    url = "https://www.elenarosina.com/instatrack/saveIdIntoDatabase.php?username="+username+"&id="+id
+    url = url_bot + "/instatrack/saveIdIntoDatabase.php?username="+username+"&id="+id
     requests.get(url)
 
 #salvo i cookie di un relativo utente sul server
 def seveCookieIntoServer(username,cookie):
     cookie =  base64.b64encode(str(cookie))
-    url = "https://www.elenarosina.com/instatrack/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
+    url = url_bot + "/instatrack/saveCookie.php?username=" + str(username) +"&cookie="+str(cookie)
     requests.get(url)
 
 #Questa funzione permette di settare il tempo di blocco
@@ -336,51 +354,51 @@ def getUserToFollwFromTarget(target,username):
 
 #Ritorna quanti siano gli utenti registrati da quel thread
 def countUserIntoDatabaseFromTread(thread):
-    url = "https://www.elenarosina.com/instatrack/getCountUsersFromThread.php?THREAD="+str(thread)
+    url = url_bot + "/instatrack/getCountUsersFromThread.php?THREAD="+str(thread)
     return requests.get(url).content
 
 
 #Ritorna quanti siano gli utenti registrati totali
 def countUserIntoDatabase():
-    url = "https://www.elenarosina.com/instatrack/getCountUsers.php"
+    url = url_bot + "/instatrack/getCountUsers.php"
     return requests.get(url).content
 
 #Seleziona un utente dal database con un preciso indice
 def selectUserFromDatabase(index):
-    url = "https://www.elenarosina.com/instatrack/getUserFromIndex.php?index=" +str(index)
+    url = url_bot + "/instatrack/getUserFromIndex.php?index=" +str(index)
     return json.loads(requests.get(url).content)
 
 
 #Seleziona un utente dal database con un preciso indice
 def selectUserFromDatabaseAndThread(index,thread):
-    url = "https://www.elenarosina.com/instatrack/getUserFromIndexAndThread.php?index=" +str(index)+"&THREAD="+str(thread)
+    url = url_bot + "/instatrack/getUserFromIndexAndThread.php?index=" +str(index)+"&THREAD="+str(thread)
     return json.loads(requests.get(url).content)
 
 #Ritorna il numero di utenti che sono nella tabella oin cui sono contenuti tutti
 def getCountUsersToFollow():
-    url = "https://www.elenarosina.com/instatrack/getCountUsersToFollow.php"
+    url = url_bot + "/instatrack/getCountUsersToFollow.php"
     return requests.get(url).content
 
 
 #aggiorno nel mio databse la tupla con username: username e setto il tempo: time
 def update_secondi_ultima_richiesta(username,time):
-    url = "https://www.elenarosina.com/instatrack/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
+    url = url_bot + "/instatrack/updateSecondiUltimaRichiesta.php?username="+str(username)+"&time="+str(time)
     return requests.get(url).content
 
 #funzione che aggiorna DT per quell'utente
 def updateDeltaT(username,delta_t):
-    url= "https://www.elenarosina.com/instatrack/updateDT.php?username="+str(username)+"&dt="+str(delta_t)
+    url= url_bot + "/instatrack/updateDT.php?username="+str(username)+"&dt="+str(delta_t)
     return requests.get(url).content
 
 #Aggiorno il tempo di blocco che deve attendere un utente prima che rinizi a mandare richieste
 def updateTempoBlocco(username,tempo):
-    url = "https://www.elenarosina.com/instatrack/updateTempoBlocco.php?username="+str(username)+"&tempo_blocco="+str(tempo)
+    url = url_bot + "/instatrack/updateTempoBlocco.php?username="+str(username)+"&tempo_blocco="+str(tempo)
     return requests.get(url).content
 
 #Aggiorna il numere di richieste fatte, in questo modo dopo che un utente ne fa 100 posso
 #diminuire il Delta T
 def updateNumberRequestsDone(username,number_requests_done):
-    url = "https://www.elenarosina.com/instatrack/updateNumberRequestsDone.php?username=" + str(username) + "&number_requests_done=" + str(number_requests_done)
+    url = url_bot + "/instatrack/updateNumberRequestsDone.php?username=" + str(username) + "&number_requests_done=" + str(number_requests_done)
     return requests.get(url).content
 
 #Ottengo l id del utente attraverso lo username chiedendo ad instagram
@@ -408,7 +426,7 @@ def getIdFromUsernameToUnfollow(username):
 
 
 def updateDevePagare(username, value):
-    url = "https://www.elenarosina.com/instatrack/updateDevePagare.php?username=" + str(username) + "&DEVE_PAGARE=" + str(value)
+    url = url_bot + "/instatrack/updateDevePagare.php?username=" + str(username) + "&DEVE_PAGARE=" + str(value)
     return requests.get(url).content
 
 #Parso la risposta da Instagram nel momento in cui ho mandato una richiesta, content_request_JSON e' il ritorno dela richiesta una volta mandata
@@ -567,14 +585,14 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
 
 
 def updateTreadFromUsername(username,newThread):
-    url = "https://www.elenarosina.com/instatrack/updateThread.php?username="+username+"&thread=" + str(newThread)
+    url = url_bot + "/instatrack/updateThread.php?username="+username+"&thread=" + str(newThread)
     print("RIsposta ottenuta quando cambio il thread: " + str(requests.get(url).content) + "\n")
 
 
 
 #Questa funzione permette di mandare la mail in caso sia finita la prova o il pacchertto
 def sendMailToUser(mail_to,messaggio,subject):
-    response = requests.get("https://www.elenarosina.com/instatrack/send_MAIL/insert_mail_into_database.php?MESSAGGIO="+messaggio+"&EMAIL="+mail_to+"&OGGETTO="+subject)
+    response = requests.get(url_sms_mail + "/instatrack/send_MAIL/insert_mail_into_database.php?MESSAGGIO="+messaggio+"&EMAIL="+mail_to+"&OGGETTO="+subject)
     print(response.content)
 
 
@@ -583,15 +601,15 @@ def sendMailToUser(mail_to,messaggio,subject):
 
 
 def countPhotoIntoDatabase():
-    url = "https://www.elenarosina.com/instatrack/likeautomatici/countPhotoIntoDatabase.php"
+    url = url_bot + "/instatrack/likeautomatici/countPhotoIntoDatabase.php"
     return requests.get(url).content
 
 def getIdPhotoNotLiked(max_like):
-    url = "https://www.elenarosina.com/instatrack/likeautomatici/getPhoto.php?max_like="+str(max_like)
+    url = url_bot + "/instatrack/likeautomatici/getPhoto.php?max_like="+str(max_like)
     return json.loads(requests.get(url).content)
 
 def selectPhotoFromDatabase(index):
-    url = "https://www.elenarosina.com/instatrack/likeautomatici/getPhotoFromIndex.php?index=" + str(index)
+    url = url_bot + "/instatrack/likeautomatici/getPhotoFromIndex.php?index=" + str(index)
     return json.loads(requests.get(url).content)
 
 
@@ -606,7 +624,7 @@ def salvoSulDatabaseIdImmagineEUsernameDegliUtentiCheVoglionoLike(array_user_get
         print(username_user_get_like + " id:" + str(idPrimaFoto))
 
         if not str(idPrimaFoto).__contains__("lang="):# sono in questo caso se il profilo e' pubblico
-            url = "https://www.elenarosina.com/instatrack/likeautomatici/saveUsernameAndIdImmagineIntoDatabase.php"
+            url = url_bot + "/instatrack/likeautomatici/saveUsernameAndIdImmagineIntoDatabase.php"
             payload = {'id_immagine': idPrimaFoto, 'username': username_user_get_like}
             return_request = requests.post(url, data=payload).content
             print("Salvo la foto di: " + str(username_user_get_like) + " con ID: " + idPrimaFoto)
@@ -616,7 +634,7 @@ def salvoSulDatabaseIdImmagineEUsernameDegliUtentiCheVoglionoLike(array_user_get
 
 def updateUsersLiked(users_liked_string, id_immagine):
     payload = {'id_immagine': id_immagine, 'users_liked': users_liked_string}
-    url = "https://www.elenarosina.com/instatrack/likeautomatici/updateUserLiked.php"
+    url = url_bot + "/instatrack/likeautomatici/updateUserLiked.php"
     return_request = requests.post(url, data=payload).content
     return return_request
 
@@ -624,7 +642,7 @@ def updateUsersLiked(users_liked_string, id_immagine):
 #Questa funzione permette di cambiare il valore di GET_LIKE nel database
 def updateGetLikeFromUsername(username,get_like):
     payload = {'username': username, 'get_like': get_like}
-    url = "https://www.elenarosina.com/instatrack/likeautomatici/updateGetLikeFromUsername.php"
+    url = url_bot + "/instatrack/likeautomatici/updateGetLikeFromUsername.php"
     return_request = requests.post(url, data=payload).content
     print(return_request)
 
@@ -632,7 +650,7 @@ def updateGetLikeFromUsername(username,get_like):
 #Questa funzione permette di cambiare il valore di SET_LIKE nel database
 def updateSetLikeFromUsername(username,set_like):
     payload = {'username': username, 'set_like': set_like}
-    url = "https://www.elenarosina.com/instatrack/likeautomatici/updateSetLikeFromUsername.php"
+    url = url_bot + "/instatrack/likeautomatici/updateSetLikeFromUsername.php"
     return_request = requests.post(url, data=payload).content
     print(return_request)
 
@@ -732,3 +750,12 @@ def scrivoColoratoSuFile(nomeFIle, testo, colore):
         myfile.write('<p style="color: '+ colore+';">' +timestamp +" "+testo+'</p>')
 
 
+#Questa funzione permette di eliminare una tupla dal database, in particolare elimina una mail
+def removeEmailFromDatabase(id_mail):
+    url = url_sms_mail + "/instatrack/send_MAIL/remove_email_from_database.php?ID=" + str(id_mail)
+    print(url)
+    return json.loads(requests.get(url,verify=False).content)
+
+def removeSMSFromDatabase(id_sms):
+    url = url_sms_mail + "/instatrack/send_SMS/remove_sms_from_database.php?ID=" + str(id_sms)
+    return json.loads(requests.get(url).content)

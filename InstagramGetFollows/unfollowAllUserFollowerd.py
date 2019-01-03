@@ -9,8 +9,8 @@ from InstagramAPI import login
 
 
 
-username = "williamscoffeeburger"#str(sys.argv[1])
-password = "piscitello1956"#str(sys.argv[2])
+username = "Sbattiamoci"#str(sys.argv[1])
+password = "giulio2121"#str(sys.argv[2])
 
 
 
@@ -100,7 +100,7 @@ cookies_str = ''.join(key + "=" + str(cookies_dict[key]) + "; " for key in cooki
 
 #prendo l'id della persona da cui voglio mandare le richieste di unfollow
 id = getIDFromUsername(username)
-
+print(id)
 for i in range(1,3000):
     print("Ho mandato la richiesta di follow a: " + str(i) + " utenti" )
     unfollw2(cookies_str,cookies_dict['csrftoken'])

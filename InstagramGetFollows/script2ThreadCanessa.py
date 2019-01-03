@@ -320,19 +320,19 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         if auto_like == "1":
 
             #Prendo un utente dal database a cui mettere like
-            user_to_follow = getUserToFollwFromTarget(target, username)
-            id_user_to_follow = str(user_to_follow[0]["ID"])
-            username_user_to_follow = str(user_to_follow[0]["USERNAME"])
-            target = str(user_to_follow[0]["TARGET"])
+            #user_to_follow = getUserToFollwFromTarget(target, username)
+            #id_user_to_follow = str(user_to_follow[0]["ID"])
+            #username_user_to_follow = str(user_to_follow[0]["USERNAME"])
+            #target = str(user_to_follow[0]["TARGET"])
 
 
             # Faccio in modo che con probabilità 1/4 metta like quindi non verra messo sempre, in modo
             # tale da aumentare il nuemro di richiueste di follow
-            random_number = random.randint(1, 20)
+            #random_number = random.randint(1, 20)
 
             # Solamente se random_number è 1 allora mando una richiesta di like, in questo modo sono sicuro che
             # ho la probabilità di 1/3 di mettere like. quindi non dovrebbe bloccarlo.
-            if random_number == 5:
+            #if random_number == 5:
 
                 ''' Se scommento qui mette like alla prima foto dell'utente a cui si hanno mandato la richesta di FOLLOW
                 print("Processo l'utente: " + username + " mette like  alla foto di " + username_user_to_follow)
@@ -340,19 +340,19 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
                 parse_content_request(content_request, 'LIKE', username, tempo_blocco_se_esce_errore, delta_t,email)
                 '''
                 #In questo caso metto like alle persone che hanno AUTO_LIKE a 1
-                automaticLIKE(username, cookies_str, cookies_dict)
+                #automaticLIKE(username, cookies_str, cookies_dict)
 
 
 
 
-            else:
-                print("Processo l'utente: " + username + " non mette il like, forse la prossima volta ?")
+            #else:
+                #print("Processo l'utente: " + username + " non mette il like, forse la prossima volta ?")
 
         # Metto un commento all'ultima foto con probabilità 1/4 in questo modo non verrà bloccato l'account
         if auto_comment == "1":
             # Faccio in modo che con probabilità 1/4 commenta quindi non verra messo sempre, in modo
             # tale da aumentare il nuemro di richiueste di follow
-            random_number = random.randint(1,4)
+            random_number = 2# random.randint(1,4)
             if random_number == 2:
 
                 risposta_commento = comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow)

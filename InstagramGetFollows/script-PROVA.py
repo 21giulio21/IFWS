@@ -158,22 +158,11 @@ while True:
         tempo_di_ora = str(time.time())
         tempo_di_ora = tempo_di_ora[:-3]
 
-        if len(tempo_iscrizione) > 5:  # Se l'utente non ha pagato e l'ho inserito dal sito internet
-            if tempo_fine_iscrizione < tempo_di_ora and deve_pagare == "0":  # Se sono passati 3 giorni come prova oppure è passato il tempo per cui ha pagato
-                # Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
-                print("Processo l'utente: " + username + " deve pagare")
-                updateSctiptActive(username, 0) #Metto sctipt_attivo = 0
-                updateDevePagare(username, 1) # Imposto che deve pagare
+        if deve_pagare == "1":
+            print("L'utente " + str(username) + " deve pagare")
+            continue
 
-                #se è stata settata la mail allora manda la mail con scritto che deve poagare
-                if len(email) > 3:
-                    print("Mando la mail all'utente " +str(username) + " per avvertire che bisogna pagare")
 
-                    # mando la mail che l'utente deve pagare, preparo la mail e la invio, invio anche una copia al miop
-                    #Indirizzo cosi so sempre cosa accade!
-                    msg = "Ciao " + username + ",\n\nL'abbonamento sul tuo account è staduto, collegati al sito www.instatrack.eu per scegliere il pacchetto più adatto a te!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
-                    subject = "Instatrack.eu - Fine Prova"
-                    sendMailToUser(email,msg,subject)
 
         # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
         if password_errata == '1':
