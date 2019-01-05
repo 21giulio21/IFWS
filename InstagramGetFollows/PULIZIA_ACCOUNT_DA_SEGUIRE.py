@@ -30,7 +30,7 @@ print("Ho un totale di " + str(numero_utenti_da_seguire) + " utenti che devo ges
 
 connection = CONNECTION()
 
-utenti = connection.fetchall("SELECT USERNAME FROM UTENTI_DA_SEGUIRE ORDER BY RAND()")
+utenti = connection.fetchall("SELECT USERNAME FROM UTENTI_DA_SEGUIRE ORDER BY RAND() LIMIT 1,40000")
 
 
 for utente in utenti:
