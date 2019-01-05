@@ -158,11 +158,6 @@ while True:
         tempo_di_ora = str(time.time())
         tempo_di_ora = tempo_di_ora[:-3]
 
-        if deve_pagare == "1":
-            print("L'utente " + str(username) + " deve pagare")
-            continue
-
-
 
         # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
         if password_errata == '1':
@@ -176,8 +171,6 @@ while True:
         # facendo il login
         if len(cookie) == 0:
             content_request = login(username, password_instagram)
-
-
             retult = parse_content_request_for_LOGIN_THREAD_0(content_request, "LOGIN", username, tempo_blocco_se_esce_errore, delta_t,email)
 
             #Se è 0 allora sono in checkpoint quindi non memorizzo il cookie

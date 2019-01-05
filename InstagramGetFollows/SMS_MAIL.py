@@ -1,4 +1,5 @@
-import random
+# coding=utf-8
+
 import re
 import time
 
@@ -72,9 +73,9 @@ def ottengoSMSDalDatabase():
 #Come unico controllo vedo se il numero inizia per +39
 def checkNumeroTelefonico(numero_telefonico):
     if numero_telefonico.startswith("+"):
-        return True
+        return numero_telefonico
     else:
-        return False
+        return "+" + numero_telefonico
 
 #Questa funzione prende come parametro il numero e il messaggio e invia il messaggio al numero
 def sendSMS(numero,messaggio):
@@ -94,11 +95,11 @@ def sendSMS(numero,messaggio):
         scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
     else:
-        messaggio = "SMS - Messaggio non inviato con il seguente errore: " + success
+        messaggio = "SMS - Messaggio non inviato con il seguente errore: " + str(success)
         scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
         # Invio a me stesso una mail dicendo che non possiamo mandare l' SMS.
-        msg = "ERRORE NELL' INVIO SMS - ERRORE nell'invio dell'SMS, risposta ottenuta da instatrack.eu/sms/sms.php: " + success
+        msg = "ERRORE NELL' INVIO SMS - ERRORE nell'invio dell'SMS, risposta ottenuta da instatrack.eu/sms/sms.php: " + str(success)
         subject = "ERRORE"
         email = "21giulio21@gmail.com"
         sendMailToUser(email, msg, subject)
@@ -121,27 +122,24 @@ def SMS():
         NUMERO_TELEFONICO = str(fetchall[0][1])
         MESSAGGIO = str(fetchall[0][2])
 
-        if checkNumeroTelefonico(NUMERO_TELEFONICO):
-            messaggio = "SMS - Invio messaggio:" + MESSAGGIO + " al numero: " + NUMERO_TELEFONICO
-            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
-            #Invio il messaggio SMS
-            sendSMS(NUMERO_TELEFONICO, MESSAGGIO)
 
-            #Mando una mail a me dicendo che invio un SMS
-            EMAIL = "21giulio21@gmail.com"
-            OGGETTO = "NUOVO SMS"
-            MESSAGGIO = "INVIO UN NUOVO SMS al numero: " + str(NUMERO_TELEFONICO) + " Testo:"+str(MESSAGGIO)
-            sendMailToUser(EMAIL, MESSAGGIO, OGGETTO )
+        NUMERO_TELEFONICO = checkNumeroTelefonico(NUMERO_TELEFONICO)
+        messaggio = "SMS - Invio messaggio:" + MESSAGGIO + " al numero: " + NUMERO_TELEFONICO
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
-            # Elimino la mail che ho appena mandato
-            removeSMSFromDatabase(ID_MESSAGGIO)
-        else:
-            MESSAGGIO = "SMS - numero non corretto:" + MESSAGGIO + " al numero: " + NUMERO_TELEFONICO
-            scrivoColoratoSuFile(FILE_NAME, MESSAGGIO, "red")
-            EMAIL = "21giulio21@gmail.com"
-            OGGETTO = "SMS - Numero non valido"
-            sendMailToUser(EMAIL, MESSAGGIO, OGGETTO)
+        #Invio il messaggio SMS
+        sendSMS(NUMERO_TELEFONICO, MESSAGGIO)
+
+        #Mando una mail a me dicendo che invio un SMS
+        EMAIL = "21giulio21@gmail.com"
+        OGGETTO = "NUOVO SMS"
+        MESSAGGIO = "INVIO UN NUOVO SMS al numero: " + str(NUMERO_TELEFONICO) + " Testo:"+str(MESSAGGIO)
+        sendMailToUser(EMAIL, MESSAGGIO, OGGETTO )
+
+        # Elimino la mail che ho appena mandato
+        removeSMSFromDatabase(ID_MESSAGGIO)
+
 
 
 

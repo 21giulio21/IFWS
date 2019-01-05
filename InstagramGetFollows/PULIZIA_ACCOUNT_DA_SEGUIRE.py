@@ -6,6 +6,8 @@ import requests
 from InstagramAPI import scrivoColoratoSuFile
 from connection import CONNECTION
 
+from InstagramAPI import getCountFollowersFromUsername
+
 FILE_NAME = "PULIZIA_ACCOUNT.html"
 
 def numeroDiUtentiDaSeguire():
@@ -34,9 +36,12 @@ utenti = connection.fetchall("SELECT USERNAME FROM UTENTI_DA_SEGUIRE ORDER BY RA
 for utente in utenti:
     USERNAME = str(utente[0])
 
-    url_controllo_se_username_esiste = "http://utentidaseguire.eu/getFollowersFromUsername.php?username=" + str(USERNAME)
-    risposta = str(requests.get(url_controllo_se_username_esiste, verify=False).content)
+    #url_controllo_se_username_esiste = "http://utentidaseguire.eu/getFollowersFromUsername.php?username=" + str(USERNAME)
+    #risposta = str(requests.get(url_controllo_se_username_esiste, verify=False).content)
+    risposta = getCountFollowersFromUsername(USERNAME)
     print("Username: " +str(USERNAME) +" "+ risposta)
+
+
 
     if risposta.__contains__("false"):
         messaggio = " Username: " + USERNAME + " eliminato "
