@@ -3926,28 +3926,29 @@
     <session id="-858944695">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="445" />
+          <entry key="py" value="1019" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="445" />
+          <entry key="Python" value="1019" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -3963,11 +3964,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT_DA_SEGUIRE.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="32" column="98" selection-start-line="32" selection-start-column="98" selection-end-line="32" selection-end-column="98" />
+              <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -3978,50 +3979,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_curl_speed.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="21" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-end-line="4" selection-end-column="13" />
               <folding>
-                <element signature="e#18#27#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script-PROVA.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2ThreadCanessa.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
-              <folding>
-                <element signature="e#48#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/connection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-181">
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -4029,8 +3991,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="762" column="33" selection-start-line="762" selection-start-column="4" selection-end-line="762" selection-end-column="33" />
+            <state relative-caret-position="-1005">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="46" />
+              <folding>
+                <marker date="1546693472667" expanded="true" signature="38882:38883" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -4046,12 +4020,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>todo</find>
-      <find>SMS_M</find>
-      <find>+</find>
-      <find>checkNumeroTelefonico</find>
-      <find>getU</find>
-      <find>getUserTo</find>
       <find>getUse</find>
       <find>countUserIntoDatabaseFromTread</find>
       <find>selectUserFromDatabaseAndThread</find>
@@ -4073,9 +4041,15 @@
       <find>sendMailToUser</find>
       <find>print</find>
       <find>succ</find>
-      <find>success</find>
       <find>80</find>
       <find>remove</find>
+      <find>success</find>
+      <find>sendM</find>
+      <find>sendSMSToUser</find>
+      <find>getPhoneNumberFromEmail</find>
+      <find>SMS</find>
+      <find>è</find>
+      <find>url_sms_mail</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -4114,7 +4088,6 @@
         <option value="$PROJECT_DIR$/InstagramGetFollows/scriptAutomaticallyLike.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/saveIDAndUsernameIntoLIKE_AUTOMATICI.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py" />
-        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter_modifica.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova.py" />
@@ -4138,9 +4111,10 @@
         <option value="$PROJECT_DIR$/InstagramGetFollows/connection.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT_DA_SEGUIRE.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova_curl_speed.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" />
-        <option value="$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT_DA_SEGUIRE.py" />
       </list>
     </option>
   </component>
@@ -4198,7 +4172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PULIZIA_ACCOUNT_DA_SEGUIRE">
+  <component name="RunManager" selected="Python.prova_curl_speed">
     <configuration name="CONNECTION" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IFWS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -4357,8 +4331,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.PULIZIA_ACCOUNT_DA_SEGUIRE" />
         <item itemvalue="Python.prova_curl_speed" />
+        <item itemvalue="Python.PULIZIA_ACCOUNT_DA_SEGUIRE" />
         <item itemvalue="Python.SMS_MAIL" />
         <item itemvalue="Python.CONNECTION" />
         <item itemvalue="Python.SaveUserFromPosition_PROVA" />
@@ -4395,7 +4369,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3268206" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49741468" visible="true" weight="0.28511822" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49741468" weight="0.28511822" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39931154" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -4493,6 +4467,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4533,13 +4510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3705">
-          <caret line="290" column="30" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -4561,13 +4531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script-PROVA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2ThreadCanessa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -4585,23 +4548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
-          <folding>
-            <element signature="e#18#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -4609,27 +4555,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT_DA_SEGUIRE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script-PROVA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_curl_speed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="762" column="33" selection-start-line="762" selection-start-column="4" selection-end-line="762" selection-end-column="33" />
+        <state relative-caret-position="-1005">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <marker date="1546693472667" expanded="true" signature="38882:38883" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT_DA_SEGUIRE.py">
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="32" column="98" selection-start-line="32" selection-start-column="98" selection-end-line="32" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="609">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>

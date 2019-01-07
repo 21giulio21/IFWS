@@ -461,9 +461,9 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
                 username) + " inizia i 3 giorni di prova"
             stampa(username, messaggio)
 
-            msg = "Ciao " + username + ",\n\nBenvenuto in instatrack.eu! \n Da oggi iniziano i 3 giorni di prova gratuiti!\nAlla fine del servizio potrai decidere se rinnovare ed iniziare a guadagnare con Instagram\n\n\n\n\n\nBuon lavoro,\nInstatrack.eu"
-            subject = "Instatrack.eu - Inizio Prova Gratuita"
-            sendMailToUser(email, msg, subject)
+            #msg = "Ciao " + username + ",\n\nBenvenuto in instatrack.eu! \n Da oggi iniziano i 3 giorni di prova gratuiti!\nAlla fine del servizio potrai decidere se rinnovare ed iniziare a guadagnare con Instagram\n\n\n\n\n\nBuon lavoro,\nInstatrack.eu"
+            #subject = "Instatrack.eu - Inizio Prova Gratuita"
+            #sendMailToUser(email, msg, subject)
 
     elif type_request == "FOLLOW-UNFOLLOW":
 
@@ -517,6 +517,8 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
                 username) + " ha cambiato password"
             stampa(username, messaggio)
             updatePasswordErrataAndProcessing(username, 1, email)
+            messaggio = "Ciao "+str(username)+", le credenziali del tuo accoint Instagram inserite precedentemente sono cambiate. Accedi a www.instatrack.eu per rimpostare le credenziali corrette."
+            sendSMSToUser(email, messaggio)
 
         #Altrimenti puo accadere che ci sia la password errata perche puo aver cambiato password l'utente e devo rifare i coockie
         # Converso in JSON la risposta in modo da capire quando e' andata a buon fine
@@ -555,9 +557,13 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
         #Prima controllo se è andato in checkpoint
         if str(content_request_JSON).__contains__("checkpoint_required"):
             print("L'uente è in checkpoin, riprova piu tardi, mando la mail per avvertirlo")
-            msg = "Ciao " + username + ",\n\nAccedi a Instagram per verificare il tuo account Instagram!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
+            msg = "Ciao " + username + ",\n\nAccedi a Instagram per verificare il tuo account!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
             subject = "Instatrack.eu - Accedi a Instagram"
             sendMailToUser(email, msg, subject)
+
+            messaggio = "Ciao " + str(
+                username) + ", Accedi a Instagram per verificare il tuo account."
+            sendSMSToUser(email, messaggio)
 
             return 0
 
@@ -567,14 +573,25 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
 
         #In questo caso mi sono loggato in maniera corretta.
         if authenticated == "FALSE":
+
+            messaggio = "Ciao " + str(
+                username) + ", le tue credenziali risultano errate. Accedi al sito www.instatrack.eu per reinserirle correttamente."
+            sendSMSToUser(email, messaggio)
+
             print("Autenticazione non riuscita")
             print(updatePasswordErrataAndProcessing(username,"1",email))
         else:
             # MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
             print("Mando la mail a " + email + " per comunicare che da oggi iniziano i 3 giorni di prova")
-            msg = "Ciao " + username + ",\n\nBenvenuto in instatrack.eu! \n Da oggi iniziano i 3 giorni di prova gratuiti!\nAlla fine del servizio potrai decidere se rinnovare ed iniziare a guadagnare con Instagram\n\n\n\n\n\nBuon lavoro,\nInstatrack.eu"
-            subject = "Instatrack.eu - Inizio Prova Gratuita"
+            msg = "Ciao " + username + ",\n\nBenvenuto in instatrack.eu! \n Da ora il tuo account è attivo."
+            subject = "Instatrack.eu - Inizio Abbonamento"
             sendMailToUser(email, msg, subject)
+
+            messaggio = "Ciao " + str(
+                username) + ", la tua iscrizione e' andata a buon fine. Accedi alla nostra piattaforma www.instatrack.eu per gestire in tempo reale il tuo account!"
+            sendSMSToUser(email, messaggio)
+
+
 
             newThread = random.randint(1,3)
 
@@ -594,6 +611,13 @@ def updateTreadFromUsername(username,newThread):
 def sendMailToUser(mail_to,messaggio,subject):
     response = requests.get(url_sms_mail + "/instatrack/send_MAIL/insert_mail_into_database.php?MESSAGGIO="+messaggio+"&EMAIL="+mail_to+"&OGGETTO="+subject)
     print(response.content)
+
+#Questa funzione permette di mandare la mail in caso sia finita la prova o il pacchertto
+def sendSMSToUser(email,messaggio):
+    prefisso_numero = getPhoneNumberFromEmail(email)
+    response = requests.get(url_sms_mail + "/instatrack/send_SMS/insert_sms_into_database.php?NUMERO_TELEFONICO="+str(prefisso_numero) +"&MESSAGGIO="+str(messaggio))
+    #print(response.content)
+
 
 
 ####################################
@@ -780,3 +804,12 @@ def getCountFollowersFromUsername(username):
         return "false"
     else:
         return followers
+
+#Questa funzione permette di ottenere il numero di telefono a partire dalla mail relativa all'utente.
+def getPhoneNumberFromEmail(email):
+    url = "http://www.giuliovittoria.it/get_number_from_email.php?EMAIL=" + str(email)
+    risposta =  json.loads(requests.get(url).content)
+    NUMERO_TELEFONICO = risposta[0]["nphone"]
+    PREFISSO = risposta[0]["prefix"]
+    PREFISSO_NUMERO_TELEFONICO = PREFISSO + NUMERO_TELEFONICO
+    return PREFISSO_NUMERO_TELEFONICO

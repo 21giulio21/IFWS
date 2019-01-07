@@ -11,6 +11,7 @@ import time
 #
 #
 #
+from connection import CONNECTION
 
 URL_SALVATAGGIO_UTENTI = "http://www.utentidaseguire.eu/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php"
 
@@ -48,27 +49,35 @@ class myThread (threading.Thread):
                if int(followees) > int(followers):
                    id = follower.userid
                    username = follower.username
+
+                   c = CONNECTION()
+                   print(c.insertUserIntoDatabaseUTENTI_DA_SEGUIRE(str(username), str(id), str(target)))
+
+                   #Se scommento questo inserisco manualmente l'utente con un http request
+                   '''
                    response = requests.get(
                        URL_SALVATAGGIO_UTENTI + "?ID=" + str(
                            id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
+                    '''
                    print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
                        target) + "\nmedia: " + str(mediacount) + "\nis_private" + str(
                        is_private) + "\nfollowers:" + str(
                        followers) + "\nfollowee:" + str(followees))
-                   print(response.content)
+
 
 
                elif int(followees) < 1200 and int(followees) > 300:
                    id = follower.userid
                    username = follower.username
-                   response = requests.get(
-                       URL_SALVATAGGIO_UTENTI + "?ID=" + str(
-                           id) + "&USERNAME=" + str(username) + "&TARGET=" + str(target))
+
+                   c = CONNECTION()
+                   print(c.insertUserIntoDatabaseUTENTI_DA_SEGUIRE(str(username), str(id), str(target)))
+
                    print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(
                        target) + "\nmedia: " + str(mediacount) + "\nis_private" + str(
                        is_private) + "\nfollowers:" + str(
                        followers) + "\nfollowee:" + str(followees))
-                   print(response.content)
+
 
 
 #Permette di scrivere i log su un file di testo

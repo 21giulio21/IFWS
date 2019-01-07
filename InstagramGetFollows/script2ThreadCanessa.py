@@ -8,6 +8,8 @@ import ast
 import random
 import thread
 import time
+
+from connection import CONNECTION
 from function import stampa
 
 from InstagramAPI import updateTempoBlocco, follow_thread, unfollow_thread
@@ -282,13 +284,28 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
         #Se devo mettere follow
         if auto_follow == "1":
-            # Mi faccio tornare un utente da seguire con stesso target
-            # dell'utente che sto processando. Questo è realizzato dal php
 
-            user_to_follow = getUserToFollwFromTarget(target,username)
-            id_user_to_follow = str(user_to_follow[0]["ID"])
-            username_user_to_follow = str(user_to_follow[0]["USERNAME"])
-            target = str(user_to_follow[0]["TARGET"])
+            # 1 utente su 3 lo faccio arrivare dal target INFLUENCER_ITALIANO altrimenti inisco tropo presto i target
+            number = random.randint(1, 3)
+            if number == 2:
+                print("In questo caso il target iniiale era:" + target)
+                target = "INFLUENCER_ITALIANO"
+
+            #Ottengo l'utente da seguire
+
+            c = CONNECTION()
+            UTENTE_DA_SEGUIRE = c.getUserToFollowFromTarget(target)
+
+            if UTENTE_DA_SEGUIRE is not None:
+                id_user_to_follow = UTENTE_DA_SEGUIRE.id_instagram
+                target = UTENTE_DA_SEGUIRE.target
+                username_user_to_follow = UTENTE_DA_SEGUIRE.username
+            else:
+
+                user_to_follow = getUserToFollwFromTarget(target, username)
+                id_user_to_follow = str(user_to_follow[0]["ID"])
+                username_user_to_follow = str(user_to_follow[0]["USERNAME"])
+                target = str(user_to_follow[0]["TARGET"])
 
             # Controllo se la persona è gia precedentemente stata seguita
             if checkIfYetFollowing(username_user_to_follow, cookies_str) == True:
