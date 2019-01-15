@@ -9,8 +9,6 @@ import random
 import thread
 import time
 
-from connection import CONNECTION
-from function import stampa
 
 from InstagramAPI import updateTempoBlocco, follow_thread, unfollow_thread, sendSMSToUser
 from InstagramAPI import comment
@@ -48,6 +46,8 @@ import sys
 
 # numero di richieste dopo il quale si decrementa il DT
 from InstagramAPI import automaticLIKE
+
+from connection_utenti_da_seguire import CONNECTION_UTENTI_DA_SEGUIRE
 
 number_requests_update_delta_t = 1000
 
@@ -139,7 +139,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             # Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
 
             messaggio = "DEVE PAGARE - Mando la mail per comunicarlo"
-            stampa(username, messaggio)
+            print(username, messaggio)
 
             # GLi mando la mail dicendo che deve pagare
             msg = "Ciao " + username + ",\n\nIl tuo abbonamento e' scaduto!\nAccedi al sito instatrack.eu per rinnovare il servizio.\n\nNon perdere l'occasione di guadagnare con Instagram\n\n\n\n\nA presto,\nInstatrack.eu"
@@ -147,7 +147,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             sendMailToUser(email, msg, subject)
 
             messaggio = "Ciao " + str(
-                username) + ", il tuo abbonamento è scaduto! Accedi a www.instatrack.eu per rinnovarlo!"
+                username) + ", il tuo abbonamento e' scaduto! Accedi a www.instatrack.eu per rinnovarlo!"
             sendSMSToUser(email, messaggio)
 
 
@@ -159,7 +159,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
     if password_errata == '1':
         messaggio = "PASSWORD ERRATA - Non processo questo utente"
-        stampa(username, messaggio)
+        print(username, messaggio)
 
         if script_attivo == '1':
             updateSctiptActive(username, 0)
@@ -187,7 +187,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         updateTempoBlocco(username, str(tempo_attesa_blocco))
 
         messaggio = "BLOCCO - Utente in blocco per ancora:" + str(tempo_attesa_blocco) + " cicli"
-        stampa(username, messaggio)
+        print(username, messaggio)
         continue
 
     # Controllo che secondi_ultima_richiesta + delta_t sia maggiore di ora, se lo e' allora devo processare
@@ -196,7 +196,6 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
     if int(secondi_ultima_richiesta) + int(delta_t) > tempo_ora:
         #messaggio = "DT NON PASSATO - Non processo questo utente perche non è passato il DT"
-        #stampa(username, messaggio)
         continue
 
     # Se script_attivo e' 0 allora devo smettere di seguire tutti quelli che sono nell'array di persone che seguo
@@ -246,7 +245,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
     if len(id) == 0:
         messaggio = "CHIEDO ID A INSTAGRAM"
-        stampa(username, messaggio)
+        print(username, messaggio)
 
         id = getIDFromUsername(username)
         saveIdIntoDatabase(username, id)
@@ -256,7 +255,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         # Devo iniziare a seguire
 
         messaggio = "INIZIO A CON LE RICHIESTE DI FOLLOW"
-        stampa(username, messaggio)
+        print(username, messaggio)
 
 
         follow_unfollow = str('1')
@@ -266,7 +265,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     if len(users_followed_array) > max_requests and script_attivo == "1":  # max_requests:
 
         messaggio = "MASSIMO UTENTI SEGUITI - imposto follow_unfollow a 0"
-        stampa(username, messaggio)
+        print(username, messaggio)
 
 
         # Se sono al numero di persone massime imposto users_followed a 0
@@ -294,7 +293,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             # Mi faccio tornare un utente da seguire con stesso target
             # dell'utente che sto processando. Questo è realizzato dal php
 
-            c = CONNECTION()
+            c = CONNECTION_UTENTI_DA_SEGUIRE()
             UTENTE_DA_SEGUIRE = c.getUserToFollowFromTarget(target)
 
             if UTENTE_DA_SEGUIRE is not None:
@@ -311,7 +310,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             # Controllo se la persona è gia precedentemente stata seguita
             if checkIfYetFollowing(username_user_to_follow, cookies_str) == True:
                 messaggio = "UTENTE GIA SEGUITO - Ho gia seguito questo utente quindi mando la richiesta ad un altro"
-                stampa(username, messaggio)
+                print(username, messaggio)
                 continue
 
             #mando la richiesta di follow all'utente come thread
@@ -373,11 +372,11 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
                 risposta_commento = comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow)
 
                 messaggio = "COMMENTA FOTO - Commento la foto di " + username_user_to_follow +" "+risposta_commento
-                stampa(username, messaggio)
+                print(username, messaggio)
 
             else:
                 messaggio = "COMMENTA FOTO - Commento la prossima volta"
-                stampa(username, messaggio)
+                print(username, messaggio)
         else:
             print(" ")
 

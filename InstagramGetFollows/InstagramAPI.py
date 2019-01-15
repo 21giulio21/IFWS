@@ -14,14 +14,16 @@ import time
 
 from termcolor import colored
 
-from function import stampa
+
 import re
 
 
 url_bot = "http://www.giuliovittoria.it"
 url_sms_mail = "http://www.utentidaseguire.eu"
 
-commenta_list=[  ["Complimenti","Bravo","Grande"],
+FILE_NAME = "a.html"
+
+comment_list=[  ["Complimenti","Bravo","Grande"],
                 ["!",".","..","...","!","!!","!!!","!!!!"],
                 ["Questa ","La tua","La"],
                 ["foto", "fotografia", "immagine"],
@@ -31,6 +33,7 @@ commenta_list=[  ["Complimenti","Bravo","Grande"],
                 [".", "..", "...", "!", "!!", "!!!"," "]
                 ]
 
+'''
 
 comment_list = [["\n"],
                 ["Ciao ❄","Ciao!! ❄","Ciao!!! ❄","Buongiorno ❄","Buongiorno!! ❄","Buongiorno! ❄","Ehy! ❄","Ehy!!! ❄","Ehy!! ❄","Ehy ❄"],
@@ -44,7 +47,7 @@ comment_list = [["\n"],
                 [" contattami in privato! 🎉"]
                 ]
 
-
+'''
 
 
 
@@ -259,10 +262,11 @@ def updatePasswordErrataAndProcessing(username,passwordErrata,email):
 
     #MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
     print("Mando la mail a " + email + " per comunicare che la password Instagram e' errata")
-    msg = "Ciao " + username + ",\n\nLa password Instagram inserita risulta errata.\nCollegati al sito instatrack.eu e inseriscila correttamente!\nNon perdere l'occasione di guadagnare con Instagram\n\n\n\n\nA presto,\nInstatrack.eu"
+    msg = "Ciao "+str(username)+",\n\nLa password Instagram inserita risulta errata.\nCollegati al sito instatrack.eu e inseriscila correttamente!\nNon perdere l'occasione di guadagnare con Instagram\n\n\n\n\nA presto,\nInstatrack.eu"
     subject = "Instatrack.eu - Password Instagram Errata"
-    sendMailToUser(email, msg, subject)
+    email = "21giulio21@gmail.com"
 
+    sendMailToUser(email, msg, subject)
 
 #QUesta funzione prmette di capire se gia precedentemente seguivo una persona.
 #Se gia seguivo una persona allora non rimando la richiesta
@@ -452,14 +456,14 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
         #In questo caso mi sono loggato in maniera corretta.
         if authenticated == "FALSE":
             messaggio = "AUTENTICAZIONE NON RIUSCITA - L'utente:"+str(username) + " NON ha inserito credenziali corrette "
-            stampa(username, messaggio)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
             updatePasswordErrataAndProcessing(username,1,email)
         else:
             # MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
             messaggio = "INVIO EMAIL - L'utente:" + str(
-                username) + " inizia i 3 giorni di prova"
-            stampa(username, messaggio)
+                username) + " inizia i 4 giorni di prova"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
             #msg = "Ciao " + username + ",\n\nBenvenuto in instatrack.eu! \n Da oggi iniziano i 3 giorni di prova gratuiti!\nAlla fine del servizio potrai decidere se rinnovare ed iniziare a guadagnare con Instagram\n\n\n\n\n\nBuon lavoro,\nInstatrack.eu"
             #subject = "Instatrack.eu - Inizio Prova Gratuita"
@@ -471,7 +475,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
         if content_request.content.__contains__("been temporarily") or content_request.content.__contains__("Please wait") or  content_request.content.__contains__("Attendi") or content_request.content.__contains__("This action")or content_request.content.__contains__("Sembra che") :
             messaggio = "BLOCCO - L'utente:" + str(
                 username) + " ha fatto TROPPE richieste, bloccato per un po"
-            stampa(username, messaggio)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
             setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
 
@@ -484,7 +488,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
             messaggio = "CAMBIO  - L'utente:" + str(
                 username) + " ha fatto TROPPE richieste di FOLLOW, devo fargli fare UNFOLLOW"
 
-            stampa(username, messaggio)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
             # Aggiorno il server dicendo che follow_unfollow e' zero
             follow_unfollow = "0"
             updateFollowUnfollowDatabase(username, follow_unfollow)
@@ -500,7 +504,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
         if content_request.content.__contains__("checkpoint_required"):
             messaggio = "CHECK POINT REQUIRED - L'utente:" + str(
                 username) + " è in checkpoint_required, lo blocco sperando che qualcuno lo sblocchi"
-            stampa(username, messaggio)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
 
             setBlockTime(username, tempo_blocco_se_esce_errore, delta_t)
 
@@ -515,7 +519,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
         if content_request.content.__contains__("unauthorized"):
             messaggio = "CAMBIO PASSWORD - L'utente:" + str(
                 username) + " ha cambiato password"
-            stampa(username, messaggio)
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
             updatePasswordErrataAndProcessing(username, 1, email)
             messaggio = "Ciao "+str(username)+", le credenziali del tuo accoint Instagram inserite precedentemente sono cambiate. Accedi a www.instatrack.eu per rimpostare le credenziali corrette."
             sendSMSToUser(email, messaggio)
@@ -533,7 +537,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
             if message == "selectUserFromDatabaseAndThread":
                 messaggio = "CAMBIO PASSWORD - L'utente:" + str(
                     username) + " ha cambiato password"
-                stampa(username, messaggio)
+                scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
                 updatePasswordErrataAndProcessing(username, 1,email)
 
     elif type_request == "LIKE":
@@ -582,10 +586,10 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             print(updatePasswordErrataAndProcessing(username,"1",email))
         else:
             # MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
-            print("Mando la mail a " + email + " per comunicare che da oggi iniziano i 3 giorni di prova")
-            msg = "Ciao " + username + ",\n\nBenvenuto in instatrack.eu! \n Da ora il tuo account è attivo."
-            subject = "Instatrack.eu - Inizio Abbonamento"
-            sendMailToUser(email, msg, subject)
+            #print("Mando la mail a " + email + " per comunicare che da oggi iniziano i 4 giorni di prova")
+            #msg = "Ciao " + username + ",\n\nBenvenuto in instatrack.eu! \n Da ora il tuo account è attivo."
+            #subject = "Instatrack.eu - Inizio Abbonamento"
+            #sendMailToUser(email, subject,msg)
 
             messaggio = "Ciao " + str(
                 username) + ", la tua iscrizione e' andata a buon fine. Accedi alla nostra piattaforma www.instatrack.eu per gestire in tempo reale il tuo account!"
@@ -597,7 +601,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
 
             print("\n Autenticazione riuscita, cambio il thread da 0 a " + str(newThread)  )
             updateTreadFromUsername(username, newThread)
-            updateDeltaT(username,50)
+            #updateDeltaT(username,50)
             updateSctiptActive(username,1)
 
 

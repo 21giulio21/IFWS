@@ -69,7 +69,7 @@ random.shuffle(ustenti_da_cui_prendere_followers)
 
 
 for user in ustenti_da_cui_prendere_followers:
-    profile = instaloader.Profile.from_username(L.context, user)
+    profile = instaloader.Profile.from_username(L.context, user).
     # Print list of followers
     for follower in profile.get_followers():
         i += 1

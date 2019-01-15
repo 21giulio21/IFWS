@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf0897f-0674-4ac2-add2-8a5fd8d4727c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/UTENTE_DA_SEGUIRE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.dropbox" beforeDir="false" afterPath="$PROJECT_DIR$/../.dropbox" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppAndroid/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../AppAndroid/gradlew" afterDir="false" />
@@ -10,12 +9,9 @@
       <change beforePath="$PROJECT_DIR$/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SMS_MAIL.py" beforeDir="false" afterPath="$PROJECT_DIR$/SMS_MAIL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/connection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prova_curl_speed.py" beforeDir="false" afterPath="$PROJECT_DIR$/prova_curl_speed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script-PROVA.py" beforeDir="false" afterPath="$PROJECT_DIR$/script-PROVA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script2Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/script2Thread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script2ThreadCanessa.py" beforeDir="false" afterPath="$PROJECT_DIR$/script2ThreadCanessa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typescript" beforeDir="false" afterPath="$PROJECT_DIR$/typescript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unfollowAllUserFollowerd.py" beforeDir="false" afterPath="$PROJECT_DIR$/unfollowAllUserFollowerd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/chardetect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/django-admin" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/django-admin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" afterDir="false" />
@@ -124,10 +120,10 @@
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/urllib3/util/timeout.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/urllib3/util/timeout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/urllib3/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/urllib3/util/url.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/urllib3/util/wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/urllib3/util/wait.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/PULIZIA_ACCOUNT.html" beforeDir="false" afterPath="$PROJECT_DIR$/../script/PULIZIA_ACCOUNT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../script/PULIZIA_ACCOUNT.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/SMS_MAIL.html" beforeDir="false" afterPath="$PROJECT_DIR$/../script/SMS_MAIL.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/SPOSTAMENTO_UTENTI.html" beforeDir="false" afterPath="$PROJECT_DIR$/../script/SPOSTAMENTO_UTENTI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../script/amazon/1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/amazon/1.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../script/SPOSTAMENTO_UTENTI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../script/amazon/1.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/esempiSCRIPT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../script/esempiSCRIPT.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/saveActiveUserToFollow.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/saveActiveUserToFollow.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script/saveIDAndUsernameIntoLIKE_AUTOMATICI.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../script/saveIDAndUsernameIntoLIKE_AUTOMATICI.sh" afterDir="false" />
@@ -259,8 +255,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8568">
-              <caret line="519" column="80" selection-start-line="519" selection-start-column="80" selection-end-line="519" selection-end-column="80" />
+            <state relative-caret-position="124">
+              <caret line="55" column="53" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="53" />
               <folding>
                 <element signature="e#46#56#0" expanded="true" />
               </folding>
@@ -268,11 +264,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script2Thread.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script-PROVA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3451">
-              <caret line="248" column="35" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
+            <state relative-caret-position="274">
+              <caret line="163" column="89" selection-start-line="163" selection-start-column="89" selection-end-line="163" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -301,7 +297,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
+            <state relative-caret-position="969">
               <caret line="61" column="45" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="45" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -314,19 +310,28 @@
         <entry file="file://$PROJECT_DIR$/prova_curl_speed.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="81" />
+              <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SMS_MAIL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2550">
+              <caret line="166" column="39" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
+              <folding>
+                <element signature="e#17#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-              <folding>
-                <element signature="e#1#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -360,15 +365,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>reque</find>
-      <find>comment_list</find>
-      <find>rimuoviAccountUTENTI_DA_SEGUIRE</find>
-      <find>url_get_all_user</find>
-      <find>utenti</find>
-      <find>utentida</find>
-      <find>CONN</find>
-      <find>MAIL(</find>
-      <find>CONNECTION(</find>
       <find>conne</find>
       <find>response</find>
       <find>removeEmailFromDatabase</find>
@@ -385,11 +381,20 @@
       <find>updateDev</find>
       <find>SMS</find>
       <find>updateDe</find>
-      <find>sendMailToUser</find>
       <find>precedente</find>
       <find>fetchall</find>
       <find>preceden</find>
       <find>al ta</find>
+      <find>Inizio Abbonamento</find>
+      <find>updateTe</find>
+      <find>login</find>
+      <find>parse_content_request</find>
+      <find>Instatrack.eu - Password Instagram Errata</find>
+      <find>updateD</find>
+      <find>updateDel</find>
+      <find>risul</find>
+      <find>sendMailToUser</find>
+      <find>comment_list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -437,9 +442,6 @@
         <option value="$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py" />
         <option value="$PROJECT_DIR$/connection_utenti_da_seguire.py" />
         <option value="$PROJECT_DIR$/PULIZIA_ACCOUNT_DA_SEGUIRE.py" />
-        <option value="$PROJECT_DIR$/script-PROVA.py" />
-        <option value="$PROJECT_DIR$/SMS_MAIL.py" />
-        <option value="$PROJECT_DIR$/InstagramAPI.py" />
         <option value="$PROJECT_DIR$/UTENTI/UTENTI_DA_SEGUIRE.py" />
         <option value="$PROJECT_DIR$/UTENTI/UTENTE_DA_SEGUIRE.py" />
         <option value="$PROJECT_DIR$/UTENTE_DA_SEGUIRE.py" />
@@ -447,12 +449,15 @@
         <option value="$PROJECT_DIR$/script2Thread.py" />
         <option value="$PROJECT_DIR$/unfollowAllUserFollowerd.py" />
         <option value="$PROJECT_DIR$/connection.py" />
-        <option value="$PROJECT_DIR$/prova_curl_speed.py" />
         <option value="$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py" />
+        <option value="$PROJECT_DIR$/prova_curl_speed.py" />
+        <option value="$PROJECT_DIR$/SMS_MAIL.py" />
+        <option value="$PROJECT_DIR$/InstagramAPI.py" />
+        <option value="$PROJECT_DIR$/script-PROVA.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="948" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -465,23 +470,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="InstagramGetFollows" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
               <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="InstagramGetFollows" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -675,15 +680,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21462639" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.325" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.20248668" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.20248668" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5714286" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -872,13 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script-PROVA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="173" column="61" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1250,31 +1247,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SMS_MAIL.py">
+    <entry file="file://$PROJECT_DIR$/UTENTI/UTENTE_DA_SEGUIRE.py" />
+    <entry file="file://$PROJECT_DIR$/script2Thread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="161" column="18" lean-forward="true" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="37" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3451">
+          <caret line="248" column="35" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UTENTI/UTENTE_DA_SEGUIRE.py" />
     <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8568">
-          <caret line="519" column="80" selection-start-line="519" selection-start-column="80" selection-end-line="519" selection-end-column="80" />
+        <state relative-caret-position="124">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="53" />
           <folding>
             <element signature="e#46#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script2Thread.py">
+    <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3451">
-          <caret line="248" column="35" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
+        <state relative-caret-position="136">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -1285,6 +1279,40 @@
           <folding>
             <element signature="e#217#228#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prova_curl_speed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SMS_MAIL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="166" column="39" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
+          <folding>
+            <element signature="e#17#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1302,37 +1330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd.py">
+    <entry file="file://$PROJECT_DIR$/script-PROVA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prova_curl_speed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="274">
+          <caret line="163" column="89" selection-start-line="163" selection-start-column="89" selection-end-line="163" selection-end-column="89" />
         </state>
       </provider>
     </entry>

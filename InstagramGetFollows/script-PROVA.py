@@ -11,7 +11,6 @@ import ast
 import random
 import thread
 import time
-from function import stampa
 
 from InstagramAPI import updateTempoBlocco, follow_thread, unfollow_thread
 from InstagramAPI import comment
@@ -162,10 +161,12 @@ while True:
         # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
         if password_errata == '1':
             print("Non processo l'utente: " + username + " perche ha la password errata")
-            if script_attivo == '1':
-                updateSctiptActive(username, 0)
-                continue
             continue
+
+        if deve_pagare == '1':
+            print("Non processo l'utente: " + username + " perche DEVE PAGARE")
+            continue
+
 
         # Controllo che siano settati i cookie dell'utente altrimenti li chiedo a instagram
         # facendo il login

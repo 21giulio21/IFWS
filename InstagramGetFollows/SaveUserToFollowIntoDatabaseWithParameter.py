@@ -11,7 +11,7 @@ import time
 #
 #
 #
-from connection import CONNECTION
+from connection_utenti_da_seguire import CONNECTION_UTENTI_DA_SEGUIRE
 
 URL_SALVATAGGIO_UTENTI = "http://www.utentidaseguire.eu/saveUserIntoDatabaseUTENTI_DA_SEGUIRE.php"
 
@@ -34,7 +34,7 @@ class myThread (threading.Thread):
            print("L'utente: " + username + " ha piu di 5k followers, quindi non lo prendo nel nostro database")
            return
 
-        #Controllo se la biografia è settata
+        #Controllo se la biografia e' settata
        #biografia = str(follower.biography)
 
 
@@ -50,7 +50,7 @@ class myThread (threading.Thread):
                    id = follower.userid
                    username = follower.username
 
-                   c = CONNECTION()
+                   c = CONNECTION_UTENTI_DA_SEGUIRE()
                    print(c.insertUserIntoDatabaseUTENTI_DA_SEGUIRE(str(username), str(id), str(target)))
 
                    #Se scommento questo inserisco manualmente l'utente con un http request
@@ -70,7 +70,7 @@ class myThread (threading.Thread):
                    id = follower.userid
                    username = follower.username
 
-                   c = CONNECTION()
+                   c = CONNECTION_UTENTI_DA_SEGUIRE()
                    print(c.insertUserIntoDatabaseUTENTI_DA_SEGUIRE(str(username), str(id), str(target)))
 
                    print("Inserisco l'utente: " + str(username) + " in altridatabase con Target " + str(

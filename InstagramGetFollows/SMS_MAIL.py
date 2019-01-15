@@ -164,7 +164,7 @@ def MAIL():
         MESSAGGIO = str(fetchall[0][2])
         OGGETTO = str(fetchall[0][3])
 
-        sendMailToUser(EMAIL,OGGETTO,MESSAGGIO)
+        sendMailToUser(EMAIL,MESSAGGIO,OGGETTO)
 
         messaggio = "MAIL - Ho una MAIL da processare con Mail:" + EMAIL + " Messaggio: "+str(MESSAGGIO) + " Oggetto:"+OGGETTO
         scrivoColoratoSuFile(FILE_NAME, messaggio, "green")

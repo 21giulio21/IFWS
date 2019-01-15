@@ -1,6 +1,7 @@
 import json
 import random
 
+import instaloader
 import requests
 
 from InstagramAPI import scrivoColoratoSuFile
@@ -30,21 +31,38 @@ print("Ho un totale di " + str(numero_utenti_da_seguire) + " utenti che devo ges
 
 connection = CONNECTION()
 
-utenti = connection.fetchall("SELECT USERNAME FROM UTENTI_DA_SEGUIRE ORDER BY RAND() LIMIT 1,40000")
+utenti = connection.fetchall("SELECT USERNAME,TARGET FROM UTENTI_DA_SEGUIRE ORDER BY RAND() LIMIT 1,4000")
 
 
 for utente in utenti:
     USERNAME = str(utente[0])
+    TARGET = str(utente[1])
+
+
 
     #url_controllo_se_username_esiste = "http://utentidaseguire.eu/getFollowersFromUsername.php?username=" + str(USERNAME)
     #risposta = str(requests.get(url_controllo_se_username_esiste, verify=False).content)
-    risposta = getCountFollowersFromUsername(USERNAME)
-    print("Username: " +str(USERNAME) +" "+ risposta)
+    #risposta = getCountFollowersFromUsername(USERNAME)
+    #print("Username: " +str(USERNAME) +" "+ risposta)
 
+    try:
+        L = instaloader.Instaloader()
+        profile = instaloader.Profile.from_username(L.context,USERNAME)
+        userid = profile.userid
 
-
-    if risposta.__contains__("false"):
-        messaggio = " Username: " + USERNAME + " eliminato "
+        messaggio = "PULIZIA_ACCOUNT - Tengo l'account con USERNAME:" + USERNAME + " e TARGET: " + str(
+            TARGET) + " Instagram_ID:" + str(userid)
         scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-        risposta = rimuoviAccountUTENTI_DA_SEGUIRE(USERNAME)
-        print(risposta)
+
+    except instaloader.exceptions.ProfileNotExistsException:
+
+        messaggio = "PULIZIA_ACCOUNT - Elimino l'account con USERNAME:" + USERNAME + " e TARGET: " + str(
+            TARGET)
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+        print(rimuoviAccountUTENTI_DA_SEGUIRE(USERNAME))
+        #connection.removeUserFromUTENTI_DA_SEGUIRE(USERNAME,TARGET)
+
+
+
+
+
