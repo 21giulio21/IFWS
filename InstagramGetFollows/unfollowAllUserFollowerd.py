@@ -9,8 +9,8 @@ from InstagramAPI import login
 
 
 
-username = "sbattiamoci"#str(sys.argv[1])
-password = "giulio2121"#str(sys.argv[2])
+username = "doyenne.official"#str(sys.argv[1])
+password = "culopesca"#str(sys.argv[2])
 
 
 

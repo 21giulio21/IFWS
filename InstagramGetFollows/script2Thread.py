@@ -40,14 +40,10 @@ from threading import *
 import re
 import sys
 
-# max_requests indica dopo quante richieste cambio da follow a unfollow,
-# dopo 300 richieste di follow ne faccio 300 di unfollo e cosi via
-#max_requests = 250
-
-# numero di richieste dopo il quale si decrementa il DT
-from InstagramAPI import automaticLIKE
 
 from connection_utenti_da_seguire import CONNECTION_UTENTI_DA_SEGUIRE
+
+from InstagramAPI import scrivoColoratoSuFile
 
 number_requests_update_delta_t = 1000
 
@@ -59,17 +55,24 @@ tempo_passato_come_patametro =  int(sys.argv[1])
 #Definisce il pc su cui deve andare
 thread_passato_come_patametro = int(sys.argv[2])
 
+#Metto un a capo in modo che possiamo comunque capirci qualcosa sul terminale
+print("\n")
+
+#Nome del file che viene scritto:
+FILE_NAME = "logThread"+str(thread_passato_come_patametro)+".html"
 
 
-
-print("\nAttendo DT")
 
 time.sleep(tempo_passato_come_patametro)
-print("Tempo DT passato, inizio lo script.")
+
 
 # Chiedo quanti utenti ho nel database
 numberUsersIntoDatabase = countUserIntoDatabaseFromTread(thread_passato_come_patametro)
-print("Ho un totale di " + str(numberUsersIntoDatabase) + " utenti che devo gestire per mandare le richieste")
+
+
+messaggio = "THREAD " + str(thread_passato_come_patametro)+" - " + "Ho un totale di " + str(numberUsersIntoDatabase) + " utenti che devo gestire per mandare le richieste"
+scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+
 
 # Ora ciclo sul totale di persone che ho nel database
 for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
@@ -138,8 +141,9 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         if tempo_fine_iscrizione < tempo_di_ora and deve_pagare == "0":  # Se sono passati 3 giorni come prova oppure è passato il tempo per cui ha pagato
             # Aggiorno il valore dell'utente DEVE_PAGARE in questo modo compare un banner sul sito per farlo pagare.
 
-            messaggio = "DEVE PAGARE - Mando la mail per comunicarlo"
-            print(username, messaggio)
+            messaggio = "THREAD " + str(thread_passato_come_patametro) + " - " + "L'username " + str(
+                username) + " DEVE PAGARE"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "yellow")
 
             # GLi mando la mail dicendo che deve pagare
             msg = "Ciao " + username + ",\n\nIl tuo abbonamento e' scaduto!\nAccedi al sito instatrack.eu per rinnovare il servizio.\n\nNon perdere l'occasione di guadagnare con Instagram\n\n\n\n\nA presto,\nInstatrack.eu"
@@ -158,8 +162,9 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
     # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
     if password_errata == '1':
-        messaggio = "PASSWORD ERRATA - Non processo questo utente"
-        print(username, messaggio)
+        messaggio = "THREAD " + str(thread_passato_come_patametro) + " - " + "L'username " + str(
+            username) + " ha PASSWORD ERRATA"
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "yellow")
 
         if script_attivo == '1':
             updateSctiptActive(username, 0)
@@ -186,8 +191,11 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         tempo_attesa_blocco = int(tempo_attesa_blocco) - 1
         updateTempoBlocco(username, str(tempo_attesa_blocco))
 
-        messaggio = "BLOCCO - Utente in blocco per ancora:" + str(tempo_attesa_blocco) + " cicli"
-        print(username, messaggio)
+
+        messaggio = "THREAD " + str(thread_passato_come_patametro) + " - " + "L'username " + str(
+            username) + " e' in BLOCCO ancora per " + str(tempo_attesa_blocco) + " CICLI"
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "blue")
+
         continue
 
     # Controllo che secondi_ultima_richiesta + delta_t sia maggiore di ora, se lo e' allora devo processare
@@ -244,18 +252,22 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         continue
 
     if len(id) == 0:
-        messaggio = "CHIEDO ID A INSTAGRAM"
-        print(username, messaggio)
 
         id = getIDFromUsername(username)
         saveIdIntoDatabase(username, id)
+
+        messaggio = "THREAD " + str(thread_passato_come_patametro) + " - " + "L'username " + str(
+            username) + " Ha ottenuto questo id da Instagram: " + str(id)
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+
 
     # Imposto a 1 perche non va con 0 comunque ogni volta riempie il campo user_followed e lo svuota
     if len(users_followed_array) == 1 and script_attivo == "1":
         # Devo iniziare a seguire
 
-        messaggio = "INIZIO A CON LE RICHIESTE DI FOLLOW"
-        print(username, messaggio)
+        messaggio = "THREAD " + str(thread_passato_come_patametro) + " - " + "L'username " + str(
+            username) + " Inizia a mandare richieste di FOLLOW"
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
 
         follow_unfollow = str('1')
@@ -264,8 +276,11 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     # controllo che sono al massimo di persone che posso seguire al giorno
     if len(users_followed_array) > max_requests and script_attivo == "1":  # max_requests:
 
-        messaggio = "MASSIMO UTENTI SEGUITI - imposto follow_unfollow a 0"
-        print(username, messaggio)
+
+
+        messaggio = "THREAD " + str(thread_passato_come_patametro) + " - " + "L'username " + str(
+            username) + " Ha raggiunto il numero massimo di utenti seguiti"
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
 
         # Se sono al numero di persone massime imposto users_followed a 0
@@ -287,6 +302,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             print(number)
             if number == 2:
                 print("In questo caso il target iniiale era:" + target)
+
                 target = "INFLUENCER_ITALIANO"
 
 

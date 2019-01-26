@@ -4,6 +4,7 @@ import requests
 from InstagramAPI import scrivoColoratoSuFile
 
 
+
 class RICERCA_INFLUENCER_ISTANZA:
 
   #TODO: Qui devo inserire tutti i parametri per il costruttore...
@@ -86,14 +87,18 @@ class RICERCA_INFLUENCER_ISTANZA:
 
     for follower in profile.get_followers():
       if self.controllo_se_il_profilo_rispetta_i_canoni(follower) == True:
-        email    =  "" #self.ottengoEmailDaUsername(follower.username)
+        email    =  self.ottengoEmailDaUsername(follower.username)
         telefono =  self.ottengoNumeroDiTelefonoDaUsername(follower.username)
         username =  follower.username
         followers = follower.followers
 
-        if telefono is not None:
+        #Se i followers sono minori di 10k allora:
+        if int(followers) < 10000 and telefono is not None:
           print(username,telefono,email,followers)
           print(self.salvaContatto(username,telefono,email,followers))
+        elif int(followers) > 10000:
+          print(username, telefono, email, followers)
+          print(self.salvaContatto(username, telefono, email, followers))
 
 
 

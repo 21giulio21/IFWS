@@ -53,7 +53,7 @@ comment_list = [["\n"],
 
 
 
-# genera un commento a caso usando le parole di comment_list
+# genera un commento a cauthenticated = str(content_request_JSON["authenticated"])aso usando le parole di comment_list
 def generate_comment():
         c_list = list(itertools.product(*comment_list))
 
@@ -177,10 +177,16 @@ def follow_thread(id_user_to_follow, username_user_to_follow, cookies_str, cooki
 def unfollow_thread(username_user_to_unfollow,cookies_str,cookies_dict,username,tempo_blocco_se_esce_errore,delta_t,email,users_followed_string):
 
     # chiedo al mio database di utenti li della persona con quell username
-    id_to_unfollow = getIdFromUsernameToUnfollow(username_user_to_unfollow)
-    # Se torna qualcosa che è troppo corto allora lo chiedo ad instagram l'username
-    if len(str(id_to_unfollow)) > 30:
+    try:
+        id_to_unfollow = int(getIdFromUsernameToUnfollow(username_user_to_unfollow))
+        id_to_unfollow = str(id_to_unfollow)
+
+    #nel caso in cui non ci sia lo chiedo ad Instagram
+    except:
         id_to_unfollow = getIDFromUsername(username_user_to_unfollow)
+
+
+
 
     content_request = unfollow(id_to_unfollow, username_user_to_unfollow, cookies_str, cookies_dict['csrftoken'])
 
@@ -425,7 +431,7 @@ def getIDFromUsername(username):
     return id
 
 def getIdFromUsernameToUnfollow(username):
-    url = "http://altridatabase.altervista.org/getIDFromUsername.php?username="+str(username)
+    url = "http://www.utentidaseguire.eu/getIDFromUsername.php?username="+str(username)
     return requests.get(url).content
 
 
@@ -450,6 +456,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
             content_request_JSON = json.loads(content_request.content)
         except ValueError:
             return
+
 
         authenticated = str(content_request_JSON["authenticated"]).upper()
 
@@ -567,6 +574,23 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
 
             messaggio = "Ciao " + str(
                 username) + ", Accedi a Instagram per verificare il tuo account."
+            sendSMSToUser(email, messaggio)
+
+            return 0
+
+
+        #Qui controllo se lousername ho l'autenticazione a due fattori:
+        if str(content_request_JSON).__contains__("two_factor_required"):
+
+            messaggio = "LOGIN - l'account con USERNAME:" + username + " ha l'autenticazione a due fattori"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+
+            msg = "Ciao " + username + ",\n\nAccedi a Instagram per rimuovere l'autenticazione a due fattori, altrimenti non possiamo processare il tuo account.\nUna volta processato puoi inserire nuovamente l'autenticazione a due fattori.\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
+            subject = "Instatrack.eu - Accedi a Instagram"
+            sendMailToUser(email, msg, subject)
+
+            messaggio = "Ciao " + str(
+                username) + ", Accedi a Instagram per rimuovere l'autenticazione a due fattori, altrimenti non possiamo processare il tuo account.\nUna volta processato puoi inserirla nuovamente"
             sendSMSToUser(email, messaggio)
 
             return 0

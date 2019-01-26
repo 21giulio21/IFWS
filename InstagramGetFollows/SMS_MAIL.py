@@ -15,9 +15,11 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 import requests
 
-from connection import CONNECTION
+
 from InstagramAPI import scrivoColoratoSuFile, countUserIntoDatabase, selectUserFromDatabase, updateTreadFromUsername, \
     removeEmailFromDatabase, removeSMSFromDatabase, countUserIntoDatabaseFromTread, selectUserFromDatabaseAndThread
+
+from connection_utenti_da_seguire import CONNECTION_UTENTI_DA_SEGUIRE
 
 '''
 In questo file inserisco tutte le funzioni necessarie all'invio di messaggi
@@ -107,7 +109,7 @@ def sendSMS(numero,messaggio):
 
 #QUESTA PARTE PERMETTE DI MANDARE SMS AGLI UTENTI
 def SMS():
-    connection = CONNECTION()
+    connection = CONNECTION_UTENTI_DA_SEGUIRE()
 
     # Chiedo quante mail ci sono
     num_row = connection.num_row("SELECT * FROM SMS_INSTATRACK LIMIT 0,1")
@@ -146,7 +148,7 @@ def SMS():
 
 ##################### INIZIO SCRIPT PER MAIL #####################
 def MAIL():
-    connection = CONNECTION()
+    connection = CONNECTION_UTENTI_DA_SEGUIRE()
 
 
     #Chiedo quante mail ci sono

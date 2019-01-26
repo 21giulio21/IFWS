@@ -5,9 +5,10 @@ import instaloader
 import requests
 
 from InstagramAPI import scrivoColoratoSuFile
-from connection import CONNECTION
 
-from InstagramAPI import getCountFollowersFromUsername
+
+
+from connection_utenti_da_seguire import CONNECTION_UTENTI_DA_SEGUIRE
 
 FILE_NAME = "PULIZIA_ACCOUNT.html"
 
@@ -29,7 +30,7 @@ def rimuoviAccountUTENTI_DA_SEGUIRE(username):
 numero_utenti_da_seguire = numeroDiUtentiDaSeguire()
 print("Ho un totale di " + str(numero_utenti_da_seguire) + " utenti che devo gestire per mandare le richieste")
 
-connection = CONNECTION()
+connection = CONNECTION_UTENTI_DA_SEGUIRE()
 
 utenti = connection.fetchall("SELECT USERNAME,TARGET FROM UTENTI_DA_SEGUIRE ORDER BY RAND() LIMIT 1,4000")
 
