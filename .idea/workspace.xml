@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="02b983b9-2501-4c32-8d8a-b842de65e214" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.dropbox" beforeDir="false" afterPath="$PROJECT_DIR$/.dropbox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IFWS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IFWS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppAndroid/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/AppAndroid/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/BILANCIAMENTO_UTENTI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/BILANCIAMENTO_UTENTI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT_DA_SEGUIRE.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT_DA_SEGUIRE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/RICERCA_INFLUENCER.html" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/RICERCA_INFLUENCER.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/RICERCA_INFLUENCER_ISTANZA.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/RICERCA_INFLUENCER_ISTANZA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/prova.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/prova.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/venv/bin/chardetect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/venv/bin/django-admin" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/venv/bin/django-admin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramGetFollows/venv/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/venv/bin/django-admin.py" afterDir="false" />
@@ -128,6 +122,14 @@
       <change beforePath="$PROJECT_DIR$/script/SPOSTAMENTO_UTENTI.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/SPOSTAMENTO_UTENTI.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/a.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/esempiSCRIPT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script/esempiSCRIPT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread1.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/logThread1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread2.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/logThread2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread3.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/logThread3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread4.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/logThread4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread5.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/logThread5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread6.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/logThread6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread7.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/logThread7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/logThread&lt;module 'thread' (built-in)&gt;.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/script/saveActiveUserToFollow.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/saveActiveUserToFollow.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/saveIDAndUsernameIntoLIKE_AUTOMATICI.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/saveIDAndUsernameIntoLIKE_AUTOMATICI.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/saveStatistiche.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/saveStatistiche.sh" afterDir="false" />
@@ -258,11 +260,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="40" />
-              <folding>
-                <element signature="e#46#56#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="9639">
+              <caret line="582" column="70" selection-start-line="582" selection-start-column="51" selection-end-line="582" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -275,8 +274,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/BILANCIAMENTO_UTENTI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="89" column="69" selection-start-line="89" selection-start-column="69" selection-end-line="89" selection-end-column="69" />
+            <state relative-caret-position="221">
+              <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -284,11 +283,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1944">
-              <caret line="262" column="18" selection-start-line="262" selection-start-column="18" selection-end-line="262" selection-end-column="18" />
-              <folding>
-                <element signature="e#17#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4182">
+              <caret line="264" selection-start-line="264" selection-end-line="264" />
             </state>
           </provider>
         </entry>
@@ -304,8 +300,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>80</find>
-      <find>remove</find>
       <find>success</find>
       <find>sendM</find>
       <find>sendSMSToUser</find>
@@ -334,6 +328,8 @@
       <find>getIdFromUsernameToUnfollow</find>
       <find>scrivoColoratoSuFile</find>
       <find>updateDevePagare</find>
+      <find>auten</find>
+      <find>two_factor_required</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -402,11 +398,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-18" />
-    <option name="y" value="9" />
-    <option name="width" value="1944" />
-    <option name="height" value="1044" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="width" value="1938" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -442,7 +437,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -659,15 +654,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="6" width="1296" height="696" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27084988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27106518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3268206" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49682036" visible="true" weight="0.28368795" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49682036" weight="0.28933093" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39931154" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -718,9 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,13 +758,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/instaloader/instaloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="509" column="63" selection-start-line="509" selection-start-column="63" selection-end-line="509" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/instaloader/instaloader.py" />
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/venv/lib/python3.7/site-packages/decorator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -787,11 +772,7 @@
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/silvt/id" />
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Like.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-306" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/UTENTE_DA_SEGUIRE.py">
@@ -823,9 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-290">
           <caret line="53" column="66" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="66" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,167 +829,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/PULIZIA_ACCOUNT.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#3#24#0" expanded="true" />
-            <element signature="e#81#102#0" expanded="true" />
-            <element signature="e#159#180#0" expanded="true" />
-            <element signature="e#233#254#0" expanded="true" />
-            <element signature="e#308#329#0" expanded="true" />
-            <element signature="e#384#405#0" expanded="true" />
-            <element signature="e#473#494#0" expanded="true" />
-            <element signature="e#551#572#0" expanded="true" />
-            <element signature="e#629#650#0" expanded="true" />
-            <element signature="e#707#728#0" expanded="true" />
-            <element signature="e#785#806#0" expanded="true" />
-            <element signature="e#859#880#0" expanded="true" />
-            <element signature="e#938#959#0" expanded="true" />
-            <element signature="e#1063#1084#0" expanded="true" />
-            <element signature="e#1204#1225#0" expanded="true" />
-            <element signature="e#1337#1358#0" expanded="true" />
-            <element signature="e#1474#1495#0" expanded="true" />
-            <element signature="e#1612#1633#0" expanded="true" />
-            <element signature="e#1744#1765#0" expanded="true" />
-            <element signature="e#1863#1884#0" expanded="true" />
-            <element signature="e#1980#2001#0" expanded="true" />
-            <element signature="e#2103#2124#0" expanded="true" />
-            <element signature="e#2223#2244#0" expanded="true" />
-            <element signature="e#2346#2367#0" expanded="true" />
-            <element signature="e#2483#2504#0" expanded="true" />
-            <element signature="e#2623#2644#0" expanded="true" />
-            <element signature="e#2746#2767#0" expanded="true" />
-            <element signature="e#2886#2907#0" expanded="true" />
-            <element signature="e#3019#3040#0" expanded="true" />
-            <element signature="e#3148#3169#0" expanded="true" />
-            <element signature="e#3280#3301#0" expanded="true" />
-            <element signature="e#3411#3432#0" expanded="true" />
-            <element signature="e#3530#3551#0" expanded="true" />
-            <element signature="e#3653#3674#0" expanded="true" />
-            <element signature="e#3772#3793#0" expanded="true" />
-            <element signature="e#3898#3919#0" expanded="true" />
-            <element signature="e#4035#4056#0" expanded="true" />
-            <element signature="e#4168#4189#0" expanded="true" />
-            <element signature="e#4287#4308#0" expanded="true" />
-            <element signature="e#4423#4444#0" expanded="true" />
-            <element signature="e#4546#4567#0" expanded="true" />
-            <element signature="e#4681#4702#0" expanded="true" />
-            <element signature="e#4820#4841#0" expanded="true" />
-            <element signature="e#4943#4964#0" expanded="true" />
-            <element signature="e#5076#5097#0" expanded="true" />
-            <element signature="e#5197#5218#0" expanded="true" />
-            <element signature="e#5326#5347#0" expanded="true" />
-            <element signature="e#5446#5467#0" expanded="true" />
-            <element signature="e#5595#5616#0" expanded="true" />
-            <element signature="e#5738#5759#0" expanded="true" />
-            <element signature="e#5886#5907#0" expanded="true" />
-            <element signature="e#6046#6067#0" expanded="true" />
-            <element signature="e#6210#6231#0" expanded="true" />
-            <element signature="e#6355#6376#0" expanded="true" />
-            <element signature="e#6509#6530#0" expanded="true" />
-            <element signature="e#6663#6684#0" expanded="true" />
-            <element signature="e#6821#6842#0" expanded="true" />
-            <element signature="e#6981#7002#0" expanded="true" />
-            <element signature="e#7137#7158#0" expanded="true" />
-            <element signature="e#7294#7315#0" expanded="true" />
-            <element signature="e#7443#7464#0" expanded="true" />
-            <element signature="e#7604#7623#0" expanded="true" />
-            <element signature="e#7744#7765#0" expanded="true" />
-            <element signature="e#7904#7925#0" expanded="true" />
-            <element signature="e#8064#8085#0" expanded="true" />
-            <element signature="e#8213#8234#0" expanded="true" />
-            <element signature="e#8379#8400#0" expanded="true" />
-            <element signature="e#8537#8558#0" expanded="true" />
-            <element signature="e#8677#8698#0" expanded="true" />
-            <element signature="e#8833#8854#0" expanded="true" />
-            <element signature="e#8980#9001#0" expanded="true" />
-            <element signature="e#9123#9144#0" expanded="true" />
-            <element signature="e#9279#9300#0" expanded="true" />
-            <element signature="e#9438#9459#0" expanded="true" />
-            <element signature="e#9601#9622#0" expanded="true" />
-            <element signature="e#9746#9767#0" expanded="true" />
-            <element signature="e#9888#9909#0" expanded="true" />
-            <element signature="e#10034#10055#0" expanded="true" />
-            <element signature="e#10177#10198#0" expanded="true" />
-            <element signature="e#10334#10355#0" expanded="true" />
-            <element signature="e#10497#10518#0" expanded="true" />
-            <element signature="e#10643#10664#0" expanded="true" />
-            <element signature="e#10785#10806#0" expanded="true" />
-            <element signature="e#10946#10967#0" expanded="true" />
-            <element signature="e#11094#11113#0" expanded="true" />
-            <element signature="e#11225#11246#0" expanded="true" />
-            <element signature="e#11393#11414#0" expanded="true" />
-            <element signature="e#11555#11576#0" expanded="true" />
-            <element signature="e#11698#11719#0" expanded="true" />
-            <element signature="e#11838#11859#0" expanded="true" />
-            <element signature="e#11998#12019#0" expanded="true" />
-            <element signature="e#12146#12167#0" expanded="true" />
-            <element signature="e#12295#12314#0" expanded="true" />
-            <element signature="e#12431#12452#0" expanded="true" />
-            <element signature="e#12581#12602#0" expanded="true" />
-            <element signature="e#12731#12752#0" expanded="true" />
-            <element signature="e#12891#12912#0" expanded="true" />
-            <element signature="e#13042#13063#0" expanded="true" />
-            <element signature="e#13183#13204#0" expanded="true" />
-            <element signature="e#13341#13362#0" expanded="true" />
-            <element signature="e#13499#13520#0" expanded="true" />
-            <element signature="e#13645#13666#0" expanded="true" />
-            <element signature="e#13791#13812#0" expanded="true" />
-            <element signature="e#13934#13955#0" expanded="true" />
-            <element signature="e#14085#14106#0" expanded="true" />
-            <element signature="e#14243#14264#0" expanded="true" />
-            <element signature="e#14392#14413#0" expanded="true" />
-            <element signature="e#14541#14562#0" expanded="true" />
-            <element signature="e#14699#14720#0" expanded="true" />
-            <element signature="e#14859#14878#0" expanded="true" />
-            <element signature="e#14983#15004#0" expanded="true" />
-            <element signature="e#15147#15168#0" expanded="true" />
-            <element signature="e#15292#15313#0" expanded="true" />
-            <element signature="e#15442#15463#0" expanded="true" />
-            <element signature="e#15590#15611#0" expanded="true" />
-            <element signature="e#15757#15778#0" expanded="true" />
-            <element signature="e#15913#15934#0" expanded="true" />
-            <element signature="e#16079#16100#0" expanded="true" />
-            <element signature="e#16218#16239#0" expanded="true" />
-            <element signature="e#16368#16389#0" expanded="true" />
-            <element signature="e#16524#16545#0" expanded="true" />
-            <element signature="e#16677#16698#0" expanded="true" />
-            <element signature="e#16840#16861#0" expanded="true" />
-            <element signature="e#16981#17002#0" expanded="true" />
-            <element signature="e#17135#17156#0" expanded="true" />
-            <element signature="e#17287#17308#0" expanded="true" />
-            <element signature="e#17431#17452#0" expanded="true" />
-            <element signature="e#17586#17607#0" expanded="true" />
-            <element signature="e#17730#17751#0" expanded="true" />
-            <element signature="e#17873#17894#0" expanded="true" />
-            <element signature="e#18016#18037#0" expanded="true" />
-            <element signature="e#18178#18199#0" expanded="true" />
-            <element signature="e#18330#18351#0" expanded="true" />
-            <element signature="e#18492#18513#0" expanded="true" />
-            <element signature="e#18637#18658#0" expanded="true" />
-            <element signature="e#18797#18816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/connection_utenti_da_seguire.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="7" column="34" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Hastag.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1031,14 +859,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="282" column="56" selection-start-line="282" selection-start-column="56" selection-end-line="282" selection-end-column="56" />
-          <folding>
-            <element signature="e#48#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1051,9 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="55" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,36 +883,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="70" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="262" column="18" selection-start-line="262" selection-start-column="18" selection-end-line="262" selection-end-column="18" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="e#46#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="9639">
+          <caret line="582" column="70" selection-start-line="582" selection-start-column="51" selection-end-line="582" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4182">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/BILANCIAMENTO_UTENTI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="89" column="69" selection-start-line="89" selection-start-column="69" selection-end-line="89" selection-end-column="69" />
+        <state relative-caret-position="221">
+          <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
         </state>
       </provider>
     </entry>
