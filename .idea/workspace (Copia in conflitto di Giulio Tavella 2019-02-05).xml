@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02b983b9-2501-4c32-8d8a-b842de65e214" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/InstagramGetFollows/BILANCIAMENTO_UTENTU.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dropbox" beforeDir="false" afterPath="$PROJECT_DIR$/.dropbox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IFWS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IFWS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL-prpva.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramGetFollows/STATISTICHE.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramGetFollows/STATISTICHE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/SMS_MAIL.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/SMS_MAIL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/STATISTICHE.html" beforeDir="false" afterPath="$PROJECT_DIR$/script/STATISTICHE.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3990">
+              <caret line="309" column="48" selection-start-line="309" selection-start-column="48" selection-end-line="309" selection-end-column="48" />
+              <folding>
+                <element signature="e#48#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Hastag.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4695">
+              <caret line="328" column="28" selection-start-line="328" selection-start-column="28" selection-end-line="328" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Hastag_prova.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/HastagVecchio.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1380">
+              <caret line="98" column="17" selection-start-line="96" selection-start-column="4" selection-end-line="101" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/instaloader/structures.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5730">
+              <caret line="392" selection-start-line="392" selection-end-line="392" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script-PROVA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2130">
+              <caret line="205" selection-start-line="205" selection-end-line="205" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>imposto follow_unfollow a 0</find>
+      <find>unfollow_t</find>
+      <find>try</find>
+      <find>follow_thread</find>
+      <find>follow_t</find>
+      <find>followees</find>
+      <find>unfollow</find>
+      <find>altri</find>
+      <find>time</find>
+      <find>json</find>
+      <find>todo</find>
+      <find>SMS_M</find>
+      <find>+</find>
+      <find>checkNumeroTelefonico</find>
+      <find>elena</find>
+      <find>getU</find>
+      <find>getUserTo</find>
+      <find>getUse</find>
+      <find>countUserIntoDatabaseFromTread</find>
+      <find>selectUserFromDatabaseAndThread</find>
+      <find>devo</find>
+      <find>reque</find>
+      <find>reques</find>
+      <find>rimuoviAccountUTENTI_DA_SEGUIRE</find>
+      <find>getUser</find>
+      <find>SPOSTAMENTO_UTENTI</find>
+      <find>con il</find>
+      <find>@</find>
+      <find>silvia</find>
+      <find>statis</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/InstagramGetFollows</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Funzioni/get_follower_utente.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/LogFile.py" />
+        <option value="$PROJECT_DIR$/ClickMouse/ClickMouse.py" />
+        <option value="$PROJECT_DIR$/script/scriptScript2Random.sh" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Random.py" />
+        <option value="$PROJECT_DIR$/script/scriptScript2Thread.sh" />
+        <option value="$PROJECT_DIR$/script/scriptScriptAttivi.sh" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script-PROVA.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/scriptIfYetFollow.py" />
+        <option value="$PROJECT_DIR$/script/scriptSaveUserFromPosition.sh" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/scriptUserFromPosition2.py" />
+        <option value="$PROJECT_DIR$/script/scriptSaveUserFromPosition2.sh" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition2.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition3.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/clickForDatabase.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/Like.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/DirectMessage.py" />
+        <option value="$PROJECT_DIR$/script/scriptUnfollow.sh" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/scriptAutomaticallyLike.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/saveIDAndUsernameIntoLIKE_AUTOMATICI.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter_modifica.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/prova.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserActiveToFollowIntoDatabase.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/prova_Hastgat.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/Hastag_prova.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/script2ThreadCanessa.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/saveIntoDatabaseSTATISTICHE.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL-prova.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/saveTarget.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/Hastag.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL-prpva.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/prova_schedule.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/prova_pulisci_account_da_seguire.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/prova_statistiche.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/STATISTICHE.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition_PROVA.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="76" />
+    <option name="y" value="48" />
+    <option name="width" value="1271" />
+    <option name="height" value="531" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IFWS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IFWS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IFWS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IFWS" type="462c0819:PsiDirectoryNode" />
+              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition_PROVA.py" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/InstagramGetFollows" />
+      <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows" />
+      <recent name="$PROJECT_DIR$/script" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.SaveUserFromPosition_PROVA">
+    <configuration name="SMS_MAIL-prpva" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InstagramGetFollows" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL-prpva.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SMS_MAIL" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InstagramGetFollows" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SaveUserFromPosition_PROVA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/InstagramGetFollows/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InstagramGetFollows" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition_PROVA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prova_pulisci_account_da_seguire" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InstagramGetFollows" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/prova_pulisci_account_da_seguire.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prova_statistiche" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InstagramGetFollows" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/prova_statistiche.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="unfollowAllUserFollowerd" type="PythonConfigurationType" factoryName="Python">
+      <module name="IFWS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InstagramGetFollows" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.unfollowAllUserFollowerd" />
+      <item itemvalue="Python.SMS_MAIL-prpva" />
+      <item itemvalue="Python.SMS_MAIL" />
+      <item itemvalue="Python.prova_pulisci_account_da_seguire" />
+      <item itemvalue="Python.prova_statistiche" />
+      <item itemvalue="Python.SaveUserFromPosition_PROVA" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.SaveUserFromPosition_PROVA" />
+        <item itemvalue="Python.SMS_MAIL" />
+        <item itemvalue="Python.prova_statistiche" />
+        <item itemvalue="Python.prova_pulisci_account_da_seguire" />
+        <item itemvalue="Python.SMS_MAIL-prpva" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02b983b9-2501-4c32-8d8a-b842de65e214" name="Default" comment="" />
+      <created>1530370865141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530370865141</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1360" height="710" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37696335" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3268206" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49741468" weight="0.2857143" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39931154" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931036" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5025853" side_tool="true" weight="0.73383087" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/script/scriptScript2.sh" />
+    <entry file="file://$PROJECT_DIR$/script/scriptHastag.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/scriptScriptAttivi.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/scriptScript2Thread.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/functions/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/scriptIfYetFollow.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/LogFile.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/scriptUserFromPosition2.py" />
+    <entry file="file://$PROJECT_DIR$/script/scriptSaveUserFromPosition.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/scriptSaveUserFromPosition2.sh" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/clickForDatabase.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Like.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition2.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition3.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/GetUsersToFollowFromUsernamePassword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/DirectMessage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" />
+    <entry file="file://$PROJECT_DIR$/script/scriptUnfollow.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter_modifica.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserActiveToFollowIntoDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/scriptAutomaticallyLike.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/saveIDAndUsernameIntoLIKE_AUTOMATICI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Login.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/saveIntoDatabaseSTATISTICHE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="60" selection-start-line="60" selection-end-line="77" />
+          <folding>
+            <element signature="e#159#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/saveTarget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="13" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2ThreadCanessa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="69" selection-start-line="69" selection-end-line="71" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_pulisci_account_da_seguire.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#8;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#9;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#10;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#11;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#12;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#13;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#14;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#15;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#16;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#17;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#18;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#19;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#20;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#21;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#22;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#23;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#24;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#25;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#26;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#27;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#28;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#29;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#30;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#31;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#32;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#33;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#34;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#35;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#36;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#37;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#38;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#39;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#40;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#41;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#42;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#43;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#44;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#45;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#46;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#47;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#48;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#49;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#50;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#51;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#52;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#53;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#54;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#55;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#56;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#57;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#58;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#59;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#60;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#61;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#62;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#63;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#64;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#65;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#66;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#67;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#68;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#69;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#70;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL-prpva.py" />
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_statistiche.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="42" selection-start-line="7" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/STATISTICHE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="118" column="26" lean-forward="true" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SMS_MAIL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3990">
+          <caret line="309" column="48" selection-start-line="309" selection-start-column="48" selection-end-line="309" selection-end-column="48" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Hastag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/unfollowAllUserFollowerd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4695">
+          <caret line="328" column="28" selection-start-line="328" selection-start-column="28" selection-end-line="328" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/Hastag_prova.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/HastagVecchio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="98" column="17" selection-start-line="96" selection-start-column="4" selection-end-line="101" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/instaloader/structures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5730">
+          <caret line="392" selection-start-line="392" selection-end-line="392" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script-PROVA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserFromPosition_PROVA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="91" column="27" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/SaveUserToFollowIntoDatabaseWithParameter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
