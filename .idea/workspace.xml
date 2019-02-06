@@ -266,11 +266,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="153" column="35" selection-start-line="153" selection-start-column="35" selection-end-line="153" selection-end-column="35" />
+              <caret line="153" column="146" selection-start-line="153" selection-start-column="146" selection-end-line="153" selection-end-column="146" />
             </state>
           </provider>
         </entry>
@@ -314,11 +314,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_saziodanza.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_alberto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+            <state relative-caret-position="115">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -361,7 +361,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Ver</find>
       <find>Very</find>
       <find>ver</find>
       <find>stampa</find>
@@ -391,6 +390,7 @@
       <find>processato</find>
       <find>il tuo abbonamento</find>
       <find>commen</find>
+      <find>scaduto</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -406,7 +406,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/InstagramGetFollows/Like.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/MAIL_BOT.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/script2.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/SaveUsersToFollowIntoDatabase.py" />
@@ -451,12 +450,13 @@
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova_vik.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova_fabrizioguarnera.py" />
-        <option value="$PROJECT_DIR$/InstagramGetFollows/prova_saziodanza.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova_instatrack.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova_doyenne.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/InstagramAPI.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/prova_pizza_voltri.py" />
         <option value="$PROJECT_DIR$/InstagramGetFollows/script2Thread.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/prova_saziodanza.py" />
+        <option value="$PROJECT_DIR$/InstagramGetFollows/prova_alberto.py" />
       </list>
     </option>
   </component>
@@ -645,7 +645,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/InstagramGetFollows/prova_saziodanza.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows\prova_alberto.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -946,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_saziodanza.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_instatrack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
@@ -1001,7 +994,14 @@
     <entry file="file://$PROJECT_DIR$/InstagramGetFollows/script2Thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="153" column="35" selection-start-line="153" selection-start-column="35" selection-end-line="153" selection-end-column="35" />
+          <caret line="153" column="146" selection-start-line="153" selection-start-column="146" selection-end-line="153" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstagramGetFollows/prova_alberto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
         </state>
       </provider>
     </entry>
