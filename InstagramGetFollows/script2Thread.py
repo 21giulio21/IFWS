@@ -151,7 +151,8 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             sendMailToUser(email, msg, subject)
 
             messaggio = "Ciao " + str(
-                username) + ", il tuo abbonamento e' scaduto! Accedi a www.instatrack.eu per rinnovarlo!"
+                username) + ", l' abbonamento purtroppo e' scaduto!\nVogliamo farti un regalo! Uno sconto del 10% su qualsiasi piano PER SEMPRE.\nSe desideri proseguire a ricevere followers e like reali italiani in target col tuo profilo e spendere meno PER SEMPRE, attiva ora il tuo coupon su Instatrack.\nUtilizza il codice sconto HYPE. \nAccedi subito alla tua area personale per riattivare il servizio: http://bit.ly/instatrack10"
+
             sendSMSToUser(email, messaggio)
 
 
@@ -381,8 +382,8 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
         if auto_comment == "1":
             # Faccio in modo che con probabilità 1/4 commenta quindi non verra messo sempre, in modo
             # tale da aumentare il nuemro di richiueste di follow
-            #random_number = random.randint(1, 4)
-            random_number = 2
+            random_number = random.randint(1, 6)
+            #random_number = 2
             if random_number == 2:
 
                 risposta_commento = comment(cookies_str, cookies_dict['csrftoken'], username_user_to_follow)

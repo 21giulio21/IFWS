@@ -64,7 +64,7 @@ def generate_comment():
         return res.capitalize()
 
 
-def ottengoIdPrimaFotoDaUsername(username, ):
+def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
     # Genero random l'ip da cui viene fatto il login, deve esserequalcosa come: 64.1.3559.543
     primoNumero = random.randint(2, 100)
     secondoNumero = random.randint(2, 100)
@@ -80,7 +80,7 @@ def ottengoIdPrimaFotoDaUsername(username, ):
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
-        'cookie': 'ig_cb=1; mid=W1nvMQAEAAFu2gGrVLf9bSIPaRj0; mcd=3; fbm_124024574287414=base_domain=.instagram.com; shbid=18815; rur=FRC; csrftoken=8PTQJQ7SinBSjbsmVnBExspM0dwYyNZ8; fbsr_124024574287414=8YD7u-K_rHKaSPA5xcY6uah59VJCd41My7qDi7TU_Hc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUURTdTZuVG0zbVl2YXhPd2UwWXdnQ2JUVlZsM3VRTEltRzNmelk5cll6MlZEemhWQW1DejJONFpjUjN1NURKNjNSUndjSlBPU282dF9sNHlfN3U1eHE4TDNoMGFXUTNrUDc4YkFHM1JleFBSbjhoMzhXRFBpbjhBLWRYaTBtcER6MHJ1TE1LaUdsMUgzcmlDd2ZkV1UtTnMwX2Zld2VGelFBQXQyNnFMRGhMZTgtRnJfTVhIWXFGSFFrUnVJTmhZdGx2Tl9Gc254el9MOVlibWgwVTNJRllOYnM5VUFPaU9JdndPTWhwalR0Zm13NG5fRmduYlZ3VGV0TXpSbG9OdlZ1cGxZbGxDNGw4a3dqaDlTYW84dUdtUHJ4YUxQS2YzRjFGdUs5Y2ZzS1pkSFNOdE91LXdaaWVrWDl5M1Q0QkVITnpnZTNydzR2MllCTGNvRDFiNDBmRSIsImlzc3VlZF9hdCI6MTUzMjYyMDkxMCwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1532620593\\054 \\"193.55.113.196\\": 2200}:1fiiiC:RUN1GvUYgXRNI-ZXGepzKJ_5Ybs"',
+        'cookie': cookies,
 
     }
 
@@ -109,7 +109,7 @@ def richiestaLike(username, cookies, csrf):
         'authority': 'www.instagram.com',
         'content-length': '0',
     }
-    return requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username) +'/like/', headers=headers)
+    return requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username,cookies, csrf) +'/like/', headers=headers)
 
 
 
@@ -141,7 +141,7 @@ def comment(cookies, csrf,username_to_comment):
         ('comment_text', generate_comment()),
     ]
 
-    return requests.post('https://www.instagram.com/web/comments/'+ottengoIdPrimaFotoDaUsername(username_to_comment)+'/add/', headers=headers, data=data).content
+    return requests.post('https://www.instagram.com/web/comments/'+ottengoIdPrimaFotoDaUsername(username_to_comment,cookies, csrf)+'/add/', headers=headers, data=data).content
 
 
 def follow(id, username, cookies, csrf):
