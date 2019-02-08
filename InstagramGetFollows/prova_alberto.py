@@ -45,7 +45,12 @@ import sys
 
 C1 = ""
 C2 = ""
-array_to_get_like = []
+
+#In questi array andiamo ad inserire gli utenti che hanno autolike = 1 oppure quelli con autolike = 0
+#In questo modo gli utenti con autolike = 0 riceveranno solo like, mentre quelli con autolike = 1 li andranno a mettere
+array_autolike_1 = []
+array_autolike_0 = []
+
 
 for thread_I in range(1,22):
 
@@ -109,12 +114,8 @@ for thread_I in range(1,22):
         # Massimo numero di richieste che l'utente deve fare
         max_requests = int(user[0]['MAX_REQUESTS'])
 
-        if script_attivo == "1":
-            array_to_get_like.append(username)
+        if script_attivo == "1" and auto_like == "1" and deve_pagare == "0" and password_errata == "0":
 
-
-
-        if username == "alberto.matossich23":
             temp = base64.b64decode(str(cookie))
             cookies_dict = ast.literal_eval(temp)
             cookies_str = ''.join(key + "=" + str(cookies_dict[key]) + "; " for key in cookies_dict)
@@ -122,13 +123,63 @@ for thread_I in range(1,22):
             C1 = cookies_str
             C2 = cookies_dict['csrftoken']
 
+            utente = {
+                "username": username,
+                "C1": C1,
+                "C2": C2
+            }
 
-print(array_to_get_like)
 
-for username in array_to_get_like:
+            array_autolike_1.append(utente)
 
-    print("alberto.matossich23 mette like a " + str(username))
-    print(richiestaLike(username,C1, C2).content)
-    time.sleep(100)
+        elif script_attivo == "1" and auto_like == "0" and deve_pagare == "0" and password_errata == "0":
+            temp = base64.b64decode(str(cookie))
+            cookies_dict = ast.literal_eval(temp)
+            cookies_str = ''.join(key + "=" + str(cookies_dict[key]) + "; " for key in cookies_dict)
+
+            C1 = cookies_str
+            C2 = cookies_dict['csrftoken']
+
+            utente = {
+                "username": username,
+                "C1": C1,
+                "C2": C2
+            }
+
+            array_autolike_0.append(utente)
+
+
+
+print("Array di utenti con autolike = 0")
+print(array_autolike_0)
+
+
+print("Array di utenti con autolike = 1")
+print(array_autolike_1)
+
+#Creo l'array totale che dovra contenere tutti quelli che vogliono like, sia autolike = 0 sia autolike = 1
+array_totale_utenti_volenterosi_di_like = array_autolike_1 + array_autolike_0
+
+
+print("Array volenterosi di like")
+print(array_totale_utenti_volenterosi_di_like)
+
+for user_autolike_1 in array_autolike_1:
+    for user_volenteroso_di_like in array_totale_utenti_volenterosi_di_like:
+
+        username_volenteroso_di_like = user_volenteroso_di_like["username"]
+        C1_volenteroso_di_like = user_volenteroso_di_like["C1"]
+        C2_volenteroso_di_like = user_volenteroso_di_like["C2"]
+
+        username_autolike_1 = user_autolike_1["username"]
+        C1_autolike_1 = user_autolike_1["C1"]
+        C2_autolike_1 = user_autolike_1["C2"]
+
+        if username_volenteroso_di_like == username_autolike_1:
+            continue
+
+        print( str(username_autolike_1) + " mette LIKE a " + str(username_volenteroso_di_like))
+        print(richiestaLike(username_volenteroso_di_like,C1_autolike_1, C2_autolike_1).content)
+        time.sleep(200)
 
 

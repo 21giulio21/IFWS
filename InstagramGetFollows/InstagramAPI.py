@@ -797,9 +797,9 @@ def scrivoColoratoSuFile(nomeFIle, testo, colore):
 
     #Ottengo l'ora di ora
     timestamp = getCurrentTime()
-    with open( nomeFIle, "a") as myfile:
-        print(colored(timestamp +" "+testo, colore))
-        myfile.write('<p style="color: '+ colore+';">' +timestamp +" "+testo+'</p>')
+    print(colored(timestamp + " " + testo, colore))
+   # with open( nomeFIle, "a") as myfile:
+    #    myfile.write('<p style="color: '+ colore+';">' +timestamp +" "+testo+'</p>')
 
 
 #Questa funzione permette di eliminare una tupla dal database, in particolare elimina una mail
