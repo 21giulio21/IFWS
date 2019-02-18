@@ -18,7 +18,7 @@ from InstagramAPI import scrivoColoratoSuFile, updateTreadFromUsername
 FILE_NAME = "BILANCIAMENTO.html"
 
 #Questi sono i thread che voglio bilanciare
-ARRAY_THREAD_DA_BILANCIARE = ["1","2","3","4","5","6","7", "8", "9", "10", "11" , "12"]
+ARRAY_THREAD_DA_BILANCIARE = ["1","2","3","4","5","6","7", "8", "9", "10", "11" , "12", "13", "14", "15", "16"]
 
 
 #URL CHE restituisce il numero di utenti su quel hread
@@ -85,7 +85,7 @@ def BILANCIAMENTO_UTENTI_TRA_I_THREAD():
         print(min,max)
 
         rand_thread = randint(min, max)
-        print("Sposto lo username che è rimasto dentro:" + str(utente_rimantente) + " sul thread: " + str(rand_thread))
+        print("Sposto lo username che e' rimasto dentro:" + str(utente_rimantente) + " sul thread: " + str(rand_thread))
         updateTreadFromUsername(username_da_spostare, str(rand_thread))
 
     exit(0)
@@ -137,12 +137,12 @@ def BILANCIAMENTO_UTENTI_TRA_I_THREAD():
 
     '''
 
-
+BILANCIAMENTO_UTENTI_TRA_I_THREAD()
 
 #schedule.every(5).hours.do
-schedule.every().second.do(BILANCIAMENTO_UTENTI_TRA_I_THREAD)
+#schedule.every().second.do(BILANCIAMENTO_UTENTI_TRA_I_THREAD)
 
-while True:
-    schedule.run_pending()
-    time.sleep(3)
+#while True:
+    #schedule.run_pending()
+    #time.sleep(3)
 

@@ -109,6 +109,7 @@ def sendSMS(numero,messaggio):
 
 #QUESTA PARTE PERMETTE DI MANDARE SMS AGLI UTENTI
 def SMS():
+
     connection = CONNECTION_UTENTI_DA_SEGUIRE()
 
     # Chiedo quante mail ci sono
@@ -122,6 +123,7 @@ def SMS():
         # Altrimenti scarico l'SMS
         fetchall = connection.fetchall("SELECT * FROM SMS_INSTATRACK LIMIT 0,1")
         ID_MESSAGGIO = str(fetchall[0][0])
+
         NUMERO_TELEFONICO = str(fetchall[0][1])
         MESSAGGIO = str(fetchall[0][2])
 
@@ -142,6 +144,7 @@ def SMS():
 
         # Elimino la mail che ho appena mandato
         removeSMSFromDatabase(ID_MESSAGGIO)
+
 
 
 
@@ -261,4 +264,5 @@ schedule.every().day.do(SPOSTAMENTO_UTENTI)
 while True:
     schedule.run_pending()
     time.sleep(10)
+
 

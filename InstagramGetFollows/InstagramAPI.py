@@ -76,7 +76,7 @@ def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
         'authority': 'www.instagram.com',
         'cache-control': 'max-age=0',
         'upgrade-insecure-requests': '1',
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/'+ip+' Chrome/'+ip+' Safari/537.36',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
@@ -93,6 +93,9 @@ def ottengoIdPrimaFotoDaUsername(username, cookies, csrf):
 
 def richiestaLike(username, cookies, csrf):
 
+    user_agent_1 = 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B137 Safari/601.1'
+    user_agent_2 = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36'
+
 
 
     headers = {
@@ -108,6 +111,8 @@ def richiestaLike(username, cookies, csrf):
         'referer': 'https://www.instagram.com/p/BjIEnJAgwYS/?taken-by=' + username,
         'authority': 'www.instagram.com',
         'content-length': '0',
+        'user-agent': user_agent_1,
+
     }
     return requests.post('https://www.instagram.com/web/likes/'+ottengoIdPrimaFotoDaUsername(username,cookies, csrf) +'/like/', headers=headers)
 
@@ -154,8 +159,9 @@ def follow(id, username, cookies, csrf):
     'x-instagram-ajax': '8958fe1e75ab',
     'authority': 'www.instagram.com',
     'referer': 'https://www.instagram.com/' + username,
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
 
-	}
+    }
 
 	return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
 
@@ -219,7 +225,7 @@ def unfollow(id,username, cookies, csrf):
         'referer': 'https://www.instagram.com/'+username+'/',
         'authority': 'www.instagram.com',
         'content-length': '0',
-
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
 
     }
 

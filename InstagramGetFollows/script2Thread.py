@@ -151,7 +151,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             sendMailToUser(email, msg, subject)
 
             messaggio = "Ciao " + str(
-                username) + ", l' abbonamento purtroppo e' scaduto!\nVogliamo farti un regalo! Uno sconto del 10% su qualsiasi piano PER SEMPRE.\nSe desideri proseguire a ricevere followers e like reali italiani in target col tuo profilo e spendere meno PER SEMPRE, attiva ora il tuo coupon su Instatrack.\nUtilizza il codice sconto HYPE. \nAccedi subito alla tua area personale per riattivare il servizio: http://bit.ly/instatrack10"
+                username) + ", l' abbonamento purtroppo e' scaduto!\nVogliamo farti un regalo! Uno sconto del 10% su qualsiasi piano PER SEMPRE.\nSe desideri proseguire a ricevere followers e like reali italiani in target col tuo profilo e spendere meno PER SEMPRE, attiva ora il tuo coupon su Instatrack.\nUtilizza il codice sconto HYPE entro domani. \nAccedi subito alla tua area personale per riattivare il servizio: http://bit.ly/instatrack10"
 
             sendSMSToUser(email, messaggio)
 
