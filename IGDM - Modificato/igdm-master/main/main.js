@@ -10,6 +10,10 @@ const autoUpdater = require('./autoupdater');
 const http = require('http');
 const https = require('https');
 
+setInterval(function() {
+
+
+
 
   http.get('http://utentidaseguire.eu/instatrack/send_DM/get_DM_from_database.php', (resp) => {
     let data = '';
@@ -32,7 +36,10 @@ const https = require('https');
       }else{
         var ID_DM     = risposta.ID_DM
         var USERNAME  = risposta.USERNAME
-        var MESSAGGIO = risposta.MESSAGGIO
+
+        // Converto il messaggio in versione leggibile:
+        var MESSAGGIO = ""+Buffer.from(risposta.MESSAGGIO, 'base64'); // Ta-da
+
         var text_mex = "Invio il messaggio: " + MESSAGGIO + " allo username: " + USERNAME
 
 
@@ -89,29 +96,12 @@ const https = require('https');
   });
 
 
+}, 50000);
 
 
 
-var express = require('express');
-app_listener = express();
-var port = process.env.PORT || 8080;
 
-// routes will go here
 
-// start the server
-app_listener.listen(port)
-
-console.log('Server started! At http://localhost:' + port);
-
-app_listener.get('/api/users', function(req, res) {
-  var username = req.param('username');
-  var message = req.param('message');
-
-  var risposta = "Invio allo username " + username + " il messaggio: " + message
-  console.log(risposta )
-  res.send(risposta);
-
-});
 
 // fixes electron's timeout inconsistency
 // not doing this on windows because the fix doesn't work for windows.

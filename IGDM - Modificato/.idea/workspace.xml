@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab373ad2-b84d-43bf-bf31-dd1d9603161f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../InstagramGetFollows/PUBLICITA_SMS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.dropbox" beforeDir="false" afterPath="$PROJECT_DIR$/../.dropbox" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/IFWS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/IFWS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppAndroid/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../AppAndroid/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/BILANCIAMENTO_UTENTI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/BILANCIAMENTO_UTENTI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/InstagramAPI (Copia in conflitto di Giulio Tavella 2019-02-05).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/igdm-master/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/igdm-master/main/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Icon&#10;" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/InstagramAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/SMS_MAIL (Copia in conflitto di Giulio Tavella 2019-02-05).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/SMS_MAIL.py" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/SMS_MAIL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/prova_alberto.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/script2Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/script2Thread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/script-PROVA (Copia in conflitto di Giulio Tavella 2019-02-05).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/script-PROVA.py" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/script-PROVA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/venv/bin/chardetect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/venv/bin/django-admin" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/venv/bin/django-admin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InstagramGetFollows/venv/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../InstagramGetFollows/venv/bin/django-admin.py" afterDir="false" />
@@ -149,6 +145,7 @@
       <change beforePath="$PROJECT_DIR$/../venv/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/python3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/bin/python3.6" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/python3.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/bin/runxlrd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/runxlrd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/bin/tqdm" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/bin/tqdm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/PIL/.libs/libfreetype-6ed94974.so.6.16.1" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/PIL/.libs/libfreetype-6ed94974.so.6.16.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/PIL/.libs/libjpeg-3fe7dfc0.so.9.3.0" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib/python3.6/site-packages/PIL/.libs/libjpeg-3fe7dfc0.so.9.3.0" afterDir="false" />
@@ -290,6 +287,47 @@
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/numpy/linalg/_umath_linalg.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/numpy/linalg/_umath_linalg.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/numpy/linalg/lapack_lite.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/numpy/linalg/lapack_lite.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/numpy/random/mtrand.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/numpy/random/mtrand.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/algos.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/algos.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/groupby.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/groupby.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/hashing.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/hashing.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/hashtable.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/hashtable.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/index.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/index.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/indexing.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/indexing.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/internals.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/internals.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/interval.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/interval.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/join.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/join.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/json.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/json.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/lib.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/lib.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/missing.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/missing.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/ops.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/ops.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/parsers.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/parsers.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/properties.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/properties.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/reduction.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/reduction.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/reshape.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/reshape.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/skiplist.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/skiplist.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/sparse.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/sparse.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/testing.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/testing.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslib.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslib.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/ccalendar.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/ccalendar.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/conversion.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/conversion.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/fields.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/fields.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/frequencies.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/frequencies.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/nattype.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/nattype.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/np_datetime.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/np_datetime.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/offsets.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/offsets.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/parsing.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/parsing.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/period.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/period.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/resolution.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/resolution.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/strptime.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/strptime.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/timedeltas.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/timedeltas.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/timestamps.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/timestamps.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/timezones.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/tslibs/timezones.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/window.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/window.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/writers.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/_libs/writers.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/io/msgpack/_packer.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/io/msgpack/_packer.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/io/msgpack/_unpacker.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/io/msgpack/_unpacker.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/io/sas/_sas.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/io/sas/_sas.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/util/_move.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pandas/util/_move.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t32.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/t64.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/w32.exe" afterDir="false" />
@@ -336,7 +374,6 @@
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/timeout.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/timeout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/url.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/lib64/python3.6/site-packages/urllib3/util/wait.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/../venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -345,12 +382,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+            <state relative-caret-position="153">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -363,6 +400,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Qui</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -401,7 +443,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InstagramGetFollows" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -454,22 +496,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="6" width="1296" height="696" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -478,8 +519,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        <state relative-caret-position="153">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

@@ -6,11 +6,11 @@ import base64
 import time
 import ast
 import random
-import thread
+
 import time
 
 
-from InstagramAPI import updateTempoBlocco, follow_thread, unfollow_thread, sendSMSToUser
+from InstagramAPI import updateTempoBlocco, follow_thread, unfollow_thread, sendSMSToUser, sendDMMessage
 from InstagramAPI import comment
 from InstagramAPI import update_secondi_ultima_richiesta
 from InstagramAPI import updateFollowUnfollowDatabase
@@ -37,6 +37,7 @@ from InstagramAPI import sendMailToUser
 from InstagramAPI import getIdFromUsernameToUnfollow
 import threading
 from threading import *
+
 import re
 import sys
 
@@ -88,7 +89,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     follow_unfollow = str(user[0]['FOLLOW_UNFOLLOW'])
     users_followed_string = str(user[0]['USERS_FOLLOWED'])
     users_followed_array = re.split(';', users_followed_string)
-    password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
+    password_instagram = user[0]['PASSWORD_INSTAGRAM'].encode('utf-8')
     script_attivo = str(user[0]['SCRIPT_ACTIVE'])
     tempo_attesa_blocco = str(user[0]['TEMPO_ATTESA_BLOCCO'])
 
@@ -154,6 +155,9 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
                 username) + ", l' abbonamento purtroppo e' scaduto!\nVogliamo farti un regalo! Uno sconto del 10% su qualsiasi piano PER SEMPRE.\nSe desideri proseguire a ricevere followers e like reali italiani in target col tuo profilo e spendere meno PER SEMPRE, attiva ora il tuo coupon su Instatrack.\nUtilizza il codice sconto HYPE entro domani. \nAccedi subito alla tua area personale per riattivare il servizio: http://bit.ly/instatrack10"
 
             sendSMSToUser(email, messaggio)
+
+            messaggio_b64 = "Q2lhbywKCkwnIGFiYm9uYW1lbnRvIHB1cnRyb3BwbyBlJyBzY2FkdXRvIQoKVm9nbGlhbW8gZmFydGkgdW4gcmVnYWxvISBVbm8gc2NvbnRvIGRlbCAxMCUgc3UgcXVhbHNpYXNpIHBpYW5vIFBFUiBTRU1QUkUuCgpTZSBkZXNpZGVyaSBwcm9zZWd1aXJlIGEgcmljZXZlcmUgZm9sbG93ZXJzIGUgbGlrZSByZWFsaSBpdGFsaWFuaSBpbiB0YXJnZXQgY29sIHR1byBwcm9maWxvIGUgc3BlbmRlcmUgbWVubyBQRVIgU0VNUFJFLCBhdHRpdmEgb3JhIGlsIHR1byBjb3Vwb24gc3UgSW5zdGF0cmFjay4KClV0aWxpenphIGlsIGNvZGljZSBzY29udG8gSFlQRSBlbnRybyBkb21hbmkuIAoKQWNjZWRpIHN1Yml0byBhbGxhIHR1YSBhcmVhIHBlcnNvbmFsZSBwZXIgcmlhdHRpdmFyZSBpbCBzZXJ2aXppbzogaHR0cDovL2JpdC5seS9pbnN0YXRyYWNrMTA="
+            sendDMMessage(username, messaggio_b64)
 
 
             updateSctiptActive(username, 0)  # Metto sctipt_attivo = 0

@@ -95,10 +95,10 @@ max_requests = 200
 
 while True:
 
-    print("Attendo DT")
+    #print("Attendo DT")
 
-    time.sleep(tempo_passato_come_patametro)
-    print("Tempo DT passato, inizio lo script.")
+    #time.sleep(tempo_passato_come_patametro)
+    #print("Tempo DT passato, inizio lo script.")
 
     # Chiedo quanti utenti ho nel database
     numberUsersIntoDatabase = countUserIntoDatabaseFromTread(thread_passato_come_patametro)
@@ -118,7 +118,7 @@ while True:
         follow_unfollow = str(user[0]['FOLLOW_UNFOLLOW'])
         users_followed_string = str(user[0]['USERS_FOLLOWED'])
         users_followed_array = re.split(';', users_followed_string)
-        password_instagram = str(user[0]['PASSWORD_INSTAGRAM'])
+        password_instagram = user[0]['PASSWORD_INSTAGRAM'].encode('utf-8')
         script_attivo = str(user[0]['SCRIPT_ACTIVE'])
         tempo_attesa_blocco = str(user[0]['TEMPO_ATTESA_BLOCCO'])
        
@@ -160,11 +160,11 @@ while True:
 
         # Se la password e' errata non lo processo neanche e merro a 0 script_active nel caso fosse a 1
         if password_errata == '1':
-            print("Non processo l'utente: " + username + " perche ha la password errata")
+            #print("Non processo l'utente: " + username + " perche ha la password errata")
             continue
 
         if deve_pagare == '1':
-            print("Non processo l'utente: " + username + " perche DEVE PAGARE")
+            #print("Non processo l'utente: " + username + " perche DEVE PAGARE")
             continue
 
 

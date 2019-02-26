@@ -309,6 +309,14 @@ def checkIfYetFollowing(username_user_to_follow,cookies):
     else:
         return False
 
+#Questa funzione permette di mandare direct message agli utenti
+def sendDMMessage(username,testo):
+    url = url_sms_mail + "/instatrack/send_DM/insert_DM_into_database.php?USERNAME=" + str(username) + "&MESSAGGIO=" + str(testo)
+    requests.get(url)
+
+def sendDMMessageWithTAG(username,testo,tag):
+    url = url_sms_mail + "/instatrack/send_DM/insert_DM_into_database_with_tag.php?USERNAME=" + str(username) + "&MESSAGGIO=" + str(testo)+ "&TAG=" + str(tag)
+    return requests.get(url).content
 
 def updateProcessing(username,value):
     url = url_bot + "/instatrack/updateProcessing.php?username=" + username + "&processing=" + str(value)
@@ -534,7 +542,10 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
                 username) + " ha cambiato password"
             scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
             updatePasswordErrataAndProcessing(username, 1, email)
-            messaggio = "Ciao "+str(username)+", le credenziali del tuo accoint Instagram inserite precedentemente sono cambiate. Accedi a www.instatrack.eu per rimpostare le credenziali corrette."
+            messaggio = "Ciao "+str(username)+", le credenziali del tuo account Instagram inserite precedentemente sono cambiate. Accedi a https://areautenti.instatrack.eu per rimpostare le credenziali corrette."
+            messaggio_b64 = ""
+
+            sendDMMessage(username, messaggio_b64)
             sendSMSToUser(email, messaggio)
 
         #Altrimenti puo accadere che ci sia la password errata perche puo aver cambiato password l'utente e devo rifare i coockie
@@ -580,6 +591,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
 
             messaggio = "Ciao " + str(
                 username) + ", Accedi a Instagram per verificare il tuo account."
+
             sendSMSToUser(email, messaggio)
 
             return 0
@@ -597,6 +609,10 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
 
             messaggio = "Ciao " + str(
                 username) + ", Accedi a Instagram per rimuovere l'autenticazione a due fattori, altrimenti non possiamo processare il tuo account.\nUna volta processato puoi inserirla nuovamente"
+
+            messaggio_b64 = "Q2lhbywgYWNjZWRpIGEgSW5zdGFncmFtIHBlciByaW11b3ZlcmUgbCdhdXRlbnRpY2F6aW9uZSBhIGR1ZSBmYXR0b3JpLCBhbHRyaW1lbnRpIG5vbiBwb3NzaWFtbyBwcm9jZXNzYXJlIGlsIHR1byBhY2NvdW50LiBVbmEgdm9sdGEgcHJvY2Vzc2F0byBwdW9pIGluc2VyaXJsYSBudW92YW1lbnRlLg=="
+
+            sendDMMessage(username, messaggio_b64)
             sendSMSToUser(email, messaggio)
 
             return 0
@@ -609,10 +625,17 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
         if authenticated == "FALSE":
 
             messaggio = "Ciao " + str(
-                username) + ", le tue credenziali risultano errate. Accedi al sito www.instatrack.eu per reinserirle correttamente."
+                username) + ", le credenziali del tuo account Instagram risultano errate. Accedi al sito https://areautenti.instatrack.eu per reinserirle correttamente."
             sendSMSToUser(email, messaggio)
 
-            print("Autenticazione non riuscita")
+            messaggio_b64 = "Q2lhbywgbGUgY3JlZGVuemlhbGkgZGVsIHR1byBhY2NvdW50IEluc3RhZ3JhbSByaXN1bHRhbm8gZXJyYXRlLiAKQWNjZWRpIGFsIHNpdG8gaHR0cHM6Ly9hcmVhdXRlbnRpLmluc3RhdHJhY2suZXUgcGVyIHJlaW5zZXJpcmxlIGNvcnJldHRhbWVudGUu"
+
+            sendDMMessage(username, messaggio_b64)
+
+            messaggio = "LOGIN  - " + "L'username " + str(username) + " ha inserito una psw errata"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+
+
             print(updatePasswordErrataAndProcessing(username,"1",email))
         else:
             # MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
@@ -622,16 +645,24 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             #sendMailToUser(email, subject,msg)
 
             messaggio = "Ciao " + str(
-                username) + ", la tua iscrizione e' andata a buon fine. Accedi alla nostra piattaforma www.instatrack.eu per gestire in tempo reale il tuo account!"
+                username) + ", la tua iscrizione e' andata a buon fine. Accedi alla nostra piattaforma https://areautenti.instatrack.eu per gestire in tempo reale il tuo account!"
             sendSMSToUser(email, messaggio)
 
+            messaggio_b64 = "Q2lhbywgbGEgdHVhIGlzY3JpemlvbmUgZScgYW5kYXRhIGEgYnVvbiBmaW5lLiAKClB1b2kgY29udHJvbGxhcmUgaW4gdGVtcG8gcmVhbGUgaWwgdHVvIGFjY291bnQgc2VndWVuZG8gcXVlc3RvIGxpbms6IGh0dHBzOi8vYXJlYXV0ZW50aS5pbnN0YXRyYWNrLmV1Cg=="
+            sendDMMessage(username, messaggio_b64)
+
+            messaggio_b64 = "UG9zc2lhbW8gZGFydGkgZGVpIGNvbnNpZ2xpIHBlciBtaWdsaW9yYXJlIGxlIHByZXN0YXppb25pIGRlbCBub3N0cm8gc2Vydml6aW8/"
+            sendDMMessage(username, messaggio_b64)
 
 
-            newThread = random.randint(1,3)
+            newThread = random.randint(1,15)
 
             print("\n Autenticazione riuscita, cambio il thread da 0 a " + str(newThread)  )
+
+            messaggio = "LOGIN  - " + "L'username " + str(username) + " si è loggato"
+            scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
+
             updateTreadFromUsername(username, newThread)
-            #updateDeltaT(username,50)
             updateSctiptActive(username,1)
 
 
@@ -650,8 +681,11 @@ def sendMailToUser(mail_to,messaggio,subject):
 def sendSMSToUser(email,messaggio):
     prefisso_numero = getPhoneNumberFromEmail(email)
     response = requests.get(url_sms_mail + "/instatrack/send_SMS/insert_sms_into_database.php?NUMERO_TELEFONICO="+str(prefisso_numero) +"&MESSAGGIO="+str(messaggio))
-    #print(response.content)
 
+
+def sendSMSToUserWithTag(prefisso_numero, messaggio,tag):
+    response = requests.get(url_sms_mail + "/instatrack/send_SMS/insert_SMS_into_database_with_tag.php?NUMERO_TELEFONICO=" + str(
+        prefisso_numero) + "&MESSAGGIO=" + str(messaggio) + "&TAG=" + str(tag))
 
 
 ####################################
