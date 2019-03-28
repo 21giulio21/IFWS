@@ -5,27 +5,42 @@
 # -*- coding: utf-8 -*-
 
 
-import base64
 import json
+import os
+
+import requests
+import base64
 import time
 import ast
-import random
+import re
+
+from InstagramAPI import parse_content_request_for_LOGIN_THREAD_0
+from InstagramAPI import seveCookieIntoServer
+from InstagramAPI import login
+
+url_bot = "http://www.giuliovittoria.it"
+
+
+##nel momento in cui un utente inizia la prova se l'iscrizione è avvenuta con successo allora devo andare a prendergli il media
+#e inserirlo dentro alla tavella che fa si che gli arrivino like
+import time
+
 
 import requests
 
 
-import base64
-import time
-import ast
-from InstagramAPI import sendMailToUser, parse_content_request_for_LOGIN_THREAD_0
-
-from InstagramAPI import seveCookieIntoServer
-from InstagramAPI import login
-
-import re
+def insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE(username,url_foto):
+    #Inserisco la data di inserimento nel momento in cui inserisco la foto che dovra ricevere like!
+    tempo_di_ora = str(time.time())
+    tempo_di_ora = tempo_di_ora[:tempo_di_ora.find(".")]
+    url = "http://utentidaseguire.eu/instatrack/FUELGRAM_LIKE/insert_username_receive_like_from_database.php"
+    response = requests.get(url + "?USERNAME=" + str(username) +"&URL=" + str(url_foto)+"&DATA_INSERIMENTO=" + str(tempo_di_ora) ).content
+    print(response)
 
 
-url_bot = "http://www.giuliovittoria.it"
+def recuperoUltimaFotoDellUtenteCheSiLogga(username):
+    return "post iniziale"
+
 
 
 #QUesta funzione indica quanti utenti devono iniziare la prova.
@@ -129,6 +144,9 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     # Controllo che siano settati i cookie dell'utente altrimenti li chiedo a instagram
     # facendo il login
     if len(cookie) == 0:
+
+        #Questo permette di avere sul
+        os.system("py -3 C:\\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows\DATI_PROFILO.py " + str(username))
         content_request = login(username, password_instagram)
         retult = parse_content_request_for_LOGIN_THREAD_0(content_request, "LOGIN", username,
                                                           tempo_blocco_se_esce_errore, delta_t, email)

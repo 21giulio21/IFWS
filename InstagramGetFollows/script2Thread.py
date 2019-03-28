@@ -45,6 +45,7 @@ import sys
 from connection_utenti_da_seguire import CONNECTION_UTENTI_DA_SEGUIRE
 
 from InstagramAPI import scrivoColoratoSuFile
+from InstagramAPI import getLastPianoActived
 
 number_requests_update_delta_t = 1000
 
@@ -156,7 +157,22 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
             sendSMSToUser(email, messaggio)
 
-            messaggio_b64 = "Q2lhbywKCkwnIGFiYm9uYW1lbnRvIHB1cnRyb3BwbyBlJyBzY2FkdXRvIQoKVm9nbGlhbW8gZmFydGkgdW4gcmVnYWxvISBVbm8gc2NvbnRvIGRlbCAxMCUgc3UgcXVhbHNpYXNpIHBpYW5vIFBFUiBTRU1QUkUuCgpTZSBkZXNpZGVyaSBwcm9zZWd1aXJlIGEgcmljZXZlcmUgZm9sbG93ZXJzIGUgbGlrZSByZWFsaSBpdGFsaWFuaSBpbiB0YXJnZXQgY29sIHR1byBwcm9maWxvIGUgc3BlbmRlcmUgbWVubyBQRVIgU0VNUFJFLCBhdHRpdmEgb3JhIGlsIHR1byBjb3Vwb24gc3UgSW5zdGF0cmFjay4KClV0aWxpenphIGlsIGNvZGljZSBzY29udG8gSFlQRSBlbnRybyBkb21hbmkuIAoKQWNjZWRpIHN1Yml0byBhbGxhIHR1YSBhcmVhIHBlcnNvbmFsZSBwZXIgcmlhdHRpdmFyZSBpbCBzZXJ2aXppbzogaHR0cDovL2JpdC5seS9pbnN0YXRyYWNrMTA="
+            # Capisco che abbonamento ha l'utente, cosi poi posso mandargli il messaggio corretto
+            abbonamento_attivo = str(getLastPianoActived(str(username)))
+
+            if abbonamento_attivo.__contains__("Prova"):
+                messaggio_b64 = "TGEgdHVhIHByb3ZhIGRpIEluc3RhdHJhY2sgw6ggdGVybWluYXRhISAKClNjZWdsaSB1bm8gZGVpIHBhY2NoZXR0aSBwZXIgY29udGludWFyZSBhIHJpY2V2ZXJlIEZvbGxvd2VycyByZWFsaSBpdGFsaWFuaSBpbiB0YXJnZXQgZSBMaWtlIGEgdHV0dGkgaSB0dW9pIHBvc3QhIAoKVGkgcmljb3JkbyBjaGUgc2UgdnVvaSBjb250aW51YXJlIGEgcmljZXZlcmUgRm9sbG93ZXJzIGUgTGlrZSBkZXZpIHNjZWdsaWVyZSB1biBwaWFubyBNRURJVU0gbyBzdXBlcmlvcmUsIGlsIHBpYW5vIEJBU0lDIG5vbiBpbmNsdWRlIGwnYXVtZW50byBkaSBMaWtlIG5laSB0dW9pIHBvc3QhCgpVdGlsaXp6YSBpbCBjb2RpY2Ugc2NvbnRvIEhZUEUsIHZhbGlkbyBmaW5vIGEgZG9tYW5pLCBwZXIgdW5vIHNjb250byBkZWwgMTAlIHN1IG9nbmkgcGFjY2hldHRvIEEgVklUQSEgCgpBY2NlZGkgYWxsYSB0dWEgYXJlYSBwZXJzb25hbGUgcGVyIHJpYXR0aXZhcmUgaWwgc2Vydml6aW86IGh0dHBzOi8vYXJlYXV0ZW50aS5pbnN0YXRyYWNrLmV1"
+
+                fine_prova_1 = "La tua prova di Instatrack e' terminata!\nScegli uno dei pacchetti per continuare a ricevere Followers reali italiani in target e Like a tutti i tuoi post!"
+                fine_prova_2 = "Ti ricordo che se vuoi continuare a ricevere Followers e Like devi scegliere un piano MEDIUM o superiore, il piano BASIC non include l'aumento di Like nei tuoi post!"
+                fine_prova_3 = "Utilizza il codice sconto HYPE, valido fino a domani, per uno sconto del 10% su ogni pacchetto A VITA! Riattiva immadietamente il servizio: http://bit.ly/instatrack10"
+                sendSMSToUser(email,fine_prova_1)
+                sendSMSToUser(email, fine_prova_2)
+                sendSMSToUser(email, fine_prova_3)
+
+            else :
+                messaggio_b64 = "SWwgc2Vydml6aW8gSW5zdGF0cmFjayBub24gw6ggcGnDuSBhdHRpdm8gc3VsIHR1byBwcm9maWxvISEgCgpTY2VnbGkgdW5vIGRlaSBwYWNjaGV0dGkgcGVyIGNvbnRpbnVhcmUgYSByaWNldmVyZSBGb2xsb3dlcnMgcmVhbGkgaXRhbGlhbmkgaW4gdGFyZ2V0IGUgTGlrZSBhIHR1dHRpIGkgdHVvaSBwb3N0ISAKClRpIHJpY29yZG8gY2hlIHNlIHZ1b2kgcmljZXZlcmUgRm9sbG93ZXJzIGUgTGlrZSBkZXZpIHNjZWdsaWVyZSB1biBwaWFubyBNRURJVU0gbyBzdXBlcmlvcmUsIGlsIHBpYW5vIEJBU0lDIG5vbiBpbmNsdWRlIGwnYXVtZW50byBkaSBMaWtlIG5laSB0dW9pIHBvc3QhCgpVdGlsaXp6YSBpbCBjb2RpY2Ugc2NvbnRvIEFQTDEwLCB2YWxpZG8gZmlubyBhIGRvbWFuaSwgcGVyIHVubyBzY29udG8gZGVsIDEwJSBzdSBvZ25pIHBhY2NoZXR0byBBIFZJVEEhIAoKQWNjZWRpIGFsbGEgdHVhIGFyZWEgcGVyc29uYWxlIHBlciByaWF0dGl2YXJlIGlsIHNlcnZpemlvOiBodHRwczovL2FyZWF1dGVudGkuaW5zdGF0cmFjay5ldQ=="
+
             sendDMMessage(username, messaggio_b64)
 
 

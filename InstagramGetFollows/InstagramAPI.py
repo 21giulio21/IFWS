@@ -17,7 +17,6 @@ from termcolor import colored
 
 import re
 
-
 url_bot = "http://www.giuliovittoria.it"
 url_sms_mail = "http://www.utentidaseguire.eu"
 
@@ -543,7 +542,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
             scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
             updatePasswordErrataAndProcessing(username, 1, email)
             messaggio = "Ciao "+str(username)+", le credenziali del tuo account Instagram inserite precedentemente sono cambiate. Accedi a https://areautenti.instatrack.eu per rimpostare le credenziali corrette."
-            messaggio_b64 = ""
+            messaggio_b64 = "UHVydHJvcHBvIGhhaSBpbnNlcml0byBsYSBwYXNzd29yZCBlcnJhdGEgZGVsIHR1byBhY2NvdW50IGluc3RhZ3JhbSEKClRvcm5hIG5lbGxhIHR1YSBhcmVhIGNsaWVudGkgcGVyIHJlaW5zZXJpcmUgbGEgcGFzc3dvcmQgY29ycmV0dGE6IGh0dHA6Ly9hcmVhdXRlbnRpLmluc3RhdHJhY2suZXUg"
 
             sendDMMessage(username, messaggio_b64)
             sendSMSToUser(email, messaggio)
@@ -644,15 +643,90 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             #subject = "Instatrack.eu - Inizio Abbonamento"
             #sendMailToUser(email, subject,msg)
 
-            messaggio = "Ciao " + str(
-                username) + ", la tua iscrizione e' andata a buon fine. Accedi alla nostra piattaforma https://areautenti.instatrack.eu per gestire in tempo reale il tuo account!"
-            sendSMSToUser(email, messaggio)
 
-            messaggio_b64 = "Q2lhbywgbGEgdHVhIGlzY3JpemlvbmUgZScgYW5kYXRhIGEgYnVvbiBmaW5lLiAKClB1b2kgY29udHJvbGxhcmUgaW4gdGVtcG8gcmVhbGUgaWwgdHVvIGFjY291bnQgc2VndWVuZG8gcXVlc3RvIGxpbms6IGh0dHBzOi8vYXJlYXV0ZW50aS5pbnN0YXRyYWNrLmV1Cg=="
-            sendDMMessage(username, messaggio_b64)
 
-            messaggio_b64 = "UG9zc2lhbW8gZGFydGkgZGVpIGNvbnNpZ2xpIHBlciBtaWdsaW9yYXJlIGxlIHByZXN0YXppb25pIGRlbCBub3N0cm8gc2Vydml6aW8/"
-            sendDMMessage(username, messaggio_b64)
+            #Capisco che abbonamento ha l'utente, cosi poi posso mandargli il messaggio corretto
+            abbonamento_attivo = str(getLastPianoActived(str(username)))
+
+            #Mando i DM e SMS ai vari utenti in base al piano che hannp
+            if abbonamento_attivo.__contains__("Prova"):
+                messaggio_b64 = "SWwgcGlhbm8gUFJPVkEgw6ggY29ycmV0dGFtZW50ZSBhdHRpdmF0byBzdWwgdHVvIHByb2ZpbG8gcGVyIDQgZ2lvcm5pIGEgcGFydGlyZSBkYSBvcmEgISEKCkNvbiBxdWVzdG8gcGlhbm8gcG90cmFpIGNhcGlyZSBiZW5lIGlsIGZ1bnppb25hbWVudG8gZGVsIG5vc3RybyBwcm9kb3R0by4KClNlIGluIHF1ZXN0byBwZXJpb2RvIHB1YmJsaWNoaSB1bmEgZm90byBzYXLDoCB2aXNpYmlsZSBpbW1lZGlhdGFtZW50ZSBuZWxsYSBzZXppb25lIEVTUExPUkEgZGkgSW5zdGFncmFtIGluIG1vZG8gY2hlIHB1b2kgb3R0ZW5lcmUgbW9sdGlzc2ltaSBMSUtFISAKClJpY29yZGF0aSBjaGUgbmVsIHBpYW5vIFBST1ZBIG5vbiBwb3RyZWkgcmljZXZlcmUgbW9sdGkgZm9sbG93ZXJzIHBlcmNow6ggZGlhbW8gcHJlY2VkZW56YSBhIGNoaSBoYSBhY3F1aXN0YXRvIHVubyBkZWkgbm9zdHJpIHBpYW5pLgoKUGVyIHF1YWxzaWFzaSBpbmZvcm1hemlvbmUgcHVvaSBjb25zdWx0YXJlIGxhIHNlemlvbmUgRkFRIGRlbCBub3N0cm8gc2l0byB3ZWI6IGh0dHBzOi8vd3d3Lmluc3RhdHJhY2suZXUvI2ZhcQoKUHVvaSBjb250cm9sbGFyZSBpbiB0ZW1wbyByZWFsZSBpbCB0dW8gYWNjb3VudCBzZWd1ZW5kbyBxdWVzdG8gbGluazogaHR0cHM6Ly9hcmVhdXRlbnRpLmluc3RhdHJhY2suZXUgCg=="
+                sendDMMessage(username, messaggio_b64)
+                print("Aggiornamento GET_LIKE: 1 " + str(updateGetLikeFromUsername(username, '1')))
+
+                inizio_prova_1 = "Il piano PROVA e' correttamente attivato sul tuo profilo per 4 giorni a partire da ora.\nPubblica ora una foto per far si che finisca immadiatamente nella sezione ESPLORA di Instagram attraverso il nostro servizio."
+                inizio_prova_2 = "Ti ricordiamo che nel piano PROVA mostriamo solemtne il funzionamento del servizio, per ottenere veri risultati devi acquistare uno dei nostri piani!"
+                inizio_prova_3 = "Per qualsiasi informazione non esitare a contattarci sulla nostra pagina Instagram ufficiale @instatrack.eu!"
+
+                sendSMSToUser(email, inizio_prova_1)
+                sendSMSToUser(email, inizio_prova_2)
+                sendSMSToUser(email, inizio_prova_3)
+
+            elif abbonamento_attivo.__contains__("Basic"):
+                messaggio_b64 = "SWwgcGlhbm8gQkFTSUMgw6ggY29ycmV0dGFtZW50ZSBhdHRpdmF0byBzdWwgdHVvIHByb2ZpbG8hIQoKQ29uIHF1ZXN0byBwaWFubyBwb3RyYWkgc2NlZ2xpZXJlIHVuYSBkZWxsZSBub3N0cmUgY2F0ZWdvcmllIGEgY3VpIG1hbmRhcmUgcmljaGllc3RlIGRpIEZvbGxvdywgTGlrZSBlIENvbW1lbnRpIG9nbmkgZ2lvcm5vLgoKSW4gcXVlc3RvIHBpYW5vIG5vbiDDqCBpbmNsdXNhIGxhIGNyZXNjaXRhIGRlaSB0dW9pIHBvc3QsIGluIHBhcnRpY29sYXJlIG5vbiB2ZXJyYW5ubyBwdWJibGljYXRpIG5lbGxhIHNlemlvbmUgRVNQTE9SQSBkaSBJbnN0YWdyYW0uCgpTZSBzZWkgaW50ZXJlc3NhdG8gYSByaWNldmVyZSBhbmNoZSBMaWtlIGFpIHR1b2kgcG9zdCBhdHRyYXZlcnNvIGlsIG5vc3RybyBzZXJ2aXppbyB0aSBjb25zaWdsaWFtbyBkaSBzY2VnbGllcmUgc3VjY2Vzc2l2YW1lbnRlIHVuIHBpYW5vIE1FRElVTS4KClBlciBxdWFsc2lhc2kgaW5mb3JtYXppb25lIHB1b2kgY29uc3VsdGFyZSBsYSBzZXppb25lIEZBUSBkZWwgbm9zdHJvIHNpdG8gd2ViOiBodHRwczovL3d3dy5pbnN0YXRyYWNrLmV1LyNmYXEKClB1b2kgY29udHJvbGxhcmUgaW4gdGVtcG8gcmVhbGUgaWwgdHVvIGFjY291bnQgc2VndWVuZG8gcXVlc3RvIGxpbms6IGh0dHBzOi8vYXJlYXV0ZW50aS5pbnN0YXRyYWNrLmV1IAo="
+                sendDMMessage(username, messaggio_b64)
+                print("Aggiornamento GET_LIKE: 0 " + str(updateGetLikeFromUsername(username, '0')))
+
+                inizio_basic_1 = "Il piano BASIC e' correttamente attivato sul tuo profilo! In questo piano non e' inclusa la crescita dei tuoi post, in particolare non verranno pubblicati nella sezione ESPLORA di Instagram."
+                inizio_basic_2 = "Se sei interessato a ricevere anche Like ai tuoi post attraverso il nostro servizio ti consigliamo di scegliere successivamente un piano MEDIUM."
+                inizio_basic_3 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o scriverci sulla nostra pagina Instagram @instatrack.eu"
+                inizio_basic_4 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
+
+                sendSMSToUser(email, inizio_basic_1)
+                sendSMSToUser(email, inizio_basic_2)
+                sendSMSToUser(email, inizio_basic_3)
+                sendSMSToUser(email, inizio_basic_4)
+
+
+
+            elif abbonamento_attivo.__contains__("Medium"):
+                messaggio_b64 = "SWwgcGlhbm8gTUVESVVNIMOoIGNvcnJldHRhbWVudGUgYXR0aXZhdG8gc3VsIHR1byBwcm9maWxvISEKCkNvbiBxdWVzdG8gcGlhbm8gcG90cmFpIHNjZWdsaWVyZSB1bmEgZGVsbGUgbm9zdHJlIGNhdGVnb3JpZSBhIGN1aSBtYW5kYXJlIHJpY2hpZXN0ZSBkaSBGb2xsb3csIExpa2UgZSBDb21tZW50aSBvZ25pIGdpb3Juby4KCkluIHF1ZXN0byBwaWFubyDDqCBpbmNsdXNhIGxhIGNyZXNjaXRhIGRlaSB0dW9pIHBvc3QsIGluIHBhcnRpY29sYXJlIHZlcnJhbm5vIHB1YmJsaWNhdGkgbmVsbGEgc2V6aW9uZSBFU1BMT1JBIGRpIEluc3RhZ3JhbSBmaW5vIGFsIHJhZ2dpdW5naW1lbnRvIGRpIDQwMCBMaWtlLgoKUGVyIHF1YWxzaWFzaSBpbmZvcm1hemlvbmUgcHVvaSBjb25zdWx0YXJlIGxhIHNlemlvbmUgRkFRIGRlbCBub3N0cm8gc2l0byB3ZWI6IGh0dHBzOi8vd3d3Lmluc3RhdHJhY2suZXUvI2ZhcQoKUHVvaSBjb250cm9sbGFyZSBpbiB0ZW1wbyByZWFsZSBpbCB0dW8gYWNjb3VudCBzZWd1ZW5kbyBxdWVzdG8gbGluazogaHR0cHM6Ly9hcmVhdXRlbnRpLmluc3RhdHJhY2suZXUgCg=="
+                sendDMMessage(username, messaggio_b64)
+                print("Aggiornamento GET_LIKE: 1 " + str(updateGetLikeFromUsername(username, '1')))
+
+                inizio_medium_1 = "Il piano MEDIUM e' attivo sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 400 Like."
+                inizio_medium_2 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o contattarci direttamente sulla nostra pagina Instagram @instatrack.eu"
+                inizio_medium_3 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
+
+                sendSMSToUser(email, inizio_medium_1)
+                sendSMSToUser(email, inizio_medium_2)
+                sendSMSToUser(email, inizio_medium_3)
+
+
+
+            elif abbonamento_attivo.__contains__("Large"):
+                messaggio_b64 = "SWwgcGlhbm8gTEFSR0Ugw6ggY29ycmV0dGFtZW50ZSBhdHRpdmF0byBzdWwgdHVvIHByb2ZpbG8hIQoKQ29uIHF1ZXN0byBwaWFubyBwb3RyYWkgc2NlZ2xpZXJlIHVuYSBkZWxsZSBub3N0cmUgY2F0ZWdvcmllIGEgY3VpIG1hbmRhcmUgcmljaGllc3RlIGRpIEZvbGxvdywgTGlrZSBlIENvbW1lbnRpIG9nbmkgZ2lvcm5vLgoKSW4gcXVlc3RvIHBpYW5vIMOoIGluY2x1c2EgbGEgY3Jlc2NpdGEgZGVpIHR1b2kgcG9zdCwgaW4gcGFydGljb2xhcmUgdmVycmFubm8gcHViYmxpY2F0aSBuZWxsYSBzZXppb25lIEVTUExPUkEgZGkgSW5zdGFncmFtIGZpbm8gYWwgcmFnZ2l1bmdpbWVudG8gZGkgOTAwIExpa2UuCgpQZXIgcXVhbHNpYXNpIGluZm9ybWF6aW9uZSBwdW9pIGNvbnN1bHRhcmUgbGEgc2V6aW9uZSBGQVEgZGVsIG5vc3RybyBzaXRvIHdlYjogaHR0cHM6Ly93d3cuaW5zdGF0cmFjay5ldS8jZmFxCgpQdW9pIGNvbnRyb2xsYXJlIGluIHRlbXBvIHJlYWxlIGlsIHR1byBhY2NvdW50IHNlZ3VlbmRvIHF1ZXN0byBsaW5rOiBodHRwczovL2FyZWF1dGVudGkuaW5zdGF0cmFjay5ldSAK"
+                sendDMMessage(username, messaggio_b64)
+                print("Aggiornamento GET_LIKE: 2 " + str(updateGetLikeFromUsername(username, '2')))
+
+                inizio_large_1 = "Il piano LARGE e' attivo sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 900 Like."
+                inizio_large_2 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o contattarci direttamente sulla nostra pagina Instagram @instatrack.eu"
+                inizio_large_3 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
+
+                sendSMSToUser(email, inizio_large_1)
+                sendSMSToUser(email, inizio_large_2)
+                sendSMSToUser(email, inizio_large_3)
+
+
+
+            elif abbonamento_attivo.__contains__("Premium"):
+                messaggio_b64 = "SWwgcGlhbm8gUFJFTUlVTSDDqCBjb3JyZXR0YW1lbnRlIGF0dGl2YXRvIHN1bCB0dW8gcHJvZmlsbyEhCgpDb24gcXVlc3RvIHBpYW5vIHBvdHJhaSBzY2VnbGllcmUgdW5hIGRlbGxlIG5vc3RyZSBjYXRlZ29yaWUgYSBjdWkgbWFuZGFyZSByaWNoaWVzdGUgZGkgRm9sbG93LCBMaWtlIGUgQ29tbWVudGkgb2duaSBnaW9ybm8uCgpJbiBxdWVzdG8gcGlhbm8gw6ggaW5jbHVzYSBsYSBjcmVzY2l0YSBkZWkgdHVvaSBwb3N0LCBpbiBwYXJ0aWNvbGFyZSB2ZXJyYW5ubyBwdWJibGljYXRpIG5lbGxhIHNlemlvbmUgRVNQTE9SQSBkaSBJbnN0YWdyYW0gZmlubyBhbCByYWdnaXVuZ2ltZW50byBkaSAxNTAwIExpa2UuCgpQZXIgcXVhbHNpYXNpIGluZm9ybWF6aW9uZSBwdW9pIGNvbnN1bHRhcmUgbGEgc2V6aW9uZSBGQVEgZGVsIG5vc3RybyBzaXRvIHdlYjogaHR0cHM6Ly93d3cuaW5zdGF0cmFjay5ldS8jZmFxCgpQdW9pIGNvbnRyb2xsYXJlIGluIHRlbXBvIHJlYWxlIGlsIHR1byBhY2NvdW50IHNlZ3VlbmRvIHF1ZXN0byBsaW5rOiBodHRwczovL2FyZWF1dGVudGkuaW5zdGF0cmFjay5ldSAK"
+                sendDMMessage(username, messaggio_b64)
+                print("Aggiornamento GET_LIKE: 3 " + str(updateGetLikeFromUsername(username, '3')))
+
+                inizio_premium_1 = "Il piano PREMIUM e' attivo sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 1500 Like."
+                inizio_premium_2 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o contattarci direttamente sulla nostra pagina Instagram @instatrack.eu"
+                inizio_premium_3 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
+
+                sendSMSToUser(email, inizio_premium_1)
+                sendSMSToUser(email, inizio_premium_2)
+                sendSMSToUser(email, inizio_premium_3)
+
+
+            #gli mando un po si LIKE all'ultima foto, in particolare faccio si di recuperare l'ultmo URL
+            #e lo mando al db di utenti che devono ricevere LIKE, in questo modo gli faccio fare un round
+            url = "inizio"+str(username)
+            insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE(username, url)
 
 
             newThread = random.randint(1,15)
@@ -733,10 +807,8 @@ def updateUsersLiked(users_liked_string, id_immagine):
 
 #Questa funzione permette di cambiare il valore di GET_LIKE nel database
 def updateGetLikeFromUsername(username,get_like):
-    payload = {'username': username, 'get_like': get_like}
-    url = url_bot + "/instatrack/likeautomatici/updateGetLikeFromUsername.php"
-    return_request = requests.post(url, data=payload).content
-    print(return_request)
+    url = "http://www.giuliovittoria.it/instatrack/LIKE_FUELGRAM/updateGET_LIKE.php?USERNAME=" + username + "&GET_LIKE=" + str(get_like)
+    return requests.get(url).content
 
 
 #Questa funzione permette di cambiare il valore di SET_LIKE nel database
@@ -881,3 +953,26 @@ def getPhoneNumberFromEmail(email):
     PREFISSO = risposta[0]["prefix"]
     PREFISSO_NUMERO_TELEFONICO = PREFISSO + NUMERO_TELEFONICO
     return PREFISSO_NUMERO_TELEFONICO
+
+
+'''
+Questa funziona mostra l'ultimo abbonamento attivo
+in particolare ritorna:
+"" (stringa vuota) se la persona non ha mai fatta abbonamento oppure se la abbiamo inserita senza farla pagare dal sito
+Large - se l' ultimo abbonamento attivo dell username è Large
+Basic - se l'ultimo abbonamento attivo è Basic
+'''
+def getLastPianoActived(username):
+    url_get_all_user = "https://areautenti.instatrack.eu/api.php?k=DASCR$%Etrfd&acc="+str(username)
+    return requests.get(url_get_all_user).content
+
+
+#Queta funzione permette di andare ad inserire tutti gli account + url nel db per far si che poi vengano estratti per un round
+def insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE(username,url_foto):
+    #Inserisco la data di inserimento nel momento in cui inserisco la foto che dovra ricevere like!
+    tempo_di_ora = str(time.time())
+    tempo_di_ora = tempo_di_ora[:tempo_di_ora.find(".")]
+    url = "http://utentidaseguire.eu/instatrack/FUELGRAM_LIKE/insert_username_receive_like_from_database.php" + "?USERNAME=" + str(username) +"&URL=" + str(url_foto)+"&DATA_INSERIMENTO=" + str(tempo_di_ora)
+    print(url)
+    response = requests.get(url).content
+    print(response)

@@ -23,7 +23,7 @@ array_username_che_hanno_publicato = []
 
 #Queste credenziali sono di un profilo a caso che permette solamente di
 #avere accesso ai post e dati dei p
-username_IG = "marco_tani23"
+username_IG = "vittoria_elena8"
 password_IG = "21giulio21"
 
 

@@ -8,25 +8,53 @@ import requests
 from InstagramAPI import getIDFromUsername
 
 #Scarico esattamente tanti username che devono mettere like quanti quelli che devono riceverne
-def getFuelgramAccountGetLike(quanti):
-    response = requests.get("http://www.utentidaseguire.eu/instatrack/FUELGRAM_LIKE/get_username_get_like_from_database.php?QUANTI=" + str(quanti)).content
-    return json.loads(response)
+from InstagramAPI import insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE
+
+
+def getFuelgramAccountGetLike():
+    response = requests.get("http://www.utentidaseguire.eu/instatrack/FUELGRAM_LIKE/get_username_get_like_from_database.php").content
+
+    ##Faccio un check che questi username esistano ancora, altrimenti vengono automaticamente cancellati
+    utenti = json.loads(response)
+
+    #utenti che torno:
+    array = []
+    for utente in utenti:
+        username = utente["USERNAME"]
+
+        try:
+            L = instaloader.Instaloader()
+            ritorno = instaloader.Profile.from_username(L.context, username).userid
+            array.append(username)
+        except:
+            #Elimino il profilo che mette i like perche non essite piu!
+            print("Elimino l'username: " + username)
+            response = requests.get(
+            "http://www.utentidaseguire.eu/instatrack/FUELGRAM_LIKE/remove_username_get_likes.php?USERNAME=" + str(
+                username)).content
+    return array
+
+
+
+
 
 def getUsernameVolentereosiDiLike():
     response = requests.get("http://www.giuliovittoria.it/instatrack/LIKE_FUELGRAM/getUserToRegiveLikes.php").content
     return json.loads(response)
 
-def insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE(username,url_foto):
-    #Inserisco la data di inserimento nel momento in cui inserisco la foto che dovra ricevere like!
-    tempo_di_ora = str(time.time())
-    tempo_di_ora = tempo_di_ora[:tempo_di_ora.find(".")]
-    url = "http://utentidaseguire.eu/instatrack/FUELGRAM_LIKE/insert_username_receive_like_from_database.php"
-    response = requests.get(url + "?USERNAME=" + str(username) +"&URL=" + str(url_foto)+"&DATA_INSERIMENTO=" + str(tempo_di_ora) ).content
-    print(response)
 
+#Questa funzione fa esattamente il merge, torna solo gli utenti che devono fare il round
 def scaricoUsernameCheHannoPubblicato(numeroUsernameDaScaricare):
     response = requests.get("http://www.utentidaseguire.eu/instatrack/FUELGRAM_LIKE/get_username_recive_like_from_database.php?QUANTI="+str(numeroUsernameDaScaricare)).content
     return json.loads(response)
+
+
+#Attraverso questa funzione ottengo il valore di GET_LIKE dello username passato come parametro
+def getGET_LIKE(username):
+    url = "http://www.giuliovittoria.it/instatrack/LIKE_FUELGRAM/getGET_LIKE_From_DB.php?USERNAME=" + str(username)
+    response = requests.get(url).content
+    return json.loads(response)
+
 
 
 
@@ -43,14 +71,13 @@ def salvoUsername_Foto_24H():
     tempo_o = int(tempo_di_ora) - secondi_indietro
 
 
-
-
     #Ottengo tutti gli username che vogliono like
     utenti_che_vogliono_like = getUsernameVolentereosiDiLike()
 
     for utente in utenti_che_vogliono_like:
         username = str(utente["USERNAME"])
         try:
+            L = instaloader.Instaloader()
             posts = instaloader.Profile.from_username(L.context, username).get_posts()
 
             #Controllo tra tutte le foto se c'e' ne almeno 1 nelle ultime 24 ore
@@ -97,8 +124,19 @@ headers = {
 
 
 def configurazioneSLOT(username_recive_likes,username_get_likes,ID_SLOT):
-    IG_id_recive_likes = instaloader.Profile.from_username(L.context, username_recive_likes).userid
-    IG_id_get_likes = instaloader.Profile.from_username(L.context, username_get_likes).userid
+
+    try:
+
+        L = instaloader.Instaloader()
+
+        #Ottengo gli identificativi di chi mettete/riceve i like
+        profile = instaloader.Profile.from_username(L.context, username_recive_likes)
+        IG_id_recive_likes = profile.userid
+
+        profile = instaloader.Profile.from_username(L.context, username_get_likes)
+        IG_id_get_likes = profile.userid
+    except:
+        print("\n NON RIESCO " + username_recive_likes +" su "+ username_get_likes +"\n")
 
 
 
@@ -119,27 +157,27 @@ def updateLAST_ROUND_username_get_likes(username_get_likes):
     response = requests.get("http://www.utentidaseguire.eu/instatrack/FUELGRAM_LIKE/updateLAST_ROUND_username_get_likes.php?USERNAME="+str(username_get_likes)+"&LAST_ROUND="+str(tempo_di_ora))
 
 
-#AGGIORNO IL VALORE DI DONE
+#AGGIORNO IL VALORE DI DONE, in particolare aumenta il valore di DONE di 1 in automatico
 def updateDONE_username_recive_likes(username_recive_likes):
     url = "http://www.utentidaseguire.eu/instatrack/FUELGRAM_LIKE/updateDONE_username_recive_likes.php?USERNAME="
     response = requests.get(url + username_recive_likes )
 
-#Questa funzione permette di ritornare il round corretto a partire dall'orario che è ora!
+#Questa funzione permette di ritornare il round corretto a partire dall'orario che e' ora!
 def getRount():
     ora_del_giorno = int(dt.datetime.now().hour)
-    if   12 <= ora_del_giorno <= 15:
+    if   12 <= ora_del_giorno <= 14:
         print("Imposto round delle 14:00")
         return '["13:30"]'
-    elif   16 <= ora_del_giorno <= 18:
+    elif   15 <= ora_del_giorno <= 17:
         print("Imposto round delle 17:00")
         return '["16:30"]'
-    elif   19 <= ora_del_giorno <= 21:
+    elif   18 <= ora_del_giorno <= 20:
         print("Imposto round delle 20:00")
         return '["19:30"]'
-    elif   22 <= ora_del_giorno <= 23 or ora_del_giorno == 0:
+    elif   21 <= ora_del_giorno <= 23 :
         print("Imposto round delle 23:00")
         return '["22:30"]'
-    elif   0 <= ora_del_giorno <= 3:
+    elif   0 <= ora_del_giorno <= 3 or ora_del_giorno == 0:
         print("Imposto round delle 2:00")
         return '["01:30"]'
     elif   4 <= ora_del_giorno <= 11:
@@ -149,16 +187,9 @@ def getRount():
         print("BHO")
         return '["10:30"]'
 
-
-
-# Queste credenziali sono di un profilo a caso che permette solamente di
-    # avere accesso ai post e dati dei p
-username_IG = "instatrack.eu"
-password_IG = "vikagiulio2121"
-
-L = instaloader.Instaloader()
-L.login(user=username_IG, passwd=password_IG)
-
+def updateCheckpoint(usernme):
+    url = "http://www.utentidaseguire.eu/instatrack/FUELGRAM_LIKE/setCheckPoint_username_get_likes.php?USERNAME?"+usernme
+    return requests.get(url).content
 
 
 
@@ -176,7 +207,9 @@ array_ID_SLOT.append("286831")
 array_ID_SLOT.append("268891")
 array_ID_SLOT.append("286835")
 array_ID_SLOT.append("280186")
-array_ID_SLOT.append("286834")
+array_ID_SLOT.append("286834") #
+array_ID_SLOT.append("286832")
+array_ID_SLOT.append("280187")
 
 
 
@@ -186,7 +219,7 @@ Salvo nel database tutti gli URL, Username ecc di quelli che hanno pubblicato fi
 '''
 
 #TODO
-#salvoUsername_Foto_24H()
+salvoUsername_Foto_24H()
 
 '''
 Una volta che ho inserito tutti gli url e i relativi username nel mio database ritorno tanti username quanti
@@ -196,19 +229,58 @@ In questo modo per ogni utente che ha pubblicato posso mandargli i like.
 
 #Avendo comprato un tot di slot di autoround posso solamente interagire con quelle, scarico tanti
 #username quante sono le slot che ho comprato
-numero_slot_comprate = 12
+numero_slot_comprate = 16
 
 #Scarico gli username che devono ricevere like, al massimo quante slot ho
-username_da_mettere_like = scaricoUsernameCheHannoPubblicato(numero_slot_comprate)
+username_utenti_da_mettere_like = scaricoUsernameCheHannoPubblicato(numero_slot_comprate)
+
 
 #In base a quanto username devono ricevere like scarico il numero di persone che dovrenno mettere,
 #in particolare se 4 persone devon oricevere, 4 devono metterne per loro
-numero_username_che_devono_mettere_like = len(username_da_mettere_like)
+numero_username_che_devono_mettere_like = len(username_utenti_da_mettere_like)
 
-#Scarico gli username che devono mettere like
-username_che_metono_like = getFuelgramAccountGetLike(numero_username_che_devono_mettere_like)
+#Scarico gli username che devono mettere like, in particolare username_che_metono_like sono tutti username in ordine di LAST_ROUND
+username_che_metono_like = getFuelgramAccountGetLike()
+
+#Indice per estrere ongi volt i vari identificativi
+indice_estrazione_slot = 0
+
+#indice estrazione username_che_metono_like
+indice_estrazione_username_che_metono_like = 0
+
+#itero tra gli utenti che hanno iterato
+for username_utente_da_mettere_like in username_utenti_da_mettere_like:
+
+    username_che_mette_like = ""
+    while True:
+
+        username_che_mette_like = username_che_metono_like[indice_estrazione_username_che_metono_like]
+        ID_SLOT = array_ID_SLOT[indice_estrazione_slot]
+        risposta = str(configurazioneSLOT(username_utente_da_mettere_like, username_che_mette_like, ID_SLOT ))
+        print("L'account " +username_che_mette_like + " mette like a "+ username_utente_da_mettere_like + " con esito:" + risposta)
+        # Se la risposta dice che un account deve essere validato mando una mail a me dicendo che devo verificare l'account
+        if risposta.__contains__("challenge_verification_required") or risposta.__contains__("has wrong password"):
+            updateCheckpoint(username_che_mette_like)
+            print("Devo verificare l'account: " + username_che_mette_like)
+            indice_estrazione_username_che_metono_like = indice_estrazione_username_che_metono_like + 1
+
+        else:
+
+            break
+
+    #Se sono qui allora tutto e' andato bene e devo aggiornare la data di ultimo round del profilo e done = done + 1
+    #Ora imposto che il profilo username_get_likes ha messo like ora quindi non dovra piu mettere like per un po
+    updateLAST_ROUND_username_get_likes(username_che_mette_like)
+
+    # Aggiorno il valore DONE dello username username_recive_likes una volta che l'ho impostato
+    updateDONE_username_recive_likes(username_utente_da_mettere_like)
+
+    #aumento l'indice di estrazione, in uesto modo viene estratto un'altro utente
+    indice_estrazione_slot = indice_estrazione_slot + 1
+    indice_estrazione_username_che_metono_like = indice_estrazione_username_che_metono_like + 1
 
 
+'''
 #Ora facciamo un for che va da 0 al numero di persone da processare e riempiamo le slot
 for index in range(0,len(username_da_mettere_like)):
 
@@ -232,3 +304,4 @@ for index in range(0,len(username_da_mettere_like)):
     #Aggiorno il valore DONE dello username username_recive_likes una volta che l'ho impostato
     updateDONE_username_recive_likes(username_recive_likes)
 
+'''

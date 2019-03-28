@@ -13,12 +13,12 @@ class RICERCA_INFLUENCER_ISTANZA:
     self.FILE_NAME = "RICERCA_INFLUENCER.html"
 
     #followers minimi e massimi che deve avere la persona presunta Influencer
-    self.followers_minimi = 300
-    self.followers_massimi = 50000
+    self.followers_minimi = 1
+    self.followers_massimi = 500000000
 
     #numeri di media minimi e massimi che deve avere la persona presunta Influencer
-    self.media_minimi = 10
-    self.media_massimi = 10000
+    self.media_minimi = 1
+    self.media_massimi = 10000111
 
     #Questa variabile indica se l'utente ha le storie attive
     self.storie_attive = True
@@ -86,17 +86,14 @@ class RICERCA_INFLUENCER_ISTANZA:
     profile = instaloader.Profile.from_username(L.context, username_profilo_target)
 
     for follower in profile.get_followers():
-      if self.controllo_se_il_profilo_rispetta_i_canoni(follower) == True:
-        email    =  self.ottengoEmailDaUsername(follower.username)
-        telefono =  self.ottengoNumeroDiTelefonoDaUsername(follower.username)
-        username =  follower.username
-        followers = follower.followers
+      #if self.controllo_se_il_profilo_rispetta_i_canoni(follower) == True:
+      email    =  self.ottengoEmailDaUsername(follower.username)
+      telefono =  self.ottengoNumeroDiTelefonoDaUsername(follower.username)
+      username =  follower.username
+      followers = follower.followers
 
-        #Se i followers sono minori di 10k allora:
-        if int(followers) < 10000 and telefono is not None:
-          print(username,telefono,email,followers)
-          print(self.salvaContatto(username,telefono,email,followers))
-        elif int(followers) > 10000:
+      #Se i followers sono minori di 10k allora:
+      if  telefono is not None:
           print(username, telefono, email, followers)
           print(self.salvaContatto(username, telefono, email, followers))
 

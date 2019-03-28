@@ -18,7 +18,7 @@ from InstagramAPI import scrivoColoratoSuFile, updateTreadFromUsername
 FILE_NAME = "BILANCIAMENTO.html"
 
 #Questi sono i thread che voglio bilanciare
-ARRAY_THREAD_DA_BILANCIARE = ["1","2","3","4","5","6","7", "8", "9", "10", "11" , "12", "13", "14", "15", "16"]
+ARRAY_THREAD_DA_BILANCIARE = ["1","2","3","4","5","6","7", "8", "9", "10", "11" , "12", "13", "14", "15", "16","17","18","19","20","21","22","23"]
 
 
 #URL CHE restituisce il numero di utenti su quel hread
@@ -38,7 +38,9 @@ def BILANCIAMENTO_UTENTI_TRA_I_THREAD():
         #Invio al server i thread che devo bilanciare cosi ottengo la situazione attuale
 
         risposta = json.loads(requests.get(url_richesta_get_count_from_thread + "?THREAD=" + thread, verify=False).content)
-        time.sleep(5)
+        messaggio = "BILANCIAMENTO - THREAD: " + str(thread) + " COUNT: " + str(risposta)
+        scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
+        time.sleep(2)
 
         if 'success' in risposta:
             messaggio = "BILANCIAMENTO - ERRORE nel bilanciamento dei thread, risposta: " + str(risposta)
@@ -88,54 +90,7 @@ def BILANCIAMENTO_UTENTI_TRA_I_THREAD():
         print("Sposto lo username che e' rimasto dentro:" + str(utente_rimantente) + " sul thread: " + str(rand_thread))
         updateTreadFromUsername(username_da_spostare, str(rand_thread))
 
-    exit(0)
 
-
-
-
-
-
-
-
-
-
-    '''
-    #Individuo tutti i thread che hanno piu utenti della metia + soglia
-    array_thread_sovra_soglia = []
-
-    # Individuo tutti i thread che hanno meno utenti della metia - soglia
-    array_thread_sotto_soglia = []
-
-
-    for thread in ARRAY_THREAD_DA_BILANCIARE:
-
-        if int(ARRAY_THREAD_COUNT[thread]) > media + SOGLIA:
-            array_thread_sovra_soglia.append(thread)
-
-        elif int(ARRAY_THREAD_COUNT[thread]) < media - SOGLIA:
-            array_thread_sotto_soglia.append(thread)
-
-
-    if (len(array_thread_sovra_soglia) > 0) and (len(array_thread_sotto_soglia) > 0):
-        thread_sovra_soglia = array_thread_sovra_soglia.pop()
-        thread_sotto_soglia = array_thread_sotto_soglia.pop()
-
-        #ottengo un username tra i thread che ne hanno di piu
-        
-        time.sleep(5)
-
-        if 'success' in risposta:
-            messaggio = "Errore nella richiesta all'url("+url+"), risposta:" + str(risposta)
-            scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
-            return
-
-        username_da_spostare = risposta[0]["USERNAME"]
-        updateTreadFromUsername(username_da_spostare,thread_sotto_soglia)
-
-        messaggio = "Utente " + username_da_spostare + " spostato sul thread " + str(thread_sotto_soglia)
-        scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
-
-    '''
 
 BILANCIAMENTO_UTENTI_TRA_I_THREAD()
 
