@@ -2,7 +2,7 @@ import MySQLdb
 
 
 #Questa classe mi permette di interrogare il database
-
+from CLASSI.CLASSI import MAIL_POSTMARKAPP
 from UTENTE_DA_CONTATTARE import UTENTE_DA_CONTATTARE
 
 from UTENTE_DA_SEGUIRE import UTENTE_DA_SEGUIRE
@@ -19,6 +19,7 @@ class CONNECTION_UTENTI_DA_SEGUIRE:
       # you must create a Cursor object. It will let
       #  you execute all the queries you need
       self.cur = self.db.cursor()
+
 
 
   def fetchall(self,query):
@@ -88,6 +89,35 @@ class CONNECTION_UTENTI_DA_SEGUIRE:
         #Ritorno tutti gli utente presenti del DB
         utenti_da_contattare.append(UTENTE_DA_CONTATTARE(USERNAME,FOLLOWERS,MAIL,TELEFONO))
       return utenti_da_contattare
+
+  ##Ottengo una mail alla volta dal DB per ottenere le mail per postkarkapp
+
+  def getMailFromDb_POSTMARKAPP(self):
+      query = "SELECT * FROM `MAIL_POSTMARKAPP` LIMIT 1"
+      self.cur.execute(query)
+      fetch = self.cur.fetchall()
+
+      # Inserisco qui dentro tutti gli utenti da ocntattare predenti nel DB
+      mail = []
+
+      for utente in fetch:
+          ID = str(utente[0])
+          EMAIL = str(utente[1])
+          OGGETTO = str(utente[2])
+          MESSAGGIO = str(utente[3])
+
+          # Ritorno tutti gli utente presenti del DB
+          mail.append(MAIL_POSTMARKAPP(ID, EMAIL, OGGETTO,MESSAGGIO))
+
+      return mail
+
+  def removeEmailFromDb_POSTMARKAPP(self,ID):
+
+      query = """DELETE FROM MAIL_POSTMARKAPP WHERE ID =   """ + str(ID)
+
+      print(query)
+      print(self.cur.execute( query))
+      self.db.commit()
 
 
 

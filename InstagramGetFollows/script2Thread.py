@@ -166,6 +166,8 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
                 fine_prova_1 = "La tua prova di Instatrack e' terminata!\nScegli uno dei pacchetti per continuare a ricevere Followers reali italiani in target e Like a tutti i tuoi post!"
                 fine_prova_2 = "Ti ricordo che se vuoi continuare a ricevere Followers e Like devi scegliere un piano MEDIUM o superiore, il piano BASIC non include l'aumento di Like nei tuoi post!"
                 fine_prova_3 = "Utilizza il codice sconto HYPE, valido fino a domani, per uno sconto del 10% su ogni pacchetto A VITA! Riattiva immadietamente il servizio: http://bit.ly/instatrack10"
+
+
                 sendSMSToUser(email,fine_prova_1)
                 sendSMSToUser(email, fine_prova_2)
                 sendSMSToUser(email, fine_prova_3)

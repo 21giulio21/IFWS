@@ -158,8 +158,8 @@ def follow(id, username, cookies, csrf):
     'x-instagram-ajax': '8958fe1e75ab',
     'authority': 'www.instagram.com',
     'referer': 'https://www.instagram.com/' + username,
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
-
+    #'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
+     #'user-agent':'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
     }
 
 	return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
@@ -250,11 +250,30 @@ def login(username,password):
         'referer': 'https://www.instagram.com/accounts/login/',
     }
 
-    data = [
-        ('username', username),
-        ('password', password),
-        ('queryParams', '{}'),
-    ]
+    headers = {
+        'cookie': 'ig_cb=1; mid=XKcLgQALAAFi390A3XpZPlfxaYIO; fbm_124024574287414=base_domain=.instagram.com; rur=FTW; shbid=18440; shbts=1554566136.2682383; csrftoken=SkGmpBuaSoi1YkBUs5CV88w8nUaUVqFr; urlgen="{\\"2.230.243.113\\": 12874\\054 \\"2001:b07:ac9:e9a2:e064:2a41:a68:f828\\": 12874\\054 \\"2001:b07:ac9:e9a2:a14b:a396:7b26:6a87\\": 12874}:1hDsck:QBJcmaRQ_fPwOJBbvByZeAO_YWY"',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'SkGmpBuaSoi1YkBUs5CV88w8nUaUVqFr',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '712a6ca2c530',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    data = {
+        'username': username,
+        'password': password,
+        'queryParams': '{"source":"auth_switcher"}',
+        'optIntoOneTap': 'false'
+    }
 
 
 
@@ -310,8 +329,9 @@ def checkIfYetFollowing(username_user_to_follow,cookies):
 
 #Questa funzione permette di mandare direct message agli utenti
 def sendDMMessage(username,testo):
-    url = url_sms_mail + "/instatrack/send_DM/insert_DM_into_database.php?USERNAME=" + str(username) + "&MESSAGGIO=" + str(testo)
-    requests.get(url)
+    print("NON MANDO DM")
+    #url = url_sms_mail + "/instatrack/send_DM/insert_DM_into_database.php?USERNAME=" + str(username) + "&MESSAGGIO=" + str(testo)
+    #requests.get(url)
 
 def sendDMMessageWithTAG(username,testo,tag):
     url = url_sms_mail + "/instatrack/send_DM/insert_DM_into_database_with_tag.php?USERNAME=" + str(username) + "&MESSAGGIO=" + str(testo)+ "&TAG=" + str(tag)
@@ -750,6 +770,7 @@ def updateTreadFromUsername(username,newThread):
 def sendMailToUser(mail_to,messaggio,subject):
     response = requests.get(url_sms_mail + "/instatrack/send_MAIL/insert_mail_into_database.php?MESSAGGIO="+messaggio+"&EMAIL="+mail_to+"&OGGETTO="+subject)
     print(response.content)
+
 
 #Questa funzione permette di mandare la mail in caso sia finita la prova o il pacchertto
 def sendSMSToUser(email,messaggio):
