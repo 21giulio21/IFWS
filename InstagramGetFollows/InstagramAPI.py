@@ -158,7 +158,7 @@ def follow(id, username, cookies, csrf):
     'x-instagram-ajax': '8958fe1e75ab',
     'authority': 'www.instagram.com',
     'referer': 'https://www.instagram.com/' + username,
-    #'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
      #'user-agent':'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
     }
 
@@ -234,7 +234,7 @@ def unfollow(id,username, cookies, csrf):
 
 def login(username,password):
     headers = {
-        'cookie': 'ig_cb=1; mid=W1nvMQAEAAFu2gGrVLf9bSIPaRj0; mcd=3; fbm_124024574287414=base_domain=.instagram.com; shbid=18815; rur=FRC; csrftoken=8PTQJQ7SinBSjbsmVnBExspM0dwYyNZ8; fbsr_124024574287414=8YD7u-K_rHKaSPA5xcY6uah59VJCd41My7qDi7TU_Hc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUURTdTZuVG0zbVl2YXhPd2UwWXdnQ2JUVlZsM3VRTEltRzNmelk5cll6MlZEemhWQW1DejJONFpjUjN1NURKNjNSUndjSlBPU282dF9sNHlfN3U1eHE4TDNoMGFXUTNrUDc4YkFHM1JleFBSbjhoMzhXRFBpbjhBLWRYaTBtcER6MHJ1TE1LaUdsMUgzcmlDd2ZkV1UtTnMwX2Zld2VGelFBQXQyNnFMRGhMZTgtRnJfTVhIWXFGSFFrUnVJTmhZdGx2Tl9Gc254el9MOVlibWgwVTNJRllOYnM5VUFPaU9JdndPTWhwalR0Zm13NG5fRmduYlZ3VGV0TXpSbG9OdlZ1cGxZbGxDNGw4a3dqaDlTYW84dUdtUHJ4YUxQS2YzRjFGdUs5Y2ZzS1pkSFNOdE91LXdaaWVrWDl5M1Q0QkVITnpnZTNydzR2MllCTGNvRDFiNDBmRSIsImlzc3VlZF9hdCI6MTUzMjYyMDkxMCwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"time\\": 1532620593\\054 \\"193.55.113.196\\": 2200}:1fiiiC:RUN1GvUYgXRNI-ZXGepzKJ_5Ybs"',
+        'cookie': 'ig_cb=1; mid=W1nvMQAEAAFu2gGrVLf9bSIPaRj0; mcd=3; fbm_124024574287414=base_domain=.instagram.com; shbid=18815; rur=FRC; csrftoken=8PTQJQ7SinBSjbsmVnBExspM0dwYyNZ8; fbsr_124024574287414=8YD7u-K_rHKaSPA5xcY6uah59VJCd41My7qDi7TU_Hc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvZGUiOiJBUURTdTZuVG0zbVl2YXhPd2UwWXdnQ2JUVlZsM3VRTEltRzNmelk5cll6MlZEemhWQW1DejJONFpjUjN1NURKNjNSUndjSlBPU282dF9sNHlfN3U1eHE4TDNoMGFXUTNrUDc4YkFHM1JleFBSbjhoMzhXRFBpbjhBLWRYaTBtcER6MHJ1TE1LaUdsMUgzcmlDd2ZkV1UtTnMwX2Zld2VGelFBQXQyNnFMRGhMZTgtRnJfTVhIWXFGSFFrUnVJTmhZdGx2Tl9Gc254el9MOVlibWgwVTNJRllOYnM5VUFPaU9JdndPTWhwalR0Zm13NG5fRmduYlZ3VGV0TXpSbG9OdlZ1cGxZbGxDNGw4a3dqaDlTYW84dUdtUHJ4YUxQS2YzRjFGdUs5Y2ZzS1pkSFNOdE91LXdaaWVrWDl5M1Q0QkVITnpnZTNydzR2MllCTGNvRDFiNDBmRSIsImlzc3VlZF9hdCI6MTUzMjYyMDkxMCwidXNlcl9pZCI6IjExNTQwMjExNjMifQ; urlgen="{\\"91.252.132.111\\": 24608}:1hFm9x:xXRK6tvx7abPLhH_DxEQM3qfCyk"',
         'origin': 'https://www.instagram.com',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
@@ -261,6 +261,24 @@ def login(username,password):
         'x-ig-app-id': '936619743392459',
         'pragma': 'no-cache',
         'x-instagram-ajax': '712a6ca2c530',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; mid=XLSKXwALAAHH15QVw2n73vyLL0aI; fbm_124024574287414=base_domain=.instagram.com; shbid=18593; shbts=1555335788.3042486; rur=FTW; csrftoken=pIN059vKjUIiXN63sviXIsNjlpdGTEYu; fbsr_124024574287414=LCcumNG1OcgFdwtZOtrpcQhIRRUkBbM8RsA9zIuIDkY.eyJjb2RlIjoiQVFDVm9jaElaLTJtdGliUDVGTF9kYVZBUUxKdWxDVUhVeGNnTTV0UjhrUDl3T3NCZTRvZ3h1YVRyMFZZVkpyQlBKb3Bxc2xCTDZjQy1KRUEtSVg4QUFMc1g3Skk3T2V1dXc5M19kSDNtdTJkYlZaTGJodTUwZHJWNFZ2ZlVQVnpNQnFWV2hVM0tWZlJqeHRXRHlqZ2tIMzFsUXVhSV9lWW5iVThZblNmcGhTQ2syMnV2R19kNEwza2tXcElIU1BMYlVieFQ0MWoxMmZsUzBWRTVmeGVWYVJkZ2Y3ZVhWU0pDWWR6MlkzanRiSkhDdUhNaG9HM2ZHbFVzdnE5dExubGl1Qmw0WjQ2Mmd6WHZ5d0dKWmdhQlF3dFI2UExrWnB3dW9ZTXliUkRpYUNHYjNseVJkYkR1VFdKTkVVUjNxRmIwQ2JCOVZ0SjBDVzJKVVdnRld0SUswWjMiLCJ1c2VyX2lkIjoiMTE1NDAyMTE2MyIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwiaXNzdWVkX2F0IjoxNTU1NDA3NTk2fQ; urlgen="{\\"2.230.243.113\\": 12874\\054 \\"91.253.26.123\\": 24608}:1hGKZP:fd6cCsvbet3OobUEBTy7Z7cfV68"',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Mobile Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'pIN059vKjUIiXN63sviXIsNjlpdGTEYu',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
         'content-type': 'application/x-www-form-urlencoded',
         'accept': '*/*',
         'cache-control': 'no-cache',
@@ -561,7 +579,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
                 username) + " ha cambiato password"
             scrivoColoratoSuFile(FILE_NAME, messaggio, "red")
             updatePasswordErrataAndProcessing(username, 1, email)
-            messaggio = "Ciao "+str(username)+", le credenziali del tuo account Instagram inserite precedentemente sono cambiate. Accedi a https://areautenti.instatrack.eu per rimpostare le credenziali corrette."
+            messaggio = "Ciao "+str(username)+",  le credenziali del tuo account Instagram inserite precedentemente sono cambiate.\nAccedi a https://areautenti.instatrack.eu per reimpostare le credenziali corrette."
             messaggio_b64 = "UHVydHJvcHBvIGhhaSBpbnNlcml0byBsYSBwYXNzd29yZCBlcnJhdGEgZGVsIHR1byBhY2NvdW50IGluc3RhZ3JhbSEKClRvcm5hIG5lbGxhIHR1YSBhcmVhIGNsaWVudGkgcGVyIHJlaW5zZXJpcmUgbGEgcGFzc3dvcmQgY29ycmV0dGE6IGh0dHA6Ly9hcmVhdXRlbnRpLmluc3RhdHJhY2suZXUg"
 
             sendDMMessage(username, messaggio_b64)
@@ -609,7 +627,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             sendMailToUser(email, msg, subject)
 
             messaggio = "Ciao " + str(
-                username) + ", Accedi a Instagram per verificare il tuo account."
+                username) + ", accedi subito ad Instagram per sbloccare il tuo account."
 
             sendSMSToUser(email, messaggio)
 
@@ -627,7 +645,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             sendMailToUser(email, msg, subject)
 
             messaggio = "Ciao " + str(
-                username) + ", Accedi a Instagram per rimuovere l'autenticazione a due fattori, altrimenti non possiamo processare il tuo account.\nUna volta processato puoi inserirla nuovamente"
+                username) + ", accedi subito ad Instagram per rimuovere l'autenticazione a due fattori e continuare ad usare Instatrack. Una volta processato puoi inserirla nuovamente."
 
             messaggio_b64 = "Q2lhbywgYWNjZWRpIGEgSW5zdGFncmFtIHBlciByaW11b3ZlcmUgbCdhdXRlbnRpY2F6aW9uZSBhIGR1ZSBmYXR0b3JpLCBhbHRyaW1lbnRpIG5vbiBwb3NzaWFtbyBwcm9jZXNzYXJlIGlsIHR1byBhY2NvdW50LiBVbmEgdm9sdGEgcHJvY2Vzc2F0byBwdW9pIGluc2VyaXJsYSBudW92YW1lbnRlLg=="
 
@@ -644,7 +662,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
         if authenticated == "FALSE":
 
             messaggio = "Ciao " + str(
-                username) + ", le credenziali del tuo account Instagram risultano errate. Accedi al sito https://areautenti.instatrack.eu per reinserirle correttamente."
+                username) + ", le credenziali del tuo account Instagram sono errate. Accedi al sito https://areautenti.instatrack.eu per aggiornarle."
             sendSMSToUser(email, messaggio)
 
             messaggio_b64 = "Q2lhbywgbGUgY3JlZGVuemlhbGkgZGVsIHR1byBhY2NvdW50IEluc3RhZ3JhbSByaXN1bHRhbm8gZXJyYXRlLiAKQWNjZWRpIGFsIHNpdG8gaHR0cHM6Ly9hcmVhdXRlbnRpLmluc3RhdHJhY2suZXUgcGVyIHJlaW5zZXJpcmxlIGNvcnJldHRhbWVudGUu"
@@ -674,7 +692,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
                 sendDMMessage(username, messaggio_b64)
                 print("Aggiornamento GET_LIKE: 1 " + str(updateGetLikeFromUsername(username, '1')))
 
-                inizio_prova_1 = "Il piano PROVA e' correttamente attivato sul tuo profilo per 4 giorni a partire da ora.\nPubblica ora una foto per far si che finisca immadiatamente nella sezione ESPLORA di Instagram attraverso il nostro servizio."
+                inizio_prova_1 = "Il piano PROVA e' stato attivato sul tuo profilo. Sara' attivo per 4 giorni a partire da ora! Pubblica ora una foto per far si che finisca immediatamente nella sezione ESPLORA di Instagram attraverso il nostro servizio."
                 inizio_prova_2 = "Ti ricordiamo che nel piano PROVA mostriamo solemtne il funzionamento del servizio, per ottenere veri risultati devi acquistare uno dei nostri piani!"
                 inizio_prova_3 = "Per qualsiasi informazione non esitare a contattarci sulla nostra pagina Instagram ufficiale @instatrack.eu!"
 
@@ -687,7 +705,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
                 sendDMMessage(username, messaggio_b64)
                 print("Aggiornamento GET_LIKE: 0 " + str(updateGetLikeFromUsername(username, '0')))
 
-                inizio_basic_1 = "Il piano BASIC e' correttamente attivato sul tuo profilo! In questo piano non e' inclusa la crescita dei tuoi post, in particolare non verranno pubblicati nella sezione ESPLORA di Instagram."
+                inizio_basic_1 = "Il piano BASIC e' stato attivato sul tuo profilo! In questo piano non e' inclusa la crescita dei tuoi post, in particolare non verranno pubblicati nella sezione ESPLORA di Instagram."
                 inizio_basic_2 = "Se sei interessato a ricevere anche Like ai tuoi post attraverso il nostro servizio ti consigliamo di scegliere successivamente un piano MEDIUM."
                 inizio_basic_3 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o scriverci sulla nostra pagina Instagram @instatrack.eu"
                 inizio_basic_4 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
@@ -704,7 +722,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
                 sendDMMessage(username, messaggio_b64)
                 print("Aggiornamento GET_LIKE: 1 " + str(updateGetLikeFromUsername(username, '1')))
 
-                inizio_medium_1 = "Il piano MEDIUM e' attivo sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 400 Like."
+                inizio_medium_1 = "Il piano MEDIUM e' stato attivato sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 400 Like."
                 inizio_medium_2 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o contattarci direttamente sulla nostra pagina Instagram @instatrack.eu"
                 inizio_medium_3 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
 
@@ -719,7 +737,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
                 sendDMMessage(username, messaggio_b64)
                 print("Aggiornamento GET_LIKE: 2 " + str(updateGetLikeFromUsername(username, '2')))
 
-                inizio_large_1 = "Il piano LARGE e' attivo sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 900 Like."
+                inizio_large_1 = "Il piano LARGE e' stato attivato sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 900 Like."
                 inizio_large_2 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o contattarci direttamente sulla nostra pagina Instagram @instatrack.eu"
                 inizio_large_3 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
 
@@ -734,7 +752,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
                 sendDMMessage(username, messaggio_b64)
                 print("Aggiornamento GET_LIKE: 3 " + str(updateGetLikeFromUsername(username, '3')))
 
-                inizio_premium_1 = "Il piano PREMIUM e' attivo sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 1500 Like."
+                inizio_premium_1 = "Il piano PREMIUM e' stato attivato sul tuo profilo! In questo piano e' inclusa la crescita dei tuoi post in particolare verranno pubblicati nella sezione ESPLORA di Instagram fino al raggiungimento di almeno 1500 Like."
                 inizio_premium_2 = "Per qualsiasi informazione puoi consultare la sezione FAQ del nostro sito web: https://www.instatrack.eu/#faq o contattarci direttamente sulla nostra pagina Instagram @instatrack.eu"
                 inizio_premium_3 = "Puoi controllare in tempo reale il tuo account seguendo questo link: https://areautenti.instatrack.eu"
 
@@ -749,8 +767,9 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE(username, url)
 
 
-            newThread = random.randint(1,15)
+            newThread = random.randint(1,19)
 
+            newThread = 20
             print("\n Autenticazione riuscita, cambio il thread da 0 a " + str(newThread)  )
 
             messaggio = "LOGIN  - " + "L'username " + str(username) + " si è loggato"

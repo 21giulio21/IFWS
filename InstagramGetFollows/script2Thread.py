@@ -153,7 +153,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             sendMailToUser(email, msg, subject)
 
             messaggio = "Ciao " + str(
-                username) + ", l' abbonamento purtroppo e' scaduto!\nVogliamo farti un regalo! Uno sconto del 10% su qualsiasi piano PER SEMPRE.\nSe desideri proseguire a ricevere followers e like reali italiani in target col tuo profilo e spendere meno PER SEMPRE, attiva ora il tuo coupon su Instatrack.\nUtilizza il codice sconto HYPE entro domani. \nAccedi subito alla tua area personale per riattivare il servizio: http://bit.ly/instatrack10"
+                username) + ", l’abbonamento al servizio Instatrack e’ scaduto, accedi subito al nostro sito per rinnovare il servizio: https://areautenti.instatrack.eu"
 
             sendSMSToUser(email, messaggio)
 
@@ -163,7 +163,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
             if abbonamento_attivo.__contains__("Prova"):
                 messaggio_b64 = "TGEgdHVhIHByb3ZhIGRpIEluc3RhdHJhY2sgw6ggdGVybWluYXRhISAKClNjZWdsaSB1bm8gZGVpIHBhY2NoZXR0aSBwZXIgY29udGludWFyZSBhIHJpY2V2ZXJlIEZvbGxvd2VycyByZWFsaSBpdGFsaWFuaSBpbiB0YXJnZXQgZSBMaWtlIGEgdHV0dGkgaSB0dW9pIHBvc3QhIAoKVGkgcmljb3JkbyBjaGUgc2UgdnVvaSBjb250aW51YXJlIGEgcmljZXZlcmUgRm9sbG93ZXJzIGUgTGlrZSBkZXZpIHNjZWdsaWVyZSB1biBwaWFubyBNRURJVU0gbyBzdXBlcmlvcmUsIGlsIHBpYW5vIEJBU0lDIG5vbiBpbmNsdWRlIGwnYXVtZW50byBkaSBMaWtlIG5laSB0dW9pIHBvc3QhCgpVdGlsaXp6YSBpbCBjb2RpY2Ugc2NvbnRvIEhZUEUsIHZhbGlkbyBmaW5vIGEgZG9tYW5pLCBwZXIgdW5vIHNjb250byBkZWwgMTAlIHN1IG9nbmkgcGFjY2hldHRvIEEgVklUQSEgCgpBY2NlZGkgYWxsYSB0dWEgYXJlYSBwZXJzb25hbGUgcGVyIHJpYXR0aXZhcmUgaWwgc2Vydml6aW86IGh0dHBzOi8vYXJlYXV0ZW50aS5pbnN0YXRyYWNrLmV1"
 
-                fine_prova_1 = "La tua prova di Instatrack e' terminata!\nScegli uno dei pacchetti per continuare a ricevere Followers reali italiani in target e Like a tutti i tuoi post!"
+                fine_prova_1 = "La tua prova di Instatrack e' terminata! Scegli uno dei pacchetti per continuare a ricevere Followers reali italiani in target e Like a tutti i tuoi post!"
                 fine_prova_2 = "Ti ricordo che se vuoi continuare a ricevere Followers e Like devi scegliere un piano MEDIUM o superiore, il piano BASIC non include l'aumento di Like nei tuoi post!"
                 fine_prova_3 = "Utilizza il codice sconto HYPE, valido fino a domani, per uno sconto del 10% su ogni pacchetto A VITA! Riattiva immadietamente il servizio: http://bit.ly/instatrack10"
 

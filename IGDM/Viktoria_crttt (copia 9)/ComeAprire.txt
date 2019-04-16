@@ -1,0 +1,8 @@
+Per installare tutte le dipendenze bisogna recarsi dentro la cartella igdm-master
+e digitare:
+
+npm install
+
+poi una volta finito:
+
+npm start

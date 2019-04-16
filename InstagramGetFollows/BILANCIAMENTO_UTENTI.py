@@ -19,7 +19,7 @@ FILE_NAME = "BILANCIAMENTO.html"
 
 #Questi sono i thread che voglio bilanciare
 ARRAY_THREAD_DA_BILANCIARE = ["1","2","3","4","5","6","7", "8", "9", "10", "11" , "12", "13", "14", "15", "16","17","18","19","20","21","22","23"]
-
+#ARRAY_THREAD_DA_BILANCIARE = ["1","2","3","4","5","6","7", "8", "9", "10", "11"]
 
 #URL CHE restituisce il numero di utenti su quel hread
 url_richesta_get_count_from_thread = "http://www.giuliovittoria.it/instatrack/BILANCIAMENTO_UTENTI_TRA_I_THREAD/getCountFromThread.php"

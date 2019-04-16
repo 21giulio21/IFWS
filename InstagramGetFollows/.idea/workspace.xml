@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf0897f-0674-4ac2-add2-8a5fd8d4727c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/CLASSI/CLASSI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASSI/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DM/DM_FROM_FOLLOWERS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DM/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MAIL/postmarkap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMS/MAIL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.dropbox" beforeDir="false" afterPath="$PROJECT_DIR$/../.dropbox" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/IFWS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/IFWS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppAndroid/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../AppAndroid/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DM_Hastag.py" beforeDir="false" afterPath="$PROJECT_DIR$/DM_Hastag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py" beforeDir="false" afterPath="$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstagramAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SMS_MAIL.py" beforeDir="false" afterPath="$PROJECT_DIR$/SMS_MAIL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection_utenti_da_seguire.py" beforeDir="false" afterPath="$PROJECT_DIR$/connection_utenti_da_seguire.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuelgram_prova.py" beforeDir="false" afterPath="$PROJECT_DIR$/fuelgram_prova.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prova.py" beforeDir="false" afterPath="$PROJECT_DIR$/prova.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prova_vik.py" beforeDir="false" afterPath="$PROJECT_DIR$/prova_vik.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script2Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/script2Thread.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/chardetect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/django-admin" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/django-admin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" afterDir="false" />
@@ -436,13 +423,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prova.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script2Thread.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2856">
+              <caret line="211" column="144" selection-start-line="211" selection-start-column="141" selection-end-line="211" selection-end-column="144" />
+              <folding>
+                <element signature="e#48#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DM/DM_Hastag.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#217#228#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SMS_MAIL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-              <folding>
-                <element signature="e#17#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1989">
+              <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -450,76 +497,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="273" column="52" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
+            <state relative-caret-position="145">
+              <caret line="236" column="893" selection-start-line="236" selection-start-column="893" selection-end-line="236" selection-end-column="893" />
               <folding>
                 <element signature="e#46#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MAIL/postmarkap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prova_vik.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prova.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fuelgram_prova.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3383">
-              <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MAIL/MAIL_REMARKETING.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DM_Hastag.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="8" column="51" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -560,36 +541,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mail</find>
-      <find>controllo_se_il_profilo_rispetta_i_canoni</find>
-      <find>ottengoEmailDaUsername</find>
-      <find>sleep</find>
-      <find>conn</find>
-      <find>MAIL</find>
-      <find>scrivoColoratoSuFile</find>
-      <find>comm</find>
-      <find>sendDM</find>
-      <find>sms</find>
-      <find>sendSMS</find>
-      <find>sendMail</find>
-      <find>def sendMai</find>
-      <find>sendMailWIthPOSTMARKAPP</find>
-      <find>276794</find>
-      <find>276793</find>
-      <find>286830</find>
-      <find>286833</find>
-      <find>280188</find>
-      <find>276792</find>
-      <find>276791</find>
-      <find>286831</find>
       <find>268891</find>
       <find>SENDSMS</find>
-      <find>sendMailToUser</find>
       <find>follow</find>
       <find>def foll</find>
       <find>def unfoll</find>
       <find>def follo</find>
       <find>def logi</find>
+      <find>login(</find>
+      <find>login</find>
+      <find>x-instagram-ajax</find>
+      <find>ds_</find>
+      <find>def lo</find>
+      <find>threa</find>
+      <find>getPhoneNumberFromEmail</find>
+      <find>sendSMSToUser</find>
+      <find>NUMERO_TELEFONICO = risposta[0][&quot;nphone&quot;]</find>
+      <find>ordineInTHread_0</find>
+      <find>TODO:</find>
+      <find>340</find>
+      <find>ottengoNumeroDiTelefonoDaUsername</find>
+      <find>check</find>
+      <find>checkpoint_required</find>
+      <find>Il piano PROVA e</find>
+      <find>e' sca</find>
+      <find>Sar</find>
+      <find>sara</find>
+      <find>SPOSTAMENTO_UTENTI</find>
+      <find>instatrack.eu</find>
+      <find>sendMailToUser</find>
+      <find>TODO</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows</dir>
@@ -601,7 +582,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SaveUserToFollowIntoDatabase .py" />
         <option value="$PROJECT_DIR$/saveIDAndUsernameIntoLIKE_AUTOMATICI.py" />
         <option value="$PROJECT_DIR$/SaveUserActiveToFollowIntoDatabase.py" />
         <option value="$PROJECT_DIR$/SaveUserToFollowIntoDatabase.py" />
@@ -619,7 +599,6 @@
         <option value="$PROJECT_DIR$/UTENTI/UTENTE_DA_SEGUIRE.py" />
         <option value="$PROJECT_DIR$/UTENTE_DA_SEGUIRE.py" />
         <option value="$PROJECT_DIR$/script2ThreadCanessa.py" />
-        <option value="$PROJECT_DIR$/unfollowAllUserFollowerd.py" />
         <option value="$PROJECT_DIR$/connection.py" />
         <option value="$PROJECT_DIR$/prova_curl_speed.py" />
         <option value="$PROJECT_DIR$/SaveUserToFollowIntoDatabaseWithParameter.py" />
@@ -632,7 +611,6 @@
         <option value="$PROJECT_DIR$/DATI_PROFILO.py" />
         <option value="$PROJECT_DIR$/LOGIN_LOGIN.py" />
         <option value="$PROJECT_DIR$/creazione_profili/creazione_alias.py" />
-        <option value="$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py" />
         <option value="$PROJECT_DIR$/DM_Remar_Collab.py" />
         <option value="$USER_HOME$/Desktop/index.html" />
         <option value="$PROJECT_DIR$/SMS/SMS_REMARKETING.py" />
@@ -644,12 +622,15 @@
         <option value="$PROJECT_DIR$/MAIL/postmarkap.py" />
         <option value="$PROJECT_DIR$/prova_vik.py" />
         <option value="$PROJECT_DIR$/connection_utenti_da_seguire.py" />
-        <option value="$PROJECT_DIR$/DM_Hastag.py" />
         <option value="$PROJECT_DIR$/UsernameChePubblicano.py" />
         <option value="$PROJECT_DIR$/DM/DM_FROM_FOLLOWERS.py" />
-        <option value="$PROJECT_DIR$/script2Thread.py" />
-        <option value="$PROJECT_DIR$/prova.py" />
         <option value="$PROJECT_DIR$/fuelgram_prova.py" />
+        <option value="$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py" />
+        <option value="$PROJECT_DIR$/DM_Hastag.py" />
+        <option value="$PROJECT_DIR$/unfollowAllUserFollowerd.py" />
+        <option value="$PROJECT_DIR$/prova.py" />
+        <option value="$PROJECT_DIR$/script2Thread.py" />
+        <option value="$PROJECT_DIR$/DM/DM_Hastag.py" />
         <option value="$PROJECT_DIR$/SMS_MAIL.py" />
         <option value="$PROJECT_DIR$/InstagramAPI.py" />
       </list>
@@ -669,17 +650,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -695,7 +665,23 @@
             <path>
               <item name="InstagramGetFollows" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="DM" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="InstagramGetFollows" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="MAIL" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="InstagramGetFollows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InstagramGetFollows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -710,15 +696,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows\DM" />
+      <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows\MAIL" />
       <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows\SMS" />
       <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows" />
       <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows\GUI" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -733,7 +720,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prova">
+  <component name="RunManager" selected="Python.DM_Hastag (1)">
+    <configuration name="BILANCIAMENTO_UTENTI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstagramGetFollows" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\giulio.tavella\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="DM_FROM_FOLLOWERS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -755,7 +763,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DM_Hastag" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DM_Hastag (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -763,11 +771,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\giulio.tavella\AppData\Local\Programs\Python\Python37-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DM" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DM_Hastag.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DM/DM_Hastag.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -818,27 +826,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="postmarkap" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="InstagramGetFollows" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\giulio.tavella\AppData\Local\Programs\Python\Python37-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MAIL" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MAIL/postmarkap.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="prova" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -860,7 +847,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prova_vik" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="unfollowAllUserFollowerd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InstagramGetFollows" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -872,7 +859,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prova_vik.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unfollowAllUserFollowerd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -883,11 +870,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DM_Hastag (1)" />
+        <item itemvalue="Python.BILANCIAMENTO_UTENTI" />
         <item itemvalue="Python.prova" />
+        <item itemvalue="Python.unfollowAllUserFollowerd" />
         <item itemvalue="Python.DM_FROM_FOLLOWERS" />
-        <item itemvalue="Python.DM_Hastag" />
-        <item itemvalue="Python.prova_vik" />
-        <item itemvalue="Python.postmarkap" />
       </list>
     </recent_temporary>
   </component>
@@ -906,7 +893,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21286735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -928,18 +914,18 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1391097" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21286735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3232682" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.39964476" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.39893618" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5714286" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3173759" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039065" side_tool="true" weight="0.5079929" />
       <window_info anchor="bottom" id="Inspection Results" order="11" visible="true" weight="0.3285968" />
@@ -953,25 +939,11 @@
     <entry file="file://$PROJECT_DIR$/BILANCIAMENTO_UTENTU.py" />
     <entry file="file://$PROJECT_DIR$/DB_SQL.py" />
     <entry file="file://$PROJECT_DIR$/MAIL_BOT.py" />
-    <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SMS_MAIL.html" />
     <entry file="file://$PROJECT_DIR$/SPOSTAMENTO_UTENTI.html" />
     <entry file="file://$PROJECT_DIR$/UTENTI/UTENTE_DA_SEGUIRE.py" />
     <entry file="file://$PROJECT_DIR$/connection.py" />
     <entry file="file://$PROJECT_DIR$/prova_curl_speed.py" />
-    <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script-PROVA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
@@ -1051,16 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LOGIN_LOGIN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="150" column="57" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="57" />
-          <folding>
-            <element signature="e#96#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1083,30 +1045,10 @@
     <entry file="file://$PROJECT_DIR$/RICERCA_INFLUENCER_INFLUENCER.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/RICERCA_INFLUENCER_prova.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SMS/SMS_CLIENTI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="40" column="88" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
-          <folding>
-            <element signature="e#217#228#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,26 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RICERCA_INFLUENCER_ISTANZA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsernameChePubblicano.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#86#97#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1176,26 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script2Thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="157" column="19" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="19" />
-          <folding>
-            <element signature="e#48#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SMS_MAIL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLASSI/CLASSI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1210,22 +1112,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LOGIN_LOGIN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="150" column="57" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="57" />
+          <folding>
+            <element signature="e#96#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsernameChePubblicano.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="e#86#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prova_vik.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="221">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prova.py">
+    <entry file="file://$PROJECT_DIR$/RICERCA_INFLUENCER_prova.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="153">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="69" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RICERCA_INFLUENCER_ISTANZA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="45" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1247,13 +1179,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DM_Hastag.py">
+    <entry file="file://$PROJECT_DIR$/prova.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script2Thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="211" column="144" selection-start-line="211" selection-start-column="141" selection-end-line="211" selection-end-column="144" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DM/DM_Hastag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BILANCIAMENTO_UTENTI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#217#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SMS_MAIL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unfollowAllUserFollowerd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -1279,8 +1259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InstagramAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="273" column="52" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
+        <state relative-caret-position="145">
+          <caret line="236" column="893" selection-start-line="236" selection-start-column="893" selection-end-line="236" selection-end-column="893" />
           <folding>
             <element signature="e#46#56#0" expanded="true" />
           </folding>

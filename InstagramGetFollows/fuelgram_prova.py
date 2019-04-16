@@ -259,7 +259,7 @@ for username_utente_da_mettere_like in username_utenti_da_mettere_like:
         risposta = str(configurazioneSLOT(username_utente_da_mettere_like, username_che_mette_like, ID_SLOT ))
         print("L'account " +username_che_mette_like + " mette like a "+ username_utente_da_mettere_like + " con esito:" + risposta)
         # Se la risposta dice che un account deve essere validato mando una mail a me dicendo che devo verificare l'account
-        if risposta.__contains__("challenge_verification_required") or risposta.__contains__("has wrong password"):
+        if risposta.__contains__("challenge_verification_required") or risposta.__contains__("has wrong password") or risposta.__contains__("does not exist on your account."):
             updateCheckpoint(username_che_mette_like)
             print("Devo verificare l'account: " + username_che_mette_like)
             indice_estrazione_username_che_metono_like = indice_estrazione_username_che_metono_like + 1
