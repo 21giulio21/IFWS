@@ -1,4 +1,6 @@
-from InstagramAPI import sendSMSToUser
+from InstagramGetFollows.InstagramAPI import sendMailToUser
 
-inizio_prova_1 = "Il piano PROVA e' stato attivato sul tuo profilo. Sara’ attivo per 4 giorni a partire da ora!Pubblica ora una foto per far si che finisca immediatamente nella sezione ESPLORA di Instagram attraverso il nostro servizio."
-sendSMSToUser("me.giuliotavella@gmail.com", inizio_prova_1)
+msg = "Ciao \n\nla password del tuo account Instagram e’ errata.\nCollegati all’area utenti di Instatrack e inseriscila nuovamente per non perdere nuove occasioni.\n\nVisita https://areautenti.instatrack.eu\n\n\nIl Team di Instatrack."
+subject = "Instatrack.eu - Password Instagram Errata"
+email = "21giulio21@gmail.com"
+sendMailToUser(email, subject,msg)

@@ -155,7 +155,7 @@ def follow(id, username, cookies, csrf):
     'origin': 'https://www.instagram.com',
     'x-requested-with': 'XMLHttpRequest',
     'x-csrftoken': csrf,
-    'x-instagram-ajax': '8958fe1e75ab',
+    'x-instagram-ajax': '0fa00dc2cc1f',
     'authority': 'www.instagram.com',
     'referer': 'https://www.instagram.com/' + username,
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
@@ -286,6 +286,167 @@ def login(username,password):
         'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
     }
 
+    headers = {
+        'cookie': 'ig_cb=1; mid=XLSKXwALAAHH15QVw2n73vyLL0aI; fbm_124024574287414=base_domain=.instagram.com; shbid=18593; shbts=1555335788.3042486; rur=FTW; csrftoken=AUXlCWDsoXXPkGjslbZ32Ken7UPZJ4jR; fbsr_124024574287414=qCJ_b6DfuAXZymMDw-rult5Krr9Z9TYzxDSXCEl91l0.eyJjb2RlIjoiQVFCczg1Yk1UUkFTb3FOVWhuUlRPcjd5LUJEekpQSEFoOFFaeGNMMXhDRE4wUFpQejhONUV1eElEblZqd2tZeExGd1dxYWwxTG1fMFZUbzhrN1pGcnZXb3h2bHZmWmlYVzZLN3JnQlBNeGZnaUNMMF8yT1NxVXZ3TGlncWhXTlphWWNhNENSbk1VOXJXZGUzUlBhWVRzb3ppUVdlOUR4d1hDX05IYnlnNS1JaWt4VzVld0dkdGFabGl0MEZmeG5VYmpxM3hOOVp0OHNpa0NNS2ZDMkVsOFJqRUZ1TWE5SWpfQzBIUTlfb1dDcGs1M3I1eTNLbHBXbS0zc3BHNjBGX1pNbWJSWG1meFNlNmg1aldmdkxqY0NTTlVDVm1Ha1h1VFdOVHVNRlNQcUNlOFAzZnJIbFJQeVdnSjRNYXRwNEZGUGRLVEVCOFFscG8tamJXLS1QcDZJdHEiLCJ1c2VyX2lkIjoiMTE1NDAyMTE2MyIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwiaXNzdWVkX2F0IjoxNTU1NDA4NDA2fQ; urlgen="{\\"2.230.243.113\\": 12874\\054 \\"91.253.26.123\\": 24608}:1hGKmR:1L093jFqFcGQ_92JYup0QTx3GVc"',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'AUXlCWDsoXXPkGjslbZ32Ken7UPZJ4jR',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; rur=ATN; csrftoken=aGA5zc78AVGcRNee3yejDFh0XJ0FfRO4; mid=XLWoxwALAAFoi37H6STUCHVPbx4H',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'aGA5zc78AVGcRNee3yejDFh0XJ0FfRO4',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+    headers = {
+        'origin': 'https://www.instagram.com',
+        'x-mid': '11egzx1wfrixa1eyed2t17q688xpfbfjeb4jrlpe4hffgo1g8yn',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'jygHxJgBcShZmGCLmXvHEbVeUbMuuae0',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; rur=ATN; csrftoken=c9CUdJdjRxRLPv2hRBVIiWOmRxr0whVk; mid=XLWuMAALAAFUNlqKivLJGuGkmY48',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'c9CUdJdjRxRLPv2hRBVIiWOmRxr0whVk',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; rur=FTW; csrftoken=5oBcwvB3QZwihXr4vN2rgCBbq3JbBhKj; mid=XLWwMAALAAEDcFr-hAFxWWo9Xhi9',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': '5oBcwvB3QZwihXr4vN2rgCBbq3JbBhKj',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; rur=FTW; csrftoken=IEOhOWg5HINiL9SSzuFHUL4PAR51ZmUB; mid=XLWz8QALAAGGm38xn_OYpB6JJZXD',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'IEOhOWg5HINiL9SSzuFHUL4PAR51ZmUB',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; rur=ASH; csrftoken=lyGsVowTaIOPpCHWnbfSPB5NgoeAsJcJ; mid=XLXJBQALAAHS98mTsDx4EP4ADZXe',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'lyGsVowTaIOPpCHWnbfSPB5NgoeAsJcJ',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; mid=XLXJBQALAAHS98mTsDx4EP4ADZXe; shbid=12922; shbts=1555417369.139812; rur=FRC; csrftoken=7loh7PlbUWw7qpaoC2se9mrn3O8U2Kz3; fbm_124024574287414=base_domain=.instagram.com; fbsr_124024574287414=qxw1aTUPdvMoxGhoGVQtP2vu4w0uCvr4auclmmEtOmw.eyJjb2RlIjoiQVFEaFpMSHFrVnVhU1hySjhZOGhKY0VuX3QyTklrbEVaWGFORmQ3UUFNSDVXcHJpdWNhM19LVHFsRGdZNUZYN0x4WjFUSjVZemFwQk56MG9PLVFZWVlSV0lhRHFtMmVVdTNtZmJ0aHhXVmpQVGowT2kwaUlLYWE2YnprMkNxN0lGM0RoMmVzVFlmOHJrWkRJS3hSU19SVjRtWlVLWE5BVWt2eEtxU0k1V0RsVVk0WmFmYVVGTEJodzdRZUxZZ0VybUtpVDVhZDFBZk4yb0hsd3RYQlNrNDgzZU9iZFc3QlJWc3RvcmVJMVhhbjFkWDVuUlpaSDQxOXgzcE1yM0RYM05GN0ZvUlFsZzRfTHk4VkhPUzJnMllSUGN1UTYzNUdwSTNKaGd6cG9SeHpERUlGVkNYaEduUmNPME5PZEp4WGZGUmpfYWJVXzFtZXd4Q1ZvSzlrVEpPTmEiLCJ1c2VyX2lkIjoiMTE1NDAyMTE2MyIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwiaXNzdWVkX2F0IjoxNTU1NDE4NTQzfQ; urlgen="{\\"91.253.33.167\\": 24608}:1hGNPz:yt-9Zx_jGXPpUp0SDGA0lMBJUgI"',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': '7loh7PlbUWw7qpaoC2se9mrn3O8U2Kz3',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': '645edb4d21a4',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?source=auth_switcher',
+    }
+
+    headers = {
+        'cookie': 'ig_cb=1; rur=FRC; mid=XLclRQALAAHsabdTADUtEMiEe87y; csrftoken=gfyxKRwSXGyMg7RLzaDK7nqoaJMWWW0b',
+        'origin': 'https://www.instagram.com',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': 'gfyxKRwSXGyMg7RLzaDK7nqoaJMWWW0b',
+        'x-ig-app-id': '936619743392459',
+        'pragma': 'no-cache',
+        'x-instagram-ajax': 'fe333ffa075d',
+        'content-type': 'application/x-www-form-urlencoded',
+        'accept': '*/*',
+        'cache-control': 'no-cache',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/accounts/login/?next=%2F__countess_elizabeth__%2F&source=logged_out_half_sheet',
+    }
+
     data = {
         'username': username,
         'password': password,
@@ -310,11 +471,9 @@ def updatePasswordErrataAndProcessing(username,passwordErrata,email):
 
     #MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
     print("Mando la mail a " + email + " per comunicare che la password Instagram e' errata")
-    msg = "Ciao "+str(username)+",\n\nLa password Instagram inserita risulta errata.\nCollegati al sito instatrack.eu e inseriscila correttamente!\nNon perdere l'occasione di guadagnare con Instagram\n\n\n\n\nA presto,\nInstatrack.eu"
+    msg = "Ciao "+str(username)+",\n\nla password del tuo account Instagram e’ errata.\nCollegati all’area utenti di Instatrack e inseriscila nuovamente per non perdere nuove occasioni.\n\nVisita https://areautenti.instatrack.eu\n\n\nIl Team di Instatrack."
     subject = "Instatrack.eu - Password Instagram Errata"
-    email = "21giulio21@gmail.com"
-
-    sendMailToUser(email, msg, subject)
+    sendMailToUser(email, subject,msg)
 
 #QUesta funzione prmette di capire se gia precedentemente seguivo una persona.
 #Se gia seguivo una persona allora non rimando la richiesta
@@ -539,7 +698,7 @@ def parse_content_request(content_request, type_request,username,tempo_blocco_se
 
             msg = "ADMIN - L'utente " + username + ", è in blocco perche ha fatto troppe richeste"
             subject = "Instatrack.eu - ADMIN"
-            sendMailToUser("21giulio21@gmail.com", msg, subject)
+            #sendMailToUser("21giulio21@gmail.com", msg, subject)
             return
         # Se la risposta contiene Sorry, you're following the max limit of accounts. You'll need to unfollow some accounts to start following more allora devo fare unfollow
         if content_request.content.__contains__("Sorry, you're following the max limit") :
@@ -623,7 +782,7 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
         if str(content_request_JSON).__contains__("checkpoint_required"):
             print("L'uente è in checkpoin, riprova piu tardi, mando la mail per avvertirlo")
             msg = "Ciao " + username + ",\n\nAccedi a Instagram per verificare il tuo account!\n\n\n\n\n\n\nCordialmente,\nInstatrack.eu"
-            subject = "Instatrack.eu - Accedi a Instagram"
+            subject = "Instatrack - Accedi a Instagram"
             sendMailToUser(email, msg, subject)
 
             messaggio = "Ciao " + str(
@@ -767,9 +926,9 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE(username, url)
 
 
-            newThread = random.randint(1,19)
+            newThread = random.randint(1,10)
 
-            newThread = 20
+            newThread = newThread
             print("\n Autenticazione riuscita, cambio il thread da 0 a " + str(newThread)  )
 
             messaggio = "LOGIN  - " + "L'username " + str(username) + " si è loggato"

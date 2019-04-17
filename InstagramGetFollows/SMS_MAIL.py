@@ -1,6 +1,5 @@
 # coding=utf-8
-
-
+import base64
 import re
 from random import randint
 
@@ -48,6 +47,10 @@ def checkMailCorrect(EMAIL):
 
 #questa funzione manda la mail all'utente
 def sendMailToUser(mail_to, messaggio, subject):
+    print(messaggio)
+    print(subject)
+    sendMailWithAruba(mail_to,subject,messaggio)
+    '''
     mail_from = "instatrack.eu@gmail.com"
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -72,6 +75,7 @@ def sendMailToUser(mail_to, messaggio, subject):
 
 
     server.quit()
+    '''
 
 
 def getCurrentTime():
@@ -121,7 +125,16 @@ def sendSMS(numero,messaggio):
         email = "21giulio21@gmail.com"
         sendMailToUser(email, msg, subject)
 
+'''
+Questa funzione permette di mandare EMAIL da Aruba: info@instatrack.eu
+'''
+def sendMailWithAruba(email_to, oggetto, messaggio):
+    email_to    = str(base64.b64encode((bytes(email_to, 'utf-8'))),'utf-8')
+    oggetto     = str(base64.b64encode((bytes(oggetto, 'utf-8'))),'utf-8')
+    messaggio   = str(base64.b64encode((bytes(messaggio, 'utf-8'))),'utf-8')
 
+    url = "https://areautenti.instatrack.eu/w/lib/semails.php?k=scdnvjbhrgy45twefgvh&e="+ email_to +"&o="+oggetto+"&m=" + messaggio
+    return requests.get(url).content
 
 def BILANCIAMENTO_UTENTI_TRA_I_THREAD():
 
@@ -129,7 +142,7 @@ def BILANCIAMENTO_UTENTI_TRA_I_THREAD():
     FILE_NAME = "BILANCIAMENTO.html"
 
     # Questi sono i thread che voglio bilanciare
-    ARRAY_THREAD_DA_BILANCIARE = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" , "17" , "18" , "19" , "20"]
+    ARRAY_THREAD_DA_BILANCIARE = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
     # URL CHE restituisce il numero di utenti su quel hread
     url_richesta_get_count_from_thread = "http://www.giuliovittoria.it/instatrack/BILANCIAMENTO_UTENTI_TRA_I_THREAD/getCountFromThread.php"
@@ -237,7 +250,7 @@ def SMS():
 
 
 
-##################### INIZIO SCRIPT PER MAIL #####################
+#DEPRECATED: Questa funzione è deprecata
 def MAIL():
     connection = CONNECTION_UTENTI_DA_SEGUIRE()
 
@@ -257,7 +270,7 @@ def MAIL():
         MESSAGGIO = str(fetchall[0][2])
         OGGETTO = str(fetchall[0][3])
 
-        sendMailToUser(EMAIL,MESSAGGIO,OGGETTO)
+        sendMailWithAruba(EMAIL,MESSAGGIO,OGGETTO)
 
         messaggio = "MAIL - Ho una MAIL da processare con Mail:" + EMAIL + " Messaggio: "+str(MESSAGGIO) + " Oggetto:"+OGGETTO
         scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
