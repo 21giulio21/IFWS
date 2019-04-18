@@ -17,6 +17,8 @@ from termcolor import colored
 
 import re
 
+from connection_utenti_da_seguire import CONNECTION_UTENTI_DA_SEGUIRE
+
 url_bot = "http://www.giuliovittoria.it"
 url_sms_mail = "http://www.utentidaseguire.eu"
 
@@ -148,21 +150,63 @@ def comment(cookies, csrf,username_to_comment):
     return requests.post('https://www.instagram.com/web/comments/'+ottengoIdPrimaFotoDaUsername(username_to_comment,cookies, csrf)+'/add/', headers=headers, data=data).content
 
 
+
+
 def follow(id, username, cookies, csrf):
 
-	headers = {
-    'cookie' : cookies,
-    'origin': 'https://www.instagram.com',
-    'x-requested-with': 'XMLHttpRequest',
-    'x-csrftoken': csrf,
-    'x-instagram-ajax': '0fa00dc2cc1f',
-    'authority': 'www.instagram.com',
-    'referer': 'https://www.instagram.com/' + username,
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
-     #'user-agent':'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+    ''' SE volessi implementare i proxy basta che scommento questo e commento il resto della funzione
+    connection = CONNECTION_UTENTI_DA_SEGUIRE()
+    PROXY_DICTIONARY = connection.getProxiesFromDB()
+
+    while PROXY_DICTIONARY.__contains__("error"):
+        PROXY_DICTIONARY = connection.getProxiesFromDB()
+        print("Attendo il proxy")
+        time.sleep(10)
+
+
+
+    proxy = PROXY_DICTIONARY["PROXY"]
+    port = PROXY_DICTIONARY["PORT"]
+    username_proxy = PROXY_DICTIONARY["USERNAME"]
+    password_proxy = PROXY_DICTIONARY["PASSWORD"]
+
+    # aggiorno l'ultimo utilizzo del proxy, cosi quel proxy potrà stare fermo per 60 secondi prima di fare una nuova richiesta
+    connection.updateLAST_ROUNDFromDbPROXY(proxy)
+
+    proxies = {"http": "http://" + username_proxy + ":" + password_proxy + "@" + proxy + ":" + port,
+               "https": "https://" + username_proxy + ":" + password_proxy + "@" + proxy + ":" + port}
+
+    headers = {
+        'cookie': cookies,
+        'origin': 'https://www.instagram.com',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': csrf,
+        'x-instagram-ajax': '0fa00dc2cc1f',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/' + username,
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
+        # 'user-agent':'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
+    }
+    r = requests.get('http://httpbin.org/ip', proxies=proxies)
+    print(proxy, r.content)
+    return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', headers=headers,proxies=proxies)
+    '''
+
+    headers = {
+        'cookie': cookies,
+        'origin': 'https://www.instagram.com',
+        'x-requested-with': 'XMLHttpRequest',
+        'x-csrftoken': csrf,
+        'x-instagram-ajax': '0fa00dc2cc1f',
+        'authority': 'www.instagram.com',
+        'referer': 'https://www.instagram.com/' + username,
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
+        # 'user-agent':'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
     }
 
-	return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', 	headers=headers)
+    return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', headers=headers)
+
+
 
 
 def follow_thread(id_user_to_follow, username_user_to_follow, cookies_str, cookies_dict,username,number_requests_done,tempo_blocco_se_esce_errore,delta_t,target,email):

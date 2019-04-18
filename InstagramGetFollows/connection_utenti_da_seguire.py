@@ -1,3 +1,5 @@
+import time
+
 import MySQLdb
 
 
@@ -117,6 +119,53 @@ class CONNECTION_UTENTI_DA_SEGUIRE:
 
       print(query)
       print(self.cur.execute( query))
+      self.db.commit()
+
+#Questa funzione permette di tornare il proxy
+  def getProxiesFromDB(self):
+
+    #Ottengo l'ora di ora
+    tempo_di_ora = str(time.time())
+    tempo_di_ora = tempo_di_ora[:-3]
+
+    '''
+    Prendo il proxy che ha fatto l'ultima richiesta almeno 100 secondi fa
+    '''
+    tempo_che_posso_prendere_proxy = int(tempo_di_ora) - 100
+
+    query = """SELECT * FROM PROXIES WHERE LAST_ROUND < """ + str(tempo_che_posso_prendere_proxy) + """ LIMIT 1"""
+
+    self.cur.execute(query)
+    fetch = self.cur.fetchall()
+
+    PROXY_DICTIONARY = {
+        "PROXY": "",
+        "PORT": "",
+        "USERNAME": "",
+        "PASSWORD": "",
+
+    }
+    #Controllo se e' tornato almeno 1 proxy
+    if len(fetch) == 0:
+        return "{'error':'No proxy ready'}"
+
+    for utente in fetch:
+        PROXY_DICTIONARY["PROXY"] = str(utente[1])
+        PROXY_DICTIONARY["PORT"] = str(utente[2])
+        PROXY_DICTIONARY["USERNAME"] = str(utente[3])
+        PROXY_DICTIONARY["PASSWORD"] = str(utente[4])
+
+
+    return PROXY_DICTIONARY
+
+  def updateLAST_ROUNDFromDbPROXY(self,proxy):
+
+      tempo_di_ora = str(time.time())
+      tempo_di_ora = tempo_di_ora[:-3]
+
+      query = "UPDATE `PROXIES` SET `LAST_ROUND` = '"+str(tempo_di_ora)+"' WHERE `PROXIES`.`PROXY` =  '" + str(proxy) + "'"
+
+      self.cur.execute(query)
       self.db.commit()
 
 
