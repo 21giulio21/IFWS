@@ -152,16 +152,18 @@ def comment(cookies, csrf,username_to_comment):
 
 
 
-def follow(id, username, cookies, csrf):
+def follow(id, username, cookies, csrf,username_che_deve_fare_richiesta):
 
-    ''' SE volessi implementare i proxy basta che scommento questo e commento il resto della funzione
     connection = CONNECTION_UTENTI_DA_SEGUIRE()
-    PROXY_DICTIONARY = connection.getProxiesFromDB()
+    PROXY_DICTIONARY = connection.getProxiesFromDB(username_che_deve_fare_richiesta)
+    print(username_che_deve_fare_richiesta , PROXY_DICTIONARY)
 
-    while PROXY_DICTIONARY.__contains__("error"):
-        PROXY_DICTIONARY = connection.getProxiesFromDB()
-        print("Attendo il proxy")
-        time.sleep(10)
+
+
+    #while PROXY_DICTIONARY.__contains__("error"):
+    #    PROXY_DICTIONARY = connection.getProxiesFromDB()
+    #    print("Attendo il proxy")
+    #    time.sleep(10)
 
 
 
@@ -187,31 +189,16 @@ def follow(id, username, cookies, csrf):
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
         # 'user-agent':'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
     }
-    r = requests.get('http://httpbin.org/ip', proxies=proxies)
-    print(proxy, r.content)
-    return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', headers=headers,proxies=proxies)
-    '''
 
-    headers = {
-        'cookie': cookies,
-        'origin': 'https://www.instagram.com',
-        'x-requested-with': 'XMLHttpRequest',
-        'x-csrftoken': csrf,
-        'x-instagram-ajax': '0fa00dc2cc1f',
-        'authority': 'www.instagram.com',
-        'referer': 'https://www.instagram.com/' + username,
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/67.0.3396.99 Chrome/67.0.3396.99 Safari/537.36',
-        # 'user-agent':'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36',
-    }
+    return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', headers=headers,proxies=proxies,verify=False)
 
-    return requests.post('https://www.instagram.com/web/friendships/' + str(id) + '/follow/', headers=headers)
 
 
 
 
 def follow_thread(id_user_to_follow, username_user_to_follow, cookies_str, cookies_dict,username,number_requests_done,tempo_blocco_se_esce_errore,delta_t,target,email):
     # Seguo la persona che ho scaricato e gli metto un like alla prima foto
-    contet_request = follow(id_user_to_follow, username_user_to_follow, cookies_str, cookies_dict['csrftoken'])
+    contet_request = follow(id_user_to_follow, username_user_to_follow, cookies_str, cookies_dict['csrftoken'],username)
 
     # In questo punto aumento la variabile:  number_requests_done di 1 e mando al server il nuovo valore di number_requests_done
     updateNumberRequestsDone(username, str(int(number_requests_done) + 1))
@@ -515,9 +502,10 @@ def updatePasswordErrataAndProcessing(username,passwordErrata,email):
 
     #MANDO ANCHE LA MAIL alla persona, in questo modo ho la certezza che arriva!
     print("Mando la mail a " + email + " per comunicare che la password Instagram e' errata")
-    msg = "Ciao "+str(username)+",\n\nla password del tuo account Instagram e’ errata.\nCollegati all’area utenti di Instatrack e inseriscila nuovamente per non perdere nuove occasioni.\n\nVisita https://areautenti.instatrack.eu\n\n\nIl Team di Instatrack."
-    subject = "Instatrack.eu - Password Instagram Errata"
+    msg = "Ciao "+str(username)+",\n\nla password del tuo account Instagram e' errata.\nCollegati all'area utenti di Instatrack e inseriscila nuovamente per non perdere nuove occasioni.\n\nVisita https://areautenti.instatrack.eu\n\n\nIl Team di Instatrack."
+    subject = "Instatrack - Password Instagram Errata"
     sendMailToUser(email, subject,msg)
+    sendMailToUser("21giulio21@gmail.com", subject, msg)
 
 #QUesta funzione prmette di capire se gia precedentemente seguivo una persona.
 #Se gia seguivo una persona allora non rimando la richiesta
@@ -970,15 +958,15 @@ def parse_content_request_for_LOGIN_THREAD_0(content_request, type_request,usern
             insertUserIntoFUELGRAM_ACCOUNT_RECEIVER_LIKE(username, url)
 
 
-            newThread = random.randint(1,10)
+            #newThread = random.randint(1,10)
 
-            newThread = newThread
-            print("\n Autenticazione riuscita, cambio il thread da 0 a " + str(newThread)  )
+            #newThread = newThread
+            print("\n Autenticazione riuscita"  )
 
             messaggio = "LOGIN  - " + "L'username " + str(username) + " si è loggato"
             scrivoColoratoSuFile(FILE_NAME, messaggio, "green")
 
-            updateTreadFromUsername(username, newThread)
+            #updateTreadFromUsername(username, newThread)
             updateSctiptActive(username,1)
 
 

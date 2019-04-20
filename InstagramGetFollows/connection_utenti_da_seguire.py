@@ -122,18 +122,18 @@ class CONNECTION_UTENTI_DA_SEGUIRE:
       self.db.commit()
 
 #Questa funzione permette di tornare il proxy
-  def getProxiesFromDB(self):
+  def getProxiesFromDB(self,username_instagram):
 
     #Ottengo l'ora di ora
-    tempo_di_ora = str(time.time())
-    tempo_di_ora = tempo_di_ora[:-3]
+    #tempo_di_ora = str(time.time())
+    #tempo_di_ora = tempo_di_ora[:-3]
 
     '''
     Prendo il proxy che ha fatto l'ultima richiesta almeno 100 secondi fa
     '''
-    tempo_che_posso_prendere_proxy = int(tempo_di_ora) - 100
+    #tempo_che_posso_prendere_proxy = int(tempo_di_ora) - 100
 
-    query = """SELECT * FROM PROXIES WHERE LAST_ROUND < """ + str(tempo_che_posso_prendere_proxy) + """ LIMIT 1"""
+    query = "SELECT * FROM PROXIES WHERE USERNAME_INSTAGRAM = '" + str(username_instagram) + "' LIMIT 1"
 
     self.cur.execute(query)
     fetch = self.cur.fetchall()

@@ -131,7 +131,7 @@ Questa funzione permette di mandare EMAIL da Aruba: info@instatrack.eu
 def sendMailWithAruba(email_to, oggetto, messaggio):
     email_to    = str(base64.b64encode((bytes(email_to, 'utf-8'))),'utf-8')
     oggetto     = str(base64.b64encode((bytes(oggetto, 'utf-8'))),'utf-8')
-    messaggio   = str(base64.b64encode((bytes(messaggio, 'utf-8'))),'utf-8')
+    messaggio = str(base64.b64encode((bytes(messaggio, 'utf-8'))), 'utf-8')
 
     url = "https://areautenti.instatrack.eu/w/lib/semails.php?k=scdnvjbhrgy45twefgvh&e="+ email_to +"&o="+oggetto+"&m=" + messaggio
     return requests.get(url).content

@@ -10,7 +10,8 @@ import random
 import time
 
 
-from InstagramAPI import updateTempoBlocco, follow_thread, unfollow_thread, sendSMSToUser, sendDMMessage
+from InstagramAPI import updateTempoBlocco, follow_thread, unfollow_thread, sendSMSToUser, sendDMMessage, \
+    updateTreadFromUsername
 from InstagramAPI import comment
 from InstagramAPI import update_secondi_ultima_richiesta
 from InstagramAPI import updateFollowUnfollowDatabase
@@ -180,6 +181,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
 
             updateSctiptActive(username, 0)  # Metto sctipt_attivo = 0
             updateDevePagare(username, 1)  # Imposto che deve pagare
+            updateTreadFromUsername(username, 0)
 
 
 

@@ -146,7 +146,7 @@ for index in range(0, int(numberUsersIntoDatabase)):  # Deve partire da 0
     if len(cookie) == 0:
 
         #Questo permette di avere sul
-        os.system("py -3 C:\\Users\giulio.tavella\Dropbox\Git\IFWS\InstagramGetFollows\DATI_PROFILO.py " + str(username))
+        os.system("python3 DATI_PROFILO.py " + str(username))
         content_request = login(username, password_instagram)
         retult = parse_content_request_for_LOGIN_THREAD_0(content_request, "LOGIN", username,
                                                           tempo_blocco_se_esce_errore, delta_t, email)
